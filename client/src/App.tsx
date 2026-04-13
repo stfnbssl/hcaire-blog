@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
+import { ClerkProvider } from '@clerk/clerk-react';
 import { AuthProvider, useAuthContext } from './context/AuthContext';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -9,9 +10,12 @@ import About from './pages/About';
 import BlogPost from './pages/BlogPost';
 import NotFound from './pages/NotFound';
 import LoginForm from './components/LoginForm';
+import Pricing from './pages/Pricing';
 
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
 const WorkflowLog    = lazy(() => import('./pages/WorkflowLog'));
+
+const clerkPublishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string;
 
 const muiTheme = createTheme({
   typography: { fontFamily: 'Inter, system-ui, sans-serif' },
@@ -45,6 +49,7 @@ function AppLayout() {
           <Route path="/"           element={<Home />} />
           <Route path="/about"      element={<About />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/pricing"        element={<Pricing />} />
           <Route path="/admin"          element={<AdminRoute><AdminDashboard /></AdminRoute>} />
           <Route path="/admin/workflow" element={<AdminRoute><WorkflowLog /></AdminRoute>} />
           <Route path="*"           element={<NotFound />} />
@@ -57,13 +62,15 @@ function AppLayout() {
 
 export default function App() {
   return (
-    <ThemeProvider theme={muiTheme}>
-      <CssBaseline />
-      <AuthProvider>
-        <BrowserRouter>
-          <AppLayout />
-        </BrowserRouter>
-      </AuthProvider>
-    </ThemeProvider>
+    <ClerkProvider publishableKey={clerkPublishableKey}>
+      <ThemeProvider theme={muiTheme}>
+        <CssBaseline />
+        <AuthProvider>
+          <BrowserRouter>
+            <AppLayout />
+          </BrowserRouter>
+        </AuthProvider>
+      </ThemeProvider>
+    </ClerkProvider>
   );
 }

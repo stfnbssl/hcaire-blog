@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useFetchNavigation } from '../hooks/useFetchNavigation';
 import { NavigationItem } from '../types/navigation';
 import { APP_NAME } from '../utils/constants';
+import UserNav from './UserNav';
 
 function navPath(item: NavigationItem): string {
   return item.isSpecial ? `/${item.slug}` : `/blog/${item.slug}`;
@@ -29,6 +30,7 @@ export default function Navigation() {
                 {item.titolo}
               </NavLink>
             ))}
+            <UserNav />
           </div>
 
           {/* Hamburger */}

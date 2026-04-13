@@ -6,6 +6,8 @@ import contentRoutes from './routes/content';
 import navRoutes from './routes/nav';
 import authRoutes from './routes/auth';
 import articleRequestRoutes from './routes/articleRequests';
+import webhookRoutes from './routes/webhooks';
+import subscriptionRoutes from './routes/subscriptions';
 import { startTelegramBot } from './services/telegramBot';
 
 dotenv.config();
@@ -14,11 +16,16 @@ const app  = express();
 const PORT = process.env.PORT || 3018;
 
 app.use(cors({ origin: process.env.CORS_ORIGIN || 'http://localhost:5173' }));
+
+// CRITICAL: webhook route BEFORE express.json() — needs raw body
+app.use('/webhooks', webhookRoutes);
+
 app.use(express.json({ limit: '10mb' }));
 
 app.use('/api/contents',         contentRoutes);
 app.use('/api/navigation',       navRoutes);
 app.use('/api/article-requests', articleRequestRoutes);
+app.use('/api/subscriptions',    subscriptionRoutes);
 app.use('/api',                  authRoutes);
 
 app.get('/health', (_req, res) => {

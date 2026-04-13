@@ -2,13 +2,14 @@ import { API_URL } from '../utils/constants';
 
 interface RequestOptions extends RequestInit {
   auth?: boolean;
+  clerkToken?: string;
 }
 
 export async function apiRequest<T>(
   endpoint: string,
   options: RequestOptions = {}
 ): Promise<T> {
-  const { auth = false, ...fetchOptions } = options;
+  const { auth = false, clerkToken, ...fetchOptions } = options;
 
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
@@ -18,6 +19,10 @@ export async function apiRequest<T>(
   if (auth) {
     const token = localStorage.getItem('token');
     if (token) headers['Authorization'] = `Bearer ${token}`;
+  }
+
+  if (clerkToken) {
+    headers['Authorization'] = `Bearer ${clerkToken}`;
   }
 
   const response = await fetch(`${API_URL}${endpoint}`, {
