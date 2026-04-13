@@ -1,4 +1,6 @@
 import { spawn } from 'child_process';
+import { writeFileSync } from 'fs';
+import { join } from 'path';
 import mongoose from 'mongoose';
 
 const ArticleRequestSchema = new mongoose.Schema(
@@ -37,14 +39,21 @@ export async function spawnCoworker(requestId: string, pubblica: boolean): Promi
     return;
   }
 
-  const apiUrl = process.env.API_URL!;
-  const apiKey = process.env.COWORK_API_KEY!;
+  const apiUrl      = process.env.API_URL!;
+  const apiKey      = process.env.COWORK_API_KEY!;
+  const coworkPath  = process.env.COWORK_PROJECT_PATH || process.cwd();
+  const inputFile   = join(coworkPath, 'input_articoli.md');
+
+  // Scrivi il testo su input_articoli.md prima di lanciare Claude Code
+  const inputContent = `===== ARTICOLO (id: ${requestId}) =====\n${request.testo}\n`;
+  writeFileSync(inputFile, inputContent, 'utf-8');
+  console.log(`[Coworker] Traccia scritta su ${inputFile}`);
 
   await writeLog(requestId, 'coworker_started', 'Claude Code avviato per generazione articolo', 'processing');
 
   const prompt = pubblica
-    ? `Genera un articolo per il blog HCAIRE basandoti su questa traccia e pubblicalo tramite POST ${apiUrl}/contents/import con header "Authorization: Bearer ${apiKey}" e includi il campo "articleRequestId": "${requestId}" nel body JSON.\n\nTraccia:\n${request.testo}`
-    : `Genera un articolo per il blog HCAIRE basandoti su questa traccia. Salvalo come bozza tramite POST ${apiUrl}/contents/import con header "Authorization: Bearer ${apiKey}", imposta isPublished=false e includi il campo "articleRequestId": "${requestId}" nel body JSON.\n\nTraccia:\n${request.testo}`;
+    ? `Genera e pubblica l'articolo descritto in input_articoli.md sul blog HCAIRE. Usa POST ${apiUrl}/contents/import con header "Authorization: Bearer ${apiKey}" e includi il campo "articleRequestId": "${requestId}" nel body JSON.`
+    : `Genera l'articolo descritto in input_articoli.md e salvalo come bozza (isPublished: false) sul blog HCAIRE. Usa POST ${apiUrl}/contents/import con header "Authorization: Bearer ${apiKey}" e includi il campo "articleRequestId": "${requestId}" nel body JSON.`;
 
   console.log(`[Coworker] Avvio Claude Code per ArticleRequest ${requestId}...`);
 
