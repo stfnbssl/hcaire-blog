@@ -20,12 +20,20 @@ app.use('/api/navigation', navRoutes);
 app.use('/api',            authRoutes);
 
 app.get('/health', (_req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+  const mongoose = require('mongoose');
+  const dbState = mongoose.connection.readyState; // 0=disconnected,1=connected,2=connecting
+  res.json({ status: 'ok', db: dbState === 1 ? 'connected' : 'connecting', timestamp: new Date().toISOString() });
 });
 
-connectDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-  });
-  startTelegramBot();
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
+
+connectDB()
+  .then(() => {
+    startTelegramBot();
+  })
+  .catch((err) => {
+    console.error('Startup error:', err);
+    process.exit(1);
+  });
