@@ -33,9 +33,9 @@ async function main(): Promise<void> {
 
   sub.on('message', async (_channel, message) => {
     try {
-      const { id, pubblica } = JSON.parse(message) as { id: string; pubblica: boolean };
-      console.log(`[Local] Nuova ArticleRequest ricevuta: ${id} (pubblica: ${pubblica})`);
-      await spawnCoworker(id, pubblica);
+      const { ids, pubblica } = JSON.parse(message) as { ids: string[]; pubblica: boolean };
+      console.log(`[Local] Batch ricevuto: ${ids.length} articoli (pubblica: ${pubblica})`);
+      await spawnCoworker(ids, pubblica);
     } catch (err) {
       console.error('[Local] Errore elaborazione messaggio:', err);
     }

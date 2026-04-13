@@ -1,5 +1,4 @@
 import { Telegraf } from 'telegraf';
-import mongoose from 'mongoose';
 import ArticleRequest from '../models/ArticleRequest';
 import { getRedisClient, CHANNEL_ARTICLE_NEW } from '../config/redis';
 import { logWorkflow } from './workflowLogger';
@@ -28,34 +27,46 @@ export function startTelegramBot(): void {
 
     const testo = ctx.message.text;
 
+    // Comando generazione: raccoglie tutti i pending e avvia coworker
     if (GENERA_PATTERN.test(testo)) {
-      const pubblica = GENERA_PATTERN.test(testo) && PUBBLICA_PATTERN.test(testo);
+      const pubblica = PUBBLICA_PATTERN.test(testo);
 
       try {
-        const request = await ArticleRequest.create({ testo, pubblica, status: 'pending' });
-        const id = (request._id as mongoose.Types.ObjectId).toString();
-        await logWorkflow(id, 'telegram_received', 'server', `Messaggio Telegram ricevuto (pubblica: ${pubblica})`);
-        await redis.publish(CHANNEL_ARTICLE_NEW, JSON.stringify({ id, pubblica }));
-        await logWorkflow(id, 'redis_published', 'server', 'Notifica pubblicata su Redis channel article:new');
+        const pending = await ArticleRequest.find({ status: 'pending' }).select('_id');
+        if (pending.length === 0) {
+          await ctx.reply('Nessuna traccia in attesa. Invia prima le tracce degli articoli da generare.');
+          return;
+        }
+
+        const ids = pending.map((r) => r._id.toString());
+
+        // Log su ogni ArticleRequest coinvolta
+        await Promise.all(ids.map((id) =>
+          logWorkflow(id, 'redis_published', 'server',
+            `Generazione avviata da Telegram (pubblica: ${pubblica}, batch: ${ids.length} articoli)`)
+        ));
+
+        await redis.publish(CHANNEL_ARTICLE_NEW, JSON.stringify({ ids, pubblica }));
+
         await ctx.reply(pubblica
-          ? 'Traccia ricevuta. Generazione e pubblicazione avviate.'
-          : 'Traccia ricevuta. Generazione avviata.'
+          ? `Generazione e pubblicazione avviate per ${ids.length} articolo/i.`
+          : `Generazione avviata per ${ids.length} articolo/i.`
         );
-        console.log(`[Telegram] ArticleRequest ${id} salvata e notifica Redis inviata.`);
+        console.log(`[Telegram] Batch generazione: ${ids.length} ArticleRequest pending → Redis.`);
       } catch (err) {
-        console.error('[Telegram] Errore salvataggio ArticleRequest:', err);
-        await ctx.reply('Errore durante il salvataggio della traccia.');
+        console.error('[Telegram] Errore avvio generazione:', err);
+        await ctx.reply('Errore durante l\'avvio della generazione.');
       }
       return;
     }
 
-    // Messaggio generico: salva come traccia senza avviare generazione
+    // Messaggio normale: salva come traccia articolo (pending)
     try {
-      const request = await ArticleRequest.create({ testo, pubblica: false, status: 'pending' });
-      const id = (request._id as mongoose.Types.ObjectId).toString();
-      await logWorkflow(id, 'telegram_received', 'server', 'Traccia salvata senza avvio generazione');
+      const request = await ArticleRequest.create({ testo, status: 'pending' });
+      const id = request._id.toString();
+      await logWorkflow(id, 'telegram_received', 'server', 'Traccia articolo salvata');
       await ctx.reply('Traccia salvata.');
-      console.log(`[Telegram] Traccia ${id} salvata su MongoDB.`);
+      console.log(`[Telegram] Traccia ${id} salvata.`);
     } catch (err) {
       console.error('[Telegram] Errore salvataggio traccia:', err);
       await ctx.reply('Errore durante il salvataggio della traccia.');
