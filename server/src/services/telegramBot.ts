@@ -30,9 +30,14 @@ export function startTelegramBot(): void {
       const pubblica = GENERA_PATTERN.test(testo) && PUBBLICA_PATTERN.test(testo);
 
       try {
-        const request = await ArticleRequest.create({ testo, pubblica, status: 'pending' });
+        const request = await ArticleRequest.create({
+          testo, pubblica, status: 'pending',
+          logs: [{ step: 'telegram_received', message: `Messaggio ricevuto da Telegram (pubblica: ${pubblica})`, actor: 'server' }],
+        });
         await redis.publish(CHANNEL_ARTICLE_NEW, JSON.stringify({ id: request._id, pubblica }));
-
+        await ArticleRequest.findByIdAndUpdate(request._id, {
+          $push: { logs: { step: 'redis_published', message: 'Notifica pubblicata su Redis channel article:new', actor: 'server' } },
+        });
         await ctx.reply(pubblica
           ? 'Traccia ricevuta. Generazione e pubblicazione avviate.'
           : 'Traccia ricevuta. Generazione avviata.'
@@ -47,7 +52,10 @@ export function startTelegramBot(): void {
 
     // Messaggio generico: salva come traccia senza avviare generazione
     try {
-      const request = await ArticleRequest.create({ testo, pubblica: false, status: 'pending' });
+      const request = await ArticleRequest.create({
+        testo, pubblica: false, status: 'pending',
+        logs: [{ step: 'telegram_received', message: 'Traccia salvata senza avvio generazione', actor: 'server' }],
+      });
       await ctx.reply('Traccia salvata.');
       console.log(`[Telegram] Traccia ${request._id} salvata su MongoDB.`);
     } catch (err) {

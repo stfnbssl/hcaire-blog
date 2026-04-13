@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import Content from '../models/Content';
+import ArticleRequest from '../models/ArticleRequest';
 
 export const getAllContents = async (req: Request, res: Response): Promise<void> => {
   try {
@@ -51,6 +52,22 @@ export const createContent = async (req: Request, res: Response): Promise<void> 
   try {
     const content = new Content(req.body);
     await content.save();
+
+    // Se la richiesta proviene da coworker con articleRequestId, aggiorna il log
+    const articleRequestId = req.body.articleRequestId as string | undefined;
+    if (articleRequestId) {
+      await ArticleRequest.findByIdAndUpdate(articleRequestId, {
+        $set:  { status: 'done' },
+        $push: {
+          logs: {
+            step:    'article_published',
+            message: `Articolo pubblicato: slug="${content.slug}", titolo="${content.titolo}"`,
+            actor:   'server',
+          },
+        },
+      });
+    }
+
     res.status(201).json(content);
   } catch (error: unknown) {
     const mongoError = error as { code?: number };

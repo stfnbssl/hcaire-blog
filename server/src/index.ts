@@ -5,6 +5,7 @@ import { connectDB } from './config/db';
 import contentRoutes from './routes/content';
 import navRoutes from './routes/nav';
 import authRoutes from './routes/auth';
+import articleRequestRoutes from './routes/articleRequests';
 import { startTelegramBot } from './services/telegramBot';
 
 dotenv.config();
@@ -15,9 +16,10 @@ const PORT = process.env.PORT || 3018;
 app.use(cors({ origin: process.env.CORS_ORIGIN || 'http://localhost:5173' }));
 app.use(express.json({ limit: '10mb' }));
 
-app.use('/api/contents',   contentRoutes);
-app.use('/api/navigation', navRoutes);
-app.use('/api',            authRoutes);
+app.use('/api/contents',         contentRoutes);
+app.use('/api/navigation',       navRoutes);
+app.use('/api/article-requests', articleRequestRoutes);
+app.use('/api',                  authRoutes);
 
 app.get('/health', (_req, res) => {
   const mongoose = require('mongoose');

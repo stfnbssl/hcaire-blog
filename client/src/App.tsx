@@ -11,6 +11,7 @@ import NotFound from './pages/NotFound';
 import LoginForm from './components/LoginForm';
 
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
+const WorkflowLog    = lazy(() => import('./pages/WorkflowLog'));
 
 const muiTheme = createTheme({
   typography: { fontFamily: 'Inter, system-ui, sans-serif' },
@@ -19,20 +20,20 @@ const muiTheme = createTheme({
   },
 });
 
-function AdminRoute() {
+const AdminSuspense = ({ children }: { children: React.ReactNode }) => (
+  <Suspense fallback={
+    <div className="flex justify-center py-16">
+      <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary-600" />
+    </div>
+  }>
+    {children}
+  </Suspense>
+);
+
+function AdminRoute({ children }: { children: React.ReactNode }) {
   const { isAuthenticated } = useAuthContext();
   if (!isAuthenticated) return <LoginForm />;
-  return (
-    <Suspense
-      fallback={
-        <div className="flex justify-center py-16">
-          <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary-600" />
-        </div>
-      }
-    >
-      <AdminDashboard />
-    </Suspense>
-  );
+  return <AdminSuspense>{children}</AdminSuspense>;
 }
 
 function AppLayout() {
@@ -44,7 +45,8 @@ function AppLayout() {
           <Route path="/"           element={<Home />} />
           <Route path="/about"      element={<About />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/admin"      element={<AdminRoute />} />
+          <Route path="/admin"          element={<AdminRoute><AdminDashboard /></AdminRoute>} />
+          <Route path="/admin/workflow" element={<AdminRoute><WorkflowLog /></AdminRoute>} />
           <Route path="*"           element={<NotFound />} />
         </Routes>
       </div>
