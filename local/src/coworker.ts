@@ -167,12 +167,18 @@ export async function spawnCoworker(ids: string[], pubblica: boolean): Promise<v
     ? 'Leggi le tracce in input_articoli.md, genera gli articoli e pubblicali sul blog.'
     : 'Leggi le tracce in input_articoli.md e genera gli articoli (non pubblicare).';
 
-  console.log(`[Coworker] Avvio Claude Code per ${ids.length} articoli...`);
+  console.log(`[Coworker] Avvio Claude Code per ${ids.length} articoli (pubblica: ${pubblica})...`);
+  console.log(`[Coworker] Prompt: ${prompt}`);
 
-  const proc = spawn('claude', ['--print', prompt, '--dangerously-skip-permissions'], {
+  const proc = spawn('claude', ['--print', '--dangerously-skip-permissions'], {
     shell: true,
     cwd:   coworkPath,
+    stdio: ['pipe', 'pipe', 'pipe'],
   });
+
+  // Passa il prompt via stdin — evita il problema di quoting shell con stringhe multi-parola
+  proc.stdin?.write(prompt + '\n');
+  proc.stdin?.end();
 
   proc.stdout.on('data', (chunk) => { process.stdout.write(chunk); });
   proc.stderr.on('data', (chunk) => { process.stderr.write(chunk); });
