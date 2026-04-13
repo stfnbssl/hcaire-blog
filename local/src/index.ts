@@ -14,12 +14,15 @@ async function connectMongo(): Promise<void> {
 
 function createRedisSubscriber(): Redis {
   const sub = new Redis({
-    host:     process.env.REDIS_HOST!,
-    port:     parseInt(process.env.REDIS_PORT || '11976', 10),
-    password: process.env.REDIS_PASSWORD!,
+    host:              process.env.REDIS_HOST!,
+    port:              parseInt(process.env.REDIS_PORT || '11976', 10),
+    password:          process.env.REDIS_PASSWORD!,
+    retryStrategy:     (times) => Math.min(times * 500, 5000), // riconnette automaticamente
+    maxRetriesPerRequest: null,
   });
-  sub.on('connect', () => console.log('[Redis] Subscriber connected'));
-  sub.on('error',   (err) => console.error('[Redis] Error:', err.message));
+  sub.on('connect',     () => console.log('[Redis] Subscriber connected'));
+  sub.on('reconnecting',() => console.log('[Redis] Reconnecting...'));
+  sub.on('error',       (err) => console.error('[Redis] Error:', err.message));
   return sub;
 }
 
@@ -27,8 +30,6 @@ async function main(): Promise<void> {
   await connectMongo();
 
   const sub = createRedisSubscriber();
-  await sub.subscribe(CHANNEL_ARTICLE_NEW);
-  console.log(`[Local] In ascolto su canale Redis "${CHANNEL_ARTICLE_NEW}"...`);
 
   sub.on('message', async (_channel, message) => {
     try {
@@ -39,6 +40,9 @@ async function main(): Promise<void> {
       console.error('[Local] Errore elaborazione messaggio:', err);
     }
   });
+
+  await sub.subscribe(CHANNEL_ARTICLE_NEW);
+  console.log(`[Local] In ascolto su canale Redis "${CHANNEL_ARTICLE_NEW}"...`);
 }
 
 main().catch((err) => {

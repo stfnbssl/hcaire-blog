@@ -17,7 +17,7 @@ async function writeLog(
   const apiUrl = process.env.API_URL!;
   const apiKey = process.env.COWORK_API_KEY!;
   const body: Record<string, string> = { step, message, actor: 'local' };
-  if (status) body['status'] = status;
+  if (status) body['requestStatus'] = status;
 
   try {
     await fetch(`${apiUrl}/article-requests/${requestId}/log`, {
