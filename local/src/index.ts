@@ -3,6 +3,33 @@ import Redis from 'ioredis';
 import mongoose from 'mongoose';
 import { spawnCoworker } from './coworker.js';
 
+const WorkflowLogSchema = new mongoose.Schema(
+  {
+    articleRequestId: { type: mongoose.Schema.Types.ObjectId },
+    testoPreview: String, step: String, actor: String, message: String, requestStatus: String,
+  },
+  { timestamps: true, collection: 'workflow-logs' }
+);
+const WorkflowLog = mongoose.models['WorkflowLog']
+  ?? mongoose.model('WorkflowLog', WorkflowLogSchema);
+
+async function logRedisReceived(ids: string[]): Promise<void> {
+  const ArticleRequest = mongoose.models['ArticleRequest'];
+  if (!ArticleRequest) return;
+  for (const id of ids) {
+    try {
+      const req = await ArticleRequest.findById(id).select('testo status');
+      if (!req) continue;
+      const testoPreview = (req.testo as string).slice(0, 80) + ((req.testo as string).length > 80 ? '…' : '');
+      await WorkflowLog.create({
+        articleRequestId: new mongoose.Types.ObjectId(id),
+        testoPreview, step: 'redis_published', actor: 'local',
+        message: 'Notifica Redis ricevuta da local', requestStatus: req.status,
+      });
+    } catch { /* non bloccare il flusso */ }
+  }
+}
+
 const CHANNEL_ARTICLE_NEW = 'article:new';
 
 async function connectMongo(): Promise<void> {
@@ -35,6 +62,7 @@ async function main(): Promise<void> {
     try {
       const { ids, pubblica } = JSON.parse(message) as { ids: string[]; pubblica: boolean };
       console.log(`[Local] Batch ricevuto: ${ids.length} articoli (pubblica: ${pubblica})`);
+      await logRedisReceived(ids);
       await spawnCoworker(ids, pubblica);
     } catch (err) {
       console.error('[Local] Errore elaborazione messaggio:', err);
