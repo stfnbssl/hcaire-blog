@@ -9,10 +9,14 @@ export type LogStep =
   | 'article_published';
 
 export interface WorkflowLog {
-  timestamp: string;
+  _id: string;
+  articleRequestId: string;
+  testoPreview: string;
   step: LogStep;
-  message: string;
   actor: 'server' | 'local' | 'coworker';
+  message: string;
+  requestStatus: string;
+  createdAt: string;
 }
 
 export interface ArticleRequest {
@@ -20,7 +24,6 @@ export interface ArticleRequest {
   testo: string;
   pubblica: boolean;
   status: ArticleRequestStatus;
-  logs: WorkflowLog[];
   createdAt: string;
   updatedAt: string;
 }

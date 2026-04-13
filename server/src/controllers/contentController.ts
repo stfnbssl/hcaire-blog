@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import Content from '../models/Content';
-import ArticleRequest from '../models/ArticleRequest';
+import { logWorkflow } from '../services/workflowLogger';
 
 export const getAllContents = async (req: Request, res: Response): Promise<void> => {
   try {
@@ -53,19 +53,15 @@ export const createContent = async (req: Request, res: Response): Promise<void> 
     const content = new Content(req.body);
     await content.save();
 
-    // Se la richiesta proviene da coworker con articleRequestId, aggiorna il log
     const articleRequestId = req.body.articleRequestId as string | undefined;
     if (articleRequestId) {
-      await ArticleRequest.findByIdAndUpdate(articleRequestId, {
-        $set:  { status: 'done' },
-        $push: {
-          logs: {
-            step:    'article_published',
-            message: `Articolo pubblicato: slug="${content.slug}", titolo="${content.titolo}"`,
-            actor:   'server',
-          },
-        },
-      });
+      await logWorkflow(
+        articleRequestId,
+        'article_published',
+        'server',
+        `Articolo pubblicato: slug="${content.slug}", titolo="${content.titolo}"`,
+        'done'
+      );
     }
 
     res.status(201).json(content);

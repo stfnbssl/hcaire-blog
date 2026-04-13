@@ -1,5 +1,7 @@
 import { Request, Response } from 'express';
-import ArticleRequest, { LogActor, LogStep } from '../models/ArticleRequest';
+import ArticleRequest from '../models/ArticleRequest';
+import WorkflowLog from '../models/WorkflowLog';
+import type { LogStep, LogActor } from '../models/ArticleRequest';
 
 export const getAllArticleRequests = async (_req: Request, res: Response): Promise<void> => {
   try {
@@ -10,38 +12,45 @@ export const getAllArticleRequests = async (_req: Request, res: Response): Promi
   }
 };
 
-export const getArticleRequestById = async (req: Request, res: Response): Promise<void> => {
+export const getAllWorkflowLogs = async (req: Request, res: Response): Promise<void> => {
   try {
-    const request = await ArticleRequest.findById(req.params.id);
-    if (!request) {
-      res.status(404).json({ error: 'Richiesta non trovata' });
-      return;
-    }
-    res.json(request);
+    const limit = parseInt(req.query.limit as string) || 200;
+    const logs  = await WorkflowLog.find()
+      .sort({ createdAt: -1 })
+      .limit(limit);
+    res.json(logs);
   } catch {
-    res.status(500).json({ error: 'Errore nel recupero della richiesta' });
+    res.status(500).json({ error: 'Errore nel recupero dei log' });
   }
 };
 
-export const addLog = async (req: Request, res: Response): Promise<void> => {
+export const addWorkflowLog = async (req: Request, res: Response): Promise<void> => {
   try {
-    const { step, message, actor, status } = req.body as {
+    const { step, actor, message, requestStatus } = req.body as {
       step: LogStep;
-      message: string;
       actor: LogActor;
-      status?: string;
+      message: string;
+      requestStatus?: string;
     };
+    const articleRequestId = req.params.id;
 
-    const update: Record<string, unknown> = {
-      $push: { logs: { timestamp: new Date(), step, message, actor } },
-    };
-    if (status) update['$set'] = { status };
-
-    const request = await ArticleRequest.findByIdAndUpdate(req.params.id, update, { new: true });
+    const request = await ArticleRequest.findById(articleRequestId).select('testo status');
     if (!request) {
-      res.status(404).json({ error: 'Richiesta non trovata' });
+      res.status(404).json({ error: 'ArticleRequest non trovata' });
       return;
     }
+
+    const testoPreview = request.testo.length > 80
+      ? request.testo.slice(0, 80) + '…'
+      : request.testo;
+
+    const finalStatus = requestStatus ?? request.status;
+
+    await Promise.all([
+      WorkflowLog.create({ articleRequestId, testoPreview, step, actor, message, requestStatus: finalStatus }),
+      requestStatus ? ArticleRequest.findByIdAndUpdate(articleRequestId, { status: requestStatus }) : Promise.resolve(),
+    ]);
+
     res.json({ ok: true });
   } catch {
     res.status(500).json({ error: 'Errore aggiunta log' });
