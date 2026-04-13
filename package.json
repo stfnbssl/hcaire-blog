@@ -1,7 +1,7 @@
 {
   "name": "hcaire-blog",
   "private": true,
-  "workspaces": ["server", "client"],
+  "workspaces": ["server", "client", "local"],
   "scripts": {
     "dev": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=client\"",
     "build": "npm run build --workspace=server && npm run build --workspace=client"
