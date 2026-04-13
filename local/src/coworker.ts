@@ -1,7 +1,7 @@
-import { spawn }                              from 'child_process';
-import { writeFileSync, readFileSync }        from 'fs';
-import { join }                              from 'path';
-import mongoose                              from 'mongoose';
+import { spawn }          from 'child_process';
+import { writeFileSync }  from 'fs';
+import { join }           from 'path';
+import mongoose           from 'mongoose';
 
 // ── Models ────────────────────────────────────────────────────────────────────
 
@@ -50,84 +50,6 @@ async function markAll(ids: string[], status: string): Promise<void> {
   await ArticleRequest.updateMany({ _id: { $in: ids } }, { status });
 }
 
-// Aggiorna la sezione "Pubblicazione articoli sul blog" nel CLAUDE.md del cowork
-// con l'endpoint Railway corrente e l'API key, incluso l'articleRequestId per ogni articolo.
-function patchCoworkClaudeMd(
-  coworkPath: string,
-  apiUrl: string,
-  apiKey: string,
-  pubblica: boolean
-): void {
-  const claudePath = join(coworkPath, 'claude.md');
-  let content = readFileSync(claudePath, 'utf-8');
-
-  // 1. Aggiorna la sezione STRUTTURA DEL FILE DI INPUT con il nuovo formato
-  const newStructura = `## STRUTTURA DEL FILE DI INPUT
-
-Il file contiene **uno o più articoli** separati dal seguente marcatore:
-
-\`\`\`
-===== NUOVO ARTICOLO =====
-\`\`\`
-
-Ogni articolo segue questa struttura:
-
-\`\`\`
-===== NUOVO ARTICOLO =====
-articleRequestId <id>
-
-<testo libero — anche una sola parola o frase>
-\`\`\`
-
-Il campo \`articleRequestId\` è obbligatorio: è l'ID MongoDB della richiesta e va incluso nel body della pubblicazione.
-Il testo è completamente libero: può essere un titolo, una frase, una lista di punti, o qualsiasi indicazione per l'articolo.`;
-
-  const strutturaMarker = '## STRUTTURA DEL FILE DI INPUT';
-  const strutturaEnd    = '\n---';
-  const si = content.indexOf(strutturaMarker);
-  const se = content.indexOf(strutturaEnd, si);
-  if (si !== -1 && se !== -1) {
-    content = content.slice(0, si) + newStructura + '\n' + content.slice(se);
-  }
-
-  // 2. Aggiorna la sezione Pubblicazione
-  const newPubblicazione = `## Pubblicazione articoli sul blog
-
-Quando il prompt contiene "pubblicali sul blog", dopo aver generato ogni articolo
-esegui una richiesta HTTP per pubblicarlo.
-
-- **Endpoint**: POST ${apiUrl}/contents/import
-- **Header**: Authorization: Bearer ${apiKey}
-- **Header aggiuntivo**: Content-Type: application/json
-- **isPublished**: ${pubblica}
-- **isPinned**: false
-- **autore**: "stfnbssl"
-- **articleRequestId**: leggi l'id dalla riga \`articleRequestId <id>\` nel separatore dell'articolo in \`input_articoli.md\` e includilo nel body JSON.
-
-Usa \`curl\` per la richiesta:
-\`\`\`bash
-curl -s -X POST ${apiUrl}/contents/import \\
-  -H "Authorization: Bearer ${apiKey}" \\
-  -H "Content-Type: application/json" \\
-  -d '{"slug":"...","titolo":"...","descrizione":"...","contenuto":"...","autore":"stfnbssl","categoria":"...","tags":[...],"isPublished":${pubblica},"isPinned":false,"articleRequestId":"<id>"}'
-\`\`\`
-
-Se la risposta è HTTP 201, la pubblicazione è avvenuta con successo.
-Se la risposta è HTTP 400 con "Slug già esistente", l'articolo è già pubblicato — prosegui.
-Per altri errori, segnalali nel report finale.`;
-
-  const pubMarker = '## Pubblicazione articoli sul blog';
-  const pi = content.indexOf(pubMarker);
-  if (pi !== -1) {
-    content = content.slice(0, pi) + newPubblicazione + '\n';
-  } else {
-    content = content + '\n' + newPubblicazione + '\n';
-  }
-
-  writeFileSync(claudePath, content, 'utf-8');
-  console.log('[Coworker] claude.md aggiornato (struttura input + endpoint pubblicazione).');
-}
-
 // ── Main export ───────────────────────────────────────────────────────────────
 
 export async function spawnCoworker(ids: string[], pubblica: boolean): Promise<void> {
@@ -137,32 +59,23 @@ export async function spawnCoworker(ids: string[], pubblica: boolean): Promise<v
     return;
   }
 
-  const apiUrl     = process.env.API_URL!;
-  const apiKey     = process.env.COWORK_API_KEY!;
   const coworkPath = process.env.COWORK_PROJECT_PATH || process.cwd();
   const inputFile  = join(coworkPath, 'input_articoli.md');
 
-  // 1. Scrivi input_articoli.md con tutte le tracce — separatore include articleRequestId
+  // 1. Scrivi input_articoli.md con tutte le tracce
   const inputContent = requests
     .map((r) => `${SEPARATOR}\narticleRequestId ${r._id.toString()}\n\n${r.testo}`)
     .join('\n\n');
   writeFileSync(inputFile, inputContent, 'utf-8');
   console.log(`[Coworker] ${requests.length} tracce scritte su ${inputFile}`);
 
-  // 2. Aggiorna claude.md del cowork con l'endpoint Railway corrente
-  try {
-    patchCoworkClaudeMd(coworkPath, apiUrl, apiKey, pubblica);
-  } catch (err) {
-    console.error('[Coworker] Impossibile aggiornare claude.md:', err);
-  }
-
-  // 3. Log + marca processing
+  // 2. Log + marca processing
   await markAll(ids, 'processing');
   await Promise.all(ids.map((id) =>
     log(id, 'coworker_started', `Batch avviato — ${ids.length} articolo/i`, 'processing')
   ));
 
-  // 4. Prompt semplice: cowork sa già come generare e pubblicare dal suo claude.md
+  // 3. Prompt
   const prompt = pubblica
     ? 'Leggi le tracce in input_articoli.md, genera gli articoli e pubblicali sul blog.'
     : 'Leggi le tracce in input_articoli.md e genera gli articoli (non pubblicare).';
@@ -176,7 +89,6 @@ export async function spawnCoworker(ids: string[], pubblica: boolean): Promise<v
     stdio: ['pipe', 'pipe', 'pipe'],
   });
 
-  // Passa il prompt via stdin — evita il problema di quoting shell con stringhe multi-parola
   proc.stdin?.write(prompt + '\n');
   proc.stdin?.end();
 
