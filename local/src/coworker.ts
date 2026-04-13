@@ -50,6 +50,21 @@ async function markAll(ids: string[], status: string): Promise<void> {
   await ArticleRequest.updateMany({ _id: { $in: ids } }, { status });
 }
 
+async function notifyTelegram(message: string): Promise<void> {
+  const token = process.env.TELEGRAM_TOKEN;
+  const chatId = process.env.TELEGRAM_ID;
+  if (!token || !chatId) return;
+  try {
+    await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chat_id: chatId, text: message }),
+    });
+  } catch (err) {
+    console.error('[Coworker] Errore notifica Telegram:', err);
+  }
+}
+
 // ── Main export ───────────────────────────────────────────────────────────────
 
 export async function spawnCoworker(ids: string[], pubblica: boolean): Promise<void> {
@@ -101,13 +116,19 @@ export async function spawnCoworker(ids: string[], pubblica: boolean): Promise<v
       await Promise.all(ids.map((id) =>
         log(id, 'coworker_done', 'Claude Code completato con successo', 'done')
       ));
-      console.log(`[Coworker] Batch completato (${ids.length} articoli).`);
+      const msg = pubblica
+        ? `✅ Completato e pubblicato — ${ids.length} articolo/i generati e pubblicati.`
+        : `✅ Completato — ${ids.length} articolo/i generati (non pubblicati).`;
+      console.log(`[Coworker] ${msg}`);
+      await notifyTelegram(msg);
     } else {
       await markAll(ids, 'error');
       await Promise.all(ids.map((id) =>
         log(id, 'coworker_error', `Claude Code terminato con codice ${code}`, 'error')
       ));
-      console.error(`[Coworker] Batch fallito (exit code ${code}).`);
+      const msg = `❌ Errore — Claude Code terminato con codice ${code} (${ids.length} articolo/i).`;
+      console.error(`[Coworker] ${msg}`);
+      await notifyTelegram(msg);
     }
   });
 
@@ -116,6 +137,8 @@ export async function spawnCoworker(ids: string[], pubblica: boolean): Promise<v
     await Promise.all(ids.map((id) =>
       log(id, 'coworker_error', `Errore spawn: ${err.message}`, 'error')
     ));
-    console.error('[Coworker] Errore spawn Claude Code:', err.message);
+    const msg = `❌ Errore avvio Claude Code: ${err.message}`;
+    console.error(`[Coworker] ${msg}`);
+    await notifyTelegram(msg);
   });
 }
