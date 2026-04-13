@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx kill-port:*)",
+      "WebFetch(domain:hcaire-blog-server-production.up.railway.app)"
+    ]
+  }
+}
