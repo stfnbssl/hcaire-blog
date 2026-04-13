@@ -21,12 +21,6 @@ const ACTOR_COLOR: Record<string, string> = {
   coworker: '#059669',
 };
 
-const STATUS_COLOR: Record<string, 'default' | 'warning' | 'success' | 'error'> = {
-  pending:    'default',
-  processing: 'warning',
-  done:       'success',
-  error:      'error',
-};
 
 export default function WorkflowLog() {
   const [logs,    setLogs]    = useState<WorkflowLog[]>([]);
@@ -74,7 +68,7 @@ export default function WorkflowLog() {
                 <TableCell sx={{ fontWeight: 600 }}>Step</TableCell>
                 <TableCell sx={{ fontWeight: 600 }}>Messaggio</TableCell>
                 <TableCell sx={{ fontWeight: 600 }}>Articolo (preview)</TableCell>
-                <TableCell sx={{ fontWeight: 600 }}>Status</TableCell>
+                <TableCell sx={{ fontWeight: 600 }}>Request ID</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -99,13 +93,8 @@ export default function WorkflowLog() {
                       {log.testoPreview || '—'}
                     </Box>
                   </TableCell>
-                  <TableCell>
-                    <Chip
-                      label={log.requestStatus}
-                      color={STATUS_COLOR[log.requestStatus] ?? 'default'}
-                      size="small"
-                      variant="outlined"
-                    />
+                  <TableCell sx={{ fontSize: 11, color: 'text.secondary', fontFamily: 'monospace', whiteSpace: 'nowrap' }}>
+                    {log.articleRequestId}
                   </TableCell>
                 </TableRow>
               ))}
