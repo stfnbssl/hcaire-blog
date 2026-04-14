@@ -5,29 +5,29 @@ export const contentService = {
   getAll: (page = 1, limit = 10) =>
     apiRequest<PaginatedResponse<Content>>(`/contents?page=${page}&limit=${limit}`),
 
-  getBySlug: (slug: string) =>
-    apiRequest<Content>(`/contents/${slug}`),
+  getBySlug: (slug: string, token?: string) =>
+    apiRequest<Content>(`/contents/${slug}`, { token }),
 
-  getAllAdmin: () =>
-    apiRequest<Content[]>('/contents/admin', { auth: true }),
+  getAllAdmin: (token?: string) =>
+    apiRequest<Content[]>('/contents/admin', { token }),
 
-  create: (data: ContentFormData) =>
+  create: (data: ContentFormData, token?: string) =>
     apiRequest<Content>('/contents', {
       method: 'POST',
       body: JSON.stringify(data),
-      auth: true,
+      token,
     }),
 
-  update: (id: string, data: Partial<ContentFormData>) =>
+  update: (id: string, data: Partial<ContentFormData>, token?: string) =>
     apiRequest<Content>(`/contents/${id}`, {
       method: 'PUT',
       body: JSON.stringify(data),
-      auth: true,
+      token,
     }),
 
-  delete: (id: string) =>
+  delete: (id: string, token?: string) =>
     apiRequest<{ message: string }>(`/contents/${id}`, {
       method: 'DELETE',
-      auth: true,
+      token,
     }),
 };

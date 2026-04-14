@@ -1,4 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
+import { useAuth } from '@clerk/clerk-react';
 import {
   Box, Typography, Chip, CircularProgress, Alert,
   Table, TableBody, TableCell, TableHead, TableRow, Paper,
@@ -23,13 +24,15 @@ const ACTOR_COLOR: Record<string, string> = {
 
 
 export default function WorkflowLog() {
+  const { getToken } = useAuth();
   const [logs,    setLogs]    = useState<WorkflowLog[]>([]);
   const [loading, setLoading] = useState(true);
   const [error,   setError]   = useState<string | null>(null);
 
   const load = useCallback(async () => {
     try {
-      const data = await getWorkflowLogs();
+      const token = await getToken();
+      const data  = await getWorkflowLogs(200, token ?? undefined);
       setLogs(data);
       setError(null);
     } catch (err) {
@@ -37,7 +40,7 @@ export default function WorkflowLog() {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [getToken]);
 
   useEffect(() => {
     load();

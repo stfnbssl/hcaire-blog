@@ -1,5 +1,7 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
+export type ContentAccessType = 'free' | 'plus';
+
 export interface IContent extends Document {
   slug: string;
   titolo: string;
@@ -10,6 +12,7 @@ export interface IContent extends Document {
   tags: string[];
   isPublished: boolean;
   isPinned: boolean;
+  accessType: ContentAccessType;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -25,6 +28,7 @@ const ContentSchema = new Schema<IContent>(
     tags:        [{ type: String }],
     isPublished: { type: Boolean, default: true },
     isPinned:    { type: Boolean, default: false },
+    accessType:  { type: String, enum: ['free', 'plus'], default: 'free' },
   },
   { timestamps: true, collection: 'hcaire-content' }
 );

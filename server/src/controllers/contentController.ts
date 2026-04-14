@@ -1,8 +1,10 @@
-import { Request, Response } from 'express';
+import { Response } from 'express';
 import Content from '../models/Content';
+import UserSubscription from '../models/UserSubscription';
 import { logWorkflow } from '../services/workflowLogger';
+import { ClerkRequest } from '../middleware/clerkAuth';
 
-export const getAllContents = async (req: Request, res: Response): Promise<void> => {
+export const getAllContents = async (req: ClerkRequest, res: Response): Promise<void> => {
   try {
     const page  = parseInt(req.query.page  as string) || 1;
     const limit = parseInt(req.query.limit as string) || 10;
@@ -26,20 +28,35 @@ export const getAllContents = async (req: Request, res: Response): Promise<void>
   }
 };
 
-export const getContentBySlug = async (req: Request, res: Response): Promise<void> => {
+export const getContentBySlug = async (req: ClerkRequest, res: Response): Promise<void> => {
   try {
     const content = await Content.findOne({ slug: req.params.slug, isPublished: true });
     if (!content) {
       res.status(404).json({ error: 'Contenuto non trovato' });
       return;
     }
+
+    if (content.accessType === 'plus') {
+      let hasAccess = false;
+      if (req.clerkUserId) {
+        const sub = await UserSubscription.findOne({ clerkUserId: req.clerkUserId });
+        hasAccess = !!sub && ['active', 'on_trial'].includes(sub.status);
+      }
+      if (!hasAccess) {
+        const teaser = content.toObject();
+        teaser.contenuto = '';
+        res.json({ ...teaser, locked: true });
+        return;
+      }
+    }
+
     res.json(content);
   } catch {
     res.status(500).json({ error: 'Errore nel recupero del contenuto' });
   }
 };
 
-export const getAllContentsAdmin = async (_req: Request, res: Response): Promise<void> => {
+export const getAllContentsAdmin = async (_req: ClerkRequest, res: Response): Promise<void> => {
   try {
     const contents = await Content.find().sort({ createdAt: -1 });
     res.json(contents);
@@ -48,7 +65,7 @@ export const getAllContentsAdmin = async (_req: Request, res: Response): Promise
   }
 };
 
-export const createContent = async (req: Request, res: Response): Promise<void> => {
+export const createContent = async (req: ClerkRequest, res: Response): Promise<void> => {
   try {
     const content = new Content(req.body);
     await content.save();
@@ -75,7 +92,7 @@ export const createContent = async (req: Request, res: Response): Promise<void> 
   }
 };
 
-export const updateContent = async (req: Request, res: Response): Promise<void> => {
+export const updateContent = async (req: ClerkRequest, res: Response): Promise<void> => {
   try {
     const content = await Content.findByIdAndUpdate(
       req.params.id,
@@ -92,7 +109,7 @@ export const updateContent = async (req: Request, res: Response): Promise<void> 
   }
 };
 
-export const deleteContent = async (req: Request, res: Response): Promise<void> => {
+export const deleteContent = async (req: ClerkRequest, res: Response): Promise<void> => {
   try {
     const content = await Content.findByIdAndDelete(req.params.id);
     if (!content) {

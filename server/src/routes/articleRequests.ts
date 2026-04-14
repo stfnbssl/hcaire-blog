@@ -1,12 +1,12 @@
 import { Router } from 'express';
 import { getAllArticleRequests, getAllWorkflowLogs, addWorkflowLog } from '../controllers/articleRequestController';
-import { authenticateToken } from '../middleware/auth';
+import { authenticateClerk, requireAdmin } from '../middleware/clerkAuth';
 import { authenticateApiKey } from '../middleware/apiKeyAuth';
 
 const router = Router();
 
-router.get('/',          authenticateToken, getAllArticleRequests);
-router.get('/logs',      authenticateToken, getAllWorkflowLogs);
+router.get('/',          authenticateClerk, requireAdmin, getAllArticleRequests);
+router.get('/logs',      authenticateClerk, requireAdmin, getAllWorkflowLogs);
 router.post('/:id/log',  authenticateApiKey, addWorkflowLog);
 
 export default router;

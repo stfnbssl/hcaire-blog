@@ -1,28 +1,22 @@
 import { API_URL } from '../utils/constants';
 
 interface RequestOptions extends RequestInit {
-  auth?: boolean;
-  clerkToken?: string;
+  token?: string;
 }
 
 export async function apiRequest<T>(
   endpoint: string,
   options: RequestOptions = {}
 ): Promise<T> {
-  const { auth = false, clerkToken, ...fetchOptions } = options;
+  const { token, ...fetchOptions } = options;
 
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
     ...(fetchOptions.headers as Record<string, string>),
   };
 
-  if (auth) {
-    const token = localStorage.getItem('token');
-    if (token) headers['Authorization'] = `Bearer ${token}`;
-  }
-
-  if (clerkToken) {
-    headers['Authorization'] = `Bearer ${clerkToken}`;
+  if (token) {
+    headers['Authorization'] = `Bearer ${token}`;
   }
 
   const response = await fetch(`${API_URL}${endpoint}`, {

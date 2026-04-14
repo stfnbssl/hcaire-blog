@@ -1,3 +1,5 @@
+export type ContentAccessType = 'free' | 'plus';
+
 export interface Content {
   _id: string;
   slug: string;
@@ -9,6 +11,8 @@ export interface Content {
   tags: string[];
   isPublished: boolean;
   isPinned: boolean;
+  accessType: ContentAccessType;
+  locked?: boolean;
   createdAt: string;
   updatedAt: string;
 }
@@ -35,4 +39,5 @@ export interface ContentFormData {
   tags: string[];
   isPublished: boolean;
   isPinned: boolean;
+  accessType: ContentAccessType;
 }

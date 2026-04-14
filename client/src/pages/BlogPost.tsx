@@ -1,10 +1,12 @@
 import { useParams, Link } from 'react-router-dom';
+import { useAuth } from '@clerk/clerk-react';
 import { useFetchContent } from '../hooks/useFetchContent';
 import MarkdownRenderer from '../components/MarkdownRenderer';
 
 export default function BlogPost() {
   const { slug = '' } = useParams<{ slug: string }>();
-  const { content, loading, error } = useFetchContent(slug);
+  const { getToken } = useAuth();
+  const { content, loading, error } = useFetchContent(slug, getToken);
 
   return (
     <main className="max-w-3xl mx-auto px-4 py-12">
@@ -53,7 +55,23 @@ export default function BlogPost() {
               </div>
             )}
           </header>
-          <MarkdownRenderer content={content.contenuto} />
+          {content.locked ? (
+            <div className="mt-8 rounded-xl border border-amber-200 bg-amber-50 p-8 text-center">
+              <div className="text-4xl mb-3">🔒</div>
+              <h2 className="text-xl font-semibold text-gray-900 mb-2">Contenuto riservato agli abbonati Plus</h2>
+              <p className="text-gray-600 mb-6 max-w-md mx-auto">
+                Questo articolo è disponibile solo per i membri Plus. Abbonati per accedere a tutti i contenuti esclusivi.
+              </p>
+              <Link
+                to="/pricing"
+                className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+              >
+                Scopri i piani Plus
+              </Link>
+            </div>
+          ) : (
+            <MarkdownRenderer content={content.contenuto} />
+          )}
         </article>
       )}
     </main>

@@ -20,11 +20,18 @@ export default function Home() {
             {result.data.map((post) => (
               <Link key={post._id} to={`/blog/${post.slug}`}>
                 <article className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow h-full flex flex-col">
-                  {post.isPinned && (
-                    <span className="text-xs font-semibold text-primary-600 uppercase tracking-wide mb-2">
-                      In evidenza
-                    </span>
-                  )}
+                  <div className="flex items-center gap-2 mb-2">
+                    {post.isPinned && (
+                      <span className="text-xs font-semibold text-primary-600 uppercase tracking-wide">
+                        In evidenza
+                      </span>
+                    )}
+                    {post.accessType === 'plus' && (
+                      <span className="text-xs font-semibold text-amber-600 uppercase tracking-wide flex items-center gap-1">
+                        🔒 Plus
+                      </span>
+                    )}
+                  </div>
                   <h2 className="text-xl font-semibold text-gray-900 mb-2">{post.titolo}</h2>
                   <p className="text-gray-600 text-sm mb-4 flex-grow">{post.descrizione}</p>
                   <div className="flex items-center justify-between text-xs text-gray-400">

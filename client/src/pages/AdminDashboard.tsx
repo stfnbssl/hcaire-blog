@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { useAuthContext } from '../context/AuthContext';
+import { useAuth } from '@clerk/clerk-react';
 import { contentService } from '../services/contentService';
 import { Content, ContentFormData } from '../types/content';
 import {
@@ -7,7 +7,7 @@ import {
   Table, TableBody, TableCell, TableHead, TableRow,
   Dialog, DialogTitle, DialogContent, DialogActions,
   TextField, Alert, Chip, CircularProgress,
-  Paper, TableContainer, FormControlLabel, Switch,
+  Paper, TableContainer, FormControlLabel, Switch, Select, MenuItem, InputLabel, FormControl,
 } from '@mui/material';
 
 // File System Access API — disponibile su Chrome/Edge ma non su Firefox
@@ -18,7 +18,7 @@ declare global { interface Window { showDirectoryPicker?(): Promise<FsDirHandle>
 const DEFAULT_FORM: ContentFormData = {
   slug: '', titolo: '', descrizione: '', contenuto: '',
   autore: 'admin', categoria: 'general', tags: [],
-  isPublished: true, isPinned: false,
+  isPublished: true, isPinned: false, accessType: 'free',
 };
 
 function ContentForm({
@@ -90,6 +90,17 @@ function ContentForm({
         label={form.isPublished ? 'Pubblicato' : 'Bozza'}
         sx={{ mb: 2 }}
       />
+      <FormControl fullWidth sx={{ mb: 2 }}>
+        <InputLabel>Accesso</InputLabel>
+        <Select
+          label="Accesso"
+          value={form.accessType}
+          onChange={(e) => setForm({ ...form, accessType: e.target.value as 'free' | 'plus' })}
+        >
+          <MenuItem value="free">Libero (tutti)</MenuItem>
+          <MenuItem value="plus">Plus (abbonati)</MenuItem>
+        </Select>
+      </FormControl>
       <DialogActions sx={{ px: 0 }}>
         <Button onClick={onCancel} disabled={loading}>Annulla</Button>
         <Button variant="contained" onClick={handleSave} disabled={loading}>
@@ -101,7 +112,7 @@ function ContentForm({
 }
 
 export default function AdminDashboard() {
-  const { username, logout } = useAuthContext();
+  const { getToken } = useAuth();
   const [contents,      setContents]      = useState<Content[]>([]);
   const [loading,       setLoading]       = useState(true);
   const [error,         setError]         = useState<string | null>(null);
@@ -197,25 +208,32 @@ export default function AdminDashboard() {
     openCreateWithData({ ...meta, contenuto: fallbackMd.current, isPublished: false });
   };
 
-  const load = () => {
+  const load = async () => {
     setLoading(true);
-    contentService.getAllAdmin()
-      .then(setContents)
-      .catch((err: Error) => setError(err.message))
-      .finally(() => setLoading(false));
+    try {
+      const token = await getToken();
+      const data  = await contentService.getAllAdmin(token ?? undefined);
+      setContents(data);
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Errore caricamento');
+    } finally {
+      setLoading(false);
+    }
   };
 
-  useEffect(() => { load(); }, []);
+  useEffect(() => { load(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleCreate = async (data: ContentFormData) => {
-    await contentService.create(data);
+    const token = await getToken();
+    await contentService.create(data, token ?? undefined);
     setDialogMode(null);
     load();
   };
 
   const handleEdit = async (data: ContentFormData) => {
     if (!selected) return;
-    await contentService.update(selected._id, data);
+    const token = await getToken();
+    await contentService.update(selected._id, data, token ?? undefined);
     setDialogMode(null);
     setSelected(null);
     load();
@@ -223,20 +241,15 @@ export default function AdminDashboard() {
 
   const handleDelete = async () => {
     if (!deleteConfirm) return;
-    await contentService.delete(deleteConfirm._id);
+    const token = await getToken();
+    await contentService.delete(deleteConfirm._id, token ?? undefined);
     setDeleteConfirm(null);
     load();
   };
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <div className="flex items-center justify-between mb-8">
-        <h1 className="text-2xl font-bold text-gray-900">Admin Dashboard</h1>
-        <div className="flex items-center gap-4">
-          <span className="text-sm text-gray-600">Ciao, {username}</span>
-          <Button variant="outlined" size="small" onClick={logout}>Logout</Button>
-        </div>
-      </div>
+      <h1 className="text-2xl font-bold text-gray-900 mb-8">Admin Dashboard</h1>
 
       {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
 
@@ -263,6 +276,7 @@ export default function AdminDashboard() {
                 <TableCell><strong>Titolo</strong></TableCell>
                 <TableCell><strong>Slug</strong></TableCell>
                 <TableCell><strong>Categoria</strong></TableCell>
+                <TableCell><strong>Accesso</strong></TableCell>
                 <TableCell><strong>Stato</strong></TableCell>
                 <TableCell><strong>Data</strong></TableCell>
                 <TableCell align="right"><strong>Azioni</strong></TableCell>
@@ -274,6 +288,13 @@ export default function AdminDashboard() {
                   <TableCell>{item.titolo}</TableCell>
                   <TableCell sx={{ color: 'text.secondary', fontSize: '0.75rem' }}>{item.slug}</TableCell>
                   <TableCell>{item.categoria}</TableCell>
+                  <TableCell>
+                    <Chip
+                      label={item.accessType === 'plus' ? 'Plus' : 'Libero'}
+                      size="small"
+                      color={item.accessType === 'plus' ? 'warning' : 'default'}
+                    />
+                  </TableCell>
                   <TableCell>
                     <Chip
                       label={item.isPublished ? 'Pubblicato' : 'Bozza'}

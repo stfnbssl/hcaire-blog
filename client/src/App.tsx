@@ -1,19 +1,19 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
-import { ClerkProvider } from '@clerk/clerk-react';
-import { AuthProvider, useAuthContext } from './context/AuthContext';
+import { ClerkProvider, useUser } from '@clerk/clerk-react';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import AdminLayout from './components/AdminLayout';
 import Home from './pages/Home';
 import About from './pages/About';
 import BlogPost from './pages/BlogPost';
 import NotFound from './pages/NotFound';
-import LoginForm from './components/LoginForm';
 import Pricing from './pages/Pricing';
 
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
 const WorkflowLog    = lazy(() => import('./pages/WorkflowLog'));
+const AdminRequests  = lazy(() => import('./pages/AdminRequests'));
 
 const clerkPublishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string;
 
@@ -35,9 +35,29 @@ const AdminSuspense = ({ children }: { children: React.ReactNode }) => (
 );
 
 function AdminRoute({ children }: { children: React.ReactNode }) {
-  const { isAuthenticated } = useAuthContext();
-  if (!isAuthenticated) return <LoginForm />;
-  return <AdminSuspense>{children}</AdminSuspense>;
+  const { isLoaded, isSignedIn, user } = useUser();
+
+  if (!isLoaded) {
+    return (
+      <div className="flex justify-center py-16">
+        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary-600" />
+      </div>
+    );
+  }
+
+  if (!isSignedIn || user?.publicMetadata?.role !== 'admin') {
+    return (
+      <div className="max-w-md mx-auto px-4 py-24 text-center">
+        <p className="text-gray-600 text-lg">Accesso riservato agli amministratori.</p>
+      </div>
+    );
+  }
+
+  return (
+    <AdminLayout>
+      <AdminSuspense>{children}</AdminSuspense>
+    </AdminLayout>
+  );
 }
 
 function AppLayout() {
@@ -46,13 +66,14 @@ function AppLayout() {
       <Navigation />
       <div className="flex-grow">
         <Routes>
-          <Route path="/"           element={<Home />} />
-          <Route path="/about"      element={<About />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/pricing"        element={<Pricing />} />
-          <Route path="/admin"          element={<AdminRoute><AdminDashboard /></AdminRoute>} />
-          <Route path="/admin/workflow" element={<AdminRoute><WorkflowLog /></AdminRoute>} />
-          <Route path="*"           element={<NotFound />} />
+          <Route path="/"                element={<Home />} />
+          <Route path="/about"           element={<About />} />
+          <Route path="/blog/:slug"      element={<BlogPost />} />
+          <Route path="/pricing"         element={<Pricing />} />
+          <Route path="/admin"           element={<AdminRoute><AdminDashboard /></AdminRoute>} />
+          <Route path="/admin/workflow"  element={<AdminRoute><WorkflowLog /></AdminRoute>} />
+          <Route path="/admin/requests"  element={<AdminRoute><AdminRequests /></AdminRoute>} />
+          <Route path="*"               element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
@@ -65,11 +86,9 @@ export default function App() {
     <ClerkProvider publishableKey={clerkPublishableKey}>
       <ThemeProvider theme={muiTheme}>
         <CssBaseline />
-        <AuthProvider>
-          <BrowserRouter>
-            <AppLayout />
-          </BrowserRouter>
-        </AuthProvider>
+        <BrowserRouter>
+          <AppLayout />
+        </BrowserRouter>
       </ThemeProvider>
     </ClerkProvider>
   );
