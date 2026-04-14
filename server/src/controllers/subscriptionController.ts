@@ -1,22 +1,43 @@
 import { Response } from 'express';
-import UserSubscription from '../models/UserSubscription';
+import UserSubscription, { type SubscriptionPlan } from '../models/UserSubscription';
 import type { ClerkRequest } from '../middleware/clerkAuth';
 
 // GET /api/subscriptions/status
 export const getStatus = async (req: ClerkRequest, res: Response): Promise<void> => {
   try {
     const sub = await UserSubscription.findOne({ clerkUserId: req.clerkUserId });
-    res.json({ status: sub?.status ?? 'none', currentPeriodEnd: sub?.currentPeriodEnd ?? null });
+    res.json({
+      status:          sub?.status          ?? 'none',
+      plan:            sub?.plan            ?? 'none',
+      currentPeriodEnd: sub?.currentPeriodEnd ?? null,
+    });
   } catch {
     res.status(500).json({ error: 'Errore recupero subscription' });
   }
 };
 
-// POST /api/subscriptions/checkout
+// Plan → Lemon Squeezy variant ID
+function planToVariantId(plan: string): string | null {
+  const map: Record<string, string | undefined> = {
+    abbonato:     process.env.LEMONSQUEEZY_VARIANT_ABBONATO,
+    bartleby:     process.env.LEMONSQUEEZY_VARIANT_BARTLEBY,
+    bartleby_plus: process.env.LEMONSQUEEZY_VARIANT_BARTLEBY_PLUS,
+  };
+  return map[plan] ?? null;
+}
+
+// POST /api/subscriptions/checkout   body: { plan: 'abbonato' | 'bartleby' | 'bartleby_plus' }
 export const createCheckout = async (req: ClerkRequest, res: Response): Promise<void> => {
-  const storeId   = process.env.LEMONSQUEEZY_STORE_ID!;
-  const variantId = process.env.LEMONSQUEEZY_VARIANT_ID!;
-  const apiKey    = process.env.LEMONSQUEEZY_API_KEY!;
+  const storeId  = process.env.LEMONSQUEEZY_STORE_ID!;
+  const apiKey   = process.env.LEMONSQUEEZY_API_KEY!;
+
+  const requestedPlan = (req.body?.plan as string) ?? 'abbonato';
+  const variantId     = planToVariantId(requestedPlan);
+
+  if (!variantId) {
+    res.status(400).json({ error: `Piano non riconosciuto: ${requestedPlan}` });
+    return;
+  }
 
   try {
     const body = {
@@ -52,8 +73,8 @@ export const createCheckout = async (req: ClerkRequest, res: Response): Promise<
     }
 
     const data = await lsRes.json() as Record<string, unknown>;
-    const checkoutUrl = (data?.['data'] as Record<string, unknown>)?.['attributes'] as Record<string, unknown> | undefined;
-    const url = (checkoutUrl?.['url']) as string | undefined;
+    const checkoutAttrs = (data?.['data'] as Record<string, unknown>)?.['attributes'] as Record<string, unknown> | undefined;
+    const url = checkoutAttrs?.['url'] as string | undefined;
     res.json({ checkoutUrl: url });
   } catch (err) {
     console.error('[Checkout] Error:', err);
@@ -83,10 +104,10 @@ export const getPortalUrl = async (req: ClerkRequest, res: Response): Promise<vo
       return;
     }
 
-    const data       = await lsRes.json() as Record<string, unknown>;
-    const attrs      = ((data?.['data'] as Record<string, unknown>)?.['attributes'] as Record<string, unknown> | undefined);
-    const urls       = attrs?.['urls'] as Record<string, unknown> | undefined;
-    const portalUrl  = urls?.['customer_portal'] as string | undefined;
+    const data      = await lsRes.json() as Record<string, unknown>;
+    const attrs     = ((data?.['data'] as Record<string, unknown>)?.['attributes'] as Record<string, unknown> | undefined);
+    const urls      = attrs?.['urls'] as Record<string, unknown> | undefined;
+    const portalUrl = urls?.['customer_portal'] as string | undefined;
     res.json({ portalUrl });
   } catch (err) {
     console.error('[Portal] Error:', err);

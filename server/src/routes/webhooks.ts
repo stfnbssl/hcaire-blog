@@ -51,6 +51,14 @@ router.post(
 
     console.log(`[Webhook] Lemon Squeezy event: ${eventName}, clerkUserId: ${clerkUserId}`);
 
+    // Map variant ID → plan tier
+    function variantToPlan(variantId: string): import('../models/UserSubscription').SubscriptionPlan {
+      if (variantId === process.env.LEMONSQUEEZY_VARIANT_ABBONATO)     return 'abbonato';
+      if (variantId === process.env.LEMONSQUEEZY_VARIANT_BARTLEBY)     return 'bartleby';
+      if (variantId === process.env.LEMONSQUEEZY_VARIANT_BARTLEBY_PLUS) return 'bartleby_plus';
+      return 'none';
+    }
+
     const handledEvents = [
       'subscription_created', 'subscription_updated',
       'subscription_cancelled', 'subscription_expired',
@@ -59,14 +67,20 @@ router.post(
 
     if (eventName && handledEvents.includes(eventName) && clerkUserId) {
       try {
+        const lsVariantId = String(attrs?.['variant_id'] ?? '');
+        const newStatus   = (attrs?.['status'] as string) ?? 'none';
+        const isActive    = ['active', 'on_trial'].includes(newStatus);
+        const plan        = isActive ? variantToPlan(lsVariantId) : 'none';
+
         await UserSubscription.findOneAndUpdate(
           { clerkUserId },
           {
             $set: {
               lsSubscriptionId: (dataObj?.['id'] as string) ?? '',
               lsCustomerId:     String(attrs?.['customer_id'] ?? ''),
-              lsVariantId:      String(attrs?.['variant_id']  ?? ''),
-              status:           (attrs?.['status'] as string) ?? 'none',
+              lsVariantId,
+              plan,
+              status:           newStatus,
               currentPeriodEnd: attrs?.['renews_at']
                 ? new Date(attrs['renews_at'] as string)
                 : null,
@@ -74,7 +88,7 @@ router.post(
           },
           { upsert: true, new: true }
         );
-        console.log(`[Webhook] UserSubscription aggiornata per ${clerkUserId}: ${attrs?.['status']}`);
+        console.log(`[Webhook] UserSubscription aggiornata per ${clerkUserId}: status=${newStatus}, plan=${plan}`);
       } catch (err) {
         console.error('[Webhook] Errore aggiornamento UserSubscription:', err);
       }

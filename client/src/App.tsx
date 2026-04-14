@@ -10,6 +10,7 @@ import About from './pages/About';
 import BlogPost from './pages/BlogPost';
 import NotFound from './pages/NotFound';
 import Pricing from './pages/Pricing';
+import WorkInProgress from './pages/WorkInProgress';
 
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
 const WorkflowLog    = lazy(() => import('./pages/WorkflowLog'));
@@ -70,6 +71,7 @@ function AppLayout() {
           <Route path="/about"           element={<About />} />
           <Route path="/blog/:slug"      element={<BlogPost />} />
           <Route path="/pricing"         element={<Pricing />} />
+          <Route path="/bartleby"        element={<WorkInProgress />} />
           <Route path="/admin"           element={<AdminRoute><AdminDashboard /></AdminRoute>} />
           <Route path="/admin/workflow"  element={<AdminRoute><WorkflowLog /></AdminRoute>} />
           <Route path="/admin/requests"  element={<AdminRoute><AdminRequests /></AdminRoute>} />

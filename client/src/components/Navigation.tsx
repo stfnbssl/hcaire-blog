@@ -4,6 +4,7 @@ import { useFetchNavigation } from '../hooks/useFetchNavigation';
 import { NavigationItem } from '../types/navigation';
 import { APP_NAME } from '../utils/constants';
 import UserNav from './UserNav';
+import { useSubscription } from '../hooks/useSubscription';
 
 function navPath(item: NavigationItem): string {
   return item.isSpecial ? `/${item.slug}` : `/blog/${item.slug}`;
@@ -13,6 +14,7 @@ export default function Navigation() {
   const { items } = useFetchNavigation();
   const location  = useLocation();
   const [open, setOpen] = useState(false);
+  const { isBartleby } = useSubscription();
 
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
@@ -30,6 +32,11 @@ export default function Navigation() {
                 {item.titolo}
               </NavLink>
             ))}
+            {isBartleby && (
+              <NavLink to="/bartleby" active={location.pathname.startsWith('/bartleby')}>
+                Bartleby
+              </NavLink>
+            )}
             <UserNav />
           </div>
 
@@ -54,6 +61,9 @@ export default function Navigation() {
                 {item.titolo}
               </MobileNavLink>
             ))}
+            {isBartleby && (
+              <MobileNavLink to="/bartleby" onClick={() => setOpen(false)}>Bartleby</MobileNavLink>
+            )}
           </div>
         )}
       </div>

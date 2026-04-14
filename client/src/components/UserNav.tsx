@@ -2,10 +2,16 @@ import { useAuth, useUser, SignInButton, UserButton } from '@clerk/clerk-react';
 import { Link } from 'react-router-dom';
 import { useSubscription } from '../hooks/useSubscription';
 
+const PLAN_LABEL: Record<string, string> = {
+  abbonato:      'Abbonato',
+  bartleby:      'Bartleby',
+  bartleby_plus: 'Bartleby+',
+};
+
 export default function UserNav() {
   const { isSignedIn, isLoaded } = useAuth();
   const { user } = useUser();
-  const { subscription } = useSubscription();
+  const { subscription, isActive } = useSubscription();
 
   if (!isLoaded) return null;
 
@@ -27,7 +33,10 @@ export default function UserNav() {
     );
   }
 
-  const isActive = subscription?.status === 'active' || subscription?.status === 'on_trial';
+  const planKey = subscription?.plan ?? 'none';
+  const label   = planKey !== 'none'
+    ? (subscription?.status === 'on_trial' ? 'Trial' : PLAN_LABEL[planKey] ?? 'Pro')
+    : null;
 
   return (
     <div className="flex items-center gap-3">
@@ -39,12 +48,14 @@ export default function UserNav() {
           Abbonati
         </Link>
       )}
-      {isActive && (
+      {isActive && label && (
         <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium">
-          {subscription?.status === 'on_trial' ? 'Trial' : 'Pro'}
+          {label}
         </span>
       )}
-      <span className="text-sm text-gray-600 hidden sm:inline">{user?.firstName ?? user?.emailAddresses[0]?.emailAddress}</span>
+      <span className="text-sm text-gray-600 hidden sm:inline">
+        {user?.firstName ?? user?.emailAddresses[0]?.emailAddress}
+      </span>
       <UserButton afterSignOutUrl="/" />
     </div>
   );

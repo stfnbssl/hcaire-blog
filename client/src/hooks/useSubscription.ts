@@ -5,8 +5,8 @@ import { getSubscriptionStatus, type SubscriptionStatus } from '../services/subs
 export function useSubscription() {
   const { getToken, isSignedIn } = useAuth();
   const [subscription, setSubscription] = useState<SubscriptionStatus | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading]           = useState(false);
+  const [error, setError]               = useState<string | null>(null);
 
   useEffect(() => {
     if (!isSignedIn) {
@@ -34,5 +34,10 @@ export function useSubscription() {
     return () => { cancelled = true; };
   }, [isSignedIn, getToken]);
 
-  return { subscription, loading, error };
+  const isActive      = subscription?.status === 'active' || subscription?.status === 'on_trial';
+  const isAbbonato    = isActive && (subscription?.plan === 'abbonato' || subscription?.plan === 'bartleby' || subscription?.plan === 'bartleby_plus');
+  const isBartleby    = isActive && (subscription?.plan === 'bartleby' || subscription?.plan === 'bartleby_plus');
+  const isBartlebyPlus = isActive && subscription?.plan === 'bartleby_plus';
+
+  return { subscription, loading, error, isActive, isAbbonato, isBartleby, isBartlebyPlus };
 }
