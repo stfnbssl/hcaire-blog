@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import { clerkMiddleware } from '@clerk/express';
 import { connectDB } from './config/db';
 import contentRoutes from './routes/content';
 import navRoutes from './routes/nav';
@@ -19,6 +20,8 @@ app.use(cors({ origin: process.env.CORS_ORIGIN || 'http://localhost:5173' }));
 
 // CRITICAL: webhook route BEFORE express.json() — needs raw body
 app.use('/webhooks', webhookRoutes);
+
+app.use(clerkMiddleware());
 
 app.use(express.json({ limit: '10mb' }));
 

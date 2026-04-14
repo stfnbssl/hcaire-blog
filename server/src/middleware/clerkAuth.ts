@@ -1,67 +1,49 @@
 import { Request, Response, NextFunction } from 'express';
-import { verifyToken, createClerkClient } from '@clerk/backend';
+import { requireAuth, getAuth } from '@clerk/express';
+import { createClerkClient } from '@clerk/backend';
 
 export interface ClerkRequest extends Request {
   clerkUserId?: string;
 }
 
-export const authenticateClerk = async (
-  req: ClerkRequest,
-  res: Response,
-  next: NextFunction
-): Promise<void> => {
-  const authHeader = req.headers['authorization'];
-  const token      = authHeader?.split(' ')[1];
+// Richiede autenticazione Clerk (401 se assente, 403 se token non valido).
+// Usa @clerk/express che legge sia cookie che Bearer token.
+export const authenticateClerk = requireAuth();
 
-  if (!token) {
-    res.status(401).json({ error: 'Clerk token required' });
-    return;
-  }
-
-  try {
-    const payload = await verifyToken(token, { secretKey: process.env.CLERK_SECRET_KEY! });
-    req.clerkUserId = payload.sub;
-    next();
-  } catch {
-    res.status(403).json({ error: 'Invalid or expired Clerk token' });
-  }
-};
-
-// Tenta di identificare l'utente ma non blocca se il token è assente o non valido
-export const optionalClerkAuth = async (
+// Imposta clerkUserId se l'utente è autenticato, prosegue comunque se assente.
+// Funziona perché clerkMiddleware() è già applicato globalmente in index.ts.
+export const optionalClerkAuth = (
   req: ClerkRequest,
   _res: Response,
   next: NextFunction
-): Promise<void> => {
-  const token = req.headers['authorization']?.split(' ')[1];
-  if (token) {
-    try {
-      const payload = await verifyToken(token, { secretKey: process.env.CLERK_SECRET_KEY! });
-      req.clerkUserId = payload.sub;
-    } catch {
-      // token non valido — prosegui come utente anonimo
-    }
-  }
+): void => {
+  const auth = getAuth(req);
+  req.clerkUserId = auth.userId ?? undefined;
   next();
 };
 
-// Da usare dopo authenticateClerk: verifica che l'utente abbia role === 'admin'
+// Da usare dopo authenticateClerk: verifica che l'utente abbia role === 'admin'.
 export const requireAdmin = async (
   req: ClerkRequest,
   res: Response,
   next: NextFunction
 ): Promise<void> => {
-  if (!req.clerkUserId) {
+  const auth = getAuth(req);
+  const userId = auth.userId;
+
+  if (!userId) {
     res.status(401).json({ error: 'Autenticazione richiesta' });
     return;
   }
+
   try {
     const clerkClient = createClerkClient({ secretKey: process.env.CLERK_SECRET_KEY! });
-    const user = await clerkClient.users.getUser(req.clerkUserId);
+    const user = await clerkClient.users.getUser(userId);
     if (user.publicMetadata?.role !== 'admin') {
       res.status(403).json({ error: 'Accesso riservato agli amministratori' });
       return;
     }
+    req.clerkUserId = userId;
     next();
   } catch {
     res.status(403).json({ error: 'Impossibile verificare i permessi utente' });
