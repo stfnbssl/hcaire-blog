@@ -44,9 +44,13 @@ app.listen(PORT, () => {
 
 connectDB()
   .then(() => {
-    startTelegramBot();
+    try {
+      startTelegramBot();
+    } catch (err) {
+      console.error('[Startup] Telegram bot non avviato:', err);
+    }
   })
   .catch((err) => {
-    console.error('Startup error:', err);
+    console.error('Startup error (DB):', err);
     process.exit(1);
   });

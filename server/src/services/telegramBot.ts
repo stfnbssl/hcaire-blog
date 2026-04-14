@@ -17,7 +17,13 @@ export function startTelegramBot(): void {
 
   const allowedUserId = parseInt(allowedId, 10);
   const bot           = new Telegraf(token);
-  const redis         = getRedisClient();
+  let redis;
+  try {
+    redis = getRedisClient();
+  } catch (err) {
+    console.warn('[Telegram] Redis non disponibile — bot non avviato:', err);
+    return;
+  }
 
   bot.on('text', async (ctx) => {
     if (ctx.from.id !== allowedUserId) {
