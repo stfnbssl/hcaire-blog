@@ -33,6 +33,7 @@ export default function UserNav() {
     );
   }
 
+  const isAdmin = user?.publicMetadata?.role === 'admin';
   const planKey = subscription?.plan ?? 'none';
   const label   = planKey !== 'none'
     ? (subscription?.status === 'on_trial' ? 'Trial' : PLAN_LABEL[planKey] ?? 'Pro')
@@ -40,7 +41,7 @@ export default function UserNav() {
 
   return (
     <div className="flex items-center gap-3">
-      {!isActive && (
+      {!isActive && !isAdmin && (
         <Link
           to="/pricing"
           className="text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
