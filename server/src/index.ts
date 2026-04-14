@@ -1,3 +1,4 @@
+import path from 'path';
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -11,7 +12,7 @@ import webhookRoutes from './routes/webhooks';
 import subscriptionRoutes from './routes/subscriptions';
 import { startTelegramBot } from './services/telegramBot';
 
-dotenv.config();
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const app  = express();
 const PORT = process.env.PORT || 3018;
