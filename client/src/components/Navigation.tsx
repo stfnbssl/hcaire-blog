@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
+import { useUser } from '@clerk/clerk-react';
 import { useFetchNavigation } from '../hooks/useFetchNavigation';
 import { NavigationItem } from '../types/navigation';
 import { APP_NAME } from '../utils/constants';
@@ -15,6 +16,8 @@ export default function Navigation() {
   const location  = useLocation();
   const [open, setOpen] = useState(false);
   const { isBartleby } = useSubscription();
+  const { user } = useUser();
+  const isAdmin = user?.publicMetadata?.role === 'admin';
 
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
@@ -35,6 +38,11 @@ export default function Navigation() {
             {isBartleby && (
               <NavLink to="/bartleby" active={location.pathname.startsWith('/bartleby')}>
                 Bartleby
+              </NavLink>
+            )}
+            {isAdmin && (
+              <NavLink to="/admin" active={location.pathname.startsWith('/admin')}>
+                Admin
               </NavLink>
             )}
             <UserNav />
@@ -63,6 +71,9 @@ export default function Navigation() {
             ))}
             {isBartleby && (
               <MobileNavLink to="/bartleby" onClick={() => setOpen(false)}>Bartleby</MobileNavLink>
+            )}
+            {isAdmin && (
+              <MobileNavLink to="/admin" onClick={() => setOpen(false)}>Admin</MobileNavLink>
             )}
           </div>
         )}

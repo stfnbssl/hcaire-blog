@@ -2,7 +2,7 @@ import { Response } from 'express';
 import Content from '../models/Content';
 import UserSubscription from '../models/UserSubscription';
 import { logWorkflow } from '../services/workflowLogger';
-import { ClerkRequest } from '../middleware/clerkAuth';
+import { ClerkRequest, checkIsAdmin } from '../middleware/clerkAuth';
 
 export const getAllContents = async (req: ClerkRequest, res: Response): Promise<void> => {
   try {
@@ -39,8 +39,11 @@ export const getContentBySlug = async (req: ClerkRequest, res: Response): Promis
     if (content.accessType === 'plus') {
       let hasAccess = false;
       if (req.clerkUserId) {
-        const sub = await UserSubscription.findOne({ clerkUserId: req.clerkUserId });
-        hasAccess = !!sub && ['active', 'on_trial'].includes(sub.status);
+        const [sub, isAdmin] = await Promise.all([
+          UserSubscription.findOne({ clerkUserId: req.clerkUserId }),
+          checkIsAdmin(req.clerkUserId),
+        ]);
+        hasAccess = isAdmin || (!!sub && ['active', 'on_trial'].includes(sub.status));
       }
       if (!hasAccess) {
         const teaser = content.toObject();

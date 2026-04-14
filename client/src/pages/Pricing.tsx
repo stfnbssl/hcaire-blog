@@ -4,7 +4,7 @@ import { createCheckout, getPortalUrl, type SubscriptionPlan } from '../services
 import { useSubscription } from '../hooks/useSubscription';
 
 interface Plan {
-  id:       SubscriptionPlan;
+  id:       SubscriptionPlan | 'free';
   name:     string;
   price:    string;
   period:   string;
@@ -14,6 +14,17 @@ interface Plan {
 }
 
 const PLANS: Plan[] = [
+  {
+    id:      'free',
+    name:    'Gratuito',
+    price:   '€0',
+    period:  '/mese',
+    tagline: 'Accesso agli articoli pubblici',
+    features: [
+      'Tutti gli articoli gratuiti',
+      'Nessuna carta di credito richiesta',
+    ],
+  },
   {
     id:      'abbonato',
     name:    'Abbonato',
@@ -92,7 +103,7 @@ export default function Pricing() {
   const currentPlan = subscription?.plan ?? 'none';
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-16">
+    <div className="max-w-6xl mx-auto px-4 py-16">
       <h1 className="text-3xl font-bold text-gray-900 mb-2 text-center">Piani e prezzi</h1>
       <p className="text-gray-500 text-center mb-12">Scegli il livello di accesso più adatto a te</p>
 
@@ -100,9 +111,10 @@ export default function Pricing() {
         <p className="text-red-600 text-sm text-center mb-6">{error}</p>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         {PLANS.map((plan) => {
-          const isCurrent = isActive && currentPlan === plan.id;
+          const isFree    = plan.id === 'free';
+          const isCurrent = isFree ? !isActive : (isActive && currentPlan === plan.id);
           const isWip     = plan.badge === 'Presto disponibile';
 
           return (
@@ -146,6 +158,14 @@ export default function Pricing() {
 
               {!isLoaded || subLoading ? (
                 <div className="h-10 bg-gray-100 rounded-lg animate-pulse" />
+              ) : isFree && isCurrent ? (
+                <div className="w-full py-2.5 text-center text-sm text-gray-500 border border-gray-200 rounded-lg">
+                  Piano corrente
+                </div>
+              ) : isFree ? (
+                <div className="w-full py-2.5 text-center text-sm text-gray-400 border border-gray-100 rounded-lg">
+                  Accesso gratuito attivo
+                </div>
               ) : !isSignedIn ? (
                 <SignInButton mode="modal">
                   <button
@@ -165,7 +185,7 @@ export default function Pricing() {
                 </button>
               ) : (
                 <button
-                  onClick={() => handleCheckout(plan.id)}
+                  onClick={() => handleCheckout(plan.id as SubscriptionPlan)}
                   disabled={loading !== null || isWip}
                   className="w-full bg-primary-600 text-white py-2.5 rounded-lg font-medium hover:bg-primary-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
                 >

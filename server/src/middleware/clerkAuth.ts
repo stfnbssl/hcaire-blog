@@ -6,6 +6,18 @@ export interface ClerkRequest extends Request {
   clerkUserId?: string;
 }
 
+// Controlla se un utente Clerk ha role === 'admin' nei publicMetadata.
+// Da usare solo dove strettamente necessario (chiama le API Clerk).
+export async function checkIsAdmin(userId: string): Promise<boolean> {
+  try {
+    const clerkClient = createClerkClient({ secretKey: process.env.CLERK_SECRET_KEY! });
+    const user = await clerkClient.users.getUser(userId);
+    return user.publicMetadata?.role === 'admin';
+  } catch {
+    return false;
+  }
+}
+
 // Richiede autenticazione Clerk (401 se assente, 403 se token non valido).
 // Usa @clerk/express che legge sia cookie che Bearer token.
 export const authenticateClerk = requireAuth();

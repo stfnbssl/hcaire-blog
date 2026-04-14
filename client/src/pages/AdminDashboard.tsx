@@ -1,14 +1,18 @@
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@clerk/clerk-react';
+import { useNavigate } from 'react-router-dom';
 import { contentService } from '../services/contentService';
 import { Content, ContentFormData } from '../types/content';
 import {
-  Button,
+  Button, IconButton, Tooltip,
   Table, TableBody, TableCell, TableHead, TableRow,
   Dialog, DialogTitle, DialogContent, DialogActions,
   TextField, Alert, Chip, CircularProgress,
   Paper, TableContainer, FormControlLabel, Switch, Select, MenuItem, InputLabel, FormControl,
 } from '@mui/material';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 // File System Access API — disponibile su Chrome/Edge ma non su Firefox
 interface FsFileHandle { getFile(): Promise<File>; }
@@ -113,6 +117,7 @@ function ContentForm({
 
 export default function AdminDashboard() {
   const { getToken } = useAuth();
+  const navigate = useNavigate();
   const [contents,      setContents]      = useState<Content[]>([]);
   const [loading,       setLoading]       = useState(true);
   const [error,         setError]         = useState<string | null>(null);
@@ -305,16 +310,32 @@ export default function AdminDashboard() {
                   <TableCell sx={{ fontSize: '0.75rem', color: 'text.secondary' }}>
                     {new Date(item.createdAt).toLocaleDateString('it-IT')}
                   </TableCell>
-                  <TableCell align="right">
-                    <Button
-                      size="small"
-                      onClick={() => { setSelected(item); setDialogMode('edit'); }}
-                    >
-                      Modifica
-                    </Button>
-                    <Button size="small" color="error" onClick={() => setDeleteConfirm(item)}>
-                      Elimina
-                    </Button>
+                  <TableCell align="right" sx={{ whiteSpace: 'nowrap' }}>
+                    <Tooltip title="Visualizza">
+                      <IconButton
+                        size="small"
+                        onClick={() => navigate(`/blog/${item.slug}`)}
+                      >
+                        <VisibilityIcon fontSize="small" />
+                      </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Modifica">
+                      <IconButton
+                        size="small"
+                        onClick={() => { setSelected(item); setDialogMode('edit'); }}
+                      >
+                        <EditIcon fontSize="small" />
+                      </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Elimina">
+                      <IconButton
+                        size="small"
+                        color="error"
+                        onClick={() => setDeleteConfirm(item)}
+                      >
+                        <DeleteIcon fontSize="small" />
+                      </IconButton>
+                    </Tooltip>
                   </TableCell>
                 </TableRow>
               ))}
