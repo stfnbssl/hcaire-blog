@@ -67,7 +67,7 @@ export const createCheckout = async (req: ClerkRequest, res: Response): Promise<
 
     if (!lsRes.ok) {
       const err = await lsRes.json();
-      console.error('[Checkout] Lemon Squeezy error:', err);
+      console.error(`[Checkout] LS error ${lsRes.status} — plan=${requestedPlan} variantId=${variantId}:`, JSON.stringify(err));
       res.status(502).json({ error: 'Errore creazione checkout' });
       return;
     }
