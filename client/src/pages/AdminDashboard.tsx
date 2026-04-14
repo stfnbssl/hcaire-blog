@@ -10,9 +10,7 @@ import {
   TextField, Alert, Chip, CircularProgress,
   Paper, TableContainer, FormControlLabel, Switch, Select, MenuItem, InputLabel, FormControl,
 } from '@mui/material';
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
+import { Visibility as VisibilityIcon, Edit as EditIcon, Delete as DeleteIcon } from '@mui/icons-material';
 
 // File System Access API — disponibile su Chrome/Edge ma non su Firefox
 interface FsFileHandle { getFile(): Promise<File>; }
