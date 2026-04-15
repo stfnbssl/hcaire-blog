@@ -1,11 +1,14 @@
 import { Response } from 'express';
+import { getAuth } from '@clerk/express';
+import { createClerkClient } from '@clerk/backend';
 import UserSubscription, { type SubscriptionPlan } from '../models/UserSubscription';
 import type { ClerkRequest } from '../middleware/clerkAuth';
 
 // GET /api/subscriptions/status
 export const getStatus = async (req: ClerkRequest, res: Response): Promise<void> => {
   try {
-    const sub = await UserSubscription.findOne({ clerkUserId: req.clerkUserId });
+    const { userId } = getAuth(req);
+    const sub = await UserSubscription.findOne({ clerkUserId: userId });
     res.json({
       status:          sub?.status          ?? 'none',
       plan:            sub?.plan            ?? 'none',
@@ -30,6 +33,7 @@ function planToVariantId(plan: string): string | null {
 export const createCheckout = async (req: ClerkRequest, res: Response): Promise<void> => {
   const storeId  = process.env.LEMONSQUEEZY_STORE_ID!;
   const apiKey   = process.env.LEMONSQUEEZY_API_KEY!;
+  const { userId } = getAuth(req);
 
   const requestedPlan = (req.body?.plan as string) ?? 'abbonato';
   const variantId     = planToVariantId(requestedPlan);
@@ -39,13 +43,32 @@ export const createCheckout = async (req: ClerkRequest, res: Response): Promise<
     return;
   }
 
+  // Recupera email e nome dell'utente da Clerk per pre-compilare il checkout
+  let userEmail: string | undefined;
+  let userName: string | undefined;
+  try {
+    const clerkClient = createClerkClient({ secretKey: process.env.CLERK_SECRET_KEY! });
+    const clerkUser   = await clerkClient.users.getUser(userId!);
+    userEmail = clerkUser.emailAddresses.find(e => e.id === clerkUser.primaryEmailAddressId)?.emailAddress;
+    const firstName = clerkUser.firstName ?? '';
+    const lastName  = clerkUser.lastName  ?? '';
+    userName = [firstName, lastName].filter(Boolean).join(' ') || undefined;
+  } catch (err) {
+    console.warn('[Checkout] Impossibile recuperare dati utente da Clerk:', err);
+  }
+
   try {
     const body = {
       data: {
         type: 'checkouts',
         attributes: {
+          product_options: {
+            redirect_url: `${process.env.CORS_ORIGIN || 'http://localhost:5173'}/pricing?checkout=success`,
+          },
           checkout_data: {
-            custom: { clerk_user_id: req.clerkUserId },
+            email:  userEmail,
+            name:   userName,
+            custom: { clerk_user_id: userId },
           },
         },
         relationships: {
@@ -85,7 +108,8 @@ export const createCheckout = async (req: ClerkRequest, res: Response): Promise<
 // POST /api/subscriptions/portal
 export const getPortalUrl = async (req: ClerkRequest, res: Response): Promise<void> => {
   try {
-    const sub = await UserSubscription.findOne({ clerkUserId: req.clerkUserId });
+    const { userId } = getAuth(req);
+    const sub = await UserSubscription.findOne({ clerkUserId: userId });
     if (!sub?.lsCustomerId) {
       res.status(404).json({ error: 'Nessuna subscription trovata' });
       return;

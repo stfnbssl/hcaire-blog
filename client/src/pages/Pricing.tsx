@@ -1,5 +1,6 @@
 import { useAuth, SignInButton } from '@clerk/clerk-react';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { createCheckout, getPortalUrl, type SubscriptionPlan } from '../services/subscriptionService';
 import { useSubscription } from '../hooks/useSubscription';
 
@@ -67,9 +68,43 @@ const PLANS: Plan[] = [
 
 export default function Pricing() {
   const { isSignedIn, isLoaded, getToken } = useAuth();
-  const { subscription, loading: subLoading, isActive } = useSubscription();
-  const [loading, setLoading] = useState<SubscriptionPlan | null>(null);
-  const [error, setError]     = useState<string | null>(null);
+  const { subscription, loading: subLoading, isActive, refresh } = useSubscription();
+  const [loading, setLoading]       = useState<SubscriptionPlan | null>(null);
+  const [error, setError]           = useState<string | null>(null);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const isCheckoutReturn = searchParams.get('checkout') === 'success';
+  const [verifying, setVerifying]   = useState(isCheckoutReturn);
+  const pollRef                     = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  // Dopo ritorno da LS, poll subscription ogni 2s fino ad attivazione (max 20 tentativi)
+  useEffect(() => {
+    if (!isCheckoutReturn || !isSignedIn) return;
+
+    let attempts = 0;
+    const MAX    = 20;
+
+    pollRef.current = setInterval(async () => {
+      attempts++;
+      await refresh();
+      if (attempts >= MAX) {
+        clearInterval(pollRef.current!);
+        setVerifying(false);
+        setSearchParams({}, { replace: true });
+      }
+    }, 2000);
+
+    return () => { if (pollRef.current) clearInterval(pollRef.current); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isCheckoutReturn, isSignedIn]);
+
+  // Quando l'abbonamento diventa attivo, smetti di verificare
+  useEffect(() => {
+    if (verifying && isActive) {
+      if (pollRef.current) clearInterval(pollRef.current);
+      setVerifying(false);
+      setSearchParams({}, { replace: true });
+    }
+  }, [verifying, isActive, setSearchParams]);
 
   async function handleCheckout(plan: SubscriptionPlan) {
     setLoading(plan);
@@ -106,6 +141,19 @@ export default function Pricing() {
     <div className="max-w-6xl mx-auto px-4 py-16">
       <h1 className="text-3xl font-bold text-gray-900 mb-2 text-center">Piani e prezzi</h1>
       <p className="text-gray-500 text-center mb-12">Scegli il livello di accesso più adatto a te</p>
+
+      {verifying && (
+        <div className="flex items-center justify-center gap-3 mb-8 p-4 bg-blue-50 border border-blue-200 rounded-xl text-blue-700 text-sm">
+          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600 flex-shrink-0" />
+          Verifica del pagamento in corso… potrebbe richiedere qualche secondo.
+        </div>
+      )}
+
+      {isCheckoutReturn && !verifying && isActive && (
+        <div className="mb-8 p-4 bg-green-50 border border-green-200 rounded-xl text-green-700 text-sm text-center">
+          Abbonamento attivato con successo!
+        </div>
+      )}
 
       {error && (
         <p className="text-red-600 text-sm text-center mb-6">{error}</p>

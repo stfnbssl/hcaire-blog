@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useAuth } from '@clerk/clerk-react';
 import { getSubscriptionStatus, type SubscriptionStatus } from '../services/subscriptionService';
 
@@ -8,36 +8,33 @@ export function useSubscription() {
   const [loading, setLoading]           = useState(false);
   const [error, setError]               = useState<string | null>(null);
 
+  const fetchStatus = useCallback(async () => {
+    if (!isSignedIn) return;
+    setLoading(true);
+    try {
+      const token = await getToken();
+      if (!token) return;
+      const data = await getSubscriptionStatus(token);
+      setSubscription(data);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Errore');
+    } finally {
+      setLoading(false);
+    }
+  }, [isSignedIn, getToken]);
+
   useEffect(() => {
     if (!isSignedIn) {
       setSubscription(null);
       return;
     }
-
-    let cancelled = false;
-
-    async function fetchStatus() {
-      setLoading(true);
-      try {
-        const token = await getToken();
-        if (!token || cancelled) return;
-        const data = await getSubscriptionStatus(token);
-        if (!cancelled) setSubscription(data);
-      } catch (err) {
-        if (!cancelled) setError(err instanceof Error ? err.message : 'Errore');
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    }
-
     fetchStatus();
-    return () => { cancelled = true; };
-  }, [isSignedIn, getToken]);
+  }, [isSignedIn, fetchStatus]);
 
-  const isActive      = subscription?.status === 'active' || subscription?.status === 'on_trial';
-  const isAbbonato    = isActive && (subscription?.plan === 'abbonato' || subscription?.plan === 'bartleby' || subscription?.plan === 'bartleby_plus');
-  const isBartleby    = isActive && (subscription?.plan === 'bartleby' || subscription?.plan === 'bartleby_plus');
+  const isActive       = subscription?.status === 'active' || subscription?.status === 'on_trial';
+  const isAbbonato     = isActive && (subscription?.plan === 'abbonato' || subscription?.plan === 'bartleby' || subscription?.plan === 'bartleby_plus');
+  const isBartleby     = isActive && (subscription?.plan === 'bartleby' || subscription?.plan === 'bartleby_plus');
   const isBartlebyPlus = isActive && subscription?.plan === 'bartleby_plus';
 
-  return { subscription, loading, error, isActive, isAbbonato, isBartleby, isBartlebyPlus };
+  return { subscription, loading, error, isActive, isAbbonato, isBartleby, isBartlebyPlus, refresh: fetchStatus };
 }

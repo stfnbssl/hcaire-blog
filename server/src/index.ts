@@ -14,8 +14,21 @@ import { startTelegramBot } from './services/telegramBot';
 
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
+// Log variabili critiche presenti (senza valori)
+const requiredVars = ['MONGODB_PASSWORD', 'MONGODB_URL', 'CLERK_SECRET_KEY'];
+requiredVars.forEach((v) => {
+  console.log(`[Env] ${v}: ${process.env[v] ? 'SET' : 'MISSING'}`);
+});
+
 const app  = express();
 const PORT = process.env.PORT || 3018;
+
+// Health check PRIMA di qualsiasi middleware — non richiede auth
+app.get('/health', (_req, res) => {
+  const mongoose = require('mongoose');
+  const dbState = mongoose.connection.readyState; // 0=disconnected,1=connected,2=connecting
+  res.json({ status: 'ok', db: dbState === 1 ? 'connected' : 'connecting', timestamp: new Date().toISOString() });
+});
 
 app.use(cors({ origin: process.env.CORS_ORIGIN || 'http://localhost:5173' }));
 
@@ -31,12 +44,6 @@ app.use('/api/navigation',       navRoutes);
 app.use('/api/article-requests', articleRequestRoutes);
 app.use('/api/subscriptions',    subscriptionRoutes);
 app.use('/api',                  authRoutes);
-
-app.get('/health', (_req, res) => {
-  const mongoose = require('mongoose');
-  const dbState = mongoose.connection.readyState; // 0=disconnected,1=connected,2=connecting
-  res.json({ status: 'ok', db: dbState === 1 ? 'connected' : 'connecting', timestamp: new Date().toISOString() });
-});
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
