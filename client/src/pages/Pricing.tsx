@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { createCheckout, getPortalUrl, syncSubscription, type SubscriptionPlan } from '../services/subscriptionService';
 import { useSubscription } from '../hooks/useSubscription';
+import { useSiteConfig } from '../context/SiteConfigContext';
 
 interface Plan {
   id:       SubscriptionPlan | 'free';
@@ -69,6 +70,7 @@ const PLANS: Plan[] = [
 export default function Pricing() {
   const { isSignedIn, isLoaded, getToken } = useAuth();
   const { subscription, loading: subLoading, isActive, refresh } = useSubscription();
+  const { isTestMode } = useSiteConfig();
   const [loading, setLoading]       = useState<SubscriptionPlan | null>(null);
   const [error, setError]           = useState<string | null>(null);
   const [searchParams, setSearchParams] = useSearchParams();
@@ -216,13 +218,13 @@ export default function Pricing() {
 
               {!isLoaded || subLoading ? (
                 <div className="h-10 bg-gray-100 rounded-lg animate-pulse" />
-              ) : isFree && isCurrent ? (
-                <div className="w-full py-2.5 text-center text-sm text-gray-500 border border-gray-200 rounded-lg">
-                  Piano corrente
-                </div>
               ) : isFree ? (
                 <div className="w-full py-2.5 text-center text-sm text-gray-400 border border-gray-100 rounded-lg">
-                  Accesso gratuito attivo
+                  {isCurrent ? 'Piano corrente' : 'Accesso gratuito attivo'}
+                </div>
+              ) : isTestMode ? (
+                <div className="w-full py-2.5 text-center text-sm text-gray-400 border border-gray-100 rounded-lg">
+                  {isWip ? 'Presto disponibile' : 'Pagamenti non ancora attivi'}
                 </div>
               ) : !isSignedIn ? (
                 <SignInButton mode="modal">

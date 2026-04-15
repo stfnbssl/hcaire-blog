@@ -10,6 +10,7 @@ import authRoutes from './routes/auth';
 import articleRequestRoutes from './routes/articleRequests';
 import webhookRoutes from './routes/webhooks';
 import subscriptionRoutes from './routes/subscriptions';
+import siteConfigRoutes from './routes/siteConfig';
 import { startTelegramBot } from './services/telegramBot';
 
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
@@ -43,6 +44,7 @@ app.use('/api/contents',         contentRoutes);
 app.use('/api/navigation',       navRoutes);
 app.use('/api/article-requests', articleRequestRoutes);
 app.use('/api/subscriptions',    subscriptionRoutes);
+app.use('/api/site-config',      siteConfigRoutes);
 app.use('/api',                  authRoutes);
 
 app.listen(PORT, () => {

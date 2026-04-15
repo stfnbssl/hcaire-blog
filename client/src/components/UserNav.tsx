@@ -1,6 +1,7 @@
 import { useAuth, useUser, SignInButton, UserButton } from '@clerk/clerk-react';
 import { Link } from 'react-router-dom';
 import { useSubscription } from '../hooks/useSubscription';
+import { useSiteConfig } from '../context/SiteConfigContext';
 
 const PLAN_LABEL: Record<string, string> = {
   abbonato:      'Abbonato',
@@ -29,6 +30,7 @@ export default function UserNav() {
   const { isSignedIn, isLoaded } = useAuth();
   const { user } = useUser();
   const { subscription, isActive } = useSubscription();
+  const { isTestMode } = useSiteConfig();
 
   if (!isLoaded) return null;
 
@@ -68,8 +70,8 @@ export default function UserNav() {
           {planLabel}
         </Link>
       )}
-      {/* Pulsante Abbonati — solo se non abbonato */}
-      {!isActive && !isAdmin && (
+      {/* Pulsante Abbonati — solo se non abbonato e non in test mode */}
+      {!isActive && !isAdmin && !isTestMode && (
         <Link
           to="/pricing"
           className="text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
@@ -84,7 +86,7 @@ export default function UserNav() {
             href="/account"
             labelIcon={<AccountIcon />}
           />
-          {!isActive && !isAdmin && (
+          {!isActive && !isAdmin && !isTestMode && (
             <UserButton.Link
               label="Abbonati"
               href="/pricing"

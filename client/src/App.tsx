@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import { ClerkProvider, useUser } from '@clerk/clerk-react';
 import { SubscriptionProvider } from './context/SubscriptionContext';
+import { SiteConfigProvider } from './context/SiteConfigContext';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import AdminLayout from './components/AdminLayout';
@@ -13,6 +14,8 @@ import NotFound from './pages/NotFound';
 import Pricing from './pages/Pricing';
 import Account from './pages/Account';
 import WorkInProgress from './pages/WorkInProgress';
+
+const AdminSiteConfig = lazy(() => import('./pages/AdminSiteConfig'));
 
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
 const WorkflowLog    = lazy(() => import('./pages/WorkflowLog'));
@@ -77,7 +80,8 @@ function AppLayout() {
           <Route path="/bartleby"        element={<WorkInProgress />} />
           <Route path="/admin"           element={<AdminRoute><AdminDashboard /></AdminRoute>} />
           <Route path="/admin/workflow"  element={<AdminRoute><WorkflowLog /></AdminRoute>} />
-          <Route path="/admin/requests"  element={<AdminRoute><AdminRequests /></AdminRoute>} />
+          <Route path="/admin/requests"    element={<AdminRoute><AdminRequests /></AdminRoute>} />
+          <Route path="/admin/site-config" element={<AdminRoute><AdminSiteConfig /></AdminRoute>} />
           <Route path="*"               element={<NotFound />} />
         </Routes>
       </div>
@@ -92,9 +96,11 @@ export default function App() {
       <ThemeProvider theme={muiTheme}>
         <CssBaseline />
         <BrowserRouter>
-          <SubscriptionProvider>
-            <AppLayout />
-          </SubscriptionProvider>
+          <SiteConfigProvider>
+            <SubscriptionProvider>
+              <AppLayout />
+            </SubscriptionProvider>
+          </SiteConfigProvider>
         </BrowserRouter>
       </ThemeProvider>
     </ClerkProvider>

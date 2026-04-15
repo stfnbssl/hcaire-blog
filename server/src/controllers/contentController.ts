@@ -1,6 +1,7 @@
 import { Response } from 'express';
 import Content from '../models/Content';
 import UserSubscription from '../models/UserSubscription';
+import SiteConfig from '../models/SiteConfig';
 import { logWorkflow } from '../services/workflowLogger';
 import { ClerkRequest, checkIsAdmin } from '../middleware/clerkAuth';
 
@@ -37,6 +38,15 @@ export const getContentBySlug = async (req: ClerkRequest, res: Response): Promis
     }
 
     if (content.accessType === 'plus') {
+      // In modalità test il contenuto è sempre visibile (locked rimane true per il banner)
+      const siteConfig = await SiteConfig.findOne();
+      const isTestMode = !siteConfig || siteConfig.status === 'test';
+
+      if (isTestMode) {
+        res.json({ ...content.toObject(), locked: true });
+        return;
+      }
+
       let hasAccess = false;
       if (req.clerkUserId) {
         const [sub, isAdmin] = await Promise.all([

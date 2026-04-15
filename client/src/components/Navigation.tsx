@@ -6,6 +6,7 @@ import { NavigationItem } from '../types/navigation';
 import { APP_NAME } from '../utils/constants';
 import UserNav from './UserNav';
 import { useSubscription } from '../hooks/useSubscription';
+import { useSiteConfig } from '../context/SiteConfigContext';
 
 function navPath(item: NavigationItem): string {
   return item.isSpecial ? `/${item.slug}` : `/blog/${item.slug}`;
@@ -17,6 +18,7 @@ export default function Navigation() {
   const [open, setOpen] = useState(false);
   const { isBartleby, isActive } = useSubscription();
   const { isSignedIn } = useAuth();
+  const { isTestMode } = useSiteConfig();
   const { user } = useUser();
   const isAdmin = user?.publicMetadata?.role === 'admin';
 
@@ -81,7 +83,7 @@ export default function Navigation() {
               {isSignedIn ? (
                 <>
                   <MobileNavLink to="/account" onClick={() => setOpen(false)}>Il mio account</MobileNavLink>
-                  {!isActive && !isAdmin && (
+                  {!isActive && !isAdmin && !isTestMode && (
                     <MobileNavLink to="/pricing" onClick={() => setOpen(false)}>Abbonati</MobileNavLink>
                   )}
                 </>

@@ -2,9 +2,10 @@ import { NavLink } from 'react-router-dom';
 import { UserButton } from '@clerk/clerk-react';
 
 const ADMIN_LINKS = [
-  { to: '/admin',          label: 'Dashboard',    end: true  },
-  { to: '/admin/workflow', label: 'Workflow Log',  end: false },
-  { to: '/admin/requests', label: 'Richieste',     end: false },
+  { to: '/admin',               label: 'Dashboard',   end: true  },
+  { to: '/admin/workflow',      label: 'Workflow Log', end: false },
+  { to: '/admin/requests',      label: 'Richieste',    end: false },
+  { to: '/admin/site-config',   label: 'Stato sito',   end: false },
 ];
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {

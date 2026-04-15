@@ -147,6 +147,78 @@ export const getPortalUrl = async (req: ClerkRequest, res: Response): Promise<vo
   }
 };
 
+// POST /api/subscriptions/change-plan   body: { plan: 'abbonato' | 'bartleby' | 'bartleby_plus' }
+export const changePlan = async (req: ClerkRequest, res: Response): Promise<void> => {
+  const { userId } = getAuth(req);
+  const apiKey     = process.env.LEMONSQUEEZY_API_KEY!;
+
+  const requestedPlan = (req.body?.plan as string) ?? '';
+  const variantId     = planToVariantId(requestedPlan);
+
+  if (!variantId) {
+    res.status(400).json({ error: `Piano non riconosciuto: ${requestedPlan}` });
+    return;
+  }
+
+  try {
+    const sub = await UserSubscription.findOne({ clerkUserId: userId });
+    if (!sub?.lsSubscriptionId) {
+      res.status(404).json({ error: 'Nessuna subscription attiva trovata' });
+      return;
+    }
+    if (sub.lsVariantId === variantId) {
+      res.status(400).json({ error: 'Sei già su questo piano' });
+      return;
+    }
+
+    const lsRes = await fetch(
+      `https://api.lemonsqueezy.com/v1/subscriptions/${sub.lsSubscriptionId}`,
+      {
+        method: 'PATCH',
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type':  'application/vnd.api+json',
+          'Accept':        'application/vnd.api+json',
+        },
+        body: JSON.stringify({
+          data: {
+            type: 'subscriptions',
+            id:   sub.lsSubscriptionId,
+            attributes: {
+              variant_id: parseInt(variantId, 10),
+            },
+          },
+        }),
+      }
+    );
+
+    if (!lsRes.ok) {
+      const err = await lsRes.json();
+      console.error('[ChangePlan] LS error:', JSON.stringify(err));
+      res.status(502).json({ error: 'Errore cambio piano su LemonSqueezy' });
+      return;
+    }
+
+    const data       = await lsRes.json() as Record<string, unknown>;
+    const attrs      = ((data?.['data'] as Record<string, unknown>)?.['attributes']) as Record<string, unknown> | undefined;
+    const newStatus  = (attrs?.['status'] as string) ?? sub.status;
+    const isActive   = ['active', 'on_trial'].includes(newStatus);
+    const newPlan    = isActive ? variantToPlan(variantId) : 'none';
+
+    await UserSubscription.findOneAndUpdate(
+      { clerkUserId: userId },
+      { $set: { lsVariantId: variantId, plan: newPlan, status: newStatus } },
+      { new: true }
+    );
+
+    console.log(`[ChangePlan] ${userId}: ${sub.plan} → ${newPlan}`);
+    res.json({ plan: newPlan, status: newStatus });
+  } catch (err) {
+    console.error('[ChangePlan] Error:', err);
+    res.status(500).json({ error: 'Errore interno cambio piano' });
+  }
+};
+
 // POST /api/subscriptions/sync
 // Interroga direttamente la LS API per email dell'utente e aggiorna il DB.
 // Usato come fallback quando il webhook non è arrivato in tempo.

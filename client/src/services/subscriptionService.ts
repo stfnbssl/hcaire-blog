@@ -33,3 +33,14 @@ export async function syncSubscription(token: string): Promise<SubscriptionStatu
     token,
   });
 }
+
+export async function changePlan(
+  token: string,
+  plan: SubscriptionPlan
+): Promise<{ plan: SubscriptionPlan; status: string }> {
+  return apiRequest('/subscriptions/change-plan', {
+    method: 'POST',
+    token,
+    body: JSON.stringify({ plan }),
+  });
+}
