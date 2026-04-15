@@ -1,7 +1,7 @@
 import { useAuth, SignInButton } from '@clerk/clerk-react';
 import { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { createCheckout, getPortalUrl, type SubscriptionPlan } from '../services/subscriptionService';
+import { createCheckout, getPortalUrl, syncSubscription, type SubscriptionPlan } from '../services/subscriptionService';
 import { useSubscription } from '../hooks/useSubscription';
 
 interface Plan {
@@ -76,12 +76,22 @@ export default function Pricing() {
   const [verifying, setVerifying]   = useState(isCheckoutReturn);
   const pollRef                     = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  // Dopo ritorno da LS, poll subscription ogni 2s fino ad attivazione (max 20 tentativi)
+  // Dopo ritorno da LS: sync immediato dalla LS API, poi poll ogni 2s (max 20 tentativi)
   useEffect(() => {
     if (!isCheckoutReturn || !isSignedIn) return;
 
     let attempts = 0;
     const MAX    = 20;
+
+    // Sync immediato: interroga LS API per email e aggiorna il DB
+    // Non dipende dal webhook, garantisce aggiornamento anche se il webhook è in ritardo
+    (async () => {
+      try {
+        const token = await getToken();
+        if (token) await syncSubscription(token);
+        await refresh();
+      } catch { /* ignora — il poll continua comunque */ }
+    })();
 
     pollRef.current = setInterval(async () => {
       attempts++;

@@ -29,6 +29,14 @@ function planToVariantId(plan: string): string | null {
   return map[plan] ?? null;
 }
 
+// Variant ID → plan tier (usato sia nel webhook che nel sync)
+export function variantToPlan(variantId: string): SubscriptionPlan {
+  if (variantId === process.env.LEMONSQUEEZY_VARIANT_ABBONATO)      return 'abbonato';
+  if (variantId === process.env.LEMONSQUEEZY_VARIANT_BARTLEBY)      return 'bartleby';
+  if (variantId === process.env.LEMONSQUEEZY_VARIANT_BARTLEBY_PLUS) return 'bartleby_plus';
+  return 'none';
+}
+
 // POST /api/subscriptions/checkout   body: { plan: 'abbonato' | 'bartleby' | 'bartleby_plus' }
 export const createCheckout = async (req: ClerkRequest, res: Response): Promise<void> => {
   const storeId  = process.env.LEMONSQUEEZY_STORE_ID!;
@@ -136,5 +144,94 @@ export const getPortalUrl = async (req: ClerkRequest, res: Response): Promise<vo
   } catch (err) {
     console.error('[Portal] Error:', err);
     res.status(500).json({ error: 'Errore interno portale' });
+  }
+};
+
+// POST /api/subscriptions/sync
+// Interroga direttamente la LS API per email dell'utente e aggiorna il DB.
+// Usato come fallback quando il webhook non è arrivato in tempo.
+export const syncSubscription = async (req: ClerkRequest, res: Response): Promise<void> => {
+  const { userId } = getAuth(req);
+  const storeId    = process.env.LEMONSQUEEZY_STORE_ID!;
+  const apiKey     = process.env.LEMONSQUEEZY_API_KEY!;
+
+  try {
+    // Recupera email utente da Clerk
+    const clerkClient = createClerkClient({ secretKey: process.env.CLERK_SECRET_KEY! });
+    const clerkUser   = await clerkClient.users.getUser(userId!);
+    const email = clerkUser.emailAddresses
+      .find(e => e.id === clerkUser.primaryEmailAddressId)?.emailAddress;
+
+    if (!email) {
+      res.status(400).json({ error: 'Email utente non trovata' });
+      return;
+    }
+
+    // Cerca subscriptions per email nella LS API
+    const lsRes = await fetch(
+      `https://api.lemonsqueezy.com/v1/subscriptions?filter[store_id]=${storeId}&filter[user_email]=${encodeURIComponent(email)}`,
+      {
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Accept':        'application/vnd.api+json',
+        },
+      }
+    );
+
+    if (!lsRes.ok) {
+      const err = await lsRes.json();
+      console.error('[Sync] LS API error:', JSON.stringify(err));
+      res.status(502).json({ error: 'Errore ricerca subscription su LS' });
+      return;
+    }
+
+    const lsData = await lsRes.json() as Record<string, unknown>;
+    const subs   = (lsData['data'] as unknown[]) ?? [];
+
+    if (subs.length === 0) {
+      // Nessuna subscription su LS — restituisce stato corrente dal DB
+      const sub = await UserSubscription.findOne({ clerkUserId: userId });
+      res.json({
+        status:           sub?.status           ?? 'none',
+        plan:             sub?.plan             ?? 'none',
+        currentPeriodEnd: sub?.currentPeriodEnd ?? null,
+      });
+      return;
+    }
+
+    // Prende la subscription attiva, o la prima disponibile
+    const activeSub = (subs as Record<string, unknown>[]).find(s => {
+      const st = ((s['attributes'] as Record<string, unknown>)['status']) as string;
+      return ['active', 'on_trial'].includes(st);
+    }) ?? subs[0] as Record<string, unknown>;
+
+    const attrs       = activeSub['attributes'] as Record<string, unknown>;
+    const lsVariantId = String(attrs['variant_id'] ?? '');
+    const newStatus   = (attrs['status'] as string) ?? 'none';
+    const isActive    = ['active', 'on_trial'].includes(newStatus);
+    const plan        = isActive ? variantToPlan(lsVariantId) : 'none';
+
+    await UserSubscription.findOneAndUpdate(
+      { clerkUserId: userId },
+      {
+        $set: {
+          lsSubscriptionId: (activeSub['id'] as string) ?? '',
+          lsCustomerId:     String(attrs['customer_id'] ?? ''),
+          lsVariantId,
+          plan,
+          status:           newStatus,
+          currentPeriodEnd: attrs['renews_at']
+            ? new Date(attrs['renews_at'] as string)
+            : null,
+        },
+      },
+      { upsert: true, new: true }
+    );
+
+    console.log(`[Sync] Subscription sincronizzata per ${userId}: status=${newStatus}, plan=${plan}`);
+    res.json({ status: newStatus, plan, currentPeriodEnd: attrs['renews_at'] ?? null });
+  } catch (err) {
+    console.error('[Sync] Error:', err);
+    res.status(500).json({ error: 'Errore sincronizzazione subscription' });
   }
 };

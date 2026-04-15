@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
-import { useUser } from '@clerk/clerk-react';
+import { useAuth, useUser, SignInButton } from '@clerk/clerk-react';
 import { useFetchNavigation } from '../hooks/useFetchNavigation';
 import { NavigationItem } from '../types/navigation';
 import { APP_NAME } from '../utils/constants';
@@ -15,7 +15,8 @@ export default function Navigation() {
   const { items } = useFetchNavigation();
   const location  = useLocation();
   const [open, setOpen] = useState(false);
-  const { isBartleby } = useSubscription();
+  const { isBartleby, isActive } = useSubscription();
+  const { isSignedIn } = useAuth();
   const { user } = useUser();
   const isAdmin = user?.publicMetadata?.role === 'admin';
 
@@ -75,6 +76,31 @@ export default function Navigation() {
             {isAdmin && (
               <MobileNavLink to="/admin" onClick={() => setOpen(false)}>Admin</MobileNavLink>
             )}
+            {/* Separatore e voci utente */}
+            <div className="border-t border-gray-100 pt-2 mt-2">
+              {isSignedIn ? (
+                <>
+                  <MobileNavLink to="/account" onClick={() => setOpen(false)}>Il mio account</MobileNavLink>
+                  {!isActive && !isAdmin && (
+                    <MobileNavLink to="/pricing" onClick={() => setOpen(false)}>Abbonati</MobileNavLink>
+                  )}
+                </>
+              ) : (
+                <>
+                  <MobileNavLink to="/pricing" onClick={() => setOpen(false)}>Prezzi</MobileNavLink>
+                  <div className="px-2 py-2">
+                    <SignInButton mode="modal">
+                      <button
+                        onClick={() => setOpen(false)}
+                        className="w-full text-sm font-medium bg-primary-600 text-white px-3 py-1.5 rounded-md hover:bg-primary-700 transition-colors"
+                      >
+                        Accedi
+                      </button>
+                    </SignInButton>
+                  </div>
+                </>
+              )}
+            </div>
           </div>
         )}
       </div>

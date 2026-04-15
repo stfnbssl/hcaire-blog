@@ -15,7 +15,8 @@
       "Bash(./node_modules/.bin/tsc --noEmit -p client/tsconfig.json)",
       "Bash(./node_modules/.bin/tsc --noEmit -p server/tsconfig.json)",
       "Bash(railway logs:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(echo \"EXIT:$?\")"
     ]
   }
 }

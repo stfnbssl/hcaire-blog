@@ -32,8 +32,8 @@ export default function Home() {
                         </span>
                       )}
                       {post.accessType === 'plus' && (
-                        <span className="text-xs font-semibold text-amber-600 uppercase tracking-wide flex items-center gap-1">
-                          🔒 Plus
+                        <span className="text-xs font-semibold text-amber-600 uppercase tracking-wide">
+                          Per abbonati
                         </span>
                       )}
                     </div>

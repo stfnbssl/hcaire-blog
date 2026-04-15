@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import { ClerkProvider, useUser } from '@clerk/clerk-react';
+import { SubscriptionProvider } from './context/SubscriptionContext';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import AdminLayout from './components/AdminLayout';
@@ -10,6 +11,7 @@ import About from './pages/About';
 import BlogPost from './pages/BlogPost';
 import NotFound from './pages/NotFound';
 import Pricing from './pages/Pricing';
+import Account from './pages/Account';
 import WorkInProgress from './pages/WorkInProgress';
 
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
@@ -71,6 +73,7 @@ function AppLayout() {
           <Route path="/about"           element={<About />} />
           <Route path="/blog/:slug"      element={<BlogPost />} />
           <Route path="/pricing"         element={<Pricing />} />
+          <Route path="/account"         element={<Account />} />
           <Route path="/bartleby"        element={<WorkInProgress />} />
           <Route path="/admin"           element={<AdminRoute><AdminDashboard /></AdminRoute>} />
           <Route path="/admin/workflow"  element={<AdminRoute><WorkflowLog /></AdminRoute>} />
@@ -89,7 +92,9 @@ export default function App() {
       <ThemeProvider theme={muiTheme}>
         <CssBaseline />
         <BrowserRouter>
-          <AppLayout />
+          <SubscriptionProvider>
+            <AppLayout />
+          </SubscriptionProvider>
         </BrowserRouter>
       </ThemeProvider>
     </ClerkProvider>

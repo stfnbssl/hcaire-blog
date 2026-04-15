@@ -1,6 +1,7 @@
 import { Router, Request, Response } from 'express';
 import crypto from 'crypto';
 import UserSubscription from '../models/UserSubscription';
+import { variantToPlan } from '../controllers/subscriptionController';
 
 const router = Router();
 
@@ -50,14 +51,6 @@ router.post(
     const clerkUserId = customData?.['clerk_user_id'] as string | undefined;
 
     console.log(`[Webhook] Lemon Squeezy event: ${eventName}, clerkUserId: ${clerkUserId}`);
-
-    // Map variant ID → plan tier
-    function variantToPlan(variantId: string): import('../models/UserSubscription').SubscriptionPlan {
-      if (variantId === process.env.LEMONSQUEEZY_VARIANT_ABBONATO)     return 'abbonato';
-      if (variantId === process.env.LEMONSQUEEZY_VARIANT_BARTLEBY)     return 'bartleby';
-      if (variantId === process.env.LEMONSQUEEZY_VARIANT_BARTLEBY_PLUS) return 'bartleby_plus';
-      return 'none';
-    }
 
     const handledEvents = [
       'subscription_created', 'subscription_updated',

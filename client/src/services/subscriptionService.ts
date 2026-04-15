@@ -26,3 +26,10 @@ export async function getPortalUrl(token: string): Promise<{ portalUrl: string }
     token,
   });
 }
+
+export async function syncSubscription(token: string): Promise<SubscriptionStatus> {
+  return apiRequest<SubscriptionStatus>('/subscriptions/sync', {
+    method: 'POST',
+    token,
+  });
+}
