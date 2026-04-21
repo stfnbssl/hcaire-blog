@@ -1,0 +1,435 @@
+[
+  {
+    "id": "sk-001",
+    "name": "Asse 1 — Ontologico-fenomenologico",
+    "slug": "asse-1-ontologico-fenomenologico",
+    "skill_type": "fondativa",
+    "description": "Skill fondativa che radica il sistema nel soggetto incarnato in via di costituzione. Garantisce che il bambino sia sempre letto come soggetto corporeo, relazionale e temporale — non come oggetto di prestazioni o portatore di sintomi.",
+    "instruction_payload": {
+      "function_in_system": "Garantisce la prospettiva fenomenologica di base: il bambino come soggetto incarnato in via di costituzione, inserito in un campo di esperienza che precede qualsiasi riflessione esplicita.",
+      "key_concepts": [
+        "Soggetto incarnato in via di costituzione: il bambino non è ancora un soggetto pienamente costituito — è un processo in atto che dipende dalla relazione e dall'ambiente",
+        "Corporeità come luogo originario di senso: il corpo non è supporto biologico ma il primo mediatore tra il bambino e il mondo",
+        "Campo intenzionale: il mondo si presenta al bambino come accessibile, invitante o minaccioso prima di qualsiasi rappresentazione esplicita",
+        "Relazione come condizione strutturale: la relazione con l'altro non è accessoria ma costitutiva dell'organizzazione interna del bambino",
+        "Temporalità vissuta: il bambino abita il tempo come durata, anticipazione e ritmo — non come misura oggettiva",
+        "Regolazione come tenuta dell'esperienza: la capacità di mantenere una forma relativamente stabile dipende dalla co-regolazione con l'adulto",
+        "Integrazione come coerenza multidimensionale: sviluppo sano = dimensioni che si co-organizzano (corpo, affettività, relazione, simbolico)",
+        "Disorganizzazione come segnale di configurazione: non etichetta diagnostica, ma segnale che va letto nel contesto e nel sistema"
+      ],
+      "activation_triggers": [
+        "domande su regolazione, ritmi, sonno, alimentazione",
+        "segnali corporei di fatica o disorganizzazione",
+        "lettura del campo relazionale precoce (0-3 anni)",
+        "valutazione della qualità dell'esperienza del bambino",
+        "disorganizzazione comportamentale senza spiegazione evidente",
+        "lettura dell'ambiente come campo di esperienza"
+      ],
+      "reading_operators": [
+        "Sul soggetto: Il bambino è trattato come soggetto con una propria organizzazione interna o come oggetto di valutazione?",
+        "Sul corpo: I segnali corporei sono letti come comunicazione o solo come sintomi isolati?",
+        "Sul campo: Il mondo appare accessibile e invitante a questo bambino in questo contesto?",
+        "Sulla relazione: La relazione è trattata come condizione strutturale o come variabile accessoria?",
+        "Sul tempo: Il bambino ha spazio per la propria temporalità (attesa, ritmo, elaborazione) o è costantemente sollecitato?",
+        "Sull'integrazione: Le diverse dimensioni (corpo, affettività, relazione, comportamento) sono coerenti tra loro o frammentate?"
+      ],
+      "reduction_risks": [
+        {"risk": "Oggettivazione del bambino", "form": "Lettura esclusivamente comportamentale", "correction": "Recuperare la prospettiva del soggetto"},
+        {"risk": "Mente senza corpo", "form": "Cognitivismo disincarnato", "correction": "Il corpo è sempre mediatore primo dell'esperienza"},
+        {"risk": "Sintomo senza contesto", "form": "Lettura di segnali isolati", "correction": "Leggere configurazioni nel sistema"},
+        {"risk": "Relazione come sfondo", "form": "Focus solo sul bambino senza l'adulto", "correction": "La relazione è condizione strutturale, non contesto"},
+        {"risk": "Etichettare la disorganizzazione", "form": "Diagnosi implicita dalla frammentazione", "correction": "Leggere come segnale da contestualizzare"}
+      ],
+      "connections_to_axes": {
+        "A2": "La relazione costitutiva (A1) è il terreno in cui si costruisce il legame affettivo (A2)",
+        "A5": "Il campo intenzionale aperto (A1) è la condizione perché il desiderio emerga (A5)",
+        "A6": "Il mondo storico-culturale (A6) entra nel corpo prima che nella riflessione (A1)"
+      }
+    },
+    "file_path": "Skill di fondamento/Skill-Asse1-Ontologico-fenomenologico.md",
+    "status": "approved",
+    "version": "1.1",
+    "owner_type": "hcaire",
+    "owner_id": "user-001"
+  },
+  {
+    "id": "sk-002",
+    "name": "Asse 2 — Affettivo-morale",
+    "slug": "asse-2-affettivo-morale",
+    "skill_type": "fondativa",
+    "description": "Skill fondativa che presidia la dimensione affettiva e morale dello sviluppo. Garantisce che il legame, la colpa, la riparazione e il giudizio morale siano letti come processi strutturali — non come eventi psicologici isolati.",
+    "instruction_payload": {
+      "function_in_system": "Presidia la dimensione affettiva e morale: come il bambino costruisce il legame con l'altro, come emerge la colpa come segnale di sviluppo, come la riparazione diventa momento formativo.",
+      "key_concepts": [
+        "L'altro come istanza interna: lo sviluppo morale non è apprendimento di regole ma interiorizzazione dell'altro come presenza significativa",
+        "Ciclo legame/rottura/riparazione: la riparazione dopo la rottura è il momento più formativo del ciclo — non l'assenza di conflitto",
+        "Colpa integrativa vs. colpa schiacciante: la colpa integrativa segnala che l'altro conta interiormente; la colpa schiacciante produce paura e chiusura",
+        "Riparazione come possibilità strutturale: la capacità di riparare è indicatore evolutivo, non solo comportamento corretto",
+        "Intersoggettività originaria: l'altro non è conosciuto secondariamente ma co-presente fin dall'inizio nell'esperienza del bambino",
+        "Moralità genetica ≠ norma: la moralità autentica nasce dalla relazione, non dall'imposizione della norma",
+        "Conformismo vs. responsabilità: il bambino che obbedisce per paura è diverso dal bambino che risponde per legame affettivo"
+      ],
+      "activation_triggers": [
+        "comportamento morale del bambino (bugie, aggressività, gentilezza, condivisione)",
+        "dinamiche di legame e attaccamento",
+        "colpa, vergogna, rimorso nel bambino",
+        "riparazione dopo conflitti o rotture relazionali",
+        "domande sull'educazione morale",
+        "obbedienza vs. autonomia morale"
+      ],
+      "reading_operators": [
+        "Sul legame: L'altro è un'istanza interna per questo bambino o solo una presenza esterna?",
+        "Sulla colpa: La colpa presente è integrativa (segnale di sviluppo) o schiacciante (produce paura)?",
+        "Sulla riparazione: C'è spazio per la riparazione dopo la rottura o viene sostituita dalla punizione?",
+        "Sul comportamento: Il bambino si comporta bene per legame affettivo interno o per conformismo esterno?",
+        "Sull'adulto: L'adulto sostiene la possibilità di riparazione o la blocca?"
+      ],
+      "reduction_risks": [
+        {"risk": "Moralismo", "form": "Giudizio sull'adulto o sul bambino", "correction": "Leggere processi, non giudicare persone"},
+        {"risk": "Behaviorismo morale", "form": "Comportamento corretto = sviluppo morale", "correction": "Il comportamento esterno non dice nulla sull'interiorizzazione"},
+        {"risk": "Eliminazione della colpa", "form": "'Il bambino non deve sentirsi in colpa'", "correction": "La colpa integrativa è segnale di sviluppo — non va eliminata"},
+        {"risk": "Confusione conformismo/responsabilità", "form": "Il bambino obbediente è letto come moralmente sviluppato", "correction": "Distinguere la fonte del comportamento: paura o legame?"}
+      ],
+      "connections_to_axes": {
+        "A1": "Il legame affettivo si costruisce nel campo relazionale (A1)",
+        "A3": "La norma senza legame produce conformismo; il legame senza norma produce dipendenza (A2↔A3)",
+        "A4": "La perdita e la separazione (A4) mettono alla prova la solidità del legame (A2)"
+      }
+    },
+    "file_path": "Skill di fondamento/Skill-Asse2-Affettivo-morale.md",
+    "status": "approved",
+    "version": "1.0",
+    "owner_type": "hcaire",
+    "owner_id": "user-001"
+  },
+  {
+    "id": "sk-003",
+    "name": "Asse 3 — Normativo-educativo",
+    "slug": "asse-3-normativo-educativo",
+    "skill_type": "fondativa",
+    "description": "Skill fondativa che distingue norma, normatività e giudizio. Garantisce che le dimensioni normative ed educative siano lette come processi orientativi — non come imposizioni o permissivismi.",
+    "instruction_payload": {
+      "function_in_system": "Presidia la distinzione tra norma (regola esplicita), normatività (orientamento strutturale verso il vero e il buono) e giudizio (capacità del soggetto di discriminare tra possibilità). Evita sia l'autoritarismo sia il permissivismo.",
+      "key_concepts": [
+        "Norma ≠ normatività ≠ giudizio: la norma è regola esplicita; la normatività è struttura di orientamento; il giudizio è la capacità di discriminare autonomamente",
+        "La norma orienta ma non sostituisce il giudizio: un bambino che obbedisce senza capire non ha sviluppato la normatività",
+        "Autorità educativa legittima: l'adulto che orienta è diverso dall'adulto che impone — l'autorità si giustifica nella direzione che indica",
+        "Il giudizio come meta: l'obiettivo dell'educazione non è la conformità né la libertà indifferenziata, ma la capacità di riconoscere e scegliere il meglio",
+        "Norma e desiderio: la norma senza desiderio produce conformismo; il desiderio senza norma produce dispersione"
+      ],
+      "activation_triggers": [
+        "domande su regole, disciplina, autorità educativa",
+        "bambini che non rispettano regole o che le rispettano meccanicamente",
+        "relazione tra adulto e bambino su temi normativi",
+        "autonomia e giudizio del bambino",
+        "progettazione di ambienti educativi strutturati",
+        "distinguere orientamento da prescrizione"
+      ],
+      "reading_operators": [
+        "Sulla norma: La norma presente è orientativa o puramente coercitiva?",
+        "Sul giudizio: Il bambino sta sviluppando capacità di giudizio o solo conformità?",
+        "Sull'autorità: L'adulto si pone come guida che orienta o come controllo che impone?",
+        "Sulla libertà: C'è confusione tra autonomia autentica e libertà indifferenziata?",
+        "Sul contesto: Le norme dell'ambiente sono coerenti e orientative o contraddittorie e arbitrarie?"
+      ],
+      "reduction_risks": [
+        {"risk": "Autoritarismo", "form": "Obbedienza come obiettivo", "correction": "L'obiettivo è il giudizio, non la conformità"},
+        {"risk": "Permissivismo", "form": "Assenza di struttura normativa", "correction": "Il desiderio ha bisogno del limite per diventare consistente"},
+        {"risk": "Confusione norma/giudizio", "form": "Chi segue le regole ha sviluppato la normatività", "correction": "La normatività autentica richiede interiorizzazione, non solo obbedienza"},
+        {"risk": "Moralizzazione", "form": "Giudizio sull'adulto che non riesce a tenere la norma", "correction": "Leggere le difficoltà normative come configurazione, non come colpa"}
+      ],
+      "connections_to_axes": {
+        "A2": "Norma senza legame (A2) produce conformismo; legame senza norma produce dipendenza",
+        "A4": "La norma introduce il limite (A4) — ma il limite normativo è diverso dal limite reale",
+        "A5": "Norma senza desiderio produce conformismo; desiderio senza norma produce dispersione (A3↔A5)"
+      }
+    },
+    "file_path": "Skill di fondamento/Skill-Asse3-Normativo-educativo.md",
+    "status": "approved",
+    "version": "1.0",
+    "owner_type": "hcaire",
+    "owner_id": "user-001"
+  },
+  {
+    "id": "sk-004",
+    "name": "Asse 4 — Separazione e Limite",
+    "slug": "asse-4-separazione-limite",
+    "skill_type": "fondativa",
+    "description": "Skill fondativa che presidia la dimensione del limite reale, della perdita e della separazione. Garantisce che il dolore davanti al reale sia letto come risposta adeguata — non come sintomo — e che l'onnipotenza dell'adulto sia riconosciuta come rischio.",
+    "instruction_payload": {
+      "function_in_system": "Introduce la dimensione del limite reale — distinto dalla norma e dalla frustrazione ordinaria. Presidia il riconoscimento che alcune situazioni non hanno soluzione, che il dolore può essere risposta adeguata, e che l'adulto che promette onnipotenza produce danno.",
+      "key_concepts": [
+        "Limite reale ≠ norma ≠ frustrazione: il limite reale ha la forma del 'non è possibile', non del 'dovresti'; non è modificabile con più metodo o più cura",
+        "Perdita: introduce l'irreversibilità nell'esperienza del bambino — non tutto ciò che è perso può essere recuperato",
+        "Separazione dall'onnipotenza: il passaggio più decisivo dello sviluppo — necessario per la crescita reale",
+        "Eccedenza: prima forma del limite — il mondo è più grande del bambino, precede qualsiasi norma",
+        "Il rischio educativo dell'adulto: l'adulto che non tollera il limite del bambino promette l'impossibile e deforma il campo",
+        "Dolore come risposta adeguata: non ogni dolore è sintomo da eliminare — il dolore davanti alla perdita genuina è risposta umana"
+      ],
+      "activation_triggers": [
+        "situazioni che resistono agli interventi usuali",
+        "lutti, perdite, separazioni reali nel bambino o nella famiglia",
+        "diagnosi difficili o condizioni non modificabili",
+        "adulto che non riesce a tollerare il fallimento del bambino",
+        "crisi e frustrazioni del bambino",
+        "transizioni difficili (separazioni, cambi di contesto)"
+      ],
+      "reading_operators": [
+        "Sul limite: Il limite presente è reale (non modificabile) o normativo (regola)?",
+        "Sull'adulto: L'adulto sta chiedendo una soluzione a qualcosa che non ne ha?",
+        "Sul dolore: Il dolore presente è risposta adeguata al reale o sintomo da eliminare?",
+        "Sull'intervento: L'intervento proposto promette di rimuovere il limite o di accompagnarlo?",
+        "Sull'onnipotenza: C'è una promessa implicita di onnipotenza che non potrà essere mantenuta?"
+      ],
+      "reduction_risks": [
+        {"risk": "Onnipotenza dell'adulto/del sistema", "form": "Promettersi soluzioni a tutto", "correction": "Distinguere problemi trattabili da limiti reali"},
+        {"risk": "Patologizzare il dolore", "form": "'Se stai male c'è qualcosa che non va'", "correction": "Il dolore davanti alla perdita è risposta adeguata — non sintomo"},
+        {"risk": "Eliminare il limite", "form": "Proteggere il bambino da ogni frustrazione", "correction": "Il desiderio si ricostituisce solo dopo l'incontro col limite"},
+        {"risk": "Colpevolizzare l'adulto", "form": "Se non risolve, ha sbagliato qualcosa", "correction": "Alcune situazioni non hanno soluzione — riconoscerlo è onestà, non sconfitta"}
+      ],
+      "connections_to_axes": {
+        "A2": "Il limite reale mette alla prova la solidità del legame (A2) — la riparazione è possibile anche dopo la perdita",
+        "A3": "Il limite normativo (A3) è diverso dal limite reale (A4): la norma può cambiare, il reale no",
+        "A5": "Il desiderio si ricostituisce dopo l'incontro col limite (A4); senza questo passaggio resta fantasma illimitato"
+      }
+    },
+    "file_path": "Skill di fondamento/Skill-Asse4-Separazione-e-Limite.md",
+    "status": "approved",
+    "version": "1.0",
+    "owner_type": "hcaire",
+    "owner_id": "user-001"
+  },
+  {
+    "id": "sk-005",
+    "name": "Asse 5 — Desiderio",
+    "slug": "asse-5-desiderio",
+    "skill_type": "fondativa",
+    "description": "Skill fondativa che presidia la dimensione del desiderio come struttura di orientamento del soggetto. Garantisce che motivazione, curiosità, passività e creatività siano letti come manifestazioni del campo desiderante — non come tratti caratteriali.",
+    "instruction_payload": {
+      "function_in_system": "Presidia la dimensione del desiderio come struttura di orientamento verso il possibile. Distingue il desiderio da bisogno, motivazione e capriccio. Legge la creatività come manifestazione diretta del campo desiderante.",
+      "key_concepts": [
+        "Desiderio come struttura di orientamento: non 'voler qualcosa' ma la forma del rapporto con il possibile",
+        "Desiderio ≠ bisogno ≠ motivazione ≠ capriccio: il desiderio non si esaurisce con la soddisfazione, introduce tempo, attesa, continuità",
+        "Il campo desiderabile: nei primi anni il desiderio è una qualità del campo di esperienza — se il mondo appare desiderabile il campo è aperto",
+        "Patologie strutturali: ritiro (campo chiuso), onnipotenza (desiderio senza limite), prestazionalismo (desiderio ridotto a successo misurabile)",
+        "Desiderio e creatività: l'atto creativo è la forma in cui il desiderio si fa gesto — l'inibizione creativa è segnale del campo, non mancanza di talento",
+        "Il gioco simbolico come primo atto creativo: laboratorio del desiderio nei primi anni",
+        "Prestazionalismo creativo: creare solo per il risultato/riconoscimento — patologia del desiderio applicata all'espressione",
+        "Resistenza del materiale: condizione del fare creativo genuino — non ostacolo da eliminare"
+      ],
+      "activation_triggers": [
+        "motivazione, iniziativa, passività, apatia del bambino",
+        "bambini difficili da motivare o apparentemente indifferenti",
+        "inibizione creativa o prestazionalismo nell'espressione",
+        "qualità del gioco simbolico (ricco vs. ripetitivo/assente)",
+        "ambienti molto strutturati o molto caotici",
+        "ansia da prestazione, iperstimolazione, esaurimento del bambino",
+        "scelte e preferenze del bambino"
+      ],
+      "reading_operators": [
+        "Sul campo: Il mondo appare desiderabile a questo bambino in questo contesto?",
+        "Sul ritiro: Il ritiro è difesa, stanchezza o chiusura strutturale del campo?",
+        "Sull'ambiente: L'ambiente sostiene o soffoca l'orientamento desiderante?",
+        "Sul limite: Il desiderio ha incontrato il limite? La rinuncia è possibile?",
+        "Sulla prestazione: Il contesto trasforma il desiderio in prestazione?",
+        "Sulla creatività: Il bambino crea, esplora, trasforma? L'atto creativo è abitato o ridotto a prestazione valutabile?"
+      ],
+      "reduction_risks": [
+        {"risk": "Confusione desiderio/bisogno", "form": "Soddisfare ogni richiesta come risposta al desiderio", "correction": "Il desiderio non si spegne con la soddisfazione"},
+        {"risk": "Confusione desiderio/motivazione", "form": "Usare premi per 'motivare'", "correction": "La motivazione esterna non alimenta il desiderio strutturale"},
+        {"risk": "Etichettatura precoce", "form": "Forzare il bambino a dichiarare preferenze e interessi", "correction": "Il processo di appropriazione del desiderio è graduale"},
+        {"risk": "Ambienti intrusivi", "form": "Sovrastimolare, riempire ogni spazio", "correction": "Il desiderio ha bisogno di spazio e imprevedibilità limitata"},
+        {"risk": "Prestazionismo", "form": "Ridurre l'orientamento a obiettivi misurabili", "correction": "La dimensione del valore non è riducibile alla performance"},
+        {"risk": "Riduzione creatività a talento", "form": "Interpretare l'inibizione creativa come mancanza di capacità", "correction": "La creatività è manifestazione del campo desiderante — prima si legge il campo, poi il gesto"}
+      ],
+      "connections_to_axes": {
+        "A1": "Il campo intenzionale aperto (A1) è condizione perché il desiderio emerga (A5)",
+        "A2": "Il legame affettivo (A2) orienta l'apertura al possibile (A5)",
+        "A3": "Norma senza desiderio produce conformismo; desiderio senza norma produce dispersione",
+        "A4": "Il desiderio si ricostituisce dopo l'incontro col limite (A4)",
+        "A6": "Il contesto contemporaneo può sistematicamente deformare il desiderio verso la prestazione (A6→A5)"
+      }
+    },
+    "file_path": "Skill di fondamento/Skill-Asse5-Desiderio.md",
+    "status": "approved",
+    "version": "1.1",
+    "owner_type": "hcaire",
+    "owner_id": "user-001"
+  },
+  {
+    "id": "sk-006",
+    "name": "Asse 6 — Storico-culturale",
+    "slug": "asse-6-storico-culturale",
+    "skill_type": "fondativa",
+    "description": "Skill fondativa che radica il sistema nel contesto storico-culturale. Garantisce che nessun percorso di sviluppo sia letto senza considerare il mondo concreto in cui vive il bambino — le istituzioni, le tecnologie, le disuguaglianze, il contesto linguistico.",
+    "instruction_payload": {
+      "function_in_system": "Situa il soggetto nel mondo storico-culturale concreto. Impedisce che il modello resti astratto. Introduce le disuguaglianze strutturali, le istituzioni come ambienti di esperienza, le tecnologie come non-neutre, il linguaggio come pratica culturale.",
+      "key_concepts": [
+        "Il mondo storico-culturale come mediazione strutturale: famiglia, scuola, servizi, tecnologie organizzano il campo percettivo prima di qualsiasi riflessione",
+        "Lebenswelt: il bambino entra fin dall'inizio in un campo già strutturato — alcune possibilità appaiono pensabili, altre no",
+        "Mediazione linguistica e culturale: la lingua concreta, la tradizione narrativa, lo scarto lingua di casa/lingua della scuola sono variabili strutturali",
+        "Le istituzioni come ambienti di esperienza: scuola, servizi sanitari definiscono cosa conta, costruiscono la norma del 'bravo alunno'",
+        "Tecnica e mondo contemporaneo: le tecnologie digitali comprimono l'attesa, ridefiniscono le possibilità di relazione",
+        "Il soggetto non è prodotto passivo del contesto: il bambino può entrare in conflitto, criticare, trasformare",
+        "Nota di delimitazione: A6 copre il linguaggio come pratica culturale (in quale mondo linguistico vive il bambino?); la funzione simbolica come trasformazione strutturale dell'esperienza appartiene all'Asse Simbolico-linguaggio (in costruzione)"
+      ],
+      "activation_triggers": [
+        "difficoltà legate al contesto sociale o economico",
+        "effetti delle tecnologie digitali sullo sviluppo",
+        "qualità degli ambienti istituzionali (scuola, servizi)",
+        "disuguaglianze nelle opportunità di sviluppo",
+        "pressioni culturali sul bambino (prestazione, competizione)",
+        "comunità e contesti migratori o multiculturali",
+        "differenze tra lingua di casa e lingua della scuola"
+      ],
+      "reading_operators": [
+        "Sul contesto: Quale mondo storico-culturale pesa su questo bambino? Quali risorse e vincoli strutturali?",
+        "Sulle istituzioni: Come organizzano il campo di esperienza? Sostengono o ostacolano?",
+        "Sui dispositivi: Quali tecnologie e pratiche culturali sono attive?",
+        "Sulla disuguaglianza: Ci sono fattori strutturali da distinguere dai fattori individuali?",
+        "Sulla psicologizzazione: Sto attribuendo a individui problemi che appartengono al contesto?",
+        "Sul linguaggio: Il contesto linguistico concreto è considerato? Ci sono scarti lingua di casa/scuola?"
+      ],
+      "reduction_risks": [
+        {"risk": "Psicologizzazione del sociale", "form": "'Questo bambino ha problemi' quando il contesto è disorganizzante", "correction": "Distinguere fattori individuali da strutturali"},
+        {"risk": "Universalismo astratto", "form": "Applicare lo stesso modello senza considerare il contesto", "correction": "Lo sviluppo prende forme diverse in contesti diversi"},
+        {"risk": "Determinismo sociologico", "form": "'Tutto dipende dal contesto' — il soggetto scompare", "correction": "Il soggetto è storico ma non è puro prodotto del contesto"},
+        {"risk": "Neutralità tecnologica", "form": "Le tecnologie sono strumenti neutri", "correction": "I dispositivi ridefiniscono strutturalmente il campo di esperienza"},
+        {"risk": "Universalismo linguistico", "form": "Valutare il linguaggio su norme monoculturali", "correction": "Il contesto linguistico è variabile strutturale dello sviluppo"}
+      ],
+      "connections_to_axes": {
+        "A1": "Il mondo storico entra nel corpo prima che nella riflessione (A6→A1)",
+        "A3": "La normatività è sempre storicamente situata (A6→A3)",
+        "A4": "Il contesto può impedire l'elaborazione del limite (A6→A4)",
+        "A5": "Il contesto contemporaneo può deformare il desiderio verso la prestazione (A6→A5)"
+      }
+    },
+    "file_path": "Skill di fondamento/Skill-Asse6-Storico-culturale.md",
+    "status": "approved",
+    "version": "1.1",
+    "owner_type": "hcaire",
+    "owner_id": "user-001"
+  },
+  {
+    "id": "sk-007",
+    "name": "Skill di ambito — Genitoriale",
+    "slug": "skill-ambito-genitoriale",
+    "skill_type": "di_ambito",
+    "description": "Skill operativa per la produzione di output nell'ambito genitoriale. Definisce tono, priorità, rischi e vincoli specifici per comunicare con genitori e figure di cura.",
+    "instruction_payload": {
+      "area_sheet_id": "as-001",
+      "key_directives": [
+        "Rispondere alla domanda reale, non solo a quella esplicita",
+        "Considerare sia il bambino sia il genitore come soggetti rilevanti",
+        "Non colpevolizzare mai il genitore",
+        "Non rassicurare banalmente né allarmizzare",
+        "Offrire strumenti osservativi concreti, non solo orientamenti astratti",
+        "Segnalare quando è opportuno un approfondimento professionale senza allarmismo"
+      ],
+      "tone": "accessibile, caldo, rispettoso dell'intelligenza del genitore",
+      "forbidden_patterns": ["tecnicismi clinici", "diagnosi implicite", "confronti normativi non contestualizzati", "prescrizioni rigide", "rassicurazioni vuote"]
+    },
+    "file_path": "Schede di ambito/Genitoriale.md",
+    "status": "approved",
+    "version": "1.0",
+    "owner_type": "hcaire",
+    "owner_id": "user-001"
+  },
+  {
+    "id": "sk-008",
+    "name": "Skill di ambito — Clinico",
+    "slug": "skill-ambito-clinico",
+    "skill_type": "di_ambito",
+    "description": "Skill operativa per la produzione di output nell'ambito clinico. Definisce il livello di prudenza, la distinzione tra livelli (dato/interpretazione/ipotesi) e i limiti dell'intervento IA.",
+    "instruction_payload": {
+      "area_sheet_id": "as-002",
+      "key_directives": [
+        "Distinguere sempre dato, interpretazione e ipotesi",
+        "Leggere configurazioni, non sintomi isolati",
+        "Usare linguaggio probabilistico, non assertivo",
+        "Esplicitare quando è necessario approfondimento professionale",
+        "Non formulare diagnosi, nemmeno implicite",
+        "Considerare sempre il contesto relazionale e familiare"
+      ],
+      "tone": "preciso, sobrio, prudente, non assertivo oltre il giustificato",
+      "forbidden_patterns": ["diagnosi esplicite o implicite", "affermazioni assolute", "linguaggio allarmistico", "causalità lineare", "promesse di soluzione"]
+    },
+    "file_path": "Schede di ambito/Clinico.md",
+    "status": "approved",
+    "version": "1.0",
+    "owner_type": "hcaire",
+    "owner_id": "user-001"
+  },
+  {
+    "id": "sk-009",
+    "name": "Skill di ambito — Pedagogico",
+    "slug": "skill-ambito-pedagogico",
+    "skill_type": "di_ambito",
+    "description": "Skill operativa per la produzione di output nell'ambito pedagogico. Orienta verso la lettura dell'apprendimento come trasformazione del soggetto e dell'adulto come mediatore.",
+    "instruction_payload": {
+      "area_sheet_id": "as-003",
+      "key_directives": [
+        "Leggere l'apprendimento come trasformazione del soggetto, non come acquisizione di prestazioni",
+        "Considerare l'adulto come mediatore, non come trasmettitore",
+        "Integrare affettività, corpo e cognizione nella lettura",
+        "Distinguere difficoltà dell'individuo da inadeguatezza del contesto",
+        "Non ridurre l'educazione a tecniche e metodi"
+      ],
+      "tone": "chiaro, concettualmente rigoroso, applicativo, con esempi concreti",
+      "forbidden_patterns": ["riduzione a metodo", "prestazionalismo come obiettivo", "assenza di relazione", "prescrizioni universali"]
+    },
+    "file_path": "Schede di ambito/Pedagogico.md",
+    "status": "approved",
+    "version": "1.0",
+    "owner_type": "hcaire",
+    "owner_id": "user-001"
+  },
+  {
+    "id": "sk-010",
+    "name": "Skill di ambito — Politico",
+    "slug": "skill-ambito-politico",
+    "skill_type": "di_ambito",
+    "description": "Skill operativa per la produzione di output nell'ambito politico-istituzionale. Orienta verso argomenti fondativi, di equità ed economici — evitando over-promise e neuroriduzionismo.",
+    "instruction_payload": {
+      "area_sheet_id": "as-004",
+      "key_directives": [
+        "Usare sempre la triade: argomento fondativo + argomento economico + argomento di equità",
+        "Essere onesti sui limiti strutturali degli interventi",
+        "Non fare promesse che il programma non può mantenere",
+        "Rendere ogni passaggio difendibile istituzionalmente",
+        "Tradurre il framework HCAIRE in linguaggio istituzionale senza banalizzarlo"
+      ],
+      "tone": "autorevole, diretto, strutturato, difendibile",
+      "forbidden_patterns": ["neuroriduzionismo come unico argomento", "over-promise", "riduzione del bambino a investimento", "vaghezza non traducibile"]
+    },
+    "file_path": "Schede di ambito/Politico.md",
+    "status": "approved",
+    "version": "1.0",
+    "owner_type": "hcaire",
+    "owner_id": "user-001"
+  },
+  {
+    "id": "sk-011",
+    "name": "Skill di ambito — Sociologico",
+    "slug": "skill-ambito-sociologico",
+    "skill_type": "di_ambito",
+    "description": "Skill operativa per la produzione di output nell'ambito sociologico. Orienta verso la lettura dei determinanti strutturali mantenendo il soggetto visibile.",
+    "instruction_payload": {
+      "area_sheet_id": "as-005",
+      "key_directives": [
+        "Distinguere sempre fattori individuali da fattori strutturali",
+        "Mantenere il soggetto visibile anche nell'analisi strutturale",
+        "Non psicologizzare ciò che è strutturalmente sociale",
+        "Non determinare il soggetto con il contesto",
+        "Riconoscere i limiti strutturali reali senza rassegnazione"
+      ],
+      "tone": "analitico, non deterministico, attento alle strutture e al soggetto",
+      "forbidden_patterns": ["determinismo sociologico", "psicologizzazione del sociale", "perdita del soggetto", "universalismo non contestualizzato"]
+    },
+    "file_path": "Schede di ambito/Sociologico.md",
+    "status": "approved",
+    "version": "1.0",
+    "owner_type": "hcaire",
+    "owner_id": "user-001"
+  }
+]

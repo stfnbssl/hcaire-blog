@@ -1,0 +1,301 @@
+[
+  {
+    "id": "cn-001",
+    "name": "Relazione adulto-bambino",
+    "slug": "relazione-adulto-bambino",
+    "definition": "La relazione adulto-bambino è uno dei luoghi costitutivi dello sviluppo umano. Non è semplice cornice esterna, ma spazio generativo in cui si organizzano esperienza, regolazione, significato, fiducia, apprendimento, limite e apertura al mondo.",
+    "why_transversal": "Attraversa tutti gli ambiti: in clinica come contesto osservativo e regolativo; in pedagogia come mediazione educativa; in genitorialità come tessuto quotidiano della cura; nel sociale come risorsa o vulnerabilità; nel politico come oggetto indiretto di sostegno tramite servizi e politiche.",
+    "dimensions_involved": ["relazione", "affettività", "regolazione", "simbolico", "normatività", "desiderio", "corpo"],
+    "typical_manifestations": ["scambi di sguardi", "ritmi di risposta", "sintonizzazione o asincronia", "presenza o assenza di disponibilità reciproca", "modalità di contenimento, sostegno, attesa, guida"],
+    "area_lexicons": {
+      "clinico": "qualità dello scambio, co-regolazione, segnali di sintonizzazione",
+      "pedagogico": "mediazione, alleanza educativa, sostegno all'iniziativa",
+      "genitoriale": "stare con il bambino, ascoltare, rispondere, accompagnare",
+      "sociale": "reti di cura, sostegno alla genitorialità",
+      "politico": "interventi precoci, servizi di sostegno alle famiglie"
+    },
+    "guiding_questions": [
+      "La relazione è trattata come fattore strutturale o marginale?",
+      "Il bambino è pensato come soggetto nella relazione?",
+      "L'adulto è visto solo come controllore, o anche come mediatore?",
+      "Sono visibili dinamiche di sintonizzazione, scarto, riparazione?"
+    ],
+    "reduction_risks": ["ridurre la relazione a tecnica", "moralizzare la relazione", "leggere solo il comportamento del bambino senza lo scambio", "colpevolizzare l'adulto"],
+    "presence_indicators": ["attenzione allo scambio", "attenzione alla reciprocità asimmetrica", "presenza del tema della mediazione adulta"],
+    "impoverishment_indicators": ["focus solo sul comportamento individuale", "assenza del contesto relazionale", "linguaggio solo prestazionale"],
+    "related_nodes": ["cn-002", "cn-003", "cn-004", "cn-006", "cn-007"],
+    "priority_level": "primario",
+    "status": "approved",
+    "version": "1.0",
+    "source_document_id": "fd-004"
+  },
+  {
+    "id": "cn-002",
+    "name": "Regolazione e co-regolazione",
+    "slug": "regolazione-co-regolazione",
+    "definition": "Lo sviluppo implica processi di regolazione interna e interpersonale. La co-regolazione descrive il modo in cui l'organizzazione del bambino si appoggia, soprattutto nelle fasi precoci, alla presenza e alla risposta dell'altro.",
+    "why_transversal": "È centrale in clinica per leggere equilibrio, fatica, disorganizzazione; in genitorialità per capire sonno, pianto, attesa, calma, frustrazione; in pedagogia per sostenere attenzione e apprendimento; nel sociale per comprendere come condizioni ambientali favoriscano o ostacolino la stabilità; nel politico per giustificare interventi di supporto precoce.",
+    "dimensions_involved": ["corpo", "affettività", "relazione", "integrazione/disorganizzazione"],
+    "typical_manifestations": ["modulazione del pianto", "passaggio da agitazione a calma", "uso dell'adulto come base di appoggio", "stabilità o instabilità dei ritmi", "tolleranza della frustrazione"],
+    "area_lexicons": {
+      "clinico": "co-regolazione diadica, stabilità dei ritmi, gestione degli stati",
+      "pedagogico": "attenzione, partecipazione, stabilità nelle transizioni",
+      "genitoriale": "calmare, contenere, aspettare insieme, rispondere ai segnali",
+      "sociale": "condizioni che sostengono o sopraffanno la capacità regolativa delle famiglie",
+      "politico": "servizi precoci, sostegno alla genitorialità nei primi 1000 giorni"
+    },
+    "guiding_questions": [
+      "Ciò che appare come 'problema' è una difficoltà di regolazione?",
+      "La co-regolazione è disponibile nel contesto?",
+      "Il contesto sostiene o sovraccarica la capacità regolativa?",
+      "La risposta adulta modula o amplifica la fatica del bambino?"
+    ],
+    "reduction_risks": ["leggere tutto come temperamento individuale", "trasformare la regolazione in addestramento", "separare il corpo dalla relazione"],
+    "presence_indicators": ["attenzione ai ritmi e alle transizioni", "lettura integrata corpo-relazione", "riconoscimento del ruolo dell'adulto come regolatore"],
+    "impoverishment_indicators": ["focus esclusivo sul comportamento", "soluzioni tecniche senza lettura relazionale", "attribuzione individuale di ciò che è sistemico"],
+    "related_nodes": ["cn-001", "cn-004", "cn-005", "cn-009"],
+    "priority_level": "primario",
+    "status": "approved",
+    "version": "1.0",
+    "source_document_id": "fd-004"
+  },
+  {
+    "id": "cn-003",
+    "name": "Linguaggio e significato condiviso",
+    "slug": "linguaggio-significato-condiviso",
+    "definition": "Il linguaggio non è solo acquisizione di parole, ma costruzione condivisa di significato. Si radica nello scambio, nella corporeità, nell'affettività e nell'apertura al mondo comune.",
+    "why_transversal": "In clinica: osservazione dello sviluppo comunicativo. In pedagogia: base di apprendimento e simbolizzazione. In genitorialità: pratiche quotidiane di parola, canto, lettura, attesa. Nel sociale: accesso diseguale a risorse culturali e linguistiche. Nel politico: programmi di promozione precoce della parola e della lettura.",
+    "dimensions_involved": ["simbolico e linguaggio", "relazione", "affettività", "corpo", "contesto storico-culturale"],
+    "typical_manifestations": ["turn-taking", "vocalizzazioni e gesti condivisi", "indicazione", "lettura condivisa", "denominazione del mondo", "gioco simbolico iniziale"],
+    "area_lexicons": {
+      "clinico": "sviluppo comunicativo, produzione e comprensione, discrepanza contesti",
+      "pedagogico": "costruzione di significato, accesso al mondo condiviso, simbolizzazione",
+      "genitoriale": "parlare con il bambino, leggere insieme, rispondere alle vocalizzazioni",
+      "sociale": "accesso alle risorse linguistiche, bilinguismo, contesti migratori",
+      "politico": "programmi di promozione della lettura, sostegno alle famiglie in contesti svantaggiati"
+    },
+    "guiding_questions": [
+      "Il linguaggio è trattato come prestazione o come processo relazionale?",
+      "Si considera la dimensione del significato condiviso oltre al lessico?",
+      "È presente il ruolo dell'adulto come partner simbolico?",
+      "Il contesto linguistico concreto è considerato (lingua di casa vs. lingua della scuola)?"
+    ],
+    "reduction_risks": ["linguaggio come solo lessico o numero di parole", "ansia da prestazione sulle tappe", "anticipazione forzata", "separazione tra linguaggio e relazione", "valutazione decontestualizzata"],
+    "presence_indicators": ["attenzione alla comunicazione pre-verbale", "lettura dello scambio oltre alla produzione", "considerazione del contesto linguistico"],
+    "impoverishment_indicators": ["focus esclusivo sulle parole prodotte", "confronto con norme senza contestualizzazione", "assenza del partner adulto nella lettura"],
+    "related_nodes": ["cn-001", "cn-004", "cn-007", "cn-008"],
+    "priority_level": "primario",
+    "status": "approved",
+    "version": "1.0",
+    "source_document_id": "fd-004"
+  },
+  {
+    "id": "cn-004",
+    "name": "Affettività",
+    "slug": "affettivita",
+    "definition": "L'affettività non è un'aggiunta al funzionamento, ma una dimensione costitutiva dell'esperienza, della relazione, del senso e della regolazione.",
+    "why_transversal": "È presente in ogni pratica di cura, apprendimento, osservazione, sostegno e politica dello sviluppo. Non può essere separata dalla cognizione, dalla regolazione, dalla normatività o dal desiderio.",
+    "dimensions_involved": ["affettività", "relazione", "corpo", "desiderio", "regolazione"],
+    "typical_manifestations": ["tono emotivo dello scambio", "sicurezza o ritiro", "gioia condivisa", "irritabilità persistente", "partecipazione emotiva"],
+    "area_lexicons": {
+      "clinico": "tono affettivo, colpa integrativa, capacità di riparazione, conformismo vs. responsabilità",
+      "pedagogico": "sicurezza emotiva, coinvolgimento, ciclo rottura/riparazione in classe",
+      "genitoriale": "legame, attaccamento, risposta sensibile, riparazione dopo la rottura",
+      "sociale": "reti affettive, isolamento, condizioni per il legame",
+      "politico": "infrastruttura affettiva, condizioni strutturali per il legame"
+    },
+    "guiding_questions": [
+      "L'affettività è trattata come dimensione strutturale o come variabile aggiuntiva?",
+      "C'è distinzione tra colpa integrativa e colpa schiacciante?",
+      "La riparazione è riconosciuta come momento formativo?",
+      "Si distingue tra conformismo (obbedienza per paura) e responsabilità (risposta per legame)?"
+    ],
+    "reduction_risks": ["sentimentalismo", "negazione del ruolo affettivo", "trattazione puramente comportamentale delle emozioni", "confusione tra conformismo e responsabilità"],
+    "presence_indicators": ["attenzione al tono degli scambi", "lettura del ciclo rottura/riparazione", "distinzione conformismo/responsabilità"],
+    "impoverishment_indicators": ["emozioni come accessori del comportamento", "assenza della dimensione affettiva nell'adulto", "focus solo sul bambino senza lo scambio"],
+    "related_nodes": ["cn-001", "cn-002", "cn-005", "cn-007", "cn-010"],
+    "priority_level": "primario",
+    "status": "approved",
+    "version": "1.0",
+    "source_document_id": "fd-004"
+  },
+  {
+    "id": "cn-005",
+    "name": "Corpo e esperienza incarnata",
+    "slug": "corpo-esperienza-incarnata",
+    "definition": "Il corpo è il luogo originario dell'esperienza, della regolazione, dell'incontro con l'altro e dell'accesso al mondo. Non è soltanto supporto biologico, ma dimensione vissuta e relazionale.",
+    "why_transversal": "Ogni sviluppo passa attraverso ritmi, postura, sensorialità, gesto, prossimità, movimento, presenza. Il corpo è il primo mediatore tra il bambino e il mondo.",
+    "dimensions_involved": ["corpo", "regolazione", "relazione", "affettività", "intenzionalità"],
+    "typical_manifestations": ["tono muscolare", "ritmi corporei (sonno, alimentazione)", "gesto ed esplorazione motoria", "risposta sensoriale", "prossimità e contatto fisico"],
+    "area_lexicons": {
+      "clinico": "tono corporeo, segnali somatici, ritmo e regolazione fisica",
+      "pedagogico": "apprendimento incarnato, gesto, azione, esplorazione sensoriale",
+      "genitoriale": "portare in braccio, toccare, muoversi insieme, ritmi del corpo",
+      "sociale": "condizioni materiali che impattano sul corpo del bambino",
+      "politico": "salute e nutrizione come condizioni per lo sviluppo"
+    },
+    "guiding_questions": [
+      "Il corpo è presente nella lettura del caso o è assente?",
+      "I segnali corporei sono letti come parte della comunicazione o solo come sintomi fisici?",
+      "L'esperienza incarnata è considerata come base dell'apprendimento?"
+    ],
+    "reduction_risks": ["biologismo (corpo come solo meccanismo)", "cognitivismo disincarnato (separare mente e corpo)", "trattazione del corpo come oggetto medico senza dimensione relazionale"],
+    "presence_indicators": ["attenzione ai ritmi e al tono", "lettura integrata corpo-relazione-emozione", "considerazione del gesto e del movimento"],
+    "impoverishment_indicators": ["assenza del corpo nella lettura", "riduzione del corpo a sintomi isolati", "descrizione del bambino senza dimensione fisica"],
+    "related_nodes": ["cn-001", "cn-002", "cn-004"],
+    "priority_level": "primario",
+    "status": "approved",
+    "version": "1.0",
+    "source_document_id": "fd-004"
+  },
+  {
+    "id": "cn-006",
+    "name": "Limite reale e separazione",
+    "slug": "limite-reale-separazione",
+    "definition": "Lo sviluppo implica incontro con il limite, differenziazione, attesa, frustrazione tollerabile, non coincidenza immediata tra desiderio e soddisfazione. La separazione non è semplice perdita, ma condizione di autonomia e simbolizzazione.",
+    "why_transversal": "In genitorialità: regole, attese, frustrazione, autonomia. In pedagogia: regole, confini, ingresso nel mondo comune. In clinica: rigidità, dipendenza, disorganizzazione davanti al limite. Nel politico/sociale: condizioni che sostengono o indeboliscono la funzione contenitiva degli ambienti.",
+    "dimensions_involved": ["limite", "separazione", "normatività", "desiderio", "affettività"],
+    "typical_manifestations": ["crisi di fronte al 'no'", "difficoltà nelle transizioni", "elaborazione della perdita", "attesa tollerabile o intollerabile", "autonomia progressiva"],
+    "area_lexicons": {
+      "clinico": "situazioni che resistono agli interventi, lutti e perdite reali, limite come risposta adeguata al reale",
+      "pedagogico": "fallimento reale nonostante l'impegno, transizioni difficili, onnipotenza educativa",
+      "genitoriale": "dire no, frustrazione, crisi, limiti che orientano",
+      "sociale": "vulnerabilità persistenti, perdite sociali, limiti strutturali degli interventi",
+      "politico": "promesse impossibili, aspettative irrealistiche, limiti strutturali delle politiche"
+    },
+    "guiding_questions": [
+      "Il limite presente è reale (non modificabile) o normativo (regola)?",
+      "L'adulto tollera il limite o lo nega?",
+      "Il dolore presente è risposta adeguata al reale o sintomo da eliminare?",
+      "L'intervento è orientato a eliminare il limite o ad accompagnarlo?"
+    ],
+    "reduction_risks": ["autoritarismo (limite come controllo)", "permissivismo (assenza di limite)", "onnipotenza dell'adulto o del sistema (promettere ciò che non è possibile)", "patologizzare il dolore davanti alla perdita"],
+    "presence_indicators": ["distinzione limite reale/norma/frustrazione", "riconoscimento dell'intolleranza adulta al limite", "lettura del dolore come risposta adeguata"],
+    "impoverishment_indicators": ["proposta di soluzioni a situazioni senza soluzione", "colpevolizzazione senza lettura del reale", "assenza della dimensione del limite nella lettura"],
+    "related_nodes": ["cn-001", "cn-004", "cn-007", "cn-009"],
+    "priority_level": "primario",
+    "status": "approved",
+    "version": "1.0",
+    "source_document_id": "fd-004"
+  },
+  {
+    "id": "cn-007",
+    "name": "Desiderio e iniziativa del soggetto",
+    "slug": "desiderio-iniziativa-soggetto",
+    "definition": "Il soggetto non si sviluppa solo come recettore di stimoli o destinatario di interventi, ma come centro di iniziativa, orientamento, interesse, tensione verso il mondo. Il desiderio è la struttura di orientamento verso il possibile.",
+    "why_transversal": "Tocca apprendimento, linguaggio, relazione educativa, motivazione, gioco, partecipazione, progettazione di interventi. È presente in ogni ambito dove si parla di curiosità, passività, apatia, entusiasmo, motivazione.",
+    "dimensions_involved": ["desiderio", "affettività", "relazione", "simbolico", "corpo"],
+    "typical_manifestations": ["curiosità esplorativa", "iniziativa spontanea", "ritiro e apatia", "gioco simbolico ricco", "prestazionalismo creativo", "apertura vs. chiusura al possibile"],
+    "area_lexicons": {
+      "clinico": "campo desiderante aperto o chiuso, ritiro vs. difficoltà di regolazione, prestazionalismo come patologia",
+      "pedagogico": "motivazione interna, curiosità, partecipazione attiva, desiderio di imparare",
+      "genitoriale": "iniziativa del bambino, autonomia, scelte e preferenze",
+      "sociale": "possibilità di sviluppo, accesso a esperienze",
+      "politico": "creazione di condizioni perché il desiderio dei bambini abbia spazio"
+    },
+    "guiding_questions": [
+      "Il desiderio è trattato come struttura di orientamento o come motivazione tecnica?",
+      "Si distingue desiderio da bisogno, motivazione e capriccio?",
+      "Il ritiro osservato è un cedimento del campo desiderante o una difficoltà di regolazione?",
+      "L'ambiente sostiene o soffoca l'apertura al possibile?"
+    ],
+    "reduction_risks": ["confusione desiderio/bisogno", "confusione desiderio/motivazione", "usare premi per 'motivare' senza leggere il campo", "etichettatura precoce degli interessi", "prestazionalismo creativo non riconosciuto come patologia"],
+    "presence_indicators": ["distinzione desiderio/bisogno/motivazione/capriccio", "lettura del campo di esperienza come fattore", "riconoscimento del ritiro come segnale strutturale"],
+    "impoverishment_indicators": ["proposta di sole tecniche motivazionali", "ignorare la qualità dell'ambiente", "confusione conformità entusiasta con desiderio genuino"],
+    "related_nodes": ["cn-001", "cn-003", "cn-004", "cn-006", "cn-010"],
+    "priority_level": "primario",
+    "status": "approved",
+    "version": "1.0",
+    "source_document_id": "fd-004"
+  },
+  {
+    "id": "cn-008",
+    "name": "Contesto storico-culturale",
+    "slug": "contesto-storico-culturale",
+    "definition": "Lo sviluppo umano avviene sempre dentro un mondo storico, simbolico, linguistico, istituzionale e materiale. Nessun percorso individuale è comprensibile prescindendo da questo contesto. Le condizioni strutturali non sono sfondo: organizzano il campo di esperienza prima di qualsiasi riflessione.",
+    "why_transversal": "Rende leggibili differenze di opportunità, stili educativi, risorse culturali, vulnerabilità sociali, organizzazione dei servizi. È sempre attivo come sfondo in ogni ambito, ma prioritario in politico e sociologico.",
+    "dimensions_involved": ["contesto storico-culturale", "istituzioni", "tecnologie", "disuguaglianza", "linguaggio"],
+    "typical_manifestations": ["pressioni culturali sulla prestazione", "effetti delle tecnologie digitali sui ritmi", "differenze di accesso ai servizi", "contesti migratori e multiculturali", "scarto lingua di casa/lingua della scuola"],
+    "area_lexicons": {
+      "clinico": "condizioni socio-economiche come fattori di sviluppo, norme culturali non universali, decontestualizzazione come rischio",
+      "pedagogico": "scuola come istituzione che organizza il campo di esperienza, tecnologie vs. tempo scolastico, disuguaglianze di partenza",
+      "genitoriale": "pressioni culturali, aspettative sociali, contesti multiculturali",
+      "sociale": "vulnerabilità strutturali, determinanti sociali dello sviluppo",
+      "politico": "politiche per l'infanzia, investimento precoce, riduzione delle disuguaglianze"
+    },
+    "guiding_questions": [
+      "Quale mondo storico-culturale concreto pesa su questo bambino e questa famiglia?",
+      "Le istituzioni presenti sostengono o ostacolano lo sviluppo?",
+      "Sto attribuendo a individui o famiglie problemi che appartengono al contesto strutturale?",
+      "Le norme di sviluppo applicate sono culturalmente specifiche o universali?"
+    ],
+    "reduction_risks": ["psicologizzazione del sociale", "universalismo astratto", "determinismo sociologico (il soggetto scompare)", "neutralità tecnologica", "decontestualizzazione culturale"],
+    "presence_indicators": ["considerazione del contesto come fattore strutturale", "distinzione individuale/strutturale", "attenzione alle disuguaglianze"],
+    "impoverishment_indicators": ["assenza del contesto nella lettura", "attribuzione a individui di problemi strutturali", "applicazione acritica di norme universali"],
+    "related_nodes": ["cn-001", "cn-003", "cn-007"],
+    "priority_level": "secondario",
+    "status": "approved",
+    "version": "1.0",
+    "source_document_id": "fd-004"
+  },
+  {
+    "id": "cn-009",
+    "name": "Integrazione / disorganizzazione",
+    "slug": "integrazione-disorganizzazione",
+    "definition": "Questo nodo descrive il grado in cui le diverse dimensioni dell'esperienza e del comportamento trovano una forma relativamente coerente oppure appaiono frammentate, rigide, instabili o reciprocamente scollegate.",
+    "why_transversal": "Può essere usato in clinica per leggere traiettorie e segnali di fatica; in pedagogia per leggere modalità di apprendimento e partecipazione; in genitorialità per rendere comprensibili alcune difficoltà; nel sociale per cogliere effetti di contesti disorganizzanti.",
+    "dimensions_involved": ["integrazione", "regolazione", "corpo", "affettività", "relazione"],
+    "typical_manifestations": ["coerenza tra comportamento, affettività e relazione", "frammentazione dei segnali", "rigidità o instabilità dei pattern", "incoerenza contestuale vs. pervasiva"],
+    "area_lexicons": {
+      "clinico": "configurazione integrata vs. frammentata, segnale isolato vs. pattern coerente",
+      "pedagogico": "qualità dell'esperienza educativa, partecipazione coerente vs. discontinua",
+      "genitoriale": "bambino che 'dà segnali contraddittori', comportamento difficile da leggere",
+      "sociale": "effetti di contesti disorganizzanti sulla coerenza del bambino",
+      "politico": "integrazione tra sistemi di cura (sanità, scuola, servizi sociali)"
+    },
+    "guiding_questions": [
+      "Il comportamento osservato è un segnale isolato o parte di una configurazione?",
+      "Le diverse dimensioni (corpo, affettività, relazione) sono coerenti tra loro?",
+      "La disorganizzazione è contestuale o pervasiva?",
+      "Il contesto contribuisce alla disorganizzazione?"
+    ],
+    "reduction_risks": ["trasformarlo in etichetta diagnostica implicita", "confondere complessità con patologia", "leggere sintomi isolati senza configurazione"],
+    "presence_indicators": ["lettura di pattern non singoli segnali", "attenzione alla coerenza multidimensionale", "distinzione contestuale/pervasivo"],
+    "impoverishment_indicators": ["focus su segnali isolati", "mancanza di integrazione tra dimensioni", "uso come etichetta senza operatori di lettura"],
+    "related_nodes": ["cn-001", "cn-002", "cn-005", "cn-010"],
+    "priority_level": "secondario",
+    "status": "approved",
+    "version": "1.0",
+    "source_document_id": "fd-004"
+  },
+  {
+    "id": "cn-010",
+    "name": "Apertura / chiusura al mondo",
+    "slug": "apertura-chiusura-mondo",
+    "definition": "Lo sviluppo può essere letto come dinamica di apertura o chiusura verso l'altro, verso il mondo, verso l'esperienza, verso il linguaggio, verso il gioco, verso l'apprendimento.",
+    "why_transversal": "Collega affettività, desiderio, regolazione, apprendimento, relazione, ambiente. È una chiave di lettura trasversale che aiuta a descrivere la qualità del campo di esperienza del bambino.",
+    "dimensions_involved": ["apertura/chiusura", "desiderio", "affettività", "regolazione", "relazione"],
+    "typical_manifestations": ["curiosità ed esplorazione vs. ritiro e disinteresse", "gioco aperto vs. chiuso", "risposta all'adulto vs. assenza di risposta", "campo intenzionale aperto vs. contratto"],
+    "area_lexicons": {
+      "clinico": "campo intenzionale aperto o chiuso, curiosità vs. ritiro strutturale",
+      "pedagogico": "partecipazione vs. disengagement, apertura all'apprendimento",
+      "genitoriale": "bambino che si mostra interessato vs. bambino indifferente",
+      "sociale": "accesso a esperienze come condizione dell'apertura",
+      "politico": "ambienti che ampliano vs. ambienti che restringono il possibile"
+    },
+    "guiding_questions": [
+      "Il mondo appare desiderabile a questo bambino in questo contesto?",
+      "Il ritiro è difesa, stanchezza o chiusura strutturale del campo?",
+      "L'ambiente sostiene o soffoca l'orientamento verso il possibile?",
+      "La chiusura è contestuale o sistematica?"
+    ],
+    "reduction_risks": ["eccessiva metaforizzazione", "uso non verificabile della categoria", "moralizzazione del ritiro o della difesa"],
+    "presence_indicators": ["attenzione alla qualità del campo di esperienza", "distinzione apertura contestuale/strutturale", "lettura dell'ambiente come fattore"],
+    "impoverishment_indicators": ["uso come etichetta senza operatori", "mancanza di contestualizzazione", "confusione tra ritiro e problema comportamentale"],
+    "related_nodes": ["cn-004", "cn-007", "cn-002", "cn-009"],
+    "priority_level": "secondario",
+    "status": "approved",
+    "version": "1.0",
+    "source_document_id": "fd-004"
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "area_sheet_id": "as-001",
+    "concept_node_id": "cn-001",
+    "priority_in_area": "primario",
+    "notes": "Tessuto quotidiano della cura; qualità dello scambio, risposta ai segnali del bambino."
+  },
+  {
+    "area_sheet_id": "as-001",
+    "concept_node_id": "cn-004",
+    "priority_in_area": "primario",
+    "notes": "Ciclo legame/rottura/riparazione; colpa integrativa; distinzione conformismo/responsabilità."
+  },
+  {
+    "area_sheet_id": "as-001",
+    "concept_node_id": "cn-003",
+    "priority_in_area": "primario",
+    "notes": "Pratiche quotidiane di parola, canto, lettura; accesso al mondo condiviso."
+  },
+  {
+    "area_sheet_id": "as-001",
+    "concept_node_id": "cn-007",
+    "priority_in_area": "secondario",
+    "notes": "Iniziativa del bambino, autonomia esplorativa, campo desiderante aperto/contratto."
+  },
+  {
+    "area_sheet_id": "as-001",
+    "concept_node_id": "cn-002",
+    "priority_in_area": "secondario",
+    "notes": "Sonno, alimentazione, ritmi; co-regolazione precoce diadica."
+  },
+  {
+    "area_sheet_id": "as-001",
+    "concept_node_id": "cn-006",
+    "priority_in_area": "secondario",
+    "notes": "Frustrazione, crisi, autonomia progressiva; incontro con il limite reale."
+  },
+  {
+    "area_sheet_id": "as-001",
+    "concept_node_id": "cn-008",
+    "priority_in_area": "secondario",
+    "notes": "Pressioni culturali, tecnologie, aspettative sociali, contesti multiculturali."
+  },
+  {
+    "area_sheet_id": "as-002",
+    "concept_node_id": "cn-005",
+    "priority_in_area": "primario",
+    "notes": "Sonno, alimentazione, ritmo, tono corporeo; stabilità/instabilità somatica."
+  },
+  {
+    "area_sheet_id": "as-002",
+    "concept_node_id": "cn-002",
+    "priority_in_area": "primario",
+    "notes": "Co-regolazione diadica; disponibilità dell'adulto; contingenza della risposta."
+  },
+  {
+    "area_sheet_id": "as-002",
+    "concept_node_id": "cn-001",
+    "priority_in_area": "primario",
+    "notes": "Qualità dello scambio, sintonizzazione, co-regolazione diadica."
+  },
+  {
+    "area_sheet_id": "as-002",
+    "concept_node_id": "cn-004",
+    "priority_in_area": "primario",
+    "notes": "Tono emotivo, capacità di riparazione, conformismo vs. responsabilità."
+  },
+  {
+    "area_sheet_id": "as-002",
+    "concept_node_id": "cn-009",
+    "priority_in_area": "primario",
+    "notes": "Coerenza tra dimensioni; segnali di frammentazione comportamentale o affettiva."
+  },
+  {
+    "area_sheet_id": "as-002",
+    "concept_node_id": "cn-003",
+    "priority_in_area": "secondario",
+    "notes": "Sviluppo comunicativo, significato condiviso, discrepanza casa/contesto valutativo."
+  },
+  {
+    "area_sheet_id": "as-002",
+    "concept_node_id": "cn-006",
+    "priority_in_area": "secondario",
+    "notes": "Situazioni che resistono, lutti, diagnosi difficili; dolore come risposta adeguata."
+  },
+  {
+    "area_sheet_id": "as-002",
+    "concept_node_id": "cn-007",
+    "priority_in_area": "secondario",
+    "notes": "Ritiro vs. difficoltà di regolazione; prestazionalismo; qualità dell'ambiente."
+  },
+  {
+    "area_sheet_id": "as-002",
+    "concept_node_id": "cn-008",
+    "priority_in_area": "secondario",
+    "notes": "Condizioni socio-economiche, norme culturali non universali, accesso differenziato ai servizi."
+  },
+  {
+    "area_sheet_id": "as-003",
+    "concept_node_id": "cn-001",
+    "priority_in_area": "primario",
+    "notes": "Relazione educativa come spazio in cui si costruisce l'apprendimento; qualità dello scambio adulto-bambino."
+  },
+  {
+    "area_sheet_id": "as-003",
+    "concept_node_id": "cn-003",
+    "priority_in_area": "primario",
+    "notes": "Costruzione di significati condivisi; accesso al mondo simbolico."
+  },
+  {
+    "area_sheet_id": "as-003",
+    "concept_node_id": "cn-007",
+    "priority_in_area": "primario",
+    "notes": "Motivazione interna, curiosità, partecipazione attiva; desiderio non orientato come segnale."
+  },
+  {
+    "area_sheet_id": "as-003",
+    "concept_node_id": "cn-004",
+    "priority_in_area": "primario",
+    "notes": "Sicurezza emotiva; ciclo rottura/riparazione come momento formativo; distinzione obbedienza/responsabilità."
+  },
+  {
+    "area_sheet_id": "as-003",
+    "concept_node_id": "cn-005",
+    "priority_in_area": "secondario",
+    "notes": "Apprendimento incarnato; gesto, azione, esplorazione fisica."
+  },
+  {
+    "area_sheet_id": "as-003",
+    "concept_node_id": "cn-006",
+    "priority_in_area": "secondario",
+    "notes": "Frustrazione davanti al non-riuscire; fallimenti reali; transizioni difficili."
+  },
+  {
+    "area_sheet_id": "as-003",
+    "concept_node_id": "cn-008",
+    "priority_in_area": "secondario",
+    "notes": "Scuola come istituzione; tecnologie; pressioni sulla prestazione; disuguaglianze di contesto."
+  },
+  {
+    "area_sheet_id": "as-004",
+    "concept_node_id": "cn-008",
+    "priority_in_area": "primario",
+    "notes": "Determinanti strutturali dello sviluppo; istituzioni come ambienti; disuguaglianze sistemiche."
+  },
+  {
+    "area_sheet_id": "as-004",
+    "concept_node_id": "cn-004",
+    "priority_in_area": "secondario",
+    "notes": "Infrastruttura affettiva; strutture che rendono possibile il legame nei servizi."
+  },
+  {
+    "area_sheet_id": "as-004",
+    "concept_node_id": "cn-006",
+    "priority_in_area": "secondario",
+    "notes": "Limiti strutturali degli interventi; aspettative irrealistiche; onnipotenza politica da evitare."
+  },
+  {
+    "area_sheet_id": "as-004",
+    "concept_node_id": "cn-007",
+    "priority_in_area": "secondario",
+    "notes": "Creazione di condizioni perché il desiderio e l'apertura al possibile abbiano spazio nei bambini."
+  },
+  {
+    "area_sheet_id": "as-004",
+    "concept_node_id": "cn-001",
+    "priority_in_area": "secondario",
+    "notes": "La relazione adulto-bambino come oggetto di tutela politica attraverso i servizi."
+  },
+  {
+    "area_sheet_id": "as-005",
+    "concept_node_id": "cn-008",
+    "priority_in_area": "primario",
+    "notes": "Determinanti strutturali; disuguaglianze; organizzazione dei servizi; contesti migratori."
+  },
+  {
+    "area_sheet_id": "as-005",
+    "concept_node_id": "cn-004",
+    "priority_in_area": "secondario",
+    "notes": "Reti di cura; colpa/vergogna come prodotti sociali; reti di riparazione comunitaria."
+  },
+  {
+    "area_sheet_id": "as-005",
+    "concept_node_id": "cn-006",
+    "priority_in_area": "secondario",
+    "notes": "Vulnerabilità persistenti; perdite sociali; limiti strutturali degli interventi."
+  },
+  {
+    "area_sheet_id": "as-005",
+    "concept_node_id": "cn-007",
+    "priority_in_area": "secondario",
+    "notes": "Accesso a esperienze; condizioni che ampliano o restringono il campo del possibile per i bambini."
+  },
+  {
+    "area_sheet_id": "as-005",
+    "concept_node_id": "cn-010",
+    "priority_in_area": "secondario",
+    "notes": "Apertura/chiusura al mondo in funzione delle condizioni strutturali; inclusione vs. esclusione."
+  },
+  {
+    "area_sheet_id": "as-005",
+    "concept_node_id": "cn-001",
+    "priority_in_area": "secondario",
+    "notes": "La relazione adulto-bambino come mediata dalle condizioni strutturali e dalla vulnerabilità familiare."
+  }
+]

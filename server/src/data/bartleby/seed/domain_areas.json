@@ -1,0 +1,57 @@
+[
+  {
+    "id": "da-001",
+    "name": "Genitoriale",
+    "slug": "genitoriale",
+    "description": "Ambito che supporta genitori e figure di cura nella comprensione e nel sostegno dello sviluppo del bambino nella quotidianità relazionale.",
+    "purpose": "Supportare genitori nel comprendere il comportamento del bambino, orientarli nelle scelte educative quotidiane, ridurre la colpevolizzazione e favorire la riflessione sulla qualità della relazione.",
+    "language_style": "Accessibile, caldo, non colpevolizzante, rispettoso dell'intelligenza del genitore. Evitare tecnicismi, usare esempi concreti, mantenere profondità senza pesantezza.",
+    "risk_profile": "Colpevolizzazione del genitore, rassicurazione banale, allarmismo diagnostico, tecnificazione delle risposte, riduzione a prescrizioni rigide.",
+    "status": "approved",
+    "version": "1.0"
+  },
+  {
+    "id": "da-002",
+    "name": "Clinico",
+    "slug": "clinico",
+    "description": "Ambito che supporta operatori sanitari e contesti di cura (in particolare pediatrici) nella lettura dello sviluppo del bambino e nell'interpretazione di segnali e comportamenti.",
+    "purpose": "Arricchire e orientare il giudizio clinico in senso non riduttivo. Supportare la lettura di configurazioni, non di sintomi isolati. Non sostituire ma integrare il giudizio professionale.",
+    "language_style": "Preciso, sobrio, non assertivo oltre il giustificato. Distinguere livelli (dato/interpretazione/ipotesi). Usare linguaggio probabilistico. Evitare diagnosi implicite e tono allarmistico.",
+    "risk_profile": "Sintomatizzazione, diagnosi precoce impropria, causalità lineare, separazione dal contesto, medicalizzazione eccessiva, onnipotenza clinica, decontestualizzazione culturale.",
+    "status": "approved",
+    "version": "1.0"
+  },
+  {
+    "id": "da-003",
+    "name": "Pedagogico",
+    "slug": "pedagogico",
+    "description": "Ambito che supporta la comprensione e l'orientamento dei processi educativi nei contesti formali e informali, per educatori e insegnanti.",
+    "purpose": "Evitare la riduzione dell'educazione a tecnica, sostenere pratiche educative consapevoli, integrare sviluppo, apprendimento, relazione e significato.",
+    "language_style": "Chiaro, concettualmente rigoroso, applicativo. Esplicitare il senso delle pratiche, collegare teoria e azione, usare esempi concreti, mantenere profondità senza tecnicismo.",
+    "risk_profile": "Tecnificazione dell'educazione, prestazionalizzazione, separazione affettività/cognizione, perdita del soggetto, eccesso di programmazione, decontestualizzazione culturale, onnipotenza educativa.",
+    "status": "approved",
+    "version": "1.0"
+  },
+  {
+    "id": "da-004",
+    "name": "Politico",
+    "slug": "politico",
+    "description": "Ambito che supporta decisori istituzionali e policy maker nella comprensione e progettazione di politiche per l'infanzia e lo sviluppo.",
+    "purpose": "Tradurre il framework HCAIRE in linguaggio istituzionale senza banalizzarlo. Orientare investimenti e politiche verso le fondamenta dello sviluppo, non solo verso i sintomi visibili.",
+    "language_style": "Autorevole, diretto, strutturato. Adatto a brief istituzionali, note orientative, documenti di policy. Evitare vaghezza e accademia non traducibile. Rendere ogni passaggio difendibile.",
+    "risk_profile": "Riduzione a indicatori misurabili, perdita del soggetto, onnipotenza politica, over-promise, neuroriduzionismo, economicismo.",
+    "status": "approved",
+    "version": "1.0"
+  },
+  {
+    "id": "da-005",
+    "name": "Sociologico",
+    "slug": "sociologico",
+    "description": "Ambito che supporta la comprensione dei determinanti strutturali dello sviluppo infantile e l'analisi delle condizioni sociali che favoriscono o ostacolano il benessere.",
+    "purpose": "Rendere visibili i fattori strutturali (povertà, disuguaglianza, isolamento, contesti migratori) che impattano sullo sviluppo. Evitare la psicologizzazione del sociale.",
+    "language_style": "Analitico, attento alle strutture, non deterministico. Distinguere fattori individuali da fattori strutturali. Mantenere il soggetto visibile anche nell'analisi sistemica.",
+    "risk_profile": "Determinismo sociologico, psicologizzazione del sociale, perdita del soggetto nell'analisi strutturale, universalismo astratto.",
+    "status": "approved",
+    "version": "1.0"
+  }
+]

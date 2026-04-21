@@ -3,6 +3,25 @@ import ArticleRequest from '../models/ArticleRequest';
 import { getRedisClient, CHANNEL_ARTICLE_NEW } from '../config/redis';
 import { logWorkflow } from './workflowLogger';
 
+/**
+ * Invia un messaggio Telegram all'utente autorizzato (TELEGRAM_ID).
+ * Da usare per notifiche di sistema (errori pipeline, completamenti importanti).
+ * Non richiede che il bot sia in ascolto — usa l'API direttamente.
+ */
+export async function sendTelegramAlert(text: string): Promise<void> {
+  const token   = process.env.TELEGRAM_TOKEN;
+  const chatId  = process.env.TELEGRAM_ID;
+  if (!token || !chatId) return;
+
+  try {
+    const url  = `https://api.telegram.org/bot${token}/sendMessage`;
+    const body = JSON.stringify({ chat_id: chatId, text, parse_mode: 'HTML' });
+    await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body });
+  } catch (err) {
+    console.error('[TelegramAlert] Invio fallito:', err);
+  }
+}
+
 const GENERA_PATTERN   = /\b(genera|crea|scrivi|produci)\b.{0,30}\barticol/i;
 const PUBBLICA_PATTERN = /\be\s+pubblica\b/i;
 

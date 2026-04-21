@@ -1,0 +1,58 @@
+[
+  {
+    "id": "fd-001",
+    "type": "foundational_charter",
+    "title": "Carta fondativa HCAIRE",
+    "slug": "carta-fondativa",
+    "summary": "Documento che definisce i fondamenti filosofici, epistemologici e operativi del sistema HCAIRE. Stabilisce i principi guida, i valori, l'architettura concettuale del progetto e i 9 concetti strutturali del modello (soggetto incarnato, campo intenzionale, relazione costitutiva, normatività, separazione e limite, desiderio, mondo storico-culturale, simbolico e linguaggio, cura).",
+    "file_path": "Documenti fondativi/Carta fondativa.md",
+    "status": "approved",
+    "version": "1.0",
+    "created_by": "hcaire",
+    "approved_by": "hcaire",
+    "created_at": "2026-04-15",
+    "updated_at": "2026-04-16"
+  },
+  {
+    "id": "fd-002",
+    "type": "translation_engine",
+    "title": "Motore di traducibilità HCAIRE",
+    "slug": "motore-traducibilita",
+    "summary": "Documento che definisce il processo di trasformazione dei principi fondativi in operatori concreti. Articola i 5 moduli del processo HCAIRE: Modulo A (riformulazione della traccia), Modulo B (analisi multidimensionale), Modulo C (identificazione dei nodi critici), Modulo D (integrazione con il modello), Modulo E (traduzione verso l'output). Contiene le dimensioni da esplorare, i criteri di analisi, le regole di trasformazione e gli indicatori testuali.",
+    "file_path": "Documenti fondativi/Motore di traducibilità.md",
+    "status": "approved",
+    "version": "1.0",
+    "created_by": "hcaire",
+    "approved_by": "hcaire",
+    "created_at": "2026-04-15",
+    "updated_at": "2026-04-16"
+  },
+  {
+    "id": "fd-003",
+    "type": "interdisciplinary_matrix",
+    "title": "Matrice di traduzione interdisciplinare",
+    "slug": "matrice-traduzione-interdisciplinare",
+    "summary": "Documento che mappa le corrispondenze tra il modello HCAIRE e i linguaggi delle diverse discipline (clinica, pedagogia, scienze sociali, policy). Rende esplicite le traduzioni concettuali necessarie per attraversare gli ambiti operativi senza perdere coerenza con il modello fondativo.",
+    "file_path": "Documenti fondativi/Matrice di traduzione interdisciplinare.md",
+    "status": "approved",
+    "version": "1.0",
+    "created_by": "hcaire",
+    "approved_by": "hcaire",
+    "created_at": "2026-04-15",
+    "updated_at": "2026-04-16"
+  },
+  {
+    "id": "fd-004",
+    "type": "transversal_nodes_atlas",
+    "title": "Atlante dei nodi trasversali",
+    "slug": "atlante-nodi-trasversali",
+    "summary": "Documento che identifica, definisce e rende operativi i 10 nodi concettuali trasversali del sistema HCAIRE. Ogni nodo è descritto con definizione strutturale, motivazione della trasversalità, dimensioni coinvolte, manifestazioni tipiche, lessici per ambito, domande guida, rischi di riduzione e indicatori di presenza/impoverimento. I nodi sono: relazione adulto-bambino, regolazione e co-regolazione, linguaggio e significato condiviso, affettività, corpo e esperienza incarnata, limite reale e separazione, desiderio e iniziativa, contesto storico-culturale, integrazione/disorganizzazione, apertura/chiusura al mondo.",
+    "file_path": "Documenti fondativi/Atlante nodi trasversali.md",
+    "status": "approved",
+    "version": "1.0",
+    "created_by": "hcaire",
+    "approved_by": "hcaire",
+    "created_at": "2026-04-15",
+    "updated_at": "2026-04-16"
+  }
+]

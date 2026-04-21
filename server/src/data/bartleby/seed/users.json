@@ -1,0 +1,37 @@
+[
+  {
+    "id": "user-001",
+    "name": "HCAIRE Admin",
+    "email": "admin@hcaire.it",
+    "role": "admin_hcaire",
+    "description": "Account amministrativo del comitato HCAIRE. Crea e approva documenti fondativi, skill, tracce di riferimento e simulazioni.",
+    "permissions": [
+      "create_foundation_documents",
+      "approve_foundation_documents",
+      "create_skills",
+      "approve_skills",
+      "create_traces",
+      "create_outputs",
+      "approve_outputs",
+      "manage_governance_decisions",
+      "manage_users"
+    ],
+    "status": "active",
+    "created_at": "2026-04-15"
+  },
+  {
+    "id": "user-002",
+    "name": "Utente Standard",
+    "email": "utente@esempio.it",
+    "role": "standard_user",
+    "description": "Account utente standard. Può inserire tracce, consultare output, creare profili di personalizzazione e skill di personalizzazione proprie.",
+    "permissions": [
+      "create_traces",
+      "view_outputs",
+      "create_customization_profiles",
+      "create_personalization_skills"
+    ],
+    "status": "active",
+    "created_at": "2026-04-15"
+  }
+]

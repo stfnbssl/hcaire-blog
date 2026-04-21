@@ -1,0 +1,44 @@
+[
+  {
+    "id": "od-001",
+    "input_trace_id": "tr-g03",
+    "generation_plan_id": null,
+    "output_type": "guida-genitoriale",
+    "title": "Quando il bambino non cerca — lettura di un'autonomia ambigua",
+    "body_summary": "Simulazione completa (Moduli A-F). Lettura HCAIRE della traccia T-G03: bambino 14 mesi che non cerca attivamente il caregiver. Analisi della distinzione tra autonomia esplorativa (campo intenzionale aperto) e ritiro relazionale. Contrasto con risposte standard di rassicurazione (tipo A) e allarmismo diagnostico (tipo B). Output: guida genitoriale che offre strumenti osservativi concreti senza allarmare né chiudere la domanda.",
+    "file_path": "Simulazioni/Simulazione-01-T-G03.md",
+    "audience": "genitore",
+    "area_id": "da-001",
+    "activated_nodes": ["cn-001", "cn-010", "cn-007"],
+    "skills_used": ["sk-001", "sk-002", "sk-004", "sk-005", "sk-007"],
+    "evaluation": {
+      "score": null,
+      "notes": "Prima simulazione dimostrativa. Valutazione qualitativa positiva: distingue bene i piani, mantiene apertura, non allarma. Da rivedere per includere più strumenti osservativi pratici.",
+      "status": "aperta a revisione"
+    },
+    "status": "revisionato",
+    "version": "1.0",
+    "created_at": "2026-04-15"
+  },
+  {
+    "id": "od-002",
+    "input_trace_id": "tr-pi01",
+    "generation_plan_id": null,
+    "output_type": "policy-brief",
+    "title": "Nota orientativa — I primi 1000 giorni: basi dell'investimento",
+    "body_summary": "Simulazione completa (Moduli A-F). Lettura HCAIRE della traccia T-PI01: perché investire nei primi 1000 giorni. Contrasto con risposte standard: neuroriduzionismo (tipo A), economicismo (tipo B), genericismo antropologico (tipo C). Argomento fondativo HCAIRE (regolazione, sicurezza relazionale, apertura al possibile come fondamenta del soggetto) integrato con argomento di equità (le disuguaglianze radici qui) e argomento economico (ROI Heckman come complemento, non come fondamento). Output: policy brief strutturato per uso istituzionale.",
+    "file_path": "Simulazioni/Simulazione-02-T-PI01.md",
+    "audience": "decisore politico-istituzionale (sindaco)",
+    "area_id": "da-004",
+    "activated_nodes": ["cn-008", "cn-002", "cn-001", "cn-007"],
+    "skills_used": ["sk-001", "sk-002", "sk-005", "sk-006", "sk-010"],
+    "evaluation": {
+      "score": 8,
+      "notes": "Valutazione 8/10. Punti di forza: integrazione dei tre argomenti, chiarezza istituzionale, onestà sui limiti. Punto di debolezza: mancanza di contestualizzazione locale (il Comune non è descritto). T-PI02 identificata come naturale sequel per la progettazione dei servizi.",
+      "status": "aperta a revisione"
+    },
+    "status": "revisionato",
+    "version": "1.0",
+    "created_at": "2026-04-16"
+  }
+]

@@ -16,7 +16,28 @@
       "Bash(./node_modules/.bin/tsc --noEmit -p server/tsconfig.json)",
       "Bash(railway logs:*)",
       "Bash(curl:*)",
-      "Bash(echo \"EXIT:$?\")"
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(mkdir -p \"C:/my/projects/hcaire-blog/server/src/data/bartleby/simulations\")",
+      "Bash(mkdir -p \"C:/my/projects/hcaire-blog/server/src/data/bartleby/seed\")",
+      "Bash(cp \"C:/Users/nnmrd/Documents/Claude/Projects/HCAIRE skills/Simulazioni/Simulazione-01-T-G03.md\" \"C:/my/projects/hcaire-blog/server/src/data/bartleby/simulations/\")",
+      "Bash(cp \"C:/Users/nnmrd/Documents/Claude/Projects/HCAIRE skills/Simulazioni/Simulazione-02-T-PI01.md\" \"C:/my/projects/hcaire-blog/server/src/data/bartleby/simulations/\")",
+      "Bash(cp \"C:/Users/nnmrd/Documents/Claude/Projects/HCAIRE skills/Bartleby/data/\"*.json \"C:/my/projects/hcaire-blog/server/src/data/bartleby/seed/\")",
+      "Skill(claude-api)",
+      "Bash(node --max-old-space-size=512 node_modules/.bin/tsc --noEmit)",
+      "Bash(npx --yes tsc --noEmit)",
+      "Bash(npx tsx *)",
+      "Read(//c/Users/nnmrd/Documents/Claude/Projects/HCAIRE Site/sezioni/**)",
+      "Read(//c/Users/nnmrd/Documents/Claude/Projects/HCAIRE Site/sezioni/progetti/sviluppo bambino/assi strutturali/normalized/**)",
+      "Bash(powershell *)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(len\\(d['sections']\\), 'sections'\\); [print\\(s['slug'], '-', s['title'][:40]\\) for s in d['sections']]\")",
+      "Bash(node -e \"const d=require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\); const j=JSON.parse\\(d\\); console.log\\(j.sections.length,'sections'\\); j.sections.forEach\\(s=>console.log\\(s.slug,'-',s.title?.slice\\(0,40\\)\\)\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(node *)",
+      "Bash(where python *)",
+      "Bash(where python3 *)",
+      "Bash(where py *)",
+      "Bash(py --version)",
+      "Bash(winget install *)"
     ]
   }
 }

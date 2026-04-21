@@ -1,0 +1,55 @@
+import { API_URL } from '../utils/constants';
+import type {
+  HcaireIndex,
+  HcaireSection,
+  AssiIndex,
+  AsseChapters,
+  Chapter,
+  AsseOverview,
+  ModelloIndex,
+  ConcettiResponse,
+  NotaMetodologicaResponse,
+  FinalitaResponse,
+  MetodoResponse,
+  MetodoLandingResponse,
+  MetodoGroupIndexResponse,
+  MetodoPageResponse,
+  RiflessioniItem,
+  InterlocuzioniItem,
+} from '../types/staticContent';
+
+async function get<T>(path: string): Promise<T> {
+  const res = await fetch(`${API_URL}${path}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
+// HCAIRE
+export const hcaireApi = {
+  getIndex: () => get<HcaireIndex>('/hcaire'),
+  getSection: (slug: string) => get<HcaireSection>(`/hcaire/${slug}`),
+  getSubsection: (section: string, slug: string) => get<HcaireSection>(`/hcaire/${section}/${slug}`),
+};
+
+// Sviluppo bambino
+export const sviluppoBambinoApi = {
+  getFinalita: () => get<FinalitaResponse>('/sviluppo-bambino/finalita'),
+  getMetodo: () => get<MetodoLandingResponse>('/sviluppo-bambino/metodo'),
+  getMetodoIntroduzione: () => get<MetodoGroupIndexResponse>('/sviluppo-bambino/metodo/introduzione'),
+  getMetodoArchitettura: () => get<MetodoPageResponse>('/sviluppo-bambino/metodo/introduzione/architettura'),
+  getMetodoMetodologia: () => get<MetodoPageResponse>('/sviluppo-bambino/metodo/introduzione/metodologia'),
+  getMetodoRicercaScientifica: () => get<MetodoGroupIndexResponse>('/sviluppo-bambino/metodo/ricerca-scientifica'),
+  getMetodoCollocazione: () => get<MetodoPageResponse>('/sviluppo-bambino/metodo/ricerca-scientifica/collocazione'),
+  getMetodoStatutoEpistemologico: () => get<MetodoPageResponse>('/sviluppo-bambino/metodo/ricerca-scientifica/statuto-epistemologico'),
+  getMetodoRapportoConIA: () => get<MetodoPageResponse>('/sviluppo-bambino/metodo/rapporto-con-ia'),
+  getModello: () => get<ModelloIndex>('/sviluppo-bambino/modello'),
+  getModelloAsse: (asseSlug: string) => get<AsseOverview>(`/sviluppo-bambino/modello/${asseSlug}`),
+  getConcetti: () => get<ConcettiResponse>('/sviluppo-bambino/concetti'),
+  getNotaMetodologica: () => get<NotaMetodologicaResponse>('/sviluppo-bambino/nota-metodologica'),
+  getAssiIndex: () => get<AssiIndex>('/sviluppo-bambino/assi'),
+  getAsseChapters: (asseSlug: string) => get<AsseChapters>(`/sviluppo-bambino/assi/${asseSlug}`),
+  getChapter: (asseSlug: string, chapterSlug: string) =>
+    get<Chapter>(`/sviluppo-bambino/assi/${asseSlug}/${chapterSlug}`),
+  getRiflessioni: () => get<{ items: RiflessioniItem[] }>('/sviluppo-bambino/riflessioni'),
+  getInterlocuzioni: () => get<{ ambiti: InterlocuzioniItem[] }>('/sviluppo-bambino/interlocuzioni'),
+};

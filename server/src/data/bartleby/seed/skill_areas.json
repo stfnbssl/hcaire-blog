@@ -1,0 +1,212 @@
+[
+  {
+    "skill_id": "sk-001",
+    "domain_area_id": "da-001",
+    "relation_type": "fondamento",
+    "notes": "Asse 1 (Ontologico-fenomenologico) è fondamento trasversale a tutti gli ambiti: si applica all'ambito Genitoriale."
+  },
+  {
+    "skill_id": "sk-001",
+    "domain_area_id": "da-002",
+    "relation_type": "fondamento",
+    "notes": "Asse 1 è fondamento trasversale: si applica all'ambito Clinico."
+  },
+  {
+    "skill_id": "sk-001",
+    "domain_area_id": "da-003",
+    "relation_type": "fondamento",
+    "notes": "Asse 1 è fondamento trasversale: si applica all'ambito Pedagogico."
+  },
+  {
+    "skill_id": "sk-001",
+    "domain_area_id": "da-004",
+    "relation_type": "fondamento",
+    "notes": "Asse 1 è fondamento trasversale: si applica all'ambito Politico."
+  },
+  {
+    "skill_id": "sk-001",
+    "domain_area_id": "da-005",
+    "relation_type": "fondamento",
+    "notes": "Asse 1 è fondamento trasversale: si applica all'ambito Sociologico."
+  },
+  {
+    "skill_id": "sk-002",
+    "domain_area_id": "da-001",
+    "relation_type": "fondamento",
+    "notes": "Asse 2 (Affettivo-morale) è fondamento trasversale: si applica all'ambito Genitoriale."
+  },
+  {
+    "skill_id": "sk-002",
+    "domain_area_id": "da-002",
+    "relation_type": "fondamento",
+    "notes": "Asse 2 è fondamento trasversale: si applica all'ambito Clinico."
+  },
+  {
+    "skill_id": "sk-002",
+    "domain_area_id": "da-003",
+    "relation_type": "fondamento",
+    "notes": "Asse 2 è fondamento trasversale: si applica all'ambito Pedagogico."
+  },
+  {
+    "skill_id": "sk-002",
+    "domain_area_id": "da-004",
+    "relation_type": "fondamento",
+    "notes": "Asse 2 è fondamento trasversale: si applica all'ambito Politico."
+  },
+  {
+    "skill_id": "sk-002",
+    "domain_area_id": "da-005",
+    "relation_type": "fondamento",
+    "notes": "Asse 2 è fondamento trasversale: si applica all'ambito Sociologico."
+  },
+  {
+    "skill_id": "sk-003",
+    "domain_area_id": "da-001",
+    "relation_type": "fondamento",
+    "notes": "Asse 3 (Normativo-educativo) è fondamento trasversale: si applica all'ambito Genitoriale."
+  },
+  {
+    "skill_id": "sk-003",
+    "domain_area_id": "da-002",
+    "relation_type": "fondamento",
+    "notes": "Asse 3 è fondamento trasversale: si applica all'ambito Clinico."
+  },
+  {
+    "skill_id": "sk-003",
+    "domain_area_id": "da-003",
+    "relation_type": "fondamento-principale",
+    "notes": "Asse 3 è fondamento trasversale con applicazione primaria nell'ambito Pedagogico."
+  },
+  {
+    "skill_id": "sk-003",
+    "domain_area_id": "da-004",
+    "relation_type": "fondamento",
+    "notes": "Asse 3 è fondamento trasversale: si applica all'ambito Politico."
+  },
+  {
+    "skill_id": "sk-003",
+    "domain_area_id": "da-005",
+    "relation_type": "fondamento",
+    "notes": "Asse 3 è fondamento trasversale: si applica all'ambito Sociologico."
+  },
+  {
+    "skill_id": "sk-004",
+    "domain_area_id": "da-001",
+    "relation_type": "fondamento",
+    "notes": "Asse 4 (Separazione e Limite) è fondamento trasversale: si applica all'ambito Genitoriale."
+  },
+  {
+    "skill_id": "sk-004",
+    "domain_area_id": "da-002",
+    "relation_type": "fondamento",
+    "notes": "Asse 4 è fondamento trasversale: si applica all'ambito Clinico."
+  },
+  {
+    "skill_id": "sk-004",
+    "domain_area_id": "da-003",
+    "relation_type": "fondamento",
+    "notes": "Asse 4 è fondamento trasversale: si applica all'ambito Pedagogico."
+  },
+  {
+    "skill_id": "sk-004",
+    "domain_area_id": "da-004",
+    "relation_type": "fondamento",
+    "notes": "Asse 4 è fondamento trasversale: si applica all'ambito Politico (limiti strutturali degli interventi)."
+  },
+  {
+    "skill_id": "sk-004",
+    "domain_area_id": "da-005",
+    "relation_type": "fondamento",
+    "notes": "Asse 4 è fondamento trasversale: si applica all'ambito Sociologico (vulnerabilità persistenti)."
+  },
+  {
+    "skill_id": "sk-005",
+    "domain_area_id": "da-001",
+    "relation_type": "fondamento",
+    "notes": "Asse 5 (Desiderio) è fondamento trasversale: si applica all'ambito Genitoriale."
+  },
+  {
+    "skill_id": "sk-005",
+    "domain_area_id": "da-002",
+    "relation_type": "fondamento",
+    "notes": "Asse 5 è fondamento trasversale: si applica all'ambito Clinico."
+  },
+  {
+    "skill_id": "sk-005",
+    "domain_area_id": "da-003",
+    "relation_type": "fondamento-principale",
+    "notes": "Asse 5 è fondamento trasversale con applicazione primaria nell'ambito Pedagogico (desiderio di apprendere)."
+  },
+  {
+    "skill_id": "sk-005",
+    "domain_area_id": "da-004",
+    "relation_type": "fondamento",
+    "notes": "Asse 5 è fondamento trasversale: si applica all'ambito Politico (condizioni perché il desiderio abbia spazio)."
+  },
+  {
+    "skill_id": "sk-005",
+    "domain_area_id": "da-005",
+    "relation_type": "fondamento",
+    "notes": "Asse 5 è fondamento trasversale: si applica all'ambito Sociologico."
+  },
+  {
+    "skill_id": "sk-006",
+    "domain_area_id": "da-001",
+    "relation_type": "fondamento",
+    "notes": "Asse 6 (Storico-culturale) è fondamento trasversale: si applica all'ambito Genitoriale."
+  },
+  {
+    "skill_id": "sk-006",
+    "domain_area_id": "da-002",
+    "relation_type": "fondamento",
+    "notes": "Asse 6 è fondamento trasversale: si applica all'ambito Clinico."
+  },
+  {
+    "skill_id": "sk-006",
+    "domain_area_id": "da-003",
+    "relation_type": "fondamento",
+    "notes": "Asse 6 è fondamento trasversale: si applica all'ambito Pedagogico."
+  },
+  {
+    "skill_id": "sk-006",
+    "domain_area_id": "da-004",
+    "relation_type": "fondamento-principale",
+    "notes": "Asse 6 è fondamento trasversale con applicazione primaria nell'ambito Politico (strutture storiche e culturali)."
+  },
+  {
+    "skill_id": "sk-006",
+    "domain_area_id": "da-005",
+    "relation_type": "fondamento-principale",
+    "notes": "Asse 6 è fondamento trasversale con applicazione primaria nell'ambito Sociologico (determinanti strutturali)."
+  },
+  {
+    "skill_id": "sk-007",
+    "domain_area_id": "da-001",
+    "relation_type": "principale",
+    "notes": "Skill di ambito Genitoriale: appartiene direttamente a questo ambito."
+  },
+  {
+    "skill_id": "sk-008",
+    "domain_area_id": "da-002",
+    "relation_type": "principale",
+    "notes": "Skill di ambito Clinico: appartiene direttamente a questo ambito."
+  },
+  {
+    "skill_id": "sk-009",
+    "domain_area_id": "da-003",
+    "relation_type": "principale",
+    "notes": "Skill di ambito Pedagogico: appartiene direttamente a questo ambito."
+  },
+  {
+    "skill_id": "sk-010",
+    "domain_area_id": "da-004",
+    "relation_type": "principale",
+    "notes": "Skill di ambito Politico: appartiene direttamente a questo ambito."
+  },
+  {
+    "skill_id": "sk-011",
+    "domain_area_id": "da-005",
+    "relation_type": "principale",
+    "notes": "Skill di ambito Sociologico: appartiene direttamente a questo ambito."
+  }
+]

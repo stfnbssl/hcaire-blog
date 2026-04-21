@@ -1,0 +1,94 @@
+{
+  "groups": [
+    {
+      "id": "A",
+      "title": "Perché questo progetto esiste",
+      "themes": [
+        {
+          "code": "A1",
+          "title": "Il vuoto di grammatica condivisa",
+          "tagline": "Quando chi cura, chi educa e chi ricerca non riescono a parlarsi, il bambino ne paga le conseguenze.",
+          "body": "La frammentazione dei saperi sullo sviluppo produce linguaggi disciplinari incompatibili: stesse parole con significati diversi, o cose diverse senza saperlo. Non è una critica al sistema, è una constatazione che ogni professionista riconosce immediatamente nella propria esperienza quotidiana."
+        },
+        {
+          "code": "A2",
+          "title": "Non spiegare, non valutare: leggere",
+          "tagline": "Prima di intervenire, bisogna saper leggere. Non diagnosticare, non valutare: leggere.",
+          "body": "Spiegare, valutare e leggere sono tre operazioni diverse che richiedono strumenti diversi. Il progetto si colloca deliberatamente sul piano della lettura, fornendo operatori interpretativi — non criteri diagnostici. Il messaggio implicito: non devi emettere verdetti, devi capire cosa sta succedendo."
+        },
+        {
+          "code": "A3",
+          "title": "Il bambino non si misura, il campo relazionale si legge",
+          "tagline": "Il problema non è nel bambino. È nel campo di relazioni, esperienze e azioni in cui il bambino esiste.",
+          "body": "L'oggetto di osservazione non è il bambino come individuo isolato, ma il campo relazionale che lo costituisce. Nessun intervento agisce sul bambino: tutti agiscono sul campo. E nessuna configurazione è identitaria — è sempre situata, reversibile, dinamica."
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Cosa offre concretamente",
+      "themes": [
+        {
+          "code": "B1",
+          "title": "Una grammatica che tutti i professionisti possono usare",
+          "tagline": "Un linguaggio comune che non appiattisce le differenze disciplinari, ma le rende finalmente compatibili.",
+          "body": "I Nodi Trasversali attraversano le discipline senza appartenere a nessuna, si traducono in domande professionali senza diventare indicatori clinici. Il valore non è \"impara una nuova teoria\", ma \"finalmente puoi parlare con i tuoi colleghi di altre discipline\"."
+        },
+        {
+          "code": "B2",
+          "title": "Gli strumenti non prescrivono, orientano",
+          "tagline": "Nessuno strumento del progetto decide al posto tuo. La responsabilità professionale resta dove deve restare: con te.",
+          "body": "Gli output-tipo non contengono criteri precompilati, non definiscono soglie di normalità, non prescrivono azioni. In un contesto in cui i professionisti vengono sempre più guidati da protocolli e checklist, il progetto si posiziona come alleato dell'autonomia professionale."
+        },
+        {
+          "code": "B3",
+          "title": "La stessa logica funziona ovunque",
+          "tagline": "Dal bilancio pediatrico alla scuola, dai servizi territoriali al counseling genitoriale: la stessa logica, strumenti diversi.",
+          "body": "Le Tipologie Universali di Dispositivi e il Ciclo Decisionale Breve funzionano trasversalmente ai contesti perché agiscono su strutture universali dell'esperienza umana in sviluppo. Il metodo è uno, le applicazioni sono molte — senza bisogno di protocolli specifici per ogni setting."
+        },
+        {
+          "code": "B4",
+          "title": "Il criterio è l'abitabilità, non la normalità",
+          "tagline": "Non chiediamo se il bambino è nella norma. Chiediamo se la sua esperienza è abitabile.",
+          "body": "L'abitabilità è la capacità del campo relazionale di restare aperto alle possibilità dello sviluppo. Un intervento è appropriato quando aumenta questa abitabilità senza restringere le possibilità evolutive — un criterio usabile in ogni contesto, senza tabelle normative."
+        },
+        {
+          "code": "B5",
+          "title": "Il Ciclo Decisionale Breve",
+          "tagline": "In ambulatorio, in classe, in un colloquio: cinque minuti per osservare, leggere, orientarsi e agire.",
+          "body": "Osserva → leggi la configurazione → orienta la funzione → agisci con un micro-dispositivo → osserva di nuovo. Non è una semplificazione del metodo: è il metodo nella sua forma operativa più essenziale, la prova concreta che il progetto non è solo teoria."
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Come si colloca rispetto ad approcci specialistici",
+      "themes": [
+        {
+          "code": "C1",
+          "title": "Non una teoria nuova: una grammatica per le teorie che già esistono",
+          "tagline": "Il progetto non dice che le teorie dello sviluppo esistenti hanno torto. Offre il quadro che permette di usarle insieme.",
+          "body": "Si colloca a un livello metateorico rispetto alla ricerca empirica. Non compete con la teoria dell'attaccamento, le neuroscienze relazionali o gli approcci sistemici. Ogni specialista — clinico, pedagogico, di comunità — continua a usare i propri strumenti esattamente come prima. In più, dispone di una lettura configurazionale condivisa che rende possibile coordinarsi con altri professionisti senza uscire dal proprio campo."
+        },
+        {
+          "code": "C2",
+          "title": "Tre livelli, nessuna confusione",
+          "tagline": "Fondazione concettuale, strumenti operativi, ricerca empirica: tre livelli distinti che lavorano insieme senza sovrapporsi.",
+          "body": "Il progetto si colloca esplicitamente ai primi due livelli, lasciando alla ricerca empirica il terzo. Questa chiarezza non è modestia, è rigore metodologico. Un progetto che promette di fare tutto nello stesso tempo non fa nulla bene."
+        },
+        {
+          "code": "C3",
+          "title": "L'AI come infrastruttura, non come automatismo",
+          "tagline": "L'intelligenza artificiale come supporto cognitivo: garantisce coerenza, non produce decisioni.",
+          "body": "L'AI conserva la memoria strutturata del modello, garantisce coerenza terminologica, facilita la produzione di output contestualizzati. La responsabilità epistemica resta interamente in capo ai ricercatori e ai professionisti. Una proposta matura e differenziata rispetto all'hype tecnologico."
+        },
+        {
+          "code": "C4",
+          "title": "Ogni ruolo resta intatto: il progetto aggiunge, non sostituisce",
+          "tagline": "Il clinico continua a curare, l'educatore a educare, il genitore a essere genitore — con in più uno strumento di lettura condiviso.",
+          "body": "Le prerogative disciplinari e genitoriali non vengono toccate. Il progetto non assegna nuovi compiti né ridefinisce responsabilità esistenti. Offre un livello aggiuntivo di leggibilità — una grammatica condivisa — che arricchisce l'esercizio di ciascun ruolo senza interferire con esso."
+        }
+      ]
+    }
+  ]
+}

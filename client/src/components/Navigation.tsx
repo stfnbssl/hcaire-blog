@@ -33,12 +33,14 @@ export default function Navigation() {
           {/* Desktop */}
           <div className="hidden md:flex items-center space-x-6">
             <NavLink to="/" active={location.pathname === '/'}>Home</NavLink>
+            <NavLink to="/hcaire" active={location.pathname.startsWith('/hcaire')}>HCAIRE</NavLink>
+            <NavLink to="/sviluppo-bambino" active={location.pathname.startsWith('/sviluppo-bambino')}>Sviluppo bambino</NavLink>
             {items.map((item) => (
               <NavLink key={item._id} to={navPath(item)} active={location.pathname === navPath(item)}>
                 {item.titolo}
               </NavLink>
             ))}
-            {isBartleby && (
+            {(isBartleby || isAdmin) && (
               <NavLink to="/bartleby" active={location.pathname.startsWith('/bartleby')}>
                 Bartleby
               </NavLink>
@@ -63,16 +65,28 @@ export default function Navigation() {
           </button>
         </div>
 
+        {/* Badge agentico — desktop only, mobile handled by footer */}
+        <div className="hidden md:flex justify-end pb-1">
+          <span className="agentic-badge text-xs text-gray-400">
+            Contenuti generati da Agenti AI{' '}
+            <Link to="/hcaire/agentic-shift" className="underline hover:text-gray-600 transition-colors">
+              Scopri di più →
+            </Link>
+          </span>
+        </div>
+
         {/* Mobile menu */}
         {open && (
           <div className="md:hidden pb-4 space-y-1 border-t border-gray-100 pt-2">
             <MobileNavLink to="/" onClick={() => setOpen(false)}>Home</MobileNavLink>
+            <MobileNavLink to="/hcaire" onClick={() => setOpen(false)}>HCAIRE</MobileNavLink>
+            <MobileNavLink to="/sviluppo-bambino" onClick={() => setOpen(false)}>Sviluppo bambino</MobileNavLink>
             {items.map((item) => (
               <MobileNavLink key={item._id} to={navPath(item)} onClick={() => setOpen(false)}>
                 {item.titolo}
               </MobileNavLink>
             ))}
-            {isBartleby && (
+            {(isBartleby || isAdmin) && (
               <MobileNavLink to="/bartleby" onClick={() => setOpen(false)}>Bartleby</MobileNavLink>
             )}
             {isAdmin && (

@@ -19,16 +19,42 @@ const components: Components = {
   p: ({ children }) => (
     <p className="mb-4 text-gray-700 leading-relaxed">{children}</p>
   ),
-  a: ({ href, children }) => (
-    <a
-      href={href}
-      className="text-primary-600 hover:text-primary-700 underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {children}
-    </a>
-  ),
+  a: ({ href, children, id, node, ...rest }) => {
+    const isInternal = !href || href.startsWith('#');
+    // Footnote inline reference: <sup><a id="user-content-fnref-N" href="#user-content-fn-N">N</a></sup>
+    // Footnote back-reference:   <a href="#user-content-fnref-N">↩</a>
+    // Both need id preserved and no target="_blank"
+    const isFootnote =
+      (typeof id === 'string' && id.includes('fnref')) ||
+      (typeof href === 'string' && (href.includes('#user-content-fn') || href.includes('#fn')));
+
+    if (isFootnote) {
+      return (
+        <a
+          href={href}
+          id={id}
+          className="text-primary-600 hover:text-primary-700 no-underline"
+          aria-describedby={(rest as Record<string, unknown>)['aria-describedby'] as string | undefined}
+          aria-label={(rest as Record<string, unknown>)['aria-label'] as string | undefined}
+        >
+          {children}
+        </a>
+      );
+    }
+
+    return (
+      <a
+        href={href}
+        id={id}
+        className="text-primary-600 hover:text-primary-700 underline"
+        {...(!isInternal && { target: '_blank', rel: 'noopener noreferrer' })}
+      >
+        {children}
+      </a>
+    );
+  },
+  // Preserve superscript styling for footnote refs
+  sup: ({ children }) => <sup>{children}</sup>,
   pre: ({ children }) => (
     <pre className="bg-gray-900 rounded-lg overflow-x-auto mb-4 p-4">
       {children}
@@ -52,9 +78,22 @@ const components: Components = {
   ul: ({ children }) => (
     <ul className="list-disc list-inside mb-4 space-y-1 text-gray-700">{children}</ul>
   ),
-  ol: ({ children }) => (
-    <ol className="list-decimal list-inside mb-4 space-y-1 text-gray-700">{children}</ol>
-  ),
+  // Footnote definitions are wrapped in an <ol> by remark-gfm — avoid double-numbering
+  ol: ({ children, ...props }) => {
+    const isFootnoteList = (props as Record<string, unknown>)['data-footnotes'] !== undefined;
+    if (isFootnoteList) {
+      return <ol className="mt-8 pt-4 border-t border-gray-100 space-y-2 text-sm text-gray-500">{children}</ol>;
+    }
+    return <ol className="list-decimal list-inside mb-4 space-y-1 text-gray-700">{children}</ol>;
+  },
+  // Footnote section wrapper
+  section: ({ children, ...props }) => {
+    const isFootnotes = (props as Record<string, unknown>)['data-footnotes'] !== undefined;
+    if (isFootnotes) {
+      return <section className="mt-8">{children}</section>;
+    }
+    return <section>{children}</section>;
+  },
   table: ({ children }) => (
     <div className="overflow-x-auto mb-4">
       <table className="min-w-full divide-y divide-gray-200 border border-gray-200 rounded-lg">

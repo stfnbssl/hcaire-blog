@@ -1,0 +1,257 @@
+[
+  {
+    "id": "ot-001",
+    "name": "Guida genitoriale",
+    "slug": "guida-genitoriale",
+    "description": "Testo orientativo destinato a genitori o figure di cura. Offre lettura contestualizzata di comportamenti o situazioni del bambino con strumenti osservativi concreti. Evita diagnosi, rassicurazioni vuote e prescrizioni rigide.",
+    "structure_schema": {
+      "sections": [
+        "lettura del comportamento o della situazione (senza categorizzare)",
+        "cosa può significare dal punto di vista dello sviluppo",
+        "come orientarsi nella quotidianità (strumenti osservativi)",
+        "quando è utile un approfondimento professionale"
+      ],
+      "length": "800-1500 parole",
+      "tone": "accessibile, caldo, non colpevolizzante, rispettoso dell'intelligenza del genitore"
+    },
+    "audience_type": "genitori e figure di cura",
+    "language_constraints": {
+      "positive": [
+        "linguaggio accessibile e caldo",
+        "esempi concreti dalla vita quotidiana",
+        "rispetto dell'intelligenza del genitore",
+        "profondità senza tecnicismi",
+        "strumenti osservativi pratici"
+      ],
+      "negative": [
+        "tecnicismi o gergo clinico",
+        "tono colpevolizzante",
+        "rassicurazioni vuote o chiusure della domanda",
+        "prescrizioni rigide",
+        "confronti normativi decontestualizzati"
+      ]
+    },
+    "applicable_areas": ["da-001"],
+    "status": "approved",
+    "version": "1.0"
+  },
+  {
+    "id": "ot-002",
+    "name": "Nota clinico-riflessiva",
+    "slug": "nota-clinico-riflessiva",
+    "description": "Documento orientativo per operatori sanitari e clinici. Supporta la lettura integrata di configurazioni dello sviluppo distinguendo esplicitamente dato, interpretazione e ipotesi. Non sostituisce il giudizio clinico ma lo arricchisce.",
+    "structure_schema": {
+      "sections": [
+        "dati osservativi rilevanti (separati dall'interpretazione)",
+        "lettura per configurazioni — non per sintomi isolati",
+        "ipotesi interpretative (con livello di confidenza esplicitato)",
+        "domande cliniche aperte per approfondimento",
+        "orientamento all'intervento o al percorso"
+      ],
+      "length": "600-1200 parole",
+      "tone": "preciso, sobrio, probabilistico, non assertivo oltre il giustificato"
+    },
+    "audience_type": "operatori sanitari e clinici (pediatri, psicologi, neuropsichiatri infantili, NPI)",
+    "language_constraints": {
+      "positive": [
+        "distinzione esplicita dato/interpretazione/ipotesi",
+        "uso probabilistico ('può indicare', 'merita attenzione', 'è ipotizzabile che')",
+        "lettura di configurazioni, non di sintomi isolati",
+        "inclusione del contesto relazionale e familiare",
+        "linguaggio clinico preciso senza assertività eccessiva"
+      ],
+      "negative": [
+        "diagnosi implicite o prematuri",
+        "tono allarmistico non giustificato dai dati",
+        "causalità lineare (A causa B)",
+        "medicalizzazione precoce",
+        "separazione del bambino dal suo contesto"
+      ]
+    },
+    "applicable_areas": ["da-002"],
+    "status": "approved",
+    "version": "1.0"
+  },
+  {
+    "id": "ot-003",
+    "name": "Guida educativa",
+    "slug": "guida-educativa",
+    "description": "Testo orientativo per educatori e insegnanti. Collega teoria e pratica educativa con attenzione al senso delle pratiche, alla qualità della relazione e al soggetto bambino. Evita la riduzione dell'educazione a tecnica.",
+    "structure_schema": {
+      "sections": [
+        "lettura della situazione educativa (dimensioni in gioco)",
+        "analisi delle dimensioni rilevanti (relazione, regolazione, desiderio, contesto)",
+        "orientamento pratico fondato — con esplicitazione del senso",
+        "punti di attenzione e possibili evoluzioni"
+      ],
+      "length": "800-1500 parole",
+      "tone": "chiaro, applicativo, concettualmente fondato, rispettoso del professionista"
+    },
+    "audience_type": "educatori, insegnanti, operatori dei servizi per l'infanzia e la scuola",
+    "language_constraints": {
+      "positive": [
+        "esplicitare il senso delle pratiche",
+        "collegare teoria e azione in modo concreto",
+        "esempi situati nell'esperienza educativa",
+        "profondità senza tecnicismo inaccessibile",
+        "valorizzare l'intuizione professionale dell'educatore"
+      ],
+      "negative": [
+        "tecnificazione dell'educazione",
+        "prestazionalismo (focus esclusivo sull'output)",
+        "separazione affettività/cognizione",
+        "perdita del soggetto bambino nell'analisi",
+        "prescrizioni rigide o ricette universali"
+      ]
+    },
+    "applicable_areas": ["da-003"],
+    "status": "approved",
+    "version": "1.0"
+  },
+  {
+    "id": "ot-004",
+    "name": "Griglia osservazionale",
+    "slug": "griglia-osservazionale",
+    "description": "Strumento strutturato per l'osservazione sistematica del bambino in contesto clinico o educativo. Organizza le dimensioni da osservare in modo integrato secondo il modello HCAIRE. Non è una check-list diagnostica: è uno strumento di lettura configurazionale.",
+    "structure_schema": {
+      "sections": [
+        "dati identificativi e contesto dell'osservazione",
+        "dimensioni da osservare (strutturate per assi HCAIRE rilevanti)",
+        "indicatori di presenza, assenza, ambiguità per ciascuna dimensione",
+        "note integrative libere e configurazione emergente",
+        "ipotesi e domande aperte per il clinico/educatore"
+      ],
+      "length": "struttura a griglia + sezione note libere (200-500 parole)",
+      "tone": "strutturato, sistematico, non riduttivo, aperto alla complessità"
+    },
+    "audience_type": "operatori clinici, educatori, osservatori professionali in équipe",
+    "language_constraints": {
+      "positive": [
+        "descrizioni comportamentali osservabili e specifiche",
+        "distinzione netta tra osservazione e interpretazione",
+        "attenzione alle configurazioni e alle relazioni tra dimensioni",
+        "apertura alle anomalie e alle configurazioni inattese"
+      ],
+      "negative": [
+        "uso come check-list diagnostica automatica",
+        "categorizzazione rapida basata su pochi indicatori",
+        "perdita del contesto nella lettura",
+        "fusione tra dato osservato e diagnosi"
+      ]
+    },
+    "applicable_areas": ["da-002", "da-003"],
+    "status": "approved",
+    "version": "1.0"
+  },
+  {
+    "id": "ot-005",
+    "name": "Analisi di caso",
+    "slug": "analisi-di-caso",
+    "description": "Documento narrativo-analitico per la lettura approfondita di una situazione specifica. Integra dati osservativi, contestuali e relazionali in una lettura sistemica che mantiene visibile il soggetto bambino anche nell'analisi del contesto.",
+    "structure_schema": {
+      "sections": [
+        "presentazione integrata del caso (narrativa situata)",
+        "analisi per dimensioni HCAIRE (configurazione, non lista di sintomi)",
+        "nodi critici identificati e tensioni centrali",
+        "rischi di riduzione considerati e argomenti per escluderli",
+        "lettura sistemica: chi è in difficoltà, dove risiede il problema",
+        "orientamento all'intervento o domande aperte per il professionista"
+      ],
+      "length": "1000-2000 parole",
+      "tone": "narrativo-analitico, integrato, attento alle configurazioni e al soggetto"
+    },
+    "audience_type": "clinici, operatori sociali, équipe multiprofessionali",
+    "language_constraints": {
+      "positive": [
+        "lettura sistemica (bambino nel suo campo relazionale e contestuale)",
+        "distinzione tra dato osservato e interpretazione",
+        "mantenimento della visibilità del soggetto anche nell'analisi strutturale",
+        "onestà epistemica sulle ipotesi (non certezze)"
+      ],
+      "negative": [
+        "psicologizzazione del sociale (attribuire al singolo ciò che è strutturale)",
+        "sintomatizzazione (leggere segnali isolati fuori configurazione)",
+        "colpevolizzazione della famiglia senza considerare il contesto",
+        "perdita del soggetto nell'analisi sistemica"
+      ]
+    },
+    "applicable_areas": ["da-002", "da-005"],
+    "status": "approved",
+    "version": "1.0"
+  },
+  {
+    "id": "ot-006",
+    "name": "Policy brief",
+    "slug": "policy-brief",
+    "description": "Documento orientativo per decisori istituzionali e policy maker. Traduce il framework HCAIRE in linguaggio istituzionale difendibile. Combina argomento fondativo, argomento di equità e argomento economico senza ridurre a nessuno dei tre. Ogni passaggio deve essere politicamente traducibile.",
+    "structure_schema": {
+      "sections": [
+        "questione in gioco (formulazione istituzionale della domanda)",
+        "perché le risposte standard non bastano (analisi critica)",
+        "base concettuale e scientifica (argomento fondativo HCAIRE)",
+        "argomenti di equità e di investimento (complementari al fondativo)",
+        "implicazioni operative per la progettazione degli interventi",
+        "limiti reali e onestà istituzionale"
+      ],
+      "length": "600-1200 parole",
+      "tone": "autorevole, diretto, strutturato come brief istituzionale, ogni affermazione difendibile"
+    },
+    "audience_type": "sindaci, dirigenti istituzionali, policy maker, commissioni, pianificatori",
+    "language_constraints": {
+      "positive": [
+        "ogni passaggio politicamente e scientificamente difendibile",
+        "combinazione di argomento fondativo + equità + economico",
+        "struttura da brief istituzionale (non da saggio accademico)",
+        "esplicitazione onesta dei limiti degli interventi",
+        "traducibilità in azioni concrete di policy"
+      ],
+      "negative": [
+        "over-promise (promesse non mantenibili)",
+        "neuroriduzionismo come unico argomento",
+        "economicismo esclusivo (bambino come ROI futuro)",
+        "perdita del soggetto nella riduzione a indicatori",
+        "vaghezza non traducibile in orientamenti"
+      ]
+    },
+    "applicable_areas": ["da-004"],
+    "status": "approved",
+    "version": "1.0"
+  },
+  {
+    "id": "ot-007",
+    "name": "Articolo di riflessione",
+    "slug": "articolo-riflessione",
+    "description": "Testo riflessivo di media lunghezza per un pubblico professionale allargato. Esplora un tema con profondità e accessibilità, senza tecnicismo né banalizzazione. Può essere trasversale agli ambiti.",
+    "structure_schema": {
+      "sections": [
+        "apertura narrativa, situazionale o di contesto (non definitoria)",
+        "sviluppo tematico con riferimento al modello HCAIRE (implicito o esplicito)",
+        "esempi o illustrazioni situate",
+        "implicazioni pratiche o riflessive per il lettore",
+        "chiusura aperta — non prescrittiva"
+      ],
+      "length": "1000-2000 parole",
+      "tone": "riflessivo, accessibile a professionisti informati, non tecnicistico né banale"
+    },
+    "audience_type": "professionisti dell'educazione, della cura, della salute; lettori formati e interessati",
+    "language_constraints": {
+      "positive": [
+        "scrittura curata e accessibile",
+        "profondità senza pesantezza",
+        "esempi concreti e situati",
+        "rispetto del lettore come pensante e competente",
+        "apertura al dubbio e alla complessità"
+      ],
+      "negative": [
+        "gergo accademico non tradotto",
+        "elenchi di concetti senza coesione narrativa",
+        "moralismo o tono prescrittivo",
+        "rassicurazioni facili",
+        "chiusure premature"
+      ]
+    },
+    "applicable_areas": ["da-001", "da-002", "da-003", "da-004", "da-005"],
+    "status": "approved",
+    "version": "1.0"
+  }
+]

@@ -21,4 +21,5 @@ export function getRedisClient(): Redis {
   return redisClient;
 }
 
-export const CHANNEL_ARTICLE_NEW = 'article:new';
+export const CHANNEL_ARTICLE_NEW          = 'article:new';
+export const CHANNEL_BARTLEBY_TRACE_NEW   = 'bartleby:trace:new';

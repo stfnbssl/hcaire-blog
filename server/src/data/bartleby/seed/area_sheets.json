@@ -1,0 +1,287 @@
+[
+  {
+    "id": "as-001",
+    "domain_area_id": "da-001",
+    "title": "Scheda di ambito — Genitoriale",
+    "scope": "Supportare la comprensione e l'orientamento dei genitori nel rapporto quotidiano con il bambino, offrendo strumenti per leggere il comportamento, ridurre la colpevolizzazione e favorire la qualità della relazione.",
+    "main_focus": "Relazione quotidiana adulto-bambino, comportamento del bambino nelle diverse fasi, scelte educative, gestione delle difficoltà relazionali e delle transizioni.",
+    "translation_of_model": "Nel contesto genitoriale il modello HCAIRE traduce i fondamenti teorici in letture del quotidiano: il pianto come segnale di regolazione, il 'no' del bambino come incontro con il limite, il gioco come campo desiderante, il legame come struttura — non come sentimento.",
+    "priority_dimensions": [
+      {"name": "Relazione adulto-bambino", "priority": "primario", "note": "Tessuto quotidiano della cura; qualità dello scambio, risposta ai segnali"},
+      {"name": "Affettività e sviluppo del legame", "priority": "primario", "note": "Ciclo legame/rottura/riparazione; colpa integrativa; distinzione conformismo/responsabilità"},
+      {"name": "Linguaggio e simbolico", "priority": "primario", "note": "Pratiche quotidiane di parola, canto, lettura; accesso al mondo condiviso"},
+      {"name": "Desiderio e iniziativa", "priority": "secondario", "note": "Iniziativa del bambino, autonomia, scelte; campo desiderabile"},
+      {"name": "Regolazione", "priority": "secondario", "note": "Sonno, alimentazione, ritmi; co-regolazione precoce"},
+      {"name": "Limite reale / Separazione", "priority": "secondario", "note": "Frustrazione, crisi, autonomia progressiva"},
+      {"name": "Contesto storico-culturale", "priority": "secondario", "note": "Pressioni culturali, tecnologie, aspettative sociali, contesti multiculturali"}
+    ],
+    "typical_configurations": [
+      {"id": "gc-01", "name": "Comportamento difficile da leggere", "description": "Genitore che non sa come interpretare pianto, rifiuto, crisi.", "possible_reading": "Lettura come segnale di regolazione o incontro con il limite — non come problema caratteriale."},
+      {"id": "gc-02", "name": "Confronto ansioso con altri bambini", "description": "Genitore che misura il proprio figlio rispetto a norme o ad altri bambini.", "possible_reading": "Riduzione normativa da smontare; attenzione al percorso individuale."},
+      {"id": "gc-03", "name": "Senso di colpa del genitore", "description": "Genitore che si chiede se sta sbagliando qualcosa.", "possible_reading": "La colpa genitoriale è dato rilevante; va rispettata e orientata, non eliminata né amplificata."},
+      {"id": "gc-04", "name": "Conflitto tra stili educativi", "description": "Disaccordo tra genitori, o tra genitori e nonni, sulle modalità educative.", "possible_reading": "Incoerenza tra adulti indebolisce la funzione contenitiva; il problema è il sistema, non solo il singolo genitore."},
+      {"id": "gc-05", "name": "Autonomia del bambino percepita come distacco", "description": "Genitore che legge l'autonomia esplorativa come mancanza di legame.", "possible_reading": "Autonomia come segnale positivo di campo aperto; la base sicura si vede nel ritorno, non nella ricerca continua."},
+      {"id": "gc-06", "name": "Pressioni culturali sulla genitorialità", "description": "Genitore sotto pressione da aspettative culturali, social media, confronto con altri.", "possible_reading": "Il contesto storico-culturale organizza le aspettative; il modello deve essere presentato senza aggiungere pressione normativa."}
+    ],
+    "reduction_risks": [
+      {"id": "gr-01", "name": "Colpevolizzazione del genitore", "description": "Attribuire al genitore la responsabilità di ciò che dipende dalla complessità della relazione o del contesto."},
+      {"id": "gr-02", "name": "Rassicurazione banale", "description": "'È normale, non preoccuparti' — chiude la domanda senza leggerla."},
+      {"id": "gr-03", "name": "Allarmismo diagnostico", "description": "Trasformare segnali ambigui in allarmi clinici senza dati sufficienti."},
+      {"id": "gr-04", "name": "Tecnificazione delle risposte", "description": "Offrire tecniche e ricette senza orientamento fondato."},
+      {"id": "gr-05", "name": "Prescrizionismo rigido", "description": "Indicare la soluzione 'giusta' senza rispettare il contesto specifico del genitore."},
+      {"id": "gr-06", "name": "Decontestualizzazione culturale", "description": "Applicare aspettative di sviluppo senza considerare il contesto culturale della famiglia."}
+    ],
+    "guiding_questions": [
+      "Qual è la domanda reale implicita nella traccia, oltre quella esplicita?",
+      "Chi è in difficoltà: il bambino, il genitore, il sistema relazionale?",
+      "La preoccupazione del genitore è un dato clinico rilevante da esplorare o un'ansia da rassicurare?",
+      "Il comportamento del bambino è un segnale di sviluppo, di regolazione o di relazione?",
+      "Il confronto con altri bambini è pertinente o fuorviante?",
+      "L'ambiente familiare sostiene o soffoca lo sviluppo del bambino?",
+      "Il ciclo legame/rottura/riparazione è funzionale in questa famiglia?",
+      "Il comportamento 'corretto' del bambino nasce da legame affettivo interno o da conformismo?",
+      "Le pressioni culturali presenti deformano le aspettative del genitore?"
+    ],
+    "allowed_output_types": ["guida-genitoriale", "articolo-riflessione", "scheda-orientamento", "risposta-contestuale"],
+    "language_rules": {
+      "positive": ["usare linguaggio accessibile e caldo", "rispettare l'intelligenza del genitore", "dare strumenti osservativi concreti", "mantenere profondità senza tecnicismi", "usare esempi vicini all'esperienza quotidiana"],
+      "negative": ["evitare tecnicismi e gergo clinico", "evitare tono colpevolizzante", "evitare rassicurazioni vuote", "evitare prescrizioni rigide", "evitare confronti normativi non contestualizzati"]
+    },
+    "operational_cautions": "Non formulare diagnosi. Non sostituire il giudizio professionale. Distinguere tra orientamento, proposta e prescrizione. Segnalare quando è opportuno un approfondimento professionale.",
+    "quality_indicators": {
+      "positive": ["risponde alla domanda reale, non solo a quella esplicita", "considera sia il bambino che il genitore", "offre strumenti osservativi concreti", "mantiene apertura senza allarmare né chiudere", "non aggiunge colpa"],
+      "negative": ["rassicura senza leggere", "allarmizza senza dati", "ignora il livello emotivo del genitore", "propone solo tecniche", "usa linguaggio inaccessibile o colpevolizzante"]
+    },
+    "version": "1.0",
+    "status": "approved"
+  },
+  {
+    "id": "as-002",
+    "domain_area_id": "da-002",
+    "title": "Scheda di ambito — Clinico",
+    "scope": "Supportare operatori sanitari e contesti di cura nella lettura dello sviluppo del bambino, nell'interpretazione di segnali e comportamenti, e nella comprensione delle dinamiche relazionali.",
+    "main_focus": "Segni di sviluppo tipico e atipico, traiettorie evolutive, regolazione e disorganizzazione, relazione bambino-caregiver, contesto familiare, integrazione tra dimensioni.",
+    "translation_of_model": "Nel contesto clinico il modello HCAIRE orienta a leggere configurazioni (non sintomi isolati), a integrare il dato osservabile con la dimensione relazionale e contestuale, e a mantenere distinzione tra osservazione, interpretazione, ipotesi e decisione clinica.",
+    "priority_dimensions": [
+      {"name": "Corpo e regolazione", "priority": "primario", "note": "Sonno, alimentazione, ritmo; stabilità/instabilità"},
+      {"name": "Relazione adulto-bambino", "priority": "primario", "note": "Qualità dello scambio, co-regolazione diadica"},
+      {"name": "Affettività e sviluppo del legame", "priority": "primario", "note": "Tono emotivo, colpa integrativa, capacità di riparazione, conformismo vs. responsabilità"},
+      {"name": "Integrazione / disorganizzazione", "priority": "primario", "note": "Coerenza tra dimensioni; segnali di frammentazione"},
+      {"name": "Contesto familiare", "priority": "secondario", "note": "Condizioni relazionali; risorse e vulnerabilità"},
+      {"name": "Linguaggio", "priority": "secondario", "note": "Sviluppo comunicativo; significato condiviso"},
+      {"name": "Limite reale / Perdita", "priority": "secondario", "note": "Situazioni che resistono, lutti, diagnosi difficili, dolore come risposta adeguata"},
+      {"name": "Desiderio / orientamento al possibile", "priority": "secondario", "note": "Ritiro vs. difficoltà di regolazione; prestazionalismo; qualità dell'ambiente"},
+      {"name": "Contesto storico-culturale", "priority": "secondario", "note": "Condizioni socio-economiche, norme culturali non universali, accesso differenziato ai servizi"}
+    ],
+    "typical_configurations": [
+      {"id": "cc-01", "name": "Segnale isolato", "description": "Es. 'non guarda negli occhi'. Rischio di sovrainterpretazione.", "possible_reading": "Leggere come parte di configurazione, non come segnale autonomo."},
+      {"id": "cc-02", "name": "Difficoltà di regolazione", "description": "Pianto persistente, sonno disturbato, irritabilità.", "possible_reading": "Lettura diadica: regolazione del bambino + disponibilità dell'adulto + contesto."},
+      {"id": "cc-03", "name": "Disorganizzazione", "description": "Incoerenza tra comportamento, affettività e relazione.", "possible_reading": "Configurazione da leggere nel tempo e nel sistema."},
+      {"id": "cc-04", "name": "Ritardo apparente", "description": "Sviluppo più lento rispetto a norme.", "possible_reading": "Contestualizzazione necessaria: contesto culturale, condizioni di partenza."},
+      {"id": "cc-05", "name": "Fatica relazionale", "description": "Scambio poco sintonizzato, difficoltà di co-regolazione.", "possible_reading": "Intervento sulla diade, non solo sul bambino."},
+      {"id": "cc-06", "name": "Situazione che resiste agli interventi", "description": "Difficoltà persistente nonostante buone pratiche.", "possible_reading": "Limite reale — non errore clinico o educativo."},
+      {"id": "cc-07", "name": "Ritiro del desiderio o prestazionalismo", "description": "Bambino senza curiosità/iniziativa, o bambino che funziona solo se premiato.", "possible_reading": "Patologia strutturale del campo desiderante — non problema comportamentale."},
+      {"id": "cc-08", "name": "Segnale in contesto di vulnerabilità sociale", "description": "Traiettoria atipica in condizioni di povertà o stress cronico.", "possible_reading": "Rischio di patologizzare ciò che è adattamento funzionale al contesto."}
+    ],
+    "reduction_risks": [
+      {"id": "cr-01", "name": "Sintomatizzazione", "description": "Riduzione del bambino a un insieme di segni isolati."},
+      {"id": "cr-02", "name": "Diagnosi precoce impropria", "description": "Attribuzione di etichette senza sufficiente base osservativa."},
+      {"id": "cr-03", "name": "Causalità lineare", "description": "'Questo comportamento = questo problema'."},
+      {"id": "cr-04", "name": "Separazione dal contesto", "description": "Ignorare relazione e ambiente familiare nella lettura."},
+      {"id": "cr-05", "name": "Medicalizzazione eccessiva", "description": "Trasformare variabilità in patologia."},
+      {"id": "cr-06", "name": "Onnipotenza clinica", "description": "Promettere soluzioni dove il limite è strutturale; patologizzare il dolore."},
+      {"id": "cr-07", "name": "Confusione cedimento del desiderio / problema comportamentale", "description": "Leggere ritiro e apatia come disturbi del comportamento senza riconoscere il cedimento del campo desiderante."},
+      {"id": "cr-08", "name": "Decontestualizzazione culturale e sociale", "description": "Applicare norme di sviluppo senza considerare il contesto; attribuire al bambino ciò che dipende da strutture."}
+    ],
+    "guiding_questions": [
+      "Questo è un segnale isolato o parte di una configurazione?",
+      "Quali dimensioni sono coinvolte (corpo, affettività, relazione, simbolico)?",
+      "Qual è il ruolo della relazione adulto-bambino nella lettura del segnale?",
+      "Questo comportamento è adattamento, segnale di fatica o espressione di sviluppo?",
+      "Questa difficoltà è un problema trattabile o un limite reale?",
+      "Il dolore presente è risposta adeguata al reale o sintomo da eliminare?",
+      "Il comportamento 'corretto' nasce da legame affettivo interno o da conformismo esterno?",
+      "La colpa presente è integrativa o schiacciante?",
+      "Le condizioni socio-economiche e culturali influenzano la traiettoria di sviluppo?",
+      "Il ritiro osservato è cedimento del campo desiderante o difficoltà di regolazione?",
+      "L'ambiente familiare sostiene o soffoca strutturalmente il campo desiderante?"
+    ],
+    "allowed_output_types": ["nota-clinico-riflessiva", "griglia-osservazionale", "sintesi-per-pediatri", "commento-a-caso", "materiale-per-comunicazione-genitori"],
+    "language_rules": {
+      "positive": ["distinguere livelli (dato/interpretazione/ipotesi)", "usare linguaggio probabilistico", "mantenere apertura", "esplicitare limiti", "indicare quando approfondire"],
+      "negative": ["evitare diagnosi implicite", "evitare affermazioni assolute", "evitare linguaggio allarmistico", "evitare semplificazione eccessiva"]
+    },
+    "operational_cautions": "Non formulare diagnosi. Non sostituire il clinico. Non indicare trattamenti specifici. Esplicitare sempre quando è necessario approfondimento professionale.",
+    "quality_indicators": {
+      "positive": ["prudenza", "chiarezza", "integrazione delle dimensioni", "attenzione al contesto", "distinzione tra livelli"],
+      "negative": ["tono assertivo", "diagnosi implicita", "riduzione a sintomo", "assenza del contesto", "causalità semplice"]
+    },
+    "version": "1.0",
+    "status": "approved"
+  },
+  {
+    "id": "as-003",
+    "domain_area_id": "da-003",
+    "title": "Scheda di ambito — Pedagogico",
+    "scope": "Supportare la comprensione e l'orientamento dei processi educativi, offrendo strumenti per leggere e accompagnare lo sviluppo del bambino nei contesti educativi formali e informali.",
+    "main_focus": "Processi di apprendimento, relazione educativa adulto-bambino, ruolo dell'adulto come mediatore, contesti educativi, costruzione di significato, partecipazione e iniziativa del bambino.",
+    "translation_of_model": "Nel contesto pedagogico il modello HCAIRE traduce l'apprendimento come processo relazionale, incarnato e simbolico; considera l'adulto come mediatore e regolatore di contesti; il passaggio chiave è da apprendimento come prestazione ad apprendimento come trasformazione del soggetto.",
+    "priority_dimensions": [
+      {"name": "Relazione educativa", "priority": "primario", "note": "Spazio in cui si costruisce l'apprendimento; qualità dello scambio adulto-bambino"},
+      {"name": "Simbolico e linguaggio", "priority": "primario", "note": "Costruzione di significati; accesso al mondo condiviso"},
+      {"name": "Desiderio e iniziativa", "priority": "primario", "note": "Motivazione interna, curiosità, partecipazione attiva"},
+      {"name": "Affettività e sviluppo del legame", "priority": "primario", "note": "Sicurezza emotiva; ciclo rottura/riparazione come momento formativo; distinzione obbedienza/responsabilità"},
+      {"name": "Normatività", "priority": "secondario", "note": "Regole, struttura dell'esperienza, accesso al mondo comune"},
+      {"name": "Corpo e esperienza", "priority": "secondario", "note": "Apprendimento incarnato; gesto, azione, esplorazione"},
+      {"name": "Limite reale / Separazione", "priority": "secondario", "note": "Frustrazione davanti al non-riuscire; fallimenti reali; transizioni difficili"},
+      {"name": "Contesto storico-culturale", "priority": "secondario", "note": "Scuola come istituzione; tecnologie; pressioni sulla prestazione; disuguaglianze"}
+    ],
+    "typical_configurations": [
+      {"id": "pc-01", "name": "Apprendimento ridotto a prestazione", "description": "Focus sul risultato; poca attenzione al processo.", "possible_reading": "Prestazionalismo come patologia del desiderio applicata all'apprendimento."},
+      {"id": "pc-02", "name": "Bambino passivo", "description": "Scarsa iniziativa, dipendenza dall'adulto.", "possible_reading": "Campo desiderante contratto; o ambiente troppo direttivo che non lascia spazio."},
+      {"id": "pc-03", "name": "Eccesso di stimolazione", "description": "Attività continue, poco spazio per elaborazione.", "possible_reading": "Ambiente che soffoca il desiderio; ritmo incongruente con i bisogni di sviluppo."},
+      {"id": "pc-04", "name": "Difficoltà di partecipazione", "description": "Ritiro, disinteresse, fatica a entrare nelle attività.", "possible_reading": "Cedimento del campo desiderante o inadeguatezza del contesto; non deficit individuale."},
+      {"id": "pc-05", "name": "Relazione educativa debole", "description": "Adulto poco presente o troppo direttivo.", "possible_reading": "La relazione è condizione strutturale dell'apprendimento — non variabile accessoria."},
+      {"id": "pc-06", "name": "Bambino inadeguato al contesto scolastico", "description": "Difficoltà che scompaiono in altri contesti.", "possible_reading": "Inadeguatezza del contesto istituzionale — non deficit individuale."},
+      {"id": "pc-07", "name": "Fallimento reale nonostante l'impegno", "description": "Bambino che non riesce anche con buon supporto.", "possible_reading": "Limite reale — non problema metodologico."}
+    ],
+    "reduction_risks": [
+      {"id": "pr-01", "name": "Tecnificazione dell'educazione", "description": "Riduzione a metodologie e strumenti."},
+      {"id": "pr-02", "name": "Prestazionalizzazione", "description": "Apprendimento valutato solo in termini di output."},
+      {"id": "pr-03", "name": "Separazione affettività/cognizione", "description": "Apprendimento visto come puramente mentale."},
+      {"id": "pr-04", "name": "Perdita del soggetto", "description": "Il bambino diventa esecutore."},
+      {"id": "pr-05", "name": "Eccesso di programmazione", "description": "Rigidità dei percorsi educativi."},
+      {"id": "pr-06", "name": "Decontestualizzazione culturale", "description": "Attribuire al bambino difficoltà che dipendono dall'inadeguatezza del contesto; ignorare disuguaglianze."},
+      {"id": "pr-07", "name": "Onnipotenza educativa", "description": "'Con il metodo giusto si risolve tutto.' Non tollerare il fallimento come esperienza formativa."}
+    ],
+    "guiding_questions": [
+      "Questa esperienza favorisce partecipazione o esecuzione?",
+      "Il bambino è attivo o passivo?",
+      "Quale ruolo ha l'adulto: guida, mediatore o controllore?",
+      "Il significato è costruito o solo trasmesso?",
+      "C'è integrazione tra affettività, corpo e cognizione?",
+      "Questa difficoltà è un problema educativo trattabile o un limite reale?",
+      "L'adulto tollera il fallimento del bambino o lo trasforma in problema metodologico?",
+      "Il bambino ha spazio per incontrare la frustrazione senza che sia subito risolta?",
+      "La scuola propone un'esperienza di tempo compatibile con i bisogni di sviluppo di questa età?",
+      "Le difficoltà dipendono dal bambino o dall'inadeguatezza del contesto istituzionale?",
+      "Le pressioni culturali sulla prestazione stanno deformando il desiderio verso il prestazionalismo?",
+      "Il bambino 'che si comporta bene' lo fa per legame affettivo interno o per conformismo?",
+      "Dopo una rottura relazionale c'è spazio per la riparazione o solo per la sanzione?"
+    ],
+    "allowed_output_types": ["guida-educativa", "scheda-operativa", "articolo-riflessione", "materiale-formativo", "griglia-osservazionale"],
+    "language_rules": {
+      "positive": ["esplicitare il senso delle pratiche", "collegare teoria e azione", "usare esempi concreti", "mantenere profondità senza tecnicismo"],
+      "negative": ["evitare linguaggio puramente tecnico", "evitare riduzione a metodo", "evitare prescrizioni rigide", "evitare astrazione non traducibile"]
+    },
+    "operational_cautions": "Evitare modelli educativi normativi rigidi. Non proporre ricette universali. Distinguere tra orientamento, proposta e prescrizione.",
+    "quality_indicators": {
+      "positive": ["integrazione tra dimensioni", "attenzione al processo", "valorizzazione del soggetto", "connessione tra teoria e pratica"],
+      "negative": ["tecnicismo", "focus su prestazione", "assenza di relazione", "prescrizioni standard"]
+    },
+    "version": "1.0",
+    "status": "approved"
+  },
+  {
+    "id": "as-004",
+    "domain_area_id": "da-004",
+    "title": "Scheda di ambito — Politico",
+    "scope": "Supportare decisori istituzionali e policy maker nella comprensione del modello HCAIRE e nella progettazione di politiche orientate al miglioramento delle condizioni di sviluppo.",
+    "main_focus": "Politiche per l'infanzia e la famiglia, investimento precoce, strutture dei servizi, riduzione delle disuguaglianze, condizioni sistemiche dello sviluppo.",
+    "translation_of_model": "Nel contesto politico il modello HCAIRE orienta a leggere lo sviluppo come processo che dipende da condizioni strutturali — non solo da caratteristiche individuali — e a progettare interventi che agiscono sulle fondamenta, non sui sintomi.",
+    "priority_dimensions": [
+      {"name": "Contesto storico-culturale", "priority": "primario", "note": "Determinanti strutturali dello sviluppo; istituzioni come ambienti; disuguaglianze"},
+      {"name": "Normatività", "priority": "primario", "note": "Politiche come norme; regolazione del campo di esperienza collettivo"},
+      {"name": "Condizioni per il legame affettivo", "priority": "secondario", "note": "Infrastruttura affettiva; strutture che rendono possibile il legame"},
+      {"name": "Limite reale / Strutturale", "priority": "secondario", "note": "Limiti degli interventi; aspettative irrealistiche; onnipotenza politica"},
+      {"name": "Desiderio / opportunità di sviluppo", "priority": "secondario", "note": "Creazione di condizioni perché il desiderio abbia spazio"}
+    ],
+    "typical_configurations": [
+      {"id": "pic-01", "name": "Investimento frammentato per fasce di età", "description": "Politiche che intervengono tardi, quando i problemi sono già consolidati.", "possible_reading": "Le fondamenta si costruiscono precocemente; intervenire a monte è più efficace e meno costoso."},
+      {"id": "pic-02", "name": "Servizi scollegati", "description": "Sanità, scuola e servizi sociali che non comunicano.", "possible_reading": "Lo sviluppo è sistemico; la frammentazione dei servizi produce costi e inefficacia."},
+      {"id": "pic-03", "name": "Aspettative di soluzione totale", "description": "Politica che promette di 'risolvere' lo sviluppo con un programma.", "possible_reading": "Onnipotenza politica; alcune situazioni hanno limiti strutturali non eliminabili."},
+      {"id": "pic-04", "name": "Riduzione dello sviluppo a indicatori misurabili", "description": "Politiche orientate solo a risultati quantificabili.", "possible_reading": "Il valore non è riducibile alla performance; rischio di perdere il soggetto."},
+      {"id": "pic-05", "name": "Psicologizzazione del disagio", "description": "Intervento solo sul singolo bambino/famiglia senza agire sulle condizioni strutturali.", "possible_reading": "Il problema è strutturale; l'intervento deve essere sistemico."},
+      {"id": "pic-06", "name": "Limite strutturale degli interventi", "description": "Programma efficace ma con impatto limitato da condizioni irrisolvibili.", "possible_reading": "Onestà politica: comunicare i limiti reali senza over-promise."}
+    ],
+    "reduction_risks": [
+      {"id": "pir-01", "name": "Neuroriduzionismo", "description": "Giustificare gli investimenti solo con 'il cervello cresce nei primi anni' senza quadro antropologico."},
+      {"id": "pir-02", "name": "Economicismo", "description": "Ridurre il bambino a capitale umano futuro; usare solo l'argomento ROI."},
+      {"id": "pir-03", "name": "Onnipotenza politica", "description": "Promettere soluzioni a problemi strutturali. Over-promise."},
+      {"id": "pir-04", "name": "Riduzione a indicatori misurabili", "description": "Perdere la dimensione qualitativa e soggettiva dello sviluppo."},
+      {"id": "pir-05", "name": "Psicologizzazione del disagio", "description": "Interventi solo sul singolo senza agire sulle strutture."}
+    ],
+    "guiding_questions": [
+      "Questo intervento agisce sulle fondamenta o sui sintomi?",
+      "Chi beneficia di più? Le famiglie più vulnerabili o quelle già avvantaggiate?",
+      "Le strutture dei servizi sono integrate o frammentate?",
+      "Quali aspettative vengono create? Sono realistiche?",
+      "Lo sviluppo è trattato come processo biologico o come processo storico-culturale?",
+      "Le disuguaglianze di partenza sono riconosciute come fattore strutturale?",
+      "Il programma proposto crea condizioni perché il desiderio dei bambini abbia spazio?"
+    ],
+    "allowed_output_types": ["nota-orientativa", "policy-brief", "documento-di-indirizzo", "relazione-tecnica"],
+    "language_rules": {
+      "positive": ["strutturato e difendibile", "combinare argomento fondativo con argomento economico e di equità", "esplicitare i limiti dell'intervento", "rendere ogni passaggio traducibile politicamente"],
+      "negative": ["evitare vaghezza non traducibile", "evitare over-promise", "evitare neuroriduzionismo come unico argomento", "evitare riduzione del bambino a investimento"]
+    },
+    "operational_cautions": "Il sistema non formula politiche specifiche ma orienta la lettura. Non garantisce risultati misurabili. Esplicitare sempre i limiti strutturali degli interventi.",
+    "quality_indicators": {
+      "positive": ["argomento fondativo solido", "argomento di equità presente", "onestà sui limiti", "traducibilità istituzionale"],
+      "negative": ["neuroriduzionismo come unico argomento", "over-promise", "assenza di equità", "vaghezza non difendibile"]
+    },
+    "version": "1.0",
+    "status": "approved"
+  },
+  {
+    "id": "as-005",
+    "domain_area_id": "da-005",
+    "title": "Scheda di ambito — Sociologico",
+    "scope": "Supportare la comprensione dei determinanti strutturali dello sviluppo infantile e l'analisi delle condizioni sociali che favoriscono o ostacolano il benessere dei bambini.",
+    "main_focus": "Determinanti strutturali dello sviluppo, vulnerabilità sociali, disuguaglianze, reti di cura, contesti migratori e multiculturali, effetti delle condizioni materiali sullo sviluppo.",
+    "translation_of_model": "Nel contesto sociologico il modello HCAIRE orienta a leggere lo sviluppo come prodotto di condizioni strutturali — senza però ridurre il bambino a determinato dal contesto. Il soggetto resta visibile anche nell'analisi strutturale.",
+    "priority_dimensions": [
+      {"name": "Contesto storico-culturale", "priority": "primario", "note": "Determinanti strutturali; disuguaglianze; organizzazione dei servizi"},
+      {"name": "Normatività e regolazione sociale", "priority": "primario", "note": "Norme sociali che regolano il campo di esperienza collettivo"},
+      {"name": "Condizioni per il legame affettivo", "priority": "secondario", "note": "Reti di cura; colpa/vergogna come prodotti sociali; reti di riparazione comunitaria"},
+      {"name": "Limite reale / Strutturale", "priority": "secondario", "note": "Vulnerabilità persistenti; perdite sociali; limiti degli interventi"},
+      {"name": "Desiderio / possibilità di sviluppo", "priority": "secondario", "note": "Accesso a esperienze; condizioni che ampliano o restringono il possibile"}
+    ],
+    "typical_configurations": [
+      {"id": "sc-01", "name": "Vulnerabilità familiare strutturale", "description": "Famiglia sotto stress cronico per condizioni materiali (povertà, lavoro precario, isolamento).", "possible_reading": "Il problema è strutturale; l'intervento deve agire su più livelli simultaneamente."},
+      {"id": "sc-02", "name": "Bambino in contesto migratorio", "description": "Bambino che vive tra due o più mondi culturali e linguistici.", "possible_reading": "Lettura come navigazione tra mondi di senso diversi — non come deficit."},
+      {"id": "sc-03", "name": "Disuguaglianza nelle condizioni di partenza", "description": "Gap significativi tra bambini di diversa estrazione socioeconomica.", "possible_reading": "La disuguaglianza si radica precocemente; l'intervento precoce ha la maggiore leva."},
+      {"id": "sc-04", "name": "Isolamento delle famiglie", "description": "Famiglie senza reti di sostegno significative.", "possible_reading": "L'isolamento indebolisce la capacità regolativa e relazionale della famiglia."},
+      {"id": "sc-05", "name": "Effetti di contesti disorganizzanti", "description": "Bambino che mostra disorganizzazione in risposta a condizioni di vita instabili.", "possible_reading": "La disorganizzazione rispecchia il contesto — non è prima di tutto individuale."},
+      {"id": "sc-06", "name": "Onnipotenza dell'intervento sociale", "description": "Programmi che promettono di compensare tutto con l'intervento.", "possible_reading": "Alcune vulnerabilità strutturali hanno limiti reali non superabili con l'intervento individuale."}
+    ],
+    "reduction_risks": [
+      {"id": "sr-01", "name": "Determinismo sociologico", "description": "Tutto dipende dal contesto; il soggetto scompare."},
+      {"id": "sr-02", "name": "Psicologizzazione del sociale", "description": "Attribuire a individui o famiglie problemi che appartengono alle strutture."},
+      {"id": "sr-03", "name": "Universalismo astratto", "description": "Applicare modelli senza considerare il contesto culturale specifico."},
+      {"id": "sr-04", "name": "Culturalismo rigido", "description": "Ridurre tutto al contesto culturale senza spazio per il soggetto."},
+      {"id": "sr-05", "name": "Onnipotenza dell'intervento", "description": "Promettere soluzioni a vulnerabilità strutturali persistenti."}
+    ],
+    "guiding_questions": [
+      "Quali condizioni strutturali pesano su questo bambino e questa famiglia?",
+      "Il problema descritto è individuale o sistemico?",
+      "Come incide la disuguaglianza di partenza sulla traiettoria di sviluppo?",
+      "Ci sono reti di cura disponibili o l'isolamento è un fattore rilevante?",
+      "Il contesto culturale è considerato senza essere deterministico?",
+      "L'intervento agisce sul soggetto o anche sulle condizioni strutturali?",
+      "Alcune vulnerabilità hanno limiti strutturali reali che vanno riconosciuti?"
+    ],
+    "allowed_output_types": ["analisi-strutturale", "report-sociale", "nota-di-ricerca", "materiale-di-sensibilizzazione", "documento-di-indirizzo"],
+    "language_rules": {
+      "positive": ["mantenere il soggetto visibile anche nell'analisi strutturale", "distinguere fattori individuali da strutturali", "usare linguaggio analitico non deterministico"],
+      "negative": ["evitare determinismo sociologico", "evitare psicologizzazione del sociale", "evitare perdita del soggetto nell'analisi"]
+    },
+    "operational_cautions": "Non sostituire l'analisi professionale. Mantenere il soggetto visibile. Non produrre analisi deterministiche. Segnalare quando i limiti strutturali sono reali e non superabili.",
+    "quality_indicators": {
+      "positive": ["distinzione individuale/strutturale", "presenza del soggetto nell'analisi", "lettura dei determinanti senza determinismo", "attenzione alle disuguaglianze"],
+      "negative": ["determinismo", "psicologizzazione", "assenza del soggetto", "universalismo non contestualizzato"]
+    },
+    "version": "1.0",
+    "status": "approved"
+  }
+]

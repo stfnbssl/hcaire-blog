@@ -11,6 +11,9 @@ import articleRequestRoutes from './routes/articleRequests';
 import webhookRoutes from './routes/webhooks';
 import subscriptionRoutes from './routes/subscriptions';
 import siteConfigRoutes from './routes/siteConfig';
+import bartlebyRoutes from './routes/bartleby';
+import hcaireRoutes from './routes/hcaire';
+import sviluppoBambinoRoutes from './routes/sviluppoBambino';
 import { startTelegramBot } from './services/telegramBot';
 
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
@@ -45,7 +48,10 @@ app.use('/api/navigation',       navRoutes);
 app.use('/api/article-requests', articleRequestRoutes);
 app.use('/api/subscriptions',    subscriptionRoutes);
 app.use('/api/site-config',      siteConfigRoutes);
-app.use('/api',                  authRoutes);
+app.use('/api/bartleby',              bartlebyRoutes);
+app.use('/api/hcaire',               hcaireRoutes);
+app.use('/api/sviluppo-bambino',     sviluppoBambinoRoutes);
+app.use('/api',                      authRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);

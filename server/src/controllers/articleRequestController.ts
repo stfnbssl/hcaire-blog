@@ -14,8 +14,18 @@ export const getAllArticleRequests = async (_req: Request, res: Response): Promi
 
 export const getAllWorkflowLogs = async (req: Request, res: Response): Promise<void> => {
   try {
-    const limit = parseInt(req.query.limit as string) || 200;
-    const logs  = await WorkflowLog.find()
+    const limit = Math.min(parseInt(req.query.limit as string) || 200, 500);
+    const type  = req.query.type as string | undefined; // 'article' | 'bartleby' | undefined = tutti
+
+    const filter: Record<string, unknown> = {};
+    if (type === 'bartleby') {
+      filter.workflow_type = 'bartleby';
+    } else if (type === 'article') {
+      // include documenti vecchi senza workflow_type (creati prima del campo)
+      filter.$or = [{ workflow_type: 'article' }, { workflow_type: { $exists: false } }];
+    }
+
+    const logs = await WorkflowLog.find(filter)
       .sort({ createdAt: -1 })
       .limit(limit);
     res.json(logs);
