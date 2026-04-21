@@ -5,6 +5,8 @@ import {
   getMetodoIntroduzione,
   getMetodoArchitettura,
   getMetodoMetodologia,
+  getFasiIndex,
+  getFase,
   getMetodoRicercaScientifica,
   getMetodoCollocazione,
   getMetodoStatutoEpistemologico,
@@ -27,6 +29,8 @@ router.get('/metodo',                       getMetodo);
 router.get('/metodo/introduzione',                              getMetodoIntroduzione);
 router.get('/metodo/introduzione/architettura',                 getMetodoArchitettura);
 router.get('/metodo/introduzione/metodologia',                  getMetodoMetodologia);
+router.get('/metodo/fasi',                                      getFasiIndex);
+router.get('/metodo/fasi/:faseSlug',                            getFase);
 router.get('/metodo/ricerca-scientifica',                       getMetodoRicercaScientifica);
 router.get('/metodo/ricerca-scientifica/collocazione',          getMetodoCollocazione);
 router.get('/metodo/ricerca-scientifica/statuto-epistemologico', getMetodoStatutoEpistemologico);

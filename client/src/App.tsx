@@ -29,10 +29,11 @@ import SviluppoBambinoAssi        from './pages/sviluppo-bambino/SviluppoBambino
 import SviluppoBambinoAsseChapters from './pages/sviluppo-bambino/SviluppoBambinoAsseChapters';
 import SviluppoBambinoChapter     from './pages/sviluppo-bambino/SviluppoBambinoChapter';
 
-import SviluppoBambinoPage             from './pages/sviluppo-bambino/SviluppoBambinoPage';
-import SviluppoBambinoMetodoLanding    from './pages/sviluppo-bambino/SviluppoBambinoMetodoLanding';
-import SviluppoBambinoMetodoGroupIndex from './pages/sviluppo-bambino/SviluppoBambinoMetodoGroupIndex';
-import SviluppoBambinoMetodoPage       from './pages/sviluppo-bambino/SviluppoBambinoMetodoPage';
+import SviluppoBambinoPage                from './pages/sviluppo-bambino/SviluppoBambinoPage';
+import SviluppoBambinoMetodoLanding       from './pages/sviluppo-bambino/SviluppoBambinoMetodoLanding';
+import SviluppoBambinoMetodoPage          from './pages/sviluppo-bambino/SviluppoBambinoMetodoPage';
+import SviluppoBambinoMetodoFasiIndex     from './pages/sviluppo-bambino/SviluppoBambinoMetodoFasiIndex';
+import SviluppoBambinoMetodoFasePage      from './pages/sviluppo-bambino/SviluppoBambinoMetodoFasePage';
 
 const KnowledgeBase   = lazy(() => import('./pages/bartleby/KnowledgeBase'));
 const AdminSiteConfig = lazy(() => import('./pages/AdminSiteConfig'));
@@ -112,10 +113,10 @@ function AppLayout() {
           <Route path="/sviluppo-bambino"                                        element={<SviluppoBambinoLanding />} />
           <Route path="/sviluppo-bambino/finalita"                              element={<SviluppoBambinoPage />} />
           <Route path="/sviluppo-bambino/metodo"                                element={<SviluppoBambinoMetodoLanding />} />
-          <Route path="/sviluppo-bambino/metodo/introduzione"                   element={<SviluppoBambinoMetodoGroupIndex />} />
-          <Route path="/sviluppo-bambino/metodo/introduzione/:pageSlug"         element={<SviluppoBambinoMetodoPage />} />
-          <Route path="/sviluppo-bambino/metodo/ricerca-scientifica"            element={<SviluppoBambinoMetodoGroupIndex />} />
-          <Route path="/sviluppo-bambino/metodo/ricerca-scientifica/:pageSlug"  element={<SviluppoBambinoMetodoPage />} />
+          <Route path="/sviluppo-bambino/metodo/introduzione"                   element={<SviluppoBambinoMetodoPage />} />
+          <Route path="/sviluppo-bambino/metodo/fasi"                          element={<SviluppoBambinoMetodoFasiIndex />} />
+          <Route path="/sviluppo-bambino/metodo/fasi/:faseSlug"                element={<SviluppoBambinoMetodoFasePage />} />
+          <Route path="/sviluppo-bambino/metodo/ricerca-scientifica"            element={<SviluppoBambinoMetodoPage />} />
           <Route path="/sviluppo-bambino/metodo/rapporto-con-ia"               element={<SviluppoBambinoMetodoPage />} />
           <Route path="/sviluppo-bambino/concetti"                              element={<SviluppoBambinoPage />} />
           <Route path="/sviluppo-bambino/nota-metodologica"                     element={<SviluppoBambinoPage />} />

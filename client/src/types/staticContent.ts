@@ -127,3 +127,23 @@ export interface InterlocuzioniItem {
   slug: string;
   count: number;
 }
+
+export interface FaseMeta {
+  slug: string;
+  numero: number;
+  title: string;
+  excerpt: string;
+}
+
+export interface FasiIndex {
+  fasi: FaseMeta[];
+}
+
+export interface FaseDetail {
+  slug: string;
+  numero: number;
+  title: string;
+  content: string;
+  prev: string | null;
+  next: string | null;
+}

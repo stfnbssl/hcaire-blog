@@ -1,65 +1,107 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { sviluppoBambinoApi } from '../../services/staticContentService';
-import type { MetodoLandingResponse } from '../../types/staticContent';
-import Breadcrumb from '../../components/Breadcrumb';
 import SviluppoBambinoNav from '../../components/SviluppoBambinoNav';
-import MarkdownRenderer from '../../components/MarkdownRenderer';
+import SviluppoBambinoMetodoNav from '../../components/SviluppoBambinoMetodoNav';
+
+const GROUP_STYLES: Record<string, {
+  headerBg: string;
+  borderAccent: string;
+  taglineColor: string;
+}> = {
+  A: { headerBg: 'bg-indigo-900',  borderAccent: 'border-l-indigo-400', taglineColor: 'text-indigo-900' },
+  B: { headerBg: 'bg-teal-800',    borderAccent: 'border-l-teal-400',   taglineColor: 'text-teal-900'   },
+  C: { headerBg: 'bg-violet-800',  borderAccent: 'border-l-violet-400', taglineColor: 'text-violet-900' },
+};
+
+interface Theme {
+  code: string;
+  title: string;
+  tagline: string;
+  body: string;
+}
+
+interface Group {
+  id: string;
+  title: string;
+  themes: Theme[];
+}
 
 export default function SviluppoBambinoMetodoLanding() {
-  const [data, setData] = useState<MetodoLandingResponse | null>(null);
+  const [groups, setGroups] = useState<Group[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    sviluppoBambinoApi.getMetodo()
-      .then(setData)
-      .catch(() => setData(null))
+    fetch('/data/sviluppo-bambino-metodo-temi.json')
+      .then((r) => r.json())
+      .then((data) => setGroups(data.groups))
+      .catch(() => setGroups([]))
       .finally(() => setLoading(false));
   }, []);
 
   return (
-    <>
+    <div>
       <SviluppoBambinoNav />
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
-      <Breadcrumb items={[
-        { label: 'Home', to: '/' },
-        { label: 'Sviluppo bambino', to: '/sviluppo-bambino' },
-        { label: 'Il metodo' },
-      ]} />
+      <SviluppoBambinoMetodoNav />
 
-      <h1 className="text-3xl font-bold text-gray-900 mb-8">Il metodo</h1>
+      {/* Hero */}
+      <div className="bg-indigo-950 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
+          <h1 className="text-5xl sm:text-7xl font-black mb-8 leading-none tracking-tight">
+            Il <span className="text-indigo-300">Metodo</span>
+          </h1>
+          <p className="text-xl sm:text-2xl text-indigo-100 max-w-2xl leading-relaxed">
+            Come funziona e perché questo metodo e non un altro: i temi fondamentali della sezione.
+          </p>
+        </div>
+      </div>
 
-      {loading && <div className="h-48 bg-gray-50 animate-pulse rounded-lg mb-8" />}
-
-      {data && !loading && (
-        <>
-          {data.content && (
-            <div className="mb-10 prose prose-gray max-w-none">
-              <MarkdownRenderer content={data.content} />
-            </div>
-          )}
-
-          <section className="grid sm:grid-cols-3 gap-4 mb-10">
-            {data.groups.map((g) => (
-              <Link
-                key={g.slug}
-                to={`/sviluppo-bambino/metodo/${g.slug}`}
-                className="block rounded-lg border border-gray-200 p-5 hover:border-primary-300 hover:shadow-sm transition-all group"
-              >
-                <h2 className="font-semibold text-gray-900 group-hover:text-primary-700 mb-1 text-sm leading-snug">{g.title}</h2>
-                <p className="text-xs text-gray-500 leading-snug">{g.excerpt}</p>
-              </Link>
+      {/* Groups */}
+      {loading ? (
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-20">
+          <div className="space-y-6">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="h-32 bg-gray-100 animate-pulse rounded-lg" />
             ))}
-          </section>
-        </>
+          </div>
+        </div>
+      ) : (
+        groups.map((group) => {
+          const styles = GROUP_STYLES[group.id] ?? GROUP_STYLES['A'];
+          return (
+            <div key={group.id} id={`group-${group.id}`}>
+              {/* Group header */}
+              <div className={`${styles.headerBg} text-white`}>
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+                  <h2 className="text-2xl sm:text-3xl font-bold">{group.title}</h2>
+                </div>
+              </div>
+
+              {/* Theme blocks */}
+              <div className="max-w-4xl mx-auto px-4 sm:px-6">
+                {group.themes.map((theme, i) => (
+                  <div
+                    key={theme.code}
+                    className={`border-l-4 ${styles.borderAccent} pl-8 sm:pl-12 py-12 ${
+                      i < group.themes.length - 1 ? 'border-b border-gray-100' : ''
+                    }`}
+                  >
+                    <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 underline decoration-dotted decoration-2 underline-offset-6 mb-5 leading-snug">
+                      {theme.title}
+                    </h3>
+                    <p className={`text-lg sm:text-xl italic font-medium ${styles.taglineColor} mb-5 leading-relaxed`}>
+                      &ldquo;{theme.tagline}&rdquo;
+                    </p>
+                    <p className="text-gray-600 leading-relaxed text-base max-w-2xl">
+                      {theme.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        })
       )}
 
-      <div className="mt-4 pt-6 border-t border-gray-100">
-        <Link to="/sviluppo-bambino" className="text-sm text-gray-500 hover:text-gray-800 transition-colors">
-          ← Sviluppo bambino
-        </Link>
-      </div>
+      <div className="h-24" />
     </div>
-    </>
   );
 }

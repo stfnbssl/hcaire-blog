@@ -4,16 +4,15 @@ import { sviluppoBambinoApi } from '../../services/staticContentService';
 import type { MetodoPageResponse } from '../../types/staticContent';
 import Breadcrumb from '../../components/Breadcrumb';
 import SviluppoBambinoNav from '../../components/SviluppoBambinoNav';
+import SviluppoBambinoMetodoNav from '../../components/SviluppoBambinoMetodoNav';
 import TableOfContents from '../../components/TableOfContents';
 import MarkdownRenderer from '../../components/MarkdownRenderer';
 import PrevNext from '../../components/PrevNext';
 import AgenticLabel from '../../components/AgenticLabel';
 
 type PageKey =
-  | 'architettura'
-  | 'metodologia'
-  | 'collocazione'
-  | 'statuto-epistemologico'
+  | 'introduzione'
+  | 'ricerca-scientifica'
   | 'rapporto-con-ia';
 
 interface PageMeta {
@@ -26,61 +25,31 @@ interface PageMeta {
 }
 
 const PAGE_META: Record<PageKey, PageMeta> = {
-  'architettura': {
-    title: 'Architettura del progetto',
-    fetcher: () => sviluppoBambinoApi.getMetodoArchitettura(),
+  'introduzione': {
+    title: 'Introduzione alla metodologia',
+    fetcher: () => sviluppoBambinoApi.getMetodoIntroduzione(),
     breadcrumb: [
       { label: 'Home', to: '/' },
       { label: 'Sviluppo bambino', to: '/sviluppo-bambino' },
       { label: 'Il metodo', to: '/sviluppo-bambino/metodo' },
-      { label: 'Introduzione al progetto', to: '/sviluppo-bambino/metodo/introduzione' },
-      { label: 'Architettura' },
+      { label: 'Introduzione' },
     ],
-    parentTo: '/sviluppo-bambino/metodo/introduzione',
-    parentLabel: 'Introduzione al progetto',
-    prevNextBase: '/sviluppo-bambino/metodo/introduzione',
+    parentTo: '/sviluppo-bambino/metodo',
+    parentLabel: 'Il metodo',
+    prevNextBase: '/sviluppo-bambino/metodo',
   },
-  'metodologia': {
-    title: 'Metodologia del progetto',
-    fetcher: () => sviluppoBambinoApi.getMetodoMetodologia(),
+  'ricerca-scientifica': {
+    title: 'Rapporto con la ricerca scientifica',
+    fetcher: () => sviluppoBambinoApi.getMetodoRicercaScientifica(),
     breadcrumb: [
       { label: 'Home', to: '/' },
       { label: 'Sviluppo bambino', to: '/sviluppo-bambino' },
       { label: 'Il metodo', to: '/sviluppo-bambino/metodo' },
-      { label: 'Introduzione al progetto', to: '/sviluppo-bambino/metodo/introduzione' },
-      { label: 'Metodologia' },
+      { label: 'Ricerca scientifica' },
     ],
-    parentTo: '/sviluppo-bambino/metodo/introduzione',
-    parentLabel: 'Introduzione al progetto',
-    prevNextBase: '/sviluppo-bambino/metodo/introduzione',
-  },
-  'collocazione': {
-    title: 'Collocazione nell\'ecosistema della ricerca',
-    fetcher: () => sviluppoBambinoApi.getMetodoCollocazione(),
-    breadcrumb: [
-      { label: 'Home', to: '/' },
-      { label: 'Sviluppo bambino', to: '/sviluppo-bambino' },
-      { label: 'Il metodo', to: '/sviluppo-bambino/metodo' },
-      { label: 'Rapporto con la ricerca scientifica', to: '/sviluppo-bambino/metodo/ricerca-scientifica' },
-      { label: 'Collocazione' },
-    ],
-    parentTo: '/sviluppo-bambino/metodo/ricerca-scientifica',
-    parentLabel: 'Rapporto con la ricerca scientifica',
-    prevNextBase: '/sviluppo-bambino/metodo/ricerca-scientifica',
-  },
-  'statuto-epistemologico': {
-    title: 'Statuto epistemologico del progetto',
-    fetcher: () => sviluppoBambinoApi.getMetodoStatutoEpistemologico(),
-    breadcrumb: [
-      { label: 'Home', to: '/' },
-      { label: 'Sviluppo bambino', to: '/sviluppo-bambino' },
-      { label: 'Il metodo', to: '/sviluppo-bambino/metodo' },
-      { label: 'Rapporto con la ricerca scientifica', to: '/sviluppo-bambino/metodo/ricerca-scientifica' },
-      { label: 'Statuto epistemologico' },
-    ],
-    parentTo: '/sviluppo-bambino/metodo/ricerca-scientifica',
-    parentLabel: 'Rapporto con la ricerca scientifica',
-    prevNextBase: '/sviluppo-bambino/metodo/ricerca-scientifica',
+    parentTo: '/sviluppo-bambino/metodo',
+    parentLabel: 'Il metodo',
+    prevNextBase: '/sviluppo-bambino/metodo',
   },
   'rapporto-con-ia': {
     title: 'Rapporto con l\'intelligenza artificiale',
@@ -121,6 +90,7 @@ export default function SviluppoBambinoMetodoPage() {
   return (
     <>
       <SviluppoBambinoNav />
+      <SviluppoBambinoMetodoNav />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
       <Breadcrumb items={meta.breadcrumb} />
 
