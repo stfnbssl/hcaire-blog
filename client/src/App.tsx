@@ -34,6 +34,11 @@ import SviluppoBambinoMetodoLanding       from './pages/sviluppo-bambino/Svilupp
 import SviluppoBambinoMetodoPage          from './pages/sviluppo-bambino/SviluppoBambinoMetodoPage';
 import SviluppoBambinoMetodoFasiIndex     from './pages/sviluppo-bambino/SviluppoBambinoMetodoFasiIndex';
 import SviluppoBambinoMetodoFasePage      from './pages/sviluppo-bambino/SviluppoBambinoMetodoFasePage';
+import SviluppoBambinoAssiLanding              from './pages/sviluppo-bambino/SviluppoBambinoAssiLanding';
+import SviluppoBambinoFinalitaLanding         from './pages/sviluppo-bambino/SviluppoBambinoFinalitaLanding';
+import SviluppoBambinoInterlocuzioniLanding    from './pages/sviluppo-bambino/SviluppoBambinoInterlocuzioniLanding';
+import SviluppoBambinoInterlocuzioniDisciplineIndex from './pages/sviluppo-bambino/SviluppoBambinoInterlocuzioniDisciplineIndex';
+import SviluppoBambinoInterlocuzioniDisciplinaPage  from './pages/sviluppo-bambino/SviluppoBambinoInterlocuzioniDisciplinaPage';
 
 const KnowledgeBase   = lazy(() => import('./pages/bartleby/KnowledgeBase'));
 const AdminSiteConfig = lazy(() => import('./pages/AdminSiteConfig'));
@@ -111,7 +116,7 @@ function AppLayout() {
           <Route path="/hcaire/:section"                           element={<HcairePage />} />
           {/* Sviluppo bambino */}
           <Route path="/sviluppo-bambino"                                        element={<SviluppoBambinoLanding />} />
-          <Route path="/sviluppo-bambino/finalita"                              element={<SviluppoBambinoPage />} />
+          <Route path="/sviluppo-bambino/finalita"                              element={<SviluppoBambinoFinalitaLanding />} />
           <Route path="/sviluppo-bambino/metodo"                                element={<SviluppoBambinoMetodoLanding />} />
           <Route path="/sviluppo-bambino/metodo/introduzione"                   element={<SviluppoBambinoMetodoPage />} />
           <Route path="/sviluppo-bambino/metodo/fasi"                          element={<SviluppoBambinoMetodoFasiIndex />} />
@@ -121,10 +126,13 @@ function AppLayout() {
           <Route path="/sviluppo-bambino/concetti"                              element={<SviluppoBambinoPage />} />
           <Route path="/sviluppo-bambino/nota-metodologica"                     element={<SviluppoBambinoPage />} />
           <Route path="/sviluppo-bambino/riflessioni"                           element={<SviluppoBambinoPage />} />
-          <Route path="/sviluppo-bambino/interlocuzioni"                        element={<SviluppoBambinoPage />} />
+          <Route path="/sviluppo-bambino/interlocuzioni"                                           element={<SviluppoBambinoInterlocuzioniLanding />} />
+          <Route path="/sviluppo-bambino/interlocuzioni/discipline"                               element={<SviluppoBambinoInterlocuzioniDisciplineIndex />} />
+          <Route path="/sviluppo-bambino/interlocuzioni/discipline/:disciplinaSlug"               element={<SviluppoBambinoInterlocuzioniDisciplinaPage />} />
           <Route path="/sviluppo-bambino/modello"                               element={<SviluppoBambinoModello />} />
           <Route path="/sviluppo-bambino/modello/:asseSlug"                     element={<SviluppoBambinoAsseOverview />} />
-          <Route path="/sviluppo-bambino/assi"                                  element={<SviluppoBambinoAssi />} />
+          <Route path="/sviluppo-bambino/assi"                                  element={<SviluppoBambinoAssiLanding />} />
+          <Route path="/sviluppo-bambino/assi/capitoli"                         element={<SviluppoBambinoAssi />} />
           <Route path="/sviluppo-bambino/assi/:asseSlug"                        element={<SviluppoBambinoAsseChapters />} />
           <Route path="/sviluppo-bambino/assi/:asseSlug/:chapterSlug"           element={<SviluppoBambinoChapter />} />
           <Route path="/admin"           element={<AdminRoute><AdminDashboard /></AdminRoute>} />

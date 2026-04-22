@@ -3,10 +3,10 @@ import path from 'path';
 import matter from 'gray-matter';
 
 // Lazy getter: reads env at call time, not at import time (dotenv runs after imports).
-// Falls back to <project-root>/content/ so the server works out of the box on Railway.
+// Falls back to server/content/ (relative to compiled output at server/dist/services/).
 export function getContentBase(): string {
   return process.env.CONTENT_BASE_PATH
-    || path.resolve(__dirname, '../../../content');
+    || path.resolve(__dirname, '../../content');
 }
 
 export interface ParsedSection {

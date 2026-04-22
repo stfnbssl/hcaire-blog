@@ -398,21 +398,77 @@ export function getRiflessioni(req: Request, res: Response) {
   }
 }
 
+// ── Interlocuzioni ────────────────────────────────────────────────────────────
+
+const DISCIPLINE_META: Array<{
+  slug: string;
+  sessione: 'A' | 'B' | 'C';
+  disciplina: string;
+  filename: string;
+  assi: number[];
+}> = [
+  // Sessione A — bio-relazionale
+  { slug: 'infant-research',             sessione: 'A', disciplina: 'Infant Research',                       filename: 'infant-research.md',             assi: [1, 2, 4, 5] },
+  { slug: 'neuroscienze-dello-sviluppo', sessione: 'A', disciplina: 'Neuroscienze dello Sviluppo',           filename: 'neuroscienze-dello-sviluppo.md',  assi: [1, 2, 4, 6] },
+  { slug: 'sistemi-dinamici',            sessione: 'A', disciplina: 'Teoria dei Sistemi Dinamici',           filename: 'sistemi-dinamici.md',             assi: [1, 3, 4, 5] },
+  { slug: 'teoria-dellattaccamento',     sessione: 'A', disciplina: "Teoria dell'Attaccamento",              filename: 'teoria-dellattaccamento.md',      assi: [1, 2, 4, 5] },
+  // Sessione B — clinico-contestuale
+  { slug: 'psicopatologia-dello-sviluppo', sessione: 'B', disciplina: 'Psicopatologia dello Sviluppo',      filename: 'psicopatologia-dello-sviluppo.md', assi: [1, 2, 4, 6] },
+  { slug: 'ecologia-dello-sviluppo',     sessione: 'B', disciplina: 'Ecologia dello Sviluppo',              filename: 'ecologia-dello-sviluppo.md',      assi: [1, 3, 5, 6] },
+  { slug: 'pediatria-per-lo-sviluppo',   sessione: 'B', disciplina: 'Pediatria per lo Sviluppo',            filename: 'pediatria-per-lo-sviluppo.md',    assi: [1, 3, 4, 6] },
+  { slug: 'psicologia-di-comunita',      sessione: 'B', disciplina: 'Psicologia di Comunità',               filename: 'psicologia-di-comunita.md',       assi: [3, 5, 6] },
+  // Sessione C — metodologico-integrativa
+  { slug: 'epistemologia-della-complessita', sessione: 'C', disciplina: 'Epistemologia della Complessità',  filename: 'epistemologia-della-complessita.md', assi: [1, 3, 4, 6] },
+  { slug: 'sistemi-motivazionali',       sessione: 'C', disciplina: 'Sistemi Motivazionali',                filename: 'sistemi-motivazionali.md',        assi: [1, 2, 5] },
+  { slug: 'free-energy-principle',       sessione: 'C', disciplina: 'Free Energy Principle',                filename: 'free-energy-principle.md',        assi: [1, 4, 6] },
+];
+
+const SESSION_LABELS: Record<string, string> = {
+  A: 'Bio-relazionale',
+  B: 'Clinico-contestuale',
+  C: 'Metodologico-integrativa',
+};
+
 // GET /api/sviluppo-bambino/interlocuzioni
 export function getInterlocuzioni(req: Request, res: Response) {
   try {
-    const dirs = listSubdirectories(INTERLOCUZIONI_BASE);
-    const ambiti = dirs.map((dirName) => {
-      const filesInDir = listSubdirMdFiles(path.join(INTERLOCUZIONI_BASE, dirName));
-      return {
-        title: dirName,
-        slug: dirName.toLowerCase().replace(/\s+/g, '-'),
-        count: filesInDir.length,
-      };
-    });
-    res.json({ ambiti });
+    const sessions = (['A', 'B', 'C'] as const).map((id) => ({
+      id,
+      label: SESSION_LABELS[id],
+      discipline: DISCIPLINE_META
+        .filter((d) => d.sessione === id)
+        .map(({ slug, disciplina, assi }) => ({ slug, disciplina, assi })),
+    }));
+    res.json({ sessioni: sessions });
   } catch {
     res.status(500).json({ error: 'Errore lettura interlocuzioni' });
+  }
+}
+
+// GET /api/sviluppo-bambino/interlocuzioni/:disciplinaSlug
+export function getInterlocuzioneDisciplina(req: Request, res: Response) {
+  try {
+    const { disciplinaSlug } = req.params;
+    const idx = DISCIPLINE_META.findIndex((d) => d.slug === disciplinaSlug);
+    if (idx === -1) return res.status(404).json({ error: 'Disciplina non trovata' });
+    const meta = DISCIPLINE_META[idx];
+    const relPath = path.join(INTERLOCUZIONI_BASE, meta.filename);
+    const { content, isEmpty } = readMarkdownFile(relPath);
+    if (isEmpty) return res.status(404).json({ error: 'Contenuto non trovato' });
+    const body = content.replace(/^\s*#[^#][^\n]*\n?/, '');
+    res.json({
+      slug: meta.slug,
+      disciplina: meta.disciplina,
+      sessione: meta.sessione,
+      assi: meta.assi,
+      content: body,
+      prev: idx > 0 ? DISCIPLINE_META[idx - 1].slug : null,
+      next: idx < DISCIPLINE_META.length - 1 ? DISCIPLINE_META[idx + 1].slug : null,
+      prevLabel: idx > 0 ? DISCIPLINE_META[idx - 1].disciplina : null,
+      nextLabel: idx < DISCIPLINE_META.length - 1 ? DISCIPLINE_META[idx + 1].disciplina : null,
+    });
+  } catch {
+    res.status(500).json({ error: 'Errore lettura disciplina' });
   }
 }
 

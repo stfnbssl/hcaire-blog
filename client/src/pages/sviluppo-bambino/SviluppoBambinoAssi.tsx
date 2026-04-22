@@ -4,6 +4,7 @@ import { sviluppoBambinoApi } from '../../services/staticContentService';
 import type { AssiIndex } from '../../types/staticContent';
 import Breadcrumb from '../../components/Breadcrumb';
 import SviluppoBambinoNav from '../../components/SviluppoBambinoNav';
+import SviluppoBambinoAssiNav from '../../components/SviluppoBambinoAssiNav';
 
 export default function SviluppoBambinoAssi() {
   const [data, setData] = useState<AssiIndex | null>(null);
@@ -19,11 +20,13 @@ export default function SviluppoBambinoAssi() {
   return (
     <>
       <SviluppoBambinoNav />
+      <SviluppoBambinoAssiNav />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
       <Breadcrumb items={[
         { label: 'Home', to: '/' },
         { label: 'Sviluppo bambino', to: '/sviluppo-bambino' },
-        { label: 'Assi strutturali' },
+        { label: 'Assi strutturali', to: '/sviluppo-bambino/assi' },
+        { label: 'Capitoli' },
       ]} />
 
       <h1 className="text-3xl font-bold text-gray-900 mb-3">Gli assi strutturali</h1>
@@ -71,8 +74,8 @@ export default function SviluppoBambinoAssi() {
       )}
 
       <div className="mt-10 pt-8 border-t border-gray-100">
-        <Link to="/sviluppo-bambino" className="text-sm text-gray-500 hover:text-gray-800">
-          ← Sviluppo bambino
+        <Link to="/sviluppo-bambino/assi" className="text-sm text-gray-500 hover:text-gray-800">
+          ← Assi strutturali
         </Link>
       </div>
     </div>

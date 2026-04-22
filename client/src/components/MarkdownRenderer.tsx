@@ -1,12 +1,24 @@
+import React, { useMemo, useRef, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 import { Components } from 'react-markdown';
+
+export interface RilevanzaEntry {
+  label: string;
+  rilevanza: string;
+}
+
+export type RilevanzaMap = Record<string, RilevanzaEntry>;
 
 interface MarkdownRendererProps {
   content: string;
+  rilevanzaMap?: RilevanzaMap;
 }
 
-const components: Components = {
+// ── components that don't depend on props (stable reference) ──────────────────
+
+const baseComponents: Components = {
   h1: ({ children }) => (
     <h1 className="text-3xl font-bold mt-8 mb-4 text-gray-900">{children}</h1>
   ),
@@ -21,9 +33,6 @@ const components: Components = {
   ),
   a: ({ href, children, id, node, ...rest }) => {
     const isInternal = !href || href.startsWith('#');
-    // Footnote inline reference: <sup><a id="user-content-fnref-N" href="#user-content-fn-N">N</a></sup>
-    // Footnote back-reference:   <a href="#user-content-fnref-N">↩</a>
-    // Both need id preserved and no target="_blank"
     const isFootnote =
       (typeof id === 'string' && id.includes('fnref')) ||
       (typeof href === 'string' && (href.includes('#user-content-fn') || href.includes('#fn')));
@@ -53,7 +62,6 @@ const components: Components = {
       </a>
     );
   },
-  // Preserve superscript styling for footnote refs
   sup: ({ children }) => <sup>{children}</sup>,
   pre: ({ children }) => (
     <pre className="bg-gray-900 rounded-lg overflow-x-auto mb-4 p-4">
@@ -78,7 +86,6 @@ const components: Components = {
   ul: ({ children }) => (
     <ul className="list-disc list-inside mb-4 space-y-1 text-gray-700">{children}</ul>
   ),
-  // Footnote definitions are wrapped in an <ol> by remark-gfm — avoid double-numbering
   ol: ({ children, ...props }) => {
     const isFootnoteList = (props as Record<string, unknown>)['data-footnotes'] !== undefined;
     if (isFootnoteList) {
@@ -86,7 +93,6 @@ const components: Components = {
     }
     return <ol className="list-decimal list-inside mb-4 space-y-1 text-gray-700">{children}</ol>;
   },
-  // Footnote section wrapper
   section: ({ children, ...props }) => {
     const isFootnotes = (props as Record<string, unknown>)['data-footnotes'] !== undefined;
     if (isFootnotes) {
@@ -113,12 +119,108 @@ const components: Components = {
   ),
 };
 
-export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
+// ── rilevanza floating card ───────────────────────────────────────────────────
+
+function RilevanzaPanel({
+  entry,
+  onClose,
+}: {
+  entry: RilevanzaEntry;
+  onClose: () => void;
+}) {
+  return (
+    <div
+      className="fixed bottom-0 right-0 md:bottom-6 md:right-6 z-50
+                 w-full md:w-[420px] max-h-[58vh]
+                 bg-white md:rounded-xl shadow-2xl border border-gray-200
+                 flex flex-col overflow-hidden"
+    >
+      {/* header */}
+      <div className="flex items-start justify-between px-5 py-4 border-b border-gray-100 shrink-0 bg-gray-50 md:rounded-t-xl">
+        <div className="min-w-0 pr-3">
+          <p className="text-[10px] text-gray-400 uppercase tracking-widest mb-1">
+            Rilevanza per il progetto
+          </p>
+          <h3 className="font-semibold text-gray-900 text-sm leading-snug">
+            {entry.label}
+          </h3>
+        </div>
+        <button
+          onClick={onClose}
+          className="shrink-0 mt-0.5 w-6 h-6 flex items-center justify-center rounded-full text-gray-400 hover:text-gray-700 hover:bg-gray-200 transition-colors text-base leading-none"
+          aria-label="Chiudi"
+        >
+          ×
+        </button>
+      </div>
+
+      {/* body */}
+      <div className="overflow-y-auto px-5 py-4">
+        <p className="text-sm text-gray-600 leading-relaxed">{entry.rilevanza}</p>
+      </div>
+    </div>
+  );
+}
+
+// ── main component ────────────────────────────────────────────────────────────
+
+export default function MarkdownRenderer({ content, rilevanzaMap }: MarkdownRendererProps) {
+  const [activeEntry, setActiveEntry] = useState<RilevanzaEntry | null>(null);
+  // Ref so the img click handler always reads the latest active entry
+  // without needing to be recreated on every state change.
+  const activeEntryRef = useRef<RilevanzaEntry | null>(null);
+  activeEntryRef.current = activeEntry;
+
+  const components = useMemo<Components>(() => {
+    if (!rilevanzaMap) return baseComponents;
+
+    return {
+      ...baseComponents,
+      img: ({ src, alt, title, ...rest }) => {
+        const id = src?.split('/').pop()?.replace(/\.[^.]+$/, '') ?? '';
+        const entry = rilevanzaMap[id];
+
+        const resolvedTitle = entry
+          ? `${entry.label} — clicca per la rilevanza nel progetto`
+          : title;
+
+        return (
+          <img
+            src={src}
+            alt={alt}
+            title={resolvedTitle}
+            {...rest}
+            style={{
+              ...(rest.style as React.CSSProperties),
+              cursor: entry ? 'pointer' : undefined,
+            }}
+            onClick={() => {
+              if (!entry) return;
+              const current = activeEntryRef.current;
+              setActiveEntry(current?.label === entry.label ? null : entry);
+            }}
+          />
+        );
+      },
+    };
+  }, [rilevanzaMap]);
+
   return (
     <div className="mt-6">
-      <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
+        components={components}
+      >
         {content}
       </ReactMarkdown>
+
+      {activeEntry && (
+        <RilevanzaPanel
+          entry={activeEntry}
+          onClose={() => setActiveEntry(null)}
+        />
+      )}
     </div>
   );
 }

@@ -1,19 +1,50 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import MarkdownRenderer from '../../components/MarkdownRenderer';
+import MarkdownRenderer, { type RilevanzaMap } from '../../components/MarkdownRenderer';
 import { sviluppoBambinoApi } from '../../services/staticContentService';
 import type { Chapter } from '../../types/staticContent';
 import Breadcrumb from '../../components/Breadcrumb';
 import SviluppoBambinoNav from '../../components/SviluppoBambinoNav';
+import SviluppoBambinoAssiNav from '../../components/SviluppoBambinoAssiNav';
 import PrevNext from '../../components/PrevNext';
 import TableOfContents from '../../components/TableOfContents';
 import StubNotice from '../../components/StubNotice';
 import AgenticLabel from '../../components/AgenticLabel';
 
+interface RilevanzaSource {
+  autori: { id: string; nome: string; rilevanza: string }[];
+  libri: { id: string; titolo: string; rilevanza: string }[];
+}
+
+const RILEVANZA_FILES = [
+  '/data/sviluppo-bambino-rilevanza-giorno-1.json',
+];
+
+async function loadRilevanzaMap(): Promise<RilevanzaMap> {
+  const map: RilevanzaMap = {};
+  await Promise.all(
+    RILEVANZA_FILES.map((url) =>
+      fetch(url)
+        .then<RilevanzaSource>((r) => r.json())
+        .then((data) => {
+          data.autori.forEach((a) => { map[a.id] = { label: a.nome, rilevanza: a.rilevanza }; });
+          data.libri.forEach((l) => { map[l.id] = { label: l.titolo, rilevanza: l.rilevanza }; });
+        })
+        .catch(() => {/* skip missing files */}),
+    ),
+  );
+  return map;
+}
+
 export default function SviluppoBambinoChapter() {
   const { asseSlug = '', chapterSlug = '' } = useParams<{ asseSlug: string; chapterSlug: string }>();
   const [data, setData] = useState<Chapter | null>(null);
   const [loading, setLoading] = useState(true);
+  const [rilevanzaMap, setRilevanzaMap] = useState<RilevanzaMap | undefined>(undefined);
+
+  useEffect(() => {
+    loadRilevanzaMap().then(setRilevanzaMap);
+  }, []);
 
   useEffect(() => {
     setLoading(true);
@@ -28,11 +59,13 @@ export default function SviluppoBambinoChapter() {
   return (
     <>
       <SviluppoBambinoNav />
+      <SviluppoBambinoAssiNav />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
       <Breadcrumb items={[
         { label: 'Home', to: '/' },
         { label: 'Sviluppo bambino', to: '/sviluppo-bambino' },
         { label: 'Assi strutturali', to: '/sviluppo-bambino/assi' },
+        { label: 'Capitoli', to: '/sviluppo-bambino/assi/capitoli' },
         { label: fm?.asse ?? asseSlug, to: `/sviluppo-bambino/assi/${asseSlug}` },
         { label: fm?.title ?? chapterSlug },
       ]} />
@@ -65,7 +98,7 @@ export default function SviluppoBambinoChapter() {
                 />
               ) : (
                 <>
-                  <MarkdownRenderer content={data.content} />
+                  <MarkdownRenderer content={data.content.replace(/^\s*#[^#][^\n]*\n?/, '')} rilevanzaMap={rilevanzaMap} />
                   <AgenticLabel />
                 </>
               )}

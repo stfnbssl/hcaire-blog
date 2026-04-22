@@ -128,6 +128,34 @@ export interface InterlocuzioniItem {
   count: number;
 }
 
+export interface DisciplinaMeta {
+  slug: string;
+  disciplina: string;
+  assi: number[];
+}
+
+export interface InterlocuzioniSessione {
+  id: string;
+  label: string;
+  discipline: DisciplinaMeta[];
+}
+
+export interface InterlocuzioniIndex {
+  sessioni: InterlocuzioniSessione[];
+}
+
+export interface DisciplinaDetail {
+  slug: string;
+  disciplina: string;
+  sessione: string;
+  assi: number[];
+  content: string;
+  prev: string | null;
+  next: string | null;
+  prevLabel: string | null;
+  nextLabel: string | null;
+}
+
 export interface FaseMeta {
   slug: string;
   numero: number;

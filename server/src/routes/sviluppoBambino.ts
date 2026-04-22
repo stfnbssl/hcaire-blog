@@ -20,6 +20,7 @@ import {
   getChapter,
   getRiflessioni,
   getInterlocuzioni,
+  getInterlocuzioneDisciplina,
 } from '../controllers/sviluppoBambinoController';
 
 const router = Router();
@@ -43,6 +44,7 @@ router.get('/assi',                         getAssiIndex);
 router.get('/assi/:asseSlug',              getAsseChapters);
 router.get('/assi/:asseSlug/:chapterSlug', getChapter);
 router.get('/riflessioni',                  getRiflessioni);
-router.get('/interlocuzioni',               getInterlocuzioni);
+router.get('/interlocuzioni',                        getInterlocuzioni);
+router.get('/interlocuzioni/:disciplinaSlug',        getInterlocuzioneDisciplina);
 
 export default router;

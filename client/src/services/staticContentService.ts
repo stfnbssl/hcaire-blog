@@ -16,6 +16,8 @@ import type {
   MetodoPageResponse,
   RiflessioniItem,
   InterlocuzioniItem,
+  InterlocuzioniIndex,
+  DisciplinaDetail,
   FasiIndex,
   FaseDetail,
 } from '../types/staticContent';
@@ -52,4 +54,6 @@ export const sviluppoBambinoApi = {
     get<Chapter>(`/sviluppo-bambino/assi/${asseSlug}/${chapterSlug}`),
   getRiflessioni: () => get<{ items: RiflessioniItem[] }>('/sviluppo-bambino/riflessioni'),
   getInterlocuzioni: () => get<{ ambiti: InterlocuzioniItem[] }>('/sviluppo-bambino/interlocuzioni'),
+  getInterlocuzioniIndex: () => get<InterlocuzioniIndex>('/sviluppo-bambino/interlocuzioni'),
+  getInterlocuzioneDisciplina: (slug: string) => get<DisciplinaDetail>(`/sviluppo-bambino/interlocuzioni/${slug}`),
 };
