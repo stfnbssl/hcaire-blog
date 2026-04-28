@@ -1,5 +1,5 @@
 import path from 'path';
-import { promises as fs } from 'fs';
+import { promises as fs, existsSync } from 'fs';
 
 export interface StepConfigInputPipeline {
   step: string;
@@ -54,23 +54,42 @@ export interface PipelineStepConfig {
   steps: StepConfig[];
 }
 
-const CONFIG_PATH = path.resolve(
-  __dirname,
-  '..',
-  '..',
-  '..',
-  'client',
-  'public',
-  'pipeline',
-  'pipeline-step-config.json',
-);
+// Risolve il path della step config provando, in ordine:
+//   1. PIPELINE_STEP_CONFIG_PATH (env, override esplicito)
+//   2. <server>/dist/pipeline-step-config.json — copiato dal postbuild (deploy cloud)
+//   3. <server>/pipeline-step-config.json — eventuale copia in server/ (fallback)
+//   4. <repo>/client/public/pipeline/pipeline-step-config.json — sviluppo locale
+function resolveConfigPath(): string {
+  if (process.env.PIPELINE_STEP_CONFIG_PATH) {
+    return process.env.PIPELINE_STEP_CONFIG_PATH;
+  }
+  const candidates = [
+    path.resolve(__dirname, '..', 'pipeline-step-config.json'),
+    path.resolve(__dirname, '..', '..', 'pipeline-step-config.json'),
+    path.resolve(__dirname, '..', '..', '..', 'client', 'public', 'pipeline', 'pipeline-step-config.json'),
+  ];
+  for (const c of candidates) {
+    if (existsSync(c)) return c;
+  }
+  // Restituisce comunque l'ultimo (path repo) per generare un errore chiaro a fs.readFile.
+  return candidates[candidates.length - 1];
+}
 
 let cached: PipelineStepConfig | null = null;
 let cachedById: Map<string, StepConfig> | null = null;
 
 export async function loadStepConfig(): Promise<PipelineStepConfig> {
   if (cached) return cached;
-  const raw = await fs.readFile(CONFIG_PATH, 'utf8');
+  const configPath = resolveConfigPath();
+  let raw: string;
+  try {
+    raw = await fs.readFile(configPath, 'utf8');
+  } catch (e) {
+    throw new Error(
+      `Impossibile leggere pipeline-step-config.json (${configPath}): ${(e as Error).message}. ` +
+      `Imposta PIPELINE_STEP_CONFIG_PATH oppure verifica il postbuild di server/.`,
+    );
+  }
   const parsed = JSON.parse(raw) as PipelineStepConfig;
   if (!Array.isArray(parsed.steps)) {
     throw new Error(`pipeline-step-config.json invalido: manca array "steps"`);
