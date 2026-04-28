@@ -6,6 +6,7 @@ import {
   getTema,
   getRicerca,
   getStepHistory,
+  getContextStepOutput,
   runStep,
   cancelExecution,
   verifyExecution,
@@ -32,6 +33,7 @@ router.get('/step-config', getStepConfig);
 router.get('/temi/:temaId', getTema);
 router.get('/ricerche/:ricercaId', getRicerca);
 router.get('/temi/:temaId/steps/:stepId/history', getStepHistory);
+router.get('/contexts/:contextId/steps/:stepId/output', getContextStepOutput);
 router.get('/executions/:executionId/output', getExecutionOutput);
 
 // ---- Endpoint di orchestrazione (admin) — D4 §3 ----

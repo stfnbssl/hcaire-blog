@@ -4,6 +4,7 @@ import type {
   DeviceSnapshot,
   TemaIndexEntry,
   CanonicalDeviceShape,
+  PipelineStepId,
   F3Step1Raw,
   F3Step3Raw,
   F3Step9Raw,
@@ -16,14 +17,21 @@ import type {
 
 const PIPELINE_BASE = '/pipeline';
 
-async function fetchJson<T>(path: string): Promise<T> {
-  const res = await fetch(`${PIPELINE_BASE}/${path}`);
-  if (!res.ok) throw new Error(`Pipeline fetch failed: ${path} (${res.status})`);
-  return res.json();
+// Carica l'output_data dell'ultima execution di uno step direttamente da Mongo.
+// Sostituisce le letture statiche di /pipeline/temi/.../step-output-vN.json.
+// Ritorna null su 404 (step non eseguito o output non ancora mirrorato).
+async function fetchStepOutput<T>(contextId: string, stepId: PipelineStepId): Promise<T | null> {
+  const res = await fetch(
+    `${API_URL}/pipeline/contexts/${encodeURIComponent(contextId)}/steps/${stepId}/output`,
+  );
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`Step output fetch failed: ${stepId} (${res.status})`);
+  const body = await res.json();
+  if (!body?.ok) throw new Error(body?.error?.message ?? 'Pipeline output API error');
+  return body.data.output_data as T;
 }
 
 // L'indice arriva ora dall'API backend (D4 §10): MongoDB è la sorgente di verità.
-// I file statici degli artefatti continuano a essere serviti da /pipeline/.
 export async function fetchPipelineIndex(): Promise<PipelineIndex> {
   const res = await fetch(`${API_URL}/pipeline/index`);
   if (!res.ok) throw new Error(`Pipeline index fetch failed (${res.status})`);
@@ -110,19 +118,17 @@ function applyStep6bOverride(device: DeviceSnapshot, step6b: F3Step6bRaw): Devic
 }
 
 export async function fetchStressTest(tema: TemaIndexEntry): Promise<F3Step10Raw | null> {
-  const file = tema.files.f3_step_10;
-  if (!file) return null;
-  return fetchJson<F3Step10Raw>(file);
+  if (!tema.files.f3_step_10) return null;
+  return fetchStepOutput<F3Step10Raw>(tema.id, 'f3_step_10');
 }
 
 export async function fetchCorrectionsLog(tema: TemaIndexEntry): Promise<Array<{ step: string; entries: CorrectionEntry[] }>> {
   const out: Array<{ step: string; entries: CorrectionEntry[] }> = [];
   for (const step of ['f3_step_3', 'f3_step_6', 'f3_step_8'] as const) {
-    const file = tema.files[step];
-    if (!file) continue;
+    if (!tema.files[step]) continue;
     try {
-      const raw = await fetchJson<{ corrections_log?: CorrectionEntry[] }>(file);
-      if (raw.corrections_log && raw.corrections_log.length > 0) {
+      const raw = await fetchStepOutput<{ corrections_log?: CorrectionEntry[] }>(tema.id, step);
+      if (raw?.corrections_log && raw.corrections_log.length > 0) {
         out.push({ step, entries: raw.corrections_log });
       }
     } catch {
@@ -132,6 +138,8 @@ export async function fetchCorrectionsLog(tema: TemaIndexEntry): Promise<Array<{
   return out;
 }
 
+// NB: revisioni.md non è ancora mirrorata in Mongo per le Produzioni — sarà oggetto di PR2.
+// Resta la lettura statica per ora; sul cloud restituisce null se il file non è presente.
 export async function fetchRevisioni(tema: TemaIndexEntry): Promise<string | null> {
   if (!tema.revisioni_file) return null;
   const res = await fetch(`${PIPELINE_BASE}/${tema.revisioni_file}`);
@@ -139,19 +147,22 @@ export async function fetchRevisioni(tema: TemaIndexEntry): Promise<string | nul
   return res.text();
 }
 
-export async function fetchExternalInput(path: string): Promise<unknown> {
-  return fetchJson<unknown>(path);
+// Mappa shape → step_id (priorità identica a pickCanonicalDevice lato server).
+function shapeToStepId(shape: CanonicalDeviceShape): PipelineStepId {
+  if (shape === 'device') return 'f3_step_9';
+  if (shape === 'corrected_device') return 'f3_step_3';
+  return 'f3_step_1';
 }
 
 export async function fetchDevice(tema: TemaIndexEntry): Promise<DeviceSnapshot | null> {
   if (!tema.canonical_device) return null;
-  const raw = await fetchJson<unknown>(tema.canonical_device.file);
+  const raw = await fetchStepOutput<unknown>(tema.id, shapeToStepId(tema.canonical_device.shape));
+  if (!raw) return null;
   let device = extractDevice(raw, tema.canonical_device.shape);
-  const step6bFile = tema.files.f3_step_6b;
-  if (step6bFile) {
+  if (tema.files.f3_step_6b) {
     try {
-      const s6b = await fetchJson<F3Step6bRaw>(step6bFile);
-      device = applyStep6bOverride(device, s6b);
+      const s6b = await fetchStepOutput<F3Step6bRaw>(tema.id, 'f3_step_6b');
+      if (s6b) device = applyStep6bOverride(device, s6b);
     } catch {
       // step 6-B optional override; ignore if missing
     }

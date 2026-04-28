@@ -129,6 +129,48 @@ export async function getExecutionOutput(req: Request, res: Response) {
   }
 }
 
+// ---------- GET /api/pipeline/contexts/:contextId/steps/:stepId/output ----------
+// Ritorna l'output_data dell'ultima execution dello step per un context (tema o ricerca).
+// Sostituisce la lettura diretta dei file statici in client/public/pipeline/...:
+// Mongo è la sorgente di verità.
+
+export async function getContextStepOutput(req: Request, res: Response) {
+  const { contextId, stepId } = req.params;
+  try {
+    const ctx = await PipelineContext.findOne(
+      { context_id: contextId },
+      { step_states: 1 },
+    ).lean();
+    if (!ctx) return err(res, 404, 'CONTEXT_NOT_FOUND', `Context "${contextId}" non trovato`);
+
+    const states = (ctx.step_states ?? {}) as Record<string, { last_execution_id?: unknown; output_file?: string | null }>;
+    const state = states[stepId];
+    if (!state || !state.last_execution_id) {
+      return err(res, 404, 'OUTPUT_NOT_AVAILABLE', `Nessuna execution per lo step "${stepId}"`);
+    }
+    const exec = await PipelineStepExecution.findById(state.last_execution_id, {
+      output_data: 1, output_file: 1, step_id: 1, context_id: 1, run_number: 1, status: 1, completed_at: 1,
+    }).lean();
+    if (!exec || exec.output_data === null || exec.output_data === undefined) {
+      return err(res, 404, 'OUTPUT_NOT_AVAILABLE',
+        'Output non disponibile per questa execution. Possibile esecuzione precedente al mirroring su Mongo.');
+    }
+    return ok(res, 200, {
+      execution_id: String(exec._id),
+      step_id: exec.step_id,
+      context_id: exec.context_id,
+      run_number: exec.run_number,
+      status: exec.status,
+      completed_at: exec.completed_at,
+      output_file: exec.output_file,
+      output_data: exec.output_data,
+    });
+  } catch (e) {
+    console.error('[pipeline] getContextStepOutput error:', e);
+    return err(res, 500, 'INTERNAL_ERROR', 'Errore nel recupero output');
+  }
+}
+
 // ---------- GET /api/pipeline/temi/:temaId/steps/:stepId/history ----------
 
 export async function getStepHistory(req: Request, res: Response) {
