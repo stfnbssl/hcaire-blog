@@ -1,0 +1,298 @@
+{
+  "step": "step_5",
+  "results": [
+    {
+      "theme_id": "tema_01_technoference",
+      "output_families": [
+        {
+          "domain": "educativo (servizi prima infanzia)",
+          "output_type": "lettura configurazionale della qualità della co-presenza nei contesti di osservazione 0-3",
+          "description": "Apre, nei servizi per la prima infanzia, un livello di interrogazione sulla qualità strutturale della co-presenza diadica caregiver-bambino, distinto dalla quantità di interazione e dalla compliance comportamentale. Permette di leggere la configurazione del campo della co-regolazione, del campo intenzionale del bambino e dello spessore temporale del presente condiviso come dimensioni che possono essere strutturalmente alterate dalla mediazione tecnica anche in presenza fisica del caregiver. Non orienta verso un giudizio sul caregiver ma verso un'osservazione strutturata del campo che la diade abita.",
+          "structural_basis": {
+            "axes": ["asse_1", "asse_6"],
+            "nodes": [
+              "co-regolazione",
+              "campo-intenzionale",
+              "temporalità-vissuta",
+              "mediazione-strutturale"
+            ],
+            "node_interpretation": "nel dominio educativo 0-3: co-regolazione come qualità modulativa osservabile del sostegno diadico; campo-intenzionale come ampiezza dell'orizzonte di possibilità del bambino nella situazione; temporalità-vissuta come spessore del presente condiviso; mediazione-strutturale come dispositivo che entra nel campo prima di qualsiasi uso intenzionale",
+            "tensions": [
+              "presenza fisica vs. assenza strutturale",
+              "temporalità diadica vs. temporalità storica"
+            ]
+          },
+          "value_added": "Rende visibile, agli educatori dei servizi 0-3, una distinzione che il senso comune e i framework comportamentali non possono cogliere: la differenza strutturale tra una co-regolazione presente-ma-distratta e una co-regolazione strutturalmente alterata dalla mediazione tecnica. Sposta l'osservazione dal piano del 'quanto tempo passa con il bambino' al piano della qualità del campo che la presenza fisica, da sola, non garantisce.",
+          "reduction_risk": "Scivolamento verso la checklist comportamentale ('quante volte il caregiver guarda lo smartphone'), trasformando una lettura strutturale del campo in un indicatore quantitativo di interazione. Rischio collaterale di trasformare l'osservazione in giudizio implicito sul caregiver, perdendo la dimensione sistemica della deformazione."
+        },
+        {
+          "domain": "formazione dei professionisti",
+          "output_type": "analisi della struttura della doppia lettura fenomenologica e storico-sistemica del fenomeno",
+          "description": "Apre, nella formazione dei professionisti dell'infanzia, una pratica di lettura interdisciplinare che tiene insieme la grammatica fenomenologica della co-regolazione e la grammatica storico-sistemica della mediazione tecnica come due piani co-dominanti dello stesso fenomeno. Permette di analizzare casi e situazioni mantenendo simultaneamente entrambi i registri, senza farli collassare l'uno nell'altro: né il fenomeno come comportamento individuale del caregiver né il fenomeno come pura critica culturale astratta.",
+          "structural_basis": {
+            "axes": ["asse_1", "asse_6"],
+            "nodes": [
+              "co-regolazione",
+              "campo-intenzionale",
+              "tecnica-come-forma-storica",
+              "mediazione-strutturale",
+              "deformazione-strutturale"
+            ],
+            "node_interpretation": "nel dominio formativo: i nodi dei due assi vengono articolati come registri di lettura simultanei che il professionista impara a tenere insieme nella stessa situazione, riconoscendo come la forma storica della tecnica modifichi la qualità della co-regolazione senza essere riducibile a essa",
+            "tensions": [
+              "fenomenologia diadica vs. configurazione sistemica",
+              "intenzione del caregiver vs. forma storica del dispositivo"
+            ]
+          },
+          "value_added": "Rende disponibile ai professionisti in formazione una competenza interdisciplinare che la formazione monodisciplinare sistematicamente non costruisce: la capacità di leggere lo stesso fenomeno su due piani strutturalmente irriducibili. Evita la disgiunzione professionale per cui chi lavora sulla diade non vede la forma storica e chi lavora sulla forma storica non vede la singolarità della diade.",
+          "reduction_risk": "Riduzione della doppia lettura a giustapposizione tematica ('una parte sulla relazione, una parte sulla tecnologia') invece che a lettura strutturalmente integrata. Scivolamento verso la formazione come trasmissione di teoria sulla technoference invece che come costruzione di una capacità di lettura configurazionale."
+        },
+        {
+          "domain": "politiche per l'infanzia",
+          "output_type": "interrogazione strutturale sulla deformazione sistemica del campo della co-presenza precoce",
+          "description": "Apre, nel dominio delle politiche per l'infanzia, una linea di interrogazione che tratta la diffusione della technoference come configurazione sistemica del mondo storico contemporaneo, non come patologia individuale dei caregiver. Permette di pensare interventi che riconoscano la natura non-comportamentale del fenomeno: la responsabilità di organizzare condizioni di co-presenza non frammentate non può essere scaricata sui singoli adulti se la forma storica del dispositivo organizza l'attenzione prima di qualsiasi uso consapevole.",
+          "structural_basis": {
+            "axes": ["asse_1", "asse_6"],
+            "nodes": [
+              "tecnica-come-forma-storica",
+              "deformazione-strutturale",
+              "campo-intenzionale"
+            ],
+            "node_interpretation": "nel dominio politico: la deformazione-strutturale del campo non è effetto di scelte individuali ma configurazione del macrosistema; la tecnica-come-forma-storica precede l'uso intenzionale; il restringimento del campo-intenzionale del bambino è esito sistemico, non comportamentale",
+            "tensions": [
+              "intenzione del caregiver vs. forma storica del dispositivo",
+              "fenomenologia diadica vs. configurazione sistemica"
+            ]
+          },
+          "value_added": "Sposta il livello dell'intervento politico dalla raccomandazione comportamentale al caregiver alla configurazione strutturale delle condizioni storiche di possibilità della co-presenza. Rende pensabile una politica per l'infanzia che riconosca la dimensione sistemica della deformazione senza trasferirne il peso sui singoli, e senza dissolvere la responsabilità nella generica critica culturale.",
+          "reduction_risk": "Slittamento verso politiche di sensibilizzazione diretta ai genitori ('campagne contro lo smartphone in presenza dei figli') che ripropongono la lettura moralistica e individuale del fenomeno. In direzione opposta, scivolamento nel determinismo storico che dissolve qualsiasi spazio di responsabilità, lasciando solo la critica del macrosistema."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le tre famiglie restano fedeli alla configurazione co-dominante asse_1/asse_6 e mantengono operativa la lettura non moralistica del fenomeno. Ogni famiglia attiva almeno due tensioni della micro-matrice e nessuna prescrive comportamenti, mantenendosi sul piano dell'apertura di livelli di interrogazione. La distribuzione tra educativo, formativo e politico riflette i tre piani su cui la configurazione strutturale può essere tradotta senza collasso su un singolo registro.",
+        "limitations": "Le tensioni 'presenza fisica vs. assenza strutturale' e 'temporalità diadica vs. temporalità storica' sono attivate solo parzialmente; la prima entra nella famiglia educativa, la seconda solo come motore secondario. Il bridge 'co-regolazione mediata storicamente' e 'attenzione divisa come configurazione sistemica' di STEP 4 sono presupposti dalle tre famiglie ma non tradotti come oggetto autonomo di output. Il dominio clinico non è stato attivato perché non presente nel translation_potential di STEP 4: una sua introduzione richiederebbe verifica strutturale autonoma.",
+        "next_step_orientation": "La famiglia educativa è la più matura per lo sviluppo di strumenti operativi in Fase 3, perché il livello di osservazione strutturata della qualità della co-presenza è già configurabile in protocolli di osservazione che mantengono la cura strutturale. La famiglia formativa richiede elaborazione metodologica più articolata (costruzione di percorsi di formazione interdisciplinare). La famiglia politica è la più esposta al rischio di banalizzazione e richiede interlocuzione con il livello di policy prima della costruzione di strumenti."
+      }
+    },
+    {
+      "theme_id": "tema_02_lettura_dialogica",
+      "output_families": [
+        {
+          "domain": "educativo (servizi 0-3)",
+          "output_type": "lettura configurazionale del campo triadico nelle pratiche di lettura precoce condivisa",
+          "description": "Apre, nei servizi 0-3, un livello di interrogazione sulla struttura triadica caregiver-bambino-libro come configurazione specifica della relazione costitutiva, distinta dalla semplice presenza di un oggetto in una diade. Permette di leggere la lettura precoce non come attività linguistico-cognitiva o early literacy ma come dispositivo relazionale-simbolico che opera attraverso il corpo (voce, ritmo, contatto, prossimità) prima e indipendentemente dalla padronanza linguistica del bambino.",
+          "structural_basis": {
+            "axes": ["asse_1", "asse_6"],
+            "nodes": [
+              "co-regolazione",
+              "corporeità-vissuta",
+              "relazione-costitutiva",
+              "mediazione-simbolica"
+            ],
+            "node_interpretation": "nel dominio educativo 0-3: la corporeità-vissuta come fondamento incarnato dell'incontro con il libro; la co-regolazione come ritmo condiviso che sostiene la pagina; la relazione-costitutiva come triade in cui il libro non si aggiunge ma riconfigura la struttura; la mediazione-simbolica come ingresso strutturale del simbolico attraverso il corpo",
+            "tensions": [
+              "diade vs. triade",
+              "incarnato vs. simbolico"
+            ]
+          },
+          "value_added": "Rende visibile, nei servizi 0-3, che la lettura precoce non è preparazione alla lettura autonoma né stimolazione linguistica ma una configurazione triadica specifica in cui un mediatore simbolico riorganizza la diade. Distingue strutturalmente la lettura come dispositivo simbolico-relazionale dalla lettura come trasmissione di contenuto verbale, aprendo uno spazio di osservazione che la lettura come 'attività' non può cogliere.",
+          "reduction_risk": "Scivolamento verso la valutazione della 'qualità della lettura' come tecnica di accompagnamento (intonazione, ritmo, scelta del libro) che reintroduce un piano prestazionale nel campo che dovrebbe rimanere relazionale-simbolico. Rischio parallelo di estetizzazione della lettura come momento intimo, perdendo la sua funzione di mediazione culturale."
+        },
+        {
+          "domain": "formazione dei professionisti",
+          "output_type": "analisi della struttura della relazione tra fondamento corporeo e dispositivo simbolico nella mediazione precoce",
+          "description": "Apre, nella formazione dei professionisti dell'infanzia, una pratica di analisi della doppia natura strutturale della lettura precoce come simultaneamente evento corporeo-ritmico e dispositivo simbolico-culturale. Permette di lavorare formativamente sulla tensione strutturale tra le due dimensioni senza farne assorbire una nell'altra: né riduzione tecnico-linguistica della lettura, né dissoluzione del dispositivo simbolico nel puro contatto affettivo.",
+          "structural_basis": {
+            "axes": ["asse_1", "asse_6"],
+            "nodes": [
+              "corporeità-vissuta",
+              "mediazione-simbolica",
+              "zona-di-sviluppo-prossimale",
+              "co-regolazione"
+            ],
+            "node_interpretation": "nel dominio formativo: la zona-di-sviluppo-prossimale come struttura della mediazione che rende accessibile uno strumento culturale altrimenti non leggibile; il rapporto tra corporeità-vissuta e mediazione-simbolica come tensione costitutiva su cui i professionisti imparano a operare senza ridurla",
+            "tensions": [
+              "incarnato vs. simbolico",
+              "asimmetria mediativa vs. partecipazione condivisa"
+            ]
+          },
+          "value_added": "Costruisce nei professionisti una competenza che la formazione disciplinare separata (linguistica vs. relazionale) sistematicamente non rende possibile: la capacità di tenere strutturalmente insieme la dimensione corporeo-ritmica della voce e del contatto e la dimensione simbolico-culturale del libro come mediatore. Evita le due derive ricorrenti della formazione: tecnicizzazione linguistica e affettivizzazione relazionale.",
+          "reduction_risk": "Trasformazione della tensione strutturale in giustapposizione tematica ('un modulo sul corpo, un modulo sul simbolico'). Riduzione della zona di sviluppo prossimale a tecnica di scaffolding misurabile, perdendo la sua natura di struttura della relazione mediativa."
+        },
+        {
+          "domain": "politiche per l'infanzia (es. promozione lettura)",
+          "output_type": "orientamento alla qualità strutturale dei programmi di promozione della lettura precoce",
+          "description": "Apre, nelle politiche di promozione della lettura nella prima infanzia, un livello di interrogazione sulla coerenza dei programmi rispetto alla natura strutturale della lettura precoce come dispositivo relazionale-simbolico. Permette di valutare l'orientamento dei programmi rispetto al rischio di trattare il libro come strumento di stimolazione precoce o come indicatore di sviluppo linguistico, anziché come mediatore simbolico nella relazione costitutiva.",
+          "structural_basis": {
+            "axes": ["asse_1", "asse_6"],
+            "nodes": [
+              "mediazione-simbolica",
+              "relazione-costitutiva",
+              "zona-di-sviluppo-prossimale"
+            ],
+            "node_interpretation": "nel dominio delle politiche: la mediazione-simbolica del libro come trasmissione culturale che si dà nell'evento relazionale; la relazione-costitutiva come configurazione che precede e sostiene la trasmissione; la zona-di-sviluppo-prossimale come struttura che impedisce di pensare la lettura come trasmissione di contenuto al bambino-singolo",
+            "tensions": [
+              "trasmissione culturale vs. evento relazionale",
+              "asimmetria mediativa vs. partecipazione condivisa"
+            ]
+          },
+          "value_added": "Sposta la valutazione dei programmi di promozione della lettura dal piano dell'efficacia misurabile (numero di libri distribuiti, indicatori di sviluppo linguistico) al piano della coerenza strutturale: un programma può essere ampio ed efficace nella distribuzione e tradire la natura relazionale-simbolica della lettura, riducendola a precoce alfabetizzazione. Rende interrogabile questa coerenza prima della valutazione di impatto.",
+          "reduction_risk": "Trasformazione dell'orientamento alla qualità strutturale in checklist di valutazione qualitativa dei programmi, che reintroduce un piano prestazionale con criteri 'qualitativi' al posto di criteri quantitativi. Scivolamento verso linee guida sulle 'buone pratiche di lettura' che neutralizzano la distinzione strutturale tra dispositivo relazionale-simbolico e attività di stimolazione."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le tre famiglie restano fedeli alla configurazione co-dominante asse_1/asse_6 e mantengono in primo piano la specificità triadica del tema. Il bridge 'co-regolazione triadica nel dispositivo libro' opera come motore implicito di tutte e tre le famiglie. Le tensioni della micro-matrice sono distribuite con copertura quasi completa: 'diade vs. triade' nella famiglia educativa, 'incarnato vs. simbolico' in due famiglie, 'asimmetria mediativa vs. partecipazione condivisa' in due famiglie, 'trasmissione culturale vs. evento relazionale' nella famiglia politica.",
+        "limitations": "Il tema ha una sola configurazione bridge confermata (organizzativa) e questo limita la varietà strutturale degli output: tutte le famiglie operano sullo stesso registro triadico, con sfumature diverse per dominio. Il dominio clinico non è attivato perché assente in translation_potential di STEP 4 (la lettura dialogica è strutturalmente più educativa che clinica per la fascia 0-3). La triadicità come specificità più originale del tema (segnalata in critical_notes di STEP 3) è il filo conduttore ma richiederà verifica nella micro-matrice di Fase 3.",
+        "next_step_orientation": "La famiglia educativa è la più matura per lo sviluppo di strumenti operativi in Fase 3: la lettura configurazionale del campo triadico è già configurabile in protocolli di osservazione qualitativa e in formazione dei coordinatori pedagogici. La famiglia formativa richiede elaborazione di percorsi che resistano alla tendenza alla giustapposizione disciplinare. La famiglia politica è la più esposta al rischio di banalizzazione in linee guida e richiederà interlocuzione esplicita con il livello delle istituzioni promotrici di lettura."
+      }
+    },
+    {
+      "theme_id": "tema_03_funzione_riflessiva_genitoriale",
+      "output_families": [
+        {
+          "domain": "clinico",
+          "output_type": "lettura configurazionale della soglia tra co-regolazione fenomenologica e genesi dell'istanza interna nella diade",
+          "description": "Apre, nel dominio clinico, un livello di interrogazione sulla PRF come qualità della relazione costitutiva — non come competenza misurabile del singolo caregiver — e come meccanismo strutturale di soglia tra la co-regolazione fine sul vissuto del bambino e la genesi dell'istanza interna affettiva. Permette di leggere la situazione clinica diadica mantenendo la specificità della soglia tra i due assi senza farla collassare su un singolo piano.",
+          "structural_basis": {
+            "axes": ["asse_1", "asse_2"],
+            "nodes": [
+              "co-regolazione",
+              "soggetto-come-processo",
+              "relazione-costitutiva",
+              "interiorizzazione-dell-altro",
+              "istanza-interna"
+            ],
+            "node_interpretation": "nel dominio clinico: la co-regolazione come modulazione contingente sul vissuto specifico osservabile nella diade; il soggetto-come-processo come statuto che il caregiver riconosce o anticipa; la relazione-costitutiva come configurazione che precede la qualità individuale; l'interiorizzazione-dell-altro e l'istanza-interna come esiti strutturali leggibili nel bambino",
+            "tensions": [
+              "qualità individuale vs. struttura della relazione",
+              "fenomenologia della presenza vs. genesi del vincolo affettivo"
+            ]
+          },
+          "value_added": "Rende disponibile al clinico una distinzione strutturale che la lettura della PRF come tratto individuale (rischio della tecnicizzazione tipo PRFQ) non può cogliere: la differenza tra una PRF come misura individuale del caregiver e una PRF come qualità della relazione costitutiva. Sposta l'oggetto dell'osservazione dalla competenza del singolo alla qualità della soglia tra co-regolazione e interiorizzazione che la diade configura.",
+          "reduction_risk": "Tecnicizzazione della soglia in indicatori clinici misurabili sulla diade ('grado di mentalizzazione osservabile') che riproducono lo stesso movimento riduttivo della PRFQ a un livello relazionale invece che individuale. Scivolamento verso un giudizio diagnostico sulla qualità della diade che perde la dimensione della soglia."
+        },
+        {
+          "domain": "formazione dei professionisti",
+          "output_type": "analisi della struttura della soglia bidirezionale tra fenomenologia della co-regolazione e genesi dell'istanza affettiva",
+          "description": "Apre, nella formazione dei professionisti che lavorano con caregiver e diadi, una pratica di analisi della PRF come configurazione di soglia tra l'asse fenomenologico-regolativo e l'asse affettivo-morale: il riconoscimento mentalizzante del caregiver (forma fine della co-regolazione) come condizione strutturale dell'interiorizzazione dell'altro come istanza affettiva nel bambino. Permette di formare alla tenuta strutturale della soglia senza farla collassare in competenza osservativa o in interiorizzazione senza meccanismo.",
+          "structural_basis": {
+            "axes": ["asse_1", "asse_2"],
+            "nodes": [
+              "co-regolazione",
+              "soggetto-come-processo",
+              "interiorizzazione-dell-altro",
+              "istanza-interna"
+            ],
+            "node_interpretation": "nel dominio formativo: la co-regolazione e il soggetto-come-processo come grammatica fenomenologica del riconoscimento; l'interiorizzazione-dell-altro e l'istanza-interna come grammatica affettivo-genetica dell'esito; la formazione lavora sulla loro articolazione strutturale, non sulla loro somma",
+            "tensions": [
+              "asimmetria riconoscitiva vs. reciprocità relazionale",
+              "fenomenologia della presenza vs. genesi del vincolo affettivo"
+            ]
+          },
+          "value_added": "Costruisce nei professionisti una competenza che la formazione monodisciplinare non rende disponibile: tenere insieme la grammatica fenomenologica della co-regolazione e la grammatica genetico-affettiva del vincolo come due piani strutturalmente irriducibili che la PRF articola dal lato del caregiver. Rende formativamente operabile la specificità della soglia, distinta dalla sua riduzione su un singolo asse.",
+          "reduction_risk": "Trasformazione della soglia in tecnica di osservazione clinica trasferita nella formazione, perdendo la dimensione strutturale e collassando sulla PRF come abilità individuale del caregiver da rinforzare. Scivolamento verso una formazione 'sulla mentalizzazione' che reintroduce il modello PRFQ con linguaggio strutturalista."
+        },
+        {
+          "domain": "educativo (servizi 0-3)",
+          "output_type": "interrogazione strutturale sulla differenza tra riconoscimento del bambino come soggetto-processo e proiezione del bambino atteso",
+          "description": "Apre, nei servizi educativi 0-3, una linea di interrogazione strutturale sulla differenza tra il riconoscimento del bambino come portatore di stati mentali e la proiezione anticipatoria del bambino-che-dovrebbe-essere. Permette di sostenere la PRF dei caregiver e degli educatori senza farla scivolare in aspettativa o anticipazione di chi il bambino deve diventare, mantenendo aperta la soglia strutturale tra riconoscimento e proiezione che non si lascia stabilizzare in un criterio fisso.",
+          "structural_basis": {
+            "axes": ["asse_1", "asse_2"],
+            "nodes": [
+              "soggetto-come-processo",
+              "relazione-costitutiva",
+              "interiorizzazione-dell-altro"
+            ],
+            "node_interpretation": "nel dominio educativo: il soggetto-come-processo come statuto che resiste all'anticipazione; la relazione-costitutiva come campo in cui la PRF non è competenza isolata; l'interiorizzazione-dell-altro come esito che dipende dalla forma del riconoscimento ricevuto e che la proiezione deforma",
+            "tensions": [
+              "riconoscimento del bambino vs. proiezione del bambino",
+              "qualità individuale vs. struttura della relazione"
+            ]
+          },
+          "value_added": "Rende interrogabile, nei servizi educativi 0-3, una soglia che la pedagogia centrata sul bambino e la pedagogia evolutiva non distinguono strutturalmente: la differenza tra vedere il bambino come soggetto-processo e anticipare chi dovrebbe diventare. Sposta l'attenzione dal sostegno generico alla 'sensibilità' degli educatori all'interrogazione strutturale di una soglia che non si lascia consolidare in indicatori di qualità.",
+          "reduction_risk": "Trasformazione dell'interrogazione strutturale in linee guida sulla 'corretta' osservazione del bambino, che reintroducono criteri di buona pratica ed eliminano la sottigliezza strutturale della soglia tra riconoscimento e proiezione. Rischio di lettura moralizzante delle proiezioni dei caregiver, che sostituisce il piano strutturale con un piano di giudizio."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le tre famiglie mantengono coerentemente la configurazione di soglia tra asse_1 e asse_2 e ne articolano i tre versanti rilevanti per i tre domini: il versante clinico-diagnostico (rischio di tecnicizzazione PRFQ), il versante formativo (costruzione della tenuta della soglia nei professionisti) e il versante educativo (distinzione riconoscimento/proiezione). Le tensioni della micro-matrice sono attivate in modo distribuito; la tensione 'asimmetria/reciprocità' opera in una sola famiglia ma è presupposta nelle altre come motore implicito della soglia.",
+        "limitations": "Il bridge 'asimmetria riconoscitiva strutturante' di STEP 4 è meno sviluppato come oggetto autonomo rispetto al bridge 'riconoscimento mentalizzante come condizione dell'interiorizzazione', che è il motore della famiglia clinica e formativa. Il dominio politico/policy non è attivato perché assente da translation_potential di STEP 4: il tema della PRF si presta meno strutturalmente al livello macro-istituzionale rispetto ai temi sulla mediazione tecnica o sul gioco. La sovrapposizione con la teoria dell'attaccamento, segnalata in critical_notes di STEP 3, non è tematizzata negli output e richiede coordinamento esplicito in Fase 3.",
+        "next_step_orientation": "La famiglia formativa è la più matura per lo sviluppo di strumenti operativi in Fase 3: la formazione interdisciplinare sulla soglia è configurabile in moduli che mantengono la struttura senza scivolare nella tecnicizzazione. La famiglia clinica richiede particolare cautela nell'elaborazione di strumenti, dato il rischio strutturale di riduzione PRFQ-like ad un livello relazionale. La famiglia educativa è la più esposta al rischio di banalizzazione in linee guida 'sull'osservazione del bambino' e richiede formulazione di strumenti che mantengano la sottigliezza della soglia."
+      }
+    },
+    {
+      "theme_id": "tema_09_gioco_libero",
+      "output_families": [
+        {
+          "domain": "educativo",
+          "output_type": "lettura configurazionale del gioco libero come dispositivo di soggettivazione del desiderio nell'incontro col reale",
+          "description": "Apre, nei contesti educativi, un livello di interrogazione sul gioco non come strumento didattico né come tempo libero residuale ma come configurazione tri-assiale in cui l'orientamento desiderante del bambino si esercita nell'incontro sostenibile con l'eccedenza del reale, dentro un campo storicamente strutturato che può sostenere o deformare l'autonomia. Permette di leggere la qualità del gioco mantenendo simultaneamente i tre piani: orientamento autonomo, incontro col limite reale, mediazione storica del campo.",
+          "structural_basis": {
+            "axes": ["asse_5", "asse_4", "asse_6"],
+            "nodes": [
+              "campo-desiderabile",
+              "soggettivazione-del-desiderio",
+              "eccedenza",
+              "motivazione-come-sostituto"
+            ],
+            "node_interpretation": "nel dominio educativo: il campo-desiderabile come orizzonte aperto del gioco senza prescrizione; la soggettivazione-del-desiderio come continuità vissuta osservabile (ritorno, insistenza); l'eccedenza come incontro sostenibile col materiale che resiste o col pari che diverge; la motivazione-come-sostituto come rischio strutturale del gioco organizzato a obiettivi",
+            "tensions": [
+              "esplorazione vs. limite reale",
+              "desiderio strutturale vs. motivazione esterna"
+            ]
+          },
+          "value_added": "Rende visibile, agli educatori, una distinzione strutturale che il senso comune pedagogico non può cogliere: la differenza tra un gioco libero e un gioco strutturato a obiettivi quando entrambi appaiono produttivi e con il bambino motivato. Sposta l'osservazione dalla superficie comportamentale del gioco impegnato al piano strutturale dell'orientamento desiderante e dell'incontro col reale.",
+          "reduction_risk": "Romanticizzazione del gioco libero come spazio di autenticità contro il gioco strutturato, che perde la tensione strutturale 'orientamento autonomo vs. mediazione storica' e produce una pedagogia oppositiva. In direzione opposta, scivolamento verso checklist osservative del 'gioco veramente libero' che reintroducono criteri prestazionali con linguaggio anti-prestazionale."
+        },
+        {
+          "domain": "formazione dei professionisti",
+          "output_type": "analisi della struttura tri-assiale del gioco libero come articolazione di desiderio, limite reale e mediazione storica",
+          "description": "Apre, nella formazione dei professionisti dell'infanzia, una pratica di analisi della configurazione tri-assiale del gioco libero che tiene insieme tre piani strutturalmente irriducibili: l'orientamento desiderante autonomo, l'incontro sostenibile con l'eccedenza del reale e la deformazione storica del campo del possibile. Permette di formare alla tenuta della triade senza collasso su una sola dimensione (pedagogica, clinica o sociologica).",
+          "structural_basis": {
+            "axes": ["asse_5", "asse_4", "asse_6"],
+            "nodes": [
+              "campo-desiderabile",
+              "soggettivazione-del-desiderio",
+              "eccedenza",
+              "prestazionalizzazione-del-valore",
+              "deformazione-strutturale"
+            ],
+            "node_interpretation": "nel dominio formativo: i nodi dei tre assi vengono articolati come registri simultanei di lettura, con particolare attenzione al rischio che asse_4 (eccedenza) collassi su asse_5 (desiderio) e che la deformazione storica venga letta come errore educativo individuale",
+            "tensions": [
+              "orientamento autonomo vs. mediazione storica",
+              "esplorazione vs. limite reale",
+              "campo aperto vs. valutabilità"
+            ]
+          },
+          "value_added": "Costruisce nei professionisti una competenza interdisciplinare che la formazione separata (pedagogica/clinica/sociologica) sistematicamente non rende disponibile: la capacità di leggere il gioco libero come configurazione tri-assiale senza collassarne nessun asse sugli altri. In particolare evita il rischio strutturale che la sostenibilità dell'eccedenza venga letta come implicazione del desiderio o come gestione educativa.",
+          "reduction_risk": "Trasformazione della tri-assialità in giustapposizione modulare ('un modulo sul desiderio, uno sul limite, uno sulle deformazioni storiche') che perde la specificità della loro articolazione strutturale. Scivolamento verso una formazione 'critica della prestazionalizzazione' che assolutizza il piano sociologico e perde la specificità dell'orientamento desiderante."
+        },
+        {
+          "domain": "politiche per l'infanzia",
+          "output_type": "interrogazione strutturale sulle condizioni storiche di possibilità del gioco libero e sulla sua deformazione sistemica",
+          "description": "Apre, nelle politiche per l'infanzia, una linea di interrogazione sulla scomparsa del gioco libero come deformazione sistemica del macrosistema (prestazionalizzazione del valore, accelerazione, valutabilità) e non come errore educativo individuale o tendenza generazionale. Permette di pensare politiche su spazi e tempi del gioco che riconoscano la natura storico-strutturale della deformazione, senza ridurre l'intervento a raccomandazioni educative ai singoli adulti.",
+          "structural_basis": {
+            "axes": ["asse_5", "asse_6"],
+            "nodes": [
+              "campo-desiderabile",
+              "motivazione-come-sostituto",
+              "prestazionalizzazione-del-valore",
+              "deformazione-strutturale"
+            ],
+            "node_interpretation": "nel dominio politico: la prestazionalizzazione-del-valore come configurazione storica che rende il gioco libero strutturalmente invisibile; la motivazione-come-sostituto come effetto sistemico della valutabilità imposta al campo; la deformazione-strutturale come livello su cui le politiche possono operare",
+            "tensions": [
+              "orientamento autonomo vs. mediazione storica",
+              "campo aperto vs. valutabilità"
+            ]
+          },
+          "value_added": "Sposta il livello dell'intervento politico sull'infanzia dalla raccomandazione pedagogica ('lasciate giocare i bambini') alla configurazione strutturale delle condizioni di tempo, spazio e valutazione che rendono il gioco libero possibile o impossibile. Rende interrogabili le politiche stesse rispetto al rischio di reintrodurre prestazionalizzazione nei loro stessi strumenti di valutazione (indicatori di qualità del gioco, parametri di sviluppo).",
+          "reduction_risk": "Trasformazione dell'interrogazione strutturale in campagne di sensibilizzazione contro l'iperscolarizzazione precoce che, pur denunciando la prestazionalizzazione, riproducono la logica della raccomandazione individuale ai genitori. In direzione opposta, scivolamento nella critica sistemica che dissolve qualsiasi spazio di responsabilità degli adulti che organizzano il tempo del bambino."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le tre famiglie restano fedeli alla configurazione tri-assiale e mantengono operativa la lettura non moralistica e non astorica del fenomeno. La famiglia educativa attiva tutti e tre gli assi, la famiglia formativa li articola sistematicamente, la famiglia politica seleziona asse_5 e asse_6 in coerenza con il livello macro-istituzionale. Le tensioni della micro-matrice sono ben distribuite: tre delle quattro sono attivate in più di una famiglia.",
+        "limitations": "La tensione 'desiderio strutturale vs. motivazione esterna' è attivata solo nella famiglia educativa, sebbene operi come motore implicito anche nelle altre. Il bridge 'esplorazione come incontro sostenibile con il limite' (asse_4 ↔ asse_5) è centrale nelle prime due famiglie ma non costituisce un oggetto autonomo di output: il rischio segnalato in critical_notes di STEP 3 (collasso di asse_4 su asse_5) richiede vigilanza in Fase 3. Il dominio clinico non è attivato perché assente da translation_potential di STEP 4: la sua introduzione richiederebbe verifica strutturale autonoma. La selezione del tema in assenza del file di scelta-tema (segnalata in STEP 3) resta vincolo aperto per la maturazione di Fase 3.",
+        "next_step_orientation": "La famiglia educativa è la più matura per lo sviluppo di strumenti operativi in Fase 3: la lettura configurazionale del gioco è già configurabile in protocolli di osservazione qualitativa, con cura strutturale specifica per impedire il collasso prestazionale. La famiglia formativa richiede elaborazione metodologica articolata per costruire percorsi che resistano alla giustapposizione modulare. La famiglia politica è la più esposta a banalizzazione e richiede interlocuzione preliminare con il livello di policy prima di qualsiasi traduzione strumentale; il rischio di reintrodurre prestazionalizzazione negli stessi strumenti di valutazione delle politiche per l'infanzia è il punto critico più rilevante."
+      }
+    }
+  ]
+}

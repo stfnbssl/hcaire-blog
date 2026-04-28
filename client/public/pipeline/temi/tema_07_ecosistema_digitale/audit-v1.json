@@ -1,0 +1,163 @@
+{
+  "step": "f3_step_5",
+  "theme_id": "tema_07_ecosistema_digitale",
+  "domain": "educativo (servizi per la prima infanzia, 0–6)",
+  "source_output_id": "indistinguibility-test-v1",
+  "case_audits": [
+    {
+      "case_id": "caso_A",
+      "checks": {
+        "completeness": {
+          "result": "completo",
+          "notes": "Tutti i campi obbligatori sono presenti: observed_configuration (con i cinque nodi corporeita, campo_intenzionale, co_regolazione, mediazione_simbolica, passaggio_trasformativo), proxy_analysis con tutti i sotto-campi richiesti (proxies_present, proxies_direction, counter_indicator, counter_indicator_rebuttal, proxy_confidence, classification_status, ambiguity_conditions, classification), device_discrimination (can_discriminate, on_what_basis, discriminating_dimension), failure_risk."
+        },
+        "triangulation": {
+          "result": "reale",
+          "notes": "I quattro elementi sono presenti e operativi. proxies_present: tre proxy distinti e non sovrapposti (eccedenza del gesto rispetto al feedback, modificazione del campo di possibilità, durata che eccede la conferma). proxies_direction: argomentata strutturalmente attraverso l'opposizione tra pattern di apertura e pattern di predeterminazione, con riferimento esplicito al piano corporeo-ritmico richiesto dall'avvertimento contro la riduzione cognitiva — non si limita a ripetere la classificazione. counter_indicator: il puntamento ripetuto verso l'educatrice prima di ogni gesto significativo è una sfida reale e potenzialmente incompatibile con la classificazione di apertura. counter_indicator_rebuttal: risponde effettivamente al contro-indicatore introducendo una controprova strutturale (la prosecuzione del gesto in assenza di nominazione esplicita), non lo aggira."
+        },
+        "proxy_validity": {
+          "result": "parzialmente_validi",
+          "notes": "Il primo proxy (eccedenza del gesto) e il terzo (durata che eccede la conferma) sono in parte ancorabili alla case_description (le successive trasformazioni della pigna in oggetto da indicare, sonoro, di gioco; le pause di sospensione descritte). Il secondo proxy (modificazione del campo di possibilità) è invece più ancorato all'interpretazione strutturale dell'agente che alla descrizione fenomenica. Inoltre la qualifica della pausa come 'abitata' o 'autonoma' (decisiva per il terzo proxy) compare nell'observed_configuration ma non nella case_description, dove le pause sono descritte simmetricamente nei due casi: questo introduce un rischio di circolarità che il sistema deve riconoscere.",
+          "evidence_anchors": [
+            {
+              "proxy_name": "Eccedenza del gesto rispetto al feedback atteso",
+              "evidence_element": "«La bambina continua a guardare la pigna per alcuni secondi senza muoversi, poi la riprende, la avvicina all'orecchio, la scuote, sembra ascoltarla [...] porta la pigna sotto il tappeto, la fa scomparire e la fa riapparire».",
+              "anchor_source": "case_description"
+            },
+            {
+              "proxy_name": "Modificazione del campo di possibilità a partire dal gesto",
+              "evidence_element": "L'inferenza che le successive modalità d'uso non fossero predisposte dalla risposta adulta è ricostruita strutturalmente; nella case_description si registra solo la successione dei gesti, non l'eccedenza rispetto al repertorio offerto dall'adulto.",
+              "anchor_source": "observed_configuration"
+            },
+            {
+              "proxy_name": "Durata dell'azione che eccede la conferma",
+              "evidence_element": "Caso A: «pause di sospensione in cui né la bambina né l'educatrice riempiono il silenzio». La qualifica delle pause come 'abitate' (e non 'in attesa di conferma') compare però solo nell'observed_configuration; la case_description di caso A e caso B descrive le pause in modo strutturalmente analogo.",
+              "anchor_source": "observed_configuration"
+            }
+          ]
+        },
+        "decisive_proxy_counter_reading": {
+          "decisive_proxy": "Eccedenza del gesto rispetto al feedback atteso (con triangolazione sulla modificazione del campo di possibilità e sulla durata che eccede la conferma)",
+          "counter_reading": "Lo stesso elemento — la successione di trasformazioni del gesto (annusare, scuotere, far scomparire-riapparire) — può essere riletto come articolazione interna a un repertorio di esplorazione-tipo del nido orientato al materiale naturale, e la prosecuzione in assenza di parole può essere riletta come effetto del silenzio adulto come segnale ad alta affidabilità di approvazione. La rilettura corrisponde puntualmente alla configurazione attribuita al caso B nell'output di STEP 4 e all'alternative_interpretation dichiarata nello stesso caso A. È strutturalmente plausibile.",
+          "result": "proxy_decisivo_reversibile"
+        },
+        "proxy_classification_coherence": {
+          "result": "coerente",
+          "notes": "La classificazione 'aperto' segue dall'argomentazione dei proxy (convergenza nella direzione dell'eccedenza) e dal ribaltamento del contro-indicatore. Non è dichiarata in anticipo e poi giustificata a posteriori: la classificazione_status 'probabile' viene esplicitamente legata al grado medio di osservabilità del proxy decisivo."
+        },
+        "proxy_confidence_check": {
+          "result": "giustificata",
+          "notes": "Il valore 'media' è esplicitamente ancorato al fatto che 'il proxy decisivo della modificazione del campo di possibilità ha osservabilità media e dipende dalla qualità dell'attenzione qualitativa', e che la distinzione tra 'cercare lo sguardo per condividere' e 'cercare lo sguardo per ratificare' richiede attenzione qualitativa specifica. Il legame tra natura del proxy e valore di confidence è dichiarato."
+        },
+        "classification_status_check": {
+          "result": "corretto",
+          "notes": "proxy_confidence 'media' → classification_status 'probabile'. La regola di corrispondenza è rispettata. Non si forza una classificazione 'netta' nonostante la convergenza dei proxy, in coerenza con la natura inferenziale del proxy decisivo."
+        },
+        "ambiguity_handling": {
+          "result": "corretta",
+          "notes": "Sono dichiarate tre condizioni specifiche di ambiguità (sequenza troppo breve, qualità della pausa non rilevabile, storia relazionale che rende il silenzio segnale ad alta affidabilità) ciascuna ancorata a una circostanza concreta in cui la classificazione 'aperto' dovrebbe diventare 'ambigua'. Le condizioni non sono generiche e non costituiscono mero adempimento formale."
+        },
+        "false_positive_risk": {
+          "result": "gestito",
+          "notes": "Il failure_risk specifica due modalità di fallimento del dispositivo sul caso A: (1) lettura comportamentale che confonde forma con struttura, classificando come 'esplorazione di qualità'; (2) rischio più sottile di tecnicismo, in cui l'articolazione corretta del lessico configurazionale diventa marcatore identitario di qualità del servizio. La seconda modalità è ancorata al sesto non_permitted_transformation introdotto in STEP 3 ed è esplicitamente riconosciuta come limite costitutivo non risolvibile internamente al dispositivo."
+        }
+      }
+    },
+    {
+      "case_id": "caso_B",
+      "checks": {
+        "completeness": {
+          "result": "completo",
+          "notes": "Tutti i campi obbligatori sono presenti, parallelamente al caso A: observed_configuration (cinque nodi), proxy_analysis (tutti i sotto-campi), device_discrimination, failure_risk."
+        },
+        "triangulation": {
+          "result": "reale",
+          "notes": "I quattro elementi sono presenti. proxies_present: tre proxy distinti (ripetibilità precisa, chiusura su feedback con micro-tempo di attesa, mediazione tecnica del campo desiderabile in forma invertita). proxies_direction: argomentata strutturalmente con riferimento alla forma 'distorta invertita' della grammatica della prestazionalizzazione, in coerenza con la correzione di STEP 3. counter_indicator: la trasformazione apparente del gesto e la non-direttività dell'educatrice — è una sfida reale e simmetrica al contro-indicatore di caso A. counter_indicator_rebuttal: risponde introducendo come controprova il micro-tempo di attesa nei punti di transizione, riconoscendo però apertamente il grado basso-medio di osservabilità."
+        },
+        "proxy_validity": {
+          "result": "parzialmente_validi",
+          "notes": "Criticità centrale del caso. Le due case_description sono volutamente quasi identiche; il proxy decisivo 'chiusura del gesto su feedback ricevuto (micro-tempo di attesa)' è ancorato a un elemento — la micro-modulazione tonica nei punti di transizione — che compare nell'observed_configuration ma non nella case_description. La case_description di caso B descrive solo «riprende la pigna, la avvicina all'orecchio, la scuote, guarda l'educatrice», senza tracce fenomeniche del micro-tempo di attesa. Si genera un rischio di circolarità strutturale: la lettura strutturale supporta se stessa. L'output di STEP 4 riconosce esplicitamente questa fragilità (proxy_confidence 'bassa', proxy inferenziale, indistinguibile da variazione individuale del ritmo) e per questo classifica correttamente il caso come 'ambiguo' anziché 'predeterminato': la fragilità è dichiarata, non occultata. Il terzo proxy ('mediazione tecnica in forma invertita') opera correttamente al livello di struttura relazionale, ma applicato all'episodio confonde livelli temporali — limite anch'esso riconosciuto nelle ambiguity_conditions.",
+          "evidence_anchors": [
+            {
+              "proxy_name": "Ripetibilità precisa della sequenza",
+              "evidence_element": "Caso B case_description: la sequenza pigna-annusa-scuote-fa-scomparire viene replicata sul sasso («prende un sasso piatto, lo posa sul tappeto, indica di nuovo l'educatrice e poi il sasso»). La case_description offre due iterazioni; la qualifica 'precisa' è interpretativa (lo stesso elemento esiste nel caso A).",
+              "anchor_source": "case_description"
+            },
+            {
+              "proxy_name": "Chiusura del gesto su feedback ricevuto (micro-tempo di attesa)",
+              "evidence_element": "Il micro-tempo di attesa tra sguardo e prosecuzione non compare nella case_description, che descrive simmetricamente i due casi. È introdotto come tratto distintivo solo nell'observed_configuration ('la tonicità si attiva nei momenti di sguardo verso l'educatrice [...] si distende solo dopo che il riconoscimento è ricevuto, con un micro-tempo di attesa tra il gesto e la sua prosecuzione').",
+              "anchor_source": "observed_configuration"
+            },
+            {
+              "proxy_name": "Mediazione tecnica del campo desiderabile in forma invertita",
+              "evidence_element": "La cornice del nido (materiale naturale, lentezza, presenza non sollecitatoria) è descritta nella case_description, ma la sua qualifica come 'pre-organizzazione invertita del campo' è inferenza strutturale operante al livello di struttura relazionale del servizio, non leggibile dall'episodio.",
+              "anchor_source": "inferenza_esterna"
+            }
+          ]
+        },
+        "decisive_proxy_counter_reading": {
+          "decisive_proxy": "Chiusura del gesto su feedback ricevuto, attestata dal micro-tempo di attesa nei punti di transizione",
+          "counter_reading": "Lo stesso micro-tempo di attesa può essere riletto come variazione individuale del ritmo motorio, come tempo di adattamento sensoriale alla nuova modalità d'uso del materiale, o come pausa sospesa abitata (la stessa lettura attribuita al caso A). La rilettura è esplicitamente riconosciuta nell'alternative_interpretation di caso B come strutturalmente disponibile: 'Il micro-tempo di attesa tra sguardo e prosecuzione sarebbe variazione individuale del ritmo motorio, non chiusura su feedback'.",
+          "result": "proxy_decisivo_reversibile"
+        },
+        "proxy_classification_coherence": {
+          "result": "coerente",
+          "notes": "La classificazione 'ambiguo' segue rigorosamente dalla bassa osservabilità del proxy decisivo e dal vincolo di non-aggregazione quantitativa. La coerenza è rafforzata dal fatto che, di fronte alla convergenza dei proxy verso la predeterminazione, il sistema non forza il verdetto netto ma rispetta la regola che lega proxy_confidence bassa a classification_status ambigua. Caratteristica metodologicamente rigorosa."
+        },
+        "proxy_confidence_check": {
+          "result": "giustificata",
+          "notes": "Il valore 'bassa' è giustificato esplicitamente dalla natura inferenziale del proxy decisivo (micro-tempo di attesa), dalla sua indistinguibilità dalla variazione casuale del ritmo individuale, e dal fatto che gli altri due proxy hanno problemi specifici (la ripetibilità richiede aggregazione vietata; la mediazione invertita opera a un livello temporale diverso dall'episodio). Il legame tra natura del proxy e valore di confidence è dichiarato e argomentato."
+        },
+        "classification_status_check": {
+          "result": "corretto",
+          "notes": "proxy_confidence 'bassa' → classification_status 'ambigua'. La regola di corrispondenza è rispettata. Notevolmente, il sistema resiste alla tentazione di forzare 'predeterminato' nonostante la convergenza dei proxy nella direzione, in coerenza con il vincolo introdotto da STEP 3 contro l'aggregazione quantitativa e con la dichiarazione delle zone di sovrapposizione."
+        },
+        "ambiguity_handling": {
+          "result": "corretta",
+          "notes": "Quattro condizioni di ambiguità sono dichiarate specificamente: (a) bassa osservabilità del proxy decisivo, (b) ripetibilità non aggregabile a livello di episodio singolo, (c) mediazione tecnica invertita che opera a un livello temporale diverso, (d) zona di sovrapposizione tra co-regolazione partecipativa e chiudente invertita non risolvibile dall'episodio. Le condizioni sono concrete, ancorate alla configurazione specifica del caso, e operano effettivamente nella classificazione (la classificazione finale è ambiguo)."
+        },
+        "false_positive_risk": {
+          "result": "gestito",
+          "notes": "Il failure_risk specifica due modalità di fallimento: (1) triangolazione applicata come checklist (rischio comportamentismo) che produrrebbe un verdetto 'predeterminato' apparentemente fondato, fallendo proprio sulla forma distorta invertita della grammatica; (2) articolazione corretta del lessico configurazionale come marcatore identitario, in cui la nominazione corretta del rischio diventa parte della performance assorbita. La seconda modalità è ancorata al sesto non_permitted_transformation e dichiara apertamente il limite costitutivo della non-assimilabilità."
+        }
+      }
+    }
+  ],
+  "global_analysis": {
+    "real_discrimination": {
+      "result": "fragile",
+      "notes": "La discriminazione tra i due casi è strutturalmente reale ma fragile. Reale perché non opera per inferenza psicologica né per informazione contestuale esterna: opera per stato della classificazione (probabile-aperto vs ambigua) e per dichiarazione di zone di sovrapposizione strutturali (la 'chiudente invertita' assente in caso A). Fragile per due ragioni convergenti. Prima: le case_description sono deliberatamente quasi identiche, e gli elementi differenziali sono introdotti nell'observed_configuration — questo è funzionale al test di indistinguibilità ma genera un rischio di circolarità in cui la lettura strutturale poggia su elementi (micro-tempi tonici, qualifica della pausa come 'abitata' o 'in funzione del feedback') che compaiono solo nella ricostruzione strutturale, non nei dati fenomenici condivisi. Seconda: la discriminazione poggia su proxy con osservabilità media (caso A) e bassa (caso B), e i proxy decisivi sono entrambi reversibili. La discriminazione si regge perché il sistema non produce verdetti netti opposti ma stati diversi della classificazione, e questo è coerente con la natura del test."
+    },
+    "observer_dependency": {
+      "result": "esplicita",
+      "notes": "La dipendenza dall'osservatore è dichiarata in tre luoghi distinti dell'output: (1) nelle ambiguity_conditions di entrambi i casi, dove la qualità dell'attenzione qualitativa è riconosciuta come precondizione di osservabilità del proxy decisivo; (2) nelle proxy_confidence (media e bassa), che integrano formalmente la dipendenza nell'ossatura della classificazione; (3) nella residual_ambiguity finale, dove la dipendenza dall'osservatore è qualificata come limite costitutivo non eliminabile e si dichiara che 'una lettura meno fine produrrebbe una classificazione meno ambigua di quanto la struttura del caso giustifichi'. La dipendenza è proceduralmente integrata nel meccanismo della classification_status, non lasciata implicita."
+    },
+    "single_proxy_dependency": {
+      "result": "dipendenza_singola_dichiarata",
+      "notes": "La discriminazione tra i due casi, pur formalmente distribuita su tre proxy ciascuno, dipende criticamente nel caso B da un singolo proxy decisivo (il micro-tempo di attesa) con proxy_confidence bassa. Gli altri due proxy del caso B presentano problemi strutturali esplicitamente riconosciuti dall'output: la 'ripetibilità precisa' richiederebbe aggregazione tra episodi che è non_permitted_transformation, e la 'mediazione tecnica invertita' opera al livello di struttura relazionale, non di episodio. Sul caso A i tre proxy convergono in modo più distribuito, ma il proxy decisivo della 'modificazione del campo di possibilità' ha osservabilità media. La fragilità strutturale è quindi concentrata in un punto unico per caso B e parzialmente distribuita per caso A. L'output dichiara apertamente questa concentrazione attraverso la differenza tra classification_status 'probabile' (caso A, dove più di un proxy può sostenere la lettura) e 'ambigua' (caso B, dove la dipendenza dal proxy singolo non sostiene una classificazione netta). La dichiarazione è esplicita: la dipendenza_singola è il motivo strutturale dell'ambiguità nel caso B."
+    }
+  },
+  "audit_result": {
+    "method_applied_correctly": true,
+    "triangulation_quality": "reale",
+    "false_positive_risk": "medio",
+    "ambiguity_handling": "corretta",
+    "observer_dependency": "esplicita"
+  },
+  "critical_issues": [
+    "Le due case_description sono volutamente quasi identiche e gli elementi che strutturalmente discriminano i casi (micro-tempo di attesa, qualifica delle pause come abitate vs in funzione del feedback, tonicità che si attiva o no sul feedback) compaiono solo nell'observed_configuration, non nella descrizione fenomenica condivisa. Questo è funzionale al test di indistinguibilità apparente (è esattamente ciò che il test deve mettere alla prova) ma introduce un rischio di circolarità: la lettura strutturale supporta se stessa quando i proxy sono ancorati alla ricostruzione strutturale invece che ai dati fenomenici. L'output riconosce parzialmente questo limite (proxy_confidence bassa per caso B, classificazione 'ambiguo'), ma non lo nomina come rischio di circolarità.",
+    "I proxy decisivi sono reversibili in entrambi i casi: gli stessi elementi possono sostenere la classificazione opposta. Per caso A la reversibilità è scaricata dal sistema sul ribaltamento argomentato del contro-indicatore, ma il proxy decisivo resta strutturalmente reversibile. Per caso B la reversibilità è esplicitamente riconosciuta nell'alternative_interpretation. La discriminazione non poggia su proxy strutturalmente univoci, ma sulla qualità argomentativa del rebuttal e sullo stato della classificazione (probabile vs ambigua).",
+    "La discriminazione del caso B come distinto dal caso A poggia in modo concentrato su un singolo proxy decisivo con osservabilità bassa (il micro-tempo di attesa). Gli altri due proxy del caso B sono strutturalmente compromessi: uno richiederebbe aggregazione vietata, l'altro confonde livelli temporali. La fragilità è dichiarata correttamente, ma la dipendenza_singola è effettivamente il punto di tenuta dell'intera discriminazione di caso B.",
+    "Il limite costitutivo della non-assimilabilità del dispositivo (warning di tecnicismo, sesto non_permitted_transformation) è correttamente riconosciuto come irrisolvibile internamente al dispositivo, ma questo significa che l'audit di STEP 5 non può verificare il rischio più grave: quello in cui l'applicazione corretta del dispositivo opera essa stessa come performance del servizio. Il rischio è strutturalmente esterno al perimetro dell'audit metodologico."
+  ],
+  "strengths": [
+    "Triangolazione dei proxy realmente eseguita e non superficiale: per entrambi i casi i quattro elementi (proxies_present, proxies_direction, counter_indicator, counter_indicator_rebuttal) sono operativi, distinti, e argomentati strutturalmente. Il counter_indicator è una sfida reale, non un fantoccio.",
+    "Coerenza rigorosa tra proxy_confidence e classification_status: la regola di corrispondenza (alta→netta / media→probabile / bassa→ambigua) è rispettata in entrambi i casi. Notevolmente, il sistema resiste a forzare 'predeterminato' sul caso B nonostante la convergenza dei proxy nella direzione, scegliendo correttamente 'ambiguo' sulla base dell'osservabilità bassa del proxy decisivo.",
+    "Gestione dell'ambiguità come informazione strutturale e non come fallimento: il test produce stati diversi della classificazione (probabile-aperto vs ambigua) e li motiva strutturalmente, in coerenza con la natura del test di indistinguibilità apparente. Questa è la forma metodologicamente corretta della discriminazione su casi fenomenicamente identici.",
+    "Dipendenza dall'osservatore non occultata: è dichiarata in tre luoghi distinti dell'output (ambiguity_conditions, proxy_confidence, residual_ambiguity) e integrata proceduralmente nel meccanismo della classification_status.",
+    "Failure_risk specifico e differenziato per caso: non solo nomina il rischio di assorbimento del dispositivo, ma lo articola in due modalità distinte (comportamentismo come checklist e tecnicismo come performance) ancorate ai non_permitted_transformations introdotti dalla correzione di STEP 3.",
+    "Riconoscimento esplicito del limite costitutivo della non-assimilabilità: l'output non pretende di certificare la propria non-assimilazione e rinvia esplicitamente a dispositivi di livello superiore (revisione della micro-matrice, lettura di seconda istanza). Questa onestà metodologica è essa stessa esercizio coerente con la struttura del dispositivo corretto in STEP 3."
+  ],
+  "final_assessment": "accettabile",
+  "final_assessment_qualifier": "Il metodo è stato applicato correttamente, la triangolazione è reale e non superficiale, la regola di corrispondenza tra proxy_confidence e classification_status è rispettata in entrambi i casi, e la gestione dell'ambiguità è metodologicamente rigorosa. Il sistema resiste in modo notevole alla tentazione di forzare verdetti netti, scegliendo invece di produrre stati diversi della classificazione (probabile-aperto vs ambigua) come forma corretta di discriminazione su casi fenomenicamente sovrapponibili. Tre debolezze non critiche limitano la valutazione a 'accettabile' anziché 'robusto'. Prima: gli elementi strutturali differenzianti sono introdotti nell'observed_configuration mentre le case_description sono quasi identiche, e questo genera un rischio di circolarità che l'output riconosce solo indirettamente attraverso la classificazione 'ambigua' del caso B, senza nominarlo come tale. Seconda: i proxy decisivi sono reversibili in entrambi i casi e la discriminazione poggia sulla qualità argomentativa del rebuttal e sullo stato della classificazione, non su proxy strutturalmente univoci. Terza: per il caso B la discriminazione concentra la propria tenuta su un singolo proxy decisivo con osservabilità bassa (il micro-tempo di attesa), e questa dipendenza singola è il punto fragile della discriminazione, dichiarato correttamente ma effettivamente determinante. Il limite costitutivo della non-assimilabilità del dispositivo, dichiarato come irrisolvibile internamente al dispositivo, esce dal perimetro dell'audit metodologico e richiede dispositivi di livello superiore: l'audit non può certificare ciò che il dispositivo stesso non può certificare di sé."
+}

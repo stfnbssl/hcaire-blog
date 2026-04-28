@@ -4,7 +4,12 @@
   "workspaces": ["server", "client", "local"],
   "scripts": {
     "dev": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=client\"",
-    "build": "npm run build --workspace=server && npm run build --workspace=client"
+    "build": "npm run build --workspace=server && npm run build --workspace=client",
+    "sync-pipeline": "node scripts/sync-pipeline.mjs",
+    "test:pipeline-config": "node --test scripts/test-pipeline-step-config.mjs",
+    "test:pipeline-mapper": "node --no-warnings --test --experimental-strip-types server/src/services/__tests__/pipelineMappers.test.ts",
+    "test:pipeline-enablement": "node --no-warnings --test --experimental-strip-types server/src/services/__tests__/stepEnablement.test.ts",
+    "test": "npm run test:pipeline-config && npm run test:pipeline-mapper && npm run test:pipeline-enablement"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

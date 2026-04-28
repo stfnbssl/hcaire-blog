@@ -1,0 +1,92 @@
+{
+  "step": "f3_step_6",
+  "theme_id": "tema_01_pointing_precoce",
+  "domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+  "source_output_id": "indistinguibility-test-clinico-v2",
+  "target_proxy": "Registrazione come partecipazione — qualità ascendente-interrogativa della vocalizzazione finale del bambino",
+
+  "original_proxy_issues": {
+    "reversibility": "La qualità ascendente-interrogativa della vocalizzazione è compatibile con entrambe le classificazioni: (a) nel campo aperto, indica che il bambino è ancora nel processo di co-produzione — il suono segnala che qualcosa si sta ancora costituendo; (b) nel campo predeterminato, la stessa qualità ascendente può essere la forma intonativa appresa come parte dello script (nei pattern di book-reading routinizzato il bambino impara a 'fare la domanda' prima che l'adulto confirmi — la struttura ascendente è la forma del turno richiesto dallo script, non l'apertura di un campo indeterminato). A 20 mesi, con script di pointing già consolidati, la distinzione tra 'ascendente come apertura' e 'ascendente come forma-del-turno-atteso' non è ricavabile dalla vocalizzazione stessa.",
+    "circularity": "La specificazione intonativa 'ascendente-interrogativa' non compare nella case_description, che descrive solo 'il bambino emette una vocalizzazione breve'. La qualità è introdotta nella observed_configuration come lettura strutturale — cioè, il livello che sa già quale configurazione sta leggendo attribuisce alla vocalizzazione la qualità che conferma quella classificazione. Il proxy è circolare: poggia sulla lettura strutturale (observed_configuration) che a sua volta lo usa come supporto. Non esiste un ancoraggio fenomenico indipendente.",
+    "non_observability": "La distinzione intonativa tra vocalizzazione ascendente-interrogativa e vocalizzazione confermativa-di-chiusura richiede accesso percettivo diretto al segnale vocale. Non è ricavabile da una descrizione testuale che si limita a 'vocalizzazione breve'. In contesti di applicazione a case vignettes testuali, a descrizioni cliniche scritte senza annotazione prosodica, o in osservazione senza registrazione audio, il proxy non è applicabile — e la sua applicazione in quelle condizioni introduce necessariamente un'inferenza non controllabile da parte dell'osservatore."
+  },
+
+  "structural_decomposition": {
+    "notes": "Il proxy originale tenta di catturare se il bambino è 'ancora nel campo' dopo la prima risposta dell'adulto. Scomposto come sequenza temporale, l'episodio completo ha questa struttura (dalla case_description di entrambi i casi):",
+    "sequence": [
+      "[A — apertura] Il bambino estende il braccio con l'indice teso e orienta il viso verso l'adulto: apertura del gesto; gli occhi oscillano tra scaffale e adulto per circa 2-3 secondi — pausa di attesa strutturale",
+      "[B — prima risposta dell'adulto] L'adulto segue lo sguardo, si orienta verso l'oggetto, nomina ('oh, la trottola!'): ingresso dell'adulto nel campo",
+      "[C — co-orientamento congiunto] Entrambi guardano la trottola per qualche secondo: fase di campo condiviso bilaterale",
+      "[D — secondo bid del bambino] Il bambino emette una vocalizzazione breve, poi guarda di nuovo l'adulto: secondo segnale di campo, re-orientamento relazionale",
+      "[E — seconda risposta dell'adulto] L'adulto risponde 'sì, è là!' guardando il bambino: secondo beat relazionale",
+      "[F — chiusura] Il bambino fissa ancora un momento la trottola, poi torna ai blocchi: orientamento finale verso l'oggetto prima della chiusura dell'episodio"
+    ],
+    "observation": "Le fasi [A]–[E] sono descritte in modo identico in Caso A e Caso B (sostituendo madre/padre). L'unica differenza che la case_description potrebbe contenere è nella struttura della fase [F]: se entrambi i partecipanti sono ancora co-orientati verso l'oggetto, o se solo il bambino vi si orienta mentre l'adulto ha già chiuso la sequenza. Questa informazione è ASSENTE nelle case_description attuali."
+  },
+
+  "new_proxy": {
+    "name": "Co-orientamento finale bilaterale vs. chiusura unilaterale",
+    "structure": "Il proxy misura la struttura del campo nella fase di chiusura dell'episodio [F]: se entrambi i partecipanti sono ancora co-orientati verso l'oggetto quando il bambino compie il suo ultimo atto di orientamento (campo ancora condiviso), oppure se solo il bambino si orienta verso l'oggetto mentre l'adulto ha già chiuso la sequenza orientandosi altrove o verso il bambino (chiusura unilaterale — il bambino guarda l'oggetto da solo).",
+    "rationale": "Nei campi genuinamente aperti (configurazione reale), la risposta dell'adulto ha funzione di ingresso nel campo e di apertura congiunta verso qualcosa — non di nominazione-e-chiusura. Questo si riflette nel fatto che la fase [F] è strutturalmente bilaterale: entrambi i partecipanti sono ancora nello spazio relazionale aperto verso l'oggetto insieme. Nei campi predeterminati (configurazione apparente), la risposta dell'adulto ha funzione di completamento-di-sequenza: dopo la seconda risposta ('sì, è là!'), l'adulto si riorientera verso il bambino come atto di chiusura del turno, non rimane co-orientato verso l'oggetto. Il bambino guarda la trottola da solo — non con l'adulto.",
+    "observable_sequence": [
+      "[F1] Dopo la seconda risposta dell'adulto ('sì, è là!'), l'adulto è ancora orientato verso l'oggetto insieme al bambino, o ha già orientato lo sguardo verso il bambino o altrove?",
+      "[F2] L'orientamento finale del bambino verso l'oggetto avviene in struttura bilaterale (entrambi guardano l'oggetto) o unilaterale (solo il bambino guarda l'oggetto)?",
+      "[F3] La chiusura del bambino (ritorno al gioco) avviene dall'interno di un campo ancora condiviso, o dopo che l'adulto ha già chiuso la sequenza?"
+    ],
+    "discriminating_element": "La discriminazione reale non è nella qualità della vocalizzazione del bambino (evento interno, qualitativo, soggetto ad inferenza intonativa) ma nella struttura diadica della fase di chiusura: chi chiude per primo, e il bambino chiude ancora nello spazio relazionale condiviso o dopo che l'adulto ha già uscito dal campo. Nel campo aperto (configurazione reale): l'adulto rimane co-orientato verso l'oggetto durante il 'fissa ancora un momento' del bambino — chiudono insieme o l'adulto chiude dopo il bambino. Nel campo predeterminato (configurazione apparente): l'adulto chiude prima, orientandosi verso il bambino o verso altro — il 'fissa ancora un momento' del bambino è solitario, terminale, di conferma.",
+    "anchor_requirement": "Questo proxy richiede che la case_description specifichi la postura dell'adulto durante la fase [F]. L'informazione mancante nelle case_description attuali di F3 STEP 4 è: 'La madre fissa ancora la trottola insieme al bambino, poi entrambi tornano ai blocchi' (campo bilaterale aperto) vs. 'La madre guarda il bambino mentre lui fissa ancora un momento la trottola, poi il bambino torna ai blocchi' (chiusura unilaterale — l'adulto è già uscito dal campo)."
+  },
+
+  "non_reversibility_test": {
+    "counter_reading": "Uno script routinizzato di pointing può includere una fase di co-orientamento oggetto al termine della sequenza, prima della chiusura: il padre e il bambino guardano entrambi la trottola per un momento come parte della routine consolidata ('la guardiamo insieme prima di tornare a giocare'). Se questo è parte dello script, la struttura bilaterale della fase [F] è presente anche nella configurazione predeterminata — il proxy non discriminerebbe.",
+    "rebuttal": "Nel completamento di script la struttura tipica è: adulto nomina → adulto si riorientera verso il bambino per ricevere la risposta del bambino → bambino chiude. L'adulto non rimane co-orientato verso l'oggetto durante la chiusura del bambino: rimane orientato verso il bambino per valutare la risposta. Questa è la struttura confermativa-di-turno. Al contrario, in un campo ancora aperto l'adulto continua a guardare l'oggetto insieme al bambino perché l'oggetto è ancora 'là' — non è ancora diventato 'nominato e archiviato'. La bilateralità nella fase [F] è asimmetrica rispetto allo script: i casi in cui adulto e bambino co-orientano verso l'oggetto dopo la doppia risposta, senza che l'adulto si sia già orientato verso il bambino come atto di chiusura-turno, sono strutturalmente meno compatibili con script routinizzato di quanto non sia la vocalizzazione ascendente.",
+    "result": "parzialmente_resistente",
+    "result_notes": "Il proxy resiste alla contro-lettura in linea di principio: la struttura bilaterale della fase [F] è meno reversibile della qualità intonativa di una singola vocalizzazione perché riguarda il comportamento di entrambi i partecipanti (non solo del bambino) e perché le dinamiche di chiusura degli script di pointing hanno una struttura tipicamente diversa (adulto verso bambino, non adulto verso oggetto). Tuttavia, la robustezza è condizionata alla disponibilità dell'informazione: il proxy non resiste se la case_description non specifica l'orientamento dell'adulto in fase [F]. Nelle case_description attuali di F3 STEP 4, questa informazione è assente — il proxy non può essere applicato retroattivamente a quel materiale senza circolarità."
+  },
+
+  "anchor_check": [
+    {
+      "element": "[A] Pausa strutturale di attesa (oscillazione sguardo 2-3 secondi)",
+      "source": "case_description",
+      "evidence": "'I suoi occhi oscillano tra lo scaffale e la madre per circa due o tre secondi' — presente in entrambe le case_description",
+      "observer_dependency": "bassa",
+      "notes": "Osservabile direttamente. Uguale in entrambi i casi — non discriminante da solo."
+    },
+    {
+      "element": "[C] Co-orientamento congiunto verso l'oggetto per periodo strutturalmente non istantaneo",
+      "source": "case_description",
+      "evidence": "'Entrambi guardano la trottola per qualche secondo' — presente in entrambe le case_description",
+      "observer_dependency": "bassa",
+      "notes": "Osservabile strutturalmente. 'Qualche secondo' è indicatore di campo condiviso. Uguale in entrambi i casi — non discriminante da solo."
+    },
+    {
+      "element": "[D+E] Secondo scambio relazionale dopo la prima risposta dell'adulto",
+      "source": "case_description",
+      "evidence": "'Il bambino emette una vocalizzazione breve, poi guarda di nuovo la madre. La madre risponde sì, è là! guardando il bambino.' — presente in entrambe le case_description",
+      "observer_dependency": "bassa",
+      "notes": "Osservabile come struttura a due beat. Indica che il campo non si è chiuso dopo la prima risposta. Uguale in entrambi i casi — non discriminante da solo."
+    },
+    {
+      "element": "[F] Struttura bilaterale vs. unilaterale del co-orientamento finale verso l'oggetto",
+      "source": "non_presente_in_case_description",
+      "evidence": "Le case_description attuali descrivono solo 'Il bambino fissa ancora un momento la trottola, poi torna ai blocchi' — non specificano se l'adulto è ancora co-orientato verso l'oggetto o ha già chiuso la sequenza. Questo è l'elemento discriminante mancante.",
+      "observer_dependency": "media",
+      "notes": "Osservabile comportamentalmente senza inferenze su stati mentali — riguarda la direzione di sguardo e orientamento corporeo dell'adulto in un momento specifico. Richiede che il protocollo osservativo includa esplicitamente la registrazione di questo elemento nella fase di chiusura."
+    }
+  ],
+
+  "case_description_gap": {
+    "identified": true,
+    "description": "Le case_description di F3 STEP 4 (Caso A e Caso B) sono state costruite per essere comportamentalmente indistinguibili a livello testuale — coerentemente con l'obiettivo del test di indistinguibilità. Questa costruzione ha reso necessario fare affidamento sulla observed_configuration come livello interpretativo, generando il problema di circolarità identificato in F3 STEP 5. Il nuovo proxy identifica l'esatta informazione fenomenica mancante: la struttura del co-orientamento finale dell'adulto nella fase [F].",
+    "required_addition_caso_A": "Configurazione reale — descrizione attesa: 'Il bambino fissa ancora un momento la trottola mentre la madre è ancora orientata verso di essa insieme a lui. Poi il bambino torna ai blocchi.' Oppure: 'Entrambi fissano ancora un momento la trottola, poi il bambino torna ai blocchi.' La co-presenza nella chiusura è il marker fenomenico.",
+    "required_addition_caso_B": "Configurazione apparente — descrizione attesa: 'Il bambino fissa ancora un momento la trottola mentre il padre lo guarda, poi torna ai blocchi.' Oppure: 'Il padre guarda il bambino; il bambino dà un'ultima occhiata alla trottola, poi torna ai blocchi.' L'adulto è già uscito dal campo verso l'oggetto e si è riorientato verso il bambino come atto di chiusura-turno.",
+    "methodological_implication": "L'identificazione del gap indica che la fragilità strutturale di F3 STEP 4 non è solo nella scelta del proxy ma nella descrizione dei casi: le case_description non portavano l'informazione necessaria a discriminare senza passare per la lettura strutturale. Il proxy stabilizzato richiede case_description più ricche a livello della struttura di chiusura dell'episodio."
+  },
+
+  "final_assessment": {
+    "is_more_robust": true,
+    "robustness_improvement": "Il nuovo proxy è strutturalmente più robusto rispetto all'originale per tre ragioni: (1) non dipende dalla qualità intonativa di un singolo evento ma dalla struttura relazionale della fase di chiusura — un dato comportamentale diadico, non un dato perceptivo monadico; (2) riguarda il comportamento di entrambi i partecipanti (orientamento dell'adulto e del bambino in relazione) invece del solo comportamento del bambino; (3) è formulato come struttura temporale e relazionale (bilaterale vs. unilaterale nella chiusura) anziché come attributo qualitativo di un evento puntuale.",
+    "remaining_weakness": "La robustezza è condizionata alla disponibilità dell'informazione: il proxy richiede che la case_description specifichi l'orientamento dell'adulto nella fase di chiusura [F]. Nelle case_description esistenti di F3 STEP 4 questa informazione è assente. Il proxy stabilizzato non può essere applicato retroattivamente a quel materiale senza riscrivere le case_description. Rimane inoltre una residua possibilità di reversibilità nel caso in cui lo script del bambino includa una fase di co-orientamento verso l'oggetto — ma questa possibilità è strutturalmente meno probabile rispetto alla reversibilità della qualità intonativa di una vocalizzazione.",
+    "action_required": "Per completare la stabilizzazione è necessaria una delle seguenti azioni: (a) arricchire le case_description di F3 STEP 4 specificando la struttura del co-orientamento dell'adulto nella fase [F] — questa è la revisione minimale che renderebbe il proxy applicabile; (b) oppure dichiarare esplicitamente che il proxy stabilizzato è un obiettivo di osservazione per applicazioni prospettiche del dispositivo (nuovi casi clinici o formativi) e non un proxy retroattivamente applicabile al materiale di F3 STEP 4 nella sua forma attuale."
+  }
+}

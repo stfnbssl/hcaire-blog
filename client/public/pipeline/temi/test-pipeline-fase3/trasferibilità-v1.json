@@ -1,0 +1,215 @@
+{
+  "step": "f3_step_7",
+  "source_device_id": "tema-01-pointing-clinico-dispositivo-v2",
+  "target_theme_or_domain": {
+    "target_theme": "richiesta di aiuto come apertura di campo relazionale (gesto corporeo del bambino — sguardo, vocalizzazione, porgere oggetto, condotta di richiamo — orientato a sollecitare un intervento dell'adulto)",
+    "target_domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce) — stesso dominio del dispositivo di partenza",
+    "input_status": "il file di contesto/ambito esterno (f3-step-7-contesto-ambito.json) NON è risultato disponibile in lettura. La scelta del nuovo tema è stata derivata dai micro_casi forniti nelle istruzioni di step ('bambino chiede aiuto aprendo un campo relazionale' / 'bambino esegue uno script di richiesta'), che orientano in modo univoco verso il tema 'richiesta di aiuto'. Il dominio è mantenuto identico al dispositivo di partenza per isolare la variabile 'tema' e ottenere un test di trasferibilità pulito. Questa derivazione è dichiarata esplicitamente perché — come ricordato dalle istruzioni — non specificare il dominio lascerebbe aperto il vincolo di realtà; qui il vincolo è esplicitato e coincide con quello del dispositivo sorgente.",
+    "rationale_della_scelta": "La 'richiesta di aiuto' condivide con il 'pointing precoce' la struttura di gesto corporeo orientato che apre un campo relazionale e che attende una risposta co-regolatoria dell'altro per costituirsi come atto semiotico. Allo stesso tempo se ne distingue per la presenza di una valenza pragmatica (ottenere un'azione/oggetto) che il pointing precoce non ha necessariamente. Questa parziale sovrapposizione strutturale fa della 'richiesta di aiuto' un test di trasferibilità informativo: tema sufficientemente affine da rendere plausibile il trasferimento, sufficientemente distinto da rendere visibili gli elementi che non possono essere esportati senza deformazione."
+  },
+
+  "transferability_assessment": {
+    "overall_verdict": "trasferibile_con_adattamenti",
+    "reason": "La struttura configurazionale del dispositivo v2 (core_configuration, assi 1 e 6, quattro nodi, bridge_concept, logica dei livelli del campo, articolazione delle funzioni co-regolatorie, struttura del passaggio trasformativo, scale temporali, regole di ambiguità e di non-classificabilità) è strutturalmente trasferibile alla 'richiesta di aiuto' perché entrambi i temi sono atti semiotici corporei co-prodotti che dipendono da una risposta co-regolatoria per costituirsi pienamente. Tuttavia il trasferimento richiede adattamenti non banali: (a) la dimensione pragmatica della richiesta di aiuto introduce un asse di lettura aggiuntivo (esito-azione vs. costituzione del campo) che il dispositivo originario non tematizza; (b) le funzioni co-regolatorie devono essere riarticolate per una struttura in cui la risposta 'corretta' può consistere proprio nell'agire e non solo nel co-presenziare nel campo, rischiando di rendere la classe 'chiudente' indistinguibile da un esito legittimo della richiesta; (c) il proxy operativo della catena T2→T3→T4 è in larga parte tarato su scambi mostra-e-nomina in cui la sequenza è verbalmente densa, mentre nella richiesta di aiuto T2 e T4 possono essere costituiti da azioni non verbali, richiedendo una riformulazione delle variabili V2/V5; (d) gli access_points e diversi structural_questions sono specifici del pointing e non sono esportabili senza riscrittura. Il verdetto NON è 'trasferibile integralmente' perché senza questi adattamenti il dispositivo produrrebbe deformazioni; NON è 'trasferibilità debole' perché il telaio strutturale tiene; NON è 'non trasferibile' perché la configurazione di base è autenticamente comune ai due temi."
+  },
+
+  "transferable_elements": [
+    {
+      "element": "core_configuration (la base corporea orientata costituisce un campo di orientamento aperto che diventa condiviso e significabile solo attraverso la risposta co-regolatoria dell'altro)",
+      "transfer_status": "integrale",
+      "reason": "Il principio configurazionale è strutturalmente identico nella richiesta di aiuto: il gesto corporeo del bambino (porgere, vocalizzare orientato, alternare sguardo) apre un campo che diventa atto-di-richiesta solo nella risposta co-regolatoria dell'adulto. Il corpo come condizione originaria, l'apertura del campo, la mediazione attraverso la risposta dell'altro: tutti e quattro i livelli sono costitutivi anche per il nuovo tema."
+    },
+    {
+      "element": "assi (asse_1 corporeità→relazione; asse_6 individuale→co-prodotto)",
+      "transfer_status": "integrale",
+      "reason": "Entrambi gli assi descrivono tensioni costitutive di qualunque atto semiotico corporeo co-prodotto e non sono pointing-specifici. La richiesta di aiuto si colloca sugli stessi assi senza forzature."
+    },
+    {
+      "element": "nodi (corporeità-vissuta, campo-intenzionale, co-regolazione, mediazione-simbolica)",
+      "transfer_status": "integrale",
+      "reason": "I quattro nodi sono dimensioni strutturali del campo configurazionale, non descrittori di un comportamento specifico. Si applicano alla richiesta di aiuto senza modifica: la corporeità del bambino-che-chiede, il campo intenzionale aperto verso l'adulto e/o l'oggetto/situazione, la co-regolazione come risposta, la mediazione simbolica come costituzione del 'questo è una richiesta'."
+    },
+    {
+      "element": "bridge_concept (il gesto corporeo come atto semiotico co-prodotto)",
+      "transfer_status": "integrale",
+      "reason": "Il bridge è formulato a un livello di astrazione che copre qualunque gesto-segno relazionale, non solo il pointing. La richiesta di aiuto ne è un caso paradigmatico."
+    },
+    {
+      "element": "reading_focus → 'Base corporea del gesto' (presente / assente / distorta / oscillante)",
+      "transfer_status": "integrale",
+      "reason": "Le quattro modalità della base corporea sono leggibili identicamente nella richiesta di aiuto: il bambino può chiedere con il corpo strutturalmente orientato (presente), produrre il gesto motorio senza radicamento corporeo-relazionale (assente), orientarsi rigidamente o in modo desincronizzato (distorta), o avere disponibilità intermittente (oscillante)."
+    },
+    {
+      "element": "reading_focus → 'Apertura del campo intenzionale condiviso' (assente / tentato-unilaterale / tentato-in-attesa / condiviso) con clausola di ambiguità",
+      "transfer_status": "con_adattamento",
+      "reason": "I quattro stati del campo sono trasferibili come architettura, ma le 'structural_signatures' devono essere riformulate: nella richiesta di aiuto il 'campo' include in modo strutturale anche un riferimento a un'azione attesa (il problema da risolvere, l'oggetto da raggiungere), non solo a un oggetto/evento da co-orientare percettivamente. La distinzione tra 'tentato-unilaterale' e 'tentato-in-attesa' resta cruciale ma le tracce di sospensione strutturale (postura sostenuta, sguardo che alterna) si configurano diversamente quando l'apertura è verso un'azione e non verso una percezione condivisa. La clausola di ambiguità è trasferibile integralmente."
+    },
+    {
+      "element": "reading_focus → 'Qualità co-regolatoria della risposta' (assente / registrativa / partecipativa / trasformativa / chiudente) con non_scalar_clause",
+      "transfer_status": "con_adattamento",
+      "reason": "L'architettura a cinque funzioni si trasferisce, ma le 'structural_role' richiedono riarticolazione. Punto critico: nella richiesta di aiuto la classe 'chiudente' descritta come 'l'adulto prende l'oggetto e lo porge' coincide con la risposta strutturalmente attesa dalla richiesta stessa — confondere la chiusura del campo con il soddisfacimento pragmatico produrrebbe falsi positivi di chiusura. Occorre riformulare 'chiudente' nel nuovo tema come la chiusura del campo PRIMA che la richiesta si costituisca come atto co-prodotto, distinta dall'esecuzione dell'aiuto richiesto. La non_scalar_clause è trasferibile integralmente."
+    },
+    {
+      "element": "reading_focus → 'Produzione di mediazione simbolica' (presente / assente / distorta / oscillante)",
+      "transfer_status": "integrale",
+      "reason": "La mediazione simbolica come esito co-prodotto del campo è una dimensione configurazionale, non specifica del pointing. Anche la richiesta di aiuto produce (o non produce) un 'questo è una richiesta' come esito strutturale; le quattro modalità si applicano senza adattamento."
+    },
+    {
+      "element": "reading_focus → 'Struttura del passaggio trasformativo' (aperto / predeterminato / ambiguo) con proxy strutturali, why_proxies_indicate, mandatory_counter_indicators, no_behavioral_reduction_clause",
+      "transfer_status": "con_adattamento",
+      "reason": "L'architettura è trasferibile e i tre proxy strutturali (non-prevedibilità della sequenza, asimmetria dinamica del lavoro semiotico, ridefinizione in corso d'opera, sospensione strutturale) sono leggibili anche nella richiesta di aiuto. Adattamento richiesto: la 'predeterminazione' nella richiesta di aiuto include sia lo script verbale sia lo script d'azione (l'adulto esegue automaticamente la sequenza di aiuto attesa). Il counter-indicator obbligatorio e la no_behavioral_reduction_clause sono trasferibili integralmente."
+    },
+    {
+      "element": "temporal_scale (episodio / sequenza / struttura relazionale) con no_quantitative_aggregation_clause",
+      "transfer_status": "integrale",
+      "reason": "La logica delle tre scale temporali e il divieto di aggregazione quantitativa sono indipendenti dal tema specifico. Si trasferiscono senza modifica."
+    },
+    {
+      "element": "structural_questions (set di 9 domande di lettura)",
+      "transfer_status": "con_adattamento",
+      "reason": "Le domande sulla configurazione (campo, funzione co-regolatoria, localizzazione della discontinuità, classificazione del passaggio, oscillazioni di sequenza, ricorrenze relazionali) sono trasferibili. Le domande che fanno riferimento esplicito al pointing ('Il bambino indica ma non orienta lo sguardo verso l'adulto dopo il gesto', 'L'adulto risponde al pointing del bambino nominando l'oggetto', 'Entrambi guardano verso lo stesso oggetto') vanno riformulate sui correlati della richiesta di aiuto (es. 'Il bambino porge ma non orienta lo sguardo verso l'adulto', 'L'adulto risponde nominando l'oggetto richiesto senza entrare nel campo aperto', 'Entrambi sono orientati verso l'oggetto-da-prendere senza che si costituisca un campo di richiesta condivisa')."
+    },
+    {
+      "element": "interpretive_warnings (comportamentismo, normatività, tecnicismo, riduzione_cognitiva, scalarizzazione_della_co-regolazione, aggregazione_quantitativa_cross-episodica)",
+      "transfer_status": "con_adattamento",
+      "reason": "Cinque dei sei rischi sono strutturali e si trasferiscono integralmente (comportamentismo, normatività, tecnicismo, scalarizzazione, aggregazione). 'Riduzione_cognitiva' è formulata in modo specifico al pointing (joint attention come precursore della teoria della mente / del linguaggio) e va riformulata per la richiesta di aiuto, dove la riduzione tipica è invece pragmatico-funzionalista (la richiesta come 'competenza comunicativa' o come 'abilità adattiva') con la stessa funzione strutturale di rimuovere la corporeità-vissuta dalla lettura. Va inoltre aggiunto un rischio specifico del nuovo tema (vedi reduction_risks)."
+    },
+    {
+      "element": "non_permitted_transformations (set di 7 trasformazioni vietate)",
+      "transfer_status": "integrale",
+      "reason": "Le sette interdizioni (uso valutativo, classificazione binaria, uso diagnostico, trasformazione in linea guida d'intervento, valutazione del caregiver, scoring del passaggio, operazionalizzazione quantitativa cross-episodica) sono regole strutturali del dispositivo configurazionale e si trasferiscono integralmente al nuovo tema."
+    },
+    {
+      "element": "structural_corrections_applied (C1 stati del campo, C2 articolazione co-regolazione, C3 operatività bridge, C4 scala temporale)",
+      "transfer_status": "integrale",
+      "reason": "Le quattro correzioni introdotte in v2 rispetto a v1 sono interventi strutturali sulla logica del dispositivo, non sul tema. Si trasferiscono come logica al nuovo tema, anche se i loro contenuti specifici (es. structural_signatures degli stati del campo) richiedono riformulazione (vedi sopra)."
+    },
+    {
+      "element": "observability_requirements V1, V3, V6, V7, V8, V9 (atto di apertura del bambino, struttura sintattica T2, struttura sintattica T4, sequenza temporale, baseline di derivabilità, canale di registrazione)",
+      "transfer_status": "integrale",
+      "reason": "Queste variabili osservative sono indipendenti dal contenuto specifico dei turni e si trasferiscono al nuovo tema senza modifica. La baseline (V8) cambia di contenuto (baseline-di-genere per scambi di richiesta-e-aiuto invece di mostra-e-nomina) ma la sua struttura logica resta identica."
+    },
+    {
+      "element": "observability_requirements V2, V4, V5 (trascrizione lessicale T2 / contenuto T3 / trascrizione lessicale T4)",
+      "transfer_status": "con_adattamento",
+      "reason": "Nella richiesta di aiuto T2 e T4 possono essere costituiti in misura significativa da azioni non verbali dell'adulto (porgere, eseguire l'azione richiesta, accompagnare il bambino verso l'oggetto). V2 e V5 vanno estese da 'trascrizione lessicale' a 'registrazione strutturale del turno adulto in tracce verificabili — verbali, gestuali, attive — con tipologia identificata'. V4 si trasferisce con minore adattamento perché era già definita in termini di tracce identificabili (lessicali, gestuali, posturali, silenzio strutturalmente leggibile)."
+    },
+    {
+      "element": "non_classifiability_rules NA1, NA2 (riformulata), NA3, NA4, NA5, NA6, NA7, NA8",
+      "transfer_status": "con_adattamento",
+      "reason": "Le otto condizioni di non-applicabilità sono trasferibili come architettura. NA2 ('T2 o T4 non trascrivibili per inadeguatezza del canale audio') va riformulata in 'T2 o T4 non registrabili strutturalmente — verbali, gestuali o attivi — per inadeguatezza del canale (audio + video)'. La regola globale (una sola condizione attivata produce sospensione, senza compensazione) si trasferisce integralmente. NA8 (singolo episodio isolato richiesto per classificazione 'aperto') è particolarmente importante e si trasferisce integralmente."
+    },
+    {
+      "element": "decision_logic del proxy (PASSO 1 verifica applicabilità → 2 esecuzione test → 3 combinazione esiti → 4 verifica strutturale → 5 vincolo di livello → 6 restituzione)",
+      "transfer_status": "integrale",
+      "reason": "La logica decisionale a sei passi del proxy v1b è strutturalmente trasferibile a qualunque proxy operativo costruito secondo lo stesso schema, indipendentemente dal contenuto fenomenico dei test interni. Si trasferisce come schema decisionale al nuovo tema."
+    },
+    {
+      "element": "distinzione 'ambiguo' vs. 'non_classificabile' (ambiguo = esito legittimo del dispositivo applicabile; non_classificabile = sospensione perché il dispositivo non è applicabile)",
+      "transfer_status": "integrale",
+      "reason": "Questa distinzione è una proprietà strutturale del dispositivo, non del tema. È forse l'elemento metodologicamente più importante e si trasferisce senza modifica."
+    },
+    {
+      "element": "epistemic_limit (asimmetria del proxy: la predeterminazione è leggibile su singolo episodio, l'apertura richiede sequenza multi-episodica)",
+      "transfer_status": "integrale",
+      "reason": "L'asimmetria deriva dalla logica strutturale del proxy (il riconoscimento dell'apertura richiede variazione W↔Y leggibile solo cross-episodico). Si trasferisce al nuovo tema con la stessa portata."
+    }
+  ],
+
+  "theme_specific_elements": [
+    {
+      "element": "access_points (osservazione diadica in setting libero, momento di novità, sequenza di pointing dell'adulto, colloquio con caregiver) — in particolare 'Sequenza di pointing dell'adulto verso oggetti o eventi'",
+      "why_specific": "Gli access_points 1, 2, 4 sono parzialmente trasferibili come categorie generali (osservazione spontanea, evento-stimolo, colloquio) ma con descrizioni completamente da riscrivere per la richiesta di aiuto. L'access_point 3 ('Sequenza di pointing dell'adulto') è strettamente specifico del pointing e non ha analogo immediato nella richiesta di aiuto, perché l'adulto non 'modella la richiesta di aiuto' nello stesso modo in cui modella il pointing. Non è esportabile, va sostituito da access_points specifici (es: 'Situazione che genera un ostacolo strutturale al bambino', 'Compito a difficoltà calibrata').",
+      "risk_if_transferred": "Se gli access_points fossero trasferiti tali e quali, l'osservatore cercherebbe nel nuovo tema configurazioni che non esistono come tali (es. cercare 'pointing dell'adulto' in una situazione di richiesta di aiuto), oppure leggerebbe in modo deformato configurazioni che si presentano in forme diverse (es. il 'momento di novità' nel pointing è un access_point spontaneo, mentre nella richiesta di aiuto la novità tende a coincidere con un ostacolo o un'incompetenza, che ha una struttura affettiva diversa)."
+    },
+    {
+      "element": "structural_questions specifiche al gesto del pointing (formulate con riferimento esplicito a 'indicare', 'sguardo verso l'adulto dopo il gesto', 'oggetto indicato', 'pointing del bambino')",
+      "why_specific": "Almeno tre delle nove domande contengono riferimenti lessicali e configurazionali al pointing che non possono essere usati nel nuovo tema senza riscrittura.",
+      "risk_if_transferred": "Trasferendo le domande tali e quali, l'osservatore o non saprebbe applicarle al nuovo tema (le domande non avrebbero referenti) o le applicherebbe forzando il nuovo tema dentro la grammatica del pointing — esattamente la deformazione che il dispositivo deve evitare."
+    },
+    {
+      "element": "interpretive_warning 'riduzione_cognitiva' (formulata in termini di joint attention come precursore della teoria della mente / del linguaggio)",
+      "why_specific": "La specifica articolazione del rischio cognitivista è centrata sulle teorizzazioni dominanti del pointing nella letteratura sullo sviluppo (joint attention → ToM, pointing → linguaggio). La richiesta di aiuto è cognitivisticamente assorbita da concettualizzazioni differenti (intentional communication, pragmatic skills, adaptive behavior).",
+      "risk_if_transferred": "Trasferendo letteralmente il warning, l'osservatore sarebbe attento ai cognitivismi 'sbagliati' (joint attention come precursore della ToM) e cieco ai cognitivismi tipici del nuovo tema (richiesta come competenza comunicativa). La funzione strutturale del warning si conserverebbe in apparenza ma fallirebbe nella sostanza."
+    },
+    {
+      "element": "esempi nelle structural_signatures degli stati del campo e delle funzioni co-regolatorie (es. 'l'adulto nomina l'oggetto', 'lo sposta', 'sguardo che alterna oggetto e interlocutore')",
+      "why_specific": "Numerosi esempi nelle signatures sono inscritti nella grammatica del pointing (oggetti indicati, nominazione, alternanza di sguardo bambino-oggetto-adulto). Sono utili per fissare il dispositivo sul tema originario ma non sono trasferibili come istanze.",
+      "risk_if_transferred": "Trasferimento meccanico produrrebbe signatures incoerenti rispetto alla fenomenologia della richiesta di aiuto, in cui l'oggetto può essere assente (la richiesta di un'azione, di un conforto), la nominazione può non avere ruolo strutturale, e l'alternanza di sguardo si configura diversamente."
+    },
+    {
+      "element": "proxy operativo v1b 'Catena di ripresa cross-turno lessicalmente non-derivabile (T2→T3→T4)' nella sua articolazione fenomenica specifica (test 1 di derivabilità lineare di W da T2-solo, test 2 di dipendenza specifica di W da Y, compressione di turni come traccia di predeterminazione, baseline di-diade/di-genere su scambi mostra-e-nomina)",
+      "why_specific": "Il proxy è costruito su scambi a forte densità lessicale-sintattica (mostra-e-nomina post-pointing) e la sua baseline di-genere è esplicitamente un genere di scambio specifico del pointing. Il telaio logico (asimmetria con apertura leggibile solo cross-episodico, doppio test, compressione come marker, ambiguità vs. non-classificabile) è universale, ma l'istanziazione fenomenica è pointing-specifica.",
+      "risk_if_transferred": "Trasferito letteralmente, il proxy produrrebbe 'non_classificabile' per la maggior parte degli episodi di richiesta di aiuto, perché le condizioni di applicabilità sono tarate su una struttura conversazionale che la richiesta di aiuto non ha (turni T2/T4 prevalentemente verbali, baseline su mostra-e-nomina). Va riformulato come proxy analogo — stesso schema decisionale, stessa asimmetria epistemica, stessa logica di doppio test — ma con variabili e baseline ricostruite per il genere 'richiesta-e-risposta-d'aiuto'."
+    },
+    {
+      "element": "non_permitted_transformations specifiche (es. 'classificare il pointing come tipico/atipico', 'campo condiviso = tipico, tentato-unilaterale = atipico')",
+      "why_specific": "Alcuni esempi nelle interdizioni nominano espressamente il pointing.",
+      "risk_if_transferred": "Rischio basso (la regola strutturale resta) ma la formulazione va aggiornata per non lasciare 'scoperto' il nuovo tema: vanno aggiunte interdizioni equivalenti per la richiesta di aiuto (es. 'classificare la richiesta come adattiva/disadattiva', 'campo condiviso nella richiesta = sicurezza dell'attaccamento')."
+    }
+  ],
+
+  "proxy_assessment": [
+    {
+      "proxy_name": "Catena di ripresa cross-turno lessicalmente non-derivabile (T2→T3→T4) — versione operativa con condizioni di applicabilità (proxy v1b)",
+      "status": "adattabile",
+      "reason": "Lo schema logico del proxy (verifica delle condizioni di applicabilità → doppio test interno → matrice di combinazione → vincolo di livello episodio/sequenza → restituzione in {aperto, predeterminato, ambiguo, non_classificabile}) è strutturalmente trasferibile e va integralmente conservato. Le sue componenti fenomeniche specifiche (test di derivabilità lineare di W da T2-solo, test di dipendenza di W da Y, compressione di turni come traccia di predeterminazione, baseline su scambi mostra-e-nomina) sono pointing-specifiche e vanno riformulate per il genere 'richiesta-e-risposta-d'aiuto'. In particolare: T2 e T4 possono essere non verbali; W diventa 'esito strutturale del turno adulto' (verbale, gestuale, attivo) e non solo lessico; la baseline-di-genere va costruita su convenzioni dello scambio di richiesta-e-aiuto, non di mostra-e-nomina; la compressione di turni va ridefinita includendo l'esecuzione anticipata dell'azione di aiuto (l'adulto agisce prima che il bambino strutturi la richiesta) come forma specifica di compressione tipica del nuovo tema. L'asimmetria epistemica (predeterminazione leggibile su singolo episodio, apertura solo su sequenza) è proprietà del proxy e si conserva.",
+      "required_new_observations": [
+        "tipologia del turno T2 dell'adulto (verbale / gestuale / attivo / misto) — estensione di V2 e V3 per includere la struttura non verbale",
+        "tipologia del turno T4 dell'adulto (verbale / gestuale / attivo / misto) — estensione di V5 e V6",
+        "presenza/assenza di esecuzione anticipata dell'azione di aiuto in T2 (l'adulto esegue l'azione prima che il bambino abbia strutturato la richiesta) — nuova variabile, traccia di compressione specifica del genere",
+        "baseline-di-genere documentata per scambi di richiesta-e-aiuto post-segnale-di-bisogno (analogo della baseline mostra-e-nomina ma costruita per il nuovo genere)",
+        "registrazione del riferimento intenzionale della richiesta (oggetto / azione / conforto / accesso a uno spazio): identificazione strutturale del tipo di apertura, perché la struttura del campo nella richiesta di aiuto è asimmetrica rispetto al tipo di referente (richiesta di oggetto vs. richiesta di azione hanno strutture di campo distinte)"
+      ]
+    }
+  ],
+
+  "observability_check": {
+    "minimum_observations_available": false,
+    "missing_observations": [
+      "il file di contesto/ambito esterno (f3-step-7-contesto-ambito.json) non è risultato disponibile, quindi la definizione del nuovo tema/dominio è derivata dai micro_casi e non da una specificazione operata dal ricercatore: questa è una mancanza metodologicamente rilevante perché il vincolo di realtà del nuovo dispositivo non è stato dichiarato dall'utente",
+      "non sono disponibili dati osservativi reali (registrazioni, trascrizioni, sequenze documentate) sul tema 'richiesta di aiuto' nel dominio clinico: la valutazione di trasferibilità è stata condotta come analisi strutturale del dispositivo sorgente in relazione al telaio configurazionale del tema target, non come test su casi reali",
+      "non è disponibile una baseline-di-genere documentata per scambi di richiesta-e-aiuto nel dominio clinico: senza questa baseline il proxy adattato non sarebbe applicabile (corrisponderebbe alla condizione NA4 del proxy v1b)",
+      "non è disponibile un set di structural_signatures riformulate per gli stati del campo e per le funzioni co-regolatorie nel nuovo tema: la valutazione di trasferibilità identifica la necessità dell'adattamento ma non lo realizza (correttamente, dato il vincolo dello step 7 di non costruire un nuovo dispositivo)"
+    ],
+    "non_classifiability_risks": [
+      "Rischio NA4 elevato: senza baseline-di-genere documentata per richiesta-e-aiuto, ogni applicazione del proxy adattato produrrebbe sospensione del dispositivo. La costruzione di questa baseline è il primo passo richiesto prima di costruire il nuovo dispositivo.",
+      "Rischio NA3 elevato in prospettiva: la richiesta di aiuto è particolarmente esposta a descrizioni in registro qualitativo-interpretativo ('il bambino chiede attenzione', 'il bambino cerca conforto') che presuppongono inferenze affettive non ancorate a tracce verificabili. Il dispositivo trasferito eredita questo rischio in forma più acuta del dispositivo originario sul pointing.",
+      "Rischio NA2 mutato: nella richiesta di aiuto il canale di registrazione adeguato richiede video con audio in modo più stringente che nel pointing, perché T2 e T4 sono spesso costituiti da azioni che il solo audio non registra. Audio + note osservative — accettabile come canale per il pointing — non lo è per il nuovo tema.",
+      "Rischio NA8 invariato e altrettanto pertinente: l'asimmetria del proxy si trasferisce — la classificazione 'aperto' resta accessibile in modo robusto solo a livello sequenza con variazione documentata di Y."
+    ]
+  },
+
+  "reduction_risks": [
+    {
+      "risk_type": "scivolamento_pragmatico",
+      "description": "Specifico del nuovo tema: la richiesta di aiuto ha una valenza pragmatica strutturale (ottenere un'azione, un oggetto, un accesso) che il pointing non ha necessariamente. Il dispositivo trasferito rischia di leggere come 'campo condiviso' qualunque sequenza in cui la richiesta venga soddisfatta funzionalmente, e come 'campo non costituito' qualunque sequenza in cui la richiesta non venga soddisfatta — collassando la lettura configurazionale sull'esito pragmatico. Una richiesta non soddisfatta può aver costituito un campo condiviso pienamente; una richiesta soddisfatta può non averlo costituito (l'adulto ha eseguito l'azione senza entrare nel campo).",
+      "mitigation": "Inserire nel nuovo dispositivo una clausola di indipendenza tra esito pragmatico e classe configurazionale, analoga alla non_scalar_clause delle funzioni co-regolatorie. La classificazione del campo e della funzione co-regolatoria deve essere indipendente dal fatto che la richiesta sia stata soddisfatta o meno. Aggiungere structural_signatures che rendano leggibile la differenza tra 'campo condiviso non soddisfatto' e 'soddisfacimento senza campo costituito'."
+    },
+    {
+      "risk_type": "psicologizzazione_affettiva",
+      "description": "Specifico del nuovo tema: la richiesta di aiuto è facilmente assorbita da letture affettivo-relazionali ('il bambino cerca rassicurazione', 'la richiesta è espressione di insicurezza dell'attaccamento') che proiettano stati interni inferiti sulle tracce osservate. Questo è un caso particolare di NA3 ma con una pressione concettuale specifica del tema, perché tradizioni teoriche consolidate (teorie dell'attaccamento, regolazione affettiva) offrono griglie interpretative pre-confezionate.",
+      "mitigation": "Rinforzare nel nuovo dispositivo l'interpretive_warning sulla riduzione affettiva (come riformulazione del warning 'riduzione_cognitiva' del dispositivo originario). Inserire NA specifica: descrizioni di T1, T2, T3, T4 in registro affettivo-attribuzionale ('cerca conforto', 'esprime frustrazione', 'risponde con accudimento') senza tracce verificabili attivano sospensione del dispositivo. La distinzione tra traccia comportamentale verificabile (es. 'vocalizzazione di alta intensità con orientamento del busto verso l'adulto') e qualifica affettiva ('vocalizzazione di richiesta angosciata') deve essere esplicitata."
+    },
+    {
+      "risk_type": "valutazione_normativa_caregiver_amplificata",
+      "description": "Trasferito al nuovo tema, il rischio di valutazione del caregiver — già segnalato nel dispositivo originario — si amplifica significativamente, perché la richiesta di aiuto attiva schemi normativi più direttamente comportamentali ('il caregiver responsivo deve aiutare', 'la responsività materna') rispetto al pointing. Le funzioni co-regolatorie (in particolare 'chiudente') sono particolarmente esposte: l'aiuto pre-emptive può facilmente essere letto come 'eccesso di controllo' invece che come una specifica configurazione strutturale del campo.",
+      "mitigation": "Rinforzare la non_scalar_clause già presente nel dispositivo originario, esplicitando per il nuovo tema che nessuna funzione co-regolatoria nella richiesta di aiuto è 'più adeguata' di un'altra (in particolare: 'partecipativa' non è 'meglio' di 'chiudente' nel senso di 'più sensibile'). Mantenere e rafforzare la non_permitted_transformation che vieta l'uso del dispositivo per valutare il caregiver. Aggiungere structural_questions che orientino l'osservatore alla configurazione e non alla qualità della cura."
+    },
+    {
+      "risk_type": "checklist_pragmatica",
+      "description": "Trasferito al nuovo tema, il rischio di tecnicismo si manifesta nella forma specifica di una checklist pragmatico-comunicativa: 'il bambino fa la richiesta?', 'l'adulto risponde adeguatamente?', 'la richiesta viene soddisfatta?'. Questa checklist è particolarmente seducente nella richiesta di aiuto perché ricalca strumenti diagnostici già esistenti (scale di responsività, valutazioni dell'intentional communication).",
+      "mitigation": "Conservare integralmente l'interpretive_warning sul tecnicismo e la non_permitted_transformation che vieta la trasformazione in protocollo. Inserire una clausola specifica del nuovo tema: la presenza/assenza/successo della richiesta non è oggetto del dispositivo; oggetto è la configurazione strutturale del campo che la richiesta apre o non apre."
+    },
+    {
+      "risk_type": "interpretazione_psicologica_non_ancorata",
+      "description": "Generale ma particolarmente pertinente al nuovo tema: la richiesta di aiuto attiva con frequenza maggiore del pointing letture psicologiche di profondità ('dipendenza/autonomia', 'capacità di tollerare l'attesa', 'sicurezza nell'esplorazione'). Queste letture eccedono la struttura configurazionale e introducono inferenze su stati interni che il dispositivo non legge.",
+      "mitigation": "Mantenere e applicare al nuovo tema il vincolo strutturale del dispositivo originario: il dispositivo legge configurazioni strutturali del campo, non stati psicologici interni. Esplicitare nelle structural_questions del nuovo tema il livello di lettura ammesso (struttura del campo, qualità della risposta, classe del passaggio) escludendo il livello degli stati interni."
+    }
+  ],
+
+  "next_step_recommendation": {
+    "recommendation": "raffinare_prima",
+    "reason": "La trasferibilità è strutturalmente fondata ma richiede tre raffinamenti preliminari prima di costruire il nuovo dispositivo. (1) Specificazione esplicita del contesto/ambito da parte del ricercatore: il file di input esterno previsto dallo step (f3-step-7-contesto-ambito.json) non è disponibile e la scelta del tema è stata derivata dai micro_casi. Procedere alla costruzione del nuovo dispositivo senza una scelta dichiarata dall'utente significa lasciare implicito il vincolo di realtà — esattamente ciò che le istruzioni dello step segnalano come da evitare. (2) Costruzione preliminare di una baseline-di-genere documentata per scambi di richiesta-e-aiuto nel dominio clinico: senza questa baseline il proxy adattato sarebbe sistematicamente non applicabile (NA4) e il nuovo dispositivo nascerebbe non operativo. (3) Riformulazione delle structural_signatures per gli stati del campo, le funzioni co-regolatorie e le classi del passaggio nel nuovo tema, prima di consolidare il dispositivo. Una volta raffinati questi tre elementi, la costruzione del nuovo dispositivo (step successivo) è metodologicamente sostenibile, e il telaio configurazionale del dispositivo sorgente può essere riusato in modo coerente. Procedere subito significherebbe trasferire un'architettura su un terreno non preparato, riproducendo il rischio — esplicitamente vietato dallo step 7 — di trasferire elementi specifici come se fossero universali."
+  }
+}

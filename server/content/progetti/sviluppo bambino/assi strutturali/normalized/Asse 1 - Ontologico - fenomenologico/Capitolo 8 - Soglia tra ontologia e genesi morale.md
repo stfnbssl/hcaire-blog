@@ -110,17 +110,13 @@ Nulla di tutto ciò è già contenuto, neppure implicitamente, nell’Asse 1.
 
 ## 6. Funzione di soglia rispetto agli assi successivi
 
-Chiudendo l’Asse 1 con questo chiarimento, il modello conserva una gerarchia concettuale netta:
-
-* l’ontologia fonda,  
-* ma non determina,  
-* la genesi morale.
+Chiudendo l’Asse 1 con questo chiarimento, il modello conserva una gerarchia concettuale netta: **l’ontologia fonda, ma non determina, la genesi morale**.
 
 Questo consente agli assi successivi di svilupparsi senza ambiguità:
 
-* l’Asse 2 potrà interrogare la genesi dell’istanza morale senza ridurla a relazione,  
+* l’Asse 2 potrà interrogare la genesi dell’istanza morale senza ridurla a relazione, a semplice "rispecchiamento" dei genitori (o dell'ambiente),
 * l’Asse 3 potrà affrontare la normatività del giudizio senza moralismo,  
-* l’Asse 4 potrà introdurre il limite reale senza psicologizzarlo.
+* l’Asse 4 potrà introdurre il limite reale senza psicologizzarlo, mantenendo il baricentro dell'educazione sul piano della realtà oggettiva e non delle negoziazioni emotive.
 
 Il modello non procede per accumulo, ma per **passaggi di soglia**.
 

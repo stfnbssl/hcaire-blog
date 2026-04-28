@@ -1,0 +1,122 @@
+{
+  "step": "step_2",
+  "results": [
+    {
+      "theme_id": "tema_01_pointing_precoce",
+      "candidate_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "reason": "Il pointing è costitutivamente un atto corporeo-relazionale: non un segnale inviato da un soggetto già dato, ma un gesto che si compie nella co-regolazione con l'altro e che apre un campo intenzionale condiviso. Asse 1 presidia la struttura esperienziale e incarnata in cui il gesto si radica prima di diventare segno: corporeità come luogo originario di senso, co-regolazione come condizione che rende il gesto efficace, campo intenzionale come struttura globale che si costituisce nell'atto. Il tema non è pensabile senza questa base: senza Asse 1 il pointing diventa un indicatore cognitivo e perde la sua radice fenomenologica."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "reason": "Il pointing è un atto di mediazione simbolica: trasforma qualcosa di semplicemente percepito in qualcosa di condiviso e potenzialmente significabile. Asse 6 presidia la struttura semiotica e culturale di questo passaggio: la mediazione simbolica come struttura antropologica che connette soggetti attraverso segni e costituisce il percepito come condiviso. Il tema è esplicitamente centrato sulla 'mediazione del significato': senza Asse 6 il pointing rimane un gesto corporeo senza la sua dimensione semiotica e rimane incomprensibile come fenomeno."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "relevance_level": "da_verificare",
+          "reason": "Il pointing apre la possibilità che ciò che l'altro ha reso significativo diventi riferimento interno per il bambino: non solo condivisione attentiva momentanea, ma avvio di un processo in cui la valutazione dell'altro viene interiorizzata come orientamento. Tuttavia, il pointing può esistere strutturalmente senza che questo processo si attivi: il gesto può condividere senza interiorizzare, e il tema non perde la sua identità strutturale in assenza di Asse 2. L'interiorizzazione è un esito possibile, non una condizione necessaria. Richiede verifica in STEP 3: va accertato se il fenomeno è spiegabile pienamente senza Asse 2 o se l'asse presidia un livello che nessun altro asse già incluso copre."
+        },
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "relevance_level": "da_verificare",
+          "reason": "Il pointing del bambino è orientato affettivamente: il gesto seleziona qualcosa che ha già salienza per lui, prima di qualsiasi elaborazione cognitiva esplicita. Asse 5 è candidato perché il pointing potrebbe essere una delle prime configurazioni in cui il campo desiderabile prende forma — l'atto di puntare verso qualcosa, cercare la conferma dell'altro, costituisce un orientamento verso il possibile. Il nodo intenzionalità-affettiva di Asse 5 ha pertinenza strutturale plausibile. Tuttavia, per la fascia precoce, la connessione al campo desiderabile come struttura è speculativa e rischia di essere confusa con la semplice risposta percettiva: richiede verifica in STEP 3."
+        }
+      ],
+      "candidate_nodes": [
+        {
+          "node_id": "campo-intenzionale",
+          "node_label": "Campo intenzionale",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il pointing costituisce un campo intenzionale condiviso: seleziona e rende comune qualcosa che prima era solo percepito. Il campo intenzionale di Asse 1 è la struttura esatta che il gesto attiva — non l'oggetto puntato, ma la struttura globale di orientamento verso di esso che l'atto rende condivisa. Il tema non è pensabile senza questo nodo e il nodo distingue il pointing da altri gesti comunicativi (es. toccare, afferrare) che non costituiscono un campo intenzionale condiviso."
+        },
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il pointing funziona solo co-regolativamente: il gesto corporeo non costituisce significato da solo ma richiede la risposta dell'altro per diventare efficace. La co-regolazione non è il contesto del pointing ma la sua condizione strutturale: senza la risposta dell'altro il gesto rimane un movimento motorio. Nodo discriminante perché specifica il meccanismo relazionale che trasforma il gesto in configurazione di significato condiviso, distinguendo il pointing dall'atto motorio isolato."
+        },
+        {
+          "node_id": "corporeità-vissuta",
+          "node_label": "Corporeità vissuta",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "Il pointing è prima di tutto un atto corporeo: il dito che si estende, il braccio che si orienta, lo sguardo che accompagna il gesto. La corporeità vissuta — il corpo come luogo originario di senso — è la base ontologica da cui il gesto emerge prima di diventare segno. Senza questa dimensione il pointing viene ridotto a indicatore cognitivo, perdendo la sua radice fenomenologica. Il nodo è plausibile ma non strettamente discriminante: distingue il pointing dai segni puramente cognitivi, non da altri gesti corporei."
+        },
+        {
+          "node_id": "mediazione-simbolica",
+          "node_label": "Mediazione simbolica",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il pointing è il prototipo dell'atto di mediazione simbolica: non indica semplicemente un oggetto ma lo costituisce come significativo attraverso il gesto condiviso. La mediazione simbolica di Asse 6 — struttura antropologica che connette soggetti attraverso segni — è il nodo che descrive il passaggio strutturale dal percepito al significato condiviso. Altamente discriminante: il tema è esplicitamente una 'mediazione del significato' e il nodo distingue il pointing da qualsiasi gesto che non produca questo passaggio."
+        },
+        {
+          "node_id": "interiorizzazione-dell-altro",
+          "node_label": "Interiorizzazione dell'altro",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "relevance_level": "da_verificare",
+          "is_derived": false,
+          "reason": "Il pointing apre la possibilità che ciò che l'altro ha reso significativo diventi riferimento interno per il bambino: non solo condivisione attentiva momentanea, ma avvio di un processo in cui la valutazione dell'altro viene interiorizzata. Il nodo corrisponde all'asse candidato in stato da_verificare: l'interiorizzazione è un esito possibile del pointing, non una condizione che il tema non sia pensabile senza. Plausibilità subordinata alla verifica di Asse 2 in STEP 3."
+        },
+        {
+          "node_id": "intenzionalità-affettiva",
+          "node_label": "Intenzionalità affettiva",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "relevance_level": "da_verificare",
+          "is_derived": false,
+          "reason": "Il pointing del bambino verso un oggetto è orientato affettivamente: il gesto seleziona qualcosa che ha già una salienza per lui prima di qualsiasi elaborazione cognitiva esplicita. Asse 5 descrive questa modalità dell'orientamento che precede la volontà: la cosa puntata 'attira' prima di essere 'voluta'. Il nodo è strutturalmente plausibile ma la sua pertinenza specifica per la fascia precoce va verificata — il rischio è che venga confuso con la semplice risposta percettiva differenziale."
+        }
+      ],
+      "candidate_bridge_concepts": [
+        {
+          "concept_label": "Il gesto corporeo come atto semiotico co-prodotto",
+          "linked_axes": ["asse_1", "asse_6"],
+          "linked_nodes": ["campo-intenzionale", "co-regolazione", "mediazione-simbolica"],
+          "relevance_level": "forte",
+          "is_derived": true,
+          "reason": "Descrive la trasformazione strutturale centrale del pointing: il gesto corporeo co-regolato (Asse 1 — il braccio che si estende, il campo intenzionale che si apre nella relazione) diventa atto semiotico (Asse 6 — mediazione simbolica che costituisce il percepito come condiviso e significabile) solo attraverso la risposta dell'altro. La trasformazione è unidirezionale e irriducibile: senza la base corporea e co-regolatoria (Asse 1) non vi è gesto da cui il segno possa emergere; senza la struttura semiotica (Asse 6) il gesto rimane movimento motorio. Il ponte nomina il passaggio, non la co-presenza: è il processo in cui il gesto diventa segno attraverso la relazione."
+        },
+        {
+          "concept_label": "Dalla co-significazione all'interiorizzazione",
+          "linked_axes": ["asse_6", "asse_2"],
+          "linked_nodes": ["mediazione-simbolica", "interiorizzazione-dell-altro"],
+          "relevance_level": "da_verificare",
+          "is_derived": true,
+          "reason": "Descrive il possibile movimento strutturale dal livello semiotico-culturale (Asse 6: il gesto condivide e rende significativo) al livello affettivo-soggettivo (Asse 2: ciò che l'altro ha reso significativo si stratifica nel bambino come istanza orientante). La trasformazione è: la mediazione simbolica momentanea (il gesto viene condiviso) può diventare interiorizzazione strutturale (il criterio di salienza dell'altro diventa riferimento interno). Il ponte è da_verificare perché questo passaggio è un esito possibile del pointing, non necessario: la co-significazione può restare sul piano della condivisione senza depositarsi come interiorizzazione."
+        },
+        {
+          "concept_label": "Salienza affettiva come orientamento semiotico emergente",
+          "linked_axes": ["asse_5", "asse_6"],
+          "linked_nodes": ["intenzionalità-affettiva", "mediazione-simbolica"],
+          "relevance_level": "da_verificare",
+          "is_derived": true,
+          "reason": "Descrive il possibile passaggio dalla salienza affettiva (Asse 5: la cosa puntata ha valore per il bambino prima di qualsiasi deliberazione — l'intenzionalità affettiva orienta il gesto) alla mediazione simbolica (Asse 6: il gesto che esprime questa salienza, quando confermato dall'altro, diventa primo atto semiotico che costituisce la cosa come significativa). La trasformazione è: l'orientamento affettivo pre-riflessivo (Asse 5) diventa, attraverso il gesto condiviso, struttura semiotica emergente (Asse 6). Da_verificare perché la connessione tra salienza affettiva e struttura semiotica è speculativa nella fascia 0–3."
+        }
+      ],
+      "theme_structure_assessment": {
+        "type": "soglia_tra_assi",
+        "notes": "Il pointing si colloca alla soglia tra Asse 1 (Ontologico–fenomenologico) e Asse 6 (Storico–culturale): è il punto esatto in cui il gesto corporeo-relazionale (Asse 1 — campo intenzionale, co-regolazione, corporeità) si trasforma in atto semiotico (Asse 6 — mediazione simbolica, costituzione del condiviso). Questa configurazione è intenzionalmente meno densa di quella della lettura dialogica: il pointing è proto-triadico — apre il campo condiviso ma non lo struttura stabilmente. La minore densità non è un difetto ma informazione strutturale: gli stessi assi (1 e 6) operano qui a un livello elementare, prima della stabilizzazione triadica che caratterizza fenomeni più complessi. Asse 2 e Asse 5 sono candidati periferici in stato da_verificare: entrambi descrivono possibili esiti del pointing, non la sua struttura necessaria."
+      },
+      "selection_rationale": "Asse 1 e Asse 6 sono stati selezionati come assi della soglia perché il pointing è strutturalmente biforcuto: è simultaneamente un evento corporeo-relazionale (Asse 1 — corporeità, campo intenzionale, co-regolazione) e un atto di mediazione simbolica (Asse 6 — il percepito diventa condiviso e significabile). Questa biforcazione è irriducibile: il tema non è descrivibile senza entrambi. Asse 2 è incluso come da_verificare — non come asse strutturalmente necessario ma come ipotesi di approfondimento: il pointing può innescare interiorizzazione, ma può anche esistere senza. Asse 5 è incluso come da_verificare per la plausibile pertinenza dell'intenzionalità affettiva nella fase pre-riflessiva del gesto: speculativo per la fascia 0–3. Asse 3 è escluso: la funzione normativo-educativa non è strutturalmente attivata dal pointing in questa configurazione elementare — il livello di trasmissione di orizzonti di valore non è raggiunto da un gesto micro nella fascia precoce. Asse 4 è escluso: la struttura del limite e della separazione non è pertinente al fenomeno. La configurazione è intenzionalmente meno densa: il pointing è proto-triadico, non triadico — apertura del campo condiviso, non sua stabilizzazione.",
+      "notes_for_review": "1) La distinzione tra pointing del bambino (ricerca di condivisione di qualcosa già saliente) e pointing dell'adulto (selezione di ciò che è degno di attenzione) potrebbe richiedere configurazioni strutturali diverse in STEP 3: verificare se il tema va trattato come unico o biforcato. 2) Asse 2 (da_verificare): verificare in STEP 3 se il fenomeno del pointing è spiegabile senza interiorizzazione o se l'asse presidia un livello irriducibile. Test chiave: il pointing perde la sua identità strutturale senza Asse 2? 3) Asse 5 (da_verificare): la connessione tra intenzionalità affettiva e struttura del desiderio è speculativa per questa fascia: verificare se la salienza affettiva del gesto raggiunge la soglia strutturale di Asse 5 o rimane a livello di risposta percettiva differenziale. 4) Il rischio principale di riduzione comportamentale (trattare il pointing come semplice gesto osservabile o marker evolutivo) va segnalato per STEP 4: la distinzione tra pointing come competenza misurabile e pointing come configurazione strutturale deve essere mantenuta esplicitamente. 5) Configurazione gerarchica da monitorare: pointing come proto-triadicità (Asse 1 + Asse 6 a livello elementare) vs. lettura dialogica come triadicità stabilizzata (Asse 1 + Asse 6 + Asse 2 a livello pieno). Verificare in STEP 3 se questa gerarchia è strutturalmente fondata o è un artefatto della selezione dei temi."
+    }
+  ]
+}

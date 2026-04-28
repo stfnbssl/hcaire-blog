@@ -1,0 +1,602 @@
+{
+  "research_scope": {
+    "project_goal": "Individuare temi strutturalmente significativi per il progetto Sviluppo Bambino, da utilizzare come fuochi esplorativi per la costruzione di micro-matrici di traduzione interdisciplinare (Fase 2 del metodo). I temi devono essere radicati nelle fonti attuali, attraversare più assi strutturali e non essere già strumenti, protocolli o categorie diagnostiche.",
+    "source_types_consulted": [
+      "Report istituzionali UNICEF/UNESCO (Global Report on Early Childhood Care and Education, 2024)",
+      "Report e dati OECD (Education Policy Outlook 2025; Reducing Inequalities by Investing in ECEC, 2025; Education at a Glance 2025)",
+      "Linee guida AAP (Digital Ecosystems, Children, and Adolescents – Policy Statement 2026; Power of Play policy)",
+      "Review sistematiche su PubMed/PMC su: dialogic book-sharing, parental reflective functioning, co-regulation, technoference, responsive caregiving, infant sleep",
+      "Studi empirici recenti (2023-2025) su: technoference, shared reading, paternal involvement, sleep-wake regulation, caregiver mental health",
+      "Policy documents CDC su ACEs e toxic stress prevention",
+      "Literature ZERO TO THREE su poverty, routines, early language",
+      "Protocolli di trial clinici in corso (RCT italiano su Dialogic Book-Sharing, 2024)"
+    ],
+    "selection_criteria": [
+      "Rilevanza attuale nelle fonti istituzionali e scientifiche (segnale forte in almeno due ambiti indipendenti)",
+      "Densità strutturale: il tema apre domande sui processi fondativi del soggetto, non solo su comportamenti osservabili",
+      "Multi-assialità: il tema coinvolge plausibilmente più di un asse strutturale",
+      "Non riducibilità a strumento, diagnosi o protocollo esistente",
+      "Potenziale come caso pilota per la costruzione di micro-matrici di traduzione"
+    ],
+    "notes": "Le ricerche sono state condotte con WebSearch nella sessione attuale (aprile 2026). I source_signals con source_type 'web_search' indicano fonti individuate nei risultati di ricerca ma non lette integralmente. I source_type 'training_knowledge' indicano conoscenza di addestramento senza consultazione diretta in questa sessione. Tre temi candidati sono stati esclusi e segnalati in global_notes come deboli."
+  },
+  "candidate_themes": [
+    {
+      "theme_label_provisional": "Technoference e qualità della presenza relazionale",
+      "starting_point": "La letteratura empirica su 'technoference' (interruzione tecnologica nella relazione genitore-bambino) mostra che la sola presenza di uno smartphone, anche non in uso attivo, riduce la responsività del caregiver e la qualità dell'interazione. Il dibattito ha prodotto una meta-analisi recente (2025, JMIR, 60 effect sizes, 60.555 partecipanti) e un confronto concettuale sulla distinzione tra technoference e 'parental phubbing' (JCPP, 2024).",
+      "structural_focus": "Non si tratta di quanto i genitori usano lo smartphone, ma di come la presenza del dispositivo modifica la struttura della co-presenza e della co-regolazione. La domanda strutturale è: che cosa accade alla qualità del campo relazionale quando l'attenzione del caregiver è cronicamente divisa? Questo non è un problema di 'tempo di schermo' ma di struttura dell'essere-con.",
+      "what_it_is": "Un tema che interroga la struttura della presenza relazionale come condizione della co-regolazione e dell'interiorizzazione dell'altro. La technoference è il segnale empirico da cui emerge la domanda strutturale sulla qualità dell'essere-con del caregiver come condizione ontologica.",
+      "what_it_is_not": "Non è un tema sulla cattiva educazione digitale né una prescrizione sull'uso degli schermi. Non è riducibile a un intervento di parent-education sul 'no smartphone durante i pasti'. Non è un problema di dipendenza tecnologica del genitore.",
+      "why_it_matters": "La convergenza di segnali empirici, policy (AAP 2026 sposta il focus dal time al contesto relazionale) e teorici è alta. Il tema tocca la condizione di possibilità della co-regolazione in un'epoca in cui la presenza divisa è strutturalmente indotta dall'ecosistema tecnologico, non da scelte individuali.",
+      "source_signals": [
+        {
+          "source_type": "web_search",
+          "source_title": "Parental Technoference and Child Problematic Media Use: Meta-Analysis (JMIR, 2025)",
+          "signal_summary": "Meta-analisi di 53 studi (60.555 partecipanti): alta correlazione tra technoference e problemi comportamentali, emotivi e di attaccamento nei bambini.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "Commentary: Technoference or parental phubbing? (JCPP, 2024)",
+          "signal_summary": "Dibattito sulla distinzione concettuale: chiede maggiore chiarezza operativa e concettuale sul fenomeno.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "Effects of digital and non-digital parental distraction on parent-child interaction (Frontiers, 2024)",
+          "signal_summary": "Confronto sperimentale: la distrazione digitale riduce la contingenza e la responsività in modo più marcato di quella non digitale.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "AAP Digital Ecosystems Policy Statement (2026)",
+          "signal_summary": "L'AAP sposta il frame dalla quantità di schermo alla qualità del contesto relazionale e dell'ecosistema digitale come sistema.",
+          "recency_relevance": "alta"
+        }
+      ],
+      "possible_axes_involved": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "reason": "La technoference modifica la struttura della co-regolazione e della co-presenza come condizioni ontologiche. L'attenzione divisa del caregiver riduce la qualità del campo intenzionale diadico e della temporalizzazione condivisa."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "reason": "La qualità dell'interiorizzazione dell'altro come istanza dipende dalla continuità e responsività della presenza relazionale. Una presenza cronica divisa può alterare le condizioni di questo processo."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "reason": "La technoference non è un errore individuale ma una forma storica di organizzazione dell'attenzione prodotta dall'ecosistema tecnologico contemporaneo (Stiegler: proletarizzazione dell'attenzione). Richiede lettura strutturale, non moralistica."
+        }
+      ],
+      "possible_structural_nodes": ["co-regolazione", "campo-intenzionale", "temporalità-vissuta", "tecnica-come-forma-storica", "istanza-interna"],
+      "possible_bridge_concepts": ["co-regolazione", "campo-intenzionale"],
+      "definition_draft": "La technoference come tema strutturale designa la modificazione della qualità della co-presenza relazionale indotta dalla presenza cronica di dispositivi tecnologici nell'interazione caregiver-bambino. Non è la quantità di uso, ma la struttura dell'attenzione e della disponibilità del caregiver a fungere da base di co-regolazione per il bambino.",
+      "definition_risks": [
+        "Operativizzazione immediata come 'regola dello smartphone': trasforma il tema strutturale in prescrizione comportamentale",
+        "Moralizzazione: colpevolizza i genitori anziché interrogare le condizioni strutturali che producono la distrazione",
+        "Riduzione a variabile di rischio: tratta la technoference come fattore isolato anziché come espressione di una forma storica di organizzazione dell'attenzione"
+      ],
+      "exploratory_priority": "alta",
+      "pilot_suitability": "alta",
+      "human_review_notes": "Tema con forte segnale empirico e potenziale diretto per la traduzione verso pediatri ed educatori. Il rischio principale è la facile operativizzazione. La distinzione tra technoference come problema individuale e come configurazione storica è il nodo concettuale da preservare."
+    },
+    {
+      "theme_label_provisional": "Lettura dialogica condivisa come dispositivo relazionale precoce",
+      "starting_point": "La letteratura su dialogic book-sharing mostra che la lettura condivisa genitore-bambino sotto i 3 anni non è principalmente un'attività di literacy ma un dispositivo relazionale che struttura co-regolazione, attenzione condivisa, linguaggio e campo simbolico. È in corso un RCT multicentrico italiano (Trials, 2024) su esiti comunicativi e socio-emotivi. Una review di 19 RCT (2023) ha confermato effetti significativi su linguaggio espressivo, linguaggio ricettivo e comportamento del caregiver.",
+      "structural_focus": "La lettura condivisa è un contesto in cui il bambino sperimenta simultaneamente: regolazione corporea (ritmo, contatto, voce), temporalità condivisa (attesa, anticipazione), mediazione simbolica precoce (segno, denominazione, narrazione), normatività implicita (orizzonti di senso trasmessi dai testi). Il tema non è 'leggere ai bambini fa bene al linguaggio' ma 'quali strutture fondamentali si costituiscono nell'incontro tra caregiver, bambino e libro?'",
+      "what_it_is": "Un tema che interroga la lettura condivisa come dispositivo in cui co-regolazione, mediazione simbolica, temporalità e trasmissione normativa implicita avvengono simultaneamente. Non è riducibile a nessuno di questi elementi preso isolatamente.",
+      "what_it_is_not": "Non è un metodo di insegnamento della lettura né uno strumento di stimolazione del linguaggio. Non è una tecnica educativa da prescrivere. Non è un indicatore di coinvolgimento parentale.",
+      "why_it_matters": "Forte convergenza tra segnale empirico (meta-analisi, RCT), policy (AAP raccomanda la lettura precoce; Reach Out and Read) e densità strutturale. Il tema ha un potenziale alto come caso pilota perché è concretamente osservabile e non ancora saturato da un'unica disciplina.",
+      "source_signals": [
+        {
+          "source_type": "web_search",
+          "source_title": "Early parent-child intervention with Dialogic Book-Sharing: RCT multicentrico Italy (Trials/Springer, 2024)",
+          "signal_summary": "Protocollo di studio pubblicato: RCT in Italia su esiti comunicativi e socio-emotivi della lettura dialogica condivisa con bambini sotto i 3 anni.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "Effects of training parents in dialogic book-sharing (Murray et al., 2023)",
+          "signal_summary": "Meta-analisi di 19 RCT: effetti significativi su linguaggio espressivo/ricettivo, sensibilità del caregiver, scaffolding cognitivo.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "Father and Toddler Language During Shared Book Reading (Reading Research Quarterly, 2023)",
+          "signal_summary": "I padri producono più linguaggio e vocabolario più complesso durante la lettura condivisa rispetto ad altre attività con bambini di 15-30 mesi.",
+          "recency_relevance": "alta"
+        }
+      ],
+      "possible_axes_involved": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "reason": "La lettura condivisa struttura ritmo, contatto corporeo, voce e temporalità condivisa — tutte dimensioni del campo co-regolativo primario. È un contesto in cui la co-regolazione si esercita e si approfondisce."
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "reason": "I testi letti trasmettono orizzonti di senso, valori impliciti e narrazioni del mondo prima che il bambino possa interrogarli criticamente. La lettura condivisa è un dispositivo di trasmissione normativa implicita che precede il giudizio."
+        },
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "reason": "La lettura condivisa introduce il bambino al campo simbolico come orizzonte di possibilità. Può strutturare il campo del desiderabile aprendo al mondo della narrazione e del simbolico come spazio di orientamento."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "reason": "La mediazione simbolica vygotskijana (Asse 6) descrive esattamente come la cultura entri nelle funzioni psichiche attraverso lo strumento del libro e del linguaggio narrativo condiviso."
+        }
+      ],
+      "possible_structural_nodes": ["co-regolazione", "mediazione-simbolica", "temporalità-vissuta", "orizzonti-di-senso", "relazione-costitutiva"],
+      "possible_bridge_concepts": ["co-regolazione", "mediazione-simbolica"],
+      "definition_draft": "La lettura dialogica condivisa come tema strutturale designa il contesto diadico in cui co-regolazione corporea, mediazione simbolica precoce, trasmissione normativa implicita e strutturazione del campo temporale avvengono simultaneamente. Non è riducibile a un effetto su una singola dimensione (linguaggio, attaccamento, literacy) senza perdere la specificità strutturale dell'incontro.",
+      "definition_risks": [
+        "Riduzione a strumento di stimolazione linguistica: perde la dimensione co-regolativa e normativa",
+        "Prescrizione comportamentale: '20 minuti di lettura al giorno' trasforma il tema in indicatore di performance parentale",
+        "Universalizzazione: il significato strutturale della lettura condivisa varia in funzione del contesto culturale e delle pratiche simboliche familiari"
+      ],
+      "exploratory_priority": "alta",
+      "pilot_suitability": "alta",
+      "human_review_notes": "Tema con potenziale molto alto come caso pilota: concretamente osservabile, radice in molteplici assi, forte segnale empirico e policy. Il RCT italiano in corso lo rende particolarmente rilevante per il contesto del progetto. Rischio principale: essere trattato come semplice raccomandazione di literacy prevention."
+    },
+    {
+      "theme_label_provisional": "Funzione riflessiva genitoriale come condizione della relazione",
+      "starting_point": "La ricerca sulla Parental Reflective Functioning (PRF) — la capacità del caregiver di leggere il proprio bambino come portatore di stati mentali intenzionali — mostra una correlazione robusta con la qualità dell'attaccamento, la regolazione emotiva del bambino e gli esiti socio-emotivi a lungo termine. Una scoping review del 2024 (Springer) identifica il PRF come costrutto sovrapponibile ma distinto dalla mindful parenting. Una review di 2024 identifica profili di genitori con PRF compromessa che beneficiano di interventi mirati.",
+      "structural_focus": "Il PRF non è una competenza tecnica del genitore ma la capacità di vedere l'altro (il bambino) come portatore di un'esperienza interiore che precede e orienta il comportamento. Questo è esattamente ciò che nell'Asse 2 viene descritto come condizione dell'interiorizzazione dell'altro: il bambino che viene visto come avente stati mentali può a sua volta interiorizzare il caregiver come presenza dotata di intenzionalità.",
+      "what_it_is": "Un tema che interroga la struttura della reciprocità mentalizzante nella diade precoce: la capacità del caregiver di vedere il bambino come soggetto dotato di stati mentali come condizione strutturale per lo sviluppo dell'istanza interna nel bambino.",
+      "what_it_is_not": "Non è una tecnica terapeutica (MBT). Non è uno screening del 'buon genitore'. Non coincide con l'empatia generica né con il parent-training.",
+      "why_it_matters": "La PRF è uno dei costrutti più indagati nella ricerca sull'attaccamento contemporanea. Ha strumenti di misura (PRFQ), basi teoriche solide (Fonagy) e potenziale alto come obiettivo di intervento preventivo. La sua connessione con l'Asse 2 è strutturalmente diretta.",
+      "source_signals": [
+        {
+          "source_type": "web_search",
+          "source_title": "Parental Reflective Functioning in First-Time Parents and Associations with Infant Socioemotional Development (J. Child Family Studies, 2023)",
+          "signal_summary": "Conferma la validità del PRFQ-I in un campione longitudinale di 1243 madri e 512 padri; pre-mentalizing e certainty about mental states predicono lo sviluppo socio-emotivo infantile.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "Parental Reflective Capacities: Scoping Review of Mindful Parenting and PRF (Mindfulness/Springer, 2024)",
+          "signal_summary": "Review di 301 articoli: sovrapposizione di outcome tra mindful parenting e PRF; entrambi correlano con miglioramento del benessere genitore-bambino e qualità dell'attaccamento.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "training_knowledge",
+          "source_title": "Fonagy, Slade, Dozier — letteratura fondativa su PRF, Minding the Baby, ABC",
+          "signal_summary": "Base teorica consolidata: PRF come ponte tra attaccamento del genitore (AAI) e attaccamento del figlio; interventi ABC e Minding the Baby come modelli operativi.",
+          "recency_relevance": "media"
+        }
+      ],
+      "possible_axes_involved": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "reason": "La PRF è una forma operativa della co-regolazione: il caregiver che riesce a leggere gli stati mentali del bambino offre una co-regolazione più fine e contingente."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "reason": "Il caregiver che vede il bambino come portatore di stati mentali è la condizione perché il bambino possa interiorizzare l'altro come istanza: essere visti come soggetti è condizione per diventare soggetti. La PRF è il meccanismo relazionale dell'Asse 2 dal lato del caregiver."
+        },
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "reason": "Il caregiver con alta PRF riconosce il desiderio del bambino come orientamento verso qualcosa di suo, non solo come bisogno da soddisfare. Questa distinzione ha implicazioni strutturali per lo sviluppo del desiderio come struttura."
+        }
+      ],
+      "possible_structural_nodes": ["co-regolazione", "istanza-interna", "soggetto-come-processo", "interiorizzazione-dell-altro"],
+      "possible_bridge_concepts": ["co-regolazione", "istanza-interna"],
+      "definition_draft": "La funzione riflessiva genitoriale come tema strutturale designa la capacità del caregiver di percepire il proprio bambino come portatore di stati mentali intenzionali (desideri, emozioni, credenze) che precedono e orientano il comportamento. Non è una competenza tecnica ma una disposizione che determina la qualità della co-regolazione e le condizioni per l'interiorizzazione dell'altro da parte del bambino.",
+      "definition_risks": [
+        "Tecnicizzazione: riduzione della PRF a scale di misurazione o competenza da acquisire in training",
+        "Individualizzazione: attribuire al singolo genitore una capacità che dipende dalle condizioni strutturali di supporto, salute mentale, contesto",
+        "Confusione con empatia generica: la PRF è una struttura specifica (vedere l'altro come avente stati mentali) distinta dalla sensibilità generica"
+      ],
+      "exploratory_priority": "alta",
+      "pilot_suitability": "alta",
+      "human_review_notes": "Connessione diretta con l'Asse 2. La distinzione tra PRF come condizione strutturale e PRF come competenza da valutare è il nodo concettuale critico. Verificare il raccordo con la scheda di interlocuzione sulla teoria dell'attaccamento (già prodotta)."
+    },
+    {
+      "theme_label_provisional": "Co-regolazione del ritmo biologico nella diade precoce",
+      "starting_point": "La ricerca sul sonno infantile e sullo sviluppo circadiano mostra che il ritmo biologico del neonato non emerge autonomamente ma si costituisce attraverso la mediazione del caregiver (luce, voce, ritmo alimentare, contatto). Un modello computazionale pubblicato su PLOS Computational Biology (2024) ha riprodotto i pattern di sonno infantile identificando il ruolo del caregiver come gatekeeping circadiano. La ricerca su routines (Journal of Family Theory & Review, 2024) mostra effetti longitudinali delle routine precoci sulla regolazione emotiva a 3 anni.",
+      "structural_focus": "Il ritmo biologico non è una funzione biologica che si 'matura' autonomamente: è la prima forma di temporalizzazione incarnata che si costituisce attraverso la relazione. La co-regolazione del ritmo (sonno, veglia, fame, sazietà) è la forma più precoce e primaria della co-regolazione descritta nell'Asse 1.",
+      "what_it_is": "Un tema che interroga la costituzione della temporalità incarnata nella diade precoce: come il bambino acquisisce il ritmo del tempo attraverso la relazione con il caregiver, prima di qualsiasi rappresentazione o linguaggio.",
+      "what_it_is_not": "Non è un tema di sleep hygiene né di consigli sull'allattamento o sul co-sleeping. Non è riducibile a una questione di routine gestionale.",
+      "why_it_matters": "Il ritmo biologico precoce è la prima forma di temporalizzazione incarnata, che precede qualsiasi altra struttura dello sviluppo. Il tema connette neurobiologia, fenomenologia e pratica clinica in modo strutturalmente ricco. L'aspetto più originale è che il caregiver è letteralmente co-costruttore del ritmo biologico del bambino.",
+      "source_signals": [
+        {
+          "source_type": "web_search",
+          "source_title": "Mapping the physiological changes in sleep regulation across infancy (PLOS Computational Biology, 2024)",
+          "signal_summary": "Modello computazionale che riproduce i pattern di sonno infantile: identifica cambio circadiano, dinamica del sonno lento e risposta ritardata alla luce come meccanismi chiave.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "Routines and child development: A systematic review (Journal of Family Theory & Review, 2024)",
+          "signal_summary": "Review sistematica: le routine precoci correlano con migliore regolazione emotiva, sviluppo linguistico e attaccamento.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "Influence of mothers' nighttime responses on the sleep-wake rhythm of 1-month-old infants (Scientific Reports, 2021)",
+          "signal_summary": "Il comportamento di risposta notturna del caregiver modifica la struttura del ritmo sonno-veglia del neonato.",
+          "recency_relevance": "media"
+        }
+      ],
+      "possible_axes_involved": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "reason": "Il ritmo biologico è la forma più primaria della temporalizzazione incarnata (Asse 1, Cap. 3 e 4). La costituzione del ritmo circadiano attraverso la relazione è la prima forma di co-regolazione della temporalità vissuta."
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "reason": "Fame, stanchezza, discontinuità del ritmo sono le prime forme di eccedenza che il bambino incontra: il reale come dato biologico che non dipende dall'intenzione del soggetto né dal controllo del caregiver."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "reason": "Il ritmo biologico del bambino è co-costruito attraverso istituzioni (nido, orari, routine familiari) e mediazioni storiche (tecnologia, lavoro dei genitori, organizzazione del tempo sociale) che modellano le condizioni del caregiving precoce."
+        }
+      ],
+      "possible_structural_nodes": ["temporalità-vissuta", "co-regolazione", "corporeità-vissuta", "eccedenza", "istituzione-come-dispositivo"],
+      "possible_bridge_concepts": ["co-regolazione", "temporalità-vissuta"],
+      "definition_draft": "La co-regolazione del ritmo biologico nella diade precoce designa il processo attraverso cui il bambino acquisisce la struttura temporale del proprio corpo (sonno-veglia, fame-sazietà, attivazione-calma) attraverso la relazione con il caregiver. Non è maturazione autonoma ma costituzione relazionale della temporalizzazione incarnata.",
+      "definition_risks": [
+        "Riduzione a sleep training: trasforma il tema in una prescrizione su quando e come rispondere al bambino di notte",
+        "Decontestualizzazione: ignora come le condizioni di lavoro, alloggio e supporto sociale dei caregiver determinino strutturalmente le possibilità di co-regolazione ritmica",
+        "Biologizzazione: trattare il ritmo come puro processo neurobiologico, perdendo la dimensione relazionale della sua costituzione"
+      ],
+      "exploratory_priority": "alta",
+      "pilot_suitability": "media",
+      "human_review_notes": "Tema originale che connette neurobiologia e fenomenologia in modo non ovvio. Il potenziale come caso pilota è medio perché meno direttamente osservabile rispetto ad altri temi. Valutare se unire con il tema delle routine o mantenere separato per preservare la specificità strutturale."
+    },
+    {
+      "theme_label_provisional": "Salute mentale perinatale del caregiver come condizione strutturale",
+      "starting_point": "La letteratura sul caregiving di qualità converge nel mostrare che la salute mentale del caregiver — in particolare nella fase perinatale — è una condizione strutturale della qualità della co-regolazione, non un fattore di rischio tra altri. Un report del World Bank Joint Data Center (2024) documenta il nesso tra salute mentale materna e sviluppo infantile precoce. Una scoping review (ScienceDirect, 2025) mostra che caratteristiche del caregiver, compresa la salute mentale, influenzano significativamente la responsive caregiving.",
+      "structural_focus": "La salute mentale del caregiver non è una variabile 'contestuale' che influenza lo sviluppo: è la condizione di disponibilità affettiva del caregiver a fungere da base di co-regolazione. Un caregiver con un disturbo dell'umore non offre meno cure — spesso ne offre di più, con sforzo maggiore — ma la struttura della disponibilità affettiva è alterata in modi che incidono sulla qualità dell'attunement.",
+      "what_it_is": "Un tema che interroga la disponibilità affettiva del caregiver come condizione strutturale della co-regolazione e dell'interiorizzazione dell'altro. Non è il problema del 'genitore malato' ma la domanda su quali condizioni strutturali rendono possibile la presenza co-regolativa.",
+      "what_it_is_not": "Non è un tema di screening psichiatrico postpartum. Non è uno stigma sulla genitorialità in difficoltà. Non è riducibile a un protocollo di supporto alla genitorialità.",
+      "why_it_matters": "La salute mentale perinatale è un'area di convergenza crescente tra ricerca, policy e pratica clinica. Il tema ha una densità strutturale alta perché tocca la condizione di possibilità della co-regolazione in modo diretto. La sua lettura strutturale (condizione, non rischio) è un contributo metodologico rilevante.",
+      "source_signals": [
+        {
+          "source_type": "web_search",
+          "source_title": "Caregiver Mental Health and Early Childhood Development (World Bank Joint Data Center, 2024)",
+          "signal_summary": "La salute mentale del caregiver come determinante strutturale dello sviluppo infantile precoce nei primi 1000 giorni.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "A scoping review of responsive caregiving in diverse populations (ScienceDirect, 2025)",
+          "signal_summary": "Review sistematica: salute mentale e caratteristiche del caregiver influenzano significativamente la qualità del caregiving responsivo.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "Caregiving Relationships are a Cornerstone of Developmental Psychopathology (PMC, 2024)",
+          "signal_summary": "La qualità della relazione di caregiving come struttura fondamentale per la comprensione della psicopatologia dello sviluppo.",
+          "recency_relevance": "alta"
+        }
+      ],
+      "possible_axes_involved": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "reason": "La disponibilità affettiva del caregiver è la condizione della co-regolazione: un caregiver non disponibile non offre la presenza che sostiene la costituzione della temporalità vissuta e del campo intenzionale del bambino."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "reason": "L'interiorizzazione dell'altro come istanza richiede un altro sufficientemente disponibile e responsivo. La qualità della salute mentale del caregiver determina la struttura dell'altro che il bambino può interiorizzare."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "reason": "La salute mentale perinatale non è solo una condizione individuale: è determinata da condizioni storiche e sociali (supporto, isolamento, condizioni di lavoro, sistemi di welfare) che il mondo storico-culturale modula strutturalmente."
+        }
+      ],
+      "possible_structural_nodes": ["co-regolazione", "vulnerabilità-strutturale", "istanza-interna", "sopravvivenza-dell-oggetto"],
+      "possible_bridge_concepts": ["co-regolazione"],
+      "definition_draft": "La salute mentale perinatale del caregiver come tema strutturale designa la disponibilità affettiva del caregiver alla co-regolazione come condizione — non fattore di rischio — dello sviluppo precoce del bambino. Non è una questione di patologia individuale ma di struttura della presenza relazionale e delle sue condizioni di possibilità.",
+      "definition_risks": [
+        "Stigmatizzazione: trasformare il tema in uno screening che identifica 'genitori a rischio'",
+        "Psicologizzazione: trattare la disponibilità affettiva come problema interno del caregiver ignorando le condizioni strutturali (supporto sociale, lavoro, condizioni economiche)",
+        "Medicalizzazione: ridurre a diagnosi psichiatrica ciò che è una struttura della disponibilità relazionale influenzata da molti fattori"
+      ],
+      "exploratory_priority": "alta",
+      "pilot_suitability": "media",
+      "human_review_notes": "Tema con alta densità strutturale ma alto rischio di medicalizzazione. La formulazione come 'condizione strutturale' anziché 'fattore di rischio' è il contributo concettuale principale. Verificare il raccordo con le schede di interlocuzione sulla psicopatologia dello sviluppo e sulla pediatria per lo sviluppo."
+    },
+    {
+      "theme_label_provisional": "Avversità precoci e buffering relazionale",
+      "starting_point": "La ricerca sulle ACEs (Adverse Childhood Experiences) e sullo stress tossico mostra che l'esposizione precoce a condizioni avverse non produce effetti uniformi: la presenza di relazioni di qualità ('buffering') modifica significativamente la traiettoria di sviluppo. Il CDC ha elaborato una strategia di prevenzione (2023-2024) che integra il rafforzamento del supporto alle famiglie come meccanismo primario. La letteratura su resilienza diadica (Cicchetti, Boyce) mostra che la sensibilità biologica al contesto interagisce con la qualità delle relazioni primarie.",
+      "structural_focus": "Il tema non è 'quanto fa male l'avversità' ma 'quali condizioni relazionali trasformano il limite reale da disorganizzante a attraversabile'. Il buffering relazionale è la condizione strutturale che determina se l'incontro con il reale (Asse 4) diventa traumatico o strutturante.",
+      "what_it_is": "Un tema che interroga le condizioni relazionali che rendono l'incontro con il limite reale — avversità, perdita, discontinuità — attraversabile anziché disorganizzante. Non è la misurazione delle ACEs ma la struttura del supporto relazionale che ne determina l'impatto.",
+      "what_it_is_not": "Non è un tema sulla prevenzione dell'abuso. Non è un elenco di fattori protettivi. Non coincide con la resilienza come tratto individuale.",
+      "why_it_matters": "Forte convergenza tra ricerca (neurobiologia dello stress, developmental psychopathology), policy (CDC, OMS) e pratica clinica. Il tema connette direttamente Asse 4 (limite reale) con Asse 1 (co-regolazione come buffering) in modo strutturalmente preciso.",
+      "source_signals": [
+        {
+          "source_type": "web_search",
+          "source_title": "CDC ACEs Prevention Strategy (2023-2024)",
+          "signal_summary": "Il rafforzamento del supporto alle famiglie e delle relazioni come meccanismo primario di prevenzione dell'impatto delle avversità precoci.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "training_knowledge",
+          "source_title": "Cicchetti — developmental psychopathology; Boyce — orchidee e denti di leone; Shonkoff — toxic stress framework",
+          "signal_summary": "Base teorica consolidata: il buffering relazionale come meccanismo di modulazione dell'impatto dello stress tossico; sensibilità biologica differenziale al contesto.",
+          "recency_relevance": "media"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "UNICEF Global Report on Early Childhood Care and Education (2024)",
+          "signal_summary": "Le disuguaglianze nell'accesso a cure di qualità nei primi anni amplificano l'impatto delle avversità; la qualità delle relazioni di cura è identificata come fattore critico.",
+          "recency_relevance": "alta"
+        }
+      ],
+      "possible_axes_involved": [
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "reason": "L'avversità precoce è la forma più intensa di incontro con il limite reale nella prima infanzia. Il tema interroga le condizioni che determinano se l'eccedenza e la perdita diventano disorganizzanti o attraversabili."
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "reason": "La co-regolazione relazionale è il meccanismo principale del buffering: la presenza di un caregiver responsivo riduce la disorganizzazione dello stress tossico modificando la risposta fisiologica del bambino."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "reason": "Le condizioni di avversità (povertà, violenza, instabilità) sono storicamente e socialmente determinate. Il buffering relazionale dipende da risorse comunitarie e istituzionali che il macrosistema culturale distribuisce in modo diseguale."
+        }
+      ],
+      "possible_structural_nodes": ["limite-reale", "eccedenza", "co-regolazione", "vulnerabilità-strutturale", "rischio-educativo"],
+      "possible_bridge_concepts": ["co-regolazione", "limite-reale"],
+      "definition_draft": "Le avversità precoci e il buffering relazionale come tema strutturale designano la domanda su quali condizioni relazionali trasformano l'incontro del bambino con il limite reale — avversità, perdita, discontinuità — da esperienza disorganizzante a esperienza attraversabile. Il buffering non è una tecnica ma una struttura relazionale che modifica la qualità dell'incontro con il reale.",
+      "definition_risks": [
+        "Determinismo probabilistico: trattare le ACEs come predittori certi di esiti negativi, ignorando l'equifinalità e la multifinalità",
+        "Riduzione a fattori di rischio e protezione: trasforma il tema strutturale in una checklist clinica",
+        "Individualizzazione della resilienza: attribuire al bambino una qualità ('resiliente') anziché alla struttura relazionale che la rende possibile"
+      ],
+      "exploratory_priority": "alta",
+      "pilot_suitability": "media",
+      "human_review_notes": "Tema con alta rilevanza policy e forte base empirica. La formulazione 'buffering relazionale' è preferibile a 'fattori protettivi' perché preserva la struttura relazionale anziché l'attributo individuale. Verificare raccordo con la scheda di interlocuzione sulla psicopatologia dello sviluppo (già prodotta)."
+    },
+    {
+      "theme_label_provisional": "Ecosistema digitale e strutturazione del campo del desiderabile",
+      "starting_point": "Il nuovo policy statement AAP (2026) introduce un cambiamento concettuale rilevante: il problema non è la quantità di schermo ma la struttura dell'ecosistema digitale che 'prioritizes engagement and commercialization' e che, quando non progettato con i bisogni sviluppali in mente, modifica le condizioni dell'orientamento del desiderio. Questo va oltre la technoference (che riguarda il caregiver) e tocca la struttura del campo del desiderabile che si forma nel bambino.",
+      "structural_focus": "L'ecosistema digitale contemporaneo non è uno strumento neutro: è un dispositivo di strutturazione del campo dell'attenzione e del desiderabile. Attraverso algoritmi di engagement, ricompense variabili e feedback immediato, modella l'orizzonte di ciò che appare desiderabile, accessibile e soddisfacente — alterando la struttura del desiderio come orientamento verso il possibile.",
+      "what_it_is": "Un tema che interroga come l'ecosistema digitale contemporaneo — in particolare i dispositivi orientati all'engagement — modifichi la struttura del campo del desiderabile nella prima infanzia e nella genitorialità, non attraverso contenuti specifici ma attraverso la forma stessa dell'interazione.",
+      "what_it_is_not": "Non è un tema sul controllo dei contenuti ('parental controls'). Non è una critica morale alla tecnologia. Non coincide con la dipendenza da schermo né con il tema della technoference.",
+      "why_it_matters": "L'AAP 2026 introduce per la prima volta il concetto di 'digital ecosystem' come sistema che struttura le condizioni dell'esperienza. Questo converge con la lettura dell'Asse 6 (tecnica come forma storica) e con la deformazione strutturale del desiderio descritta nell'Asse 5.",
+      "source_signals": [
+        {
+          "source_type": "web_search",
+          "source_title": "AAP Digital Ecosystems, Children, and Adolescents: Policy Statement (Pediatrics, 2026)",
+          "signal_summary": "L'AAP introduce il modello socioecologico per l'ecosistema digitale: sistemi progettati per engagement possono spostare comportamenti sani e contribuire a esiti negativi.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "training_knowledge",
+          "source_title": "Stiegler — Prendersi cura; tecnica come condizione storica della soggettività; proletarizzazione dell'attenzione e del desiderio",
+          "signal_summary": "Fondamento teorico per leggere l'ecosistema digitale come deformazione strutturale del desiderio e non solo come rischio comportamentale.",
+          "recency_relevance": "media"
+        }
+      ],
+      "possible_axes_involved": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "reason": "L'ecosistema digitale modifica la struttura del campo del desiderabile sostituendo orientamento con reattività immediata e motivazione esterna: forma esattamente la 'patologia strutturale' del desiderio sostituito dalla motivazione descritta nell'Asse 5."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "reason": "L'ecosistema digitale è la forma storica contemporanea più pervasiva di organizzazione dell'attenzione e del tempo: tecnica come mediazione strutturale della soggettività (Stiegler), non come semplice strumento."
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "reason": "L'ecosistema digitale produce orizzonti normativi impliciti (ciò che è desiderabile, ciò che è successo, ciò che è normale) che strutturano il giudizio prima di qualsiasi riflessione critica."
+        }
+      ],
+      "possible_structural_nodes": ["campo-desiderabile", "desiderio-come-struttura", "motivazione-come-sostituto", "tecnica-come-forma-storica", "prestazionalizzazione-del-valore"],
+      "possible_bridge_concepts": ["campo-desiderabile", "mediazione-storico-culturale"],
+      "definition_draft": "L'ecosistema digitale come tema strutturale designa il modo in cui i sistemi tecnologici orientati all'engagement strutturano il campo del desiderabile del bambino (e del caregiver) non attraverso contenuti ma attraverso la forma stessa dell'interazione: ricompense variabili, feedback immediato, frammentazione dell'attenzione. Non è il contenuto digitale che deforma il desiderio ma la struttura del sistema.",
+      "definition_risks": [
+        "Riduzione a tema sulla dipendenza da schermo: perde la dimensione strutturale della deformazione del desiderio",
+        "Tecnofobia generalizzata: ignora che non tutta la tecnologia produce questa deformazione",
+        "Individualizzazione: attribuisce la deformazione al comportamento del bambino o del genitore ignorando la struttura del sistema"
+      ],
+      "exploratory_priority": "alta",
+      "pilot_suitability": "media",
+      "human_review_notes": "Tema concettualmente originale e di alta attualità. La convergenza tra Stiegler (teoria), AAP 2026 (policy) e letteratura su technoference (empirica) è significativa. Il rischio principale è la sovrapposizione con il tema della technoference: i due vanno mantenuti distinti (technoference: caregiver; ecosistema digitale: struttura del campo del bambino)."
+    },
+    {
+      "theme_label_provisional": "Disuguaglianze precoci nelle condizioni strutturali di sviluppo",
+      "starting_point": "Il rapporto OECD 2025 'Reducing Inequalities by Investing in ECEC' e il Global Report UNICEF/UNESCO 2024 mostrano che le disuguaglianze nelle prime opportunità di cura e apprendimento producono traiettorie divergenti già prima dei 3 anni. Dati ZERO TO THREE (2024): 1 bambino su 3 sotto i 3 anni vive in famiglie con difficoltà economiche negli USA. La ricerca sul language gap mostra effetti a 2 anni. Il programma Baby's First Years (2024) ha trovato che pagamenti in denaro incondicional ai genitori in povertà producono effetti sull'attività cerebrale del bambino.",
+      "structural_focus": "La povertà e l'ineguaglianza precoce non sono 'fattori ambientali di rischio': sono condizioni strutturali che modificano le possibilità stesse di co-regolazione, mediazione simbolica e costituzione del soggetto. Non è un tema sociologico aggiunto al modello ma una dimensione del modo in cui il macrosistema storico-culturale distribuisce le condizioni di possibilità dello sviluppo.",
+      "what_it_is": "Un tema che interroga come le disuguaglianze strutturali (economiche, geografiche, culturali) modifichino le condizioni di possibilità della co-regolazione, della mediazione simbolica e dell'incontro con il limite — non come sfondo ma come determinazione delle strutture stesse dello sviluppo.",
+      "what_it_is_not": "Non è un tema sulla povertà come variabile demografica di controllo. Non è una critica politica. Non è riducibile a un tema di accesso ai servizi.",
+      "why_it_matters": "Convergenza molto alta tra ricerca, policy e urgenza sociale. La lettura strutturale (le disuguaglianze come modificazione delle condizioni di possibilità, non come fattori di rischio) è il contributo metodologico del modello.",
+      "source_signals": [
+        {
+          "source_type": "web_search",
+          "source_title": "OECD Reducing Inequalities by Investing in ECEC (2025)",
+          "signal_summary": "Le disuguaglianze precoci producono traiettorie divergenti con effetti persistenti; le politiche ECCE sono il principale strumento di riduzione delle disuguaglianze di opportunità.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "UNICEF/UNESCO Global Report on ECCE — The Right to a Strong Foundation (2024)",
+          "signal_summary": "Il 60% dei bambini nei paesi a basso reddito non ha accesso a cure e apprendimento precoci di qualità.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "Baby's First Years — effetti di trasferimenti di reddito incondicional sull'attività cerebrale infantile (2024)",
+          "signal_summary": "Pagamenti mensili di 333$ a famiglie in povertà mostrano effetti sull'attività cerebrale del bambino a 12 mesi.",
+          "recency_relevance": "alta"
+        }
+      ],
+      "possible_axes_involved": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "reason": "Le condizioni di povertà modificano strutturalmente la qualità della co-regolazione attraverso gli effetti sulla salute mentale del caregiver, sulla qualità delle interazioni diadiche e sulla stabilità del contesto di vita."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "reason": "Le disuguaglianze precoci sono una delle deformazioni strutturali più pervasive prodotte dal macrosistema storico-culturale contemporaneo. Il modello bioecologico (Bronfenbrenner) descrive esattamente come il macro- e l'esosistema determinino le condizioni del microsistema."
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "reason": "La povertà strutturale produce un'esposizione precoce e sistematica all'avversità che può rendere traumatici incontri con il limite che in altri contesti sarebbero strutturanti."
+        }
+      ],
+      "possible_structural_nodes": ["co-regolazione", "vulnerabilità-strutturale", "deformazione-strutturale", "mediazione-strutturale", "limite-reale"],
+      "possible_bridge_concepts": ["mediazione-strutturale", "co-regolazione"],
+      "definition_draft": "Le disuguaglianze precoci nelle condizioni strutturali di sviluppo designano il modo in cui le condizioni economiche, geografiche e sociali distribuiscono in modo diseguale le condizioni di possibilità della co-regolazione, della mediazione simbolica e dell'incontro con il limite. Non sono fattori di rischio ma modificazioni strutturali del campo in cui lo sviluppo avviene.",
+      "definition_risks": [
+        "Sociologizzazione: trattare le disuguaglianze come spiegazione sufficiente dello sviluppo, perdendo la consistenza strutturale degli assi",
+        "Fatalismo deterministico: leggere la povertà come condanna inevitabile, ignorando la plasticità del buffering relazionale",
+        "Politically charged framing: rischio di trasformare il tema in un argomento politico anziché strutturale"
+      ],
+      "exploratory_priority": "alta",
+      "pilot_suitability": "bassa",
+      "human_review_notes": "Alta rilevanza strutturale e policy. Il potenziale come caso pilota è basso perché il tema è molto ampio e rischia di essere trattato come tema sociologico. Più utile come cornice contestuale per altri temi (technoference, avversità precoci, salute mentale del caregiver) che come tema autonomo da tradurre in micro-matrice."
+    },
+    {
+      "theme_label_provisional": "Gioco libero come incontro del bambino con il possibile",
+      "starting_point": "La ricerca sull'importanza del gioco libero (AAP 'Power of Play', 2018; letteratura NAEYC; studi recenti 2024) mostra che il gioco non strutturato è il contesto in cui il bambino sperimenta l'autoregolazione, l'iniziativa, la tolleranza alla frustrazione e l'esplorazione del possibile senza obiettivi preassegnati. I contesti educativi altamente strutturati e orientati agli obiettivi mostrano effetti leggermente negativi sulla 'playfulness'. Il confronto free play / guided play indica che modalità intermedie ottimizzano certi apprendimenti ma il gioco libero serve qualcosa di diverso.",
+      "structural_focus": "Il gioco libero non è un'attività tra le altre: è la forma in cui il bambino sperimenta il campo del possibile senza prescrizioni adulte. È il contesto in cui il desiderio come orientamento verso il possibile può esercitarsi senza essere ridotto a obiettivo o risultato. La sua scomparsa dalla vita dei bambini contemporanei non è un problema educativo ma una deformazione strutturale del campo in cui il desiderio si costituisce.",
+      "what_it_is": "Un tema che interroga il gioco libero come struttura in cui il bambino incontra il possibile non mediato da obiettivi adulti: il campo in cui il desiderio come orientamento si forma senza essere saturato dalla prestazione.",
+      "what_it_is_not": "Non è un metodo didattico ('play-based learning'). Non è l'opposto dell'apprendimento. Non è una raccomandazione sul numero di ore di gioco. Non coincide con il gioco guidato.",
+      "why_it_matters": "Il confronto tra la promozione del gioco libero nella ricerca e la progressiva scomparsa di spazi non strutturati nei contesti educativi contemporanei è uno dei nodi più visibili della deformazione strutturale del contesto di sviluppo. Il tema connette Asse 5 (desiderio) e Asse 6 (prestazionalizzazione) in modo strutturalmente preciso.",
+      "source_signals": [
+        {
+          "source_type": "web_search",
+          "source_title": "AAP The Power of Play: A Pediatric Role in Enhancing Development (Pediatrics, 2018)",
+          "signal_summary": "Posizione ufficiale AAP: il gioco libero è fondamentale per lo sviluppo socio-emotivo, cognitivo e della regolazione. I pediatri hanno un ruolo nel promuoverlo.",
+          "recency_relevance": "media"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "Free play and pedagogical play: multiple-case study (Frontiers in Education, 2024)",
+          "signal_summary": "Confronto tra approcci: i contesti altamente strutturati riducono la spontaneità e la 'playfulness' del bambino.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "The Role of Play Based Learning in Early Childhood Development (ResearchGate, 2024)",
+          "signal_summary": "Rassegna recente: il gioco libero aumenta creatività, pensiero critico, competenze socio-emotive e motorie.",
+          "recency_relevance": "alta"
+        }
+      ],
+      "possible_axes_involved": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "reason": "Il gioco libero è il contesto in cui il campo del desiderabile si esercita senza prescrizioni: il bambino esplora possibilità senza che l'adulto ne definisca il valore o l'obiettivo. È la forma incarnata della soggettivazione del desiderio come orientamento autonomo."
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "reason": "Il gioco libero include incontri non mediati con l'eccedenza e la perdita: la cosa che non funziona, il gioco che non riesce, il conflitto con un pari non risolto dall'adulto. È un contesto strutturale di incontro con il limite reale."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "reason": "La progressiva scomparsa del gioco libero dai contesti educativi contemporanei è una deformazione strutturale storica prodotta dalla prestazionalizzazione del contesto di sviluppo. Non è una scelta individuale ma una configurazione del macrosistema."
+        }
+      ],
+      "possible_structural_nodes": ["campo-desiderabile", "desiderio-come-struttura", "eccedenza", "prestazionalizzazione-del-valore", "campo-intenzionale"],
+      "possible_bridge_concepts": ["campo-desiderabile", "eccedenza"],
+      "definition_draft": "Il gioco libero come tema strutturale designa il contesto in cui il bambino incontra il campo del possibile senza obiettivi preassegnati, sperimenta il limite senza mediazione adulta sistematica e esercita il desiderio come orientamento autonomo. Non è una metodologia didattica ma una struttura dell'esperienza irriducibile al gioco guidato.",
+      "definition_risks": [
+        "Riduzione a metodologia didattica: il 'play-based learning' non è il gioco libero — trasforma il gioco in strumento di apprendimento con obiettivi",
+        "Romanticizzazione: trattare il gioco libero come condizione naturale del bambino, ignorando che richiede condizioni strutturali (spazio, tempo, sicurezza) non sempre disponibili",
+        "Opposizione falsa: 'gioco libero vs. apprendimento strutturato' è una contrapposizione fuorviante che perde la specificità strutturale di ciascun contesto"
+      ],
+      "exploratory_priority": "alta",
+      "pilot_suitability": "alta",
+      "human_review_notes": "Tema strutturalmente ricco e ad alta leggibilità per professionisti ed educatori. Il potenziale come caso pilota è alto perché è concretamente osservabile e permette di confrontare ambienti con diverse strutture di possibilità. Rischio principale: essere trattato come tema di 'educazione al gioco' anziché di struttura del campo del desiderabile."
+    },
+    {
+      "theme_label_provisional": "Frammentazione dei sistemi di cura e continuità relazionale",
+      "starting_point": "La letteratura sui sistemi integrati di early childhood mostra che la frammentazione tra servizi sanitari, educativi e sociali produce una discontinuità strutturale nell'esperienza del bambino e della famiglia che supera la somma delle carenze di ciascun servizio. Il report PolicyLab di CHOP ('Breaking Down Silos', 2024) e le iniziative HHS/HRSA negli USA mostrano che la mancanza di coordinamento è identificata come uno dei principali ostacoli all'efficacia degli interventi precoci.",
+      "structural_focus": "La frammentazione dei sistemi non è un problema logistico: è una configurazione istituzionale che produce discontinuità nella relazione tra il bambino/famiglia e l'adulto significativo di riferimento, e che rende impossibile la responsabilità condivisa descritta nell'Asse 3. Il tema interroga come le istituzioni possano o non possano sostenere la continuità relazionale come struttura.",
+      "what_it_is": "Un tema che interroga come la struttura dei sistemi di cura (sanitari, educativi, sociali) supporti o ostacoli la continuità della relazione significativa come condizione dello sviluppo. Non è un tema di efficienza organizzativa ma di struttura istituzionale della responsabilità.",
+      "what_it_is_not": "Non è un tema di organizzazione dei servizi. Non è una critica all'inefficienza burocratica. Non si riduce a un problema di comunicazione tra professionisti.",
+      "why_it_matters": "La convergenza tra ricerca sul mesosistema (Bronfenbrenner), policy su sistemi integrati e evidenza empirica sull'efficacia della continuità è solida. Il tema ha alta rilevanza per il progetto Sviluppo Bambino come framework per la progettazione di servizi.",
+      "source_signals": [
+        {
+          "source_type": "web_search",
+          "source_title": "Breaking Down Silos: Developing Effective Coordination of ECD Resources (PolicyLab/CHOP, 2024)",
+          "signal_summary": "La mancanza di coordinamento tra servizi è identificata come ostacolo strutturale all'efficacia degli interventi precoci.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "web_search",
+          "source_title": "HRSA Early Childhood Systems Technical Assistance and Coordination Center (ECS-TACC, 2024)",
+          "signal_summary": "Iniziativa federale per sistemi prenatal-to-three integrati, accessibili e centrati sulla famiglia.",
+          "recency_relevance": "alta"
+        },
+        {
+          "source_type": "training_knowledge",
+          "source_title": "Bronfenbrenner — mesosistema come leva strutturale; Shonkoff — pediatra come nodo di rete",
+          "signal_summary": "Base teorica: la qualità delle connessioni tra microsistemi è un determinante dello sviluppo indipendente dalla qualità di ciascun microsistema isolato.",
+          "recency_relevance": "media"
+        }
+      ],
+      "possible_axes_involved": [
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "reason": "La responsabilità condivisa tra sistemi di cura è una forma istituzionale della normatività: chi si assume la responsabilità del bambino quando nessuna istituzione lo fa interamente? Il tema interroga la struttura istituzionale dell'autorità educativa."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "reason": "Le istituzioni come dispositivi di esperienza (Asse 6) non solo sostengono ma possono anche frammentare la continuità relazionale. La configurazione attuale dei sistemi di welfare è una forma storica specifica di organizzazione dell'esperienza del bambino."
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "reason": "La continuità relazionale come condizione della co-regolazione richiede che le figure di riferimento del bambino si coordinino: la frammentazione istituzionale interrompe strutturalmente questa continuità."
+        }
+      ],
+      "possible_structural_nodes": ["istituzione-come-dispositivo", "mediazione-strutturale", "co-regolazione", "responsabilità-come-imputazione"],
+      "possible_bridge_concepts": ["mediazione-strutturale", "istituzione-come-dispositivo"],
+      "definition_draft": "La frammentazione dei sistemi di cura come tema strutturale designa la configurazione istituzionale in cui la discontinuità tra servizi sanitari, educativi e sociali produce interruzioni nella continuità relazionale del bambino con adulti significativi e nella responsabilità condivisa dei professionisti. Non è un problema logistico ma una struttura istituzionale che ha effetti sulle condizioni fondative dello sviluppo.",
+      "definition_risks": [
+        "Operativizzazione immediata come protocollo di coordinamento: trasforma il tema strutturale in una lista di procedure",
+        "Riduzione alla comunicazione tra professionisti: perde la dimensione strutturale della continuità relazionale come condizione dello sviluppo",
+        "Policy-capture: il tema rischia di essere colonizzato da agende politiche specifiche sui sistemi di welfare"
+      ],
+      "exploratory_priority": "media",
+      "pilot_suitability": "bassa",
+      "human_review_notes": "Tema rilevante per il progetto come framework per la progettazione dei servizi, ma difficile da tradurre in micro-matrice senza un contesto applicativo specifico. Potenziale alto come cornice per interventi sul mesosistema, ma basso come caso pilota autonomo. Verificare raccordo con la scheda di interlocuzione sulla Psicologia di Comunità e sull'Ecologia dello Sviluppo."
+    }
+  ],
+  "global_notes": {
+    "overall_assessment": "La ricognizione ha prodotto 10 temi con densità strutturale alta o media. I temi con priorità alta e pilot_suitability alta (technoference, lettura dialogica, funzione riflessiva genitoriale, gioco libero) sono i candidati più forti per una prima micro-matrice. I temi 'avversità precoci' e 'salute mentale perinatale' sono strutturalmente ricchi ma ad alto rischio di medicalizzazione nella traduzione; richiedono una formulazione particolarmente attenta. Il tema 'ecosistema digitale' è concettualmente originale ma richiede un lavoro di disambiguazione rispetto alla technoference. Il tema 'disuguaglianze precoci' e 'frammentazione dei sistemi' sono più utili come cornici contestuali per altri temi che come casi pilota autonomi.",
+    "needs_human_review": true,
+    "open_issues": [
+      "TEMI ESCLUSI: Routine e rituali familiari — escluso perché parzialmente sovrapposto al tema 'co-regolazione del ritmo biologico' e al tema 'lettura dialogica condivisa'; rischio di riduzione a prescrizione gestionale senza densità strutturale aggiuntiva.",
+      "TEMI ESCLUSI: Coinvolgimento paterno precoce — escluso perché il segnale empirico è forte ma il tema rischia di essere trattato come mono-attore (il padre) senza aprire domande strutturali sufficientemente distinte da quelle già coperte dal tema 'salute mentale perinatale del caregiver'. Da riconsiderare se il contesto applicativo lo richiede.",
+      "TEMI ESCLUSI: Multilinguismo precoce — escluso perché la densità strutturale rispetto al modello degli assi è limitata; il tema è prevalentemente linguistico-cognitivo e non apre domande fondative distinte. Potrebbe essere un sotto-tema del tema 'mediazione simbolica'.",
+      "SOVRAPPOSIZIONE DA RISOLVERE: I temi 'technoference' (tema 1) ed 'ecosistema digitale' (tema 7) si sovrappongono parzialmente. La distinzione proposta è: technoference = modifica della qualità della presenza del caregiver; ecosistema digitale = strutturazione del campo del desiderabile del bambino. Da verificare se questa distinzione regge nella micro-matrice.",
+      "CONNESSIONE DA ESPLICITARE: Tutti i temi forti convergono sull'Asse 1 (co-regolazione) come asse centrale. Questo non indica mancanza di varietà ma conferma che la co-regolazione è il nodo strutturale più esposto alle trasformazioni del contesto contemporaneo. Da segnalare nella micro-matrice.",
+      "FONTE MANCANTE: Non è stato possibile consultare direttamente il sito OMS/WHO per i report più recenti sulla salute mentale perinatale e sugli early childhood development indicators 2024-2025. Il tema 5 si basa su fonti secondarie e training_knowledge. Verificare con fonti primarie WHO prima della micro-matrice."
+    ]
+  }
+}

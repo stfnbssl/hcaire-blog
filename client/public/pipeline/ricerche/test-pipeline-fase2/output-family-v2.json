@@ -1,0 +1,96 @@
+{
+  "step": "step_5",
+  "results": [
+    {
+      "theme_id": "tema_07_ecosistema_digitale",
+      "output_families": [
+        {
+          "domain": "educativo (servizi per la prima infanzia, 0–6)",
+          "output_type": "lettura configurazionale della qualità del campo desiderabile in contesti educativi 0–6 mediati dall'ecosistema digitale",
+          "description": "Apre nei servizi 0–6 una lettura della propria organizzazione (ritmi della giornata, criteri impliciti di valore delle attività, qualità della mediazione adulta, aspettative sulla restituzione visibile del lavoro educativo) come campo già co-organizzato dalla grammatica della prestazionalizzazione del valore — anche in assenza di esposizione diretta dei bambini ai dispositivi. Rende interrogabile come l'orizzonte di ciò che appare desiderabile per il bambino sia mediato strutturalmente prima di qualsiasi uso consapevole della tecnica, e non solo dall'esposizione diretta agli schermi.",
+          "structural_basis": {
+            "axes": ["asse_5", "asse_6"],
+            "nodes": [
+              "campo-desiderabile",
+              "mediazione-strutturale",
+              "prestazionalizzazione-del-valore",
+              "motivazione-come-sostituto"
+            ],
+            "node_interpretation": "nel dominio educativo 0–6: il campo desiderabile è letto come orizzonte già co-mediato dalla grammatica della misurabilità del valore, che entra nel servizio attraverso la qualità della mediazione adulta e l'organizzazione delle attività, indipendentemente dall'esposizione diretta dei bambini a dispositivi digitali.",
+            "tensions": [
+              "orientamento pre-riflessivo vs. organizzazione algoritmica del campo",
+              "prestazionalizzazione del valore vs. eccedenza del desiderabile"
+            ]
+          },
+          "value_added": "Sposta il livello di interrogazione del servizio dalla gestione dell'esposizione (tempo-schermo, contenuti adatti, regole sull'uso) alla qualità strutturale del campo desiderabile in cui il bambino è immerso. Rende pensabile che la deformazione del desiderio possa operare anche dove non ci sono dispositivi, attraverso la grammatica del valore che organizza il servizio stesso. Rende inoltre distinguibile, all'interno della pratica educativa, ciò che sostiene l'orientamento del desiderio da ciò che produce motivazione efficace ma priva di direzione interna.",
+          "reduction_risk": "Trasformazione della lettura in checklist di 'buone pratiche digitali per la prima infanzia' o in protocolli di tempo-schermo per fasce d'età. La deriva tipica è ridurre la questione strutturale (qualità del campo desiderabile) a questione di esposizione (quantità o tipologia di stimoli digitali), perdendo il livello pre-riflessivo che il tema interroga e riassorbendo la lettura nella stessa grammatica della prestazionalizzazione che la rende necessaria."
+        },
+        {
+          "domain": "formazione dei professionisti dei servizi e clinico-evolutivo",
+          "output_type": "interrogazione strutturale sulla leggibilità della differenza tra desiderio come orientamento e motivazione come sostituto in setting di osservazione e formazione",
+          "description": "Apre negli strumenti di lettura del professionista (educatore, psicologo dell'evolutivo, formatore) la domanda strutturale di come si riconosca, dentro un funzionamento adattivo apparentemente riuscito, la differenza tra un soggetto orientato (desiderio come struttura di orientamento) e un soggetto motivato (azione efficace sostenuta da feedback esterno, senza orientamento interno). Interroga gli strumenti osservativi e formativi del professionista — non le sue tecniche di intervento — perché la deformazione del desiderio operata dall'ecosistema digitale non si presenta come sintomo ma come performance.",
+          "structural_basis": {
+            "axes": ["asse_5"],
+            "nodes": [
+              "desiderio-come-struttura",
+              "campo-desiderabile",
+              "motivazione-come-sostituto"
+            ],
+            "node_interpretation": "nel dominio della formazione e della lettura clinico-evolutiva: la motivazione come sostituto del desiderio non si manifesta come sintomo deficitario ma come funzionamento adattivo (cooperazione, risposta agli stimoli, continuità del comportamento), e proprio per questo richiede strumenti di lettura strutturali e non comportamentali.",
+            "tensions": [
+              "desiderio come struttura vs. motivazione come sostituto"
+            ]
+          },
+          "value_added": "Sposta lo sguardo del professionista dagli indicatori comportamentali immediati (attenzione, partecipazione, continuità dell'azione, apparente scelta) verso la qualità strutturale dell'orientamento del soggetto. Rende pensabile che ciò che si presenta come bambino 'collaborativo', 'reattivo', 'adattato' possa essere strutturalmente svuotato di orientamento — e che questa condizione non sia leggibile per via sintomatica. Apre nella formazione una consapevolezza degli strumenti di lettura come parte della grammatica storica che il tema interroga.",
+          "reduction_risk": "Trasformazione dell'interrogazione strutturale in scala diagnostica della 'qualità del desiderio' o in indicatori osservativi misurabili della 'differenza tra desiderio e motivazione'. Questa è precisamente la deriva interna alla grammatica della prestazionalizzazione che il tema interroga: produrre una metrica della distanza dalla metrica. Anche la trasformazione in tipologia clinica ('bambini iper-motivati', 'bambini con desiderio ritratto') è una forma di scivolamento, perché individualizza un esito sistemico."
+        },
+        {
+          "domain": "politiche per l'infanzia e regolazione del digitale",
+          "output_type": "analisi della struttura della mediazione tecnica del campo desiderabile come configurazione storica, e non come strumento di cui regolare uso ed esposizione",
+          "description": "Rende disponibile al livello delle politiche pubbliche un linguaggio strutturale per nominare la dimensione della mediazione tecnica che opera prima della scelta consapevole — al di là della regolazione di tempi, contenuti, soglie d'età e impatto misurabile. Apre l'interrogazione su come riconoscere politicamente una deformazione che non è prodotta da contenuti specifici né da uso eccessivo, ma dalla grammatica storica del valore (prestazionalizzazione) che organizza il campo del desiderabile prima di qualsiasi uso.",
+          "structural_basis": {
+            "axes": ["asse_6"],
+            "nodes": [
+              "tecnica-come-forma-storica",
+              "prestazionalizzazione-del-valore",
+              "mediazione-strutturale"
+            ],
+            "node_interpretation": "nel dominio delle politiche: il dispositivo digitale è letto come configurazione storica dell'esperienza (mediazione strutturale), non come strumento di cui ottimizzare l'uso o misurare l'impatto. La grammatica della prestazionalizzazione è riconosciuta come specifica forma storica del valore, non come forma neutra del valore tout court.",
+            "tensions": [
+              "mediazione strutturale vs. apparenza di neutralità tecnica",
+              "prestazionalizzazione del valore vs. eccedenza del desiderabile"
+            ]
+          },
+          "value_added": "Sposta il livello dell'intervento politico dalla regolazione (uso, esposizione, contenuti, target) al riconoscimento della grammatica storica del valore che organizza il campo del desiderabile. Rende visibile che ogni politica costruita su misurazione, target e valutazione di impatto opera dentro la stessa grammatica che il tema interroga, e dunque tende strutturalmente a riprodurla anche quando si propone di contrastarla. Apre la possibilità di pensare politicamente una mediazione strutturale senza ricadere in moralismo culturale o in tecnofobia.",
+          "reduction_risk": "Riduzione dell'analisi a produzione di linee guida sull'esposizione digitale, raccomandazioni per fasce d'età, soglie di tempo-schermo, classificazione di contenuti adatti. Tutte queste forme operano dentro la grammatica della misurabilità del valore: producono interventi che misurano, valutano e rendicontano la deformazione che il tema descrive come strutturalmente eccedente la misura. Una seconda forma di scivolamento è la riduzione moralizzante (politiche di tutela dal digitale), che inverte il segno mantenendo intatta la grammatica."
+        },
+        {
+          "domain": "inter-dominio: educativo e formazione dei professionisti (qualità della mediazione adulta)",
+          "output_type": "lettura configurazionale della qualità della mediazione adulta come sostegno al riconoscimento del campo desiderabile come piano distinto dall'organizzazione algoritmica",
+          "description": "Sviluppa il concetto-ponte 'Mediazione tecnica del campo desiderabile' come lettura che attraversa setting educativi e dispositivi formativi: rende interrogabile la qualità della presenza del caregiver, dell'educatore e del professionista non come tecnica relazionale né come modello protettivo, ma come capacità di sostenere lo strato pre-riflessivo dell'esperienza in un campo già co-organizzato algoritmicamente. La mediazione adulta non opera in opposizione al dispositivo: opera sullo stesso livello pre-riflessivo, ed è proprio questa coabitazione di livello che il ponte rende leggibile.",
+          "structural_basis": {
+            "axes": ["asse_5", "asse_6"],
+            "nodes": [
+              "campo-desiderabile",
+              "tecnica-come-forma-storica",
+              "motivazione-come-sostituto",
+              "mediazione-strutturale"
+            ],
+            "node_interpretation": "il bridge concept 'Mediazione tecnica del campo desiderabile' attiva, attraverso setting educativo e formazione, l'interrogazione su quale qualità della mediazione adulta possa fare differenza in un campo desiderabile già co-organizzato algoritmicamente — senza assumere l'adulto come antidoto al dispositivo, ma riconoscendolo come operatore sullo stesso livello pre-riflessivo.",
+            "tensions": [
+              "orientamento pre-riflessivo vs. organizzazione algoritmica del campo",
+              "mediazione strutturale vs. apparenza di neutralità tecnica"
+            ]
+          },
+          "value_added": "Rende pensabile la qualità della mediazione adulta come piano strutturale (non come scelta morale né come tecnica relazionale): l'adulto opera nello stesso strato dell'esperienza in cui opera l'organizzazione algoritmica, e questo coabitare è leggibile solo a partire dalla configurazione bi-assiale. Apre uno sguardo che attraversa il setting educativo e la formazione del professionista senza ridurli l'uno all'altro: in entrambi è in gioco la possibilità che la mediazione adulta sostenga il riconoscimento del campo desiderabile come piano distinto, senza che questo riconoscimento sia esso stesso una performance.",
+          "reduction_risk": "Ricaduta nell'idealizzazione della mediazione adulta come 'antidoto' al digitale, o nella sua tecnicizzazione (modelli di 'come mediare bene', protocolli di presenza adulta, indicatori di qualità della relazione). In entrambi i casi la mediazione adulta viene riassorbita dentro la stessa grammatica della prestazionalizzazione del valore che il tema interroga: la presenza adulta diventa misurabile, e la sua misurabilità ne dissolve la funzione strutturale. Una variante della stessa deriva è la moralizzazione della responsabilità del caregiver, che individualizza un livello che è strutturalmente sistemico."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "La famiglia di output rispecchia la configurazione bi-assiale co-dominante validata in STEP 3 e articolata in STEP 4: ogni famiglia attiva almeno una tensione strutturale e collega esplicitamente assi e nodi confermati, senza riformulazioni o derivazioni. Le famiglie 1, 2 e 3 corrispondono uno-a-uno ai domini di translation_potential; la famiglia 4 (inter-dominio) sviluppa esplicitamente il concetto-ponte 'Mediazione tecnica del campo desiderabile' senza introdurre assi o nodi non confermati e senza duplicare le funzioni delle prime tre. Nessuna famiglia scivola nel prescrittivo: tutte mantengono la forma di lettura/interrogazione/analisi richiesta dallo step. La distribuzione delle tensioni copre tre delle quattro tensioni di STEP 4; la tensione 'desiderio come struttura vs. motivazione come sostituto' è caricata interamente sulla famiglia 2, coerentemente con la sua specificità clinico-formativa.",
+        "limitations": "Tre limitazioni strutturali. (1) Le critical_notes di STEP 3 su Asse 1 (degradato a secondario) e Asse 4 (escluso) non producono famiglie di output: la dimensione attentivo-temporale e quella del limite reale come saturazione/non-incontro col 'non è possibile' non sono attivabili senza recuperare gli assi rifiutati, e dunque restano non tradotte. (2) La differenziazione per fasce d'età (0–3 vs 3–6) non è articolata: la famiglia educativa lavora sull'intero perimetro 0–6, mentre lo stesso STEP 2 segnalava prudenza specifica per la fascia 0–3. (3) Il rapporto con il tema 'technoference' (qualità della presenza del caregiver come tema autonomo) lambisce la famiglia 4 senza essere risolto: la micro-matrice ha esplicitamente rimandato la distinzione, e la famiglia inter-dominio mantiene questa indeterminatezza.",
+        "next_step_orientation": "Le famiglie 1 (educativo 0–6) e 3 (politiche per l'infanzia) sono le più mature per lo sviluppo di strumenti operativi in Fase 3: poggiano su domini con prassi consolidate, attivano tensioni nettamente leggibili, e hanno reduction_risk già nominati con precisione che orientano la costruzione degli strumenti. La famiglia 2 (clinico-formativo) richiede ulteriore elaborazione preventiva: la tensione desiderio/motivazione opera proprio sotto la soglia dell'osservabilità, e il rischio di trasformazione in scala diagnostica è alto — qualsiasi strumento operativo dovrà includere un dispositivo metodologico esplicito di vigilanza contro la riassunzione nella grammatica della prestazione. La famiglia 4 (inter-dominio) è la più speculativa e funge da orientamento trasversale: il salto verso strumenti operativi richiede il preventivo consolidamento delle famiglie 1 e 2, da cui può ricevere ancoraggio empirico."
+      }
+    }
+  ]
+}

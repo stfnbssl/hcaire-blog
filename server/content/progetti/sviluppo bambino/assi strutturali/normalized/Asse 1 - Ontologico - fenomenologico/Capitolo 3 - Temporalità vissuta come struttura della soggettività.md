@@ -31,7 +31,7 @@ Questo significa che:
 * non lo subisce come una forza esterna,  
 * non lo organizza dall’alto come un principio sovrano.
 
-Il soggetto è ciò che si tiene insieme nel passare del tempo, senza mai coincidere pienamente con se stesso. La sua unità non è sostanziale, ma dinamica; non è data, ma continuamente rinnovata.
+Il **soggetto è ciò che si tiene insieme nel passare del tempo**, senza mai coincidere pienamente con se stesso. La sua unità non è sostanziale, ma dinamica; non è data, ma continuamente rinnovata.
 
 Applicata allo sviluppo infantile, questa concezione impedisce di pensare il bambino come un soggetto “ancora incompleto” in attesa di una forma definitiva. Il bambino è già soggetto, ma lo è **in una modalità temporale specifica**, caratterizzata da apertura, dipendenza e trasformazione continua.
 
@@ -72,7 +72,7 @@ La regolazione corporea e relazionale costituisce la prima forma di organizzazio
 * il disagio può trasformarsi,  
 * l’esperienza non collassa al primo scarto.
 
-In questo senso, la regolazione è una forma di temporalizzazione incarnata: non elimina l’incertezza, ma la rende sostenibile nel tempo.
+In questo senso, **la regolazione è una forma di temporalizzazione incarnata**: non elimina l’incertezza, ma la rende sostenibile nel tempo.
 
 ## 6. Identità, memoria e vulnerabilità nella soggettività temporale
 
@@ -82,7 +82,7 @@ In primo luogo, l’identità non è fondata su una sostanza immutabile, ma su u
 
 In secondo luogo, la memoria opera prima della narrazione e della rappresentazione simbolica. Il passato è presente nell’esperienza come orientamento implicito, non come contenuto ricordato.
 
-Infine, la vulnerabilità non è un accidente da superare, ma una dimensione costitutiva della soggettività temporale. Essere temporali significa essere esposti alla discontinuità, alla perdita e alla trasformazione. È proprio questa esposizione a rendere possibile lo sviluppo.
+Infine, la vulnerabilità non è un accidente da superare, ma una dimensione costitutiva della soggettività temporale. **Essere temporali significa essere esposti alla discontinuità, alla perdita e alla trasformazione**. È proprio questa esposizione a rendere possibile lo sviluppo.
 
 ## 7. Chiusura: la funzione della temporalità nell’Asse 1
 

@@ -39,13 +39,26 @@ import SviluppoBambinoFinalitaLanding         from './pages/sviluppo-bambino/Svi
 import SviluppoBambinoInterlocuzioniLanding    from './pages/sviluppo-bambino/SviluppoBambinoInterlocuzioniLanding';
 import SviluppoBambinoInterlocuzioniDisciplineIndex from './pages/sviluppo-bambino/SviluppoBambinoInterlocuzioniDisciplineIndex';
 import SviluppoBambinoInterlocuzioniDisciplinaPage  from './pages/sviluppo-bambino/SviluppoBambinoInterlocuzioniDisciplinaPage';
+import SviluppoBambinoProduzioniLanding  from './pages/sviluppo-bambino/SviluppoBambinoProduzioniLanding';
+import SviluppoBambinoProduzioniTemiPage from './pages/sviluppo-bambino/SviluppoBambinoProduzioniTemiPage';
+import SviluppoBambinoPipelineMap            from './pages/sviluppo-bambino/SviluppoBambinoPipelineMap';
+import SviluppoBambinoPipelineDeviceOverview from './pages/sviluppo-bambino/SviluppoBambinoPipelineDeviceOverview';
+import SviluppoBambinoPipelineDeviceViewer   from './pages/sviluppo-bambino/SviluppoBambinoPipelineDeviceViewer';
+import SviluppoBambinoPipelineStressTest     from './pages/sviluppo-bambino/SviluppoBambinoPipelineStressTest';
+import SviluppoBambinoPipelineRicercaOverview from './pages/sviluppo-bambino/SviluppoBambinoPipelineRicercaOverview';
+import SviluppoBambinoPipelineNuovaRicerca from './pages/sviluppo-bambino/SviluppoBambinoPipelineNuovaRicerca';
 
 const KnowledgeBase   = lazy(() => import('./pages/bartleby/KnowledgeBase'));
 const AdminSiteConfig = lazy(() => import('./pages/AdminSiteConfig'));
+const LettureLanding  = lazy(() => import('./pages/letture/LettureLanding'));
+const LetturaDetail   = lazy(() => import('./pages/letture/LetturaDetail'));
 
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
 const WorkflowLog    = lazy(() => import('./pages/WorkflowLog'));
 const AdminRequests  = lazy(() => import('./pages/AdminRequests'));
+const AdminLetture        = lazy(() => import('./pages/AdminLetture'));
+const AdminLetturaNuova   = lazy(() => import('./pages/AdminLetturaNuova'));
+const AdminLetturaDetail  = lazy(() => import('./pages/AdminLetturaDetail'));
 
 const clerkPublishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string;
 
@@ -115,6 +128,9 @@ function AppLayout() {
           <Route path="/hcaire/protocolli/:slug"                   element={<HcaireProtocolPage />} />
           <Route path="/hcaire/:section"                           element={<HcairePage />} />
           {/* Sviluppo bambino */}
+          {/* Letture (sezione pubblica) */}
+          <Route path="/letture"          element={<AdminSuspense><LettureLanding /></AdminSuspense>} />
+          <Route path="/letture/:slug"    element={<AdminSuspense><LetturaDetail /></AdminSuspense>} />
           <Route path="/sviluppo-bambino"                                        element={<SviluppoBambinoLanding />} />
           <Route path="/sviluppo-bambino/finalita"                              element={<SviluppoBambinoFinalitaLanding />} />
           <Route path="/sviluppo-bambino/metodo"                                element={<SviluppoBambinoMetodoLanding />} />
@@ -129,6 +145,14 @@ function AppLayout() {
           <Route path="/sviluppo-bambino/interlocuzioni"                                           element={<SviluppoBambinoInterlocuzioniLanding />} />
           <Route path="/sviluppo-bambino/interlocuzioni/discipline"                               element={<SviluppoBambinoInterlocuzioniDisciplineIndex />} />
           <Route path="/sviluppo-bambino/interlocuzioni/discipline/:disciplinaSlug"               element={<SviluppoBambinoInterlocuzioniDisciplinaPage />} />
+          <Route path="/sviluppo-bambino/produzioni"                             element={<SviluppoBambinoProduzioniLanding />} />
+          <Route path="/sviluppo-bambino/produzioni/temi"                       element={<SviluppoBambinoProduzioniTemiPage />} />
+          <Route path="/sviluppo-bambino/produzioni/pipeline"                                  element={<SviluppoBambinoPipelineMap />} />
+          <Route path="/sviluppo-bambino/produzioni/pipeline/nuova-ricerca"                    element={<SviluppoBambinoPipelineNuovaRicerca />} />
+          <Route path="/sviluppo-bambino/produzioni/pipeline/ricerche/:ricercaId"              element={<SviluppoBambinoPipelineRicercaOverview />} />
+          <Route path="/sviluppo-bambino/produzioni/pipeline/temi/:temaId"                     element={<SviluppoBambinoPipelineDeviceOverview />} />
+          <Route path="/sviluppo-bambino/produzioni/pipeline/temi/:temaId/dispositivo"         element={<SviluppoBambinoPipelineDeviceViewer />} />
+          <Route path="/sviluppo-bambino/produzioni/pipeline/temi/:temaId/stress-test"         element={<SviluppoBambinoPipelineStressTest />} />
           <Route path="/sviluppo-bambino/modello"                               element={<SviluppoBambinoModello />} />
           <Route path="/sviluppo-bambino/modello/:asseSlug"                     element={<SviluppoBambinoAsseOverview />} />
           <Route path="/sviluppo-bambino/assi"                                  element={<SviluppoBambinoAssiLanding />} />
@@ -138,6 +162,9 @@ function AppLayout() {
           <Route path="/admin"           element={<AdminRoute><AdminDashboard /></AdminRoute>} />
           <Route path="/admin/workflow"  element={<AdminRoute><WorkflowLog /></AdminRoute>} />
           <Route path="/admin/requests"    element={<AdminRoute><AdminRequests /></AdminRoute>} />
+          <Route path="/admin/letture"          element={<AdminRoute><AdminLetture /></AdminRoute>} />
+          <Route path="/admin/letture/nuova"    element={<AdminRoute><AdminLetturaNuova /></AdminRoute>} />
+          <Route path="/admin/letture/:slug"    element={<AdminRoute><AdminLetturaDetail /></AdminRoute>} />
           <Route path="/admin/site-config" element={<AdminRoute><AdminSiteConfig /></AdminRoute>} />
           <Route path="*"               element={<NotFound />} />
         </Routes>

@@ -71,16 +71,16 @@ export default function SviluppoBambinoInterlocuzioniLanding() {
             Le <span className="text-indigo-300">interlocuzioni</span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-200 max-w-2xl leading-relaxed mb-4">
-            Undici discipline in dialogo con il progetto. Nessuna lo fonda: tutte contribuiscono.
+            Discipline in dialogo con il progetto. Nessuna lo fonda: tutte contribuiscono.
           </p>
           <p className="text-base text-slate-400 max-w-xl leading-relaxed mb-10">
-            La ricerca sullo sviluppo sa moltissimo. Il progetto costruisce il livello in cui quel sapere diventa usabile insieme.
+            La ricerca sullo sviluppo sa moltissimo. Il progetto costruisce il livello in cui quel sapere diventa fruibile insieme.
           </p>
           <Link
             to="/sviluppo-bambino/interlocuzioni/discipline"
             className="inline-block text-sm font-medium bg-white/10 hover:bg-white/20 text-white border border-white/20 px-5 py-2.5 rounded-md transition-colors"
           >
-            Vai alle undici discipline →
+            Vai alle discipline →
           </Link>
         </div>
       </div>
@@ -184,7 +184,7 @@ export default function SviluppoBambinoInterlocuzioniLanding() {
                 Nessuna disciplina risponde alle domande normative
               </h3>
               <p className="text-base text-gray-600 leading-relaxed">
-                Tutte le undici discipline concordano su un punto: nessuna di esse può dire cosa vale, cosa è bene, come si orienta il bambino verso il bene. Tutte descrivono come lo sviluppo avviene, quali condizioni lo favoriscono, quali traiettorie porta — ma nessuna risponde alla domanda su cosa vale. Questa assenza non è un difetto delle discipline: è una caratteristica strutturale delle scienze descrittive. Il progetto occupa questo spazio con gli strumenti dell'Asse 3.
+                Tutte le discipline concordano su un punto: nessuna di esse può dire cosa vale, cosa è bene, come si orienta il bambino verso il bene. Tutte descrivono come lo sviluppo avviene, quali condizioni lo favoriscono, quali traiettorie porta — ma nessuna risponde alla domanda su cosa vale. Questa assenza non è un difetto delle discipline: è una caratteristica strutturale delle scienze descrittive. Il progetto occupa questo spazio con gli strumenti dell'Asse 3.
               </p>
             </div>
 
@@ -209,7 +209,7 @@ export default function SviluppoBambinoInterlocuzioniLanding() {
               to="/sviluppo-bambino/interlocuzioni/discipline"
               className="inline-block text-sm font-medium bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md transition-colors"
             >
-              Esplora le undici discipline →
+              Esplora le discipline →
             </Link>
           </div>
         </div>

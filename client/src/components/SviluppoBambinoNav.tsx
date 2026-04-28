@@ -5,6 +5,7 @@ const NAV_LINKS = [
   { to: '/sviluppo-bambino/metodo',         label: 'Metodo' },
   { to: '/sviluppo-bambino/assi',           label: 'Assi strutturali' },
   { to: '/sviluppo-bambino/interlocuzioni', label: 'Interlocuzioni' },
+  { to: '/sviluppo-bambino/produzioni',     label: 'Produzioni' },
 ];
 
 export default function SviluppoBambinoNav() {

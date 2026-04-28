@@ -1,0 +1,193 @@
+{
+  "step": "f3_step_5",
+  "theme_id": "tema_01_pointing_precoce",
+  "domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+  "source_output_id": "indistinguibility-test-clinico-v2",
+
+  "case_audits": [
+    {
+      "case_id": "caso_A",
+      "checks": {
+
+        "completeness": {
+          "result": "completo",
+          "notes": "Tutti i campi obbligatori presenti: observed_configuration (5 nodi), proxy_analysis con tutti gli otto sotto-campi, device_discrimination, failure_risk."
+        },
+
+        "triangulation": {
+          "result": "reale",
+          "notes": "proxies_present: tre proxy espliciti e distinti. proxies_direction: non tautologica — argomenta con il concetto di emergenza ('il significato non esiste prima della risposta ma emerge nell'atto della risposta partecipativa') invece di ripetere la classificazione. counter_indicator: reale — la somiglianza della sequenza con uno script classico sfida genuinamente la classificazione 'aperto'. counter_indicator_rebuttal: risponde al contro-indicatore argomentando dalla qualità differenziale della vocalizzazione finale, non lo aggira."
+        },
+
+        "proxy_validity": {
+          "result": "parzialmente_validi",
+          "notes": "Proxy 3 ('Spazio di attesa') è direttamente ancorato alla case_description. Proxy 2 ('Registrazione come partecipazione') è ancorato alla observed_configuration, non alla case_description: la case_description dice solo 'il bambino emette una vocalizzazione breve' senza qualità intonativa — la qualità ascendente-interrogativa è introdotta nella observed_configuration come lettura strutturale, non come dato fenomenico. Proxy 1 ('Indeterminazione dell'esito') formula parzialmente uno stato epistemico del bambino ('il bambino non sa cosa la madre dirà').",
+          "evidence_anchors": [
+            {
+              "proxy_name": "Indeterminazione dell'esito",
+              "evidence_element": "la trottola è descritta come non ancora usata durante la sessione ('che durante la sessione non è stata ancora usata') — suggerisce assenza di script consolidato in questo contesto",
+              "anchor_source": "case_description"
+            },
+            {
+              "proxy_name": "Registrazione come partecipazione — qualità ascendente-interrogativa della vocalizzazione",
+              "evidence_element": "la case_description dice solo 'il bambino emette una vocalizzazione breve' senza specificare qualità intonativa. La qualità ascendente-interrogativa è introdotta nella observed_configuration come lettura strutturale aggiunta. RISCHIO DI CIRCOLARITÀ: il proxy è supportato dalla lettura strutturale (observed_configuration) e non da un dato fenomenico indipendente (case_description).",
+              "anchor_source": "observed_configuration"
+            },
+            {
+              "proxy_name": "Spazio di attesa",
+              "evidence_element": "'I suoi occhi oscillano tra lo scaffale e la madre per circa due o tre secondi' — pausa comportamentale esplicita nella case_description",
+              "anchor_source": "case_description"
+            }
+          ]
+        },
+
+        "decisive_proxy_counter_reading": {
+          "decisive_proxy": "Registrazione come partecipazione — vocalizzazione ascendente-interrogativa del bambino dopo la risposta della madre",
+          "counter_reading": "Un bambino che ha appreso lo script 'puntare → adulto nomina → bambino vocalizza' può produrre una vocalizzazione con intonazione ascendente perché lo script stesso prevede questa intonazione come parte del turno (come nel book-reading routinizzato in cui il bambino impara a 'fare la domanda' prima che l'adulto nomini). La stessa qualità ascendente, che viene letta come apertura del campo, potrebbe essere la forma intonativa appresa come parte della sequenza — prodotta non perché il campo è aperto ma perché il turno lo richiede.",
+          "result": "proxy_decisivo_reversibile"
+        },
+
+        "proxy_classification_coherence": {
+          "result": "coerente",
+          "notes": "La classificazione 'aperto' segue dai proxy — in particolare da Proxy 2 (vocalizzazione) e Proxy 3 (spazio di attesa). Non è anticipata prima del ragionamento. Il proxy non pienamente ancorato (Proxy 1) non è usato come decisivo: il proxy decisivo dichiarato è Proxy 2."
+        },
+
+        "proxy_confidence_check": {
+          "result": "giustificata",
+          "notes": "proxy_confidence 'media' è giustificata per il proxy decisivo (Proxy 2). Tuttavia, dati i risultati della D.3 — il proxy decisivo non è ancorato alla case_description ma alla observed_configuration — si potrebbe argomentare che la confidence dovrebbe essere 'bassa' invece di 'media', poiché il dato su cui poggia non è fenomenicamente indipendente dalla lettura strutturale. La marcatura 'media' è accettabile ma al limite inferiore."
+        },
+
+        "classification_status_check": {
+          "result": "corretto",
+          "notes": "proxy_confidence media → classification_status probabile. Regola rispettata. Non forzata a 'netta'."
+        },
+
+        "ambiguity_handling": {
+          "result": "corretta",
+          "notes": "ambiguity_conditions è esplicita: dichiara la condizione concreta in cui la classificazione deve diventare ambigua (qualità intonativa della vocalizzazione non distinguibile). Non generica."
+        },
+
+        "false_positive_risk": {
+          "result": "gestito",
+          "notes": "alternative_interpretation e failure_risk segnalano esplicitamente il rischio. failure_risk specifica la condizione di fallimento."
+        }
+
+      }
+    },
+    {
+      "case_id": "caso_B",
+      "checks": {
+
+        "completeness": {
+          "result": "completo",
+          "notes": "Tutti i campi obbligatori presenti con la stessa completezza di Caso A."
+        },
+
+        "triangulation": {
+          "result": "reale",
+          "notes": "proxies_present: tre proxy espliciti e distinti. proxies_direction: non tautologica — argomenta con il concetto di completamento. counter_indicator: reale — l'espressione aperta e l'alternanza dello sguardo del bambino sfidano genuinamente la classificazione 'predeterminato'. counter_indicator_rebuttal: risponde argomentando che l'espressione aperta è la forma dell'apertura senza la struttura."
+        },
+
+        "proxy_validity": {
+          "result": "parzialmente_validi",
+          "notes": "Proxy 3 ('Significato pre-dato: il bambino conosce il nome trottola') introduce un'inferenza sulla conoscenza lessicale pregressa non ricavabile dall'episodio osservato — è ancorata a presupposti sulla storia del bambino, non alla configurazione corrente. Proxy 2 ('Completamento di sequenza') è ancorato alla observed_configuration (qualità confermativa della vocalizzazione) più che alla case_description, che dice solo 'il bambino emette una vocalizzazione breve' — stesso problema di Caso A. Proxy 1 ('Risposta uniforme e immediata') richiede informazione sul ritmo della risposta non esplicitata nella case_description.",
+          "evidence_anchors": [
+            {
+              "proxy_name": "Risposta uniforme e immediata",
+              "evidence_element": "la case_description dice 'il padre segue lo sguardo, dice oh, la trottola!' senza indicare timing o pause. L'assenza di pausa percettibile è introdotta nella observed_configuration come lettura strutturale, non come dato fenomenico.",
+              "anchor_source": "observed_configuration"
+            },
+            {
+              "proxy_name": "Completamento di sequenza — vocalizzazione di chiusura",
+              "evidence_element": "la case_description dice 'il bambino emette una vocalizzazione breve' senza qualità intonativa. La qualità confermativa-di-chiusura è introdotta nella observed_configuration. RISCHIO DI CIRCOLARITÀ: identico a Caso A, su polo opposto.",
+              "anchor_source": "observed_configuration"
+            },
+            {
+              "proxy_name": "Significato pre-dato — il bambino conosce il nome trottola",
+              "evidence_element": "nessun elemento della case_description supporta questa inferenza. Non è osservabile dall'episodio corrente.",
+              "anchor_source": "inferenza_esterna"
+            }
+          ]
+        },
+
+        "decisive_proxy_counter_reading": {
+          "decisive_proxy": "Completamento di sequenza — vocalizzazione confermativa-di-chiusura del bambino dopo la risposta del padre",
+          "counter_reading": "Una vocalizzazione breve che segue la risposta dell'adulto in un episodio di pointing potrebbe essere letta come registrazione-come-partecipazione: il bambino produce un suono che 'ratifica' l'ingresso dell'adulto nel campo e segnala che la co-produzione è avvenuta — non che la sequenza si è chiusa. La brevità e la definitività della vocalizzazione sono compatibili sia con chiusura-di-script che con soddisfazione-di-co-produzione. La distinzione tra i due non è intrinsecamente risolvibile dalla vocalizzazione stessa senza informazione intonativa indipendente.",
+          "result": "proxy_decisivo_reversibile"
+        },
+
+        "proxy_classification_coherence": {
+          "result": "coerente",
+          "notes": "La classificazione 'predeterminato' segue dai proxy descritti. Non è anticipata prima del ragionamento. Proxy 3 aggiunge supporto ma non è usato come decisivo."
+        },
+
+        "proxy_confidence_check": {
+          "result": "giustificata",
+          "notes": "proxy_confidence 'media' è giustificata per il proxy decisivo (Proxy 2). Stessa osservazione di Caso A: dato che il proxy decisivo non è ancorato alla case_description, si potrebbe argomentare per 'bassa'. La marcatura 'media' è al limite."
+        },
+
+        "classification_status_check": {
+          "result": "corretto",
+          "notes": "proxy_confidence media → classification_status probabile. Regola rispettata."
+        },
+
+        "ambiguity_handling": {
+          "result": "corretta",
+          "notes": "ambiguity_conditions è esplicita. Condizioni concrete per entrambi i proxy rilevanti."
+        },
+
+        "false_positive_risk": {
+          "result": "gestito",
+          "notes": "alternative_interpretation e failure_risk segnalano esplicitamente il rischio. Riferimento esplicito a case_05 dello stress test."
+        }
+
+      }
+    }
+  ],
+
+  "global_analysis": {
+
+    "real_discrimination": {
+      "result": "fragile",
+      "notes": "La discriminazione è strutturalmente reale — i due casi differiscono nel passaggio trasformativo — ma è più fragile di quanto indicato nell'output di STEP 4. L'analisi di evidenza locale rivela che il proxy decisivo in entrambi i casi (qualità intonativa della vocalizzazione finale) non è ancorato alla case_description ma introdotto nella observed_configuration come lettura strutturale. Questo significa che la discriminazione non poggia su un dato fenomenico indipendente ma su una lettura che potrebbe essere circolare: la observed_configuration descrive la vocalizzazione come ascendente-interrogativa (Caso A) o confermativa-di-chiusura (Caso B) perché sa già quale configurazione sta leggendo. La fragilità non è solo nella qualità dell'osservazione ma nella struttura epistemica dell'ancoraggio."
+    },
+
+    "observer_dependency": {
+      "result": "esplicita",
+      "notes": "La dipendenza è dichiarata attraverso proxy_confidence, classification_status e ambiguity_conditions. Tuttavia il problema identificato nell'analisi degli evidence_anchors (proxy decisivo ancorato alla observed_configuration e non alla case_description) aggiunge una forma di dipendenza non ancora pienamente gestita: non solo la qualità dell'osservazione, ma l'indipendenza tra il dato e la sua lettura strutturale."
+    },
+
+    "single_proxy_dependency": {
+      "result": "dipendenza_singola_dichiarata",
+      "notes": "La discriminazione tra i due casi dipende esclusivamente dalla qualità differenziale della vocalizzazione finale del bambino (proxy 'registrazione come partecipazione' in Caso A, proxy 'completamento di sequenza' in Caso B). Non esiste proxy alternativo indipendente di backup. La fragilità strutturale è concentrata in un punto unico. Entrambi i proxy decisivi risultano reversibili (D.3b): la stessa vocalizzazione potrebbe essere letta per supportare la classificazione opposta. La dipendenza da proxy singolo reversibile è la forma più fragile di discriminazione possibile nel quadro del dispositivo corrente."
+    }
+
+  },
+
+  "audit_result": {
+    "method_applied_correctly": true,
+    "triangulation_quality": "reale",
+    "false_positive_risk": "medio",
+    "ambiguity_handling": "corretta",
+    "observer_dependency": "esplicita"
+  },
+
+  "critical_issues": [
+    "Il proxy decisivo in entrambi i casi (qualità intonativa della vocalizzazione finale) non è ancorato alla case_description ma introdotto nella observed_configuration. Questo crea un rischio di circolarità: la lettura strutturale supporta se stessa invece di poggiare su un dato fenomenico indipendente.",
+    "Entrambi i proxy decisivi sono reversibili (D.3b): la stessa vocalizzazione può essere letta strutturalmente per sostenere la classificazione opposta. La discriminazione non è logicamente stabile su questo proxy.",
+    "In Caso B, Proxy 3 ('Significato pre-dato') è ancorato a inferenza esterna — conoscenza lessicale pregressa del bambino non osservabile dall'episodio corrente.",
+    "La discriminazione dipende da proxy singolo reversibile con confidence media in entrambi i casi. La fragilità strutturale non è distribuita ma concentrata in un punto unico di vulnerabilità."
+  ],
+
+  "strengths": [
+    "La triangolazione è genuinamente eseguita in entrambi i casi: i quattro elementi sono presenti, distinti e strutturalmente argomentati.",
+    "I contro-indicatori sono reali e i rebuttal rispondono effettivamente — non aggirano il problema.",
+    "La corrispondenza proxy_confidence / classification_status è corretta (media → probabile): nessuna classificazione forzata a 'netta'.",
+    "Le ambiguity_conditions sono esplicite e specifiche.",
+    "Il rischio di falso positivo è segnalato e problematizzato con failure_risk specifico in entrambi i casi.",
+    "Il verdetto finale di STEP 4 ('validato con riserva metodologica esplicita') è coerente con la fragilità dell'output — non sovrastima la robustezza."
+  ],
+
+  "final_assessment": "accettabile",
+  "final_assessment_qualifier": "ACCETTABILE CON FRAGILITÀ STRUTTURALE NON ANCORA FORMALIZZATA. Il metodo è applicato correttamente nella sua procedura (triangolazione reale, regole di corrispondenza rispettate, ambiguità gestita). La fragilità non è nella procedura ma nell'ancoraggio epistemico del proxy decisivo: la qualità intonativa della vocalizzazione finale è introdotta come lettura strutturale nella observed_configuration e non è verificabile come dato fenomenico indipendente dalla case_description. Questo, combinato con la reversibilità del proxy decisivo e la dipendenza da proxy singolo, rende la discriminazione più fragile di quanto il solo verdetto 'accettabile' esprima."
+}

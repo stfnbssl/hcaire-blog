@@ -1,0 +1,81 @@
+{
+  "step": "step_4",
+  "results": [
+    {
+      "theme_id": "tema_07_ecosistema_digitale",
+      "core_configuration": {
+        "description": "La configurazione si organizza attorno a una trasformazione direzionale che attraversa i due assi confermati. Sull'Asse 6, tecnica-come-forma-storica funge da piano fondativo: stabilisce che il dispositivo digitale non è strumento neutro ma configurazione storica dell'esperienza. Da questo piano discendono due funzioni distinte e non riducibili: prestazionalizzazione-del-valore — la grammatica storica per cui ciò che è misurabile coincide con ciò che vale — e mediazione-strutturale — la modalità per cui questa configurazione entra nell'esperienza prima di qualsiasi uso consapevole. Sull'Asse 5, desiderio-come-struttura nomina l'oggetto della deformazione (la forma pre-riflessiva del rapporto del soggetto con il possibile), campo-desiderabile ne nomina il livello operativo (l'orizzonte in cui certe direzioni appaiono già cariche di valore prima della scelta), motivazione-come-sostituto ne nomina il meccanismo specifico della deformazione (l'azione efficace senza orientamento interno, sostenuta da feedback immediato). La direzione strutturale è univoca: la forma storica della tecnica organizza la grammatica del valore; questa grammatica entra nell'esperienza come mediazione strutturale; la mediazione riorganizza il campo desiderabile prima di qualsiasi tematizzazione; in questa riorganizzazione il desiderio come struttura di orientamento si trasforma in motivazione come sostituto. Nessuno dei due assi può presidiare da solo il tema: senza Asse 5 si avrebbe critica generica della tecnica; senza Asse 6, lettura psicologica di una deformazione individuale del desiderio.",
+        "structure_logic": "Configurazione bi-assiale co-dominante a direzione univoca: la forma storica della tecnica (Asse 6) entra come mediazione strutturale nel campo desiderabile (Asse 5) prima dell'uso consapevole, sostituendo l'orientamento pre-riflessivo del desiderio con la motivazione algoritmica attraverso la grammatica della prestazionalizzazione del valore."
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "function_in_theme": "Asse 5 fornisce l'oggetto strutturale della deformazione: nomina ciò che viene trasformato dall'ecosistema digitale, e cioè la forma pre-riflessiva del rapporto del soggetto con il possibile. È il piano in cui si dice che la posta in gioco non è un comportamento, un'attenzione misurata o un consumo, ma la struttura stessa dell'orientamento al desiderabile, articolata su tre livelli irriducibili: l'oggetto della deformazione (desiderio-come-struttura), il suo livello operativo (campo-desiderabile), il suo meccanismo (motivazione-come-sostituto).",
+          "specific_contribution": "Senza l'Asse 5 il tema collasserebbe in critica generica della tecnica o in problema di consumo individuale. Solo questo asse consente di nominare la deformazione come trasformazione di una struttura pre-riflessiva e non come effetto su una funzione (attenzione, motivazione, autocontrollo) o come problema di uso. È l'asse che impedisce alla configurazione di scivolare in lettura comportamentale o cognitiva del fenomeno."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "function_in_theme": "Asse 6 fornisce la forma storica della mediazione che produce la deformazione: nomina che cosa è il dispositivo tecnico-algoritmico in quanto configurazione storica dell'esperienza, e non in quanto strumento, contesto o sfondo influenzante. È il piano in cui il tema acquisisce statuto strutturale e non morale, articolato su tre livelli: la tecnica come forma storica (l'ecosistema digitale come configurazione e non come strumento neutro), la prestazionalizzazione del valore (la grammatica storica specifica per cui misurabile e desiderabile coincidono), la mediazione strutturale (la modalità per cui questa configurazione entra nell'esperienza prima dell'uso).",
+          "specific_contribution": "Senza l'Asse 6 il tema collasserebbe in lettura psicologica della deformazione del desiderio o in critica morale alla tecnologia. Solo questo asse consente di leggere il fenomeno come incontro tra struttura del soggetto e forma storica del mondo, non come patologia individuale né come errore educativo. È l'asse che impedisce di attribuire a singoli soggetti, famiglie o adulti ciò che è esito sistemico di una configurazione storica."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Mediazione tecnica del campo desiderabile",
+          "linked_axes": ["asse_5", "asse_6"],
+          "linked_nodes": [
+            "campo-desiderabile",
+            "tecnica-come-forma-storica",
+            "motivazione-come-sostituto"
+          ],
+          "function": "Il ponte non somma due piani ma nomina la relazione direzionale per cui una determinata forma storica della tecnica trasforma una determinata qualità del campo desiderabile. Connette tecnica-come-forma-storica (Asse 6) a campo-desiderabile (Asse 5) attraverso il meccanismo motivazione-come-sostituto, descrivendo non una co-presenza ma un movimento: la configurazione tecnica entra come mediazione strutturale nell'orizzonte pre-riflessivo, riorganizza ciò che appare già carico di valore, e sostituisce l'orientamento del desiderio con l'azione efficace sostenuta da feedback immediato. È la trasformazione che nessun nodo singolo può esprimere — descrive chi trasforma cosa, non semplicemente che i due piani co-esistono.",
+          "type": "organizzativo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "orientamento pre-riflessivo vs. organizzazione algoritmica del campo",
+          "description": "Il desiderio come struttura opera a livello pre-riflessivo: alcune direzioni appaiono già cariche di valore prima di qualsiasi scelta. La mediazione tecnica opera anch'essa a livello pre-riflessivo: l'algoritmo organizza il campo del desiderabile prima dell'uso consapevole. I due piani si sovrappongono nello stesso strato dell'esperienza senza poter essere distinti dall'interno: il soggetto non incontra il proprio orientamento da una parte e l'organizzazione algoritmica dall'altra, ma un campo già co-organizzato. La tensione non si risolve perché non c'è un punto di vista pre-mediazione da cui il desiderio possa riconoscere se stesso come distinto dalla forma in cui gli appare il desiderabile."
+        },
+        {
+          "tension": "desiderio come struttura vs. motivazione come sostituto",
+          "description": "Desiderio e motivazione non sono opposti morali ma poli strutturali distinti: il primo è orientamento incarnato che precede l'azione, la seconda è efficacia dell'azione sostenuta da stimolazione esterna. Nella configurazione bi-assiale i due poli coesistono perché la motivazione algoritmica non sopprime il desiderio ma lo sostituisce funzionalmente: l'azione resta efficace, il comportamento resta organizzato, ma l'orientamento interno si svuota. La tensione è strutturale perché non c'è un criterio osservativo immediato che permetta di distinguere un soggetto orientato da un soggetto motivato — entrambi agiscono, entrambi rispondono, entrambi sembrano scegliere."
+        },
+        {
+          "tension": "mediazione strutturale vs. apparenza di neutralità tecnica",
+          "description": "L'ecosistema digitale entra nell'esperienza come mediazione strutturale (configurazione che organizza il campo prima dell'uso) ma si presenta come strumento neutro (tecnologia che il soggetto sceglie e usa). I due piani coesistono nella stessa esperienza: il soggetto sperimenta autonomia di scelta proprio nel momento in cui le scelte gli appaiono già pre-organizzate. La tensione non si annulla perché la forma storica della tecnica include strutturalmente la propria invisibilità: il dispositivo funziona meglio quando appare strumento, e questa apparenza è parte della sua grammatica, non un suo fraintendimento esterno."
+        },
+        {
+          "tension": "prestazionalizzazione del valore vs. eccedenza del desiderabile",
+          "description": "La grammatica della prestazionalizzazione fa coincidere ciò che vale con ciò che è misurabile (visualizzazioni, tempo di permanenza, engagement). Il campo desiderabile, in quanto orizzonte pre-riflessivo, eccede strutturalmente ogni misura: ciò che orienta non è ciò che si conta. I due poli coesistono perché la prestazionalizzazione non elimina l'eccedenza ma la rende invisibile: il desiderabile non-misurabile continua a operare, ma perde riconoscibilità come piano distinto dal valutabile. La tensione è strutturale perché l'eccedenza, nel momento in cui viene tematizzata e nominata, tende ad assumere forma misurabile e a essere riassorbita dalla grammatica stessa che la ecceche."
+        }
+      ],
+      "structural_questions": [
+        "In quali condizioni un orientamento del desiderio può costituirsi nel campo desiderabile co-organizzato dall'ecosistema digitale, dato che il livello pre-riflessivo dell'orientamento e il livello pre-riflessivo della mediazione algoritmica si sovrappongono nello stesso strato dell'esperienza?",
+        "Come si distingue strutturalmente un soggetto orientato (desiderio come struttura) da un soggetto motivato (motivazione come sostituto), quando entrambi mostrano azione efficace, continuità di comportamento e apparente scelta?",
+        "Quale qualità della mediazione adulta — del caregiver, dell'educatore, del professionista — può sostenere il riconoscimento del campo desiderabile come piano distinto dall'organizzazione algoritmica, senza ricadere in critica morale del dispositivo o in protezione difensiva dal mondo storico?",
+        "In che misura la grammatica della prestazionalizzazione del valore è riconoscibile come configurazione storica specifica, e non come forma naturale del valore tout court — e quali condizioni rendono possibile questo riconoscimento dall'interno di un mondo storicamente configurato?",
+        "Quale soglia separa la mediazione tecnica che sostiene la soggettivazione del desiderio (in quanto mediazione simbolica e culturalmente codificata) da quella che la sostituisce con reattività immediata, e come questa soglia si manifesta nella vita quotidiana del bambino e del caregiver?",
+        "Come si articola la responsabilità adulta in un campo in cui il desiderabile è co-organizzato da dispositivi che operano prima della scelta, dato che né l'esposizione né la protezione totale possono restituire un piano pre-mediato?",
+        "Quale forma assume il limite reale (in senso di ciò che resiste indipendentemente dalla regolazione) in un ecosistema che opera per saturazione e disponibilità continua, e in che modo l'assenza strutturale del 'non è possibile' modifica le condizioni di emergere del desiderio come orientamento?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "educativo (servizi per la prima infanzia, 0–6)",
+          "reason": "La configurazione porta nell'ambito educativo una domanda strutturale che eccede la gestione dell'esposizione agli schermi: come l'organizzazione del campo desiderabile del bambino sia già co-mediata dall'ecosistema digitale anche in contesti in cui il bambino non utilizza direttamente i dispositivi (attraverso la mediazione del caregiver, attraverso le aspettative sociali sul valore, attraverso la grammatica della misurabilità che entra nel servizio stesso). La domanda è strutturale, non comportamentale: che cosa significa sostenere l'orientamento del desiderio in un campo già configurato dalla prestazionalizzazione."
+        },
+        {
+          "domain": "formazione dei professionisti dei servizi e clinico-evolutivo",
+          "reason": "La configurazione porta nell'ambito della formazione e della clinica una domanda di leggibilità: come riconoscere la differenza strutturale tra un soggetto orientato e un soggetto motivato, dato che gli indicatori comportamentali immediati non distinguono i due poli. Il tema interroga gli strumenti di lettura del professionista — non la sua tecnica di intervento — perché la deformazione del desiderio in motivazione non si manifesta come sintomo ma come funzionamento adattivo. Apre la questione di quali letture della soggettivazione resistano alla riassunzione nella grammatica della prestazione."
+        },
+        {
+          "domain": "politiche per l'infanzia e regolazione del digitale",
+          "reason": "La configurazione porta nell'ambito delle politiche una domanda che eccede la regolazione dell'esposizione e dei contenuti: come riconoscere la dimensione strutturale della mediazione tecnica del campo desiderabile, dato che la lettura del fenomeno come problema di uso o di consumo riconduce sistematicamente a interventi che operano dentro la grammatica stessa che il tema interroga (misurazione, target, valutazione di impatto). La domanda è quale linguaggio politico possa nominare una deformazione che opera prima della scelta consapevole, senza ricadere in moralismo culturale o in tecnofobia."
+        }
+      ],
+      "configuration_summary": "La micro-matrice descrive una configurazione bi-assiale co-dominante a direzione univoca: la forma storica della tecnica (Asse 6) entra come mediazione strutturale nel campo del desiderabile (Asse 5) prima di qualsiasi uso consapevole, sostituendo l'orientamento pre-riflessivo del desiderio con la motivazione algoritmica attraverso la grammatica della prestazionalizzazione del valore. Il concetto-ponte 'Mediazione tecnica del campo desiderabile' svolge funzione organizzativa: non somma due piani ma nomina la trasformazione direzionale (chi trasforma cosa) intorno alla quale si dispone l'intera configurazione, rendendo distinguibili oggetto, livello operativo e meccanismo della deformazione. Le tensioni strutturali rendono leggibile come questa deformazione operi mantenendo l'apparenza di neutralità tecnica e di autonomia del soggetto, senza che vi sia un punto di vista pre-mediato dal quale i due poli (orientamento del desiderio, organizzazione algoritmica) possano essere distinti dall'interno dell'esperienza."
+    }
+  ]
+}

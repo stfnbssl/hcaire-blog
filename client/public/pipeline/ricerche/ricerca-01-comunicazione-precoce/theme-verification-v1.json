@@ -1,0 +1,1132 @@
+{
+  "step": "step_3",
+  "results": [
+    {
+      "theme_id": "tema_01_technoference",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "role": "asse del campo co-regolativo e intenzionale: descrive come la divisione dell'attenzione del caregiver altera strutturalmente la qualità della co-presenza",
+          "reason": "Il tema non è pensabile senza la struttura della co-regolazione e del campo intenzionale diadico: sono il meccanismo direttamente modificato dalla technoference"
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "role": "asse della forma tecnico-storica: permette di leggere la technoference come effetto strutturale dell'ecosistema tecnologico, non come errore individuale",
+          "reason": "La technoference è una configurazione storica di organizzazione dell'attenzione prodotta dalla tecnica; senza Asse 6 il tema collassa in moralizzazione individuale"
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "rejection_reason": "secondario: il legame con l'interiorizzazione dell'altro è indiretto e derivabile dalla co-regolazione stessa; non aggiunge un nodo specifico confermabile"
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "rejection_reason": "non necessario: il messaggio implicito sul valore dell'altro appartiene ad Asse 6, non alla normatività strutturale del giudizio di Asse 3"
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "Meccanismo direttamente e specificamente modificato dalla technoference; necessario, discriminante, non ridondante"
+        },
+        {
+          "node_id": "campo-intenzionale",
+          "node_label": "Campo intenzionale",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "La divisione cronica dell'attenzione riduce la ricchezza del campo diadico disponibile: nodo strutturale necessario e specifico"
+        },
+        {
+          "node_id": "tecnica-come-forma-storica",
+          "node_label": "Tecnica come forma storica",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Permette di leggere la technoference come effetto strutturale e non come scelta individuale: discriminante, non sostituibile"
+        },
+        {
+          "node_id": "deformazione-strutturale",
+          "node_label": "Deformazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Descrive l'esito strutturale del fenomeno: la technoference come configurazione sistemica che produce effetti non accidentali sulla co-regolazione"
+        }
+      ],
+      "secondary_nodes": [
+        {
+          "node_id": "temporalità-vissuta",
+          "node_label": "Temporalità vissuta",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "Contribuisce (la discontinuità del ritmo della presenza), ma l'esito strutturale è già catturato da co-regolazione e campo-intenzionale"
+        }
+      ],
+      "rejected_nodes": [
+        {
+          "node_id": "relazione-costitutiva",
+          "node_label": "Relazione costitutiva",
+          "source_axis": "asse_1",
+          "rejection_reason": "TEST 2 fallito: troppo generale per distinguere questo tema da qualsiasi altro tema relazionale; non aggiunge capacità discriminante"
+        },
+        {
+          "node_id": "interiorizzazione-dell-altro",
+          "node_label": "Interiorizzazione dell'altro",
+          "source_axis": "asse_2",
+          "rejection_reason": "Asse 2 non confermato; nodo da_verificare in STEP 2 e non sostenuto da motivazione strutturale sufficiente"
+        }
+      ],
+      "confirmed_bridge_concepts": [
+        {
+          "concept_label": "Deformazione strutturale dell'attenzione relazionale",
+          "linked_axes": [
+            "asse_6",
+            "asse_1"
+          ],
+          "linked_nodes": [
+            "tecnica-come-forma-storica",
+            "deformazione-strutturale",
+            "co-regolazione",
+            "campo-intenzionale"
+          ],
+          "reason": "Connette la forma tecnico-storica (Asse 6) con la deformazione del campo co-regolativo (Asse 1): descrive come una configurazione storica produce effetti strutturali sull'esperienza diadica; non riducibile ai soli nodi separati"
+        }
+      ],
+      "rejected_bridge_concepts": [
+        {
+          "concept_label": "Co-regolazione",
+          "rejection_reason": "Regola 1: il ponte era fondato su Asse 2 (non confermato); come concetto rimane nodo di Asse 1. Elemento non duplicabile tra nodi e ponti"
+        }
+      ],
+      "structural_configuration": {
+        "type": "multi_assiale",
+        "description": "Asse 1 → campo esperienziale e co-regolativo (il livello in cui il danno strutturale si manifesta); Asse 6 → forma tecnico-storica (il livello che genera il fenomeno). Co-dominanti con funzioni diverse: Asse 6 spiega l'origine, Asse 1 descrive il meccanismo e l'esito."
+      },
+      "synthetic_formulation": "deformazione del campo co-regolativo prodotta da una forma storica di organizzazione dell'attenzione",
+      "selection_rationale": "Asse 1 e Asse 6 confermati perché descrivono il fenomeno nella sua doppia struttura: configurazione tecnica (Asse 6) che produce un effetto strutturale sul campo co-regolativo diadico (Asse 1). Asse 2 è secondario. Asse 3 non necessario.",
+      "critical_notes": [
+        "Il nodo 'relazione-costitutiva' eliminato per scarsa capacità discriminante (Regola 2 STEP 2): richiede revisione se STEP 2 viene rielaborato per tema_01",
+        "Il ponte 'Co-regolazione' eliminato per Regola 1 e assenza di Asse 2 confermato: se Asse 2 venisse confermato in revisione, il ponte potrebbe essere ripristinato"
+      ]
+    },
+    {
+      "theme_id": "tema_02_lettura_dialogica",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "role": "asse della co-regolazione incarnata e della temporalità condivisa: il ritmo della lettura come strutturazione esperienziale diadica",
+          "reason": "La lettura condivisa è un contesto di co-regolazione corporea, ritmica e temporale; senza Asse 1 la struttura fenomenologica del tema è invisibile"
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "role": "asse della mediazione simbolica e culturale: il libro come dispositivo culturale vygotskijano che co-costituisce il campo relazionale",
+          "reason": "Il libro non è strumento neutro ma mediatore culturale costitutivo della struttura triadica; senza Asse 6 il tema si riduce a diade"
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "role": "asse del riconoscimento mediato: la struttura triadica crea condizioni per l'interiorizzazione dell'altro come presenza orientata verso un oggetto condiviso",
+          "reason": "La triadicità è sufficientemente specifica da attivare Asse 2: il bambino sperimenta il caregiver come soggetto che guarda qualcosa insieme a lui, condizione precoce del riconoscimento reciproco mediato"
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "rejection_reason": "da_verificare in STEP 2 e non confermabile per la fascia 0-3 anni: non distinguibile con sufficiente precisione da Asse 6 per questa fascia; da riprendere per fasce più avanzate"
+        },
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "rejection_reason": "connessione troppo indiretta: l'introduzione al campo simbolico non raggiunge la soglia strutturale necessaria per Asse 5 in questa configurazione"
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "La lettura condivisa è un contesto di co-regolazione attraverso ritmo, voce e scambio attentivo: necessario, discriminante (specifica questa forma incarnata), non ridondante"
+        },
+        {
+          "node_id": "mediazione-simbolica",
+          "node_label": "Mediazione simbolica",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Il libro come mediatore simbolico è il terzo costitutivo della struttura triadica: necessario, discriminante, non sostituibile"
+        },
+        {
+          "node_id": "temporalità-vissuta",
+          "node_label": "Temporalità vissuta",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "La strutturazione ritmica condivisa (attesa, anticipazione, ripetizione) è specifica della lettura condivisa e non riducibile alla sola co-regolazione"
+        },
+        {
+          "node_id": "interiorizzazione-dell-altro",
+          "node_label": "Interiorizzazione dell'altro",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "reason": "Con Asse 2 confermato, questo nodo è il meccanismo chiave: il caregiver come presenza orientata verso un terzo condiviso è condizione precoce dell'istanza interna"
+        }
+      ],
+      "secondary_nodes": [],
+      "rejected_nodes": [
+        {
+          "node_id": "zona-di-sviluppo-prossimale",
+          "node_label": "Zona di sviluppo prossimale",
+          "source_axis": "asse_6",
+          "rejection_reason": "Regola 1 (STEP 2): compariva sia come nodo che come concetto-ponte. Come ponte è ridondante con Mediazione simbolica condivisa (TEST 3 fallito). Eliminato da entrambe le liste."
+        },
+        {
+          "node_id": "orizzonti-di-senso",
+          "node_label": "Orizzonti di senso",
+          "source_axis": "asse_3",
+          "rejection_reason": "Asse 3 non confermato; nodo da_verificare in STEP 2 non sostenuto per la fascia 0-3 anni"
+        },
+        {
+          "node_id": "relazione-costitutiva",
+          "node_label": "Relazione costitutiva",
+          "source_axis": "asse_1",
+          "rejection_reason": "TEST 2 fallito: troppo generale per distinguere questo tema da altri; non aggiunge capacità discriminante oltre co-regolazione e interiorizzazione-dell-altro"
+        }
+      ],
+      "confirmed_bridge_concepts": [
+        {
+          "concept_label": "Mediazione simbolica condivisa",
+          "linked_axes": [
+            "asse_6",
+            "asse_1"
+          ],
+          "linked_nodes": [
+            "mediazione-simbolica",
+            "co-regolazione",
+            "temporalità-vissuta"
+          ],
+          "reason": "Connette la dimensione culturale (Asse 6: il libro come mediatore) con la dimensione esperienziale (Asse 1: co-regolazione e temporalità condivisa): descrive come l'oggetto culturale riorganizza il campo fenomenologico diadico"
+        },
+        {
+          "concept_label": "Struttura triadica caregiver–bambino–libro",
+          "linked_axes": [
+            "asse_1",
+            "asse_2",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "mediazione-simbolica",
+            "co-regolazione",
+            "interiorizzazione-dell-altro"
+          ],
+          "is_derived": true,
+          "reason": "Concetto derivato necessario: la triadicità è costitutiva del tema (rimuovere il libro trasforma il fenomeno qualitativamente). Connette simultaneamente tutti e tre gli assi confermati; non riducibile ai nodi separati. Confermato come contributo emergente di STEP 2."
+        }
+      ],
+      "rejected_bridge_concepts": [
+        {
+          "concept_label": "Zona di sviluppo prossimale",
+          "rejection_reason": "TEST 3 fallito: ridondante con Mediazione simbolica condivisa (stessa connessione Asse 6 → Asse 1). Conforme alla critica metodologica ricevuta. Eliminata anche dai nodi (Regola 1)."
+        }
+      ],
+      "structural_configuration": {
+        "type": "multi_assiale",
+        "description": "Asse 1 → strutturazione esperienziale e co-regolativa (corporeità, ritmo, temporalità condivisa); Asse 6 → mediazione simbolica e culturale (il libro come dispositivo culturale costitutivo); Asse 2 → riconoscimento mediato (l'altro come presenza orientata verso un terzo). I tre assi si articolano attorno alla struttura triadica: nessuno eliminabile senza trasformare il fenomeno."
+      },
+      "synthetic_formulation": "triadicità costitutiva tra co-regolazione incarnata, mediazione simbolica culturale e riconoscimento mediato da un oggetto condiviso",
+      "selection_rationale": "Tre assi confermati perché la struttura triadica li attiva simultaneamente. Asse 3 non confermato per fascia 0-3. Asse 5 connessione troppo indiretta. ZSP rimossa da entrambe le liste per Regola 1 e ridondanza.",
+      "critical_notes": [
+        "ZSP eliminata sia dai nodi (Regola 1) sia dai ponti (TEST 3 fallito): correzione diretta dalla critica metodologica ricevuta dopo STEP 2",
+        "La struttura triadica (concetto derivato) va esplicitata nella formulazione definitiva dell'etichetta al momento della revisione di STEP 1",
+        "Asse 3 potrebbe diventare rilevante per fasce d'età superiori: segnalare per revisione futura"
+      ]
+    },
+    {
+      "theme_id": "tema_03_funzione_riflessiva",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "role": "asse dominante: la funzione riflessiva è il processo attraverso cui il caregiver riconosce l'altro come soggetto distinto con stati mentali propri e produce un'istanza interna",
+          "reason": "Il tema è integralmente strutturato attorno ad Asse 2: la funzione riflessiva è il meccanismo di riconoscimento e interiorizzazione dell'altro nella sua alterità"
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "role": "asse di supporto esperienziale: la co-regolazione come substrato incarnato attraverso cui la funzione riflessiva si esercita nella relazione concreta",
+          "reason": "La funzione riflessiva non è astratta ma si esercita nella co-regolazione esperienziale; Asse 1 fornisce il substrato senza il quale Asse 2 resterebbe solo schema cognitivo"
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "rejection_reason": "secondario: il desiderio come struttura è presente ma periferico rispetto al nucleo riflessivo; non ha nodi confermabili autonomi"
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "rejection_reason": "non necessario: il contesto storico-culturale della funzione riflessiva non è strutturalmente necessario per definire il tema"
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "interiorizzazione-dell-altro",
+          "node_label": "Interiorizzazione dell'altro",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "reason": "Nucleo del tema: la funzione riflessiva produce l'interiorizzazione dell'altro come soggetto distinto; necessario, altamente discriminante, non ridondante"
+        },
+        {
+          "node_id": "istanza-interna",
+          "node_label": "Istanza interna",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "reason": "Esito strutturale della funzione riflessiva: la presenza dell'altro come istanza interna orientante; necessario e specifico"
+        },
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "Substrato esperienziale attraverso cui la funzione riflessiva si esercita nella relazione concreta; necessario e non sostituibile"
+        },
+        {
+          "node_id": "sopravvivenza-dell-oggetto",
+          "node_label": "Sopravvivenza dell'oggetto",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "reason": "Specifico e discriminante: la funzione riflessiva richiede che il caregiver sopravviva mentalmente come oggetto; non riducibile agli altri nodi"
+        }
+      ],
+      "secondary_nodes": [
+        {
+          "node_id": "desiderio-come-struttura",
+          "node_label": "Desiderio come struttura",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "reason": "Pertinente (la funzione riflessiva apre allo spazio del desiderio dell'altro) ma non strutturalmente necessario; Asse 5 non confermato"
+        }
+      ],
+      "rejected_nodes": [
+        {
+          "node_id": "campo-intenzionale",
+          "node_label": "Campo intenzionale",
+          "source_axis": "asse_1",
+          "rejection_reason": "TEST 2 fallito: troppo generale e applicabile a qualsiasi tema relazionale; non discriminante specificamente per la funzione riflessiva"
+        }
+      ],
+      "confirmed_bridge_concepts": [
+        {
+          "concept_label": "Co-regolazione",
+          "linked_axes": [
+            "asse_1",
+            "asse_2"
+          ],
+          "linked_nodes": [
+            "co-regolazione",
+            "interiorizzazione-dell-altro",
+            "istanza-interna"
+          ],
+          "reason": "Connette il substrato esperienziale (Asse 1: co-regolazione come tenuta incarnata) con la struttura del riconoscimento (Asse 2: interiorizzazione dell'altro); in questo tema la co-regolazione svolge funzione di ponte tra i due assi confermati"
+        }
+      ],
+      "rejected_bridge_concepts": [
+        {
+          "concept_label": "Istanza interna",
+          "rejection_reason": "Regola 1: compariva sia come nodo che come concetto-ponte; è specifico di Asse 2 (nodo). Non collega assi distinti. Eliminato come ponte, mantenuto come nodo."
+        }
+      ],
+      "structural_configuration": {
+        "type": "asse_dominante",
+        "description": "Asse 2 dominante: la funzione riflessiva è integralmente una struttura affettivo-morale di riconoscimento dell'altro. Asse 1 come substrato esperienziale necessario ma non dominante: la co-regolazione è la forma incarnata attraverso cui Asse 2 si esercita."
+      },
+      "synthetic_formulation": "struttura di riconoscimento dell'altro come soggetto distinto, mediata dalla co-regolazione, con produzione di un'istanza interna",
+      "selection_rationale": "Asse 2 dominante: la funzione riflessiva è il processo specifico di riconoscimento e interiorizzazione dell'altro. Asse 1 necessario come substrato incarnato. Asse 5 secondario. Asse 6 non necessario.",
+      "critical_notes": [
+        "La coppia istanza-interna / sopravvivenza-dell-oggetto è la parte più specifica di Asse 2 per questo tema: va curata nella micro-matrice (STEP 4)",
+        "La distinzione tra funzione riflessiva come competenza (clinica) e come struttura (questo modello) rimane un rischio di riduzione: segnalare in STEP 4"
+      ]
+    },
+    {
+      "theme_id": "tema_04_coregolazione_ritmo_biologico",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "role": "asse unico e dominante: la co-regolazione del ritmo biologico è integralmente un fenomeno di corporeità vissuta, temporalità diadica e regolazione ontologica",
+          "reason": "Il tema non ha struttura multi-assiale: è una configurazione puramente di Asse 1, centrata sulla costituzione ritmica dell'esperienza primaria attraverso la co-regolazione biologica"
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "rejection_reason": "non necessario: l'eccedenza è periferica rispetto al tema; la co-regolazione ritmica non è un incontro con il limite ma una strutturazione positiva del campo ritmico"
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "rejection_reason": "secondario: il contesto istituzionale (nido, routine culturali) è rilevante come contorno ma non strutturalmente necessario per definire la co-regolazione del ritmo biologico"
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "rejection_reason": "non necessario: da_verificare in STEP 2 e non confermato; il riconoscimento reciproco è derivabile dalla co-regolazione senza richiedere un asse autonomo per questo tema"
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "temporalità-vissuta",
+          "node_label": "Temporalità vissuta",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "Il ritmo biologico è la forma primaria di temporalità vissuta diadica; necessario, altamente specifico e discriminante"
+        },
+        {
+          "node_id": "corporeità-vissuta",
+          "node_label": "Corporeità vissuta",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "Il ritmo è un fenomeno corporeo prima che psichico; necessario e specifico per questo tema"
+        },
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "Meccanismo centrale del tema: il ritmo biologico si struttura attraverso la co-regolazione diadica; necessario e non sostituibile"
+        },
+        {
+          "node_id": "regolazione-ontologica",
+          "node_label": "Regolazione ontologica",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "Nodo più specifico del tema: la regolazione come condizione strutturale dell'esperienza (non come funzione psicologica); altamente discriminante"
+        }
+      ],
+      "secondary_nodes": [
+        {
+          "node_id": "istituzione-come-dispositivo",
+          "node_label": "Istituzione come dispositivo",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Rilevante come contesto (nido, routine strutturate) ma non strutturalmente necessario; Asse 6 non confermato"
+        }
+      ],
+      "rejected_nodes": [
+        {
+          "node_id": "eccedenza",
+          "node_label": "Eccedenza",
+          "source_axis": "asse_4",
+          "rejection_reason": "Asse 4 non confermato; il tema non è l'incontro con il limite ma la strutturazione ritmica positiva del campo esperienziale"
+        }
+      ],
+      "confirmed_bridge_concepts": [],
+      "rejected_bridge_concepts": [
+        {
+          "concept_label": "Co-regolazione",
+          "rejection_reason": "Con un solo asse confermato, i concetti-ponte non hanno funzione strutturale: non ci sono assi distinti da connettere. Co-regolazione rimane nodo di Asse 1."
+        },
+        {
+          "concept_label": "Temporalità vissuta",
+          "rejection_reason": "Stesso motivo: con un solo asse confermato non può fungere da ponte tra assi. Rimane nodo di Asse 1."
+        }
+      ],
+      "structural_configuration": {
+        "type": "asse_dominante",
+        "description": "Asse 1 come unico asse strutturalmente necessario: la co-regolazione del ritmo biologico è integralmente un fenomeno ontologico-fenomenologico (corporeità, temporalità vissuta, co-regolazione, regolazione ontologica). Gli altri assi contribuiscono al contorno ma non alla struttura essenziale."
+      },
+      "synthetic_formulation": "strutturazione del campo ritmico biologico come forma primaria di co-regolazione tra corporeità vissuta e temporalità diadica",
+      "selection_rationale": "Un solo asse confermato perché il tema è integralmente interno ad Asse 1. Gli altri assi non aggiungono un livello strutturale distinto ma solo contorno contestuale.",
+      "critical_notes": [
+        "Assenza di concetti-ponte: strutturalmente corretta per un tema con un solo asse confermato; non è un difetto ma una caratteristica del tema",
+        "Il tema è il caso più puro di asse_dominante nell'intero set: può servire come caso di riferimento per questa categoria strutturale",
+        "Asse 6 potrebbe diventare rilevante se il tema viene sviluppato nella sua dimensione culturale comparata"
+      ]
+    },
+    {
+      "theme_id": "tema_05_salute_mentale_perinatale",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "role": "asse del substrato co-regolativo: la crisi perinatale altera la qualità della co-regolazione come presenza esperienziale disponibile al bambino",
+          "reason": "La salute mentale perinatale produce una modificazione strutturale della qualità della co-regolazione: Asse 1 è necessario perché il danno si manifesta a questo livello"
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "role": "asse della struttura del riconoscimento: la crisi perinatale compromette la sopravvivenza dell'oggetto e la disponibilità dell'adulto all'interiorizzazione da parte del bambino",
+          "reason": "La crisi perinatale mette a rischio specificamente Asse 2: sopravvivenza dell'oggetto e interiorizzazione dell'altro sono i meccanismi direttamente compromessi"
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "rejection_reason": "secondario: il contesto storico-culturale (solitudine, disgregazione dei supporti sociali) è un fattore di rischio ma non strutturalmente necessario per definire il tema"
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "rejection_reason": "da_verificare in STEP 2 e non confermato: la vulnerabilità strutturale non equivale all'incontro con il limite reale di Asse 4; il tema è la compromissione della struttura relazionale, non l'incontro con la perdita"
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "Meccanismo primariamente modificato dalla crisi perinatale; necessario, discriminante, non ridondante"
+        },
+        {
+          "node_id": "interiorizzazione-dell-altro",
+          "node_label": "Interiorizzazione dell'altro",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "reason": "La crisi perinatale compromette la disponibilità dell'adulto come presenza orientante verso il bambino; nodo necessario e specifico di Asse 2"
+        },
+        {
+          "node_id": "vulnerabilità-strutturale",
+          "node_label": "Vulnerabilità strutturale",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "Descrive la condizione strutturale specifica: non patologia individuale ma modificazione strutturale del campo co-regolativo; discriminante per questo tema"
+        },
+        {
+          "node_id": "sopravvivenza-dell-oggetto",
+          "node_label": "Sopravvivenza dell'oggetto",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "reason": "La crisi perinatale mette specificamente a rischio la capacità di sopravvivere come oggetto mentale; altamente discriminante per Asse 2 in questo tema"
+        }
+      ],
+      "secondary_nodes": [],
+      "rejected_nodes": [
+        {
+          "node_id": "relazione-costitutiva",
+          "node_label": "Relazione costitutiva",
+          "source_axis": "asse_1",
+          "rejection_reason": "TEST 2 fallito: troppo generale per distinguere questo tema da altri temi relazionali"
+        },
+        {
+          "node_id": "deformazione-strutturale",
+          "node_label": "Deformazione strutturale",
+          "source_axis": "asse_6",
+          "rejection_reason": "Asse 6 non confermato; l'esito è in parte coperto da vulnerabilità-strutturale"
+        }
+      ],
+      "confirmed_bridge_concepts": [
+        {
+          "concept_label": "Co-regolazione",
+          "linked_axes": [
+            "asse_1",
+            "asse_2"
+          ],
+          "linked_nodes": [
+            "co-regolazione",
+            "interiorizzazione-dell-altro",
+            "sopravvivenza-dell-oggetto"
+          ],
+          "reason": "Connette il substrato esperienziale (Asse 1: qualità della presenza co-regolativa) con la struttura del riconoscimento (Asse 2: disponibilità dell'adulto come oggetto interno); la crisi perinatale compromette entrambi i livelli simultaneamente attraverso la co-regolazione"
+        },
+        {
+          "concept_label": "Disponibilità affettiva",
+          "linked_axes": [
+            "asse_1",
+            "asse_2"
+          ],
+          "linked_nodes": [
+            "co-regolazione",
+            "interiorizzazione-dell-altro",
+            "vulnerabilità-strutturale"
+          ],
+          "is_derived": true,
+          "reason": "Connette la dimensione esperienziale (Asse 1: disponibilità come tenuta della relazione) con quella del riconoscimento (Asse 2: disponibilità come capacità di rispondere all'altro come soggetto); non ridondante con co-regolazione da sola: aggiunge la qualità affettiva specifica della presenza perinatale"
+        }
+      ],
+      "rejected_bridge_concepts": [],
+      "structural_configuration": {
+        "type": "multi_assiale",
+        "description": "Asse 1 e Asse 2 co-dominanti con funzioni distinte: Asse 1 → substrato esperienziale della co-regolazione (qualità della presenza incarnata disponibile al bambino); Asse 2 → struttura del riconoscimento (capacità di rendere disponibile l'interiorizzazione dell'altro come soggetto distinto). La crisi perinatale compromette entrambi i livelli simultaneamente."
+      },
+      "synthetic_formulation": "vulnerabilità della co-regolazione e del riconoscimento reciproco prodotta dalla crisi perinatale del caregiver",
+      "selection_rationale": "Asse 1 e Asse 2 confermati: la crisi perinatale produce effetti strutturali a due livelli distinti. Asse 6 secondario. Asse 4 non confermato.",
+      "critical_notes": [
+        "La distinzione tra crisi perinatale come evento clinico e come modificazione strutturale della relazione è il rischio principale: segnalare per STEP 4",
+        "I due ponti (co-regolazione e disponibilità affettiva) sono entrambi tra Asse 1 e Asse 2: se risultano ridondanti in STEP 4, eliminare 'disponibilità affettiva' e mantenere solo 'co-regolazione'"
+      ]
+    },
+    {
+      "theme_id": "tema_06_avversita_precoci",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "role": "asse della struttura dell'incontro con il reale: le avversità precoci sono forme di incontro precoce con eccedenza, limite e perdita nella fascia di sviluppo più vulnerabile",
+          "reason": "Il tema è strutturato attorno all'incontro con il reale nella fascia precoce: senza Asse 4 il tema si riduce a fattori di rischio senza struttura"
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "role": "asse della condizione co-regolativa: la qualità della co-regolazione disponibile è ciò che media tra l'incontro con il reale e l'esito strutturale per il bambino",
+          "reason": "La co-regolazione determina se l'incontro con il reale (Asse 4) diventa strutturante o disorganizzante; senza Asse 1 il tema perde il meccanismo relazionale"
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "rejection_reason": "secondario: le condizioni storico-culturali (povertà, violenza, contesti di rischio) sono rilevanti come fattori ma non strutturalmente necessarie per la configurazione essenziale"
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "rejection_reason": "da_verificare in STEP 2 e non confermato: l'interiorizzazione dell'altro è compromessa come esito, non come struttura del tema"
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "limite-reale",
+          "node_label": "Limite reale",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "reason": "Nodo fondante del tema: le avversità precoci sono forme di incontro con ciò che accade indipendentemente dall'intenzione; necessario e altamente discriminante"
+        },
+        {
+          "node_id": "eccedenza",
+          "node_label": "Eccedenza",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "reason": "Prima forma di incontro con il reale: la sproporzione strutturale è caratteristica specifica delle avversità precoci nella fascia 0-3; discriminante"
+        },
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "Condizione relazionale che media l'esito dell'incontro con il reale: necessaria e discriminante (distingue avversità strutturante da avversità disorganizzante)"
+        },
+        {
+          "node_id": "vulnerabilità-strutturale",
+          "node_label": "Vulnerabilità strutturale",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "Descrive la condizione specifica della fascia precoce: vulnerabilità come struttura dell'incontro con il reale in assenza di risorse co-regolative adeguate"
+        }
+      ],
+      "secondary_nodes": [
+        {
+          "node_id": "perdita",
+          "node_label": "Perdita",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "reason": "Presente nelle avversità precoci ma in parte coperta da limite-reale ed eccedenza; non strutturalmente necessario per la configurazione essenziale"
+        }
+      ],
+      "rejected_nodes": [
+        {
+          "node_id": "deformazione-strutturale",
+          "node_label": "Deformazione strutturale",
+          "source_axis": "asse_6",
+          "rejection_reason": "TEST 2 fallito: troppo generale; Asse 6 non confermato"
+        },
+        {
+          "node_id": "rischio-educativo",
+          "node_label": "Rischio educativo",
+          "source_axis": "asse_4",
+          "rejection_reason": "da_verificare in STEP 2 e non confermato: appartiene alla risposta adulta al limite, non alla struttura delle avversità precoci stesse"
+        }
+      ],
+      "confirmed_bridge_concepts": [
+        {
+          "concept_label": "Co-regolazione",
+          "linked_axes": [
+            "asse_4",
+            "asse_1"
+          ],
+          "linked_nodes": [
+            "co-regolazione",
+            "limite-reale",
+            "eccedenza",
+            "vulnerabilità-strutturale"
+          ],
+          "reason": "Connette la struttura dell'incontro con il reale (Asse 4: limite, eccedenza) con la condizione relazionale che ne media l'esito (Asse 1: co-regolazione come tenuta dell'esperienza); la co-regolazione è il meccanismo che determina se l'incontro con il reale è strutturante o disorganizzante"
+        }
+      ],
+      "rejected_bridge_concepts": [
+        {
+          "concept_label": "Limite reale",
+          "rejection_reason": "Regola 1: compariva sia come nodo che come concetto-ponte; è specifico di Asse 4 (nodo). Non può fungere da ponte senza violare la regola nodo ≠ ponte."
+        }
+      ],
+      "structural_configuration": {
+        "type": "soglia_tra_assi",
+        "description": "Soglia tra Asse 4 (struttura dell'incontro con il reale: eccedenza, limite, perdita) e Asse 1 (condizione co-regolativa: qualità della presenza che media l'esito). Il tema è a questa soglia: né solo Asse 4 né solo Asse 1, ma la relazione strutturale tra i due."
+      },
+      "synthetic_formulation": "incontro precoce con il limite reale in condizioni di vulnerabilità co-regolativa",
+      "selection_rationale": "Asse 4 e Asse 1 confermati come soglia: le avversità precoci sono la forma in cui l'incontro con il reale (Asse 4) si manifesta in una fase in cui la co-regolazione (Asse 1) è la condizione necessaria per l'elaborazione strutturante. Asse 6 secondario. Asse 2 non confermato.",
+      "critical_notes": [
+        "La distinzione tra avversità come evento e avversità come struttura dell'incontro con il reale è il punto metodologico più delicato: segnalare per STEP 4",
+        "Il tema si avvicina al rischio di patologizzazione della perdita (rischio di riduzione di Asse 4): monitorare nella micro-matrice"
+      ]
+    },
+    {
+      "theme_id": "tema_07_ecosistema_digitale",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "role": "asse della struttura del desiderio come campo orientativo: l'ecosistema digitale opera una deformazione del campo desiderabile sostituendo la motivazione al desiderio strutturale",
+          "reason": "Il tema è la deformazione del desiderio come struttura: senza Asse 5 il tema perde il suo nucleo e diventa semplice analisi tecnologica"
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "role": "asse della forma storica della tecnica: l'ecosistema digitale come configurazione storica che riorganizza il campo desiderabile prima di qualsiasi uso consapevole",
+          "reason": "L'ecosistema digitale non è uno strumento ma una forma storica: senza Asse 6 la deformazione del desiderio non è strutturalmente spiegabile"
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "rejection_reason": "non necessario come asse autonomo: la dimensione esperienziale è derivabile da Asse 5 (il campo desiderabile come campo esperienziale orientato)"
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "rejection_reason": "secondario: la prestazionalizzazione del valore appartiene più ad Asse 6 (orizzonte storico di senso) che ad Asse 3 (normatività strutturale del giudizio) per questo tema"
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "campo-desiderabile",
+          "node_label": "Campo desiderabile",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "reason": "Nodo centrale: l'ecosistema digitale opera sul campo desiderabile come struttura; necessario, altamente discriminante, non ridondante"
+        },
+        {
+          "node_id": "desiderio-come-struttura",
+          "node_label": "Desiderio come struttura",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "reason": "Permette di distinguere il tema dalla semplice analisi del comportamento: il desiderio come orientamento strutturale vs. impulso; necessario e specifico"
+        },
+        {
+          "node_id": "motivazione-come-sostituto",
+          "node_label": "Motivazione come sostituto",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "reason": "Nodo più discriminante del tema: la sostituzione della struttura del desiderio con la motivazione come meccanismo di rinforzo è il cuore della deformazione digitale; altamente specifico"
+        },
+        {
+          "node_id": "tecnica-come-forma-storica",
+          "node_label": "Tecnica come forma storica",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Permette di leggere l'ecosistema digitale come forma storica e non come strumento: necessario per la struttura del tema"
+        }
+      ],
+      "secondary_nodes": [
+        {
+          "node_id": "prestazionalizzazione-del-valore",
+          "node_label": "Prestazionalizzazione del valore",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Pertinente ma in parte coperto da tecnica-come-forma-storica e motivazione-come-sostituto; non strutturalmente necessario per la configurazione essenziale"
+        }
+      ],
+      "rejected_nodes": [
+        {
+          "node_id": "orizzonte-di-senso",
+          "node_label": "Orizzonte di senso",
+          "source_axis": "asse_3",
+          "rejection_reason": "Asse 3 non confermato; TEST 2 fallito per questo tema specifico"
+        }
+      ],
+      "confirmed_bridge_concepts": [
+        {
+          "concept_label": "Deformazione strutturale del desiderio",
+          "linked_axes": [
+            "asse_5",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "campo-desiderabile",
+            "desiderio-come-struttura",
+            "motivazione-come-sostituto",
+            "tecnica-come-forma-storica"
+          ],
+          "reason": "Descrive il meccanismo attraverso cui la forma storica della tecnica (Asse 6) produce una deformazione del campo desiderabile come struttura (Asse 5): non ridondante con i singoli nodi, aggiunge la relazione tra i due livelli"
+        }
+      ],
+      "rejected_bridge_concepts": [
+        {
+          "concept_label": "Campo desiderabile",
+          "rejection_reason": "Regola 1: compariva sia come nodo che come concetto-ponte; è specifico di Asse 5 (nodo). Non può fungere da ponte senza violare la regola nodo ≠ ponte."
+        }
+      ],
+      "structural_configuration": {
+        "type": "soglia_tra_assi",
+        "description": "Soglia tra Asse 5 (campo desiderabile come struttura dell'orientamento) e Asse 6 (ecosistema digitale come forma storica che colonizza il campo desiderabile). Il tema è la relazione strutturale di deformazione che uno esercita sull'altro."
+      },
+      "synthetic_formulation": "deformazione strutturale del campo desiderabile operata dalla forma storica dell'ecosistema digitale",
+      "selection_rationale": "Asse 5 e Asse 6 confermati come soglia: l'ecosistema digitale (Asse 6) deforma il campo desiderabile (Asse 5) sostituendo la struttura del desiderio con la motivazione come rinforzo. Asse 1 non necessario come asse autonomo. Asse 3 secondario.",
+      "critical_notes": [
+        "La distinzione motivazione/desiderio è il nodo concettuale più delicato: va curata in STEP 4 con riferimento esplicito alla letteratura di Asse 5",
+        "Connessione strutturale con tema_09 (gioco libero): entrambi riguardano il campo desiderabile ma con polarità opposta (tema_09: fondazione; tema_07: deformazione). Segnalare per cross-tema in STEP 4."
+      ]
+    },
+    {
+      "theme_id": "tema_08_disuguaglianze_precoci",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "role": "asse della struttura storico-sociale: le disuguaglianze come configurazione sistemica che produce differenziali strutturali nel campo di sviluppo disponibile al bambino",
+          "reason": "Le disuguaglianze precoci sono un fenomeno di struttura storico-sociale: senza Asse 6 il tema non ha struttura, solo descrizione di fattori di rischio"
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "role": "asse del campo co-regolativo differenziale: le disuguaglianze operano sulla qualità della co-regolazione disponibile, producendo differenziali strutturali nell'esperienza del bambino",
+          "reason": "Le disuguaglianze si traducono in differenziali di co-regolazione: senza Asse 1 il tema perde il meccanismo attraverso cui le strutture sociali producono effetti sullo sviluppo"
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "rejection_reason": "non necessario: la vulnerabilità strutturale è un esito delle disuguaglianze ma l'incontro con il limite reale di Asse 4 non è il meccanismo strutturale del tema"
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "rejection_reason": "da_verificare in STEP 2 e non confermato: il riconoscimento reciproco è compromesso come esito ma non come struttura del tema"
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "mediazione-strutturale",
+          "node_label": "Mediazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Descrive il meccanismo attraverso cui le strutture sociali producono differenziali di sviluppo: necessario, discriminante per questo tema"
+        },
+        {
+          "node_id": "deformazione-strutturale",
+          "node_label": "Deformazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Descrive l'esito sistemico delle disuguaglianze come deformazione del campo di sviluppo: specifico e necessario"
+        },
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "Meccanismo attraverso cui le disuguaglianze strutturali si traducono in effetti sullo sviluppo: necessario e discriminante"
+        },
+        {
+          "node_id": "istituzione-come-dispositivo",
+          "node_label": "Istituzione come dispositivo",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Le istituzioni sono il luogo in cui le disuguaglianze si riproducono o vengono contrastate: discriminante per questo tema"
+        }
+      ],
+      "secondary_nodes": [],
+      "rejected_nodes": [
+        {
+          "node_id": "limite-reale",
+          "node_label": "Limite reale",
+          "source_axis": "asse_4",
+          "rejection_reason": "Asse 4 non confermato; la disuguaglianza non equivale al limite reale di Asse 4"
+        },
+        {
+          "node_id": "vulnerabilità-strutturale",
+          "node_label": "Vulnerabilità strutturale",
+          "source_axis": "asse_1",
+          "rejection_reason": "Spostata a concetto-ponte: descrive la relazione tra mediazione storico-sociale (Asse 6) e co-regolazione differenziale (Asse 1); funziona meglio come ponte che come nodo autonomo"
+        }
+      ],
+      "confirmed_bridge_concepts": [
+        {
+          "concept_label": "Vulnerabilità strutturale",
+          "linked_axes": [
+            "asse_6",
+            "asse_1"
+          ],
+          "linked_nodes": [
+            "mediazione-strutturale",
+            "deformazione-strutturale",
+            "co-regolazione"
+          ],
+          "reason": "Connette la struttura storico-sociale (Asse 6: le disuguaglianze come configurazione sistemica) con il campo co-regolativo (Asse 1: differenziali nella qualità della co-regolazione disponibile): descrive come le strutture sociali producono differenziali di vulnerabilità nell'esperienza del bambino. Spostata da nodo a ponte per risolvere Regola 1."
+        }
+      ],
+      "rejected_bridge_concepts": [
+        {
+          "concept_label": "Mediazione strutturale",
+          "rejection_reason": "Regola 1: compariva sia come nodo che come concetto-ponte; è specifico di Asse 6 (nodo). Mantenuto come nodo, rimosso come ponte."
+        }
+      ],
+      "structural_configuration": {
+        "type": "multi_assiale",
+        "description": "Asse 6 e Asse 1 co-dominanti con funzioni distinte: Asse 6 → struttura storico-sociale delle disuguaglianze (configurazione sistemica, mediazione istituzionale); Asse 1 → campo co-regolativo differenziale (qualità della co-regolazione disponibile al bambino come esito strutturale delle disuguaglianze)."
+      },
+      "synthetic_formulation": "produzione sistemica di differenziali co-regolativi attraverso la mediazione istituzionale e la struttura storico-sociale",
+      "selection_rationale": "Asse 6 e Asse 1 confermati come multi_assiale. Asse 4 non necessario. Asse 2 non confermato. La vulnerabilità strutturale è stata spostata da nodo a ponte per risolvere Regola 1 e chiarire la sua funzione.",
+      "critical_notes": [
+        "La vulnerabilità strutturale è stata spostata da nodo a ponte: operazione di STEP 3 che risolve Regola 1; va segnalata per retro-propagazione a STEP 2",
+        "Connessione strutturale con tema_10 (frammentazione sistemi): entrambi hanno istituzione-come-dispositivo e mediazione-strutturale. Segnalare per cross-tema in STEP 4."
+      ]
+    },
+    {
+      "theme_id": "tema_09_gioco_libero",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "role": "asse del campo desiderabile e della soggettivazione del desiderio: il gioco libero è lo spazio in cui il desiderio si struttura come orientamento autonomo",
+          "reason": "Il gioco libero è la forma fenomenologica in cui il desiderio come struttura si costituisce: senza Asse 5 il tema perde il suo nucleo"
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "role": "asse dell'eccedenza e del limite come condizioni strutturali del gioco: il gioco libero richiede l'incontro con ciò che resiste e con il limite reale come condizione della libertà strutturale",
+          "reason": "Il gioco libero non è assenza di vincoli ma lo spazio in cui eccedenza e limite reale sono strutturanti perché non mediati dall'adulto; senza Asse 4 la libertà del gioco non ha struttura"
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "rejection_reason": "secondario: il rischio della prestazionalizzazione è il contesto che minaccia il gioco libero, non la struttura del gioco in sé"
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "rejection_reason": "non necessario come asse autonomo: la corporeità è un aspetto del gioco ma la struttura essenziale è già catturata da Asse 5 e Asse 4"
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "rejection_reason": "da_verificare in STEP 2 e non confermato: la normatività del gioco è un aspetto pericolosamente operativo per questo tema"
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "campo-desiderabile",
+          "node_label": "Campo desiderabile",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "reason": "Il gioco libero è lo spazio di esercizio del campo desiderabile: necessario, discriminante, non ridondante"
+        },
+        {
+          "node_id": "soggettivazione-del-desiderio",
+          "node_label": "Soggettivazione del desiderio",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "reason": "Nodo più specifico per questo tema: il gioco libero come contesto in cui il bambino diventa soggetto del proprio desiderio; altamente discriminante"
+        },
+        {
+          "node_id": "eccedenza",
+          "node_label": "Eccedenza",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "reason": "Il gioco libero implica l'incontro con ciò che non si controlla, che resiste, che sorprende: eccedenza come struttura del gioco reale vs. gioco simulato"
+        },
+        {
+          "node_id": "limite-reale",
+          "node_label": "Limite reale",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "reason": "Il limite come condizione strutturale del gioco libero: necessario per distinguere il gioco dalla fantasia onnipotente"
+        }
+      ],
+      "secondary_nodes": [],
+      "rejected_nodes": [
+        {
+          "node_id": "prestazionalizzazione-del-valore",
+          "node_label": "Prestazionalizzazione del valore",
+          "source_axis": "asse_6",
+          "rejection_reason": "Asse 6 non confermato; appartiene al contesto che minaccia il gioco, non alla struttura del gioco in sé"
+        },
+        {
+          "node_id": "corporeità-vissuta",
+          "node_label": "Corporeità vissuta",
+          "source_axis": "asse_1",
+          "rejection_reason": "Asse 1 non confermato; la corporeità è presente ma non è il nodo strutturale che definisce il gioco libero"
+        },
+        {
+          "node_id": "condizione-del-desiderio",
+          "node_label": "Condizione del desiderio",
+          "source_axis": "asse_4",
+          "rejection_reason": "Spostato a concetto-ponte: descrive la relazione strutturale tra Asse 4 (limite come condizione) e Asse 5 (desiderio come orientamento); funziona meglio come ponte che come nodo autonomo"
+        }
+      ],
+      "confirmed_bridge_concepts": [
+        {
+          "concept_label": "Condizione strutturale del desiderio",
+          "linked_axes": [
+            "asse_4",
+            "asse_5"
+          ],
+          "linked_nodes": [
+            "eccedenza",
+            "limite-reale",
+            "campo-desiderabile",
+            "soggettivazione-del-desiderio"
+          ],
+          "reason": "Connette la struttura dell'incontro con il reale (Asse 4: eccedenza e limite come condizioni) con la struttura del desiderio come orientamento (Asse 5: campo desiderabile e soggettivazione): descrive perché il limite non nega il desiderio ma lo rende possibile come orientamento strutturale e non come impulso onnipotente. Derivato da 'condizione-del-desiderio' di Asse 4, spostato da nodo secondario a ponte."
+        }
+      ],
+      "rejected_bridge_concepts": [
+        {
+          "concept_label": "Campo desiderabile",
+          "rejection_reason": "Regola 1: compariva sia come nodo che come concetto-ponte; è specifico di Asse 5 (nodo). Mantenuto come nodo."
+        },
+        {
+          "concept_label": "Eccedenza",
+          "rejection_reason": "Regola 1: compariva sia come nodo che come concetto-ponte; è specifico di Asse 4 (nodo). Mantenuto come nodo."
+        }
+      ],
+      "structural_configuration": {
+        "type": "soglia_tra_assi",
+        "description": "Soglia tra Asse 5 (campo desiderabile: il gioco come spazio di soggettivazione del desiderio) e Asse 4 (eccedenza e limite reale: le condizioni strutturali che rendono il gioco libero strutturante). Il tema è a questa soglia: il gioco libero è lo spazio in cui l'incontro con il limite (Asse 4) fonda la possibilità del desiderio come orientamento (Asse 5)."
+      },
+      "synthetic_formulation": "campo libero in cui l'incontro con il limite e l'eccedenza fonda il desiderio come orientamento strutturale",
+      "selection_rationale": "Asse 5 e Asse 4 confermati come soglia. Asse 6 è il contorno contemporaneo. Asse 1 non necessario come asse autonomo. Il concetto-ponte 'condizione strutturale del desiderio' è derivato da nodo secondario a ponte per risolvere Regola 1.",
+      "critical_notes": [
+        "La connessione Asse 4 → Asse 5 (limite come condizione del desiderio) è teoricamente la più importante dell'intero set: il tema_09 può diventare il caso paradigmatico per questo collegamento nel modello",
+        "Connessione strutturale con tema_07 (ecosistema digitale): entrambi riguardano il campo desiderabile con polarità opposta (tema_09: fondazione; tema_07: deformazione). Segnalare per cross-tema in STEP 4."
+      ]
+    },
+    {
+      "theme_id": "tema_10_frammentazione_sistemi",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "role": "asse della configurazione istituzionale: la frammentazione come problema di struttura storico-culturale delle istituzioni educative e dei loro rapporti",
+          "reason": "La frammentazione dei sistemi è un fenomeno di struttura istituzionale: senza Asse 6 il tema non ha struttura, solo descrizione di difficoltà operative"
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "role": "asse dell'autorità educativa e dell'imputazione della responsabilità: la frammentazione produce una deformazione strutturale della normatività che orienta e imputa",
+          "reason": "La frammentazione non è solo un problema organizzativo ma una crisi della struttura normativa: chi ha autorità? a chi va imputata la responsabilità? senza Asse 3 questi aspetti restano invisibili"
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "rejection_reason": "secondario: la co-regolazione è il livello a cui la frammentazione produce danno (l'esito mancato), non il meccanismo strutturale del tema"
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "rejection_reason": "da_verificare in STEP 2 e non confermato: il riconoscimento reciproco è compromesso dalla frammentazione come esito, non come struttura"
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "istituzione-come-dispositivo",
+          "node_label": "Istituzione come dispositivo",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Nodo fondante del tema: la frammentazione è un problema di struttura istituzionale; necessario, altamente discriminante, non ridondante"
+        },
+        {
+          "node_id": "mediazione-strutturale",
+          "node_label": "Mediazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Descrive il meccanismo istituzionale che garantisce la continuità e che viene frammentato: necessario e specifico"
+        },
+        {
+          "node_id": "responsabilità-come-imputazione",
+          "node_label": "Responsabilità come imputazione",
+          "source_axis": "asse_3",
+          "source_axis_name": "Normativo–educativo",
+          "reason": "La frammentazione produce un problema specifico di imputazione: nessun attore si sente responsabile; nodo altamente discriminante per questo tema"
+        },
+        {
+          "node_id": "autorità-educativa",
+          "node_label": "Autorità educativa",
+          "source_axis": "asse_3",
+          "source_axis_name": "Normativo–educativo",
+          "reason": "La frammentazione è anche una crisi dell'autorità educativa distribuita: chi ha il mandato? Nodo necessario e specifico"
+        }
+      ],
+      "secondary_nodes": [
+        {
+          "node_id": "deformazione-strutturale",
+          "node_label": "Deformazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Pertinente come descrizione dell'esito ma in parte coperto da istituzione-come-dispositivo e mediazione-strutturale"
+        }
+      ],
+      "rejected_nodes": [
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "rejection_reason": "Asse 1 non confermato: la co-regolazione è l'esito mancato della frammentazione, non il meccanismo strutturale del tema"
+        }
+      ],
+      "confirmed_bridge_concepts": [
+        {
+          "concept_label": "Deformazione strutturale dell'autorità educativa",
+          "linked_axes": [
+            "asse_6",
+            "asse_3"
+          ],
+          "linked_nodes": [
+            "istituzione-come-dispositivo",
+            "mediazione-strutturale",
+            "responsabilità-come-imputazione",
+            "autorità-educativa"
+          ],
+          "is_derived": true,
+          "reason": "Connette la struttura istituzionale frammentata (Asse 6) con la deformazione normativa (Asse 3: autorità e responsabilità senza soggetto imputabile). Concetto derivato di STEP 3: tutti i bridge candidates di STEP 2 violavano Regola 1 (nodo ≠ ponte); aggiunto come eccezione giustificata."
+        }
+      ],
+      "rejected_bridge_concepts": [
+        {
+          "concept_label": "Istituzione come dispositivo",
+          "rejection_reason": "Regola 1: compariva sia come nodo che come concetto-ponte; è specifico di Asse 6 (nodo). Mantenuto come nodo."
+        },
+        {
+          "concept_label": "Mediazione strutturale",
+          "rejection_reason": "Regola 1: compariva sia come nodo che come concetto-ponte; è specifico di Asse 6 (nodo). Mantenuto come nodo."
+        }
+      ],
+      "structural_configuration": {
+        "type": "soglia_tra_assi",
+        "description": "Soglia tra Asse 6 (configurazione istituzionale: la frammentazione come problema di struttura storico-culturale dei servizi) e Asse 3 (autorità educativa e responsabilità: la frammentazione come crisi della struttura normativa che imputa e orienta). Non è né solo un problema istituzionale né solo un problema normativo."
+      },
+      "synthetic_formulation": "frammentazione della mediazione istituzionale come deformazione strutturale dell'autorità educativa e dell'imputazione della responsabilità",
+      "selection_rationale": "Asse 6 e Asse 3 confermati come soglia: la frammentazione è simultaneamente un problema istituzionale (Asse 6) e normativo (Asse 3). Asse 1 è l'esito mancato, non il meccanismo. Asse 2 non confermato. Il concetto-ponte è derivato di STEP 3 per assenza di bridge candidates validi in STEP 2.",
+      "critical_notes": [
+        "Il concetto-ponte 'Deformazione strutturale dell'autorità educativa' è un'aggiunta eccezionale di STEP 3 (non in STEP 2): va segnalata per retro-propagazione a STEP 2",
+        "Asse 1 escluso come asse strutturale ma rilevante come livello di danno: va ripreso in STEP 4 come esito, non come asse strutturale del tema",
+        "Connessione strutturale con tema_08 (disuguaglianze precoci): entrambi condividono istituzione-come-dispositivo e mediazione-strutturale. Segnalare per cross-tema in STEP 4."
+      ]
+    }
+  ]
+}

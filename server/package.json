@@ -11,6 +11,7 @@
   "dependencies": {
     "@clerk/backend": "^3.2.9",
     "@clerk/express": "^2.1.1",
+    "ajv": "^8.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.1",
     "express": "^4.18.2",

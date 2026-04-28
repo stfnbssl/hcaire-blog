@@ -1,0 +1,250 @@
+{
+  "step": "f3_step_3",
+  "version": "v2",
+  "based_on": {
+    "device_v1": "tema-01-pointing-clinico-dispositivo",
+    "stress_test_reference": "f3_step_2 — stress test"
+  },
+  "domain_selected": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+  "results": [
+    {
+      "device_id": "tema-01-pointing-clinico-dispositivo-v2",
+      "theme_id": "tema_01_pointing_precoce",
+      "domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+      "device_type": "lettura_configurazionale",
+
+      "function": "Il dispositivo rende leggibile la struttura interna del pointing come atto semiotico co-prodotto — non come comportamento da rilevare ma come configurazione di livelli (corporeo, intenzionale, co-regolatorio, semiotico) che possono essere presenti, assenti, distorte o oscillanti in modo strutturalmente distinto. La versione v2 articola internamente i livelli del campo intenzionale e della co-regolazione, introduce condizioni di osservabilità indiretta del passaggio trasformativo e distingue la lettura su tre scale temporali (episodio, sequenza, struttura relazionale). Il cieco che contribuisce a colmare resta la tendenza del contesto clinico a trattare il pointing come marker evolutivo binario o come indicatore cognitivo isolato; la correzione strutturale consente di leggere stati intermedi e zone di ambiguità senza forzarli in classificazioni nette. Il dispositivo sposta la domanda clinica da 'il bambino punta?' a 'quale configurazione strutturale assume il gesto in questa relazione, dove si localizza la discontinuità quando la configurazione non si costituisce pienamente, e su quale scala temporale la lettura è sostenibile?'",
+
+      "structural_reference": {
+        "core_configuration": "la base corporea orientata (corporeità-vissuta) costituisce un campo di orientamento aperto (campo-intenzionale) che diventa condiviso e significabile (mediazione-simbolica) solo attraverso la risposta co-regolatoria dell'altro (co-regolazione): il corpo si trasforma in segno non da solo ma nella relazione",
+        "axes": ["asse_1", "asse_6"],
+        "nodes": ["corporeità-vissuta", "campo-intenzionale", "co-regolazione", "mediazione-simbolica"],
+        "bridge_concepts": ["Il gesto corporeo come atto semiotico co-prodotto"]
+      },
+
+      "structural_corrections_applied": [
+        {
+          "correction_id": "C1_stati_del_campo",
+          "target": "reading_focus → 'Apertura del campo intenzionale condiviso'",
+          "intervention": "Sostituzione della logica binaria presente/assente con tipologia strutturata degli stati del campo (assente, tentato-unilaterale, tentato-in-attesa, condiviso). La distinzione è interna al nodo campo-intenzionale, non introduce nuovi nodi."
+        },
+        {
+          "correction_id": "C2_articolazione_co-regolazione",
+          "target": "reading_focus → 'Qualità co-regolatoria della risposta'",
+          "intervention": "Articolazione interna del nodo co-regolazione in cinque funzioni strutturali (assente, registrativa, partecipativa, trasformativa, chiudente). Le funzioni non costituiscono una scala di qualità ma classi strutturalmente distinte per funzione svolta nel campo."
+        },
+        {
+          "correction_id": "C3_operatività_bridge",
+          "target": "reading_focus → 'Struttura del passaggio trasformativo'",
+          "intervention": "Introduzione di proxy strutturali (non metriche) per distinguere passaggio trasformativo aperto (co-produzione reale) da passaggio predeterminato (script). Obbligo di triangolazione e dichiarazione esplicita dell'ambiguità quando la triangolazione non è sostenibile."
+        },
+        {
+          "correction_id": "C4_scala_temporale",
+          "target": "nuova sezione 'temporal_scale' + integrazione nella logica generale del dispositivo",
+          "intervention": "Distinzione tra livello episodio, livello sequenza e livello struttura relazionale. Divieto di aggregazione quantitativa: la lettura cross-episodica si fonda su descrizione di oscillazioni, sistematicità, condizioni contestuali."
+        }
+      ],
+
+      "reading_focus": [
+        {
+          "dimension": "Base corporea del gesto",
+          "description": "La corporeità vissuta come condizione originaria della configurazione: il corpo che si orienta nello spazio relazionale prima di qualsiasi elaborazione cognitiva deliberata. Questa dimensione può essere presente (il corpo è strutturalmente orientato verso qualcosa nell'interazione, il gesto emerge dalla postura e dall'orientamento dell'intero corpo), assente (il gesto motorio c'è ma non è radicato in un orientamento corporeo-relazionale — è un movimento senza base), distorta (il corpo si orienta ma in modo rigido, ripetitivo o desincronizzato rispetto all'altro) o oscillante (la base corporea è disponibile solo in certi momenti o con certi interlocutori). La sua assenza o alterazione non è riducibile a un deficit cognitivo: segnala qualcosa al livello del corpo-in-relazione, a prescindere dalla presenza o assenza del gesto come comportamento."
+        },
+        {
+          "dimension": "Apertura del campo intenzionale condiviso",
+          "description": "Il campo intenzionale come struttura che il gesto istituisce: non l'oggetto indicato ma l'orientamento condiviso verso di esso — la struttura in cui due soggetti si trovano orientati verso la stessa cosa. La lettura non è binaria: il campo si articola in stati strutturalmente distinti che vanno classificati esplicitando, per ciascuno, chi apre il campo, se e come l'altro vi entra, e se esiste una durata strutturale della co-presenza. La distinzione tra campo aperto e coincidenza visiva (entrambi guardano la stessa cosa senza che si costituisca un orientamento condiviso) resta clinicamente rilevante e attraversa tutti gli stati. Le zone di sovrapposizione tra stati vanno dichiarate, non forzate.",
+          "field_states": [
+            {
+              "state": "assente",
+              "structural_signature": "il gesto non istituisce alcun campo: il corpo si muove o indica ma non apre uno spazio di orientamento. Né il bambino né l'adulto si trovano orientati verso una stessa configurazione percettiva. La domanda 'chi apre il campo' non ha risposta perché non c'è apertura.",
+              "boundary_with_adjacent": "si distingue da 'tentato-unilaterale' perché in quest'ultimo c'è almeno un atto di apertura, anche se non raccolto. Quando l'atto stesso di apertura è dubbio, dichiarare la zona di sovrapposizione."
+            },
+            {
+              "state": "tentato-unilaterale",
+              "structural_signature": "uno dei due (tipicamente il bambino) compie un atto di apertura del campo — gesto, orientamento, vocalizzazione — che non viene raccolto dall'altro. L'apertura è strutturalmente presente come iniziativa ma il campo non si costituisce come condiviso perché manca la co-presenza dell'altro. Chi apre: identificabile. Chi entra: nessuno. Durata della co-presenza: nulla.",
+              "boundary_with_adjacent": "si distingue da 'tentato-in-attesa' perché qui l'atto è completo e chiuso in sé (il bambino indica e prosegue), mentre in 'tentato-in-attesa' l'apertura mantiene una struttura sospesa di richiamo. Si distingue da 'condiviso' perché manca l'ingresso dell'altro nel campo."
+            },
+            {
+              "state": "tentato-in-attesa",
+              "structural_signature": "l'apertura mantiene una struttura sospesa: chi ha aperto il campo resta strutturalmente disponibile all'ingresso dell'altro (postura sostenuta, sguardo che alterna oggetto e interlocutore, vocalizzazione che non si chiude). Chi apre: identificabile. Chi entra: nessuno (ancora), ma la struttura del campo include lo spazio di ingresso. Durata della co-presenza: ancora nulla, ma con tensione strutturale verso il consolidarsi.",
+              "boundary_with_adjacent": "si distingue da 'tentato-unilaterale' per la presenza di una struttura di sospensione/attesa (non per l'intenzione, che il dispositivo non legge). Si distingue da 'condiviso' perché la co-presenza non si è ancora costituita. La zona di sovrapposizione con 'condiviso' va dichiarata quando l'ingresso dell'altro è in corso ma non consolidato."
+            },
+            {
+              "state": "condiviso",
+              "structural_signature": "il campo è effettivamente costituito come spazio di orientamento condiviso: entrambi sono strutturalmente orientati verso la stessa configurazione percettiva e questa co-presenza ha una durata strutturale (non istantanea). Chi apre: identificabile (bambino, adulto, o costruzione progressiva). Chi entra: l'altro, in modo riconoscibile. Durata della co-presenza: presente come elemento strutturale del campo.",
+              "boundary_with_adjacent": "si distingue dalla coincidenza visiva (entrambi guardano la stessa cosa senza co-presenza) per la qualità strutturale del campo. Si distingue da 'tentato-in-attesa' per il consolidarsi della co-presenza. La zona di sovrapposizione va dichiarata quando il campo si apre e si chiude rapidamente senza che sia possibile leggere se la co-presenza si sia costituita."
+            }
+          ],
+          "ambiguity_clause": "Quando due stati non sono distinguibili con certezza nei dati osservati, la zona di sovrapposizione deve essere dichiarata esplicitamente e spiegata in termini di quale elemento strutturale (chi apre / chi entra / durata) non è leggibile. La dichiarazione di ambiguità è informazione strutturale, non un fallimento della lettura."
+        },
+        {
+          "dimension": "Qualità co-regolatoria della risposta",
+          "description": "La co-regolazione come condizione strutturale necessaria del passaggio semiotico: la risposta dell'altro che trasforma o non trasforma il gesto corporeo in atto configurativo. La co-regolazione è diadica — struttura della relazione, non attributo dell'adulto — e si articola internamente in cinque funzioni strutturalmente distinte. Le funzioni NON costituiscono una scala di qualità (assente → bassa → alta): sono classi che si distinguono per la funzione strutturale che la risposta svolge nel campo. La classificazione richiede di esplicitare quale funzione svolge la risposta e perché non è riconducibile alla classe adiacente. Le zone di ambiguità tra funzioni vanno dichiarate.",
+          "co_regulation_functions": [
+            {
+              "function": "assente",
+              "structural_role": "non c'è risposta strutturalmente leggibile come orientata al gesto del bambino. L'adulto può essere fisicamente presente e attivo ma la sua azione non si colloca nel campo aperto (o tentato) dal bambino.",
+              "discrimination_from_adjacent": "si distingue da 'registrativa' perché in quest'ultima c'è una risposta che riconosce il gesto, anche se non vi entra. Quando un micro-segnale di riconoscimento è presente ma di leggibilità incerta, dichiarare ambiguità."
+            },
+            {
+              "function": "registrativa",
+              "structural_role": "la risposta riconosce il gesto come gesto (lo registra: nomina l'oggetto, conferma con un suono, sposta lo sguardo verso l'oggetto indicato) ma non entra nel campo intenzionale aperto. La funzione strutturale è di acknowledgment, non di co-presenza nel campo.",
+              "discrimination_from_adjacent": "si distingue da 'partecipativa' perché qui la risposta si chiude sul gesto del bambino (registra e termina) invece di entrare in una struttura di co-presenza nel campo. Si distingue da 'assente' per la presenza dell'atto di riconoscimento. Quando la risposta è formalmente partecipativa ma strutturalmente solo di registrazione, dichiarare ambiguità."
+            },
+            {
+              "function": "partecipativa",
+              "structural_role": "la risposta entra nel campo aperto dal bambino e contribuisce a sostenerlo come campo condiviso: postura, sguardo e vocalizzazione si collocano dentro la struttura di co-presenza, senza chiuderla né trasformarla. La funzione strutturale è di sostegno del campo costituito.",
+              "discrimination_from_adjacent": "si distingue da 'registrativa' per l'effettivo ingresso nel campo (non solo riconoscimento del gesto). Si distingue da 'trasformativa' perché qui la risposta sostiene il campo senza produrre il passaggio semiotico. Si distingue da 'chiudente' perché non sposta né chiude. La zona di sovrapposizione con 'trasformativa' va dichiarata quando la partecipazione contiene elementi che potrebbero produrre il passaggio ma non è leggibile se questo si costituisca."
+            },
+            {
+              "function": "trasformativa",
+              "structural_role": "la risposta non solo entra nel campo ma consente il passaggio dal percepito condiviso al percepito condiviso e significabile: la mediazione simbolica si costituisce strutturalmente attraverso questa risposta. La funzione strutturale è di abilitazione del passaggio semiotico co-prodotto.",
+              "discrimination_from_adjacent": "si distingue da 'partecipativa' per l'effettivo costituirsi del passaggio semiotico, leggibile attraverso i proxy strutturali del bridge (vedi 'Struttura del passaggio trasformativo'). Si distingue da 'chiudente' perché il passaggio resta aperto, co-prodotto, non assegnato unilateralmente. La zona di sovrapposizione con 'chiudente' va dichiarata quando il passaggio formalmente avviene ma è leggibile come imposto dall'adulto."
+            },
+            {
+              "function": "chiudente",
+              "structural_role": "la risposta trasforma il campo aperto in altro: in azione (l'adulto prende l'oggetto e lo porge), in script (l'adulto attiva una sequenza prevedibile), in nominazione che chiude (l'adulto assegna unilateralmente un significato che non lascia spazio alla co-produzione). La funzione strutturale è di chiusura del campo o di sostituzione del passaggio co-prodotto con un passaggio predeterminato.",
+              "discrimination_from_adjacent": "si distingue da 'trasformativa' perché il passaggio semiotico, se avviene, non è co-prodotto ma assegnato. Si distingue da 'partecipativa' perché qui il campo viene attivamente chiuso o sostituito. Si distingue da 'registrativa' perché qui c'è una trasformazione del campo, non solo registrazione del gesto. La zona di sovrapposizione con 'trasformativa' va dichiarata quando i proxy del bridge sono incoerenti."
+            }
+          ],
+          "non_scalar_clause": "L'ordine in cui sono elencate le funzioni non rappresenta una scala di qualità o di sviluppo. Una risposta 'chiudente' non è 'peggiore' di una 'partecipativa': svolge una funzione strutturale diversa. La lettura clinica non deve usare le funzioni come livelli da raggiungere ma come classi per leggere cosa la risposta fa nel campo."
+        },
+        {
+          "dimension": "Produzione di mediazione simbolica",
+          "description": "La mediazione simbolica come esito strutturale della configurazione: il momento in cui il percepito diventa condiviso e potenzialmente significabile — non solo guardato insieme ma costituito come condiviso attraverso il gesto. Questa dimensione può essere presente (si produce effettivamente il passaggio dal percepito al condiviso-significabile), assente (la configurazione si arresta ai livelli precedenti — campo intenzionale senza passaggio semiotico), distorta (il significato viene co-prodotto ma in modo che non appartiene al bambino — l'adulto lo impone invece di co-costituirlo) o oscillante (il passaggio avviene in modo instabile, dipendente dalla singola risposta senza diventare struttura ripetibile). La mediazione simbolica non è equivalente alla nominazione dell'oggetto: può avvenire anche in assenza di linguaggio. La distinzione tra 'presente' e 'distorta' richiede la triangolazione descritta nella dimensione successiva."
+        },
+        {
+          "dimension": "Struttura del passaggio trasformativo",
+          "description": "Il concetto-ponte come dimensione leggibile in sé: il fatto che il significato non sia nel gesto né nell'interpretazione dell'adulto ma nel processo relazionale in cui entrambi si costituiscono simultaneamente. La lettura della struttura del passaggio richiede di distinguere passaggio trasformativo aperto (co-produzione reale) da passaggio predeterminato (script). La distinzione NON si fonda su indicatori comportamentali o metriche, ma su proxy strutturali. La classificazione è obbligatoriamente triangolata: ogni lettura deve esplicitare quali proxy sono presenti, perché indicano apertura o predeterminazione (e non l'opposto), e almeno un contro-indicatore — un elemento che potrebbe suggerire l'interpretazione alternativa e perché viene scartato. Quando la triangolazione non è sostenibile, la classificazione deve essere dichiarata ambigua: l'ambiguità è informazione strutturale.",
+          "passage_classes": [
+            {
+              "class": "aperto (co-produzione reale)",
+              "structural_signature": "il significato non è dato in anticipo né da uno dei due interlocutori: si costituisce nello scambio. La sequenza non è prevedibile a priori; ciascuna risposta contribuisce a definire ciò che il gesto sta significando.",
+              "structural_proxies": [
+                "non-prevedibilità della sequenza: ciò che segue al gesto del bambino non è desumibile dallo script abituale dell'interazione",
+                "asimmetria dinamica del lavoro semiotico: in momenti diversi della stessa sequenza, il contributo trasformativo si sposta tra bambino e adulto, senza concentrarsi stabilmente in uno dei due",
+                "ridefinizione in corso d'opera: il significato del gesto cambia o si articola nel corso dello scambio, e la modifica è riconoscibile come prodotta dalla relazione, non da uno dei due isolatamente",
+                "tracce di sospensione strutturale: nel passaggio sono presenti micro-attese, esitazioni, riprese — segnali che lo scambio non sta seguendo un canale già tracciato"
+              ],
+              "why_proxies_indicate_openness": "questi proxy indicano apertura perché la non-prevedibilità, l'asimmetria dinamica, la ridefinizione e la sospensione sono incompatibili con l'esecuzione di uno script: uno script per definizione minimizza non-prevedibilità e sospensione, e centralizza il lavoro semiotico in chi lo conosce.",
+              "mandatory_counter_indicators": "Ogni classificazione 'aperto' deve esplicitare almeno un elemento che potrebbe suggerire la lettura alternativa (es: 'la sequenza assomiglia a uno script ricorrente di questa diade') e spiegare perché viene scartato (es: 'la ridefinizione nel passaggio è leggibile come prodotta dalla risposta del bambino, non dalla ripetizione della struttura abituale'). Senza contro-indicatore esplicitato, la lettura non è valida."
+            },
+            {
+              "class": "predeterminato (script)",
+              "structural_signature": "il significato è dato in anticipo dalla struttura abituale dell'interazione o dall'azione dell'adulto: la sequenza è prevedibile e il gesto del bambino vi si inserisce senza modificarla. Il passaggio formalmente avviene ma non è co-prodotto.",
+              "structural_proxies": [
+                "prevedibilità della sequenza: ciò che segue al gesto è desumibile dallo script abituale e si verifica senza variazione",
+                "concentrazione stabile del lavoro semiotico in uno dei due (tipicamente l'adulto, ma non solo): il contributo trasformativo non si sposta nel corso della sequenza",
+                "assenza di ridefinizione: il significato del gesto resta quello pre-assegnato dallo script, senza articolarsi nel corso dello scambio",
+                "assenza di sospensione strutturale: lo scambio procede in modo lineare, senza micro-attese o esitazioni che segnalino indeterminazione"
+              ],
+              "why_proxies_indicate_predetermination": "questi proxy indicano predeterminazione perché prevedibilità, concentrazione stabile del lavoro semiotico, assenza di ridefinizione e linearità sono compatibili con — e tipiche di — l'esecuzione di una struttura già data, in cui il significato non emerge ma viene riprodotto.",
+              "mandatory_counter_indicators": "Ogni classificazione 'predeterminato' deve esplicitare almeno un elemento che potrebbe suggerire apertura (es: 'in un punto della sequenza il bambino ha prodotto un gesto non previsto dallo script') e spiegare perché viene scartato (es: 'l'adulto ha riassorbito il gesto nello script senza che questo modificasse la struttura della sequenza'). Senza contro-indicatore esplicitato, la lettura non è valida."
+            },
+            {
+              "class": "ambiguo",
+              "structural_signature": "i proxy strutturali sono incoerenti tra loro o non sono leggibili con sufficiente sicurezza per sostenere né la classificazione 'aperto' né la classificazione 'predeterminato'. L'ambiguità non è un fallimento della lettura ma un esito strutturale: segnala che la configurazione del passaggio è essa stessa incerta o oscillante.",
+              "ambiguity_clause": "La classificazione 'ambiguo' deve sempre esplicitare quali proxy sono incoerenti, quale lettura ciascuno suggerirebbe, e perché la triangolazione non è sostenibile. Una lettura dichiarata ambigua è preferibile a una lettura forzata in 'aperto' o 'predeterminato' senza triangolazione."
+            }
+          ],
+          "no_behavioral_reduction_clause": "I proxy strutturali NON devono essere trasformati in indicatori comportamentali (es: contare le sospensioni, misurare la durata delle micro-attese, scorare la prevedibilità). Sono dimensioni descrittive della struttura del passaggio, non variabili da rilevare. La loro funzione è rendere leggibile la struttura, non quantificarla."
+        }
+      ],
+
+      "temporal_scale": {
+        "description": "Il dispositivo è strutturalmente costruito per la lettura del singolo episodio. La lettura su scale temporali più ampie (sequenza, struttura relazionale) è possibile ma soggetta a vincoli specifici. Non si dà aggregazione quantitativa: la lettura cross-episodica si fonda sulla descrizione strutturale di oscillazioni, sistematicità e condizioni contestuali, non su conteggi, percentuali o medie.",
+        "levels": [
+          {
+            "level": "episodio",
+            "scope": "una singola occorrenza di pointing (o tentativo di pointing) e la sua immediata risposta co-regolatoria, all'interno di una stessa sequenza interattiva continua.",
+            "what_is_readable": "tutte le dimensioni del reading_focus sono integralmente leggibili a questo livello: stato del campo, funzione co-regolatoria, classe del passaggio. È il livello primario e sempre legittimo del dispositivo.",
+            "constraints": "la lettura episodica non autorizza generalizzazioni alla relazione o al bambino. Un singolo episodio è una configurazione, non un tratto."
+          },
+          {
+            "level": "sequenza",
+            "scope": "una serie di episodi all'interno della stessa interazione o di interazioni ravvicinate nel tempo, con gli stessi interlocutori e in condizioni contestuali sufficientemente costanti da rendere comparabili gli episodi.",
+            "what_is_readable": "diventa leggibile l'oscillazione strutturale: quale dimensione della configurazione varia tra episodi, in che modo varia, in relazione a quali condizioni contestuali. La lettura della sequenza è descrittiva, non aggregativa.",
+            "interpretive_procedure": "per leggere una sequenza è necessario descrivere: (a) quale dimensione oscilla (es: lo stato del campo, la funzione co-regolatoria, la classe del passaggio); (b) se l'oscillazione è casuale (variabilità senza pattern leggibile) o sistematica (variabilità legata a un fattore identificabile); (c) a quali condizioni contestuali è legata (presenza di un certo interlocutore, tipo di oggetto, momento della giornata, livello di affaticamento, ecc.). Se queste condizioni non sono identificabili, la lettura deve rimanere al livello episodico.",
+            "constraints": "non sono ammessi conteggi (es: 'il campo è condiviso in 4 episodi su 7'), percentuali, medie, scoring sulle dimensioni. La sequenza si legge come configurazione di configurazioni, non come somma."
+          },
+          {
+            "level": "struttura relazionale",
+            "scope": "il pattern strutturale che caratterizza la relazione tra il bambino e un dato interlocutore (o tra il bambino e una classe di interlocutori) attraverso più sequenze in contesti diversi.",
+            "what_is_readable": "diventa leggibile la stabilità (o instabilità) di certe configurazioni: se determinati stati del campo, certe funzioni co-regolatorie o certe classi del passaggio si presentano come ricorrenti nella struttura della relazione, indipendentemente dal singolo episodio. La lettura è strutturale-descrittiva, non statistica.",
+            "interpretive_procedure": "per leggere la struttura relazionale è necessario descrivere: (a) quali configurazioni si presentano come ricorrenti nella relazione; (b) quali condizioni contestuali sembrano associate alla loro ricorrenza; (c) quali oscillazioni sistematiche tra configurazioni caratterizzano la relazione; (d) cosa NON è ricorrente — quali configurazioni non si presentano mai o quasi mai. Se la ricorrenza non è descrivibile in termini strutturali (ma solo in termini di frequenza), la lettura deve scendere al livello sequenza.",
+            "constraints": "non sono ammessi indicatori di prevalenza quantitativa, profili statistici, classificazioni della relazione (es: 'relazione co-regolatoria di tipo X'). La struttura relazionale è una descrizione di pattern strutturali, non una categoria. Non autorizza giudizi sul caregiver né diagnosi sulla relazione."
+          }
+        ],
+        "no_quantitative_aggregation_clause": "Il passaggio dal livello episodio al livello sequenza o struttura relazionale NON consiste in alcuna forma di somma, conteggio, media o percentuale delle classificazioni episodiche. Consiste nella lettura delle oscillazioni strutturali, della loro sistematicità e delle loro condizioni di ricorrenza. Quando le condizioni di leggibilità di un livello superiore non sono soddisfatte, la lettura deve restare al livello immediatamente inferiore."
+      },
+
+      "access_points": [
+        {
+          "label": "Osservazione dell'interazione diadica in setting libero",
+          "description": "Il bambino e il caregiver interagiscono con oggetti o nello spazio senza struttura imposta. È il contesto in cui la configurazione del pointing può emergere nella sua forma spontanea: corporeità, stato del campo e funzione co-regolatoria si rendono leggibili nella struttura naturale dell'interazione. La possibilità di fallimento strutturale in questo access point è alta: il pointing può non emergere affatto (la configurazione non si attiva in questo contesto), può emergere come campo tentato-unilaterale (il bambino indica senza che l'altro entri), può emergere come campo tentato-in-attesa che si chiude senza consolidarsi, può essere assorbito dall'adulto con risposta chiudente (l'adulto trasforma il gesto in azione o script), oppure il professionista stesso può interrompere la configurazione con interventi che spostano l'attenzione. Il non-emergere e gli stati intermedi del campo sono informazione strutturale tanto quanto il campo condiviso."
+        },
+        {
+          "label": "Momento di novità o evento inatteso nell'ambiente",
+          "description": "Qualcosa di nuovo o inatteso entra nel campo percettivo del bambino durante la sessione. È un access point strutturalmente privilegiato perché attiva la salienza nella sua forma elementare e mette in gioco la co-regolazione senza la mediazione di un compito. La possibilità di fallimento strutturale: il bambino può reagire all'evento senza cercare la condivisione (campo assente o tentato-unilaterale), l'adulto può rispondere all'evento senza entrare nel campo del bambino (risposta registrativa o assente, non partecipativa), oppure entrambi si orientano verso l'evento ma senza che si costituisca un campo condiviso — guardano nella stessa direzione (coincidenza visiva) senza che il gesto diventi atto semiotico. La differenza tra orientamento parallelo e campo condiviso è il segnale strutturale da leggere in questo contesto, ed è precisamente la zona di ambiguità tra 'tentato-in-attesa' e 'condiviso' che va dichiarata quando non risolvibile."
+        },
+        {
+          "label": "Sequenza di pointing dell'adulto verso oggetti o eventi",
+          "description": "Il clinico o il caregiver introduce pointing verso qualcosa nell'ambiente, selezionando per il bambino qualcosa come degno di attenzione. Permette di leggere la configurazione dal polo dell'adulto-che-istituisce e come il bambino risponde alla struttura co-regolatoria proposta. La possibilità di fallimento strutturale: il bambino può ignorare il gesto dell'adulto (campo proposto ma non accolto — campo tentato-unilaterale dal lato dell'adulto), può seguire lo sguardo senza entrare nel campo intenzionale (orientamento senza co-presenza strutturale), può rispondere con un pointing proprio che va in direzione diversa (campo alternativo invece che condiviso), oppure l'adulto può produrre un pointing talmente strutturato da non lasciare spazio alla co-produzione — un campo già chiuso prima che il bambino vi entri (risposta del bambino assorbita in un passaggio predeterminato). Questo access point è particolarmente utile per leggere la differenza tra passaggio aperto e predeterminato, che spesso è già inscritta nella struttura del pointing dell'adulto."
+        },
+        {
+          "label": "Colloquio con il caregiver sulle interazioni quotidiane",
+          "description": "Il caregiver descrive come si svolgono tipicamente le interazioni con il bambino nei contesti di vita quotidiana. È un access point indiretto ma strutturalmente rilevante: il modo in cui il caregiver descrive il gesto del bambino rivela a quale livello lo legge — come comportamento ('lo fa', 'non lo fa'), come comunicazione ('cerca di dirmi qualcosa'), o come configurazione relazionale ('sembra che voglia che io veda quello che lui vede'). La possibilità di fallimento strutturale: il caregiver può descrivere interazioni in cui il pointing emerge ma la co-regolazione è sistematicamente registrativa o chiudente, senza che questo sia percepito come problema — o al contrario può interpretare come pointing gesti che non hanno la struttura configurazionale. Il colloquio non produce osservazione diretta della configurazione ma è un access point alla rappresentazione che il caregiver ha della relazione, e fornisce ipotesi descrittive sulle ricorrenze a livello di struttura relazionale che restano da verificare in osservazione."
+        }
+      ],
+
+      "structural_questions": [
+        "Il gesto di pointing che si osserva in questo episodio si configura come campo assente, tentato-unilaterale, tentato-in-attesa o condiviso — e cosa rende strutturalmente visibile la differenza, in particolare tra tentato-in-attesa e condiviso?",
+        "La risposta dell'adulto al gesto del bambino svolge una funzione co-regolatoria assente, registrativa, partecipativa, trasformativa o chiudente — e perché questa funzione non è classificabile come quella adiacente?",
+        "Quando la configurazione del pointing non si costituisce pienamente, dove si localizza strutturalmente la discontinuità: nel piano corporeo, nel piano del campo intenzionale (e in quale stato), nel piano della funzione co-regolatoria (e in quale classe) o nel piano semiotico — e la localizzazione cambia con interlocutori diversi?",
+        "Quando si legge un passaggio trasformativo, quali proxy strutturali sono presenti, perché indicano apertura (o predeterminazione), e quale contro-indicatore è stato considerato e scartato?",
+        "Il bambino indica ma non orienta lo sguardo verso l'adulto dopo il gesto — qual è la struttura di questo pointing: campo tentato-unilaterale chiuso o campo tentato-in-attesa con micro-segnali di apertura non immediatamente visibili?",
+        "L'adulto risponde al pointing del bambino nominando l'oggetto indicato, ma il bambino non registra la risposta e ripete il gesto — la risposta dell'adulto è classificabile come registrativa, partecipativa o chiudente, e quale evidenza strutturale sostiene la classificazione?",
+        "Entrambi guardano verso lo stesso oggetto ma l'interazione si interrompe senza che si costituisca nulla di condiviso — la coincidenza visiva è da classificare come campo assente, tentato-in-attesa che non si è consolidato, o zona di ambiguità tra i due?",
+        "Una sequenza di episodi mostra oscillazione nello stato del campo o nella funzione co-regolatoria: l'oscillazione è casuale o sistematicamente legata a una condizione contestuale identificabile, e se non lo è, la lettura va riportata al livello episodico?",
+        "Sulla scala della struttura relazionale, quale configurazione si presenta come ricorrente e quale NON si presenta mai — e questa ricorrenza è descrivibile in termini strutturali o solo in termini di frequenza (nel qual caso la lettura va abbassata di livello)?"
+      ],
+
+      "interpretive_warnings": [
+        {
+          "risk_type": "comportamentismo",
+          "description": "Quando i quattro nodi vengono operazionalizzati come comportamenti osservabili e misurabili — frequenza del pointing, latenza della risposta, durata del contatto visivo, numero di episodi di attenzione condivisa — la struttura configurazionale collassa in variabili indipendenti e il dispositivo perde la sua funzione. Il rischio si estende all'articolazione interna introdotta in v2: trattare gli stati del campo o le funzioni co-regolatorie come categorie da contare ('episodi con campo condiviso', 'percentuale di risposte trasformative') riproduce il collasso comportamentale a un livello più sofisticato. I nodi e le loro articolazioni hanno senso solo nella loro relazione strutturale e nella descrizione qualitativa, non nell'aggregazione quantitativa."
+        },
+        {
+          "risk_type": "normatività",
+          "description": "Quando la tensione dipendenza vs. emergenza viene letta come criterio di giudizio — la dipendenza co-regolatoria è 'eccessiva', la risposta dell'adulto è 'adeguata' o 'inadeguata' — il dispositivo si trasforma in strumento valutativo e perde la sua funzione strutturale. Il rischio si estende in v2 all'articolazione della co-regolazione: leggere 'trasformativa' come funzione 'migliore' di 'partecipativa' o 'registrativa' riproduce la normatività in forma più articolata. Le funzioni sono classi strutturali, non livelli di adeguatezza. Applicare una norma alla dipendenza o alla funzione co-regolatoria porta a valutare la relazione invece di leggerne la struttura, e produce giudizi sul caregiver che il dispositivo non autorizza."
+        },
+        {
+          "risk_type": "tecnicismo",
+          "description": "Quando il dispositivo viene trasformato in protocollo di osservazione strutturata — con criteri di scoring per ciascuna dimensione del reading_focus, per ciascuno stato del campo, per ciascuna funzione co-regolatoria, per ciascuna classe del passaggio, e procedure di rilevazione per ciascun access point — produce la forma del dispositivo strutturale con il contenuto di una checklist valutativa. Il rischio si aggrava in v2 perché la maggiore articolazione interna offre più voci da scorare. La struttura configurazionale scompare dietro le singole voci perché stati, funzioni e classi vengono letti isolatamente invece che nella loro relazione: si 'classifica' lo stato del campo, si 'classifica' la funzione co-regolatoria, e il passaggio trasformativo che li connette — l'unico elemento che rende il fenomeno leggibile come configurazione — si perde nella tassonomia."
+        },
+        {
+          "risk_type": "riduzione_cognitiva",
+          "description": "Quando la corporeità-vissuta scompare dalla lettura clinica — come accade sistematicamente nelle concettualizzazioni che privilegiano il piano cognitivo (joint attention come precursore della teoria della mente) o linguistico (pointing come precursore del linguaggio) — il dispositivo perde il suo livello strutturale fondante. Senza corporeità-vissuta il pointing clinicamente osservato diventa una competenza cognitivo-comunicativa, e l'interrogazione strutturale si sposta su 'il bambino sa condividere l'attenzione?' invece che su 'il corpo è strutturalmente disponibile all'orientamento relazionale?'. Questo non è un dettaglio teorico: cambia il livello a cui si localizza la discontinuità quando la configurazione non si costituisce."
+        },
+        {
+          "risk_type": "scalarizzazione_della_co-regolazione",
+          "description": "Specifico della v2: quando le cinque funzioni co-regolatorie (assente, registrativa, partecipativa, trasformativa, chiudente) vengono lette come scala progressiva di qualità, il dispositivo perde la sua funzione discriminativa e ricade nella normatività. La funzione 'chiudente' non è 'peggiore' della 'partecipativa', e la 'trasformativa' non è il 'top' della scala: sono classi che svolgono funzioni strutturali diverse nel campo. La scalarizzazione tipicamente si manifesta nell'uso del dispositivo per valutare il caregiver ('risponde sempre in modo registrativo, dovrebbe diventare partecipativa') — uso che il dispositivo esplicitamente non autorizza."
+        },
+        {
+          "risk_type": "aggregazione_quantitativa_cross-episodica",
+          "description": "Specifico della v2: quando la lettura passa dal livello episodio al livello sequenza o struttura relazionale, la tentazione di aggregare quantitativamente le classificazioni episodiche (conteggi, percentuali, profili) trasforma il dispositivo in strumento statistico e perde la sua funzione strutturale. La descrizione delle oscillazioni e delle ricorrenze è qualitativa-strutturale: non è la frequenza di una configurazione che la rende ricorrente, è la sua sistematicità in relazione a condizioni identificabili. Quando queste condizioni non sono identificabili, la lettura deve restare al livello inferiore — non risolvere l'ambiguità con un calcolo."
+        }
+      ],
+
+      "non_permitted_transformations": [
+        "Quando viene usato come strumento di valutazione dello sviluppo comunicativo del bambino, la struttura configurazionale collassa in tappe evolutive e il dispositivo perde la sua funzione: non descrive più una configurazione relazionale ma misura una competenza individuale.",
+        "Quando viene usato per classificare il pointing come presente/assente, adeguato/inadeguato, tipico/atipico, l'interrogazione strutturale sulla qualità della configurazione viene sostituita da un giudizio binario — e la domanda 'quale struttura assume il gesto?' diventa irrispondibile. La v2 non autorizza nemmeno classificazioni come 'campo condiviso = tipico, tentato-unilaterale = atipico'.",
+        "Quando produce diagnosi o orienta verso categorie diagnostiche, il livello strutturale del dispositivo viene assorbito dal frame classificatorio: la configurazione non è più leggibile come tale ma solo come sintomo di una categoria già data.",
+        "Quando viene trasformato in linea guida di intervento terapeutico o in sequenza di azioni da proporre al caregiver, il dispositivo di lettura si trasforma in prescrizione — e perde la sua funzione di rendere visibile la struttura a favore di quella di modificare il comportamento.",
+        "Quando la co-regolazione viene usata per valutare la qualità della risposta del caregiver come attributo individuale, la struttura diadica del nodo collassa in giudizio sulla competenza parentale — e il dispositivo smette di descrivere una configurazione relazionale per diventare uno strumento di valutazione dell'adulto. La v2 non autorizza l'uso delle cinque funzioni co-regolatorie come griglia di valutazione del caregiver.",
+        "Quando le classi del passaggio (aperto, predeterminato, ambiguo) vengono usate come scoring del livello evolutivo della relazione o del bambino, la triangolazione strutturale si trasforma in classificazione gerarchica e il dispositivo perde la sua funzione descrittiva.",
+        "Quando la lettura cross-episodica viene operazionalizzata in conteggi, percentuali o profili di frequenza, il livello sequenza e il livello struttura relazionale si trasformano in dispositivi statistici — e la lettura strutturale delle oscillazioni e delle ricorrenze, che è la loro funzione propria, diventa irrealizzabile."
+      ]
+    }
+  ]
+}

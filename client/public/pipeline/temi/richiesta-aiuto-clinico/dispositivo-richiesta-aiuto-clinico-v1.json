@@ -1,0 +1,218 @@
+{
+  "step": "f3_step_9",
+
+  "device": {
+
+    "device_id": "richiesta-aiuto-clinico-dispositivo-v1",
+    "theme_id": "tema_richiesta_aiuto_precoce",
+    "domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+    "device_type": "lettura_configurazionale",
+    "function": "Il dispositivo rende leggibile la struttura interna della richiesta di aiuto come atto relazionale co-prodotto — non come competenza autonoma del bambino da valutare né come sequenza comportamentale da addestrare, ma come configurazione di livelli (corporeo, intenzionale, co-regolatorio, semiotico) che insieme producono la trasformazione di una difficoltà privata in problema condiviso nella relazione. Il cieco clinico che contribuisce a colmare è la tendenza a trattare la richiesta di aiuto come indicatore di autonomia o dipendenza — producendo giudizi normativi sul bambino ('chiede troppo', 'non chiede abbastanza') o sul caregiver ('risolve troppo per lui') che ignorano la struttura relazionale e processuale dell'atto. Il dispositivo sposta la domanda clinica da 'il bambino sa chiedere aiuto?' a 'quale configurazione strutturale assume la richiesta in questa relazione, e dove si localizza la discontinuità quando la configurazione non si costituisce pienamente?'",
+
+    "structural_reference": {
+      "core_configuration": "l'azione arrestata dalla difficoltà orienta il corpo in doppia direzione (verso la difficoltà e verso l'adulto) costituendo un campo intenzionale verso la difficoltà come problema aperto; questo campo diventa condiviso e affrontabile (mediazione simbolica) solo attraverso l'ingresso co-regolatorio dell'adulto nello spazio della difficoltà: la richiesta si trasforma da arresto privato dell'azione in atto relazionale solo nella relazione",
+      "axes": ["asse_1", "asse_6"],
+      "nodes": ["corporeità-vissuta", "campo-intenzionale", "co-regolazione", "mediazione-simbolica"],
+      "bridge_concepts": ["L'atto di richiesta come produzione relazionale della difficoltà condivisa"]
+    },
+
+    "reading_focus": [
+      {
+        "dimension": "Base corporea dell'atto di richiesta",
+        "description": "La corporeità vissuta come condizione originaria della richiesta: il corpo che incontra la difficoltà e si orienta verso l'altro a partire da quell'incontro, non come decisione di comunicare ma come struttura corporea che emerge dall'azione che non riesce. Questa dimensione ha una forma caratteristica che la distingue da altri atti: il corpo rimane parzialmente ancorato allo spazio della difficoltà (mani sull'oggetto, postura rivolta al compito, azione sospesa ma non abbandonata) mentre il volto e lo sguardo si re-orientano verso l'adulto — doppia orientazione simultanea come struttura corporea costitutiva dell'atto. La base corporea può essere presente (il corpo è strutturalmente in doppia orientazione: verso difficoltà e verso adulto, il gesto di richiesta emerge dalla postura di difficoltà), assente (il bambino abbandona lo spazio della difficoltà prima di orientarsi verso l'adulto, oppure non orienta verso l'adulto — la difficoltà rimane privata), distorta (il bambino si orienta verso l'adulto senza mantenere il corpo ancorato nello spazio della difficoltà — l'atto corporeo è desincronizzato dalla difficoltà stessa, come in una richiesta ritualizzata eseguita senza la base di un incontro reale con la difficoltà), oscillante (la doppia orientazione è disponibile solo con certi interlocutori o in certi momenti). L'assenza o la distorsione della base corporea non segnala deficit di competenza comunicativa: segnala qualcosa al livello del corpo-in-relazione-con-la-difficoltà."
+      },
+      {
+        "dimension": "Apertura del campo intenzionale verso la difficoltà",
+        "description": "Il campo intenzionale come struttura che l'atto di richiesta istituisce: non la difficoltà in sé ma l'orientamento condiviso verso di essa come cosa-da-affrontare-insieme — la struttura in cui due soggetti si trovano orientati verso la stessa difficoltà. Questa dimensione assume quattro stati strutturali: assente (la richiesta non apre alcuna struttura di orientamento condiviso, rimane segnale senza campo — il bambino produce il segnale di richiesta ma non si costituisce alcun campo verso la difficoltà); tentato-unilaterale (il bambino apre il campo dall'interno della difficoltà: corpo in doppia orientazione, pausa di attesa — ma l'adulto non vi entra; il campo è cercato ma non abitato); tentato-in-attesa (entrambi si sono orientati verso la difficoltà ma il campo non si è ancora costituito come condiviso — lo spazio è aperto ma il passaggio non è avvenuto; stato transitorio); condiviso (si costituisce una struttura di orientamento condiviso verso la difficoltà distinta dalla semplice coincidenza di attenzione — entrambi vi entrano e il campo ha una durata strutturale verso la difficoltà come problema). La distinzione tra tentato-unilaterale e condiviso non è di intensità ma di struttura: nel primo il campo è cercato ma non si costituisce, nel secondo si costituisce come fatto relazionale. Quando si classifica lo stato del campo è necessario esplicitare: chi apre il campo, se e come l'adulto vi entra, se si è costituita una durata strutturale della co-presenza verso la difficoltà. Se due stati non sono distinguibili, la zona di sovrapposizione deve essere dichiarata esplicitamente."
+      },
+      {
+        "dimension": "Qualità co-regolatoria della risposta",
+        "description": "La co-regolazione come condizione strutturale necessaria del passaggio: la risposta dell'adulto che entra nel campo della difficoltà e ne determina l'esito relazionale. Questa dimensione è articolata in cinque livelli strutturalmente distinti — assente: la risposta non si produce; il bambino non trova risposta e la difficoltà rimane privata; registrativa: la risposta riconosce il segnale di richiesta (parola di conferma, sguardo di riconoscimento, avvicinarsi) ma non entra nel campo della difficoltà — si colloca al livello del segnale senza orientarsi verso la specifica difficoltà del bambino; partecipativa: la risposta entra nel campo della difficoltà — l'adulto si orienta verso lo spazio della difficoltà specifica del bambino, la co-abita, sostiene il campo aperto senza risolverlo; trasformativa: l'adulto entra nel campo e co-produce il passaggio — la difficoltà diventa problema condiviso e affrontabile come fatto della relazione; chiudente: l'adulto risponde al segnale di richiesta risolvendo la difficoltà come transazione — fornisce la soluzione completa, elimina la difficoltà, chiude la sequenza senza che il campo si sia costituito come condiviso. La co-regolazione chiudente è particolarmente rilevante nella richiesta di aiuto: una risposta behavioralmente competente e affettuosa può essere strutturalmente chiudente se risolve la difficoltà per il bambino invece di entrarvi insieme. I cinque livelli NON sono scala ordinale di qualità: la risposta chiudente non è 'peggiore' di quella partecipativa — è strutturalmente diversa. Leggere la chiudente come inadeguata introduce immediatamente normatività sul caregiver che il dispositivo non autorizza. Per ogni classificazione è necessario esplicitare quale funzione strutturale svolge la risposta e perché non può essere classificata come il livello adiacente."
+      },
+      {
+        "dimension": "Produzione di mediazione simbolica",
+        "description": "La mediazione simbolica come esito strutturale della configurazione: il momento in cui la difficoltà diventa problema condiviso e affrontabile — non semplicemente riconosciuta o nominata ma costituita come cosa-nella-relazione che può essere affrontata insieme. Questa dimensione può essere presente (la difficoltà acquista statuto relazionale: entrambi i partecipanti vi si orientano come a un problema co-prodotto nella relazione, non come a un evento privato del bambino da risolvere), assente (la configurazione si arresta ai livelli precedenti — il campo intenzionale si apre ma la difficoltà non diventa problema condiviso), distorta (la difficoltà viene costituita come condivisa ma in modo che non appartiene al bambino — l'adulto assume la proprietà del problema, la difficoltà diventa 'il problema dell'adulto da risolvere per il bambino' invece di 'il problema del bambino che può essere affrontato insieme'), oscillante (il passaggio avviene in modo instabile, disponibile solo in certe condizioni senza diventare struttura ripetibile). La mediazione simbolica non è equivalente alla soluzione della difficoltà: può avvenire anche quando la difficoltà non viene risolta — ciò che si produce è la trasformazione del suo statuto da privato a condiviso."
+      },
+      {
+        "dimension": "Struttura del passaggio trasformativo",
+        "description": "Il concetto-ponte come dimensione leggibile in sé: il fatto che la trasformazione della difficoltà da privata a condivisa non sia nell'atto del bambino né nella risposta dell'adulto ma nel processo relazionale in cui entrambi si costituiscono simultaneamente. Questa dimensione richiede di distinguere due forme strutturali del passaggio — passaggio aperto (co-produzione reale): la difficoltà emerge come problema condiviso nella relazione, non era predeterminata come tale prima dell'atto; il passaggio produce qualcosa che non esisteva prima che si producesse; proxy strutturali di osservabilità indiretta: (a) indeterminazione dell'esito — prima che l'adulto risponda non è strutturalmente determinato come la difficoltà verrà affrontata; (b) ingresso valutativo dell'adulto — l'adulto entra nello spazio della difficoltà con una fase di orientamento verso la configurazione specifica del tentativo del bambino, e la propria azione è determinata da questa osservazione; (c) continuazione del bambino nello spazio della difficoltà con riferimento all'adulto — dopo la risposta il bambino rimane nel campo con l'adulto come co-partecipante. Passaggio predeterminato (script): la sequenza richiesta-risposta è nota a entrambi; la difficoltà è già trattata come richiesta-con-soluzione-nota prima che si presenti; proxy strutturali: (a) risposta immediata senza valutazione — l'adulto agisce direttamente al segnale senza una fase di orientamento verso la difficoltà specifica; (b) soluzione standard — l'azione dell'adulto non è adattata alla configurazione specifica della difficoltà ma applica la risposta attesa al tipo di segnale; (c) uscita del bambino dallo spazio della difficoltà — dopo la risposta il bambino accetta la soluzione e chiude la sequenza. La classificazione come passaggio aperto o predeterminato non è valida senza triangolazione esplicita: (1) quali proxy strutturali sono presenti nel caso osservato; (2) perché questi proxy indicano la direzione dichiarata e non quella opposta; (3) almeno un contro-indicatore con spiegazione del perché viene scartato nella configurazione osservata. Se la triangolazione non è possibile perché i proxy sono insufficienti o contraddittori, la classificazione deve essere dichiarata come ambigua. La dimensione è leggibile strutturalmente anche senza applicare il proxy: il proxy serve per classificare il bridge quando la distinzione non è già chiara dalla lettura delle dimensioni precedenti."
+      }
+    ],
+
+    "access_points": [
+      {
+        "label": "Interazione spontanea in setting con oggetti o compiti",
+        "description": "Il bambino e il caregiver interagiscono liberamente con materiali che possono generare naturalmente difficoltà (oggetti da aprire, costruzioni, puzzle, materiali da manipolare). È il contesto in cui la configurazione della richiesta di aiuto può emergere nella sua forma spontanea: corporeità, apertura del campo e risposta co-regolatoria si rendono leggibili nella struttura naturale dell'interazione senza che la difficoltà sia indotta dall'esterno. La possibilità di fallimento strutturale è alta: la difficoltà può non emergere (nessuna sfida reale nel materiale proposto), il caregiver può prevenire la difficoltà prima che si formi la configurazione, il bambino può abbandonare la difficoltà senza cercare l'adulto, oppure il clinico stesso può intervenire interrompendo la configurazione. L'assenza della configurazione in questo contesto è informazione strutturale quanto la sua presenza."
+      },
+      {
+        "label": "Momento di difficoltà reale in contesto semi-strutturato",
+        "description": "Un contesto in cui è prevista una sfida concreta leggermente superiore alle capacità autonome del bambino (compito calibrato, materiale con grado di difficoltà noto). È un access point strutturalmente privilegiato perché la difficoltà è reale e osservabile — non indotta artificialmente ma deliberatamente presente. Permette di leggere la configurazione completa: come il bambino incontra la difficoltà corporalmente, se apre il campo verso l'adulto, come l'adulto risponde, se il passaggio trasformativo si produce. La possibilità di fallimento strutturale: la calibrazione della difficoltà può essere errata (troppo facile o troppo difficile), l'adulto può anticipare la richiesta eliminando la configurazione, il bambino può entrare in frustrazione che interrompe la struttura dell'atto. Il clinico deve poter osservare senza intervenire nel momento della configurazione."
+      },
+      {
+        "label": "Richiesta di aiuto nei confronti del clinico (strutturata)",
+        "description": "Il clinico introduce una situazione in cui il bambino necessita di aiuto e può scegliere se e come richiederlo. Permette di leggere la configurazione dal polo di un adulto non familiare, in una relazione non routinizzata. La risposta del clinico alla richiesta del bambino può essere deliberatamente modulata per osservare come la configurazione risponde a diversi livelli di co-regolazione. La possibilità di fallimento strutturale: il bambino può non orientarsi verso il clinico (la configurazione non si attiva con un adulto non familiare — questo è informazione strutturale), può produrre una richiesta proceduralizzata senza base corporea, oppure la risposta del clinico può non essere sufficientemente attenta alla finestra pre-risposta da permettere la lettura del passaggio trasformativo."
+      },
+      {
+        "label": "Colloquio con il caregiver sulle interazioni quotidiane",
+        "description": "Il caregiver descrive come si svolgono tipicamente le situazioni di difficoltà e di richiesta di aiuto nella vita quotidiana. È un access point indiretto ma strutturalmente rilevante: il modo in cui il caregiver descrive l'atto del bambino rivela a quale livello lo legge — come comportamento da valutare ('lo fa', 'non lo fa', 'lo fa troppo'), come comunicazione ('mi chiede di aiutarlo'), o come configurazione relazionale ('quando non riesce mi guarda e aspetta che io capisca cosa gli serve'). La possibilità di fallimento strutturale: il caregiver può descrivere interazioni in cui la configurazione emerge ma la co-regolazione è strutturalmente chiudente senza che questo venga percepito come problema — o può interpretare come richiesta di aiuto gesti che non hanno la struttura configurazionale (il bambino lancia l'oggetto, il bambino piange). Il colloquio è un access point alla rappresentazione che il caregiver ha dell'atto e della relazione, non alla configurazione osservata direttamente."
+      }
+    ],
+
+    "structural_questions": [
+      "Quando il bambino incontra una difficoltà, il corpo si struttura in doppia orientazione — verso la difficoltà e verso l'adulto contemporaneamente — oppure la difficoltà rimane privata (il bambino non orienta verso l'adulto) oppure il bambino abbandona lo spazio della difficoltà prima di cercare l'adulto — e cosa nella struttura corporea dell'atto rende leggibile la differenza tra questi stati?",
+      "La risposta dell'adulto al segnale di richiesta è registrativa (riconosce il segnale senza entrare nel campo della difficoltà), partecipativa (entra nel campo), trasformativa (co-produce la difficoltà come problema condiviso) o chiudente (risolve la difficoltà come transazione senza che il campo si costituisca) — e questo livello è stabile nella stessa interazione o varia al variare del tipo di difficoltà?",
+      "Quando la configurazione della richiesta di aiuto non si costituisce pienamente, dove si localizza strutturalmente la discontinuità: nel piano corporeo (assenza di doppia orientazione), nel piano intenzionale (campo non aperto o non condiviso), nel piano co-regolatorio (adulto non entra nel campo) o nel piano semiotico (difficoltà non costituita come problema co-prodotto) — e la localizzazione cambia con interlocutori diversi?",
+      "L'adulto entra nello spazio della difficoltà: nella finestra tra il segnale del bambino e la propria prima azione, l'adulto orienta la propria attenzione verso il punto specifico della difficoltà del bambino (dove e come l'azione è arrestata) oppure agisce direttamente al segnale senza questa fase di orientamento verso la configurazione specifica — e cosa questa struttura dell'ingresso dice sulla qualità della co-regolazione?",
+      "L'adulto risponde alla richiesta del bambino con una soluzione completa e tempestiva, il bambino accetta e chiude immediatamente la sequenza: a quale livello si è costituita la co-regolazione in questa interazione, e cosa questa lettura dice sulla struttura del campo intenzionale che si è aperto?",
+      "Il bambino produce il segnale di richiesta verso l'adulto ma il corpo non è ancorato nello spazio della difficoltà — ha già abbandonato l'azione o non era mai stato in contatto diretto con essa: cosa segnala questa struttura corporea sul livello configurazionale raggiunto dall'atto?",
+      "Se la configurazione della richiesta di aiuto varia tra episodi multipli nella stessa interazione, la lettura multi-livello richiede: identificare quale dimensione oscilla (il campo, la co-regolazione, il passaggio trasformativo); descrivere se l'oscillazione è casuale o sistematica rispetto a condizioni contestuali identificabili (tipo di difficoltà, materiale, momento della sessione, stato dell'adulto); distinguere tra variabilità contestuale e struttura relazionale non stabilizzata. NON è ammesso aggregare episodi con frequenze o proporzioni. Se le condizioni contestuali dell'oscillazione non sono identificabili, la lettura deve rimanere al livello episodico: forzare il passaggio al livello strutturale relazionale senza condizioni contestuali identificabili produce interpretazione arbitraria, non lettura strutturale."
+    ],
+
+    "operative_proxies": [
+      {
+        "proxy_id": "op_proxy_1",
+        "dimension": "Struttura del passaggio trasformativo",
+        "proxy_name": "Struttura dell'ingresso dell'adulto nello spazio della difficoltà: fase di valutazione vs. esecuzione diretta",
+        "what_it_measures": "La struttura dell'ingresso dell'adulto nel tempo tra la ricezione del segnale del bambino e la prima azione di risposta: l'adulto orienta la propria attenzione verso la configurazione specifica della difficoltà del bambino (dove e come l'azione è arrestata) prima di agire — oppure agisce direttamente al segnale senza orientarsi verso la specifica difficoltà? Questa struttura si situa nella finestra pre-risposta, non dipende dall'esito, e discrimina il passaggio aperto (la risposta è determinata dall'osservazione della difficoltà specifica) dal passaggio predeterminato (la risposta è determinata dal tipo di segnale ricevuto, indipendentemente dalla configurazione specifica).",
+        "required_observations": ["obs_1", "obs_2"],
+        "applicability_conditions": [
+          "obs_1 documentato: la finestra pre-risposta dell'adulto è specificata nella documentazione osservativa",
+          "obs_2 documentato: la direzione dell'attenzione dell'adulto nella finestra pre-risposta è specificata (verso configurazione specifica della difficoltà, verso oggetto genericamente, verso bambino come persona)",
+          "La fase di arresto dell'azione del bambino è documentata (il punto di difficoltà specifico è identificabile)"
+        ],
+        "non_applicability_conditions": [
+          "obs_1 assente: la documentazione non include la finestra pre-risposta dell'adulto → ncr_1",
+          "obs_2 assente o ambiguo: la direzione dell'attenzione dell'adulto non è specificata → ncr_2",
+          "La fase di arresto dell'azione non è documentata: il punto specifico della difficoltà non è identificabile → ncr_4",
+          "La finestra pre-risposta è inferiore a un secondo senza possibilità di distinguere struttura → ncr_3"
+        ],
+        "decision_logic": "SE tutte le condizioni di applicabilità sono soddisfatte: (1) adulto orienta attenzione verso configurazione specifica della difficoltà nella finestra pre-risposta (dove e come l'azione del bambino è arrestata) E l'azione successiva affronta quel punto specifico → 'aperto'; (2) adulto agisce direttamente al segnale senza fase di orientamento verso la configurazione specifica della difficoltà, O l'adulto guarda ma l'azione non corrisponde al punto osservato → 'predeterminato'; (3) orientamento presente ma non distinguibile tra informativo e sociale/confermativo → 'ambiguo'. SE anche una sola condizione di non-applicabilità è presente → 'non_classificabile' senza tentativo di classificazione.",
+        "allowed_outputs": ["aperto", "predeterminato", "non_classificabile", "ambiguo"],
+        "epistemic_limit": "Il proxy è applicabile solo quando la documentazione osservativa include la finestra pre-risposta dell'adulto con sufficiente risoluzione. Nelle descrizioni cliniche testuali standard — che registrano la risposta ma non la fase pre-risposta — il proxy produce sistematicamente 'non_classificabile'. Questo non è un fallimento del proxy: è la risposta corretta a dati insufficienti. Il dispositivo non deve supplire all'assenza di informazione con inferenza competente — deve dichiarare che quella informazione è necessaria e non disponibile. La robustezza del proxy: la distinzione ingresso-valutativo vs. ingresso-esecutivo non è facilmente mimabile dallo script; anche uno scaffolding routinizzato può includere una fase di sguardo verso l'oggetto, ma questa fase è categoriale (verso l'oggetto-da-aprire) piuttosto che configurazionale (verso il punto-specifico-dove-il-bambino-è-bloccato), e l'azione che ne risulta è standard piuttosto che adattata."
+      }
+    ],
+
+    "observability_requirements": [
+      {
+        "id": "obs_1",
+        "label": "Finestra pre-risposta dell'adulto: orientamento verso la difficoltà specifica",
+        "description": "Nella finestra temporale tra la ricezione del segnale del bambino e la prima azione di risposta, l'adulto orienta la propria attenzione (sguardo, postura) verso il punto dell'azione del bambino dove la difficoltà si è prodotta? La documentazione deve specificare se questa fase di orientamento è presente e verso cosa è diretta.",
+        "type": "con_mediazione",
+        "observer_dependency": "media",
+        "required_for_proxy": true,
+        "protocol_note": "Nelle osservazioni dirette e nelle videoregistrazioni: documentare esplicitamente il comportamento dell'adulto nella finestra pre-risposta — dove orienta l'attenzione prima di agire. Non è sufficiente documentare la risposta: il dato rilevante è la struttura che precede la risposta."
+      },
+      {
+        "id": "obs_2",
+        "label": "Direzione fine dell'attenzione dell'adulto nella finestra pre-risposta",
+        "description": "Verso cosa è orientata l'attenzione dell'adulto nella fase pre-risposta, se presente: verso la configurazione specifica del tentativo del bambino (dove sono le mani, come ha impugnato, dove si è arrestata l'azione) — oppure verso l'oggetto come categoria — oppure verso il bambino come persona?",
+        "type": "con_mediazione",
+        "observer_dependency": "media",
+        "required_for_proxy": true,
+        "protocol_note": "Richiede distinzione tra orientamento-verso-configurazione-specifica e orientamento-verso-oggetto-categoriale. In video: possibile da frame analysis. In osservazione diretta: richiede attenzione esplicita a questo momento."
+      },
+      {
+        "id": "obs_3",
+        "label": "Corrispondenza tra punto osservato e punto affrontato nell'azione dell'adulto",
+        "description": "L'azione dell'adulto affronta il punto specifico della configurazione della difficoltà che era stato osservato nella fase pre-risposta?",
+        "type": "con_mediazione",
+        "observer_dependency": "media",
+        "required_for_proxy": false,
+        "protocol_note": "Non obbligatorio ma aumenta la robustezza. Serve quando obs_1 e obs_2 sono presenti ma la distinzione tra ingresso valutativo e ingresso categoriale rimane ambigua."
+      },
+      {
+        "id": "obs_4",
+        "label": "Struttura corporea del bambino nel momento del segnale",
+        "description": "Il bambino è in doppia orientazione simultanea (corpo ancora nello spazio della difficoltà + volto/sguardo verso l'adulto)?",
+        "type": "diretto",
+        "observer_dependency": "bassa",
+        "required_for_proxy": false,
+        "protocol_note": "Necessario per la lettura della corporeità-vissuta. Condition che attiva la finestra pre-risposta come momento strutturalmente rilevante: se il bambino non è in doppia orientazione, il proxy non ha il suo termine di riferimento."
+      }
+    ],
+
+    "non_classifiability_rules": [
+      {
+        "id": "ncr_1",
+        "dimension": "Struttura del passaggio trasformativo",
+        "trigger": "obs_1 non documentato: la finestra pre-risposta dell'adulto non è specificata nella documentazione osservativa",
+        "required_output": "non_classificabile",
+        "rationale": "Senza documentazione della finestra pre-risposta non è possibile determinare se l'adulto ha compiuto una fase di orientamento verso la difficoltà specifica. La struttura dell'ingresso non è inferibile dal comportamento post-risposta. 'Non_classificabile' indica che il dato necessario è assente — non che il dato è presente ma non discrimina."
+      },
+      {
+        "id": "ncr_2",
+        "dimension": "Struttura del passaggio trasformativo",
+        "trigger": "obs_2 non documentato o ambiguo: la direzione dell'attenzione dell'adulto nella finestra pre-risposta non è specificata",
+        "required_output": "non_classificabile",
+        "rationale": "Senza documentazione della direzione dell'attenzione, non è distinguibile tra orientamento informativo (verso configurazione specifica) e orientamento sociale/categoriale. La classificazione richiederebbe un'inferenza non supportata dall'osservazione."
+      },
+      {
+        "id": "ncr_3",
+        "dimension": "Struttura del passaggio trasformativo",
+        "trigger": "La finestra pre-risposta è inferiore a circa un secondo senza possibilità di determinare struttura interna",
+        "required_output": "ambiguo",
+        "rationale": "Distinto da non_classificabile: il dato esiste (la finestra è brevissima) ma non è sufficiente per determinare se c'è stata una fase di valutazione. La brevità estrema è compatibile sia con ingresso valutativo molto competente sia con ingresso esecutivo immediato. 'Ambiguo' perché il dato è presente ma non discrimina, non perché manchi."
+      },
+      {
+        "id": "ncr_4",
+        "dimension": "Struttura del passaggio trasformativo",
+        "trigger": "La fase di arresto dell'azione del bambino non è documentata: il punto specifico della difficoltà non è identificabile",
+        "required_output": "non_classificabile",
+        "rationale": "Senza identificazione del punto specifico della difficoltà, 'orientamento verso la configurazione specifica' perde il suo termine di riferimento. Non è possibile determinare se l'adulto ha orientato la propria attenzione verso quella configurazione se la configurazione non è documentata."
+      },
+      {
+        "id": "ncr_5",
+        "dimension": "Campo intenzionale e co-regolazione",
+        "trigger": "La fase di doppia orientazione corporea del bambino non è documentata",
+        "required_output": "non_classificabile",
+        "rationale": "Senza documentazione della doppia orientazione, la corporeità-vissuta non è leggibile e la lettura del campo intenzionale non dispone del suo dato di base. Non è possibile distinguere un atto di richiesta di aiuto con base corporea da un segnale comunicativo senza base nella difficoltà."
+      }
+    ],
+
+    "interpretive_warnings": [
+      {
+        "risk_type": "comportamentismo",
+        "description": "Quando la richiesta di aiuto viene operazionalizzata come frequenza di occorrenza, latenza della risposta, o tipologia del segnale prodotto (verbale, gestuale, vocalizzazione), la struttura configurazionale collassa in variabili indipendenti. La frequenza delle richieste non distingue richieste in configurazione aperta da richieste in configurazione scripted; la latenza della risposta non misura la qualità co-regolatoria dell'ingresso. Un dispositivo ridotto a queste variabili perde la sua funzione."
+      },
+      {
+        "risk_type": "normatività",
+        "description": "La richiesta di aiuto è strutturalmente connessa a costrutti di autonomia e dipendenza che hanno forte saturazione normativa nei contesti clinici e educativi: 'chiede troppo', 'non è autonomo', 'è troppo dipendente', 'la madre risolve tutto per lui'. Quando questi costrutti entrano nella lettura, il dispositivo si trasforma in strumento di valutazione dell'individuo (bambino o caregiver). Il dispositivo legge la struttura della configurazione nell'atto specifico e nel contesto specifico — non misura un tratto del bambino né valuta la competenza del caregiver. La dipendenza co-regolatoria è strutturalmente necessaria alla configurazione: senza la risposta dell'adulto la difficoltà non può diventare problema condiviso. Non è un deficit da correggere."
+      },
+      {
+        "risk_type": "tecnicismo",
+        "description": "Quando il dispositivo viene trasformato in protocollo di osservazione strutturata con criteri di scoring per ciascuna dimensione e procedure di rilevazione standardizzate, produce la forma del dispositivo con il contenuto di una checklist. I nodi vengono letti isolatamente (si 'misura' la corporeità, si 'misura' la co-regolazione) perdendo la struttura configurazionale che li connette. Il passaggio trasformativo — l'unico elemento che rende leggibile la configurazione come tale — non è misurabile e scompare dal quadro."
+      },
+      {
+        "risk_type": "riduzione_cognitiva",
+        "description": "Quando la lettura privilegia il piano cognitivo (la richiesta di aiuto come competenza metacognitiva, come indicatore di teoria della mente, come precursore della regolazione emotiva), il livello corporeo e relazionale della configurazione scompare. La corporeità-vissuta — il corpo che incontra la difficoltà come condizione originaria dell'atto — diventa irrilevante, e la domanda strutturale 'il corpo è disponibile all'incontro con la difficoltà e all'orientamento verso l'altro?' viene sostituita da 'il bambino sa quando e come chiedere aiuto?'. Questo cambia il livello a cui si localizza la discontinuità quando la configurazione non si costituisce."
+      },
+      {
+        "risk_type": "tecnicismo_riabilitativo",
+        "description": "Specifico della richiesta di aiuto: il dispositivo rischia di essere trasformato in protocollo di intervento per 'insegnare al bambino a chiedere aiuto correttamente' — producendo sequenze di comportamenti target (guardare l'adulto, emettere il segnale, attendere la risposta) che replicano la forma della configurazione senza la struttura. Questo trasforma un dispositivo di lettura in prescrizione comportamentale, e il training ottenuto produce configurazioni scriptificate invece di configurazioni reali. Un bambino addestrato a chiedere aiuto in modo formalmente corretto può avere una struttura configurazionale interamente predeterminata."
+      }
+    ],
+
+    "non_permitted_transformations": [
+      "Quando viene usato per valutare se il bambino chiede aiuto in modo appropriato, adeguato o funzionale, il dispositivo si trasforma in strumento di valutazione evolutiva dell'individuo e perde la sua funzione strutturale: non descrive più una configurazione relazionale ma misura una competenza individuale.",
+      "Quando viene usato per classificare la richiesta come presente/assente, adeguata/inadeguata, tipica/atipica, l'interrogazione strutturale sulla qualità della configurazione viene sostituita da un giudizio binario — e la domanda 'quale struttura assume la richiesta in questa relazione?' diventa irrispondibile.",
+      "Quando produce diagnosi o orienta verso categorie diagnostiche (dipendenza eccessiva, difficoltà di autonomia, pattern di attaccamento, profilo dello spettro autistico), il livello strutturale del dispositivo viene assorbito dal frame classificatorio già dato. La configurazione non è più leggibile come tale ma solo come sintomo di una categoria.",
+      "Quando viene trasformato in protocollo di training per l'acquisizione del comportamento di richiesta di aiuto, il dispositivo di lettura si trasforma in prescrizione — e perde la sua funzione di rendere visibile la struttura a favore di quella di modificare il comportamento. I comportamenti acquisiti con training non hanno necessariamente la struttura configurazionale che il dispositivo legge.",
+      "Quando la co-regolazione viene usata per valutare la qualità della risposta del caregiver come attributo individuale — 'il padre non sa come rispondere', 'la madre risolve troppo' — la struttura diadica del nodo collassa in giudizio sulla competenza parentale. Il livello co-regolatorio è struttura dell'interazione, non attributo dell'adulto."
+    ],
+
+    "validation_structural_check": {
+      "configurational_logic_preserved": true,
+      "configurational_logic_notes": "La sequenza corporeità-vissuta (doppia orientazione dall'arresto) → campo-intenzionale (verso difficoltà come problema aperto) → co-regolazione (ingresso valutativo vs. esecutivo dell'adulto) → mediazione-simbolica (difficoltà come problema co-prodotto) è strutturalmente coerente e isomorfa alla logica del dispositivo sorgente. Il bridge concettuale ha struttura analoga al pointing: atto corporeo co-prodotto nella relazione.",
+      "no_psychological_inference": true,
+      "no_psychological_inference_notes": "Nessuna dimensione richiede inferenze su stati interni. Corporeità: struttura corporea osservabile (doppia orientazione, arresto dell'azione). Campo: struttura relazionale osservabile (chi apre, se l'altro entra, durata della co-presenza). Co-regolazione: struttura dell'ingresso dell'adulto (registrativo/partecipativo/trasformativo/chiudente come funzione strutturale dell'azione). Proxy: direzione dell'attenzione dell'adulto nella finestra pre-risposta (osservabile come comportamento, non come intenzione).",
+      "no_circularity": true,
+      "no_circularity_notes": "Il proxy è determinabile indipendentemente dalla classificazione finale. La direzione dell'attenzione dell'adulto nella finestra pre-risposta è osservabile prima di sapere se la configurazione è reale o apparente. La corrispondenza tra punto osservato e punto affrontato è verificabile dall'osservazione delle due sequenze comportamentali in successione.",
+      "proxy_observable": true,
+      "proxy_observable_notes": "Il proxy richiede documentazione della finestra pre-risposta con sufficiente risoluzione. Non è ricavabile da descrizioni testuali standard. Osservabile in osservazione diretta attenta a questo momento o da videoregistrazione. I requisiti di documentazione sono definiti esplicitamente nelle non_classifiability_rules e producono non_classificabile invece di classificazione forzata.",
+      "self_limiting": true,
+      "self_limiting_notes": "Il dispositivo produce non_classificabile ogni volta che i requisiti minimi di osservabilità non sono soddisfatti. Le regole ncr_1–ncr_5 coprono le principali condizioni di dati insufficienti. La distinzione tra non_classificabile (dato assente) e ambiguo (dato presente ma non discriminante) è operativa e coerente con il precedente dispositivo del pointing."
+    }
+  },
+
+  "final_assessment": "Il dispositivo regge strutturalmente. La pipeline STEP 3 → STEP 8 ha prodotto elementi sufficientemente stabilizzati per la sintesi: la corporeità (doppia orientazione dall'arresto dell'azione), il bridge (difficoltà privata → problema co-prodotto nella relazione), il proxy (struttura dell'ingresso dell'adulto nella finestra pre-risposta) sono tutti derivati da materiale già validato e non richiedono innovazione libera. Il passaggio dall'analisi alla sintesi non ha introdotto circolarità né inferenze psicologiche. Il punto di fragilità residua è la stessa del dispositivo sorgente dopo STEP 6-B: il dispositivo è self-limiting e produce non_classificabile ogni volta che i dati necessari non sono disponibili — che è la risposta corretta, non un difetto. Il dispositivo risponde alla domanda clinica corretta: non 'il bambino sa chiedere aiuto?' ma 'quale configurazione strutturale assume la richiesta in questa relazione?'. Questo è il punto di verità del metodo: la trasferibilità non è nell'applicazione del dispositivo sorgente al nuovo tema, ma nella capacità di ricostruire la struttura configurazionale a partire dalla fenomenologia specifica del nuovo atto. Il dispositivo lo fa."
+}

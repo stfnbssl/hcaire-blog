@@ -49,7 +49,7 @@ La temporalità vissuta, descritta nel capitolo precedente, non esiste in astrat
 
 Nel bambino, il corpo è il primo archivio del tempo. Le esperienze non vengono inizialmente ricordate o narrate, ma **incorporate**: diventano modalità abituali di risposta, di orientamento, di attesa. In questo senso, la corporeità è il luogo in cui la temporalità si stabilizza o si irrigidisce[^2] <img src="/assets/autori/maurice-merleau-ponty.jpg" alt="Merleau-Ponty" title="Merleau-Ponty" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)">.
 
-Questa prospettiva consente di comprendere perché le esperienze precoci abbiano un impatto strutturante sullo sviluppo: non perché vengano “imparate” come contenuti, ma perché si iscrivono nel modo stesso in cui il corpo abita il tempo.
+**Questa prospettiva consente di comprendere perché le esperienze precoci abbiano un impatto strutturante sullo sviluppo: non perché vengano “imparate” come contenuti, ma perché si iscrivono nel modo stesso in cui il corpo abita il tempo**.
 
 ## 5. Regolazione corporea come organizzazione primaria del senso
 
@@ -61,13 +61,13 @@ La regolazione corporea organizza:
 * la possibilità di restare in contatto con ciò che accade,  
 * la capacità di attraversare la perturbazione senza collasso.
 
-Questa organizzazione non è il risultato di un controllo cosciente, ma un equilibrio dinamico che si costruisce nel tempo, in stretta relazione con l’ambiente umano e materiale. Il corpo non reagisce semplicemente agli stimoli: **anticipa**, si prepara, modula l’apertura al mondo.
+Questa organizzazione non è il risultato di un controllo cosciente, ma un equilibrio dinamico che si costruisce nel tempo, in stretta relazione con l’ambiente umano e materiale. **Il corpo non reagisce semplicemente agli stimoli: anticipa, si prepara, modula l’apertura al mondo**.
 
 In questo senso, la regolazione corporea è già una forma di significazione pre-riflessiva.
 
 ## 6. Corporeità e relazione: il corpo come luogo dell’intersoggettività
 
-La corporeità non è mai puramente individuale. Il corpo del bambino è fin dall’inizio un corpo-in-relazione. Il contatto, la voce, il ritmo dell’interazione non sono semplici canali di comunicazione, ma **modalità attraverso cui il senso si costituisce**.
+La corporeità non è mai puramente individuale. Il corpo del bambino è fin dall’inizio un corpo-in-relazione. Contatto, sguardo, voce, olfatto e ritmo dell’interazione non sono semplici canali di comunicazione, ma **modalità attraverso cui il senso si costituisce**.
 
 È attraverso il corpo dell’altro che il bambino sperimenta:
 

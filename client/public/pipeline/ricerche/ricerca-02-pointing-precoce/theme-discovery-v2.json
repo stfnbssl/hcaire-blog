@@ -1,0 +1,47 @@
+{
+  "research_scope": {
+    "project_goal": "Individuare temi strutturalmente significativi per il progetto Sviluppo Bambino, da utilizzare come fuochi esplorativi per la costruzione di micro-matrici di traduzione interdisciplinare (Fase 2 del metodo). I temi devono essere radicati nelle fonti attuali, attraversare più assi strutturali e non essere già strumenti, protocolli o categorie diagnostiche.",
+    "source_types_consulted": [
+      "Report istituzionali UNICEF/UNESCO (Global Report on Early Childhood Care and Education, 2024)",
+      "Report e dati OECD (Education Policy Outlook 2025; Reducing Inequalities by Investing in ECEC, 2025; Education at a Glance 2025)",
+      "Linee guida AAP (Digital Ecosystems, Children, and Adolescents – Policy Statement 2026; Power of Play policy)",
+      "Review sistematiche su PubMed/PMC su: dialogic book-sharing, parental reflective functioning, co-regulation, technoference, responsive caregiving, infant sleep",
+      "Studi empirici recenti (2023-2025) su: technoference, shared reading, paternal involvement, sleep-wake regulation, caregiver mental health",
+      "Policy documents CDC su ACEs e toxic stress prevention",
+      "Literature ZERO TO THREE su poverty, routines, early language",
+      "Protocolli di trial clinici in corso (RCT italiano su Dialogic Book-Sharing, 2024)"
+    ],
+    "selection_criteria": [
+      "Rilevanza attuale nelle fonti istituzionali e scientifiche (segnale forte in almeno due ambiti indipendenti)",
+      "Densità strutturale: il tema apre domande sui processi fondativi del soggetto, non solo su comportamenti osservabili",
+      "Multi-assialità: il tema coinvolge plausibilmente più di un asse strutturale",
+      "Non riducibilità a strumento, diagnosi o protocollo esistente",
+      "Potenziale come caso pilota per la costruzione di micro-matrici di traduzione"
+    ],
+    "notes": "Le ricerche sono state condotte con WebSearch nella sessione attuale (aprile 2026). I source_signals con source_type 'web_search' indicano fonti individuate nei risultati di ricerca ma non lette integralmente. I source_type 'training_knowledge' indicano conoscenza di addestramento senza consultazione diretta in questa sessione. Tre temi candidati sono stati esclusi e segnalati in global_notes come deboli."
+  },
+  "candidate_themes": [
+    {
+      "theme_label_provisional": "Pointing come configurazione precoce di focalizzazione condivisa e mediazione del significato",
+      "starting_point": "Il pointing è spesso trattato come gesto deittico, indice di attenzione condivisa o precursore del linguaggio. Tuttavia, nelle interazioni precoci adulto-bambino, esso appare anche come una configurazione più densa: un atto corporeo e relazionale che seleziona qualcosa nel campo dell’esperienza, lo rende comune, e può avviare processi di significazione, interiorizzazione e orientamento verso ciò che conta.",
+      "structural_focus": "Il tema non riguarda il pointing come semplice indicazione di un oggetto né come mera tappa dello sviluppo comunicativo, ma come atto in cui corpo, relazione, attenzione, segno e valore si articolano simultaneamente. Il punto strutturale è capire come il pointing trasformi qualcosa di semplicemente percepito in qualcosa di condiviso, significativo e potenzialmente interiorizzabile.",
+      "what_it_is": "Un tema che interroga il pointing come configurazione precoce in cui si intrecciano focalizzazione condivisa, orientamento reciproco, apertura al significato e mediazione segnica. Non è riducibile né a gesto motorio, né a semplice indice cognitivo, né a puro antecedente del linguaggio.",
+      "what_it_is_not": "Non è una competenza isolata da misurare come marker evolutivo. Non è un semplice gesto deittico descrivibile solo in termini comportamentali. Non è ancora, di per sé, linguaggio pienamente costituito. Non è una tecnica di interazione da prescrivere.",
+      "why_it_matters": "Il pointing è un tema ad alta densità strutturale perché si colloca all’incrocio tra corporeità, relazione, attenzione condivisa, mediazione simbolica e possibile interiorizzazione. È un caso pilota ideale: piccolo, osservabile, ma teoricamente molto esigente. Se il metodo regge sul pointing, regge anche su temi più ampi e complessi.",
+      "theme_reduction_risks": [
+        "Riduzione comportamentale: trattare il pointing come semplice gesto osservabile, perdendo la sua funzione relazionale e strutturale.",
+        "Riduzione cognitivista: leggerlo solo come indicatore di attenzione condivisa o precursore linguistico, senza cogliere il nesso con valore e interiorizzazione.",
+        "Riduzione linguistica: considerarlo solo come proto-segno, ignorando la sua base corporea e relazionale.",
+        "Riduzione tecnica: trasformarlo in strategia interattiva o abilità addestrabile, perdendo la sua densità ontologica e simbolica.",
+        "Universalizzazione astratta: ignorare che il valore del pointing dipende anche dal tipo di risposta dell’altro e dal contesto culturale dell’interazione."
+      ],
+      "notes_for_review": "Il punto critico da sorvegliare è che il tema non venga schiacciato né sul gesto motorio né sul linguaggio. Va anche tenuta aperta la possibilità che il pointing abbia una struttura diversa se proviene dall’adulto o dal bambino: nel primo caso può istituire significatività, nel secondo può mettere a fuoco qualcosa già saliente e cercarne la condivisione."
+    }    
+  ],
+  "global_notes": {
+    "overall_assessment": "",
+    "needs_human_review": true,
+    "open_issues": [
+    ]
+  }
+}

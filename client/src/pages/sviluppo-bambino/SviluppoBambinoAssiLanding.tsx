@@ -224,10 +224,10 @@ export default function SviluppoBambinoAssiLanding() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Perché questi capitoli</h2>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-5 max-w-3xl">
-            Il lavoro di elaborazione degli assi strutturali non è una raccolta di saggi teorici. È il tentativo di costruire un <strong>linguaggio condiviso</strong> tra discipline — filosofia, psicologia, pedagogia, clinica — che spesso parlano dello stesso bambino senza riuscire a intendersi.
+            Il lavoro di elaborazione degli assi strutturali non è una raccolta di saggi teorici. È il tentativo di costruire un <strong>linguaggio condiviso</strong> tra discipline — filosofia, psicologia, pedagogia, clinica.
           </p>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-5 max-w-3xl">
-            Ciascun capitolo nasce da una domanda precisa, risponde con rigore concettuale, e si chiude aprendo verso il successivo. Il risultato è una mappa dell'esperienza infantile che può orientare educatori, clinici, ricercatori e progettisti di servizi — non come protocollo da applicare, ma come strumento per vedere con più chiarezza.
+            Ciascun capitolo nasce da una domanda precisa, risponde con rigore concettuale, e si chiude aprendo verso il successivo. Il risultato è una mappa dell'esperienza infantile che può orientare educatori, clinici, ricercatori e progettisti di servizi, come strumento per vedere con più chiarezza.
           </p>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-3xl">
             I capitoli sono accompagnati da riferimenti alle figure dei pensatori che hanno contribuito a elaborare ciascuna dimensione — da Merleau-Ponty a Winnicott, da Vygotskij a Gadamer, da Arendt a Freud — con i loro testi fondamentali, perché la teoria non sia ornamento ma radice visibile del pensiero.

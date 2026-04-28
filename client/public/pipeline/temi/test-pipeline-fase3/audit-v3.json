@@ -1,0 +1,325 @@
+{
+  "step": "f3_step_5",
+  "version": "v3",
+  "audit_type": "audit_metodologico_su_indistinguibility_test",
+  "audited_artifact": {
+    "step": "f3_step_4",
+    "version": "v1",
+    "device_under_test": "tema-01-pointing-clinico-dispositivo-v2",
+    "domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)"
+  },
+  "audit_scope_clause": "L'audit verifica la corretta applicazione del metodo F3 STEP 4 (triangolazione obbligatoria del bridge, validità dei proxy, coerenza proxy→classificazione, gestione dell'ambiguità). Non reinterpreta i casi, non valuta la plausibilità clinica, non produce letture alternative.",
+
+  "case_audits": [
+    {
+      "case_id": "caso_A",
+      "case_label": "Pointing con passaggio aperto — co-produzione genuina",
+      "applied_classification": "aperto",
+      "applied_classification_status": "probabile",
+
+      "checks": {
+        "formal_completeness": {
+          "result": "completo",
+          "fields_present": {
+            "observed_configuration": true,
+            "proxy_analysis.proxies_present": true,
+            "proxy_analysis.proxies_direction": true,
+            "proxy_analysis.counter_indicator": true,
+            "proxy_analysis.counter_indicator_rebuttal": true,
+            "proxy_analysis.proxy_confidence": true,
+            "proxy_analysis.classification_status": true,
+            "proxy_analysis.ambiguity_conditions": true,
+            "proxy_analysis.classification": true,
+            "device_discrimination": true,
+            "failure_risk": true
+          },
+          "naming_note": "I sotto-campi sono presenti ma con denominazione locale: 'proxies_direction' è espresso campo per campo come attributo 'indicates' di ciascun proxy + clausola 'why_proxies_indicate_openness'; 'counter_indicator' e 'counter_indicator_rebuttal' sono incapsulati in 'mandatory_counter_indicator.potential_alternative_reading' e 'why_discarded'. La sostanza è coperta integralmente."
+        },
+
+        "triangulation": {
+          "result": "reale",
+          "elements_check": {
+            "proxies_present_explicit_and_distinct": true,
+            "proxies_direction_non_tautological": true,
+            "counter_indicator_real_and_challenging": true,
+            "rebuttal_actually_addresses_counter": true
+          },
+          "evidence_notes": [
+            "I quattro proxy sono distinti e non sovrapposti: non-prevedibilità della sequenza, asimmetria dinamica del lavoro semiotico, ridefinizione in corso d'opera, tracce di sospensione strutturale.",
+            "La direction è giustificata strutturalmente nella clausola 'why_proxies_indicate_openness': 'la non-prevedibilità è sostenuta dall'asimmetria dinamica e dalla ridefinizione, la sospensione strutturale è la condizione che rende possibile la ridefinizione' — non è tautologica.",
+            "Il contro-indicatore ('show-and-tell ricorrente nella diade') è reale e potenzialmente decisivo, non un fantoccio retorico.",
+            "Il rebuttal è strutturale e specifico: 'la ripresa del caregiver non è la formula stabilizzata, è inflessa dalla qualità di stupore aggiunta dal bambino' — risponde direttamente al contro-indicatore."
+          ]
+        },
+
+        "proxy_validity": {
+          "result": "parzialmente_validi",
+          "per_proxy_evidence_anchoring": [
+            {
+              "proxy": "non-prevedibilità della sequenza",
+              "anchored_to_case_description": true,
+              "case_description_excerpt": "'Il caregiver coglie questa ripresa e la riprende a sua volta: \"sì, guarda come si muove!\" — il commento del caregiver è inflesso dalla vocalizzazione del bambino, non era previsto come passo successivo dello script'",
+              "circularity_risk": "moderato — la narrative_thick_description già descrive il commento come 'inflesso' e 'non previsto', cioè usa categorie che pre-strutturano il proxy"
+            },
+            {
+              "proxy": "asimmetria dinamica del lavoro semiotico",
+              "anchored_to_case_description": true,
+              "case_description_excerpt": "'lo sguardo va all'uccellino, poi al caregiver, poi torna all'uccellino, poi di nuovo al caregiver in un movimento che non è meccanico ma cerca qualcosa nello sguardo dell'altro'",
+              "circularity_risk": "moderato — l'evidenza nel proxy_analysis ('il contributo trasformativo si sposta nel corso della sequenza') riformula in linguaggio strutturale ciò che la narrative descrive già con qualificatori interpretativi ('non è meccanico', 'cerca qualcosa')"
+            },
+            {
+              "proxy": "ridefinizione in corso d'opera",
+              "anchored_to_case_description": true,
+              "case_description_excerpt": "'vocalizza \"oh!\" con un'inflessione che non è eco della parola dell'adulto ma aggiunge qualcosa: una qualità di stupore che non era nella nominazione neutra del caregiver'",
+              "circularity_risk": "alto — questo è il proxy decisivo e la narrative usa formulazioni che già contengono l'esito interpretativo ('aggiunge qualcosa', 'non era nella nominazione neutra'). Il proxy non aggiunge una lettura strutturale autonoma rispetto a una narrative che è già stata 'letta'."
+            },
+            {
+              "proxy": "tracce di sospensione strutturale",
+              "anchored_to_case_description": true,
+              "case_description_excerpt": "'il braccio non torna giù subito, mantiene una struttura di richiamo' e 'fa una micro-pausa nella vocalizzazione che stava per iniziare — la pausa non è inerzia, è ascolto attivo'",
+              "circularity_risk": "alto — la narrative qualifica esplicitamente la pausa come 'ascolto attivo' (non inerzia) e il braccio come 'struttura di richiamo': la lettura strutturale è già nella descrizione fenomenica"
+            }
+          ],
+          "global_anchoring_note": "Tutti i proxy trovano un ancoraggio nella case_description (narrative_thick_description) e non solo nella observed_configuration: questo è formalmente conforme al vincolo di evidenza locale. Tuttavia la narrative_thick_description è scritta in un registro già pre-strutturato (qualifica le pause come 'ascolto attivo', i bracci come 'struttura di richiamo', le inflessioni come 'aggiungere qualcosa'). Esiste quindi un rischio di circolarità: la lettura strutturale conferma una descrizione fenomenica che è essa stessa già strutturalmente caratterizzata. La validità formale dei proxy regge, ma la loro indipendenza dalla classificazione è solo parziale."
+        },
+
+        "decisive_proxy_counter_reading": {
+          "decisive_proxy": "ridefinizione in corso d'opera (sostenuta dall'asimmetria dinamica)",
+          "alternative_reading_attempted": true,
+          "alternative_reading_described": "Lo stesso elemento — la vocalizzazione 'oh!' del bambino seguita dalla ripresa 'guarda come si muove' del caregiver — potrebbe sostenere la classificazione 'predeterminato' se interpretato come slot ritualizzato di una sequenza show-and-tell flessibile: l'inflessione di stupore può essere parte stessa dello script (molte diadi caregiver-bambino di 18 mesi hanno script in cui il bambino è atteso vocalizzare con stupore e l'adulto è atteso commentare 'guarda come si muove'). In questa lettura alternativa, ciò che il proxy_analysis descrive come 'ridefinizione' è invece l'esecuzione di un copione che include la variazione prosodica.",
+          "alternative_reading_structural_plausibility": "plausibile",
+          "result": "proxy_decisivo_reversibile",
+          "implication": "Il proxy decisivo non è univoco: lo stesso elemento osservabile sostiene la classificazione 'aperto' solo se assumiamo che la qualità di stupore non sia parte dello script abituale della diade. F3 STEP 4 lo riconosce parzialmente attraverso le ambiguity_conditions ('se la diade è osservata per la prima volta...'), ma non tematizza esplicitamente la reversibilità interpretativa del proxy decisivo."
+        },
+
+        "proxy_to_classification_coherence": {
+          "result": "coerente",
+          "notes": [
+            "I quattro proxy puntano coerentemente verso 'apertura'.",
+            "La classificazione 'aperto' segue dai proxy e non è anticipata.",
+            "Il proxy decisivo (ridefinizione) è effettivamente quello con maggior carico discriminativo, in linea con la sua identificazione come 'decisive_proxy'."
+          ]
+        },
+
+        "proxy_confidence_check": {
+          "declared_value": "media",
+          "result": "giustificata",
+          "rationale_provided": "'la ridefinizione richiede di leggere lo scambio nella sua totalità qualitativa — riconoscere che il commento del caregiver è inflesso dalla vocalizzazione del bambino richiede attenzione qualitativa specifica. Non è direttamente leggibile in un singolo fotogramma o in una trascrizione che riporti solo il contenuto verbale.' — la motivazione lega esplicitamente l'osservabilità del proxy alla qualità dell'osservazione."
+        },
+
+        "classification_status_check": {
+          "declared_value": "probabile",
+          "expected_per_rule": "probabile (perché proxy_confidence è 'media')",
+          "result": "corretto",
+          "rule_applied": "proxy_confidence media → classification_status probabile"
+        },
+
+        "ambiguity_management": {
+          "result": "corretta",
+          "ambiguity_conditions_count": 3,
+          "specificity_assessment": "le tre condizioni sono specifiche e operative: (a) osservazione limitata al contenuto verbale, (b) prima osservazione della diade senza baseline, (c) disturbo del setting che riduce leggibilità delle micro-sospensioni. Sono ancorate ai proxy specifici e indicano quale proxy perde osservabilità in ciascuna condizione."
+        },
+
+        "false_positive_risk": {
+          "result": "gestito",
+          "rationale": "Il caso A è la 'configurazione reale' e il rischio specifico è opposto (falso negativo se osservatore non coglie l'inflessione). Il failure_risk lo segnala correttamente: 'se l'osservatore opera con una checklist comportamentale... il caso viene classificato come pointing tipico con risposta adeguata senza che la struttura del passaggio venga interrogata' — il rischio è dichiarato, le condizioni di fallimento del dispositivo sono specifiche."
+        }
+      },
+
+      "case_level_assessment": "L'analisi del caso A è formalmente completa e la triangolazione è reale. La principale debolezza non è procedurale ma costitutiva: la narrative_thick_description, da cui i proxy traggono evidenza, è scritta in un registro già strutturalmente caratterizzato (qualifica direttamente le pause come 'ascolto attivo', i commenti come 'inflessi', le vocalizzazioni come 'aggiungere qualcosa'). Il proxy decisivo (ridefinizione) è inoltre reversibile: lo stesso elemento sostiene una lettura predeterminata se la qualità di stupore è parte dello script. F3 STEP 4 riconosce parte di queste fragilità nelle ambiguity_conditions e nella qualifica 'probabile', ma non tematizza la reversibilità del proxy decisivo né la pre-strutturazione della narrative."
+    },
+
+    {
+      "case_id": "caso_B",
+      "case_label": "Pointing con passaggio predeterminato — script 'show-and-tell'",
+      "applied_classification": "predeterminato",
+      "applied_classification_status": "probabile",
+
+      "checks": {
+        "formal_completeness": {
+          "result": "completo",
+          "fields_present": {
+            "observed_configuration": true,
+            "proxy_analysis.proxies_present": true,
+            "proxy_analysis.proxies_direction": true,
+            "proxy_analysis.counter_indicator": true,
+            "proxy_analysis.counter_indicator_rebuttal": true,
+            "proxy_analysis.proxy_confidence": true,
+            "proxy_analysis.classification_status": true,
+            "proxy_analysis.ambiguity_conditions": true,
+            "proxy_analysis.classification": true,
+            "device_discrimination": true,
+            "failure_risk": true
+          },
+          "naming_note": "Stesse osservazioni del caso A. In più, è presente un 'secondary_counter_indicator' che articola un secondo livello di triangolazione (sguardo di riferimento come marker classico). Questo arricchimento è coerente con il vincolo metodologico."
+        },
+
+        "triangulation": {
+          "result": "reale",
+          "elements_check": {
+            "proxies_present_explicit_and_distinct": true,
+            "proxies_direction_non_tautological": true,
+            "counter_indicator_real_and_challenging": true,
+            "rebuttal_actually_addresses_counter": true
+          },
+          "evidence_notes": [
+            "I quattro proxy sono speculari rispetto al caso A e mantengono distinzione: prevedibilità della sequenza, concentrazione stabile del lavoro semiotico, assenza di ridefinizione, assenza di sospensione strutturale.",
+            "La direction è giustificata in 'why_proxies_indicate_predetermination'.",
+            "Il contro-indicatore principale ('forma comportamentale tipica esemplare') è il contro-indicatore strutturalmente più forte possibile per un caso di questo tipo, non è un fantoccio.",
+            "Il rebuttal è esplicitamente metodologico ('il dispositivo distingue forma da struttura') e applica il principio strutturale del dispositivo. Il secondary_counter_indicator (sguardo di riferimento come marker di intenzionalità) è gestito distinguendo nodo del campo da bridge — risposta procedurale corretta."
+          ]
+        },
+
+        "proxy_validity": {
+          "result": "parzialmente_validi",
+          "per_proxy_evidence_anchoring": [
+            {
+              "proxy": "prevedibilità della sequenza",
+              "anchored_to_case_description": true,
+              "case_description_excerpt": "'la sequenza familiare', 'movimento già fatto altre volte', 'la formula della diade, applicata'",
+              "circularity_risk": "alto — la narrative descrive direttamente la sequenza come 'familiare' e 'la formula della diade': il proxy non ha autonomia rispetto a una narrative che è già stata caratterizzata come prevedibile. Inoltre la prevedibilità richiede una baseline (più sequenze della diade) che la narrative postula ma non documenta osservativamente — è un'attribuzione interna alla narrative."
+            },
+            {
+              "proxy": "concentrazione stabile del lavoro semiotico nell'adulto",
+              "anchored_to_case_description": true,
+              "case_description_excerpt": "'La frase è prodotta in un'unica unità, senza inflessioni che rispondano a qualcosa di specifico nel gesto del bambino'",
+              "circularity_risk": "moderato — la narrative qualifica esplicitamente l'assenza di inflessioni; il proxy lo riformula in termini di concentrazione del lavoro semiotico"
+            },
+            {
+              "proxy": "assenza di ridefinizione",
+              "anchored_to_case_description": true,
+              "case_description_excerpt": "'la vocalizzazione è la presa di consegna della nominazione, formalmente identica a quella del caso A, ma è la presa di consegna della nominazione, non un'inflessione che aggiunge qualcosa'",
+              "circularity_risk": "alto — questo è il proxy decisivo del caso B e la narrative usa una formulazione interpretativa diretta ('è la presa di consegna', 'non un'inflessione che aggiunge qualcosa'). Il proxy non aggiunge struttura indipendente rispetto a una descrizione fenomenica già pre-strutturata."
+            },
+            {
+              "proxy": "assenza di sospensione strutturale",
+              "anchored_to_case_description": true,
+              "case_description_excerpt": "'il braccio si solleva con un movimento lineare e fluido', 'la vocalizzazione segue immediatamente la conferma del caregiver'",
+              "circularity_risk": "moderato"
+            }
+          ],
+          "global_anchoring_note": "Come nel caso A, l'ancoraggio formale è presente ma la narrative_thick_description è scritta in registro già pre-strutturato. In più, il proxy della prevedibilità presuppone l'esistenza di una baseline della diade ('formula stabilizzata', 'sequenza riconoscibile come ricorrente') che è dichiarata nella narrative ma non documentata osservativamente: è un'asserzione interna al caso costruito. F3 STEP 4 lo riconosce esplicitamente nelle ambiguity_conditions (proxy della prevedibilità non triangolabile su episodio singolo isolato), ma costruisce il caso assumendo la baseline come data."
+        },
+
+        "decisive_proxy_counter_reading": {
+          "decisive_proxy": "assenza di ridefinizione (sostenuta dalla concentrazione stabile del lavoro semiotico)",
+          "alternative_reading_attempted": true,
+          "alternative_reading_described": "Lo stesso elemento — la sequenza fluida, la nominazione articolata, la vocalizzazione di acknowledgment — potrebbe sostenere la classificazione 'aperto' se interpretato come espressione di una diade ad alta sintonia in cui la co-produzione si è stabilizzata in forme efficienti. La 'fluidità' può essere co-regolazione raffinata, non assenza di ridefinizione: ciò che appare come formula può essere il risultato sedimentato di molti scambi in cui la co-produzione ha trovato una forma condivisa che non richiede più micro-sospensioni perché entrambi sono già orientati al campo. In questa lettura, l'assenza di ridefinizione visibile è apparente, e il significato continua a essere co-prodotto in forma compressa.",
+          "alternative_reading_structural_plausibility": "plausibile",
+          "result": "proxy_decisivo_reversibile",
+          "implication": "Anche il proxy decisivo del caso B è reversibile: la stessa fluidità che il dispositivo legge come 'esecuzione di script' può essere letta come 'co-produzione sedimentata'. Il dispositivo distingue le due letture solo se assume che fluidità e ridefinizione siano in opposizione strutturale — assunto che non è internamente giustificato dal device, ma è introdotto dalla narrative come dato. Questo non invalida la classificazione, ma mostra che la discriminazione tra caso A e caso B dipende da un'asimmetria interpretativa fissata a monte (la narrative del caso A descrive la pausa come 'ascolto', quella del caso B la sua assenza come 'esecuzione') più che da un proxy strutturalmente univoco."
+        },
+
+        "proxy_to_classification_coherence": {
+          "result": "coerente",
+          "notes": [
+            "I quattro proxy puntano coerentemente verso 'predeterminazione'.",
+            "La classificazione segue dai proxy.",
+            "Il proxy decisivo (assenza di ridefinizione) è correttamente identificato come quello con maggior carico discriminativo."
+          ]
+        },
+
+        "proxy_confidence_check": {
+          "declared_value": "media",
+          "result": "giustificata",
+          "rationale_provided": "'l'assenza di ridefinizione è leggibile solo se si coglie che il commento del caregiver non è inflesso dalla vocalizzazione del bambino — che è la formula della diade applicata, non una ripresa specifica. Richiede attenzione qualitativa allo scambio nella sua totalità e, idealmente, conoscenza della diade per riconoscere la formula stabilizzata.' — la motivazione è doppia (qualità dell'osservazione + necessità di baseline) e adeguata."
+        },
+
+        "classification_status_check": {
+          "declared_value": "probabile",
+          "expected_per_rule": "probabile (perché proxy_confidence è 'media')",
+          "result": "corretto",
+          "rule_applied": "proxy_confidence media → classification_status probabile"
+        },
+
+        "ambiguity_management": {
+          "result": "corretta",
+          "ambiguity_conditions_count": 4,
+          "specificity_assessment": "le quattro condizioni sono specifiche e operative: (a) assenza di accesso ad altre interazioni della diade (proxy della prevedibilità non triangolabile), (b) osservazione limitata che appiattisce la prosodia, (c) contesto eccezionale (no baseline), (d) uso del dispositivo per valutazione cross-episodica senza altre sequenze. La quarta condizione introduce inoltre la cautela contro la ricaduta in giudizio sul caregiver."
+        },
+
+        "false_positive_risk": {
+          "result": "gestito",
+          "rationale": "Il caso B è esplicitamente costruito come 'configurazione_apparente': il rischio di falso positivo (classificazione erronea come 'aperto') è il rischio centrale. Il failure_risk lo tematizza in cinque condizioni distinte, includendo: (a) checklist comportamentale, (b) salto della triangolazione del bridge, (c) assenza di baseline della diade, (d) confusione tra forma riuscita e co-produzione, (e) trasformazione del dispositivo in strumento valutativo. Gestione dettagliata e calibrata."
+        }
+      },
+
+      "case_level_assessment": "L'analisi del caso B è formalmente completa, la triangolazione è reale e particolarmente articolata (presenza di un secondary_counter_indicator). Le debolezze sono speculari a quelle del caso A: pre-strutturazione della narrative, reversibilità del proxy decisivo, dipendenza dalla baseline della diade che è postulata dalla narrative invece che documentata osservativamente. F3 STEP 4 gestisce queste fragilità in modo più esplicito che nel caso A (la quarta ambiguity_condition tematizza il rischio applicativo di valutazione del caregiver), ma non risolve il punto strutturale: la discriminazione tra caso A e caso B dipende dall'asimmetria interpretativa fissata nelle rispettive narrative_thick_description, non da una differenza strutturale che emerga indipendentemente dalla descrizione."
+    }
+  ],
+
+  "global_analysis": {
+    "real_discrimination": {
+      "result": "fragile",
+      "rationale": "La differenza strutturale tra i due casi è effettivamente articolata su quattro proxy del bridge e non è solo narrativa: i proxy sono distinti, coerenti tra loro all'interno di ciascun caso, e producono classificazioni opposte. Tuttavia la discriminazione non è 'robusta' nel senso definito dallo schema (indipendente dalla qualità dell'osservatore): F3 STEP 4 stesso dichiara proxy_confidence 'media' e status 'probabile' in entrambi i casi, e identifica condizioni operative sotto le quali i due casi diventano effettivamente indistinguibili. La qualifica 'fragile' segue direttamente dalla diagnosi che lo stesso F3 STEP 4 produce — non è un giudizio dell'audit contro F3 STEP 4, è la lettura coerente dell'esito dichiarato. Aggiunge l'audit: il proxy decisivo è strutturalmente reversibile in entrambi i casi (la stessa evidenza può sostenere la classificazione opposta), e l'asimmetria delle classificazioni dipende dall'asimmetria interpretativa già presente nelle due narrative_thick_description."
+    },
+
+    "observer_dependence": {
+      "result": "esplicita",
+      "rationale": "F3 STEP 4 dichiara apertamente la dipendenza dall'osservatore in molteplici punti: (a) qualifica 'probabile' invece di 'netta' per entrambe le classificazioni, (b) ambiguity_conditions specifiche che indicano sotto quali condizioni di osservazione la classificazione deve essere abbassata ad 'ambigua', (c) failure_risk che elenca le condizioni in cui il dispositivo fallisce, (d) sezione 'discrimination_qualifications' nel test_verdict che esplicita 'la discriminazione richiede osservazione qualitativa di alto livello'. La dipendenza è dichiarata e gestita, non implicita né nascosta."
+    },
+
+    "single_proxy_critical_dependence": {
+      "result": "dipendenza_singola_dichiarata",
+      "rationale": "In entrambi i casi il proxy decisivo è uno solo (ridefinizione/assenza di ridefinizione) con osservabilità media. Gli altri tre proxy sono di sostegno e coerenti, ma non sono indipendentemente decisivi: la triangolazione regge perché coerente, ma il carico discriminativo è concentrato sul proxy della ridefinizione. F3 STEP 4 dichiara questa concentrazione attraverso il campo 'decisive_proxy' e la rationale di proxy_confidence, ma non utilizza l'etichetta esplicita 'dipendenza critica da proxy singolo'. L'audit registra: dichiarata in sostanza, non con il termine procedurale specifico. Implicazione: la robustezza non è distribuita ma concentrata, e questo abbassa il grado di robustezza dell'intera discriminazione, esito già coerente con la classificazione 'fragile' della discriminazione globale."
+    }
+  },
+
+  "additional_findings": [
+    {
+      "finding_type": "circolarità_narrative_proxy",
+      "description": "La narrative_thick_description di entrambi i casi è scritta in un registro che già contiene la lettura strutturale (es. 'la pausa non è inerzia, è ascolto attivo' nel caso A; 'la frase è prodotta in un'unica unità, senza inflessioni' nel caso B). I proxy traggono evidenza da queste descrizioni e quindi confermano una caratterizzazione che è già presente nella case_description. La triangolazione formale regge ma l'indipendenza dei proxy rispetto alla classificazione è solo parziale: la differenza tra i due casi è inscritta nella narrative prima ancora di essere triangolata.",
+      "severity": "moderata",
+      "implication": "Non invalida l'analisi ma riduce la sua forza dimostrativa: il test mostra che il dispositivo discrimina narrative già strutturate in opposizione, non che discrimina sequenze osservative grezze."
+    },
+    {
+      "finding_type": "reversibilità_proxy_decisivo_non_tematizzata",
+      "description": "Il proxy decisivo (ridefinizione vs. assenza di ridefinizione) è strutturalmente reversibile: lo stesso elemento osservabile può sostenere entrambe le classificazioni a seconda dell'assunzione interpretativa. F3 STEP 4 cita la possibilità di osservare gli stessi marker in modi diversi nelle ambiguity_conditions, ma non tematizza esplicitamente che il proxy decisivo è reversibile — lo tratta come univoco una volta osservato con qualità sufficiente.",
+      "severity": "moderata",
+      "implication": "L'esito 'probabile' (non 'netto') è coerente con la reversibilità, ma il dispositivo non rende esplicito che la qualità dell'osservazione non risolve la reversibilità: la risolve l'assunzione su cosa la fluidità/inflessione significhi nella struttura del passaggio."
+    },
+    {
+      "finding_type": "baseline_della_diade_postulata",
+      "description": "Il proxy della prevedibilità (caso B) richiede una baseline della diade per essere triangolato. La narrative del caso B postula questa baseline ('la formula stabilizzata della diade', 'sequenza riconoscibile come ricorrente') ma non la documenta come osservazione: è un'attribuzione interna al caso costruito.",
+      "severity": "moderata",
+      "implication": "F3 STEP 4 lo riconosce nelle ambiguity_conditions ('se l'osservatore non ha accesso ad altre interazioni della stessa diade...'), e dichiara onestamente che su episodio singolo isolato la classificazione 'predeterminato' non è sostenibile. La gestione metodologica è corretta. Tuttavia il caso costruito presuppone come dato ciò che dichiara non triangolabile fuori dal caso."
+    },
+    {
+      "finding_type": "secondary_counter_indicator_solo_in_caso_B",
+      "description": "Il caso B include un 'secondary_counter_indicator' (sguardo di riferimento come marker di intenzionalità) gestito distinguendo nodo del campo da bridge. Il caso A non include un secondary_counter_indicator analogo. L'asimmetria non è errore ma indica che la triangolazione del caso B è più articolata di quella del caso A.",
+      "severity": "bassa",
+      "implication": "Non è un difetto ma un dato: la difesa della classificazione 'predeterminato' richiede in F3 STEP 4 più passaggi metodologici della difesa della classificazione 'aperto'. Coerente con l'osservazione che il rischio di falso positivo è strutturalmente più alto sul caso B."
+    }
+  ],
+
+  "method_compliance_summary": {
+    "compliant_aspects": [
+      "completezza formale dei campi richiesti, in entrambi i casi",
+      "triangolazione reale (proxy + direction + counter-indicator + rebuttal)",
+      "applicazione corretta della regola proxy_confidence → classification_status",
+      "gestione esplicita dell'ambiguità con condizioni specifiche",
+      "dichiarazione esplicita della dipendenza dall'osservatore",
+      "gestione del rischio di falso positivo nel caso B (caso ad alto rischio strutturale)",
+      "coerenza interna tra proxy e classificazione in entrambi i casi"
+    ],
+    "non_critical_weaknesses": [
+      "narrative_thick_description già pre-strutturata in registro interpretativo, con conseguente parziale circolarità tra narrative e proxy",
+      "reversibilità del proxy decisivo non tematizzata esplicitamente",
+      "baseline della diade postulata internamente al caso costruito",
+      "etichetta 'dipendenza critica da proxy singolo' non utilizzata, anche se la sostanza è dichiarata"
+    ],
+    "critical_errors": []
+  },
+
+  "final_assessment": "accettabile",
+
+  "final_assessment_rationale": "Il metodo F3 STEP 4 è stato applicato correttamente: triangolazione reale, classificazione coerente con i proxy, applicazione corretta della regola proxy_confidence → classification_status, gestione esplicita dell'ambiguità e della dipendenza dall'osservatore. Non si rilevano errori critici (nessun proxy_confidence alta non motivata, nessuna classification_status netta con proxy_confidence media, nessun contro-indicatore fittizio, nessuna omissione dei rischi). Le debolezze rilevate sono non critiche ma sostanziali: (a) parziale circolarità tra narrative e proxy, (b) reversibilità non tematizzata del proxy decisivo, (c) dipendenza singola da un proxy con osservabilità media. Per questo l'esito non è 'robusto' ma 'accettabile': la discriminazione regge come dichiarazione metodologica ma non come dimostrazione strutturalmente robusta. La classificazione coincide con quella che F3 STEP 4 stesso assegna implicitamente al proprio test_verdict (status 'probabile', non 'netto'), il che indica coerenza interna dell'artefatto auditato.",
+
+  "recommendations_for_subsequent_steps": [
+    "Test su casi misti (proxy parzialmente coerenti) per verificare se il dispositivo produce correttamente classificazione 'ambigua' invece di forzare aperto/predeterminato — esigenza già riconosciuta in F3 STEP 4 'open_questions_for_subsequent_steps' e qui confermata.",
+    "Ridurre la pre-strutturazione interpretativa delle narrative_thick_description nei test futuri: usare descrizioni fenomeniche meno qualificate, in modo che i proxy debbano davvero costruire la lettura strutturale invece di confermarne una già inscritta nella descrizione.",
+    "Tematizzare esplicitamente la reversibilità del proxy decisivo come dimensione dell'analisi (oltre alla sua osservabilità), e definire condizioni sotto cui un proxy decisivo reversibile non basta a sostenere classification_status 'probabile' e deve scendere ad 'ambigua'.",
+    "Introdurre nello schema dell'analisi un controllo esplicito 'dipendenza_critica_da_proxy_singolo' come campo dichiarato, non solo derivabile dalla lettura del decisive_proxy.",
+    "Per casi che richiedono baseline della diade, distinguere esplicitamente i casi in cui la baseline è osservata da quelli in cui è postulata, e abbassare la robustezza in assenza di osservazione."
+  ]
+}

@@ -37,7 +37,19 @@
       "Bash(where python3 *)",
       "Bash(where py *)",
       "Bash(py --version)",
-      "Bash(winget install *)"
+      "Bash(winget install *)",
+      "Bash(taskkill //F //FI \"WINDOWTITLE eq *nodemon*\")",
+      "Bash(npm test *)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill *)",
+      "Bash(awk '{print $5}')",
+      "Bash(xargs -I {} taskkill //F //PID {})",
+      "Bash(PIPELINE_WATCHDOG_INTERVAL_MS=10000 PIPELINE_DEFAULT_TIMEOUT_MS=5000 PIPELINE_WATCHDOG_GRACE_MS=2000 npm run dev)",
+      "Bash(tasklist)",
+      "Bash(grep -r \"theme_id\" --include=\"*.json\" -l C:\\\\\\\\my\\\\\\\\projects\\\\\\\\hcaire-blog\\\\\\\\server\\\\\\\\content)",
+      "Bash(grep -v \"^$\")",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(npx -p typescript@5 tsc --noEmit -p client/tsconfig.json)"
     ]
   }
 }

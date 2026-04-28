@@ -3,6 +3,8 @@ import Redis from 'ioredis';
 import mongoose from 'mongoose';
 import { spawnCoworker } from './coworker.js';
 import { processBartlebyTrace } from './bartlebyWorker.js';
+import { PipelineCommandHandler } from './pipeline/PipelineCommandHandler.js';
+import { LettureCommandHandler } from './pipeline/LettureCommandHandler.js';
 
 const WorkflowLogSchema = new mongoose.Schema(
   {
@@ -125,6 +127,24 @@ async function main(): Promise<void> {
 
   await sub.subscribe(CHANNEL_ARTICLE_NEW, CHANNEL_BARTLEBY_TRACE_NEW);
   console.log(`[Local] In ascolto su: "${CHANNEL_ARTICLE_NEW}", "${CHANNEL_BARTLEBY_TRACE_NEW}"`);
+
+  // Factory per i client Redis dei pipeline handler — connessione separata da quella
+  // del subscriber di articles/bartleby (BRPOP è bloccante).
+  const pipelineRedisFactory = () => new Redis({
+    host: process.env.REDIS_HOST!,
+    port: parseInt(process.env.REDIS_PORT || '11976', 10),
+    password: process.env.REDIS_PASSWORD!,
+    retryStrategy: (times) => Math.min(times * 500, 5000),
+    maxRetriesPerRequest: null,
+  });
+
+  // Pipeline Sviluppo Bambino (canali hcaire:pipeline:*).
+  const pipelineHandler = new PipelineCommandHandler(pipelineRedisFactory);
+  await pipelineHandler.start();
+
+  // Pipeline Letture (canali hcaire:letture:*) — parallela alla precedente.
+  const lettureHandler = new LettureCommandHandler(pipelineRedisFactory);
+  await lettureHandler.start();
 }
 
 main().catch((err) => {

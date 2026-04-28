@@ -27,7 +27,7 @@ Ogni soggettività implica una certa continuità dell’esperienza. Senza questa
 
 Questa continuità non equivale a stabilità rigida. Al contrario, una soggettività regolata è una soggettività capace di attraversare variazioni, scarti, discontinuità, mantenendo una tenuta complessiva nel tempo. La regolazione è quindi **dinamica**, non statica[^2] <img src="/assets/autori/maurice-merleau-ponty.jpg" alt="Merleau-Ponty" title="Merleau-Ponty" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)"> <img src="/assets/libri/husserl-lezioni-sulla-coscienza-interna-del-tempo.jpg" alt="Lezioni sulla coscienza interna del tempo" title="Lezioni sulla coscienza interna del tempo" class="ref-cover" style="height:208px;vertical-align:middle;margin:0 4px 0 2px;box-shadow:0 1px 4px rgba(0,0,0,.3)">.
 
-Nel bambino, questa dimensione è particolarmente evidente: lo sviluppo non consiste nell’eliminare le oscillazioni, ma nel rendere l’esperienza progressivamente abitabile nonostante esse.
+Nel bambino, questa dimensione è particolarmente evidente: **lo sviluppo non consiste nell’eliminare le oscillazioni, ma nel rendere l’esperienza progressivamente abitabile nonostante esse**.
 
 ## 3. Regolazione non come controllo, ma come tenuta
 

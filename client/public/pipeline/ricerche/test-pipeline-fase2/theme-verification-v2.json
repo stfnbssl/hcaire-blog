@@ -1,0 +1,136 @@
+{
+  "step": "step_3",
+  "results": [
+    {
+      "theme_id": "tema_07_ecosistema_digitale",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "role": "Asse costitutivo della struttura deformata: fornisce il piano della forma del rapporto del soggetto con il possibile (orientamento pre-riflessivo, campo desiderabile, soggettivazione) di cui il tema descrive la specifica deformazione.",
+          "reason": "Senza l'Asse 5 il tema collassa: ciò che l'ecosistema digitale deforma non è un comportamento, un'attenzione misurata o un consumo, ma la struttura stessa del desiderio come orientamento. Il tema ha tre nodi forti su questo asse (desiderio-come-struttura, campo-desiderabile, motivazione-come-sostituto), ognuno con funzione strutturale distinta: l'oggetto della deformazione, il suo livello operativo, il suo meccanismo."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "role": "Asse della forma storica della mediazione: fornisce il piano per cui il dispositivo tecnico-algoritmico è letto come configurazione storica dell'esperienza e non come strumento neutro o come sfondo influenzante.",
+          "reason": "Senza l'Asse 6 il tema collassa in critica morale alla tecnologia o in problema di consumo individuale. Il tema esige che l'ecosistema digitale sia trattato come mediazione strutturale (non contesto), come forma storica della tecnica (non strumento), come configurazione che lega misurabilità e valore (prestazionalizzazione). Tre nodi forti reggono questa funzione."
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "rejection_reason": "secondario — la frammentazione attentiva e la compressione temporale prodotte dall'engagement incidono effettivamente sul campo intenzionale, ma questo livello è captato indirettamente dagli Assi 5 e 6 (motivazione-come-sostituto + tecnica-come-forma-storica già nominano la trasformazione attentivo-temporale). Aggiungere l'Asse 1 come confermato moltiplicherebbe i piani senza guadagno strutturale; il tema resta pensabile senza di esso. Annotato per recupero in STEP 4 se la lettura attentivo-temporale risultasse decisiva nella micro-matrice."
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "rejection_reason": "secondario — la sostituzione del giudizio con la valutazione algoritmica è un effetto reale del dispositivo, ma è un esito derivato della prestazionalizzazione del valore (Asse 6) più che un piano autonomo del tema. STEP 2 stesso segnalava prudenza per la fascia 0–3. Confermare l'Asse 3 produrrebbe duplicazione semantica con l'Asse 6 invece di aggiungere una funzione strutturale distinta."
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "desiderio-come-struttura",
+          "node_label": "Desiderio come struttura di orientamento",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "reason": "TEST 1 (necessità): senza questo nodo il tema non ha oggetto — è ciò che viene deformato. TEST 2 (specificità): distingue il tema da letture comportamentali (uso problematico, dipendenza) o cognitive (attenzione misurata) che non interrogano la struttura pre-riflessiva del desiderare. TEST 3 (non ridondanza): è il nodo fondativo dell'asse, non ricopribile da altri."
+        },
+        {
+          "node_id": "campo-desiderabile",
+          "node_label": "Campo desiderabile",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "reason": "TEST 1: il tema è precisamente la riorganizzazione algoritmica dell'orizzonte in cui certe direzioni appaiono già cariche di valore prima della scelta. TEST 2: distingue la deformazione del desiderio dalla mera abbondanza di stimoli (proprio il livello su cui l'engagement opera). TEST 3: è il livello operativo di desiderio-come-struttura — non duplicato, è il piano in cui la struttura si manifesta."
+        },
+        {
+          "node_id": "motivazione-come-sostituto",
+          "node_label": "Motivazione come sostituto del desiderio",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "reason": "TEST 1: nomina il meccanismo specifico della deformazione (ricompensa variabile, feedback immediato che producono azione efficace senza orientamento interno). TEST 2: caratterizza la deformazione propria di questo tema rispetto ad altre forme di mediazione storica (povertà, frammentazione dei sistemi di cura). TEST 3: complementare e non ridondante rispetto a desiderio-come-struttura e campo-desiderabile (oggetto / livello / meccanismo)."
+        },
+        {
+          "node_id": "tecnica-come-forma-storica",
+          "node_label": "Tecnica come forma storica",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "TEST 1: senza questo nodo l'ecosistema digitale ricade in strumento neutro o in tecnofobia — il tema perde il suo statuto. TEST 2: discrimina il tema dalle letture morali o consumistiche del digitale. TEST 3: funzione fondativa sull'asse storico, non sostituibile da prestazionalizzazione (che ne è una declinazione specifica) né da mediazione-strutturale (che ne è la modalità)."
+        },
+        {
+          "node_id": "prestazionalizzazione-del-valore",
+          "node_label": "Prestazionalizzazione del valore",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "TEST 1: l'architettura dell'engagement produce esattamente la coincidenza tra misurabile (visualizzazioni, tempo di permanenza) e ciò che appare di valore — è la grammatica storica specifica del dispositivo. TEST 2: lega la deformazione del desiderio a una specifica forma storica del valore, distinguibile da prestazionalizzazioni di altri ambiti. TEST 3: declinazione specifica e indispensabile di tecnica-come-forma-storica, non sua riformulazione."
+        },
+        {
+          "node_id": "mediazione-strutturale",
+          "node_label": "Mediazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "TEST 1: il bambino e il caregiver si trovano in un campo già organizzato dalle metriche di engagement prima di qualsiasi uso consapevole — senza questo nodo il tema scivola in lettura dell'ecosistema come 'contesto' esterno. TEST 2: blocca esattamente la riduzione a sfondo influenzante che comprometterebbe l'identità strutturale del tema. TEST 3: livello distinto dalla forma storica (tecnica-come-forma-storica) e dalla configurazione del valore (prestazionalizzazione) — è la modalità per cui la forma storica entra nell'esperienza."
+        }
+      ],
+      "secondary_nodes": [
+        {
+          "node_id": "deformazione-strutturale",
+          "node_label": "Deformazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Utile per nominare lo statuto sistemico (non patologico-individuale) dell'oggetto del tema, ma svolge funzione meta-tematica: chiarisce come leggere il tema più che descriverlo strutturalmente. Rimosso, il tema resta strutturalmente leggibile attraverso mediazione-strutturale + tecnica-come-forma-storica, che insieme già contrastano l'attribuzione individuale."
+        }
+      ],
+      "rejected_nodes": [
+        {
+          "node_id": "campo-intenzionale",
+          "node_label": "Campo intenzionale",
+          "source_axis": "asse_1",
+          "rejection_reason": "TEST 3 (non ridondanza) — la frammentazione attentivo-temporale che il nodo presidia è già nominata operativamente da motivazione-come-sostituto (a livello del meccanismo) e da tecnica-come-forma-storica (a livello della forma storica della temporalità contemporanea). Coerente con l'esclusione dell'Asse 1 dalla configurazione confermata."
+        },
+        {
+          "node_id": "fallimento-normativo",
+          "node_label": "Fallimento normativo (forma prestazione)",
+          "source_axis": "asse_3",
+          "rejection_reason": "TEST 1 (necessità) — la sostituzione del giudizio con la valutazione algoritmica è effetto della prestazionalizzazione del valore (Asse 6) più che piano autonomo del tema; il tema resta pensabile senza questo nodo. TEST 3 (non ridondanza) — sovrapposto a prestazionalizzazione-del-valore nella sua funzione discriminante per questo tema. Coerente con l'esclusione dell'Asse 3."
+        }
+      ],
+      "confirmed_bridge_concepts": [
+        {
+          "concept_label": "Mediazione tecnica del campo desiderabile",
+          "linked_axes": ["asse_5", "asse_6"],
+          "linked_nodes": [
+            "campo-desiderabile",
+            "tecnica-come-forma-storica",
+            "motivazione-come-sostituto"
+          ],
+          "reason": "TEST 1 (connessione reale): collega effettivamente i due assi confermati attraverso nodi confermati, senza saltare passaggi. TEST 2 (valore aggiunto): nomina la trasformazione strutturale (forma tecnica → qualità del campo desiderabile) che nessuno dei nodi singoli esprime — non somma di nodi ma relazione direzionale che descrive chi trasforma cosa. TEST 3 (non ridondanza): unico concetto-ponte rimasto, non sovrapposto ad altri."
+        }
+      ],
+      "rejected_bridge_concepts": [
+        {
+          "concept_label": "Sostituzione del giudizio con la valutazione algoritmica",
+          "rejection_reason": "Connessione non più sostenibile dopo la verifica degli assi: collegava asse_3 (rifiutato come secondario) e asse_6, dunque non collega due assi confermati. Il fenomeno descritto resta tematicamente presente ma è assorbito da prestazionalizzazione-del-valore come nodo dell'Asse 6."
+        },
+        {
+          "concept_label": "Frammentazione attentiva come condizione della deformazione del desiderio",
+          "rejection_reason": "Connessione non più sostenibile dopo la verifica degli assi: collegava asse_1 (rifiutato come secondario) e asse_5. Il livello attentivo-temporale è captato indirettamente dai nodi confermati (motivazione-come-sostituto, tecnica-come-forma-storica) senza richiedere un ponte autonomo."
+        }
+      ],
+      "structural_configuration": {
+        "type": "multi_assiale",
+        "description": "Configurazione co-dominante a due assi con funzioni strutturalmente distinte e non riducibili. Asse 5 (Desiderio) → fornisce l'oggetto strutturale della deformazione: la forma pre-riflessiva del rapporto del soggetto con il possibile (orientamento, campo desiderabile, soggettivazione). Asse 6 (Storico–culturale) → fornisce la forma storica della mediazione che produce questa deformazione: la tecnica come configurazione storica dell'esperienza, la prestazionalizzazione come specifica grammatica del valore, la mediazione strutturale come modalità per cui il dispositivo entra nell'esperienza prima dell'uso consapevole. Il tema vive precisamente nell'incontro tra i due piani: senza Asse 5 si avrebbe critica generica della tecnica, senza Asse 6 lettura psicologica della deformazione del desiderio."
+      },
+      "synthetic_formulation": "Configurazione bi-assiale co-dominante in cui la forma storica della tecnica (mediazione strutturale, prestazionalizzazione del valore) deforma il campo desiderabile pre-riflessivo, sostituendo l'orientamento del desiderio con la motivazione algoritmica.",
+      "selection_rationale": "La verifica ha ridotto la configurazione di STEP 2 da quattro a due assi confermati, conservando i due piani co-dominanti (Asse 5, Asse 6) e degradando a secondari gli assi plausibili (Asse 1, Asse 3): l'apporto di Asse 1 al livello attentivo-temporale e di Asse 3 al livello del fallimento normativo è strutturalmente assorbito dai nodi confermati degli assi co-dominanti (motivazione-come-sostituto, tecnica-come-forma-storica, prestazionalizzazione-del-valore) senza perdita di descrittività. Sui nodi: confermati i sei nodi forti che reggono i tre piani indispensabili — oggetto della deformazione (desiderio-come-struttura), suo livello operativo (campo-desiderabile), suo meccanismo (motivazione-come-sostituto) per l'Asse 5; forma storica della tecnica (tecnica-come-forma-storica), grammatica del valore (prestazionalizzazione-del-valore), modalità della mediazione (mediazione-strutturale) per l'Asse 6. Deformazione-strutturale è stato ricondotto a nodo secondario perché svolge funzione meta-tematica più che strutturale per questo tema specifico. Sui concetti-ponte: solo 'Mediazione tecnica del campo desiderabile' sopravvive, perché è l'unico che collega due assi confermati e nomina una trasformazione direzionale (non una semplice co-presenza); gli altri due ponti, costruiti su assi rifiutati, non sono più sostenibili.",
+      "critical_notes": [
+        "La degradazione di Asse 1 a secondario va riconsiderata in STEP 4 se la micro-matrice mostrerà che il livello attentivo-temporale richiede un piano autonomo non saturabile dai soli motivazione-come-sostituto e tecnica-come-forma-storica.",
+        "La distinzione operativa tra 'campo desiderabile' (Asse 5) e 'campo intenzionale' (Asse 1) resta open issue ereditato da STEP 2: in STEP 4 va resa esplicita per evitare che la rimozione di campo-intenzionale produca un appiattimento del livello attentivo.",
+        "Il sovrapporsi semantico con il tema 'technoference' (qualità della presenza del caregiver) non è risolto qui: la micro-matrice di STEP 4 dovrà esplicitare che il presente tema interroga il campo del desiderabile del bambino, non la qualità della relazione adulta.",
+        "L'Asse 4 (Separazione e Limite) è stato considerato e non incluso (STEP 2: 'la non-incontro col limite è effetto, non meccanismo strutturale primario'); va verificato in STEP 4 se la saturazione algoritmica del desiderio richiede un raccordo esplicito con il limite reale.",
+        "Un solo concetto-ponte confermato è sotto la soglia ottimale (target 2–3): la riduzione è coerente con la configurazione bi-assiale, ma in STEP 4 va verificato se serve un secondo ponte interno alla relazione Asse 5 / Asse 6 per descrivere un'altra trasformazione direzionale (es. dalla forma del valore alla forma del desiderabile)."
+      ]
+    }
+  ]
+}

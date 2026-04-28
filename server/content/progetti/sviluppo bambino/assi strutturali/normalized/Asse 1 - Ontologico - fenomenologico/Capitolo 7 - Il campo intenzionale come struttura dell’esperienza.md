@@ -21,10 +21,8 @@ Il campo intenzionale non è una funzione, né una capacità specifica, ma una *
 
 Parlare di campo intenzionale significa spostare lo sguardo:
 
-* dai singoli atti,  
-* alle condizioni che li rendono possibili,  
-* dal comportamento osservabile,  
-* all’orizzonte di senso in cui esso prende forma.
+* dai singoli atti, alle condizioni che li rendono possibili,  
+* dal comportamento osservabile, all’orizzonte di senso in cui esso prende forma.
 
 ## 2. Intenzionalità come apertura al mondo
 
@@ -54,7 +52,7 @@ In questa prospettiva, il campo intenzionale:
 
 * si amplia quando l’esperienza può essere sostenuta nel tempo,  
 * si restringe quando l’esperienza diventa troppo costosa o disorganizzante,  
-* si rigidifica quando la regolazione perde flessibilità.
+* si irrigidisce quando la regolazione perde flessibilità.
 
 Queste trasformazioni non sono decisioni del soggetto né esiti diretti di apprendimenti espliciti, ma **modificazioni strutturali dell’orizzonte del possibile**.
 
@@ -97,7 +95,7 @@ Questa funzione è cruciale per mantenere il modello su un piano strutturale:
 * non è un obiettivo educativo,  
 * non è una competenza da potenziare.
 
-È una lente fenomenologica che rende leggibile l’organizzazione complessiva dell’esperienza in un determinato momento dello sviluppo.
+È una **lente fenomenologica** che rende leggibile l’organizzazione complessiva dell’esperienza in un determinato momento dello sviluppo.
 
 ## 9. Chiusura: funzione del campo intenzionale nell’Asse 1
 

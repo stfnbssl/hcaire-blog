@@ -1,0 +1,317 @@
+{
+  "step": "step_4",
+  "results": [
+    {
+      "theme_id": "tema_01_technoference",
+      "core_configuration": {
+        "description": "I tre nodi dell'asse_1 (co-regolazione, campo-intenzionale, temporalità-vissuta) descrivono il piano fenomenologico in cui la presenza si esercita come qualità della co-presenza, orizzonte del possibile vissuto del bambino e spessore del presente condiviso. I tre nodi dell'asse_6 (tecnica-come-forma-storica, mediazione-strutturale, deformazione-strutturale) descrivono la forma storica del dispositivo come campo già organizzato che entra nella struttura dell'esperienza prima di qualsiasi uso consapevole. La mediazione storica non si aggiunge al piano fenomenologico ma lo attraversa: la qualità della co-regolazione non resta intatta-e-poi-disturbata, viene strutturata diversamente; il campo intenzionale non si restringe per sottrazione di tempo ma per riorganizzazione sistemica dell'attenzione del caregiver. La temporalità vissuta è il punto di torsione in cui la frammentazione storica del tempo dell'attenzione si inscrive nello spessore del presente diadico.",
+        "structure_logic": "configurazione co-dominante in cui la mediazione storica del dispositivo tecnico si inscrive strutturalmente nel campo fenomenologico della co-regolazione, frammentandone temporalità e orizzonte attentivo come deformazione sistemica e non come errore comportamentale del caregiver"
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "function_in_theme": "Presidia il piano fenomenologico della co-presenza diadica: descrive la qualità della regolazione, l'apertura dell'orizzonte del possibile vissuto del bambino e lo spessore temporale del presente condiviso come strutture che la technoference altera dall'interno. Senza questo asse il fenomeno collassa in critica culturale astratta o in problema comportamentale puntuale.",
+          "specific_contribution": "Porta la grammatica fenomenologica della co-regolazione, del campo intenzionale e della temporalità vissuta — dimensioni che descrivono cosa viene strutturalmente alterato, non quanto viene sottratto."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "function_in_theme": "Presidia il piano storico-sistemico: descrive il dispositivo come forma storica che organizza l'attenzione del caregiver prima di qualsiasi uso consapevole, e la deformazione strutturale come configurazione del mondo contemporaneo, non come patologia individuale.",
+          "specific_contribution": "Porta la lettura non moralistica del fenomeno e introduce la natura sistemica della deformazione, che il piano fenomenologico da solo non può tematizzare."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Co-regolazione mediata storicamente",
+          "linked_axes": ["asse_1", "asse_6"],
+          "linked_nodes": ["co-regolazione", "tecnica-come-forma-storica", "mediazione-strutturale"],
+          "function": "Descrive il punto di torsione strutturale in cui la co-regolazione diadica viene attraversata e modificata dalla forma storica dell'attenzione tecnologicamente mediata. Senza questo ponte la co-regolazione resta dato astorico e la tecnica resta strumento esterno: con il ponte, la mediazione storica entra nella struttura stessa del processo regolativo.",
+          "type": "organizzativo"
+        },
+        {
+          "concept_label": "Attenzione divisa come configurazione sistemica",
+          "linked_axes": ["asse_1", "asse_6"],
+          "linked_nodes": ["campo-intenzionale", "deformazione-strutturale"],
+          "function": "Collega l'orizzonte fenomenologico globale del bambino e la dimensione storico-sistemica della deformazione: la frammentazione attentiva non è processo della singola diade ma deformazione sistemica del campo, leggibile in termini non moralistici.",
+          "type": "connettivo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "presenza fisica vs. assenza strutturale",
+          "description": "Il caregiver è fisicamente presente eppure il campo dell'attenzione è altrove; la presenza non garantisce co-presenza. La tensione non si risolve perché la presenza fisica resta condizione necessaria della co-regolazione anche quando non è sufficiente, e la sua quantità non è criterio della sua qualità."
+        },
+        {
+          "tension": "fenomenologia diadica vs. configurazione sistemica",
+          "description": "L'evento singolare della diade non è riducibile alla configurazione storica ma è già attraversato da essa. La singola interazione resta irriducibilmente specifica eppure non leggibile fuori dalla forma storica del dispositivo: nessuno dei due piani può essere tradotto integralmente nell'altro."
+        },
+        {
+          "tension": "intenzione del caregiver vs. forma storica del dispositivo",
+          "description": "Il dispositivo organizza strutturalmente l'attenzione prima di qualsiasi scelta consapevole; il caregiver non è autore della frammentazione ma neppure ne è esterno. La tensione tiene aperto lo spazio della responsabilità senza farla collassare nella colpa individuale né dissolverla nel determinismo storico."
+        },
+        {
+          "tension": "temporalità diadica vs. temporalità storica",
+          "description": "Il presente vissuto della diade si frammenta nello stesso modo in cui la temporalità sociale contemporanea è frammentata; le due temporalità si rispecchiano senza coincidere, perché il presente diadico ha uno spessore proprio che la temporalità storica modula ma non produce."
+        }
+      ],
+      "structural_questions": [
+        "Come si distingue strutturalmente l'indisponibilità techno-mediata da altre forme di indisponibilità del caregiver, e quale ruolo ha la specificità storica del dispositivo in questa distinzione?",
+        "In quali condizioni il dispositivo cessa di essere mediazione neutra e diventa deformazione strutturale del campo della co-regolazione?",
+        "Come opera il restringimento del campo intenzionale del bambino quando la forma storica della tecnica precede l'intenzione del caregiver, e in quale misura questo restringimento è osservabile prima della sua manifestazione comportamentale?",
+        "Quale relazione esiste tra la frammentazione della temporalità diadica nell'evento singolo e la trasformazione sistemica della temporalità sociale di cui il dispositivo è una forma?",
+        "Come si riconosce la differenza tra una co-regolazione presente-ma-distratta e una co-regolazione strutturalmente alterata dalla mediazione tecnica, senza ridurre questa distinzione a quantità di tempo?",
+        "In quali condizioni leggere la technoference come configurazione sistemica produce comprensione, e in quali condizioni questa lettura rischia di sciogliere la responsabilità del caregiver senza interrogare il campo?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "educativo (servizi prima infanzia)",
+          "reason": "La struttura del tema porta nei servizi la domanda su come riconoscere strutturalmente l'alterazione della qualità della co-presenza, distinguendola da una semplice riduzione quantitativa dell'interazione e senza moralizzare il caregiver."
+        },
+        {
+          "domain": "formazione dei professionisti",
+          "reason": "La configurazione co-dominante richiede di tenere insieme lettura fenomenologica e lettura storico-sistemica del fenomeno: questo è esattamente il tipo di competenza interdisciplinare che la formazione deve costruire, contro la tendenza a semplificare il fenomeno in una dimensione sola."
+        },
+        {
+          "domain": "politiche per l'infanzia",
+          "reason": "La lettura non moralistica della deformazione strutturale interroga le politiche su come pensare interventi sistemici che riconoscano la natura non-comportamentale del fenomeno, senza scaricare la responsabilità sui singoli caregiver."
+        }
+      ],
+      "configuration_summary": "La micro-matrice del tema technoference articola una configurazione co-dominante a due assi in cui la mediazione storica del dispositivo si inscrive strutturalmente nel campo fenomenologico della co-regolazione. Il ponte organizzativo 'Co-regolazione mediata storicamente' definisce il punto di torsione in cui la forma storica della tecnica entra nella qualità della co-presenza, mentre il ponte connettivo 'Attenzione divisa come configurazione sistemica' opera sul livello del campo globale. Le tensioni strutturali (presenza/assenza, fenomenologia/sistema, intenzione/forma storica, temporalità diadica/temporalità storica) impediscono al tema di collassare nella critica comportamentale o nella critica culturale astratta."
+    },
+    {
+      "theme_id": "tema_02_lettura_dialogica",
+      "core_configuration": {
+        "description": "I tre nodi dell'asse_1 (co-regolazione, corporeità-vissuta, relazione-costitutiva) descrivono il fondamento incarnato dell'incontro: la lettura precoce è prima evento corporeo (voce, ritmo, contatto, prossimità) e configurazione relazionale di una diade aperta a un terzo. I due nodi dell'asse_6 (mediazione-simbolica, zona-di-sviluppo-prossimale) descrivono il libro come dispositivo simbolico paradigmatico e la qualità mediativa della relazione che lo rende accessibile al bambino che non potrebbe leggerlo da solo. Il libro come terzo simbolico non si aggiunge alla diade ma la riconfigura: la co-regolazione cambia struttura quando si organizza intorno a un mediatore simbolico, e la mediazione simbolica ha bisogno del fondamento corporeo-ritmico per essere accessibile prima della padronanza linguistica.",
+        "structure_logic": "relazione triadica in cui un mediatore simbolico (il libro) ristruttura la diade caregiver-bambino in campo condiviso di significato, mantenendone il fondamento corporeo-ritmico-relazionale come condizione di accessibilità del simbolico"
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "function_in_theme": "Presidia il fondamento incarnato e relazionale della lettura: la corporeità vissuta come luogo dell'incontro (voce, contatto, prossimità), la co-regolazione come ritmo condiviso che sostiene la pagina, la relazione costitutiva come configurazione triadica specifica.",
+          "specific_contribution": "Impedisce che la lettura collassi in attività linguistico-cognitiva: porta la dimensione corporea, ritmica e relazionale che precede e sostiene il simbolico nel bambino 0-3."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "function_in_theme": "Presidia il piano simbolico-mediativo: il libro come dispositivo paradigmatico della cultura, e la zona di sviluppo prossimale come struttura della relazione che rende accessibile uno strumento simbolico altrimenti non leggibile autonomamente.",
+          "specific_contribution": "Impedisce che la lettura collassi in interazione diadica generica: porta la specificità del mediatore simbolico-culturale e la qualità della mediazione che lo rende operante."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Co-regolazione triadica nel dispositivo libro",
+          "linked_axes": ["asse_1", "asse_6"],
+          "linked_nodes": ["co-regolazione", "mediazione-simbolica", "relazione-costitutiva"],
+          "function": "Descrive la trasformazione strutturale per cui la co-regolazione diadica viene riorganizzata come triade caregiver-bambino-libro grazie alla mediazione simbolica. Il terzo simbolico non si aggiunge alla relazione ma ne ridefinisce la struttura: né la sola co-regolazione né la sola mediazione simbolica descrivono questa configurazione triadica.",
+          "type": "organizzativo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "diade vs. triade",
+          "description": "La triadicità non si aggiunge alla diade ma la riconfigura: la stessa relazione cambia struttura per la presenza del terzo simbolico. La tensione tiene aperto il fatto che la diade resta riconoscibile come fondamento eppure non è più la stessa, e questa simultaneità non si risolve in una sintesi superiore."
+        },
+        {
+          "tension": "incarnato vs. simbolico",
+          "description": "Il libro è simbolo ma opera attraverso voce, contatto, ritmo; la mediazione simbolica ha bisogno del fondamento corporeo per essere accessibile prima del linguaggio padroneggiato. I due piani non si possono ridurre l'uno all'altro: senza il corpo il simbolico non entra, senza il simbolico il corpo non si organizza in lettura."
+        },
+        {
+          "tension": "asimmetria mediativa vs. partecipazione condivisa",
+          "description": "Il caregiver media ciò che il bambino non può leggere autonomamente, ma la lettura è simultaneamente esperienza condivisa, non trasmissione unilaterale. L'asimmetria della ZSP convive con la partecipazione affettiva alla pagina, e ognuna delle due dimensioni perderebbe senso senza l'altra."
+        },
+        {
+          "tension": "trasmissione culturale vs. evento relazionale",
+          "description": "Il libro porta la cultura nella diade, ma il modo specifico del suo ingresso è relazionale e incarnato. La cultura non entra come contenuto trasmesso ma come forma di un evento relazionale; la sua trasmissibilità storica resta indissolubile dalla sua singolarità relazionale."
+        }
+      ],
+      "structural_questions": [
+        "Come si distingue strutturalmente la triadicità della lettura precoce dalla semplice presenza di un oggetto in una diade caregiver-bambino?",
+        "In quale misura il fondamento corporeo-ritmico precede e sostiene la mediazione simbolica nel bambino che non padroneggia ancora il linguaggio?",
+        "Come opera la zona di sviluppo prossimale quando il bambino non può ancora accedere autonomamente allo strumento culturale, e in quali condizioni questa mediazione resta scaffolding senza diventare sostituzione?",
+        "Quale relazione esiste tra la qualità della relazione costitutiva e la possibilità che il libro funzioni come terzo simbolico anziché come oggetto d'attenzione condivisa generico?",
+        "Come si riconosce strutturalmente la differenza tra lettura come dispositivo simbolico-relazionale e lettura come trasmissione di contenuto linguistico?",
+        "In quali condizioni la lettura precoce mantiene il suo carattere incarnato-relazionale e in quali rischia di trasformarsi precocemente in attività di alfabetizzazione misurabile?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "educativo (servizi 0-3)",
+          "reason": "La struttura del tema porta nei servizi la domanda sul senso strutturale della lettura precoce: non come attività linguistico-cognitiva o early literacy, ma come dispositivo relazionale-simbolico che opera attraverso il corpo prima che attraverso il significato verbale."
+        },
+        {
+          "domain": "formazione dei professionisti",
+          "reason": "La configurazione triadica richiede di tenere insieme fondamento corporeo (voce, ritmo, prossimità) e dispositivo simbolico-culturale (libro come mediazione): il rischio sistematico è che una delle due dimensioni assorba l'altra nella formazione, producendo lettura come tecnica linguistica o come puro contatto affettivo."
+        },
+        {
+          "domain": "politiche per l'infanzia (es. promozione lettura)",
+          "reason": "La lettura precoce come dispositivo relazionale interroga le politiche su come progettare promozione della lettura senza ridurre il libro a strumento di stimolazione precoce o a indicatore di sviluppo linguistico, mantenendo invece la sua natura strutturale di mediatore simbolico nella relazione."
+        }
+      ],
+      "configuration_summary": "La micro-matrice del tema lettura dialogica articola una configurazione co-dominante in cui un mediatore simbolico (il libro) riorganizza la diade caregiver-bambino come triade, mantenendo il fondamento corporeo-ritmico come condizione di accessibilità del simbolico per il bambino 0-3. L'unico ponte confermato — organizzativo — è la riorganizzazione triadica della co-regolazione attraverso la mediazione simbolica, struttura che né la sola co-regolazione né la sola mediazione simbolica descrivono. Le tensioni strutturali (diade/triade, incarnato/simbolico, asimmetria mediativa/partecipazione, trasmissione culturale/evento relazionale) impediscono al tema di collassare in attività cognitivo-linguistica o in interazione diadica generica."
+    },
+    {
+      "theme_id": "tema_03_funzione_riflessiva_genitoriale",
+      "core_configuration": {
+        "description": "I tre nodi dell'asse_1 (co-regolazione, soggetto-come-processo, relazione-costitutiva) descrivono il versante fenomenologico della PRF: la modulazione contingente della regolazione sul vissuto specifico del bambino come soggetto-processo, all'interno di una relazione costitutiva che precede la qualità individuale del caregiver. I due nodi dell'asse_2 (interiorizzazione-dell-altro, istanza-interna) descrivono l'esito affettivo: il bambino visto come portatore di stati mentali può a sua volta interiorizzare il caregiver come istanza dotata di intenzionalità persistente. La PRF non è interna a nessuno dei due assi: è precisamente il meccanismo dal lato del caregiver che permette il passaggio strutturale dal piano fenomenologico della co-regolazione al piano genetico-affettivo dell'istanza interna. La rimozione di uno dei due assi farebbe perdere la specificità del tema: senza asse_2 resterebbe competenza osservativa neutra, senza asse_1 resterebbe interiorizzazione senza meccanismo.",
+        "structure_logic": "soglia strutturale tra co-regolazione fenomenologica fine e genesi dell'istanza interna affettiva, articolata dal riconoscimento mentalizzante del caregiver come qualità della relazione costitutiva"
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "function_in_theme": "Presidia il versante fenomenologico della soglia: la PRF si manifesta come forma fine della co-regolazione (modulazione contingente sul vissuto specifico), come riconoscimento del bambino come soggetto-processo (non nucleo preformato né prodotto funzionale) e come qualità della relazione costitutiva (non competenza individuale isolabile).",
+          "specific_contribution": "Porta la struttura del riconoscimento mentalizzante come forma incarnata della regolazione, impedendo che la PRF venga letta come abilità osservativa o competenza individuale astratta del caregiver."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "function_in_theme": "Presidia il versante affettivo-genetico della soglia: descrive l'esito strutturale del riconoscimento mentalizzante — l'interiorizzazione dell'altro come istanza affettiva persistente — e ne indica la qualità (la forma dell'altro che il bambino può interiorizzare dipende dalla qualità del riconoscimento ricevuto).",
+          "specific_contribution": "Porta la dimensione genetica del vincolo affettivo, distinguendo la PRF da una sensibilità relazionale generica: senza asse_2 la PRF resta forma di presenza, non meccanismo della costituzione del vincolo."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Riconoscimento mentalizzante come condizione dell'interiorizzazione",
+          "linked_axes": ["asse_1", "asse_2"],
+          "linked_nodes": ["co-regolazione", "interiorizzazione-dell-altro", "istanza-interna"],
+          "function": "Descrive il passaggio strutturale per cui la qualità del vedere-il-bambino-come-soggetto da parte del caregiver (forma fine della co-regolazione) costituisce la condizione perché il bambino possa interiorizzare l'altro come istanza affettiva persistente. Cattura la transizione bidirezionale dalla regolazione fenomenologica alla genesi affettiva del vincolo.",
+          "type": "organizzativo"
+        },
+        {
+          "concept_label": "Asimmetria riconoscitiva strutturante",
+          "linked_axes": ["asse_1", "asse_2"],
+          "linked_nodes": ["soggetto-come-processo", "interiorizzazione-dell-altro"],
+          "function": "Descrive la trasformazione per cui l'asimmetria iniziale tra caregiver mentalizzante e bambino non-ancora-mentalizzante diventa la condizione della soggettivazione: l'essere-visto-come-soggetto precede strutturalmente il diventarlo. Opera sul versante della soggettivazione, distinto dal versante della genesi dell'istanza.",
+          "type": "connettivo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "asimmetria riconoscitiva vs. reciprocità relazionale",
+          "description": "Il caregiver vede il bambino come soggetto prima che lo sia, ma questo vedere è già struttura relazionale, non sguardo unilaterale. L'asimmetria non si risolve in reciprocità immediata né in sguardo unidirezionale: è proprio la sua tenuta che rende possibile la soggettivazione."
+        },
+        {
+          "tension": "qualità individuale vs. struttura della relazione",
+          "description": "La PRF appare come capacità del caregiver eppure è qualità della relazione costitutiva; senza l'individualità del caregiver non si manifesta, senza la relazione non opera. Letta solo come tratto individuale diventa misurabile e isolata; letta solo come struttura relazionale perde l'agency del caregiver."
+        },
+        {
+          "tension": "fenomenologia della presenza vs. genesi del vincolo affettivo",
+          "description": "La PRF è simultaneamente forma della co-regolazione e meccanismo dell'istanza affettiva, sulla soglia tra le due dimensioni senza appartenere interamente a nessuna. La tensione preserva la specificità della soglia dal collasso su un singolo asse."
+        },
+        {
+          "tension": "riconoscimento del bambino vs. proiezione del bambino",
+          "description": "Vedere il bambino come portatore di stati mentali può scivolare in attribuzione di stati che il caregiver proietta o anticipa; la soglia tra riconoscimento e proiezione è strutturalmente sottile e non si lascia stabilizzare in un criterio fisso."
+        }
+      ],
+      "structural_questions": [
+        "Come si distingue strutturalmente la PRF come qualità della relazione costitutiva dalla PRF come competenza individuale del caregiver, e quale lettura mantenere quando l'osservazione passa attraverso la singola diade?",
+        "In quale senso l'essere-visto-come-soggetto precede e rende possibile il diventare soggetto, senza per questo determinarlo o anticiparne la forma?",
+        "Come si riconosce la differenza tra una sensibilità relazionale generica del caregiver e un riconoscimento mentalizzante specifico che opera sulla qualità del vissuto del bambino?",
+        "Quale relazione esiste tra la qualità della co-regolazione fenomenologica e la possibilità che si costituisca un'istanza interna affettiva, e in quali condizioni l'una può esistere senza l'altra?",
+        "Come opera la soglia tra co-regolazione e interiorizzazione: è continuità progressiva o discontinuità qualitativa, e quale lettura preserva la specificità del tema?",
+        "In quali condizioni il riconoscimento del bambino come soggetto può deformarsi in anticipazione o proiezione di chi il bambino dovrebbe essere?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "clinico",
+          "reason": "La struttura del tema porta nel clinico la domanda sulla differenza strutturale tra PRF come misura individuale (rischio della tecnicizzazione PRFQ) e PRF come qualità della relazione costitutiva: una differenza che cambia il senso dell'intervento sui caregiver e sulla diade."
+        },
+        {
+          "domain": "formazione dei professionisti",
+          "reason": "La configurazione di soglia richiede di tenere insieme fenomenologia della co-regolazione e genesi affettiva del vincolo senza farle collassare l'una nell'altra: questa è una competenza interdisciplinare specifica, sistematicamente esposta alla riduzione su un singolo piano (pedagogico, affettivo, comportamentale)."
+        },
+        {
+          "domain": "educativo (servizi 0-3)",
+          "reason": "La distinzione tra riconoscimento e proiezione del bambino come soggetto interroga la pratica educativa su come sostenere la PRF dei caregiver senza farla diventare aspettativa o anticipazione di chi il bambino deve essere."
+        }
+      ],
+      "configuration_summary": "La micro-matrice del tema funzione riflessiva genitoriale articola una configurazione di soglia tra l'asse fenomenologico-regolativo e l'asse affettivo-morale: la PRF è precisamente il meccanismo, dal lato del caregiver, che articola il passaggio dalla forma fine della co-regolazione (riconoscimento del bambino come soggetto-processo) alla genesi dell'istanza interna affettiva nel bambino. Il ponte organizzativo 'Riconoscimento mentalizzante come condizione dell'interiorizzazione' definisce la struttura della soglia, mentre il ponte connettivo 'Asimmetria riconoscitiva strutturante' opera sul versante specifico della soggettivazione. Le tensioni strutturali (asimmetria/reciprocità, qualità individuale/struttura relazionale, fenomenologia/genesi affettiva, riconoscimento/proiezione) preservano la specificità del tema dal collasso su un singolo asse e dalla tecnicizzazione."
+    },
+    {
+      "theme_id": "tema_09_gioco_libero",
+      "core_configuration": {
+        "description": "I tre nodi dell'asse_5 (campo-desiderabile, soggettivazione-del-desiderio, motivazione-come-sostituto) descrivono il piano dell'orientamento desiderante: il gioco libero come campo aperto in cui alcune direzioni appaiono già cariche di valore senza prescrizione, la soggettivazione come continuità vissuta che precede la scelta riflessiva, la motivazione esterna come rovescio strutturale che produce comportamento efficace senza orientamento interno. Il nodo dell'asse_4 (eccedenza) descrive l'incontro strutturalmente sostenibile con la sproporzione del reale: il pezzo che non si incastra, il pari che diverge, il materiale che resiste. I due nodi dell'asse_6 (prestazionalizzazione-del-valore, deformazione-strutturale) descrivono la configurazione storica contemporanea che rende il gioco libero strutturalmente impossibile o invisibile, sostituendo l'orientamento interno con la valutazione misurabile. La rimozione di uno qualsiasi dei tre assi fa collassare il tema: senza asse_5 il gioco diventa raccomandazione pedagogica generica, senza asse_4 il desiderio resta impulso onnipotente, senza asse_6 il tema scivola in lettura astorica e individualizzante.",
+        "structure_logic": "configurazione tri-assiale in cui l'orientamento desiderante autonomo (campo desiderabile e soggettivazione) è strutturalmente sostenuto dall'incontro sostenibile con l'eccedenza del reale e simultaneamente reso impossibile dalla deformazione storica del campo (prestazionalizzazione del valore, motivazione come sostituto)"
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "function_in_theme": "Presidia il piano dell'orientamento e della soggettivazione del desiderio: il gioco libero come esercizio del campo desiderabile senza prescrizione, la soggettivazione come continuità vissuta autonoma, la motivazione esterna come rovescio strutturale che può sostituire l'orientamento interno producendo efficacia senza responsabilità.",
+          "specific_contribution": "Porta la specificità dell'orientamento desiderante e la sua differenza strutturale dalla motivazione: senza asse_5 il tema scivola in raccomandazione pedagogica e perde la sua presa critica sull'apprendimento ludico prestazionale."
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "function_in_theme": "Presidia l'incontro col reale come condizione del desiderio: il gioco libero è la prima forma sostenibile in cui il bambino incontra la sproporzione (materiale che resiste, pari che diverge) senza che l'eccedenza chiuda il campo. Il limite reale come condizione del desiderio come orientamento, non sua negazione.",
+          "specific_contribution": "Porta la dimensione del reale che eccede l'intenzione del soggetto, impedendo che il desiderio resti impulso onnipotente; senza asse_4 l'orientamento desiderante resterebbe magico e la riorganizzazione del campo desiderabile non avrebbe luogo."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "function_in_theme": "Presidia la configurazione storica del campo del possibile: la scomparsa del gioco libero non come errore educativo individuale ma come deformazione sistemica del macrosistema (prestazionalizzazione del valore, accelerazione, valutabilità). Ciò che non è misurabile diventa invisibile o sospetto.",
+          "specific_contribution": "Porta la lettura non moralistica della scomparsa del gioco libero come configurazione storica, impedendo al tema di collassare in raccomandazione pedagogica astorica o in critica del singolo adulto."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Esplorazione come incontro sostenibile con il limite",
+          "linked_axes": ["asse_4", "asse_5"],
+          "linked_nodes": ["eccedenza", "campo-desiderabile", "soggettivazione-del-desiderio"],
+          "function": "Descrive la trasformazione per cui l'incontro con l'eccedenza non chiude ma ridefinisce il campo desiderabile in modi che la soggettivazione può assumere: il limite reale come condizione del desiderio, non sua negazione. Definisce la struttura interna del gioco libero — come desiderio e limite si articolano dentro il gioco.",
+          "type": "organizzativo"
+        },
+        {
+          "concept_label": "Prestazionalizzazione come deformazione del campo desiderabile",
+          "linked_axes": ["asse_5", "asse_6"],
+          "linked_nodes": ["campo-desiderabile", "motivazione-come-sostituto", "prestazionalizzazione-del-valore"],
+          "function": "Descrive il processo per cui la forma storica della prestazione trasforma strutturalmente il campo desiderabile sostituendo l'orientamento interno con la motivazione esterna misurabile. Definisce le condizioni storiche di possibilità (e di impossibilità) del gioco libero.",
+          "type": "organizzativo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "orientamento autonomo vs. mediazione storica",
+          "description": "Il desiderio si soggettiva autonomamente solo dentro un campo storicamente strutturato che può sostenere o deformare l'autonomia. Né autonomia astorica né determinismo culturale: la tensione tiene aperto lo spazio in cui un orientamento può essere proprio del soggetto pur essendo storicamente situato."
+        },
+        {
+          "tension": "esplorazione vs. limite reale",
+          "description": "L'eccedenza non chiude ma riapre il campo desiderabile; il limite non è negazione del desiderio ma sua condizione strutturale. La tensione tiene insieme due dimensioni che la lettura ingenua oppone: il desiderio come spinta espansiva e il reale come ostacolo."
+        },
+        {
+          "tension": "desiderio strutturale vs. motivazione esterna",
+          "description": "Il gioco prestazionale efficace può oscurare la differenza con il gioco libero, perché entrambi appaiono produttivi e impegnati. La tensione preserva una distinzione strutturale che nella superficie comportamentale non si lascia leggere immediatamente."
+        },
+        {
+          "tension": "campo aperto vs. valutabilità",
+          "description": "Il gioco libero non è valutabile, e per questo strutturalmente invisibile alla forma storica della prestazione che lo richiede misurabile. La tensione non si risolve perché non c'è criterio di valutazione che possa cogliere ciò che è strutturalmente non valutabile senza trasformarlo in altro."
+        }
+      ],
+      "structural_questions": [
+        "Come si distingue strutturalmente un gioco libero dal gioco strutturato a obiettivi quando entrambi possono apparire produttivi, impegnati e con bambino motivato?",
+        "In quale senso l'incontro con l'eccedenza del reale è condizione (non ostacolo) della soggettivazione del desiderio, e come opera questa condizionalità nel gioco?",
+        "Come opera la prestazionalizzazione del valore quando rende il gioco libero strutturalmente invisibile o sospetto agli adulti che organizzano il tempo del bambino?",
+        "Quale relazione esiste tra la qualità dell'incontro col limite reale nel gioco e la forma che il desiderio assume — orientamento autonomo, impulso onnipotente o ritrazione difensiva?",
+        "Come si riconosce la differenza tra ritrazione difensiva del desiderio e assenza di motivazione esterna, e quale implicazione strutturale ha questa distinzione per la lettura del gioco del bambino?",
+        "In quali condizioni la motivazione esterna sostituisce strutturalmente l'orientamento desiderante senza che la sostituzione appaia come perdita?",
+        "Come si pensa la scomparsa del gioco libero come deformazione sistemica senza che questa lettura sciolga la responsabilità dei singoli adulti di non riprodurre la deformazione?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "educativo",
+          "reason": "La struttura tri-assiale del tema porta nei contesti educativi la domanda strutturale su come pensare il gioco non come strumento didattico né come tempo libero residuale ma come dispositivo di soggettivazione del desiderio nell'incontro col reale: una domanda che i modelli pedagogici prestazionali sistematicamente non possono porre."
+        },
+        {
+          "domain": "formazione dei professionisti",
+          "reason": "La configurazione tri-assiale richiede di tenere insieme orientamento desiderante, incontro col limite reale e lettura storica della deformazione del campo: una competenza interdisciplinare specifica, sistematicamente esposta al collasso su una sola dimensione (pedagogica, clinica, sociologica)."
+        },
+        {
+          "domain": "politiche per l'infanzia",
+          "reason": "La lettura della scomparsa del gioco libero come deformazione strutturale del macrosistema interroga le politiche su come pensare spazi e tempi del gioco contro la prestazionalizzazione del campo del possibile, senza ridurre l'intervento a raccomandazioni educative individuali."
+        }
+      ],
+      "configuration_summary": "La micro-matrice del tema gioco libero articola una configurazione tri-assiale in cui l'orientamento desiderante autonomo del bambino (asse_5) è strutturalmente sostenuto dall'incontro sostenibile con l'eccedenza del reale (asse_4) e simultaneamente reso impossibile dalla deformazione storica del campo (asse_6). I due ponti — entrambi organizzativi — definiscono rispettivamente la struttura interna del gioco (esplorazione come incontro sostenibile col limite) e le sue condizioni storiche di possibilità (prestazionalizzazione come deformazione del campo desiderabile). Le tensioni strutturali (orientamento autonomo/mediazione storica, esplorazione/limite reale, desiderio strutturale/motivazione esterna, campo aperto/valutabilità) preservano la specificità tri-assiale del tema dal collasso in critica pedagogica, lettura clinica o critica sociologica isolate."
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "step": "f3_step_10",
+  "device_id": "richiesta-aiuto-clinico-dispositivo-v1",
+  "stress_test_results": [
+
+    {
+      "case_id": "caso_1_configurazione_assente",
+      "case_type": "configurazione_assente",
+      "case_description": "Matteo, 2 anni e 8 mesi, è seduto al tavolo con un barattolo da aprire. Tenta diverse volte. Dopo l'ultimo tentativo fallito si alza, si allontana dal tavolo, raggiunge la madre a circa due metri di distanza e vocalizza verso di lei mostrando il barattolo. La madre lo prende e lo apre. Il bambino torna al tavolo.",
+      "observed_configuration": {
+        "corporeity": "ASSENTE come struttura di doppia orientazione dall'arresto. Il bambino abbandona lo spazio della difficoltà prima di orientarsi verso l'adulto: il corpo non è più ancorato nel punto dell'azione arrestata nel momento in cui l'orientamento verso l'adulto si produce. La struttura corporea osservata è: allontanamento dall'oggetto → avvicinamento all'adulto → segnale. Non è doppia orientazione simultanea (corpo verso difficoltà + faccia verso adulto): è sequenza di abbandono seguita da segnale sociale.",
+        "field": "ASSENTE. Nessun campo intenzionale verso la difficoltà si apre: il bambino ha già uscito lo spazio della difficoltà prima di produrre il segnale. Il segnale è prodotto nello spazio dell'adulto, non nello spazio della difficoltà. Ciò che si costituisce è una transazione di consegna (dà l'oggetto all'adulto perché lo risolva), non un campo verso la difficoltà come problema aperto.",
+        "co_regulation": "NON LEGGIBILE nel senso configurazionale. La risposta della madre è registrativa-esecutiva: riceve l'oggetto e lo apre. Non c'è campo da abitare. La risposta è strutturalmente adeguata alla configurazione effettiva (consegna per soluzione), non a una richiesta di aiuto nel senso configurazionale.",
+        "symbolic_mediation": "ASSENTE. La difficoltà non acquista statuto di problema condiviso: viene risolta come transazione di oggetto. Non c'è costituzione di 'problema del bambino che può essere affrontato insieme' — c'è soluzione del problema da parte dell'adulto.",
+        "transformative_passage": "NON APPLICABILE. La condizione di attivazione del proxy (obs_4: doppia orientazione corporea nel segnale) è assente. Il passaggio trasformativo non ha termine di riferimento: non c'è un 'campo della difficoltà' in cui l'adulto possa entrare con struttura valutativa o esecutiva."
+      },
+      "proxy_application": {
+        "applicable": false,
+        "reason": "ncr_5 attivato: la fase di doppia orientazione corporea del bambino è documentata come assente (il bambino ha lasciato lo spazio della difficoltà prima di orientarsi verso l'adulto). Il proxy è costruito sulla struttura dell'ingresso dell'adulto nello spazio della difficoltà del bambino — se il bambino non è nello spazio della difficoltà nel momento del segnale, questo spazio non esiste come termine di riferimento per la classificazione dell'ingresso dell'adulto.",
+        "required_observations_present": [],
+        "missing_observations": ["obs_4 (doppia orientazione corporea): documentata come assente, non solo non documentata"],
+        "proxy_output": "non_classificabile"
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "La configurazione di richiesta di aiuto non si è costituita al livello della corporeità-vissuta. L'atto prodotto ha la forma comunicativa di una richiesta (segnale verso adulto con oggetto) ma non la struttura configurazionale di un atto di richiesta di aiuto: manca la base corporea costitutiva (corpo ancorato nella difficoltà durante l'orientamento verso l'adulto). Questo è informazione strutturale: la discontinuità è localizzabile al livello del corpo-in-relazione-con-la-difficoltà, non al livello della competenza comunicativa del bambino.",
+        "what_becomes_unclear": "Il dispositivo legge correttamente la struttura ma non può determinare perché il bambino abbia abbandonato lo spazio della difficoltà prima di orientarsi: impossibilità corporea (la difficoltà era fisicamente insuperabile), storia relazionale (la routinizzazione ha prodotto questo pattern), tipo di difficoltà (l'oggetto non era raggiungibile). Questa opacità non è un fallimento del dispositivo — è il limite epistemico corretto.",
+        "ambiguity_level": "basso"
+      },
+      "breaking_point": {
+        "present": false,
+        "where": "N/A",
+        "why": "Il dispositivo legge correttamente la configurazione come assente e produce non_classificabile per il proxy con la regola corretta (ncr_5). Nessun punto di rottura strutturale."
+      },
+      "false_positive_risk": {
+        "risk_present": true,
+        "description": "Il rischio è che il clinico interpreti la sequenza come 'richiesta di aiuto funzionale' perché il bambino ha prodotto un segnale comunicativo efficace verso l'adulto e ha ottenuto il risultato atteso. Questa lettura confonde efficacia comunicativa con struttura configurazionale. Il dispositivo resiste: l'assenza della doppia orientazione è leggibile e produce una classificazione distinta.",
+        "mitigation": "Il dispositivo ha la domanda strutturale corretta: non 'il bambino ha comunicato?', ma 'il corpo era nello spazio della difficoltà nel momento dell'orientamento verso l'adulto?' La risposta è no — il dispositivo non classifica l'atto come richiesta di aiuto configurazionale."
+      },
+      "test_verdict": "regge"
+    },
+
+    {
+      "case_id": "caso_2_configurazione_parziale",
+      "case_type": "configurazione_parziale",
+      "case_description": "Giulia, 2 anni e 2 mesi, è seduta con un puzzle. Un pezzo non entra. Le mani rimangono sul puzzle, il torso è orientato verso il pezzo problematico, il volto si ruota verso il padre che è seduto vicino e lo guarda con attesa prolungata. Il padre sta guardando il telefono e non nota. Dopo circa 4 secondi di doppia orientazione mantenuta, Giulia torna a guardare il puzzle e tenta di nuovo da sola.",
+      "observed_configuration": {
+        "corporeity": "PRESENTE. Doppia orientazione simultanea documentata: mani sul puzzle (corpo ancorato nella difficoltà), volto ruotato verso il padre, attesa prolungata (4 secondi). La struttura corporea costitutiva dell'atto di richiesta è integralmente presente e mantenuta nel tempo.",
+        "field": "TENTATO-UNILATERALE. Il bambino apre il campo dall'interno della difficoltà (corpo in doppia orientazione, pausa di attesa strutturata) ma l'adulto non vi entra: il campo è cercato ma non abitato. La distinzione tra tentato-unilaterale e assente è netta: qui il campo ha durata strutturale sul versante del bambino, ma rimane unilaterale perché l'adulto è inaccessibile.",
+        "co_regulation": "ASSENTE. Il padre non produce nessuna risposta — non registrativa, non partecipativa. La risposta non si produce. Il bambino non trova risposta e la difficoltà rimane privata. L'assenza è strutturalmente distinta dal chiudente: qui non c'è nemmeno la transazione di risoluzione, c'è assenza di ingresso.",
+        "symbolic_mediation": "ASSENTE. La difficoltà non può diventare problema condiviso senza ingresso co-regolatorio. La configurazione si arresta al livello del campo tentato-unilaterale: lo spazio non viene abitato.",
+        "transformative_passage": "NON CLASSIFICABILE via proxy. La condizione necessaria per l'applicabilità del proxy è che l'adulto abbia ricevuto il segnale e abbia una finestra pre-risposta documentata (obs_1). L'adulto non ha prodotto nessuna risposta: la finestra pre-risposta non esiste come fatto osservabile."
+      },
+      "proxy_application": {
+        "applicable": false,
+        "reason": "ncr_1 attivato: obs_1 non documentabile perché l'adulto non ha prodotto nessuna risposta al segnale — la finestra pre-risposta non esiste. Distinto da 'finestra presente ma non documentata': qui la finestra è assente come fatto strutturale (nessun ingresso). Il proxy è costruito sulla struttura dell'ingresso dell'adulto: se l'ingresso non si produce, non c'è struttura da classificare.",
+        "required_observations_present": ["obs_4 (doppia orientazione corporea): presente"],
+        "missing_observations": ["obs_1 (finestra pre-risposta adulto): assente come fatto, non solo non documentata", "obs_2 (direzione attenzione adulto): assente"],
+        "proxy_output": "non_classificabile"
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo legge la configurazione come parziale con localizzazione precisa della discontinuità: la rottura è al livello della co-regolazione (assente), non al livello della corporeità né del campo intenzionale. Questo è il dato strutturalmente informativo: il bambino ha la capacità corporea di costituire l'atto di richiesta di aiuto (doppia orientazione presente e mantenuta), il campo si apre, ma la risposta non si produce. La discontinuità non è nel bambino.",
+        "what_becomes_unclear": "Il dispositivo non può determinare se l'assenza della risposta paterna sia strutturale o contingente (distrazione episodica vs. pattern relazionale). Per questa lettura sarebbe necessario osservare episodi multipli con variazione delle condizioni di disponibilità dell'adulto — e anche in quel caso il dispositivo leggerebbe episodio per episodio, non aggregherebbe.",
+        "ambiguity_level": "basso"
+      },
+      "breaking_point": {
+        "present": false,
+        "where": "N/A",
+        "why": "Il dispositivo legge correttamente la struttura parziale, localizza la discontinuità a livello co-regolatorio, produce non_classificabile per il proxy con la regola appropriata. Non c'è punto di rottura strutturale."
+      },
+      "false_positive_risk": {
+        "risk_present": false,
+        "description": "Il rischio di falsa lettura è basso: la configurazione parziale è leggibile con chiarezza. L'unico rischio secondario sarebbe normalizzare l'assenza della risposta come 'il bambino ha abbandonato troppo presto' — lettura normativa che il dispositivo non autorizza. Il bambino ha mantenuto la doppia orientazione per 4 secondi e poi ha ripreso autonomamente: il dispositivo legge la discontinuità nell'adulto, non nel bambino.",
+        "mitigation": "Le domande strutturali del dispositivo orientano correttamente: 'dove si localizza la discontinuità quando la configurazione non si costituisce pienamente?'"
+      },
+      "test_verdict": "regge"
+    },
+
+    {
+      "case_id": "caso_3_configurazione_chiudente",
+      "case_type": "configurazione_chiudente",
+      "case_description": "Lorenzo, 2 anni e 6 mesi, tenta di avvitare un coperchio su un contenitore. Il coperchio non entra perché è orientato male. Il bambino si arresta, mantiene le mani sul contenitore, volge il volto verso la madre con espressione di attesa. La madre lo guarda, dice 'aspetta' con tono affettuoso, prende il contenitore, orienta il coperchio e lo avvita, lo rimette davanti al bambino. Tutto avviene in circa 3 secondi. Il bambino riceve il contenitore aperto e riprende il gioco.",
+      "observed_configuration": {
+        "corporeity": "PRESENTE. Il bambino è in doppia orientazione simultanea: mani sul contenitore (corpo ancorato nella difficoltà), volto verso la madre, attesa. La struttura corporea costitutiva è integralmente presente.",
+        "field": "TENTATO — La struttura del campo dipende dalla lettura della risposta. Il bambino ha aperto il campo dall'interno della difficoltà. Ma la risposta chiudente preclude che il campo si costituisca come condiviso: la madre entra nella transazione, non nel campo. Il campo rimane tentato anche se l'adulto ha risposto: la risposta non ha costituito co-presenza verso la difficoltà.",
+        "co_regulation": "CHIUDENTE. La madre risponde al segnale di tipo (bambino con difficoltà da apertura) con la soluzione completa: orienta il coperchio e lo avvita. La difficoltà viene eliminata come transazione in circa 3 secondi. Non c'è ingresso nel campo della difficoltà specifica del bambino — c'è risoluzione del problema-tipo. La risposta è affettuosa e competente nella forma; è chiudente nella struttura. La classificazione come chiudente non è un giudizio sulla madre: è la descrizione della funzione strutturale che la risposta svolge.",
+        "symbolic_mediation": "ASSENTE. La difficoltà non acquista statuto di problema condiviso: viene eliminata come fatto del bambino risolvibile dall'adulto. Non c'è produzione di 'difficoltà-come-cosa-della-relazione': c'è soluzione-come-transazione.",
+        "transformative_passage": "Se obs_1 e obs_2 sono documentati: la risposta ha una minima finestra pre-risposta (la madre dice 'aspetta' — circa 0.5 secondi) ma la direzione dell'attenzione è verso il contenitore come tipo (cosa va fatto con questo oggetto) non verso la configurazione specifica del tentativo del bambino (come il bambino tiene il coperchio, dove e come l'orientamento è sbagliato). La risposta è standard (orienta-il-coperchio) non adattata alla configurazione specifica del tentativo. Proxy: PREDETERMINATO se obs_1 e obs_2 documentati con sufficiente risoluzione."
+      },
+      "proxy_application": {
+        "applicable": true,
+        "reason": "obs_1 documentabile: la finestra pre-risposta esiste (la madre dice 'aspetta' prima di agire, circa 0.5 secondi). obs_2 documentabile: la direzione dell'attenzione è verso il contenitore come oggetto-da-aprire, non verso la configurazione specifica del tentativo del bambino. La fase di arresto dell'azione è documentata (il bambino non riesce ad avvitare il coperchio perché orientato male).",
+        "required_observations_present": ["obs_1 (finestra pre-risposta): presente, circa 0.5s", "obs_2 (direzione attenzione adulto): verso contenitore come oggetto-categoriale", "obs_4 (doppia orientazione bambino): presente"],
+        "missing_observations": ["obs_3 (corrispondenza punto osservato / punto affrontato): da verificare — l'azione della madre (orienta il coperchio) corrisponde alla difficoltà ma è azione standard per questo tipo di problema, non adattata a come specificamente il bambino lo teneva"],
+        "proxy_output": "predeterminato"
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo legge la configurazione chiudente con la struttura completa: la corporeità è presente, il campo si apre sul versante del bambino, ma la risposta co-regolatoria è chiudente e il passaggio trasformativo è predeterminato. La discontinuità non è nell'atto del bambino (strutturalmente integro) ma nella qualità co-regolatoria dell'ingresso dell'adulto. Il dispositivo legge questo senza giudizio: la risposta chiudente non è 'sbagliata' — è strutturalmente diversa dalla risposta partecipativa.",
+        "what_becomes_unclear": "Il dispositivo non può determinare se il pattern chiudente sia stabile in questa relazione o episodico. Per questo sarebbe necessaria la lettura multi-livello su episodi multipli — con il vincolo della domanda 7 (non aggregare con frequenze, identificare condizioni contestuali).",
+        "ambiguity_level": "medio"
+      },
+      "breaking_point": {
+        "present": true,
+        "where": "Obs_2 — la distinzione tra orientamento-categoriale e orientamento-configurazionale nella finestra pre-risposta.",
+        "why": "In questo caso la finestra è breve (0.5s) e la documentazione standard descriverebbe 'la madre guarda il bambino e prende il contenitore'. Non è garantito che la documentazione clinica corrente specifichi se lo sguardo era verso il contenitore come oggetto o verso il punto specifico della difficoltà del bambino. Se obs_2 non è documentato con sufficiente risoluzione, il proxy produce non_classificabile invece di predeterminato. Il breaking point non rompe la struttura del dispositivo — produce la risposta corretta (non_classificabile) invece della classificazione."
+      },
+      "false_positive_risk": {
+        "risk_present": true,
+        "description": "RISCHIO PRINCIPALE: la risposta chiudente ha tutte le caratteristiche superficiali della buona co-regolazione. La madre è responsiva (risponde in 3 secondi), affettuosa ('aspetta'), competente (risolve il problema). In una lettura clinica standard questo verrebbe classificato come 'risposta adeguata e sintonizzata'. Il dispositivo classifica questa risposta come chiudente: la struttura è diversa dalla qualità percepita. Il falso positivo sarebbe: leggere la risposta come partecipativa perché è tempestiva, affettuosa e efficace.",
+        "mitigation": "La domanda strutturale 5 del dispositivo è costruita esattamente per questo caso: 'L'adulto risponde alla richiesta del bambino con una soluzione completa e tempestiva, il bambino accetta e chiude immediatamente la sequenza: a quale livello si è costituita la co-regolazione?' Questa domanda forza la distinzione tra efficacia comportamentale e livello configurazionale. L'interpretive warning sulla normatività (co-regolazione chiudente non è peggiore di partecipativa — è strutturalmente diversa) presidia ulteriormente questo rischio."
+      },
+      "test_verdict": "regge_con_riserva"
+    },
+
+    {
+      "case_id": "caso_4_configurazione_apparente_scripted",
+      "case_type": "configurazione_apparente_scripted",
+      "case_description": "Sofia, 3 anni, ha una routine consolidata con il nonno: quando incontra un oggetto difficile da aprire, produce una sequenza appresa: alza l'oggetto verso il nonno, lo guarda, e vocalizza 'eh?'. Il nonno risponde invariabilmente con 'Nonno aiuta!' e risolve. Questa sequenza è stata rinforzata centinaia di volte. Nell'osservazione: Sofia ha in mano un barattolo, lo solleva verso il nonno guardandolo, vocalizza 'eh?'. Il nonno dice 'Nonno aiuta!' e apre il barattolo. Nota osservativa: il barattolo era già aperto prima che Sofia lo prendesse — la difficoltà non era reale.",
+      "observed_configuration": {
+        "corporeity": "DISTORTA. La struttura corporea replica la forma della doppia orientazione (corpo con oggetto, volto verso adulto) ma è desincronizzata dall'incontro reale con la difficoltà: il barattolo era già aperto, non c'è arresto dell'azione da apertura impossibile. Il corpo non è ancorato nella difficoltà come fatto reale ma nella posizione-script associata alla routine di richiesta. La corporeità è distorta nel senso definito dal dispositivo: 'il bambino si orienta verso l'adulto senza mantenere il corpo ancorato nello spazio della difficoltà — l'atto corporeo è desincronizzato dalla difficoltà stessa'.",
+        "field": "ASSENTE come struttura verso difficoltà reale. La sequenza produce la forma del campo (entrambi orientati verso l'oggetto-problema) ma il campo non ha il suo termine di riferimento reale: la difficoltà non esiste come fatto dell'azione. È uno spazio occupato dall'esecuzione dello script, non un campo verso una difficoltà aperta.",
+        "co_regulation": "CHIUDENTE nella struttura, routinizzata nella forma. Il nonno risponde al segnale di tipo ('eh?' con oggetto sollevato) con la risposta scripted ('Nonno aiuta!' + azione). Non c'è fase valutativa, non c'è ingresso nel campo. La sequenza è bilateralmente prevedibile.",
+        "symbolic_mediation": "DISTORTA o ASSENTE. La sequenza produce la forma della mediazione simbolica (difficoltà-come-problema-da-affrontare-insieme) ma senza il contenuto: la difficoltà non è reale, il 'problema condiviso' è il rituale in sé. Non c'è trasformazione perché non c'è difficoltà privata da trasformare.",
+        "transformative_passage": "PREDETERMINATO. Il passaggio è scriptiforme nella struttura: la sequenza segnale-risposta è bilateralmente nota prima che si produca. obs_1 documentabile: il nonno non ha finestra pre-risposta nel senso configurazionale — risponde con script. obs_2: nessuna orientazione verso configurazione specifica della difficoltà (la difficoltà non esiste come fatto dell'azione)."
+      },
+      "proxy_application": {
+        "applicable": true,
+        "reason": "obs_1: la finestra pre-risposta è documentabile come assente nella forma valutativa — il nonno risponde al segnale con script diretto ('Nonno aiuta!'). obs_2: nessuna orientazione verso configurazione specifica della difficoltà. La fase di arresto dell'azione: assente (il barattolo era già aperto — il 'punto di difficoltà' non è identificabile come fatto reale). Tecnicamente ncr_4 potrebbe essere attivato (fase di arresto non documentata come fatto reale). Ma la struttura dell'ingresso è classificabile indipendentemente: anche ipotizzando una difficoltà reale, l'ingresso è esecutivo-diretto.",
+        "required_observations_present": ["obs_1 (finestra pre-risposta): documentabile come assente nella forma valutativa", "obs_2 (direzione attenzione adulto): verso script, non verso configurazione specifica", "obs_4 (struttura corporea bambino): distorta — presente nella forma ma desincronizzata da difficoltà reale"],
+        "missing_observations": ["Difficoltà reale documentata: assente — il barattolo era aperto"],
+        "proxy_output": "predeterminato"
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo legge la configurazione apparente/scripted attraverso due livelli indipendenti: (1) al livello della corporeità: la doppia orientazione è distorta (desincronizzata dalla difficoltà reale); (2) al livello del passaggio trasformativo via proxy: l'ingresso dell'adulto è esecutivo-scriptiforme. Entrambe le letture convergono verso la classificazione come passaggio predeterminato. La configurazione apparente non produce falso positivo perché il dispositivo legge la struttura corporea (distorta, non genuina) e la struttura dell'ingresso (esecutivo, non valutativo) prima di classificare.",
+        "what_becomes_unclear": "Il dispositivo non può determinare la storia della routinizzazione: se e quando questa sequenza è nata da una configurazione reale e si è poi scripticizzata. Questa opacità diacronica non è un fallimento — è fuori dal perimetro del dispositivo, che legge la struttura episodica presente.",
+        "ambiguity_level": "basso"
+      },
+      "breaking_point": {
+        "present": true,
+        "where": "Corporeity-vissuta — quando la difficoltà reale non è documentata o non è verificabile dall'osservazione.",
+        "why": "Nelle situazioni cliniche standard non si verifica se la difficoltà è reale prima di leggere la configurazione. Se il barattolo non fosse stato già aperto — o se l'osservatore non lo avesse notato — la corporeità sarebbe stata classificata come 'presente' invece di 'distorta'. Il breaking point non rompe il proxy (che classifica comunque predeterminato dall'ingresso dell'adulto) ma potrebbe produrre letture parzialmente incoerenti tra le dimensioni (corporeità classificata come presente, proxy predeterminato)."
+      },
+      "false_positive_risk": {
+        "risk_present": true,
+        "description": "RISCHIO SECONDARIO: se la difficoltà reale non viene verificata (situazione standard in osservazione clinica), la corporeità potrebbe essere classificata come 'presente' invece di 'distorta'. La sequenza apparirebbe come: corporeità presente + campo tentato + co-regolazione chiudente + proxy predeterminato — configurazione parzialmente coerente invece di configurazione apparente. Il falso positivo sarebbe: classificare la corporeità come genuina quando è distorta.",
+        "mitigation": "Il proxy classifica comunque predeterminato, che è la lettura corretta del passaggio trasformativo indipendentemente dalla corporeità. La presenza congiunta di corporeità-distorta e proxy-predeterminato convergerebbe sul quadro corretto anche se la corporeità fosse inizialmente mal classificata. L'interpretive warning sul tecnicismo riabilitativo presidia il rischio di leggere la sequenza scripted come 'competenza acquisita'."
+      },
+      "test_verdict": "regge_con_riserva"
+    },
+
+    {
+      "case_id": "caso_5a_quasi_indistinguibile_valutativo_reale",
+      "case_type": "caso_quasi_indistinguibile_valutativo_reale",
+      "case_description": "Marco, 2 anni e 10 mesi, tenta di infilare un piolo in un foro durante un gioco di costruzione. Il piolo non entra perché è ruotato di 90°. Marco si arresta, le mani rimangono sul piolo tenuto nel foro, volge il volto verso la terapista con pausa di attesa. La terapista: (1) pausa di circa 2 secondi; (2) orienta lo sguardo verso le mani di Marco — specificatamente verso il punto di contatto tra il piolo e il foro, senza guardare Marco in faccia; (3) dice 'Prova a girarlo un po'' indicando l'asse di rotazione del piolo; (4) Marco ruota il piolo e lo infila. Nota video: la terapista ha spostato lo sguardo dal volto di Marco verso le mani di Marco circa 0.8 secondi dopo aver ricevuto il segnale.",
+      "observed_configuration": {
+        "corporeity": "PRESENTE. Doppia orientazione simultanea: mani sul piolo nel foro (corpo ancorato nel punto esatto dell'arresto dell'azione), volto verso terapista, attesa strutturata.",
+        "field": "CONDIVISO. La terapista entra nel campo: orienta la propria attenzione verso lo spazio della difficoltà specifica (punto di contatto piolo-foro). Si costituisce una struttura di co-presenza verso la difficoltà come problema aperto — entrambi orientati verso il punto specifico dove l'azione è arrestata.",
+        "co_regulation": "TRASFORMATIVA. La terapista entra nel campo della difficoltà specifica: non risolve il problema per Marco (non ruota il piolo) ma co-produce il passaggio — indica la struttura della soluzione adattata alla configurazione specifica osservata (l'asse di rotazione). La difficoltà diventa problema condiviso e affrontabile.",
+        "symbolic_mediation": "PRESENTE. La difficoltà acquista statuto di problema co-prodotto nella relazione: Marco ottiene la struttura per affrontarla (ruotare il piolo) come esito dell'ingresso co-regolatorio. La difficoltà non viene eliminata — viene trasformata in problema condiviso affrontabile dal bambino con la struttura fornita dall'adulto.",
+        "transformative_passage": "APERTO. obs_1: finestra pre-risposta documentata (2 secondi, spostamento sguardo documentato a 0.8s). obs_2: direzione sguardo verso configurazione specifica (punto di contatto piolo-foro, non verso Marco come persona né verso il gioco come categoria). obs_3: l'azione della terapista (indicare l'asse di rotazione) corrisponde al punto specifico osservato (il piolo è ruotato di 90° rispetto al foro). Triangolazione completa: tutti e tre i proxy strutturali del passaggio aperto sono presenti."
+      },
+      "proxy_application": {
+        "applicable": true,
+        "reason": "Tutte le condizioni di applicabilità soddisfatte: obs_1 documentato con risoluzione sufficiente (2 secondi, spostamento sguardo a 0.8s); obs_2 documentato con risoluzione configurazionale (verso punto di contatto piolo-foro, non categoriale); fase di arresto dell'azione documentata (piolo ruotato 90°, non entra nel foro).",
+        "required_observations_present": ["obs_1 (finestra pre-risposta): 2 secondi, spostamento sguardo documentato", "obs_2 (direzione attenzione): verso punto di contatto piolo-foro — configurazionale", "obs_3 (corrispondenza punto osservato/affrontato): indicazione asse rotazione corrisponde al punto specifico", "obs_4 (doppia orientazione bambino): presente"],
+        "missing_observations": [],
+        "proxy_output": "aperto"
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Configurazione completa con passaggio aperto: la corporeità è presente, il campo diventa condiviso, la co-regolazione è trasformativa, il passaggio trasformativo è co-prodotto. Il proxy classifica aperto con triangolazione completa. La classificazione è robusta perché tutti e tre i proxy strutturali convergono.",
+        "what_becomes_unclear": "Nulla di strutturalmente rilevante rimane opaco in questo episodio. Il limite è solo la validità esterna: questa lettura vale per questo episodio in questa relazione — non generalizza al pattern relazionale senza ulteriori episodi.",
+        "ambiguity_level": "basso"
+      },
+      "breaking_point": {
+        "present": false,
+        "where": "N/A",
+        "why": "Il caso è costruito per avere documentazione ottimale (video con risoluzione sufficiente per obs_2 configurazionale). In condizioni di documentazione standard (descrizione testuale clinica), obs_2 sarebbe probabilmente documentato come 'la terapista guarda le mani di Marco' — il che degrada la classificazione da aperto ad ambiguo o non_classificabile. Il breaking point non è nel caso ma nelle condizioni di documentazione standard."
+      },
+      "false_positive_risk": {
+        "risk_present": false,
+        "description": "In questo caso non c'è rischio di falso positivo: la documentazione è sufficientemente ricca da triangolare correttamente. Il rischio inverso (falso negativo per documentazione insufficiente) è presente come limite generale del dispositivo ma non come rischio di classificazione errata.",
+        "mitigation": "N/A"
+      },
+      "test_verdict": "regge"
+    },
+
+    {
+      "case_id": "caso_5b_quasi_indistinguibile_esecutivo_mascherato",
+      "case_type": "caso_quasi_indistinguibile_esecutivo_mascherato",
+      "case_description": "Stesso setting di caso_5a: Carlo, 2 anni e 10 mesi, stessa difficoltà (piolo ruotato 90° nel foro). Carlo si arresta, mani sul piolo, volto verso il padre, attesa. Il padre: (1) pausa di circa 1.5 secondi; (2) guarda verso le mani di Carlo; (3) raggiunge il piolo, lo ruota e lo infila nel foro; (4) 'Ecco!'. Carlo riceve il gioco completato e riprende. Nota video: il padre ha guardato le mani di Carlo prima di agire. La documentazione osservativa disponibile specifica solo: 'il padre osserva brevemente le mani del bambino prima di intervenire'.",
+      "observed_configuration": {
+        "corporeity": "PRESENTE. Identica a caso_5a: mani sul piolo nel foro, volto verso padre, attesa. La struttura corporea è indistinguibile da caso_5a.",
+        "field": "TENTATO. Il campo si apre sul versante del bambino (struttura identica a 5a). La risposta del padre è troppo rapida per determinare se il campo si sia costituito come condiviso prima della risoluzione: la difficoltà viene eliminata prima che il campo possa svilupparsi.",
+        "co_regulation": "CHIUDENTE. Il padre risolve la difficoltà per Carlo (ruota il piolo e lo infila). La risposta è strutturalmente chiudente: la difficoltà viene eliminata come transazione, non entra nel campo come co-partecipante.",
+        "symbolic_mediation": "ASSENTE. La difficoltà non acquista statuto di problema condiviso: viene risolta. Il 'Ecco!' chiude la sequenza senza costituire la difficoltà come problema-della-relazione.",
+        "transformative_passage": "AMBIGUO o NON_CLASSIFICABILE a seconda della risoluzione di obs_2. La finestra pre-risposta esiste (1.5 secondi, sguardo documentato). Ma la documentazione disponibile specifica solo 'guarda le mani di Carlo': questo non discrimina tra orientamento-configurazionale (verso il punto di contatto piolo-foro) e orientamento-categoriale (verso le mani come area di azione). Senza questa distinzione il proxy non può classificare."
+      },
+      "proxy_application": {
+        "applicable": true,
+        "reason": "obs_1: documentato (pausa 1.5 secondi, sguardo verso mani). obs_2: AMBIGUO — documentato come 'guarda le mani di Carlo' senza specificazione della direzione fine (verso il punto di contatto specifico vs. verso le mani come area categoriale). La fase di arresto è documentata. La condizione critica è obs_2: la documentazione disponibile non permette di distinguere orientamento configurazionale da orientamento categoriale.",
+        "required_observations_present": ["obs_1 (finestra pre-risposta): 1.5 secondi, sguardo documentato", "obs_4 (doppia orientazione bambino): presente"],
+        "missing_observations": ["obs_2 (direzione fine attenzione adulto): documentato come 'guarda le mani' — non discrimina tra configurazionale e categoriale → ncr_2"],
+        "proxy_output": "non_classificabile"
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "La configurazione è leggibile nelle sue dimensioni accessibili: corporeità presente (indistinguibile da 5a), co-regolazione chiudente (classificabile indipendentemente dal proxy), campo tentato. Il proxy produce non_classificabile per la dimensione del passaggio trasformativo — non perché il dato non esista (il padre ha guardato le mani di Carlo) ma perché la documentazione disponibile non ha risoluzione sufficiente per discriminare la direzione fine dello sguardo.",
+        "what_becomes_unclear": "La dimensione del passaggio trasformativo rimane opaca per insufficienza documentativa. Questo è il punto esatto in cui caso_5a e caso_5b diventano indistinguibili con la documentazione clinica standard. La differenza strutturale esiste come fatto osservabile (in video ad alta risoluzione sarebbe codificabile) ma non è accessibile dalla documentazione tipica.",
+        "ambiguity_level": "alto"
+      },
+      "breaking_point": {
+        "present": true,
+        "where": "obs_2 — la distinzione tra gaze-configurazionale e gaze-categoriale nella finestra pre-risposta.",
+        "why": "Questo è il limite di risoluzione del proxy. Il breaking point non produce classificazione errata (produce non_classificabile, che è la risposta corretta) ma rivela che il dispositivo non può distinguere caso_5a da caso_5b con la documentazione clinica standard. La distinzione è reale e strutturalmente importante ma richiede un livello di documentazione osservativa non routinario."
+      },
+      "false_positive_risk": {
+        "risk_present": true,
+        "description": "RISCHIO PRINCIPALE DEL DISPOSITIVO: se l'osservatore documenta obs_2 come 'configurazionale' sulla base dell'inferenza ('il padre guardava chiaramente dove era il problema') invece dell'osservazione diretta della direzione fine dello sguardo, il proxy produce aperto quando la struttura reale potrebbe essere predeterminata. La pausa + sguardo verso le mani è visivamente indistinguibile tra valutativo e esecutivo-categoriale: la differenza è nella direzione fine dello sguardo (punto di contatto specifico vs. area delle mani), non nella presenza dello sguardo. Un osservatore che documenta 'guarda il punto della difficoltà' per inferenza (il padre deve aver guardato lì se poi ha risolto correttamente) produce un falso positivo.",
+        "mitigation": "Il protocol_note di obs_2 specifica: 'Richiede distinzione tra orientamento-verso-configurazione-specifica e orientamento-verso-oggetto-categoriale. In video: possibile da frame analysis. In osservazione diretta: richiede attenzione esplicita a questo momento.' La mitigazione richiede formazione dell'osservatore sulla distinzione specifica e documentazione che espliciti la base osservativa (cosa è stato visto, non cosa è stato inferito). Se obs_2 non è documentato con base osservativa esplicita, il proxy deve produrre non_classificabile anche quando l'osservatore 'pensa' di sapere."
+      },
+      "test_verdict": "regge_con_riserva"
+    }
+
+  ],
+
+  "global_assessment": {
+    "device_robustness": "alta",
+    "main_strengths": [
+      "Auto-limitazione strutturale: il dispositivo produce non_classificabile ogni volta che le condizioni minime di osservabilità non sono soddisfatte — mai una classificazione forzata. Questo si è verificato correttamente in tutti i casi in cui i dati erano insufficienti (casi 2, 5b con documentazione standard).",
+      "Localizzazione precisa delle discontinuità: il dispositivo non dice solo 'la configurazione non si è costituita' ma identifica a quale livello si produce la rottura (corporeo, campo intenzionale, co-regolatorio, semiotico). Questo è il contributo strutturale principale — leggibile anche quando il proxy non è applicabile.",
+      "Resistenza alla normatività: in tutti e 5 i casi il dispositivo ha letto la struttura senza produrre giudizi su autonomia/dipendenza, adeguatezza del caregiver, competenza del bambino. La co-regolazione chiudente (casi 3, 4, 5b) è classificata come strutturalmente distinta, non come inadeguata.",
+      "Falso positivo identificato e presidiato: il rischio principale (risposta chiudente letta come partecipativa per competenza comportamentale) è esplicitamente presidiato dalla domanda strutturale 5 e dall'interpretive warning sulla normatività.",
+      "Proxy non circolare: la classificazione del passaggio trasformativo via proxy è determinabile indipendentemente dalla lettura configurazionale globale — la direzione dello sguardo dell'adulto nella finestra pre-risposta è osservabile prima di sapere come classificare la configurazione."
+    ],
+    "main_weaknesses": [
+      "Risoluzione di obs_2 richiesta raramente disponibile: la distinzione tra orientamento-configurazionale e orientamento-categoriale nella finestra pre-risposta richiede documentazione a risoluzione fine (frame analysis video o osservazione diretta formata). Nelle descrizioni testuali cliniche standard il proxy produce sistematicamente non_classificabile — che è la risposta corretta ma limita l'applicabilità operativa del dispositivo in contesti senza videoregistrazione.",
+      "Corporeità distorta vs. corporeità presente: la distinzione tra doppia orientazione genuina (dal contatto reale con la difficoltà) e doppia orientazione routinizzata/scripted richiede che l'osservatore verifichi l'esistenza della difficoltà reale come fatto dell'azione. Questa verifica non è sempre disponibile nelle osservazioni cliniche standard.",
+      "ncr_3 (finestra brevissima → ambiguo) potrebbe produrre accumulo di ambiguità: in interazioni rapide e fluide molte finestre pre-risposta sono inferiori al secondo, rendendo sistematico il risultato ambiguo per il proxy — che è corretto strutturalmente ma può ridurre l'informazione disponibile per la lettura del passaggio trasformativo."
+    ],
+    "required_corrections": [
+      "Nessuna correzione strutturale richiesta: il dispositivo supera tutti e 5 i criteri dello stress test. Non classifica quando i dati non bastano (verificato), distingue risposta partecipativa da chiudente (verificato), distingue ingresso valutativo reale da esecutivo mascherato a condizione di documentazione sufficiente (verificato con riserva), dichiara ambiguità quando il proxy non discrimina (verificato), non trasforma in giudizio di autonomia/dipendenza (verificato).",
+      "Rafforzamento del protocol_note di obs_2: il protocollo dovrebbe esplicitare più chiaramente la distinzione operativa tra gaze-verso-punto-specifico-di-contatto e gaze-verso-area-categoriale-mani, con esempi concreti di documentazione accettabile e non accettabile. Il rischio del falso positivo per inferenza in obs_2 (caso 5b) richiede una formulazione più esplicita di cosa deve essere osservato direttamente vs. cosa non può essere inferito.",
+      "Nota sui contesti senza videoregistrazione: sarebbe utile aggiungere un'avvertenza operativa che in assenza di videoregistrazione o di osservazione diretta formata sul momento pre-risposta, il proxy produce sistematicamente non_classificabile — e che questo è il risultato corretto, non un fallimento applicativo. Evita la tentazione di supplire con inferenza clinica."
+    ]
+  }
+}

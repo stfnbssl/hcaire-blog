@@ -1,0 +1,204 @@
+{
+  "step": "f3_step_6",
+  "version": "v1",
+  "operation_type": "stabilizzazione_proxy_singolo",
+  "based_on": {
+    "device_v2": "tema-01-pointing-clinico-dispositivo-v2",
+    "indistinguibility_test": "f3_step_4 — indistinguibility-test-v1",
+    "audit_reference": "f3_step_5 — audit-v3"
+  },
+  "domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+
+  "target_proxy": {
+    "label": "Registrazione come partecipazione (qualità ascendente-interrogativa della vocalizzazione finale)",
+    "located_in_device": "passaggio_trasformativo (bridge) — proxy della 'ridefinizione in corso d'opera' / 'qualità della vocalizzazione del bambino dopo la nominazione'",
+    "function_in_device": "discriminare il caso in cui la vocalizzazione del bambino aggiunge una qualità che non era nella nominazione dell'adulto (apertura) dal caso in cui è presa di consegna della casella prevista dallo script (predeterminazione)",
+    "test_severity_applied": "debole — nessuna contro-lettura specifica fornita dal ricercatore; le contro-letture sono costruite dall'agente"
+  },
+
+  "original_proxy_issues": {
+    "reversibility": "La 'qualità ascendente-interrogativa' della vocalizzazione finale è reversibile in senso forte: la stessa traccia prosodica osservabile (un 'oh!' con inflessione ascendente o sostenuta) può sostenere entrambe le classificazioni a seconda dell'assunzione interpretativa adottata. Letta come 'apertura di slot per ulteriore risposta dell'adulto', vale come traccia di partecipazione/ridefinizione (apertura). Letta come 'esecuzione del turno previsto dallo script show-and-tell, che include la prosodia di stupore come componente ritualizzata', vale come acknowledgment scriptato (predeterminazione). Il proxy non contiene al suo interno l'elemento che decide tra le due letture: l'inversione richiede solo cambiare l'assunzione su cosa la prosodia ascendente significhi nella struttura del passaggio.",
+    "circularity": "Il proxy trae forza dalla observed_configuration ('mediazione_simbolica = presente con qualità di stupore aggiunta' / 'mediazione_simbolica = distorta, presa di consegna') e dalla narrative_thick_description scritta in registro già pre-strutturato ('aggiunge qualcosa', 'non era nella nominazione neutra', 'è la presa di consegna'). La traccia osservabile (la vocalizzazione 'oh!' con la sua prosodia) non distingue tra apertura e predeterminazione finché non viene letta attraverso queste qualifiche, che sono già allineate alla classificazione finale. Il proxy quindi non discrimina sequenze grezze: discrimina sequenze già caratterizzate.",
+    "non_observability": "L'osservabilità del proxy presuppone (a) accesso prosodico fine al canale audio, (b) capacità di distinguere 'inflessione che aggiunge qualità' da 'inflessione conforme allo slot prosodico dello script', (c) inferenza implicita su cosa il bambino 'fa' con la prosodia (apre, registra, consegna). Il punto (c) viola il vincolo di non-inferenza mentale: per leggere la qualità ascendente come 'apertura' bisogna attribuire al bambino un orientamento intenzionale verso l'altro che non è leggibile dalla sola traccia prosodica. Inoltre il proxy si appoggia a un singolo evento (una vocalizzazione), violando il vincolo di non-comportamento-isolato."
+  },
+
+  "structural_decomposition": {
+    "rationale": "La debolezza del proxy originale è di trattare un singolo evento (la vocalizzazione finale) come marker, isolandolo dalla struttura sequenziale dello scambio. Per stabilizzarlo bisogna ricollocarlo dentro una struttura temporale a quattro turni minima, in cui la posizione e il ruolo della vocalizzazione del bambino siano leggibili dalla relazione con il turno successivo dell'adulto, non dalla qualità intrinseca della vocalizzazione.",
+    "minimal_temporal_structure": {
+      "T1": "atto di apertura del bambino: pointing + sguardo all'adulto verso un oggetto/evento del campo percettivo",
+      "T2": "primo turno di risposta dell'adulto: contenuto verbale identificabile (lessico X)",
+      "T3": "turno del bambino successivo a T2: vocalizzazione, gesto, riorientamento corporeo, o azione — con contenuto Y identificabile (anche se Y può essere 'silenzio strutturato' o 'movimento ritmato')",
+      "T4": "secondo turno di risposta dell'adulto, successivo a T3: contenuto verbale identificabile (lessico W)"
+    },
+    "structural_relations_to_observe": [
+      "relazione T2→T3: T3 contiene materiale specifico Y o è riempimento neutro",
+      "relazione T3→T4: T4 contiene materiale W che è derivabile da T2 da solo, o W è derivabile solo se T3 ha contenuto Y",
+      "relazione complessiva A-B-C-D: la sequenza richiede T3 per produrre T4, oppure T4 è producibile come continuazione lineare di T2 indipendentemente da T3"
+    ],
+    "what_is_NOT_in_the_decomposition": "non vi è alcun riferimento a stati mentali, intenzioni, attese, qualità affettive non strutturali, prosodia interpretata come 'apertura' o 'consegna'. Le qualità prosodiche, se presenti, entrano solo come contenuto lessicalizzabile (es. 'la vocalizzazione contiene il lessema oh') non come inferenza sul ruolo che svolgono."
+  },
+
+  "new_proxy": {
+    "name": "Catena di ripresa cross-turno lessicalmente non-derivabile (T2→T3→T4)",
+    "structure": "Sequenza minima di quattro turni A-B-C-D in cui il secondo turno dell'adulto (T4) contiene materiale lessicale, sintattico o gestuale W che (a) non è linearmente derivabile dal solo T2 come sua continuazione abituale, e (b) presenta una traccia identificabile di dipendenza dal contenuto specifico di T3. La struttura è osservabile come relazione di derivabilità tra turni, non come qualità di un singolo evento.",
+    "observable_sequence": [
+      "T1 (bambino): atto di apertura — pointing con sguardo all'adulto verso un oggetto/evento. Registrare: presenza del gesto, presenza dello sguardo, oggetto del riferimento.",
+      "T2 (adulto): primo turno di risposta. Registrare letteralmente: il contenuto verbale prodotto (lessico X), la sua struttura sintattica (frase completa con chiusura, frase incompleta, domanda, esclamazione), la sua relazione con l'oggetto del riferimento.",
+      "T3 (bambino): turno successivo a T2 prima che l'adulto produca un secondo turno. Registrare: il contenuto Y (vocalizzazione lessicalizzabile, gesto identificabile, riorientamento corporeo, azione, oppure silenzio sostenuto strutturalmente). Y è descritto in termini di tracce identificabili, non di qualità interpretate.",
+      "T4 (adulto): secondo turno dell'adulto, successivo a T3. Registrare letteralmente: il contenuto verbale W e la sua struttura sintattica.",
+      "Test di derivabilità lineare: si descrive cosa T2 da solo predice come continuazione abituale (in assenza di informazione su questa specifica diade, come continuazione abituale del genere di scambio 'mostra-e-nomina' adulto→bambino). Si confronta W con questa predizione.",
+      "Test di dipendenza specifica: si descrive se W contiene materiale (lessicale, sintattico, gestuale) che è specificamente riconducibile a Y — cioè materiale che non sarebbe stato producibile se Y fosse stato silenzio neutro o riempimento generico. Esempi di materiale specifico: ripresa lessicale di un elemento di Y, articolazione sintattica che presuppone Y come antecedente, gesto che rispecchia o estende Y."
+    ],
+    "openness_signature": "T4 NON è linearmente derivabile da T2 da solo (la continuazione abituale post-T2 non sarebbe stata W) E T4 contiene almeno un elemento specificamente dipendente da Y. La sequenza T2→T3→T4 mostra che il secondo turno dell'adulto è strutturato dal contenuto del turno intermedio del bambino: non è un completamento di T2 ma una ripresa di T3.",
+    "predetermination_signature": "T4 È linearmente derivabile da T2 da solo (la continuazione abituale post-T2 produrrebbe W) OPPURE T4 non contiene alcun elemento specificamente dipendente da Y (Y poteva essere silenzio o riempimento generico senza che W cambiasse). La sequenza T2→T3→T4 mostra che T3 è una casella intermedia che non modifica la traiettoria del turno adulto.",
+    "ambiguity_signature": "i due test (derivabilità da T2-solo e dipendenza specifica da T3) producono esiti incoerenti, oppure la baseline necessaria per il test di derivabilità non è disponibile, oppure T3 è di leggibilità incerta come contenuto specifico Y. La classificazione resta ambigua: l'ambiguità è esito strutturale legittimo.",
+    "explicit_constraints": [
+      "il proxy si applica al livello SEQUENZA (almeno un episodio completo a 4 turni), non al singolo gesto isolato — è strutturalmente temporale-relazionale",
+      "il test di derivabilità richiede UNA baseline: o (a) baseline della specifica diade ricostruita da almeno 2-3 episodi precedenti, o (b) baseline di genere ('cosa segue tipicamente in scambi adulto-bambino di questo tipo dopo X'). In entrambi i casi la baseline va dichiarata esplicitamente. Senza baseline dichiarata, la classificazione 'predeterminato' non è sostenibile e l'esito corretto è 'ambiguo'",
+      "il proxy non legge la prosodia come tale: legge il contenuto lessicale-sintattico di T2, T3, T4. Eventuali elementi prosodici di T3 sono ammessi come contenuto Y solo se descritti in tracce verificabili (es: 'lessema oh con lunghezza vocalica estesa', non 'oh con qualità di stupore')",
+      "il proxy non richiede di valutare se T3 'aggiunge qualcosa' in senso interpretativo: richiede di verificare se T4 è strutturato da Y (ripresa specifica) o da T2 (continuazione lineare). La discriminazione è spostata dal contenuto qualitativo di T3 alla relazione strutturale T3→T4"
+    ]
+  },
+
+  "non_reversibility_test": {
+    "counter_reading_1": {
+      "label": "Script bilaterale a copione",
+      "description": "Una contro-lettura forte: la diade può aver stabilizzato uno script che include uno slot esplicito per il contributo del bambino, in cui T2 lascia uno spazio sintattico/semantico per T3 e T4 riprende formalmente Y. Tutto il sistema può essere predeterminato a livello di copione bilaterale: la non-derivabilità di W da T2-solo è iscritta nello script (lo script richiede T3 per generare T4), e la dipendenza di W da Y è anch'essa scriptata (lo script prevede una ripresa formale del turno del bambino). In questa lettura, T4 contiene materiale dipendente da T3 ma il contributo trasformativo non è co-prodotto: è la struttura stessa dello script che organizza la dipendenza apparente. Conseguenza: il proxy registrerebbe 'apertura' dove invece c'è uno script bilaterale efficiente.",
+      "rebuttal": "La contro-lettura è reale e mostra il limite del proxy applicato a un singolo episodio. Il rebuttal non consiste nel negare lo script bilaterale (che esiste empiricamente), ma nel definire le condizioni in cui il proxy distingue: la dipendenza scriptata di W da Y produce W identici (o appartenenti a un set chiuso) ogni volta che la sequenza T1-T4 si ripete. La dipendenza co-prodotta di W da Y produce W variabili in modo sistematico con la variazione del contenuto specifico di Y. Quindi il proxy distingue apertura da script bilaterale SOLO al livello di sequenza multi-episodica, dove è possibile osservare se la variazione lessicale-semantica di Y produce variazione lessicale-semantica corrispondente di W (apertura) oppure no (script bilaterale). Su singolo episodio isolato il proxy non distingue, e la classificazione corretta è 'ambigua'. Questo non è un fallimento ma un limite dichiarato: il proxy è strutturalmente sequenziale e si applica al livello sequenza/struttura relazionale, coerentemente con la temporal_scale del dispositivo v2.",
+      "result": "resiste_con_limite_dichiarato"
+    },
+    "counter_reading_2": {
+      "label": "Co-produzione compressa apparentemente lineare",
+      "description": "Contro-lettura speculare: una diade ad alta sintonia può aver sedimentato una co-produzione effettiva in forme talmente efficienti che T4 risulta linearmente derivabile da T2 (sembra continuazione abituale) ma in realtà la sua specifica forma è stata storicamente co-costruita. La derivabilità apparente di W da T2-solo non è prova di predeterminazione: è prova di sedimentazione. Il proxy classificherebbe 'predeterminazione' dove invece c'è co-produzione storicamente compressa. Questa contro-lettura era tematizzata nell'audit di F3 STEP 5 come reversibilità simmetrica del proxy della ridefinizione.",
+      "rebuttal": "La contro-lettura coglie un punto reale: il proxy non distingue, sul singolo episodio, una continuazione lineare nuova da una continuazione lineare sedimentata. Il rebuttal non consiste nel risolvere questa indistinguibilità ma nel ridefinirla come problema di livello: la distinzione tra co-produzione sedimentata e predeterminazione richiede di osservare la sequenza in CONDIZIONI DI VARIAZIONE — episodi in cui il contenuto di Y varia. Se W varia con Y, anche quando T2 è simile, la sequenza è co-produttiva (compressa o esplicita). Se W non varia con Y, la sequenza è predeterminata. Il proxy quindi non distingue su episodio isolato (e la classificazione è 'ambigua'), ma distingue su episodi multipli con variazione di Y. La 'sedimentazione' diventa empiricamente leggibile come variazione sistematica W↔Y in episodi simili — non come qualità intrinseca di un singolo episodio. Il proxy resiste perché definisce esplicitamente le condizioni di applicabilità, non perché risolve sul singolo episodio.",
+      "result": "resiste_con_limite_dichiarato"
+    },
+    "counter_reading_3": {
+      "label": "Asimmetria di registrazione cross-osservatore",
+      "description": "Contro-lettura applicativa: due osservatori diversi, applicando il test di derivabilità lineare, possono arrivare a baseline diverse e quindi a giudizi opposti su 'W è derivabile da T2-solo'. Se la baseline è 'cosa segue tipicamente in scambi mostra-e-nomina', un osservatore può considerare 'guarda come si muove' come continuazione tipica (predeterminato), un altro come ripresa specifica del contributo del bambino (aperto). Il proxy sembrerebbe quindi spostare la reversibilità dal contenuto della vocalizzazione alla baseline, senza guadagno epistemico.",
+      "rebuttal": "La contro-lettura è parzialmente fondata ma sottovaluta una differenza qualitativa: la baseline è oggettivabile e dichiarabile, la qualità prosodica intrinseca di una vocalizzazione no. Due osservatori che assumono baseline diverse possono confrontare le baseline e identificare il punto di disaccordo (es: 'tu consideri X come continuazione tipica, io no — perché?'). Due osservatori che leggono diversamente la prosodia non possono comparare facilmente le loro letture, perché la prosodia è internamente colta. Quindi il proxy nuovo trasferisce la reversibilità a un livello dove è gestibile metodologicamente: la baseline può essere documentata (riferimento a corpus, convenzioni del genere di scambio, episodi precedenti della diade) e il disaccordo tra osservatori può essere triangolato. Inoltre, anche in caso di disaccordo sulla baseline, la dipendenza specifica di W da Y (test 2) è osservabile in modo più stabile: la presenza o assenza di una ripresa lessicale identificabile è meno aperta a interpretazioni divergenti della prosodia globale di una vocalizzazione. Il proxy resiste perché distribuisce la robustezza su due test invece di concentrarla su un singolo giudizio prosodico.",
+      "result": "resiste_con_limite_dichiarato"
+    },
+    "global_test_result": "resiste",
+    "global_test_rationale": "Il nuovo proxy resiste alle tre contro-letture costruite, ma resiste con limiti dichiarati: (a) richiede applicazione a livello sequenza (almeno un episodio completo a 4 turni e idealmente più episodi per il test di variabilità), (b) richiede una baseline esplicitabile (specifica della diade o di genere), (c) produce 'ambiguo' come esito legittimo quando la baseline non è disponibile o quando i due test di derivabilità producono esiti incoerenti. La resistenza non è 'netta' (il proxy non è invariante a tutte le contro-letture su tutti i livelli) ma è significativa: la reversibilità che restava nel proxy originale (qualità prosodica della vocalizzazione finale) è stata sostituita da un'incertezza di livello superiore (baseline + condizioni di applicabilità) che è metodologicamente gestibile, mentre la prosodia interpretata non lo era. Il guadagno epistemico è reale anche se non assoluto."
+  },
+
+  "anchor_check": [
+    {
+      "element": "T1 — atto di apertura del bambino (pointing + sguardo)",
+      "source": "case_description (osservabile direttamente dalla descrizione della sequenza interattiva)",
+      "observer_dependency": "bassa",
+      "rationale": "presenza/assenza di pointing e di sguardo all'adulto sono identificabili a livello di traccia comportamentale grezza, senza inferenze interpretative"
+    },
+    {
+      "element": "T2 — contenuto lessicale X e struttura sintattica del primo turno adulto",
+      "source": "case_description (registrabile come trascrizione verbale + identificazione della struttura sintattica)",
+      "observer_dependency": "bassa",
+      "rationale": "il contenuto lessicale è trascrivibile; la struttura sintattica (frase completa, frase incompleta, domanda, esclamazione) è identificabile con competenza linguistica standard"
+    },
+    {
+      "element": "T3 — contenuto Y del turno intermedio del bambino",
+      "source": "case_description (registrabile come traccia osservabile: vocalizzazione lessicalizzata, gesto identificabile, riorientamento corporeo, silenzio strutturato)",
+      "observer_dependency": "bassa-media",
+      "rationale": "la registrazione di Y come traccia identificabile ha dipendenza bassa; la classificazione di Y come 'contenuto specifico' vs. 'riempimento neutro' richiede competenza media nel riconoscere se Y contiene elementi lessicali, gestuali o prosodici identificabili come tali. La dipendenza diventa media se Y è prevalentemente prosodico (es: una vocalizzazione senza lessema riconoscibile)"
+    },
+    {
+      "element": "T4 — contenuto lessicale W e struttura sintattica del secondo turno adulto",
+      "source": "case_description (trascrizione verbale + identificazione sintattica)",
+      "observer_dependency": "bassa",
+      "rationale": "come T2"
+    },
+    {
+      "element": "Test 1 — derivabilità lineare di W da T2-solo",
+      "source": "baseline esplicitamente dichiarata (specifica della diade, ricostruita da episodi precedenti, o di genere, riferita a convenzioni del tipo di scambio)",
+      "observer_dependency": "media",
+      "rationale": "la dichiarazione della baseline è metodologicamente possibile ma richiede competenza nel riconoscere convenzioni di genere o nel ricostruire pattern di una specifica diade. La dipendenza è media perché la baseline può essere documentata e contestata, non è internamente colta come la prosodia"
+    },
+    {
+      "element": "Test 2 — dipendenza specifica di W da Y",
+      "source": "case_description (relazione lessicale-sintattica-gestuale tra T3 e T4 osservabile direttamente)",
+      "observer_dependency": "media",
+      "rationale": "identificare se W contiene una ripresa specifica di Y richiede competenza linguistica e attenzione alla struttura del turno, ma è oggettivabile (es: 'il lessema X di Y compare in W', 'la struttura sintattica di W presuppone Y come antecedente'). La dipendenza è media non per opacità ma per la sottigliezza della relazione, che non è sempre evidente"
+    },
+    {
+      "element": "Classificazione finale (apertura / predeterminazione / ambiguità)",
+      "source": "esito strutturato dei due test in combinazione, applicato secondo la regola dichiarata nelle openness/predetermination/ambiguity signatures",
+      "observer_dependency": "bassa (una volta completati i due test)",
+      "rationale": "la regola di combinazione è dichiarativa: se entrambi i test puntano in direzione coerente, la classificazione è univoca; se sono incoerenti o uno dei due è non-eseguibile, la classificazione è 'ambigua'. La dipendenza dell'osservatore è già scaricata sui test, la classificazione finale è meccanica"
+    }
+  ],
+
+  "comparison_with_original_proxy": {
+    "dimension_1_observability": {
+      "original": "richiede percezione prosodica fine + interpretazione di 'qualità ascendente' come 'apertura di slot' (alta dipendenza, parzialmente non oggettivabile)",
+      "new": "richiede registrazione di contenuti lessicali-sintattici-gestuali a quattro turni + dichiarazione di una baseline (media dipendenza, oggettivabile)",
+      "improvement": "spostamento da una dipendenza alta non oggettivabile a una dipendenza media oggettivabile"
+    },
+    "dimension_2_reversibility": {
+      "original": "alta — la stessa traccia prosodica sostiene entrambe le classificazioni a seconda dell'assunzione interpretativa",
+      "new": "ridotta ma non azzerata — la sequenza T2→T3→T4 con i due test produce classificazione coerente in molti casi; l'ambiguità residua è dichiarata come esito legittimo invece che mascherata",
+      "improvement": "la reversibilità non è eliminata ma è (a) significativamente ridotta perché la combinazione dei due test ha più ancoraggio della singola lettura prosodica, (b) trasformata in ambiguità dichiarabile invece che reversibilità nascosta"
+    },
+    "dimension_3_circularity": {
+      "original": "alta — il proxy traeva forza da una case_description già pre-strutturata in registro interpretativo ('aggiunge qualcosa', 'è la presa di consegna')",
+      "new": "ridotta — il proxy si appoggia a contenuti lessicali-sintattici trascrivibili e a una baseline dichiarata; la case_description può essere descritta in registro fenomenico (cosa è stato detto/fatto in ciascun turno) senza pre-strutturazione interpretativa",
+      "improvement": "rimuove la dipendenza da qualifiche interpretative inscritte nella narrative; richiede una case_description scritta in registro fenomenico oppure rende esplicita la circolarità quando la narrative è pre-strutturata"
+    },
+    "dimension_4_mental_inference": {
+      "original": "implicita — leggere la prosodia come 'apertura' attribuiva un orientamento intenzionale al bambino",
+      "new": "assente — il proxy si applica a relazioni di derivabilità tra contenuti di turni, non a stati mentali del bambino o dell'adulto",
+      "improvement": "il vincolo di non-inferenza mentale è rispettato"
+    },
+    "dimension_5_isolation": {
+      "original": "violato — proxy fondato su un singolo evento (una vocalizzazione)",
+      "new": "rispettato — proxy fondato su una sequenza minima di 4 turni e su due test relazionali tra turni",
+      "improvement": "il vincolo di non-comportamento-isolato è rispettato"
+    }
+  },
+
+  "application_to_test_cases": {
+    "note": "Verifica applicativa rispetto ai casi A e B di indistinguibility-test-v1. Lo scopo non è riclassificare i casi (l'audit lo proibisce) ma verificare che il nuovo proxy produca discriminazione strutturalmente più solida sugli stessi casi.",
+    "case_A_application": {
+      "T1": "il bambino estende il braccio, indica con dito teso verso la finestra, orienta lo sguardo verso il caregiver",
+      "T2": "il caregiver dice 'è un uccellino' (lessico X = 'uccellino' + struttura sintattica = frase nominale completa con copula, chiusura)",
+      "T3": "il bambino vocalizza 'oh!' (lessico Y = 'oh', traccia prosodica registrabile come 'oh con lunghezza vocalica estesa') e fa un piccolo movimento del corpo verso la finestra",
+      "T4": "il caregiver dice 'sì, guarda come si muove!' (lessico W = 'guarda' + 'muove' + struttura sintattica = imperativo + esclamativa)",
+      "test_1_derivabilità_da_T2": "baseline di genere per scambi mostra-e-nomina post-nominazione: la continuazione tipica di 'è un uccellino' dopo una pausa con vocalizzazione del bambino include sia 'sì'/'eh sì'/conferma minima sia varianti tipo 'guarda', 'vedi'. La specifica forma 'guarda come si muove' è una tra le possibili continuazioni di genere, non univocamente derivabile da T2 da solo",
+      "test_2_dipendenza_da_T3": "W contiene 'sì' (ripresa formale di T3 come acknowledgment) ma non contiene materiale lessicale-gestuale specificamente riconducibile alla traccia 'oh con lunghezza vocalica estesa' o al movimento del corpo verso la finestra, oltre quello che la generica continuazione di genere già conterrebbe. Il movimento corporeo del bambino verso la finestra è ripreso parzialmente da 'guarda' (orientamento condiviso verso l'oggetto), ma la connessione è debole",
+      "single_episode_classification": "ambiguo (status: dichiarato-come-tale)",
+      "rationale": "su singolo episodio, il test 1 non chiude (W è una tra le continuazioni possibili di genere) e il test 2 produce un esito debole (la dipendenza specifica di W da Y è sottile). La classificazione non è 'aperto' come in F3 STEP 4, è 'ambiguo'. Questo non contraddice F3 STEP 4: lo allinea con la diagnosi di proxy_confidence='media' e classification_status='probabile' che F3 STEP 4 stesso aveva dichiarato. Il nuovo proxy renderebbe leggibile l'ambiguità come esito strutturale invece che mascherarla con una classificazione 'aperto/probabile'.",
+      "implication_for_device": "il nuovo proxy, applicato al caso A su singolo episodio, alza la soglia di discriminazione: l'apertura non è più sostenuta dalla qualità interpretata della vocalizzazione ma richiede una variazione W↔Y osservabile in più episodi. Questo è coerente con la temporal_scale di v2 (livello sequenza) e rende il dispositivo più severo nelle sue classificazioni su episodio singolo isolato"
+    },
+    "case_B_application": {
+      "T1": "il bambino estende il braccio, dito teso verso la finestra, sguardo al caregiver",
+      "T2": "il caregiver dice 'è un uccellino, hai visto l'uccellino? guarda come si muove' (lessico X esteso con tre unità + struttura sintattica = frase nominale + domanda retorica + imperativo, prodotti come unità unica)",
+      "T3": "il bambino vocalizza 'oh!' (lessico Y = 'oh') subito dopo la conferma del caregiver",
+      "T4": "il caregiver non produce un secondo turno verbale rilevante: l'episodio si chiude con scambio di sguardi",
+      "test_1_derivabilità_da_T2": "T2 contiene già internamente la continuazione completa ('guarda come si muove'). T4 non aggiunge materiale verbale. Il caso B presenta una compressione strutturale: T2 ingloba quello che nel caso A è T4. La sequenza non è effettivamente a 4 turni: è a 3 turni con T2 esteso che chiude in anticipo lo spazio di T4",
+      "test_2_dipendenza_da_T3": "non applicabile in modo significativo: non c'è T4 verbale da analizzare. Lo scambio di sguardi finale è troppo povero come materiale per testare dipendenza specifica da Y",
+      "single_episode_classification": "predeterminato (status: probabile, con qualificazione strutturale specifica)",
+      "rationale": "il caso B mostra una struttura sequenziale qualitativamente diversa dal caso A: T2 è esteso e auto-chiudente, lo spazio di T4 verbale è preventivamente occupato da T2 stesso. Questa è una traccia strutturale (osservabile come compressione di turni), non una qualifica interpretativa. La predeterminazione del passaggio è leggibile dalla forma stessa della sequenza (T2 chiude prima che T3-T4 possano produrre ripresa) — questo è un proxy strutturale aggiuntivo che il proxy originale non rendeva esplicito",
+      "implication_for_device": "il nuovo proxy mostra che il caso B ha una caratteristica strutturale ulteriore — la chiusura preventiva di T4 da parte di T2 esteso — che il proxy originale non leggeva esplicitamente. Questa caratteristica è osservabile come compressione di turni e supporta la classificazione 'predeterminato' su base strutturale-sequenziale, non su qualità interpretata della vocalizzazione del bambino"
+    },
+    "discrimination_quality_with_new_proxy": {
+      "case_A_classification_with_new_proxy_single_episode": "ambiguo",
+      "case_B_classification_with_new_proxy_single_episode": "predeterminato",
+      "discrimination_status": "asimmetrica e più severa",
+      "comment": "Il nuovo proxy, applicato su singolo episodio, classifica B come 'predeterminato' e A come 'ambiguo' invece di entrambi come 'probabile' (rispettivamente aperto e predeterminato) come faceva F3 STEP 4. La discriminazione non è simmetrica: la predeterminazione è leggibile su singolo episodio (compressione di turni in T2), l'apertura no (richiede sequenza multi-episodica per il test di variabilità). Questa asimmetria è un guadagno epistemico: riflette il fatto reale che è strutturalmente più facile rilevare uno script che dimostrare una co-produzione, e impone al dispositivo una severità coerente con questa asimmetria invece di nasconderla in classificazioni 'probabili' di entrambi i casi"
+    }
+  },
+
+  "final_assessment": {
+    "is_more_robust": true,
+    "robustness_dimensions": {
+      "rispetto_a_reversibilità": "guadagno significativo — la reversibilità nascosta del proxy originale è sostituita da un'ambiguità dichiarabile + condizioni di applicabilità esplicite",
+      "rispetto_a_circolarità": "guadagno significativo — l'ancoraggio si sposta da qualifiche interpretative inscritte nella narrative a contenuti lessicali-sintattici trascrivibili",
+      "rispetto_a_inferenze_mentali": "guadagno netto — il vincolo di non-inferenza è rispettato",
+      "rispetto_a_comportamento_isolato": "guadagno netto — il proxy è strutturale-temporale a quattro turni",
+      "rispetto_a_dipendenza_da_singolo_proxy_critico": "guadagno parziale — il nuovo proxy è composto internamente da due test (derivabilità da T2-solo + dipendenza specifica da T3) che si supportano. La dipendenza critica da un singolo elemento è ridotta, anche se non eliminata: i due test possono essere incoerenti, e in quel caso la classificazione è 'ambigua' (esito legittimo)"
+    },
+    "remaining_weakness": "Il proxy distingue robustamente la PREDETERMINAZIONE (osservabile come compressione di turni e/o derivabilità di W da T2-solo + assenza di dipendenza specifica da T3) dall'AMBIGUITÀ. Distingue meno robustamente l'APERTURA dall'ambiguità su singolo episodio: la dimostrazione di apertura richiede tipicamente un livello sequenza/multi-episodi per il test di variabilità W↔Y. Su singolo episodio il proxy tende a produrre 'ambiguo' o 'predeterminato', raramente 'aperto'. Questo è una severità del dispositivo, non un difetto del proxy: riflette il fatto che la co-produzione genuina ha bisogno di evidenza che eccede il singolo episodio. Il dispositivo dovrebbe assumere esplicitamente questa asimmetria — apertura come classificazione richiede livello sequenza, predeterminazione e ambiguità sono accessibili a livello episodio.",
+    "recommendation_for_device_v3": "Integrare il nuovo proxy come sostituzione del proxy originale 'ridefinizione in corso d'opera / qualità della vocalizzazione finale' nel passaggio_trasformativo, con tre conseguenze strutturali: (a) dichiarare nel device che la classificazione 'aperto' non è disponibile in modo robusto a livello episodio singolo isolato e richiede livello sequenza, (b) introdurre la 'compressione di turni' come traccia strutturale specifica della predeterminazione (osservabile in T2 esteso che chiude preventivamente lo spazio di T4), (c) dichiarare esplicitamente la baseline come elemento metodologicamente necessario, distinguendo baseline-di-genere e baseline-di-diade e abbassando il classification_status quando la baseline non è disponibile o è solo postulata.",
+    "honest_limit": "il proxy non risolve il problema epistemico fondamentale: distinguere co-produzione da script bilaterale ben sintonizzato richiede informazione che eccede la sequenza locale. Il proxy fa l'unica cosa che si può onestamente fare: spostare la robustezza richiesta dal contenuto qualitativo del singolo evento alla struttura osservabile della sequenza, e dichiarare esplicitamente il livello a cui la discriminazione è sostenibile. Non c'è proxy strutturale sul singolo episodio che possa essere insieme robusto e produttivo di classificazione 'aperto' — questa è una proprietà del fenomeno, non un limite del dispositivo."
+  }
+}

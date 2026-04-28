@@ -1,0 +1,170 @@
+{
+  "step": "f3_step_7",
+  "theme_id": "tema_01_pointing_precoce",
+  "source_device_id": "tema-01-pointing-clinico-dispositivo-corrected",
+  "target_theme_or_domain": "comportamento di richiesta di aiuto — dominio clinico (stesso dominio, atto comunicativo distinto dal pointing)",
+  "target_micro_cases": [
+    {
+      "case_type": "configurazione_reale",
+      "description_summary": "bambino apre un campo relazionale per chiedere aiuto — la difficoltà diventa campo condiviso"
+    },
+    {
+      "case_type": "configurazione_apparente",
+      "description_summary": "bambino esegue uno script di richiesta — la difficoltà è risolta come transazione attesa"
+    }
+  ],
+
+  "transferability_assessment": {
+    "overall_verdict": "trasferibile_con_adattamenti",
+    "reason": "La logica configurazionale (corporeità → campo intenzionale → co-regolazione → mediazione simbolica) si applica strutturalmente anche al comportamento di richiesta di aiuto: il corpo si orienta verso la difficoltà e verso l'altro, si apre un campo condiviso verso la difficoltà, la risposta co-regolatoria determina se la difficoltà diventa problema condiviso o transazione risolta. La distinzione tra configurazione reale e apparente — co-produzione genuina vs. script — è strutturalmente la stessa. Sono però necessari adattamenti significativi al bridge, al proxy operativo e ai requisiti di osservabilità, che non sono transferibili integralmente dal pointing."
+  },
+
+  "transferable_elements": [
+    {
+      "element": "core_configuration (corporeità → campo intenzionale → co-regolazione → mediazione simbolica)",
+      "transfer_status": "con_adattamento",
+      "reason": "La sequenza strutturale si conserva: il corpo orientato verso la difficoltà e verso l'altro (corporeità-vissuta) apre un campo verso la difficoltà (campo-intenzionale) che diventa problema condiviso e affrontabile (mediazione-simbolica) solo attraverso la risposta co-regolatoria dell'altro (co-regolazione). Il contenuto della mediazione cambia — da 'percepito come oggetto condiviso e nominabile' a 'difficoltà come problema condiviso e affrontabile' — ma la logica processuale è la stessa."
+    },
+    {
+      "element": "assi (asse_1 ontologico-fenomenologico, asse_6 storico-culturale)",
+      "transfer_status": "integrale",
+      "reason": "Asse_1 (corpo come luogo originario del gesto relazionale, struttura intenzionale del campo, meccanismo intersoggettivo) si applica direttamente alla richiesta di aiuto: il gesto di richiesta emerge dalla corporeità prima di qualsiasi intenzione deliberata e dipende dalla risposta dell'altro per costituirsi come atto semiotico. Asse_6 (mediazione simbolica come trasformazione del percepito in condiviso e significabile) si applica con adattamento minimo: qui il 'percepito' è la difficoltà, non l'oggetto."
+    },
+    {
+      "element": "nodo: corporeità-vissuta",
+      "transfer_status": "con_adattamento",
+      "reason": "Il nodo trasferisce strutturalmente (il corpo orientato verso la difficoltà e verso l'altro). L'adattamento riguarda la fenomenologia specifica: l'atto corporeo di richiesta ha forma diversa dall'indice esteso (presa, sguardo di ricerca, postura di difficoltà, vocalizzazione di richiesta) e richiede una descrizione della base corporea propria di questo atto."
+    },
+    {
+      "element": "nodo: campo-intenzionale — struttura a 4 stati (assente/tentato-unilaterale/tentato-in-attesa/condiviso)",
+      "transfer_status": "integrale",
+      "reason": "La tipologia a 4 stati si applica direttamente alla richiesta di aiuto: il bambino può aprire il campo verso la difficoltà senza che l'adulto vi entri (tentato-unilaterale), entrambi possono orientarsi verso la difficoltà senza che il campo si costituisca come condiviso (tentato-in-attesa), o il campo si costituisce come problema condiviso (condiviso). L'obbligo di giustificazione degli stati e il divieto di forzatura verso stato netto sono interamente trasferibili."
+    },
+    {
+      "element": "nodo: co-regolazione — struttura a 5 livelli (assente/registrativa/partecipativa/trasformativa/chiudente)",
+      "transfer_status": "integrale",
+      "reason": "Il livello 'chiudente' è particolarmente rilevante nella richiesta di aiuto: l'adulto che risolve il problema per il bambino senza entrare nel campo della difficoltà ha funzione strutturalmente chiudente anche se la risposta è comportamentalmente alta. La distinzione tra risposta partecipativa (entra nel campo della difficoltà insieme al bambino) e risposta chiudente (risolve la difficoltà come transazione) è il nodo centrale della discriminazione configurazionale nella richiesta di aiuto. Trasferisce integralmente."
+    },
+    {
+      "element": "nodo: mediazione-simbolica",
+      "transfer_status": "con_adattamento",
+      "reason": "La struttura nominale trasferisce (presente/assente/distorta/oscillante). L'adattamento riguarda il contenuto: nella richiesta di aiuto la mediazione simbolica non è del percepito come oggetto nominabile ma della difficoltà come problema condiviso e affrontabile. Il passaggio semiotico è da 'difficoltà privata' a 'difficoltà come cosa-nella-relazione che può essere affrontata insieme'."
+    },
+    {
+      "element": "reading_focus: Qualità co-regolatoria della risposta",
+      "transfer_status": "integrale",
+      "reason": "I cinque livelli si applicano direttamente e con particolare potenza nella richiesta di aiuto. Il divieto di lettura come scala normativa è ancora più critico qui: la risposta chiudente (risolvere per il bambino) può sembrare 'migliore' di una risposta partecipativa (stare nella difficoltà insieme), ma strutturalmente è l'opposta. Il rischio normativo è più alto che nel pointing."
+    },
+    {
+      "element": "reading_focus: Struttura del passaggio trasformativo — distinzione passaggio aperto vs. predeterminato",
+      "transfer_status": "con_adattamento",
+      "reason": "La distinzione concettuale trasferisce: nel passaggio aperto la difficoltà viene co-prodotta come problema condiviso nell'atto della richiesta; nel passaggio predeterminato lo script di richiesta è noto e la risposta dell'adulto ne costituisce il completamento atteso. I proxy specifici del pointing (indeterminazione dell'esito, spazio di attesa, registrazione come partecipazione nella forma dell'intonazione vocale) devono essere riconcettualizzati per la fenomenologia specifica della richiesta di aiuto."
+    },
+    {
+      "element": "regole di non-classificabilità (ncr_1–ncr_4)",
+      "transfer_status": "con_adattamento",
+      "reason": "La logica delle regole trasferisce integralmente: il dispositivo deve restituire non_classificabile quando le condizioni minime di osservabilità del proxy decisivo non sono documentate. Le condizioni specifiche cambiano con il proxy adattato."
+    },
+    {
+      "element": "interpretive_warnings e non_permitted_transformations",
+      "transfer_status": "integrale",
+      "reason": "I rischi di riduzione (comportamentismo, normatività, tecnicismo, riduzione cognitiva) si applicano con uguale o maggiore forza alla richiesta di aiuto. Il rischio normativo è strutturalmente più alto perché la richiesta di aiuto è direttamente connessa a costrutti di autonomia, dipendenza e competenza che hanno forte saturazione normativa nei contesti clinici."
+    }
+  ],
+
+  "theme_specific_elements": [
+    {
+      "element": "Atto corporeo specifico: indice esteso con braccio orientato verso oggetto spazialmente identificato",
+      "why_specific": "Il pointing precoce ha una forma motoria specifica (indice esteso, braccio esteso verso oggetto) che non ha equivalente nella richiesta di aiuto. La richiesta di aiuto ha atti corporei diversi: presa tentata senza successo, sguardo verso l'adulto con postura di difficoltà, vocalizzazione di richiesta, protensione delle mani.",
+      "risk_if_transferred": "Se si usasse la stessa descrizione corporea del pointing per la richiesta di aiuto si perderebbe la specificità fenomenologica dell'atto corporeo di richiesta — o si produrrebbe una lettura generica (il corpo si orienta verso l'altro) che non è più leggibile come struttura specifica del gesto."
+    },
+    {
+      "element": "Proxy operativo specifico: 'Co-orientamento finale bilaterale vs. chiusura unilaterale' nella forma della fase [F] del pointing",
+      "why_specific": "Il proxy è costruito sulla struttura specifica del pointing: co-orientamento verso un oggetto spazialmente identificato nella fase di chiusura. Nella richiesta di aiuto l'oggetto di co-orientamento può non essere spazialmente identificato (es. una difficoltà motoria, una situazione emotiva) o può avere struttura temporale diversa (il problema si risolve, non viene semplicemente guardato insieme).",
+      "risk_if_transferred": "Applicare il proxy nella sua forma attuale alla richiesta di aiuto produrrebbe non_classificabile sistematicamente (la fase [F] del pointing non ha equivalente diretto) oppure un'interpretazione forzata di cosa costituisce 'co-orientamento verso l'oggetto' in questo contesto."
+    },
+    {
+      "element": "Requisiti di osservabilità specifici (obs_req_1: orientamento dell'adulto verso l'oggetto in fase [F])",
+      "why_specific": "Questo requisito è costruito sulla specifica struttura di chiusura del pointing: adulto ancora orientato verso la trottola vs. adulto già ritirato. Nella richiesta di aiuto la fase di chiusura ha struttura diversa: il problema può essere risolto (non più presente come oggetto di co-orientamento) oppure può rimanere aperto come campo condiviso attraverso un'azione collaborativa in corso.",
+      "risk_if_transferred": "Se applicato senza adattamento, obs_req_1 produrrebbe misura di qualcosa di diverso da ciò che intende misurare — la struttura di chiusura della richiesta di aiuto non è riducibile alla struttura di chiusura del pointing."
+    },
+    {
+      "element": "Risposta nominativa dell'adulto ('oh, la trottola!') come forma paradigmatica di ingresso nel campo",
+      "why_specific": "Nel pointing la risposta nominativa è la forma principale di mediazione simbolica. Nella richiesta di aiuto la forma di risposta è strutturalmente diversa: scaffold dell'azione, mostrar come fare, stare nella difficoltà insieme, verbalizzare il problema condiviso. La nominazione dell'oggetto non è la forma paradigmatica della risposta.",
+      "risk_if_transferred": "Si perderebbe la varietà delle forme di ingresso nel campo specifiche della richiesta di aiuto e si privilegerebbe indebitamente la risposta verbale su quella gestuale-motoria."
+    }
+  ],
+
+  "new_theme_verification": {
+    "comparable_configuration": {
+      "result": true,
+      "notes": "Il comportamento di richiesta di aiuto ha tutti e quattro i nodi strutturalmente attivi: base corporea (il corpo orientato verso la difficoltà e verso l'adulto), campo intenzionale (apertura di un campo verso la difficoltà come cosa-da-risolvere-insieme), co-regolazione (la risposta dell'adulto determina se il campo si costituisce come condiviso o si chiude come transazione), mediazione simbolica (la difficoltà come problema condiviso e affrontabile). La configurazione è strutturalmente comparabile."
+    },
+    "analogous_transformative_passage": {
+      "result": true,
+      "notes": "Il passaggio trasformativo analogo è: la difficoltà come evento privato (il bambino non riesce a fare qualcosa) → la difficoltà come problema condiviso e affrontabile nella relazione (entrambi vi si orientano come cosa-nella-relazione). Il passaggio aperto corrisponde alla co-produzione del problema come condiviso; il passaggio predeterminato corrisponde all'esecuzione di uno script noto (bambino esegue gesto-di-richiesta → adulto risolve il problema come atteso). La distinzione è strutturalmente analoga a quella del pointing."
+    },
+    "similar_observable_conditions": {
+      "result": "parzialmente",
+      "notes": "Alcune condizioni osservabili sono analoghe: pausa strutturale di attesa, secondo beat relazionale, struttura di chiusura dell'episodio. Ma la fase di co-orientamento verso l'oggetto — centrale nel pointing — ha un equivalente meno diretto nella richiesta di aiuto. La 'difficoltà' può non essere spazialmente identificata come lo è la trottola. Richiede nuove definizioni di cosa costituisce 'co-orientamento verso la difficoltà' in questo contesto."
+    },
+    "similar_false_positive_risks": {
+      "result": true,
+      "notes": "Il rischio di falso positivo è strutturalmente identico: tutti i nodi possono segnalare positivo (bambino esegue gesto di richiesta, adulto risponde, entrambi si orientano verso il problema) mentre il bridge è predeterminato (la sequenza è uno script noto a entrambi, il problema viene risolto come transazione). Il dispositivo in versione checklist produrrebbe falso positivo sistematico su richieste di aiuto scriptificate ad alta qualità comportamentale."
+    }
+  },
+
+  "proxy_assessment": [
+    {
+      "proxy_name": "Co-orientamento finale bilaterale vs. chiusura unilaterale",
+      "status": "adattabile",
+      "reason": "La logica strutturale del proxy trasferisce (campo ancora bilateralmente condiviso nella chiusura vs. adulto già ritirato che lascia il bambino nell'orientamento unilaterale). Ma la forma specifica — co-orientamento verso un oggetto spazialmente identificato in fase [F] — non è direttamente applicabile alla richiesta di aiuto, dove la 'difficoltà' può non avere un referente spaziale fisso analogo alla trottola. Adattamento necessario: ridefinire cosa costituisce 'campo ancora condiviso nella chiusura' per la specifica fenomenologia della richiesta di aiuto (es. entrambi ancora impegnati nell'azione collaborativa vs. adulto che si ritira dopo aver risolto il problema).",
+      "required_new_observations": [
+        "Struttura della risposta dell'adulto: entra nell'azione collaborativa (partecipativa) o risolve il problema per il bambino (chiudente)?",
+        "Struttura della chiusura: il bambino continua a impegnarsi con la difficoltà/soluzione insieme all'adulto (campo ancora condiviso) o si ritira immediatamente dopo la risposta dell'adulto (chiusura unilaterale)?",
+        "Presenza di un secondo beat relazionale dopo la prima risposta dell'adulto: il bambino ri-orienta verso l'adulto dopo la risposta iniziale, o la sequenza si chiude al primo beat?"
+      ]
+    }
+  ],
+
+  "observability_check": {
+    "minimum_observations_available": false,
+    "missing_observations": [
+      "Definizione operativa di 'co-orientamento verso la difficoltà' per il nuovo tema: cosa conta come equivalente funzionale dell'orientamento verso l'oggetto in fase [F]?",
+      "Forma corporea specifica dell'atto di richiesta di aiuto nel target age-group (comportamento motorio, sguardo, vocalizzazione): nessun obs_req equivalente a obs_req_1 del pointing è ancora definito",
+      "Struttura temporale della risoluzione della difficoltà: la 'chiusura' nella richiesta di aiuto ha struttura diversa da quella del pointing — richiede proprie condizioni di documentazione"
+    ],
+    "non_classifiability_risks": [
+      "Se le osservazioni minime non vengono ridefinite per il nuovo tema, il proxy adattato produrrà non_classificabile sistematicamente — non perché manchi la capacità discriminativa ma perché i requisiti di documentazione non corrispondono alla fenomenologia dell'atto",
+      "Il rischio opposto: se si usassero i requisiti di osservabilità del pointing senza adattamento, si misurerebbe qualcosa di diverso da ciò che si intende misurare — producendo classificazioni apparentemente valide ma non ancorate alla struttura del nuovo tema"
+    ]
+  },
+
+  "reduction_risks": [
+    {
+      "risk_type": "normatività",
+      "description": "Il comportamento di richiesta di aiuto è strutturalmente connesso a costrutti di autonomia, dipendenza e competenza che hanno forte saturazione normativa nei contesti clinici. Il dispositivo rischia di essere usato per valutare se il bambino 'chiede aiuto in modo appropriato', 'è troppo dipendente' o 'ha adeguata autonomia' — trasformando la lettura strutturale in giudizio normativo sull'individuo.",
+      "mitigation": "Il non_permitted_transformations del dispositivo deve includere esplicitamente il divieto di lettura normativa della dipendenza co-regolatoria. La distinzione strutturale rilevante non è 'quanta dipendenza' ma 'quale qualità strutturale della risposta co-regolatoria' — e la dipendenza non è un deficit."
+    },
+    {
+      "risk_type": "diagnosi",
+      "description": "La richiesta di aiuto è clinicamente associata a pattern di attaccamento, profili di autonomia, disturbi d'ansia, profili dello spettro autistico. Il dispositivo rischia di essere usato come strumento diagnostico indiretto per queste categorie — assorbendo la lettura configurazionale nel frame classificatorio già dato.",
+      "mitigation": "Il dispositivo legge la struttura configurazionale nell'atto specifico e nel contesto specifico — non misura un tratto del bambino. La non_permitted_transformation 'quando produce diagnosi o orienta verso categorie diagnostiche' deve essere resa ancora più esplicita nel dispositivo adattato."
+    },
+    {
+      "risk_type": "comportamentismo",
+      "description": "La richiesta di aiuto ha comportamenti facilmente operazionalizzabili: frequenza delle richieste, latenza della risposta dell'adulto, outcome della richiesta (problem solved / not solved). Il dispositivo rischia di essere ridotto a queste variabili perdendo la struttura configurazionale.",
+      "mitigation": "Identico all'interpretive_warning del pointing. Il counter-example chiave: un bambino che esegue molte richieste di aiuto ad alta frequenza con adulti che rispondono rapidamente può avere una struttura configurazionale completamente predeterminata — la frequenza non misura la qualità del campo."
+    },
+    {
+      "risk_type": "tecnicismo_riabilitativo",
+      "description": "Specifico della richiesta di aiuto: il dispositivo rischia di essere trasformato in protocollo di intervento per 'insegnare a chiedere aiuto' — producendo sequenze di comportamenti target (guardare l'adulto, emettere vocalizzazione, attendere risposta) che replicano la forma della configurazione senza la struttura. Questo trasforma il dispositivo di lettura in prescrizione comportamentale.",
+      "mitigation": "La non_permitted_transformation 'quando viene trasformato in linea guida di intervento terapeutico' si applica direttamente e deve essere mantenuta nel dispositivo adattato con particolare enfasi su questo rischio."
+    }
+  ],
+
+  "next_step_recommendation": {
+    "recommendation": "procedere_a_nuovo_dispositivo",
+    "reason": "La struttura configurazionale di base è sufficiente per procedere: core_configuration, assi, nodi (campo intenzionale e co-regolazione integrali), logica di non-classificabilità, e distinzione passaggio aperto vs. predeterminato sono trasferibili con adattamenti gestibili. Il lavoro necessario prima di costruire il dispositivo è: (1) ridefinire la dimensione 'Base corporea del gesto' per l'atto specifico di richiesta di aiuto; (2) riformulare il bridge concept e i suoi proxy operativi per la fenomenologia della richiesta (il co-orientamento verso la difficoltà come problema condiviso); (3) definire i nuovi requisiti di osservabilità per il proxy adattato. Questi tre punti non richiedono un ulteriore step di raffinamento preliminare ma sono il contenuto del nuovo dispositivo."
+  }
+}

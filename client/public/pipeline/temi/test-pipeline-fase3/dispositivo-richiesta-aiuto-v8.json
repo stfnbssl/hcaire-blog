@@ -1,0 +1,346 @@
+{
+  "step": "f3_step_9",
+  "device": {
+    "device_id": "tema-02-richiesta-aiuto-clinico-dispositivo-v8",
+    "theme_id": "richiesta-di-aiuto-come-apertura-di-campo-relazionale",
+    "domain": "clinico (neurosviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+    "device_type": "dispositivo_di_lettura_configurazionale",
+    "function": "Il dispositivo rende leggibile la richiesta di aiuto del bambino non come comportamento adattivo né come segnale di dipendenza, ma come configurazione relazionale a duplice riferimento simultaneo (corpo-bambino orientato al adulto IN RELAZIONE A un riferimento di bisogno strutturalmente identificabile) il cui esito strutturale dipende dalla saldatura sequenziale tra apertura corporea del bambino e turno strutturale dell'adulto. Colma il 'cieco clinico' tipico in cui la richiesta è valutata sull'esito pragmatico (ottenere/non ottenere aiuto) o sul registro affettivo (cercare conforto / esprimere frustrazione), mancando la lettura della struttura del campo che si costituisce — o non si costituisce — come atto co-prodotto. Cambia la domanda clinica da 'il bambino sa chiedere aiuto?' (lettura prestazionale) e 'l'adulto risponde adeguatamente?' (lettura normativa) a 'come si configura la struttura del campo nella sequenza T1-T2-T3, e con quale grado di apertura/predeterminazione si costituisce — o non si costituisce — l'atto-richiesta come unità relazionale?'.",
+    "structural_reference": {
+      "core_configuration": "Sequenza relazionale a tre turni (T1-T2-T3) in cui T1 è una configurazione corporea del bambino di duplice orientamento simultaneo (verso l'adulto e verso un riferimento di bisogno esterno strutturalmente identificabile), T2 è il turno dell'adulto codificato in due componenti indipendenti (P-component di presenza nel campo e E-component di presa esecutiva), T3 è la continuazione del bambino codificata come tipologia strutturale (modulazione / sostegno / chiusura / ripetizione / nuova-apertura). La configurazione nucleare non è il singolo gesto né l'esito pragmatico, ma la struttura sequenziale della saldatura T1→T2→T3 letta come costituzione (o non-costituzione) del campo della richiesta come atto co-prodotto.",
+      "axes": [
+        "asse della corporeità configurazionale (struttura della postura di apertura sostenuta vs. gesto fugace; duplice orientamento vs. orientamento singolo)",
+        "asse della separabilità strutturale delle componenti del turno adulto (P-component separabile da E-component vs. P-component assente o non separabile)",
+        "asse della modulazione del turno bambino in T3 (modulazione strutturale vs. chiusura / ripetizione lineare / nuova apertura indipendente)",
+        "asse del livello di lettura (singolo episodio vs. sequenza multi-episodica con variazione del riferimento di bisogno)",
+        "asse della separazione tra struttura del campo ed esito pragmatico (configurazione costituita indipendentemente dal soddisfacimento; soddisfacimento non costitutivo della configurazione)"
+      ],
+      "nodi": [],
+      "nodes": [
+        "T1 — apertura corporea del bambino (configurazione di duplice orientamento + riferimento di bisogno + traccia esterna del gesto)",
+        "T2 — turno dell'adulto (codifica indipendente di P-component e E-component, con latenza T1→E strutturalmente leggibile)",
+        "T3 — continuazione del bambino (tipologia strutturale: modulazione / sostegno-senza-modulazione / chiusura-immediata / ripetizione-lineare / nuova-apertura-indipendente)",
+        "saldatura sequenziale (relazione strutturale tra apertura di T1, separabilità di T2 e modulazione di T3 che costituisce — o non costituisce — il campo della richiesta come atto)",
+        "riferimento di bisogno (oggetto fuori portata, ostacolo, blocco di un'azione, condizione corporea di difficoltà — strutturalmente identificabile dall'osservatore esterno indipendentemente da inferenza sull'intenzione)",
+        "baseline-di-genere (repertorio strutturale documentato delle configurazioni tipiche di P/E in T2 e di modulazione di T3 nel sotto-dominio omogeneo di scambi richiesta-e-aiuto)"
+      ],
+      "bridge_concepts": [
+        "saldatura sequenziale tra apertura corporea di T1 e turno strutturale di T2 come costituzione del campo della richiesta come atto co-prodotto, distinta — e separabile — dall'esito pragmatico (soddisfacimento del bisogno)",
+        "duplice riferimento simultaneo (corpo orientato al adulto E al riferimento di bisogno) come firma corporea della richiesta, distinta dal riferimento singolo del pointing precoce (corpo orientato a un oggetto/evento con adulto come terzo polo)",
+        "separabilità strutturale di P-component ed E-component nel turno T2 dell'adulto come elemento discriminante della struttura del campo, indipendente dalla qualità della cura e dalla responsività affettiva"
+      ]
+    },
+    "reading_focus": [
+      {
+        "dimension": "base corporea",
+        "description": "Lettura della firma corporea della richiesta come configurazione a duplice riferimento simultaneo strutturalmente sostenuta nel tempo. Tracce strutturali identificabili: (a) duplice orientamento simultaneo del corpo del bambino — verso l'adulto E verso un riferimento di bisogno strutturalmente identificabile dall'osservatore esterno (oggetto fuori portata, ostacolo fisico, blocco di un'azione in corso, condizione corporea di difficoltà); (b) alternanza di sguardo bambino-adulto / bambino-riferimento-di-bisogno riconoscibile come struttura sequenziale e non come singolo episodio attentivo; (c) postura sostenuta della configurazione di apertura — il corpo mantiene la configurazione finché l'adulto non entra nel campo, distinta da un gesto fugace; (d) traccia esterna del gesto (vocalizzazione, condotta di richiamo, gesto di porgere) come canale verificabile dell'apertura, NON come correlato necessario — la richiesta può essere costituita come configurazione corporea senza vocalizzazione esplicita, e una vocalizzazione di alta intensità senza configurazione corporea non costituisce richiesta; (e) modulabilità della configurazione corporea in T3 in funzione della tipologia di T2 — la postura non è unità rigida ma apertura che attende elaborazione strutturale. Differenza strutturale dal pointing precoce: il pointing ha riferimento singolo (oggetto/evento + adulto come terzo polo che riceve l'orientamento); la richiesta ha duplice riferimento simultaneo (adulto IN RELAZIONE A un riferimento di bisogno). Conseguenze di lettura: il riferimento esterno non è oggetto da co-percepire ma situazione-di-bisogno che apre uno spazio di azione possibile per l'adulto. Zone di sovrapposizione dichiarate: configurazioni in cui il riferimento di bisogno è indeterminato tra opzioni multiple non discriminabili sono dichiarate non leggibili strutturalmente, non risolte per inferenza.",
+        "axis": "asse della corporeità configurazionale"
+      },
+      {
+        "dimension": "campo intenzionale",
+        "description": "Lettura della struttura del campo intenzionale aperto da T1 come spazio relazionale a quattro stati distinguibili: (1) campo aperto con riferimento di bisogno strutturalmente identificabile (configurazione T1 piena: duplice orientamento + riferimento esterno leggibile + traccia gestuale + postura sostenuta); (2) campo aperto con riferimento di bisogno indeterminato (configurazione T1 con apertura corporea ma riferimento esterno non strutturalmente identificabile o ambiguo tra opzioni multiple); (3) gesto senza apertura di campo (traccia gestuale o vocalizzazione presente ma assenza di configurazione di duplice orientamento o di postura sostenuta — non costituisce T1); (4) campo non aperto (assenza delle tracce strutturali di T1, indipendentemente dalla presenza di altre forme di scambio diadico). Condizioni di distinguibilità: i quattro stati sono distinguibili solo in presenza del canale audio-video integro e con riferimento alla baseline-di-genere; in assenza di una di queste, gli stati (1) e (2) collassano e l'episodio è dichiarato non strutturalmente leggibile per questa dimensione. Il campo intenzionale qui letto NON è 'l'intenzione del bambino' (inferenza proibita) ma la struttura osservabile dello spazio relazionale aperto dalla configurazione corporea — è una proprietà del setting sequenziale, non uno stato mentale. Zone di sovrapposizione dichiarate: tra (2) e (3) esiste una zona di sovrapposizione in scambi pragmaticamente densi in cui la postura sostenuta è confusa con persistenza esecutiva; la zona è dichiarata, non risolta interpretativamente.",
+        "axis": "asse della corporeità configurazionale + asse della separazione tra struttura del campo ed esito pragmatico"
+      },
+      {
+        "dimension": "co-regolazione",
+        "description": "Lettura della co-regolazione tra apertura corporea del bambino e turno strutturale dell'adulto come struttura sequenziale a cinque livelli distinguibili sulla saldatura T1→T2→T3: (L1) saldatura piena — T2 con P-component separabile e modulazione strutturale di T3, configurazione di campo costituito come atto co-prodotto (leggibile robustamente solo a livello sequenza con variazione del riferimento di bisogno); (L2) saldatura asimmetrica con presenza non modulata — T2 con P-component presente ma T3 senza modulazione strutturale (sostegno-senza-modulazione o chiusura-immediata), il campo è offerto ma non si attiva la dinamica di elaborazione; (L3) saldatura asimmetrica con esecuzione senza presenza — T2 con E-component presente e P-component assente, T3 con chiusura-immediata o ripetizione-lineare, configurazione di campo non costituito come atto (leggibile su singolo episodio solo in conformazione conjuntiva strutturalmente vincolata: E-only + P-assente con tracce verificabili + latenza compressa + riferimento di bisogno non riducibile a singola azione esecutiva); (L4) saldatura interrotta — T2 con assenza di entrambe le componenti o con P/E non separabili, T3 con nuova-apertura-indipendente o chiusura-immediata, struttura della saldatura non identificabile; (L5) saldatura non leggibile — codifica indipendente di P/E non realizzabile per inadeguatezza del canale o per descrizione di T2 in registro affettivo-attribuzionale (corrisponde alla zona di non_classificabilità). I cinque livelli NON sono una scala normativa (non c'è 'migliore' e 'peggiore'): sono cinque configurazioni strutturali distinte. La distinzione di L1 da L3 NON passa per il soddisfacimento pragmatico della richiesta — un T2 con P-only senza esecuzione (richiesta NON soddisfatta) può produrre L1; un T2 con E-only seguito da soddisfacimento può produrre L3. Zone di sovrapposizione dichiarate: tra L2 e L3 esiste sovrapposizione in scambi pragmaticamente abbreviati come convenzione di genere; la baseline-di-genere è precondizione di discriminabilità.",
+        "axis": "asse della separabilità strutturale delle componenti del turno adulto + asse della modulazione del turno bambino in T3"
+      },
+      {
+        "dimension": "mediazione simbolica",
+        "description": "Lettura della mediazione simbolica come grado e modalità di articolazione del riferimento di bisogno nel turno adulto — distinta dalla pura presa esecutiva. Tracce strutturali identificabili: (a) ri-articolazione verbale o gestuale della situazione-di-bisogno aperta da T1 in una forma che non è derivabile come pura conseguenza esecutiva (esempio: l'adulto nomina l'oggetto o la situazione, riformula la posizione del bambino, sostiene linguisticamente il campo aperto prima/durante/indipendentemente dalla presa); (b) sostegno della posizione del bambino come ri-articolazione gestuale-posturale (l'adulto si abbassa, si orienta, si pone in posizione di campo condiviso) prima/indipendentemente dall'esecuzione; (c) attenzione sostenuta strutturata e non automatica — leggibile come continuità di orientamento dell'adulto verso il riferimento di bisogno aperto da T1, distinta dall'attivazione esecutiva immediata. La mediazione simbolica nel tema della richiesta NON è 'il caregiver verbalizza correttamente l'esperienza del bambino' (lettura normativa proibita): è la presenza di tracce strutturali separabili dalla componente esecutiva, indipendentemente dalla loro qualità linguistica o affettiva. Una mediazione simbolica ricca senza separabilità da E (es: l'adulto nomina mentre prende, in unità non scomponibile) NON è codificata come P-component. La distinzione richiede competenza media dell'osservatore e NON è risolvibile in assenza di baseline-di-genere documentata. Zone di sovrapposizione dichiarate: in scambi in cui T2 è strutturalmente unitario (richiesta-di-oggetto-fuori-portata + azione-di-porgere-l'oggetto), la separabilità di P/E è strutturalmente non distinguibile e il proxy è applicabile ma produce esito 'ambiguo' per indistinguibilità strutturale.",
+        "axis": "asse della separabilità strutturale delle componenti del turno adulto"
+      },
+      {
+        "dimension": "struttura del passaggio trasformativo",
+        "description": "Lettura del passaggio trasformativo come saldatura sequenziale T1→T2→T3 che costituisce — o non costituisce — il campo della richiesta come atto co-prodotto. Punto di partenza: configurazione corporea di apertura del bambino in presenza di un riferimento di bisogno strutturalmente identificabile, in cui esiste una posa di apertura ma non esiste ancora una richiesta come atto semiotico co-prodotto. Punto di arrivo: campo della richiesta strutturalmente costituito come atto co-prodotto, in cui apertura corporea e turno strutturale dell'adulto si saldano in un'unità sequenziale leggibile come 'questo è una richiesta' indipendentemente dall'esito esecutivo. Il passaggio è osservabile come struttura della sequenza (separabilità delle componenti di T2, modulazione di T3, latenza T1→E, livello di lettura), NON come stato dell'evento. Forma aperta: T2 con P-component separabile + T3 con modulazione strutturale (saldatura piena al livello sequenza con variazione del riferimento di bisogno). Forma predeterminata: T2 con E-only + P-assente + latenza compressa + riferimento di bisogno non riducibile a singola azione + T3 con chiusura-immediata o ripetizione-lineare (saldatura asimmetrica leggibile su singolo episodio solo in conformazione conjuntiva vincolata). Forma ambigua: applicabilità piena del proxy ma esiti dei test interni incoerenti, oppure indistinguibilità strutturale come in scambi pragmaticamente unitari. La dimensione è leggibile in modo descrittivo SENZA usare il proxy operativo — il proxy serve a classificare il bridge (a/p/ambiguo/non_classificabile) ma la lettura strutturale del passaggio (presenza/assenza di saldatura, tipo di saldatura, livello di leggibilità) è autonoma rispetto alla classificazione e fornisce la base osservativa su cui il proxy opera.",
+        "axis": "asse del livello di lettura + asse della separazione tra struttura del campo ed esito pragmatico"
+      }
+    ],
+    "access_points": [
+      {
+        "label": "interazione spontanea diadica con materiali aperti",
+        "description": "Sessione di gioco libero o di esplorazione di materiali aperti (oggetti contenuti in un cesto fuori portata; materiali che richiedono manipolazione in più fasi; ambienti con piccoli ostacoli percorribili). Cosa rende osservabile: contesto in cui è probabile che emergano riferimenti di bisogno spontaneamente strutturati (oggetti fuori portata, blocchi di azione in corso) e in cui T2 dell'adulto può articolarsi in P-component ed E-component senza forzature di setting. Permette di osservare la firma corporea della richiesta senza induzione e di cogliere la modulazione di T3 in tempo reale. Dove può fallire: in diadi in cui il caregiver tende a anticipare strutturalmente i bisogni (riducendo a zero la latenza T1→E) il dispositivo registra sistematicamente E-only senza poter discriminare se la P-component è strutturalmente assente o solo non visibile per anticipazione; in diadi molto silenziose, dove la traccia esterna di T1 è scarsa, il dispositivo può perdere T1 come unità identificabile e produrre non_classificabile per assenza del nodo iniziale."
+      },
+      {
+        "label": "momento di difficoltà reale (non indotta)",
+        "description": "Osservazione di un momento in cui il bambino incontra un ostacolo reale nell'ambiente (oggetto bloccato, posizione corporea fallita, materiale rotto) durante un'attività spontanea. Cosa rende osservabile: il riferimento di bisogno è strutturalmente identificabile dall'osservatore esterno con bassissima dipendenza interpretativa, e la sequenza T1-T2-T3 si costituisce con motivazione strutturale interna alla situazione, non per sollecitazione esterna. È il contesto privilegiato per la codifica robusta di O2 (riferimento di bisogno) e per la lettura della separabilità P/E in T2 con riferimento conteso (perché c'è un'azione esecutiva strutturalmente possibile). Dove può fallire: la rarità del momento di difficoltà reale durante una sessione osservativa limita la probabilità di raccogliere sequenze multiple richieste per la classificazione 'aperto'; il rischio di induzione implicita (l'osservatore o il setting predispongono difficoltà) compromette la spontaneità del riferimento di bisogno e introduce un confound di setting non controllato."
+      },
+      {
+        "label": "richiesta di aiuto indotta strutturalmente (con dichiarazione esplicita)",
+        "description": "Setting in cui l'osservatore introduce esplicitamente un compito che richiede aiuto adulto (es: oggetto in contenitore con apertura difficile, attività che richiede manipolazione coordinata) dichiarando l'induzione e mantenendo costante il tipo di riferimento di bisogno tra episodi. Cosa rende osservabile: permette la raccolta di episodi multipli con riferimenti di bisogno strutturalmente diversi richiesta per la classificazione 'aperto' a livello sequenza; permette la variazione controllata del riferimento di bisogno per discriminare la struttura del campo dall'esito pragmatico (test della lettura inversa). Dove può fallire: l'induzione strutturata cambia la natura della richiesta — il bambino può rispondere a un'aspettativa esterna di richiesta invece di produrre richieste motivate da bisogni strutturali interni; l'adulto può modulare il proprio T2 in modo non rappresentativo (sapere di essere osservato in un setting di richiesta induce sovra-articolazione della P-component); la baseline-di-genere applicabile diventa quella del setting indotto, non quella della diade in interazione spontanea, e la trasferibilità della classificazione è limitata."
+      },
+      {
+        "label": "colloquio caregiver con descrizione di episodi recenti",
+        "description": "Colloquio strutturato in cui il caregiver descrive episodi recenti di richiesta di aiuto del bambino. Cosa rende osservabile: permette accesso a episodi che non sono osservabili direttamente (richieste in casa, in contesti privati); permette di sondare la baseline-di-diade attraverso il repertorio di episodi accumulato; informa il setting osservativo successivo sulla tipologia di riferimenti di bisogno tipici della diade. Dove può fallire: è il contesto strutturalmente più rischioso per il dispositivo — la descrizione del caregiver è una ricostruzione narrativa quasi inevitabilmente inscritta in registro affettivo-attribuzionale ('cerca conforto', 'manifesta dipendenza', 'sa chiedere aiuto in modo maturo') che NON è convertibile nelle variabili O1-O5 senza inferenze proibite; il dispositivo deve esplicitamente NON applicarsi ai contenuti del colloquio per produrre classificazioni e deve usarli solo per orientamento del setting osservativo successivo; in qualsiasi caso in cui si tenti di applicare il proxy a un episodio descritto e non osservato, il required_output è non_classificabile per attivazione di NA5/NA7 ereditati dal dispositivo sorgente."
+      }
+    ],
+    "structural_questions": [
+      "Lettura episodio — apertura T1: la configurazione corporea del bambino in T1 presenta tutte e tre le tracce strutturali (duplice orientamento corpo-bambino-adulto / corpo-bambino-riferimento-di-bisogno; postura sostenuta nel tempo; traccia esterna del gesto come vocalizzazione, porgere o condotta di richiamo)? Quale di queste tracce è dominante e quale è marginale? È identificabile strutturalmente dall'osservatore esterno il riferimento di bisogno verso cui la configurazione è orientata (oggetto, ostacolo, blocco di azione, condizione corporea), o il riferimento è indeterminato tra opzioni multiple non discriminabili?",
+      "Lettura episodio — turno T2: nel turno dell'adulto sono codificabili indipendentemente una E-component (presenza/assenza di presa esecutiva sul riferimento di bisogno) e una P-component (presenza/assenza di un turno di presenza strutturalmente separabile: ri-articolazione verbale o gestuale della situazione di T1, sostegno della posizione del bambino con tracce verificabili, attenzione sostenuta strutturata e non automatica)? La P-component, se identificata, ha tracce strutturalmente separate dalla E-component, oppure è derivabile come effetto collaterale dell'esecuzione? Qual è la latenza temporale strutturale tra T1 e l'eventuale E-component (compressa o non compressa)?",
+      "Lettura episodio — modulazione T3: la continuazione del bambino in T3 è codificabile come modulazione-strutturale (trasformazione della forma del segnale di apertura), sostegno-senza-modulazione (mantenimento della postura senza trasformazione), chiusura-immediata (estinzione della postura), ripetizione-lineare (ripetizione identica del segnale di T1) o nuova-apertura-indipendente (segnale di apertura su un nuovo riferimento di bisogno non collegato al precedente)? La tipologia di T3 è in relazione strutturalmente leggibile con la tipologia di T2 (P-component, E-component, separabilità)?",
+      "Lettura episodio — saldatura sequenziale: la sequenza T1-T2-T3 nel suo insieme presenta una struttura di saldatura tra apertura corporea e turno strutturale dell'adulto che costituisce il campo della richiesta come atto co-prodotto, oppure la saldatura non si costituisce? Se non si costituisce, la non-costituzione è leggibile come saldatura asimmetrica con presenza non modulata (L2), saldatura asimmetrica con esecuzione senza presenza (L3), saldatura interrotta (L4), o saldatura non leggibile (L5)? La lettura della saldatura è indipendente dall'esito pragmatico (la richiesta è stata o non è stata soddisfatta esecutivamente)?",
+      "Lettura multi-livello — vincolo di freeze: gli episodi disponibili presentano riferimenti di bisogno strutturalmente diversi tra loro, registrati nello stesso contesto diadico con la stessa qualità di canale? Senza tale variazione, la classificazione 'aperto' non è strutturalmente accessibile e il livello di lettura deve essere congelato al singolo episodio. Mantenuto il freeze, ciascun episodio si presta solo a 'predeterminato' (sotto la conjunzione vincolata), 'ambiguo' (esito legittimo), o 'non_classificabile' (sospensione del dispositivo); 'aperto' è inaccessibile e non deve essere prodotto come ipotesi su singolo episodio.",
+      "Lettura multi-livello — confronto tra episodi: nei diversi episodi di richiesta di aiuto registrati per la stessa diade, la struttura di P/E in T2 e la modulazione di T3 mostrano variazione strutturale leggibile, oppure restano costanti? La variazione è in relazione strutturale con la variazione del riferimento di bisogno, oppure è indipendente da questa? Le configurazioni più ricorrenti sono compatibili con saldatura piena (L1), con saldatura asimmetrica (L2/L3), o con assenza/non-leggibilità della saldatura (L4/L5)?",
+      "Lettura del setting osservativo: il canale di registrazione (audio + video con visibilità della diade completa) è adeguato per la codifica indipendente di P/E in T2 e della tipologia di T3? La baseline-di-genere documentata per scambi di richiesta-e-aiuto nel sotto-dominio omogeneo della diade è disponibile? In assenza di una di queste condizioni il dispositivo è in sospensione e nessuna delle domande precedenti produce classificazione."
+    ],
+    "operative_proxies": [
+      {
+        "proxy_id": "proxy-01-separabilità-PE-modulazione-T3",
+        "dimension": "struttura del passaggio trasformativo",
+        "proxy_name": "Separabilità strutturale tra componente di presenza (P-component) e componente di presa esecutiva (E-component) nel turno T2 dell'adulto, e modulazione di T3 in funzione di tale separabilità (versione operativa con condizioni di applicabilità)",
+        "what_it_measures": "Discrimina, all'interno della saldatura sequenziale T1→T2→T3, tre stati strutturali della costituzione del campo della richiesta: (a) costituzione del campo come atto co-prodotto (apertura), in cui T2 contiene una P-component strutturalmente separabile dalla E-component e T3 produce modulazione strutturale; (b) non-costituzione del campo come atto co-prodotto (predeterminazione), in cui T2 è strutturato come E-only con P-component assente in tracce verificabili, latenza T1→E compressa, riferimento di bisogno non riducibile a singola azione, e T3 produce chiusura-immediata o ripetizione-lineare; (c) ambiguità strutturale, esito legittimo quando i test interni non convergono o quando lo scambio è strutturalmente unitario. Il proxy NON misura la qualità della cura, NON misura la responsività affettiva, NON misura il successo pragmatico della richiesta. Opera al livello SEQUENZA per 'aperto', al livello SINGOLO EPISODIO per 'predeterminato' (sotto conjunzione vincolata) e per 'ambiguo'.",
+        "required_observations": [
+          "O1 — configurazione corporea di apertura di T1 (duplice orientamento + postura sostenuta + traccia esterna del gesto): tutte e tre le tracce strutturali presenti in forma verificabile",
+          "O2 — riferimento di bisogno di T1 strutturalmente identificabile dall'osservatore esterno (oggetto fuori portata, ostacolo, blocco di azione, condizione corporea di difficoltà)",
+          "O3 — codifica di T2 in due componenti indipendenti: E-component (presenza/assenza di presa esecutiva su O2) e P-component (presenza/assenza di turno di presenza strutturalmente separabile da E)",
+          "O4 — latenza T1→E-component strutturalmente leggibile (compressa o non compressa, codifica qualitativa-strutturale)",
+          "O5 — tipologia di T3 codificata in cinque stati: modulazione-strutturale / sostegno-senza-modulazione / chiusura-immediata / ripetizione-lineare / nuova-apertura-indipendente",
+          "O6 — baseline-di-genere documentata per scambi di richiesta-e-aiuto nel sotto-dominio omogeneo della diade osservata, dichiarata esplicitamente",
+          "O7 — canale di registrazione audio + video con visibilità della diade completa, qualità sufficiente per identificare orientamento corporeo, sguardo, gesto, vocalizzazione e azione esecutiva",
+          "O8 — per classificazione 'aperto': disponibilità di almeno due episodi di richiesta di aiuto con riferimenti di bisogno strutturalmente diversi tra loro, registrati nello stesso contesto diadico con la stessa qualità di canale"
+        ],
+        "applicability_conditions": [
+          "C1 — sequenza T1-T2-T3 con tutti e tre i nodi identificabili come unità (O1, O2, O3, O5 disponibili)",
+          "C2 — T1 con configurazione corporea piena (tre tracce di O1) e riferimento di bisogno strutturalmente identificabile (O2)",
+          "C3 — T2 codificabile indipendentemente in P-component ed E-component sulla base di tracce strutturali separabili (O3); la P-component identificata SOLO se ha tracce verificabili strutturalmente separate dalla E-component",
+          "C4 — T3 codificabile nella tipologia strutturale a cinque stati (O5) sulla base di tracce verificabili",
+          "C5 — baseline-di-genere documentata e dichiarata esplicitamente per il sotto-dominio omogeneo della diade osservata (O6)",
+          "C6 — canale di registrazione audio + video integro (O7); audio-only insufficiente; note osservative senza video insufficienti",
+          "C7 — sequenza T1-T2-T3 attribuibile a una diade unitaria (un singolo polo bambino, un singolo polo adulto), senza distribuzione di T2 su attori multipli e senza turni intermedi di terzi che spezzano l'unità di analisi",
+          "C8 — per classificazione 'aperto': disponibilità della sequenza multi-episodica con variazione del riferimento di bisogno (O8); in assenza, l'esito massimo accessibile è 'ambiguo' o 'predeterminato' (sotto conjunzione)"
+        ],
+        "non_applicability_conditions": [
+          "NA1 — manca uno dei tre turni T1, T2, T3 come unità identificabile, o T1 manca di una delle tre tracce strutturali di O1",
+          "NA2 — riferimento di bisogno di T1 non identificabile strutturalmente (assente, indeterminato tra opzioni multiple non discriminabili, o ricostruito per inferenza)",
+          "NA3 — T3 descritto solo in registro qualitativo-interpretativo o affettivo-attribuzionale ('cerca conforto', 'manifesta dipendenza', 'esprime frustrazione') senza tracce verificabili convertibili in O5",
+          "NA4 — baseline-di-genere assente o dichiarata genericamente senza riferimenti documentati per il sotto-dominio omogeneo della diade",
+          "NA5 — episodio ricostruito a memoria, da appunti riassuntivi non letterali, da terze fonti, o riportato in colloquio caregiver senza osservazione diretta",
+          "NA6 — sequenza con complicazioni strutturali non riducibili a T1-T2-T3 (turni intermedi di terzi, sovrapposizioni, T2 distribuito su attori multipli senza attribuzione unitaria, auto-correzioni che spezzano T2)",
+          "NA7 — case_description disponibile solo in registro pre-strutturato/affettivo-attribuzionale senza versione fenomenica osservativa, o identificazione della P-component fondata su inferenze affettive ('l'adulto sembra attento', 'risponde con cura') in assenza di tracce strutturali verificabili",
+          "NA8 — episodio singolo isolato in cui la conjunzione strutturale della classificazione 'predeterminato' non è soddisfatta E la sequenza multi-episodica non è disponibile (il dispositivo non può scendere a 'ambiguo' che richiede applicabilità piena, né salire a 'aperto' che richiede sequenza)",
+          "NA9 — l'unica variabile osservabile che differenzia gli episodi disponibili è il soddisfacimento pragmatico della richiesta (sì/no) senza tracce strutturali indipendenti di P/E in T2 e di modulazione in T3 (la lettura inversa pragmatico-funzionalista non è confutabile)",
+          "NA10 — canale di registrazione inadeguato per la codifica di P/E in T2 e della tipologia di T3 (audio-only, video parziale, qualità insufficiente)"
+        ],
+        "decision_logic": "PASSO 1 — Verifica delle condizioni di applicabilità C1-C8. Se anche una sola condizione NA1-NA10 è attivata → restituire 'non_classificabile' indicando la condizione attivante; il dispositivo si arresta. PASSO 2 — Se C1-C7 sono soddisfatte (e C8 è verificata o no), eseguire codifica strutturale: (a) tipologia T2 in {E-only, P-only, E+P-separabili, E+P-non-separabili, assenza}; (b) tipologia T3 in {modulazione-strutturale, sostegno-senza-modulazione, chiusura-immediata, ripetizione-lineare, nuova-apertura-indipendente}; (c) latenza T1→E in {compressa, non-compressa, non-applicabile}; (d) riferimento di bisogno O2 in {riducibile-a-singola-azione, non-riducibile-a-singola-azione}. PASSO 3 — Verifica della conjunzione vincolata per 'predeterminato' su singolo episodio: T2 = E-only AND P-component assente con tracce verificabili di assenza AND T3 ∈ {chiusura-immediata, ripetizione-lineare} AND latenza = compressa AND riferimento di bisogno = non-riducibile-a-singola-azione. Se TUTTE le condizioni soddisfatte → 'predeterminato'. PASSO 4 — Verifica della soglia sequenziale per 'aperto': C8 soddisfatta (≥2 episodi con riferimenti di bisogno strutturalmente diversi nella stessa diade con stesso canale) AND ricorrenza in entrambi gli episodi di T2 = E+P-separabili AND T3 = modulazione-strutturale. Se TUTTE le condizioni soddisfatte → 'aperto'. PASSO 5 — Tutto ciò che NON soddisfa la conjunzione di PASSO 3 e NON raggiunge la soglia di PASSO 4 ed è applicabile (PASSO 1 superato) → 'ambiguo' (esito legittimo del proxy applicabile). PASSO 6 — Restituzione dell'esito in {aperto, predeterminato, ambiguo}. In NESSUN caso il dispositivo produce esito 'aperto' su singolo episodio, anche con C1-C7 piene; in NESSUN caso il dispositivo produce esito intermedio o probabilistico; in NESSUN caso il dispositivo bilancia o compensa una condizione NA mancante.",
+        "allowed_outputs": [
+          "aperto",
+          "predeterminato",
+          "ambiguo",
+          "non_classificabile"
+        ],
+        "epistemic_limit": "Il proxy non risolve il problema epistemico fondamentale di distinguere co-produzione effettiva da script bilaterale ben sintonizzato: la distinzione richiede informazione che eccede il singolo episodio (variazione strutturale del riferimento di bisogno in episodi multipli). Il proxy fa l'unica cosa metodologicamente onesta possibile: (a) sposta la robustezza richiesta dal contenuto qualitativo del singolo evento alla struttura osservabile della sequenza; (b) dichiara esplicitamente le precondizioni osservative di applicabilità; (c) introduce 'non_classificabile' come esito legittimo quando le precondizioni mancano, prevenendo falsi positivi mascherati da risultati strutturali; (d) introduce asimmetria di livello tra 'aperto' (livello sequenza obbligatorio) e 'predeterminato' (livello singolo episodio sotto conjunzione vincolata), riconoscendo come proprietà del fenomeno — non come difetto del proxy — il fatto che la non-costituzione del campo è leggibile su episodio singolo mentre la costituzione richiede ricorrenza multi-episodica con variazione del riferimento. Il limite residuo specifico del nuovo tema: in scambi pragmaticamente unitari (richiesta-di-oggetto-fuori-portata + azione-di-porgere-l'oggetto come unità non scomponibile) la separabilità di P/E è strutturalmente non distinguibile dall'osservazione, indipendentemente dalla qualità del canale o dalla baseline. Tali casi sono classificati 'ambiguo' per indistinguibilità strutturale del fenomeno, non per imprecisione del proxy."
+      }
+    ],
+    "observability_requirements": [
+      {
+        "id": "O1",
+        "label": "Configurazione corporea di apertura di T1",
+        "description": "Identificazione delle tre tracce strutturali della firma corporea della richiesta: (a) duplice orientamento simultaneo (corpo del bambino orientato verso l'adulto E verso il riferimento di bisogno, con alternanza di sguardo bambino-adulto / bambino-riferimento riconoscibile come struttura sequenziale); (b) postura sostenuta della configurazione di apertura per un tempo strutturalmente leggibile, distinta da gesto fugace; (c) traccia esterna del gesto (vocalizzazione, condotta di richiamo, gesto di porgere, postura sostenuta) come canale verificabile dell'apertura. Tutte e tre le tracce devono essere presenti in forma verificabile per costituire un T1 valido. Una traccia mancante invalida l'identificazione del nodo iniziale e attiva NA1.",
+        "type": "diretto",
+        "observer_dependency": "bassa",
+        "required_for_proxy": true,
+        "protocol_note": "La codifica di O1 deve essere fatta in finestra pre-risposta — prima di osservare T2 dell'adulto — per evitare che la lettura di T1 sia retroattivamente modulata dalla risposta osservata."
+      },
+      {
+        "id": "O2",
+        "label": "Riferimento di bisogno di T1 strutturalmente identificabile",
+        "description": "Identificazione strutturale del riferimento esterno verso cui la configurazione corporea di T1 è orientata: oggetto fuori portata, ostacolo fisico, blocco di un'azione in corso, condizione corporea di difficoltà. L'identificazione deve essere indipendente dall'inferenza sull'intenzione del bambino e basata su elementi del setting fenomenicamente osservabili. Riferimenti indeterminati tra opzioni multiple non discriminabili attivano NA2.",
+        "type": "diretto",
+        "observer_dependency": "bassa",
+        "required_for_proxy": true,
+        "protocol_note": "L'identificazione del riferimento di bisogno è centrale per la discriminazione tra 'riducibile a singola azione' (es: prendere oggetto fuori portata) e 'non riducibile a singola azione' (es: situazione complessa che richiede mediazione strutturale): questa distinzione condiziona la conjunzione vincolata della classificazione 'predeterminato'."
+      },
+      {
+        "id": "O3",
+        "label": "Codifica indipendente di P-component ed E-component in T2",
+        "description": "Codifica del turno T2 dell'adulto in due componenti strutturalmente indipendenti: E-component (presenza/assenza di presa esecutiva sull'oggetto/situazione/ostacolo identificato in O2: l'adulto raggiunge l'oggetto, rimuove l'ostacolo, esegue l'azione) e P-component (presenza/assenza di un turno di presenza strutturalmente separabile: ri-articolazione verbale o gestuale della situazione di T1 in forma non derivabile come pura conseguenza esecutiva, sostegno della posizione del bambino con tracce verificabili prima/durante/indipendentemente dalla presa, attenzione sostenuta strutturata e non automatica). La P-component è identificata come presente SOLO se ha tracce verificabili strutturalmente separate dalla E-component — questo è il punto di lavoro semiotico maggiore richiesto all'osservatore. Identificazione di P via inferenze affettive ('l'adulto sembra attento', 'risponde con cura') in assenza di tracce strutturali attiva NA7.",
+        "type": "con_mediazione",
+        "observer_dependency": "media",
+        "required_for_proxy": true,
+        "protocol_note": "La codifica indipendente richiede competenza media nell'identificazione di tracce strutturali separabili e baseline-di-genere documentata (O6) come riferimento di calibrazione. Senza baseline, ciò che vale come 'P-component separabile' diventa arbitrario."
+      },
+      {
+        "id": "O4",
+        "label": "Latenza temporale strutturalmente leggibile T1→E-component",
+        "description": "Codifica qualitativa-strutturale (NON quantitativa-cronometrica) della latenza tra la chiusura di T1 e l'inizio dell'eventuale E-component di T2: distinzione tra latenza compressa (E-component prodotta in modo strutturalmente sovrapposto a T1, sintomo di anticipo esecutivo) e latenza non compressa (presenza di un intervallo strutturale in cui può inscriversi una P-component). La codifica è ancorata alla struttura osservabile della sequenza, non al cronometro.",
+        "type": "diretto",
+        "observer_dependency": "bassa",
+        "required_for_proxy": true,
+        "protocol_note": "La latenza compressa è una delle quattro condizioni della conjunzione vincolata della classificazione 'predeterminato' su singolo episodio. La codifica deve essere fatta sulla finestra pre-risposta osservativa — la lettura della latenza non deve essere modulata dalla tipologia di T3 osservata successivamente."
+      },
+      {
+        "id": "O5",
+        "label": "Tipologia di T3 in cinque stati strutturali",
+        "description": "Codifica della continuazione del bambino in T3 in cinque stati distinguibili: (1) modulazione-strutturale (trasformazione della forma del segnale di apertura in una forma non derivabile dal solo T1, segno di elaborazione strutturale del campo aperto da T2); (2) sostegno-senza-modulazione (mantenimento della postura di apertura senza trasformazione strutturale, segno di apertura sostenuta che attende elaborazione); (3) chiusura-immediata (estinzione della postura di apertura senza modulazione); (4) ripetizione-lineare (ripetizione identica del segnale di T1, senza trasformazione); (5) nuova-apertura-indipendente (segnale di apertura su un nuovo riferimento di bisogno non collegato strutturalmente al precedente). La codifica in registro affettivo-attribuzionale ('cerca conforto', 'manifesta dipendenza') attiva NA3.",
+        "type": "diretto",
+        "observer_dependency": "bassa",
+        "required_for_proxy": true,
+        "protocol_note": "La distinzione tra (1) modulazione-strutturale e (2) sostegno-senza-modulazione richiede attenzione: 'modulazione' è trasformazione della forma, NON intensificazione lineare e NON ripetizione identica. La baseline-di-genere informa cosa vale come 'modulazione strutturale' nel sotto-dominio specifico."
+      },
+      {
+        "id": "O6",
+        "label": "Baseline-di-genere per scambi di richiesta-e-aiuto",
+        "description": "Repertorio strutturale documentato dei modi tipici in cui la P-component e la E-component si configurano in T2 e dei modi tipici in cui T3 si modula in funzione di T1+T2, riferito alla diade specifica osservata o a un sotto-dominio sufficientemente omogeneo (per età del bambino, per contesto culturale, per tipologia di scambio). La baseline deve essere dichiarata esplicitamente in forma scritta, documentabile e contestabile. Senza baseline il proxy non è calibrato e produrrebbe sistematicamente risultati spuri.",
+        "type": "con_mediazione",
+        "observer_dependency": "media",
+        "required_for_proxy": true,
+        "protocol_note": "La baseline-di-genere NON è un universale e NON è un'unica baseline per il dispositivo: è una baseline da costruire per ciascun sotto-dominio omogeneo di applicazione. La sua assenza attiva NA4 e la sospensione del dispositivo. Costruire la baseline è un'attività propria del setting di osservazione — il dispositivo presuppone questa attività ma non la sostituisce."
+      },
+      {
+        "id": "O7",
+        "label": "Canale di registrazione audio + video integro",
+        "description": "Canale di registrazione composto da audio e video con visibilità della diade completa, qualità sufficiente per identificare orientamento del corpo, direzione dello sguardo, gesto, vocalizzazione e azione esecutiva dell'adulto. Audio-only è strutturalmente insufficiente perché T2 e T3 nella richiesta di aiuto sono spesso costituiti da azioni non verbali. Note osservative senza video sono strutturalmente insufficienti per la codifica di P/E.",
+        "type": "diretto",
+        "observer_dependency": "bassa",
+        "required_for_proxy": true,
+        "protocol_note": "Il canale è la precondizione strutturale di tutte le altre osservabilità. La sua inadeguatezza attiva NA10 e la sospensione del dispositivo, indipendentemente dalla qualità di ciò che si osserva attraverso un canale parziale. Le descrizioni testuali di episodi (diari del caregiver, note cliniche post-osservazione) NON sono utilizzabili per il proxy."
+      },
+      {
+        "id": "O8",
+        "label": "Sequenza multi-episodica per classificazione 'aperto'",
+        "description": "Per la classificazione 'aperto' a livello sequenza: disponibilità di almeno due episodi di richiesta di aiuto con riferimenti di bisogno strutturalmente diversi tra loro, registrati nello stesso contesto diadico, con la stessa qualità di canale. La variazione del riferimento di bisogno tra episodi è la condizione strutturale per neutralizzare la lettura inversa pragmatico-funzionalista (vedi rebuttal del test di non-reversibilità nel dispositivo sorgente).",
+        "type": "diretto",
+        "observer_dependency": "bassa",
+        "required_for_proxy": true,
+        "protocol_note": "L'insufficienza di sequenza multi-episodica con variazione del riferimento NON attiva non_classificabile per default — su singolo episodio è ancora possibile produrre 'predeterminato' (sotto conjunzione vincolata) o 'ambiguo'. Attiva non_classificabile solo quando si voglia produrre 'aperto' su singolo episodio (NA8)."
+      }
+    ],
+    "non_classifiability_rules": [
+      {
+        "id": "NCR1",
+        "dimension": "base corporea",
+        "trigger": "T1 manca di una o più tracce strutturali di O1 (duplice orientamento, postura sostenuta, traccia esterna del gesto), oppure T1 non è identificabile come unità sequenziale",
+        "required_output": "non_classificabile",
+        "rationale": "Senza il nodo iniziale della sequenza, la saldatura T1→T2→T3 non è leggibile e il proxy non può operare. La sospensione non è compensabile da accuratezza degli altri nodi."
+      },
+      {
+        "id": "NCR2",
+        "dimension": "campo intenzionale + base corporea",
+        "trigger": "Il riferimento di bisogno aperto in T1 non è identificabile strutturalmente dall'osservatore esterno (assente, indeterminato tra opzioni multiple non discriminabili, o ricostruito per inferenza sull'intenzione del bambino)",
+        "required_output": "non_classificabile",
+        "rationale": "Senza identificazione del riferimento esterno, la condizione conjuntiva del polo predeterminato (riducibile/non-riducibile a singola azione) non è verificabile e la modulazione di T3 non è interpretabile. Il proxy collassa in lettura attribuzionale."
+      },
+      {
+        "id": "NCR3",
+        "dimension": "co-regolazione + struttura del passaggio trasformativo",
+        "trigger": "Il canale di registrazione è inadeguato per la codifica indipendente di P/E in T2 e della tipologia di T3 (audio-only, video con diade non interamente visibile, qualità insufficiente per identificare orientamento corporeo o tracce gestuali fini)",
+        "required_output": "non_classificabile",
+        "rationale": "Il proxy si fonda sulla codifica indipendente di P-component ed E-component e sulla tipologia strutturale di T3, codifiche che richiedono il canale audio-video integro. La sospensione non è compensabile da accuratezza di altre osservabilità."
+      },
+      {
+        "id": "NCR4",
+        "dimension": "co-regolazione + mediazione simbolica",
+        "trigger": "Baseline-di-genere documentata per scambi di richiesta-e-aiuto nel sotto-dominio omogeneo della diade osservata non disponibile, oppure dichiarata genericamente senza riferimenti documentati",
+        "required_output": "non_classificabile",
+        "rationale": "Senza baseline, ciò che vale come 'P-component separabile' o come 'modulazione strutturale di T3' è arbitrario. L'applicazione senza baseline produrrebbe sistematicamente falsi positivi di apertura su scambi pragmaticamente densi e falsi positivi di predeterminazione su scambi strutturalmente abbreviati come convenzione di genere."
+      },
+      {
+        "id": "NCR5",
+        "dimension": "mediazione simbolica + co-regolazione",
+        "trigger": "Identificazione della P-component di T2 fondata su inferenze sullo stato affettivo o intenzionale dell'adulto ('l'adulto sembra attento', 'risponde con cura', 'è presente emotivamente') in assenza di tracce verbali, gestuali, posturali o di latenza strutturalmente leggibili",
+        "required_output": "non_classificabile",
+        "rationale": "La codifica P/E è operativa solo se ancorata a tracce strutturali verificabili. Una P-component identificata via inferenza affettiva non resiste al test di non-reversibilità e collassa la lettura configurazionale in lettura attribuzionale."
+      },
+      {
+        "id": "NCR6",
+        "dimension": "base corporea + co-regolazione",
+        "trigger": "T3 descritto solo in registro qualitativo-interpretativo o affettivo-attribuzionale ('cerca conforto', 'manifesta dipendenza', 'esprime frustrazione', 'risponde con accudimento') senza tracce verificabili convertibili nella tipologia strutturale a cinque stati di O5",
+        "required_output": "non_classificabile",
+        "rationale": "Il dispositivo legge configurazioni strutturali e non stati psicologici. Il registro affettivo-attribuzionale non è convertibile nelle variabili O1-O5 senza inferenze proibite. Questa regola previene la deriva interpretativa segnalata negli interpretive_warnings (psicologizzazione affettiva)."
+      },
+      {
+        "id": "NCR7",
+        "dimension": "struttura del passaggio trasformativo",
+        "trigger": "Sequenza con complicazioni strutturali non riducibili a T1-T2-T3 (turni intermedi di terzi interlocutori, sovrapposizioni di turni, T2 distribuito su attori multipli senza attribuzione unitaria, auto-correzioni o riformulazioni dell'adulto che spezzano T2)",
+        "required_output": "non_classificabile",
+        "rationale": "Il proxy è strutturalmente costruito per una sequenza pulita a tre nodi attribuibili a una diade unitaria. La distribuzione su attori multipli o le complicazioni strutturali rendono la codifica P/E non confrontabile e la lettura inversa non confutabile."
+      },
+      {
+        "id": "NCR8",
+        "dimension": "struttura del passaggio trasformativo",
+        "trigger": "Episodio singolo isolato in cui la conjunzione strutturale per la classificazione 'predeterminato' non è soddisfatta (manca anche solo una delle quattro condizioni: E-only, P-component assente con tracce verificabili di assenza, latenza compressa, riferimento di bisogno non riducibile a singola azione) E la sequenza multi-episodica con variazione del riferimento non è disponibile (O8 non soddisfatto)",
+        "required_output": "non_classificabile",
+        "rationale": "In questa configurazione il dispositivo non può scendere a 'ambiguo' (che richiede applicabilità piena ma esiti non discriminanti dei test interni) né salire a 'aperto' (che richiede sequenza). La sospensione è la sola risposta strutturalmente coerente."
+      },
+      {
+        "id": "NCR9",
+        "dimension": "struttura del passaggio trasformativo + co-regolazione",
+        "trigger": "L'unica variabile osservabile che differenzia gli episodi disponibili è il soddisfacimento pragmatico della richiesta (richiesta soddisfatta sì/no), senza tracce strutturali indipendenti di P/E in T2 e di modulazione in T3",
+        "required_output": "non_classificabile",
+        "rationale": "Il proxy è costruito per discriminare la struttura del campo dall'esito pragmatico. Se le sole tracce disponibili sono pragmatiche, la lettura inversa pragmatico-funzionalista non è confutabile e il proxy diventa reversibile sull'osservazione disponibile."
+      },
+      {
+        "id": "NCR10",
+        "dimension": "tutte le dimensioni",
+        "trigger": "Episodio non osservato direttamente ma ricostruito da memoria, da appunti riassuntivi non letterali, da terze fonti, o riportato in colloquio caregiver",
+        "required_output": "non_classificabile",
+        "rationale": "Le osservabilità O1-O5 richiedono accesso diretto al canale audio-video integro. Le ricostruzioni narrative, anche accurate, non sono convertibili nelle codifiche strutturali del proxy."
+      },
+      {
+        "id": "NCR11",
+        "dimension": "mediazione simbolica + struttura del passaggio trasformativo",
+        "trigger": "Lo scambio è strutturalmente unitario: il riferimento di bisogno è strutturalmente di tipo 'oggetto-fuori-portata' E T2 è 'azione-di-porgere-l'oggetto' come unità non scomponibile, in cui la separabilità di P-component ed E-component non è strutturalmente distinguibile dall'osservazione",
+        "required_output": "ambiguo",
+        "rationale": "L'esito 'ambiguo' è qui legittimo del proxy applicabile (C1-C7 soddisfatte): è una proprietà strutturale del fenomeno (indistinguibilità configurazionale dello scambio unitario), non una sospensione del dispositivo. Diversamente da NCR1-NCR10 (che sono non_classificabile), questa regola produce 'ambiguo' come esito di classificazione."
+      },
+      {
+        "id": "NCR12",
+        "dimension": "struttura del passaggio trasformativo",
+        "trigger": "C1-C7 soddisfatte, applicabilità piena del proxy, ma esiti dei test interni della decision_logic incoerenti — la conjunzione per 'predeterminato' non è soddisfatta E la soglia per 'aperto' (anche se C8 soddisfatto) non è raggiunta",
+        "required_output": "ambiguo",
+        "rationale": "L'ambiguità qui è una proprietà strutturale dell'episodio osservato — il proxy è applicabile ma l'episodio non discrimina. È un esito di classificazione, non una sospensione del dispositivo. La distinzione 'ambiguo'/'non_classificabile' è cruciale: 'ambiguo' è risultato del proxy applicato, 'non_classificabile' è rifiuto di applicare il proxy."
+      }
+    ],
+    "interpretive_warnings": [
+      {
+        "risk_type": "comportamentismo",
+        "description": "Il rischio di leggere la richiesta di aiuto come comportamento adattivo isolato del bambino — codificare T1 come 'segnale di richiesta' e T2 come 'risposta del caregiver' come due eventi indipendenti la cui relazione è solo causale (T1 produce T2) o funzionale (T2 soddisfa T1) — è particolarmente acuto nel nuovo tema. Conseguenza tipica: la struttura del campo collassa in una catena stimolo-risposta e la dimensione configurazionale (saldatura sequenziale T1-T2-T3 come costituzione di un atto co-prodotto) è invisibile. Il dispositivo è strutturato per resistere a questa lettura attraverso la codifica indipendente di P/E (che separa la lettura configurazionale dalla causale-esecutiva) e attraverso il vincolo di sequenza multi-episodica per 'aperto' (che neutralizza la lettura funzionale come confound)."
+      },
+      {
+        "risk_type": "normatività",
+        "description": "Rafforzato per il tema della richiesta di aiuto. Rischio specifico: leggere l'autonomia come polo positivo e la dipendenza come polo negativo, valutando la 'maturità' della richiesta del bambino e l'adeguatezza' della risposta del caregiver. Conseguenza tipica: T1 con postura sostenuta è valutato come 'persistenza adattiva' o come 'eccessiva dipendenza' a seconda dell'aspettativa normativa dell'osservatore; T2 con E-only è valutato come 'risposta efficace' o come 'over-helping'; T3 con chiusura-immediata è valutato come 'soddisfazione raggiunta' o come 'rinuncia all'esplorazione'. Il dispositivo NON è uno strumento di valutazione: i cinque livelli di co-regolazione (L1-L5) NON sono una scala di adeguatezza ma cinque configurazioni strutturali distinte. La distinzione di L1 da L3 NON passa per giudizi di valore ma per separabilità strutturale verificabile."
+      },
+      {
+        "risk_type": "tecnicismo",
+        "description": "Il rischio di trasformare il dispositivo in una procedura di codifica meccanica — applicare la decision_logic come un algoritmo che produce output indipendentemente dalla competenza dell'osservatore nella lettura strutturale — è amplificato dalla complessità procedurale del dispositivo (8 osservabilità, 7 condizioni di applicabilità, 10 condizioni di non applicabilità, 12 regole di non-classificabilità). Conseguenza tipica: applicazione del proxy senza costruzione preventiva della baseline-di-genere documentata; codifica di P/E senza la competenza media richiesta; produzione di esiti 'predeterminato' o 'aperto' senza verifica strutturale della conjunzione vincolata o della soglia sequenziale. Il dispositivo è leggibile, NON eseguibile: la decision_logic richiede competenza configurazionale dell'osservatore in tutti i passi, non sostituisce questa competenza."
+      },
+      {
+        "risk_type": "riduzione_cognitiva",
+        "description": "Il rischio di leggere la richiesta come prestazione cognitiva del bambino ('sa chiedere aiuto', 'usa appropriatamente strategie comunicative', 'mostra teoria della mente') — riducendo la dimensione configurazionale a un attributo individuale di competenza cognitiva — converte la lettura del dispositivo in una valutazione delle capacità del bambino. Conseguenza tipica: la responsabilità della struttura del campo è attribuita al bambino e l'adulto è valutato in funzione della prestazione del bambino; il dispositivo perde la sua dimensione co-prodotta e diventa uno strumento di assessment individuale. Il dispositivo è strutturato per resistere a questa lettura attraverso il livello di lettura sequenza per 'aperto' e attraverso la codifica di P/E in T2 come asse autonomo (la struttura del campo è proprietà della saldatura, non di nessuno dei due poli isolatamente)."
+      },
+      {
+        "risk_type": "tecnicismo_riabilitativo",
+        "description": "Specifico del tema della richiesta di aiuto. Rischio di leggere il dispositivo come strumento per identificare 'deficit di richiesta' o 'difficoltà di mediazione del caregiver' e per orientare protocolli di training comportamentale (insegnare al bambino a 'fare richieste appropriate', insegnare al caregiver a 'rispondere in modo sintonizzato'). Conseguenza tipica: il dispositivo è usato come strumento di assessment per la pianificazione di interventi riabilitativi standardizzati; le configurazioni L3 (esecuzione senza presenza) o L4 (saldatura interrotta) sono lette come bersagli di intervento e il dispositivo perde la sua funzione di lettura configurazionale per diventare uno strumento di prescrizione. Il dispositivo NON identifica deficit, NON valuta competenze, NON orienta interventi: descrive configurazioni strutturali del campo. La decisione clinica su cosa fare con la lettura configurazionale è esterna al dispositivo e richiede integrazione con altri strumenti, considerazioni di contesto, e responsabilità clinica del professionista."
+      },
+      {
+        "risk_type": "psicologizzazione_affettiva",
+        "description": "Specifico del tema della richiesta di aiuto e amplificato dalla risonanza affettiva del fenomeno. Rischio di leggere T2 come espressione affettiva del caregiver ('è una mamma presente / assente', 'risponde con calore / freddezza', 'mostra attaccamento / distacco') e di leggere T3 come stato emotivo del bambino ('è soddisfatto / frustrato', 'si sente accolto / rifiutato'). Conseguenza tipica: la codifica di P-component è fondata su impressioni affettive invece che su tracce strutturali verificabili (NCR5 è attivata sistematicamente); la codifica di T3 è fatta in registro affettivo-attribuzionale (NCR6 è attivata sistematicamente). Il dispositivo, applicato in questo registro, non produce classificazioni configurazionali ma produce attribuzioni psicologiche dressed-up come classificazioni strutturali. Il dispositivo è strutturato per resistere a questa deriva attraverso le NCR5 e NCR6 e attraverso il principio operativo della codifica indipendente ancorata a tracce verificabili."
+      }
+    ],
+    "non_permitted_transformations": [
+      "diagnosi clinica del bambino (es: ritardo nello sviluppo della comunicazione, disturbo della relazione, sintomatologia dello spettro): il dispositivo descrive configurazioni strutturali della saldatura sequenziale, NON identifica entità diagnostiche né attribuisce categorie nosografiche",
+      "valutazione di competenze comunicative o relazionali del bambino (es: 'il bambino sa chiedere aiuto in modo maturo', 'mostra adeguate competenze pragmatiche'): il dispositivo NON è uno strumento di assessment delle capacità individuali del bambino e i cinque livelli di co-regolazione NON sono una scala di competenza",
+      "valutazione di adeguatezza del caregiver (es: 'caregiver responsivo / non responsivo', 'mediazione adeguata / inadeguata', 'attaccamento sicuro / insicuro'): il dispositivo legge la struttura del campo co-prodotto, NON valuta le capacità o le qualità di nessuno dei due poli; la P-component non è un indicatore di 'qualità materna'",
+      "training comportamentale del bambino o del caregiver (es: protocolli per 'insegnare richieste funzionali', protocolli per 'allenare la responsività del caregiver'): la lettura configurazionale NON è prescrittiva e NON identifica bersagli di modificazione comportamentale",
+      "giudizio di valore sul caregiver o sulla diade (es: 'questa diade funziona bene / male', 'questa madre è sintonizzata / non sintonizzata'): le classificazioni 'aperto' e 'predeterminato' NON sono valutazioni di valore — sono descrizioni configurazionali di cui la valenza clinica deve essere costruita esternamente al dispositivo",
+      "predizione di esiti di sviluppo del bambino (es: 'questo pattern di richiesta predice sviluppo linguistico', 'questo pattern di mediazione predice attaccamento sicuro a 18 mesi'): il dispositivo è una lettura sincronica della configurazione, NON un modello predittivo",
+      "uso come strumento di screening su popolazioni (es: applicazione del dispositivo a campioni per identificare diadi a rischio): il dispositivo richiede baseline-di-genere documentata per ciascun sotto-dominio omogeneo e canale audio-video integro per ciascun episodio — non è scalabile a uso di screening",
+      "uso retrospettivo su descrizioni narrative o testuali (diari del caregiver, note cliniche post-osservazione, racconti in colloquio): NCR10 è attivata sistematicamente e il dispositivo produce non_classificabile",
+      "uso per certificare o rifiutare interventi clinici, educativi, sociali (es: certificazioni per accesso a servizi, valutazioni per affidamento, perizie): il dispositivo è uno strumento di lettura configurazionale e NON ha funzione certificatoria in nessun ambito amministrativo o legale"
+    ],
+    "validation_structural_check": {
+      "configurational_logic_preserved": true,
+      "configurational_logic_notes": "L'architettura del dispositivo sorgente (configurazione nucleare a turni sequenziali, assi strutturali, nodi della sequenza, lettura del passaggio trasformativo come saldatura) è preservata integralmente. Gli adattamenti riguardano: (a) la corporeità di T1 — duplice riferimento simultaneo invece che riferimento singolo del pointing; (b) il bridge — saldatura T1-T2-T3 invece che T1-T2-T3-T4 del dispositivo sorgente; (c) il proxy — separabilità P/E in T2 e modulazione T3 invece di catena di ripresa cross-turno T2-T3-T4 lessicalmente non-derivabile. La logica configurazionale (struttura del campo come proprietà sequenziale, indipendenza dall'esito pragmatico, distinzione tra esito di classificazione e sospensione del dispositivo) è invariata.",
+      "no_psychological_inference": true,
+      "no_psychological_inference_notes": "Tutte le osservabilità (O1-O8) sono ancorate a tracce strutturali verificabili: configurazione corporea (orientamento, postura, traccia gestuale), riferimento esterno strutturalmente identificabile dall'osservatore, codifica indipendente di componenti del turno adulto, latenza qualitativa-strutturale, tipologia di T3 in cinque stati strutturali, baseline documentata, canale di registrazione, sequenza multi-episodica. Le inferenze su intenzioni, stati mentali, affetti sono esplicitamente proibite (NA2 per O2, NA3 per O5, NA7 per O3) e quattro delle dodici regole di non-classificabilità (NCR2, NCR5, NCR6, NCR9) sono dedicate alla difesa contro la deriva attribuzionale.",
+      "no_circularity": true,
+      "no_circularity_notes": "Il proxy è applicato a una case_description in registro fenomenico (codifiche strutturali O1-O5) e NON a una case_description già pre-strutturata o pre-classificata (NA7 esplicita questo). La case_description fenomenica è prodotta in finestra pre-risposta (vedi protocol_note di O1 e O4) per evitare modulazione retroattiva della lettura di T1 e della latenza dalla risposta di T2 osservata. La distinzione tra 'ambiguo' (esito del proxy applicato) e 'non_classificabile' (rifiuto di applicare il proxy) è strutturalmente esplicita e impedisce la circolarità di un proxy che 'classifica anche le sue mancanze'.",
+      "proxy_observable": true,
+      "proxy_observable_notes": "Il proxy opera su otto osservabilità di cui sei sono direttamente osservabili (O1, O2, O4, O5, O7, O8) e due sono osservabili con mediazione (O3, O6). La dipendenza dall'osservatore è bassa per O1, O2, O4, O5, O7, O8 e media per O3 e O6. Tutte le osservabilità sono dichiarate, definite operativamente, e collegate a condizioni di applicabilità e di non applicabilità. Il proxy NON dipende da osservabilità interpretative o attribuzionali e la conjunzione vincolata della classificazione 'predeterminato' su singolo episodio richiede il soddisfacimento simultaneo di quattro condizioni strutturali verificabili.",
+      "self_limiting": true,
+      "self_limiting_notes": "Il dispositivo è strutturalmente auto-limitante attraverso tre meccanismi: (1) le 10 non-applicability conditions (NA1-NA10) del proxy producono sospensione esplicita del dispositivo (output 'non_classificabile') quando le precondizioni mancano; (2) le 12 regole di non-classificabilità (NCR1-NCR12) integrano e coprono i casi tipici di non-applicabilità nel nuovo tema, con esplicita distinzione tra 10 regole che producono 'non_classificabile' (sospensione) e 2 regole che producono 'ambiguo' (esito legittimo); (3) l'asimmetria di livello tra 'aperto' (livello sequenza obbligatorio) e 'predeterminato' (singolo episodio sotto conjunzione vincolata) impedisce la classificazione forzata su livello insufficiente. Il dispositivo dichiara esplicitamente le condizioni in cui smette di funzionare e produce 'non_classificabile' come stringa di output esplicita, non come default silenzioso, indicando la condizione attivante."
+    }
+  },
+  "final_assessment": "Il dispositivo è strutturalmente coerente con l'architettura del dispositivo sorgente (tema-01-pointing-clinico-dispositivo-v2) e integra tutti gli elementi adattati negli step precedenti senza introduzione di componenti nuove non derivate. Punti di forza dell'integrazione: (a) la codifica indipendente di P-component ed E-component nel turno adulto sposta la robustezza del proxy dalla derivabilità lessicale (proxy del tema sorgente, applicabile ma debolmente discriminante in scambi non verbali) alla separabilità strutturale di componenti del turno (proxy specificamente calibrato per il fenomeno della richiesta di aiuto in cui T2 è spesso costituito da azioni esecutive); (b) il vincolo di sequenza multi-episodica con variazione del riferimento di bisogno per la classificazione 'aperto' è coerente con l'asimmetria epistemica del dispositivo sorgente (aperto richiede sequenza, predeterminato leggibile su singolo episodio sotto conjunzione) e neutralizza strutturalmente la lettura inversa pragmatico-funzionalista; (c) le 12 regole di non-classificabilità coprono in modo esaustivo i casi tipici di non-applicabilità e la distinzione strutturale tra 'ambiguo' (esito legittimo del proxy applicabile, NCR11 e NCR12) e 'non_classificabile' (sospensione del dispositivo, NCR1-NCR10) è preservata. Debolezze residue dichiarate: (1) il dispositivo richiede baseline-di-genere documentata per ciascun sotto-dominio omogeneo, e la sua costruzione è esterna al dispositivo — l'applicabilità nella pratica clinica richiede investimento nella documentazione di baseline che il dispositivo presuppone ma non fornisce; (2) la codifica di P-component richiede competenza media dell'osservatore e un setting di registrazione audio-video integro — la combinazione delle due condizioni limita significativamente i contesti in cui il dispositivo è effettivamente applicabile (esclude colloqui caregiver, ricostruzioni narrative, registrazioni audio-only, descrizioni testuali); (3) la classificazione 'aperto' a livello sequenza richiede almeno due episodi con riferimenti di bisogno strutturalmente diversi nello stesso contesto diadico, condizione raramente soddisfatta in singole sessioni osservative cliniche standard; (4) gli scambi pragmaticamente unitari (richiesta-di-oggetto-fuori-portata + azione-di-porgere come unità non scomponibile) sono dichiarati 'ambiguo' per indistinguibilità strutturale del fenomeno — il dispositivo riconosce esplicitamente questo limite ma non lo risolve. Grado di completezza dell'integrazione: alto. Tutti i blocchi strutturali richiesti dallo schema sono prodotti, le 5 dimensioni di reading_focus sono distinte e tematizzate, le 8 osservabilità sono dichiarate operativamente, le 12 regole di non-classificabilità integrano le 10 NA del proxy con copertura cross-dimensionale, i 6 interpretive_warnings includono il warning specifico del tema (tecnicismo_riabilitativo, psicologizzazione_affettiva), le 9 non_permitted_transformations coprono diagnosi, valutazione, training, giudizio, predizione, screening, uso retrospettivo, certificazione. Verdict strutturale rispetto alla 'prova di verità' del metodo: il dispositivo regge — la trasferibilità dell'architettura configurazionale al nuovo tema produce un dispositivo operativamente utilizzabile con limiti dichiarati e con auto-limitazione strutturalmente esplicita, non un dispositivo collassato in protocollo applicativo né esploso in incoerenza."
+}

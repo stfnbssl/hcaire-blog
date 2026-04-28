@@ -1,0 +1,337 @@
+{
+  "step": "f3_step_6b",
+  "version": "v1b",
+  "operation_type": "operazionalizzazione_proxy_con_condizioni_di_applicabilita",
+  "based_on": {
+    "proxy_v1": "f3_step_6 — stabilizzazione-proxy-v1 (Catena di ripresa cross-turno lessicalmente non-derivabile T2→T3→T4)",
+    "device_v2": "tema-01-pointing-clinico-dispositivo-v2",
+    "indistinguibility_test": "f3_step_4 — indistinguibility-test-v1",
+    "audit_reference": "f3_step_5 — audit-v3"
+  },
+  "domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+
+  "framing": {
+    "problema_strutturale_che_questo_step_risolve": "Lo step 6 ha prodotto un proxy meno reversibile ma non sempre applicabile: richiede registrazioni fenomeniche specifiche (almeno 4 turni con contenuti lessicali-sintattici-gestuali identificabili) e una baseline esplicitamente dichiarata. Senza questi vincoli, il dispositivo può classificare comunque, producendo falsi positivi mascherati da risultati strutturali. Questo step introduce la 'capacità di non funzionare quando non deve funzionare' come proprietà costitutiva del dispositivo.",
+    "principio_guida": "Il proxy operativo distingue tre stati epistemici: (1) condizioni soddisfatte → esito di classificazione (aperto/predeterminato), (2) condizioni parzialmente soddisfatte ma sequenza completa → esito 'ambiguo' come classificazione legittima, (3) condizioni minime non soddisfatte → esito 'non_classificabile' che NON è una classificazione ma una sospensione del dispositivo. Solo (1) e (2) sono classificazioni. (3) è un rifiuto di classificare, non un terzo valore di classificazione.",
+    "differenza_tra_ambiguo_e_non_classificabile": "'Ambiguo' = il dispositivo è applicabile, i due test producono esiti incoerenti o la sequenza è completa ma non discrimina (esito strutturale legittimo). 'Non_classificabile' = il dispositivo non è applicabile, le precondizioni osservative non sono soddisfatte (sospensione del dispositivo, non esito). La distinzione è cruciale: 'ambiguo' è un risultato del proxy applicato; 'non_classificabile' è il rifiuto di applicare il proxy."
+  },
+
+  "step_1_variabili_osservative_necessarie": {
+    "rationale": "Per applicare il proxy 'Catena di ripresa cross-turno lessicalmente non-derivabile (T2→T3→T4)' è necessario disporre di un set determinato di informazioni fenomeniche e metodologiche. L'elenco è esaustivo: ogni variabile mancante invalida l'applicabilità del proxy.",
+    "variabili": [
+      {
+        "id": "V1",
+        "nome": "Presenza di T1 — atto di apertura del bambino",
+        "descrizione": "registrazione che il bambino ha prodotto un atto di apertura verso l'adulto (pointing, sguardo orientato all'adulto in coordinazione con un riferimento)",
+        "necessaria_per": "definire l'inizio della sequenza e l'oggetto del riferimento condiviso"
+      },
+      {
+        "id": "V2",
+        "nome": "Trascrizione lessicale di T2 (primo turno adulto)",
+        "descrizione": "registrazione letterale del contenuto verbale prodotto dall'adulto in risposta a T1, in forma trascrivibile",
+        "necessaria_per": "il test 1 (derivabilità lineare di W da T2-solo) e per identificare lo spazio sintattico aperto/chiuso da T2"
+      },
+      {
+        "id": "V3",
+        "nome": "Struttura sintattica di T2",
+        "descrizione": "identificazione del tipo sintattico di T2 (frase nominale completa con chiusura, frase incompleta, domanda, esclamazione, sequenza estesa con auto-chiusura)",
+        "necessaria_per": "rilevare la 'compressione di turni' (T2 esteso che chiude preventivamente lo spazio di T4) come traccia strutturale di predeterminazione"
+      },
+      {
+        "id": "V4",
+        "nome": "Contenuto identificabile di T3 (turno intermedio del bambino)",
+        "descrizione": "registrazione di Y come traccia osservabile: vocalizzazione lessicalizzabile, gesto identificabile, riorientamento corporeo, azione, oppure silenzio sostenuto strutturalmente. Non è richiesta interpretazione qualitativa, solo identificazione di tracce",
+        "necessaria_per": "il test 2 (dipendenza specifica di W da Y) e per discriminare T3 come contenuto specifico vs. riempimento neutro"
+      },
+      {
+        "id": "V5",
+        "nome": "Trascrizione lessicale di T4 (secondo turno adulto)",
+        "descrizione": "registrazione letterale del contenuto verbale prodotto dall'adulto dopo T3, in forma trascrivibile. Se T4 verbale non esiste, registrare la sua assenza come dato strutturale",
+        "necessaria_per": "il test 1 e il test 2 — entrambi richiedono il contenuto di W (o la sua assenza strutturalmente leggibile)"
+      },
+      {
+        "id": "V6",
+        "nome": "Struttura sintattica di T4",
+        "descrizione": "identificazione del tipo sintattico di T4 (continuazione lineare di T2, ripresa di T3, frase nuova, ecc.)",
+        "necessaria_per": "il test 1 e per identificare la relazione T2→T4 (continuazione) vs. T3→T4 (ripresa)"
+      },
+      {
+        "id": "V7",
+        "nome": "Sequenza temporale verificata dei turni",
+        "descrizione": "ordine temporale verificato dei quattro turni T1→T2→T3→T4, con tracce che permettano di escludere sovrapposizioni o turni inseriti tra di essi che cambierebbero l'analisi",
+        "necessaria_per": "l'applicabilità del proxy stesso, che è strutturalmente sequenziale"
+      },
+      {
+        "id": "V8",
+        "nome": "Baseline di derivabilità esplicitamente dichiarata",
+        "descrizione": "una delle due forme: (a) baseline-di-diade — almeno 2-3 episodi precedenti della stessa diade da cui ricostruire pattern di continuazione abituale di T2 in scambi simili; oppure (b) baseline-di-genere — riferimento esplicito a convenzioni del tipo di scambio (mostra-e-nomina adulto-bambino) documentate o argomentate. La baseline deve essere dichiarata, non assunta tacitamente",
+        "necessaria_per": "il test 1 (derivabilità lineare di W da T2-solo). Senza baseline dichiarata, il test 1 non è eseguibile"
+      },
+      {
+        "id": "V9",
+        "nome": "Canale di registrazione adeguato",
+        "descrizione": "il canale tramite cui le variabili V1–V7 sono registrate: video con audio, audio integrato a note osservative, trascrizione completa, ecc. Il canale deve essere adeguato a sostenere la registrazione di tutte le variabili precedenti senza perdita strutturale",
+        "necessaria_per": "garantire che le variabili V1–V7 non siano ricostruite a memoria o per inferenza ma effettivamente registrate"
+      }
+    ]
+  },
+
+  "step_2_classificazione_variabili": {
+    "rationale": "Ogni variabile è classificata per (a) tipo di osservabilità — direttamente osservabile, osservabile con mediazione, non osservabile — e (b) livello di dipendenza dall'osservatore. Questa classificazione determina i requisiti pratici di applicabilità.",
+    "classificazione": [
+      {
+        "id": "V1",
+        "tipo_osservabilità": "direttamente osservabile",
+        "dipendenza_osservatore": "bassa",
+        "note": "presenza/assenza di pointing e sguardo all'adulto sono identificabili a livello di traccia comportamentale grezza"
+      },
+      {
+        "id": "V2",
+        "tipo_osservabilità": "osservabile con mediazione (richiede registrazione audio o trascrizione contestuale)",
+        "dipendenza_osservatore": "bassa",
+        "note": "la trascrizione lessicale è oggettivabile se il canale di registrazione è adeguato; senza registrazione, dipende dalla memoria dell'osservatore — dipendenza diventa alta"
+      },
+      {
+        "id": "V3",
+        "tipo_osservabilità": "osservabile con mediazione",
+        "dipendenza_osservatore": "bassa",
+        "note": "richiede competenza linguistica standard per identificare la struttura sintattica una volta trascritto T2"
+      },
+      {
+        "id": "V4",
+        "tipo_osservabilità": "osservabile con mediazione (audio + video raccomandati)",
+        "dipendenza_osservatore": "bassa-media",
+        "note": "registrazione di Y come traccia identificabile ha dipendenza bassa; la classificazione di Y come 'contenuto specifico' vs. 'riempimento neutro' richiede competenza media. La dipendenza diventa media se Y è prevalentemente prosodico senza lessema riconoscibile o se Y è gestuale ambiguo"
+      },
+      {
+        "id": "V5",
+        "tipo_osservabilità": "osservabile con mediazione",
+        "dipendenza_osservatore": "bassa",
+        "note": "come V2; l'assenza di T4 verbale è anch'essa oggettivabile come dato strutturale"
+      },
+      {
+        "id": "V6",
+        "tipo_osservabilità": "osservabile con mediazione",
+        "dipendenza_osservatore": "bassa",
+        "note": "come V3"
+      },
+      {
+        "id": "V7",
+        "tipo_osservabilità": "direttamente osservabile (con registrazione)",
+        "dipendenza_osservatore": "bassa",
+        "note": "la sequenza temporale è oggettivabile da registrazione cronologica; dipende dal canale di registrazione"
+      },
+      {
+        "id": "V8",
+        "tipo_osservabilità": "non direttamente osservabile dall'episodio — è una variabile metodologica esterna",
+        "dipendenza_osservatore": "media",
+        "note": "la baseline è dichiarabile e contestabile (è argomentabile), non internamente colta. La dipendenza è media perché la dichiarazione della baseline può essere documentata, comparata tra osservatori, e revisionata"
+      },
+      {
+        "id": "V9",
+        "tipo_osservabilità": "metodologica (precondizione del setting di osservazione)",
+        "dipendenza_osservatore": "bassa",
+        "note": "il canale è oggettivamente identificabile (es: 'video HD con audio stereo', 'audio + note', 'solo memoria')"
+      }
+    ]
+  },
+
+  "step_3_condizioni_di_applicabilità": {
+    "header": "Il proxy è applicabile SOLO SE tutte le condizioni seguenti sono soddisfatte:",
+    "condizioni": [
+      {
+        "id": "C1",
+        "condizione": "La sequenza osservata contiene almeno quattro turni identificabili nell'ordine T1 (bambino) → T2 (adulto) → T3 (bambino) → T4 (adulto). L'esistenza di tutti e quattro i turni come unità identificabili è precondizione minima.",
+        "variabili_coinvolte": ["V1", "V2", "V4", "V5", "V7"],
+        "criterio_di_verifica": "l'osservatore deve poter indicare nella registrazione l'inizio e la fine di ciascuno dei quattro turni"
+      },
+      {
+        "id": "C2",
+        "condizione": "Il contenuto verbale di T2 è trascritto letteralmente (lessico X disponibile) e la sua struttura sintattica è identificata.",
+        "variabili_coinvolte": ["V2", "V3"],
+        "criterio_di_verifica": "una trascrizione di T2 in forma testuale o equivalente deve essere disponibile e citabile"
+      },
+      {
+        "id": "C3",
+        "condizione": "Il contenuto di T3 è registrato come traccia identificabile (lessicale, gestuale, posturale, o silenzio strutturalmente leggibile). 'Identificabile' significa: descrivibile in tracce verificabili senza ricorso a interpretazione qualitativa di stati interni.",
+        "variabili_coinvolte": ["V4"],
+        "criterio_di_verifica": "Y deve essere descritto in termini che un secondo osservatore potrebbe verificare sulla stessa registrazione (es: 'vocalizzazione contenente il lessema oh con lunghezza vocalica estesa' è verificabile; 'vocalizzazione di stupore' non lo è)"
+      },
+      {
+        "id": "C4",
+        "condizione": "Il contenuto di T4 è trascritto letteralmente (lessico W disponibile) e la sua struttura sintattica è identificata. Se T4 verbale è assente, la sua assenza è registrata come dato strutturale (non desunta).",
+        "variabili_coinvolte": ["V5", "V6"],
+        "criterio_di_verifica": "una trascrizione di T4 in forma testuale o l'esplicita registrazione della sua assenza verbale deve essere disponibile"
+      },
+      {
+        "id": "C5",
+        "condizione": "Una baseline di derivabilità è esplicitamente dichiarata, in una delle due forme ammesse: (a) baseline-di-diade fondata su almeno 2-3 episodi precedenti della stessa diade in scambi paragonabili, oppure (b) baseline-di-genere fondata su riferimento esplicito a convenzioni documentate o argomentate del tipo di scambio. La baseline deve essere documentabile e contestabile.",
+        "variabili_coinvolte": ["V8"],
+        "criterio_di_verifica": "la baseline deve essere scritta in forma esplicita (es: 'baseline di genere: in scambi mostra-e-nomina post-nominazione, le continuazioni tipiche includono X, Y, Z'), non lasciata implicita"
+      },
+      {
+        "id": "C6",
+        "condizione": "Il canale di registrazione è adeguato a sostenere V2, V4, V5 senza ricostruzione a memoria. Adeguato significa: registrazione audio o video sincronizzata con l'osservazione, trascrizione contestuale completa, o equivalente.",
+        "variabili_coinvolte": ["V9"],
+        "criterio_di_verifica": "l'osservatore può indicare il canale di registrazione e mostrare che V2, V4, V5 sono registrati su quel canale, non ricostruiti dopo l'osservazione"
+      },
+      {
+        "id": "C7",
+        "condizione": "L'episodio osservato non presenta turni intermedi tra T1, T2, T3, T4 che modificherebbero la sequenza A-B-C-D minima (es: un terzo interlocutore che inserisce un turno tra T2 e T3, o auto-correzioni dell'adulto che spezzano T2 in unità non analizzabili come singolo turno).",
+        "variabili_coinvolte": ["V7"],
+        "criterio_di_verifica": "l'osservatore verifica che l'unità di analisi è una sequenza pulita a 4 turni, oppure dichiara la presenza di complicazioni e sospende l'applicazione"
+      }
+    ],
+    "regola_globale": "Tutte le condizioni C1–C7 devono essere soddisfatte. Una sola condizione mancante invalida l'applicabilità."
+  },
+
+  "step_4_condizioni_di_non_applicabilità": {
+    "header": "Il proxy NON è applicabile in uno qualsiasi dei seguenti casi:",
+    "condizioni": [
+      {
+        "id": "NA1",
+        "condizione": "Manca anche solo uno dei quattro turni T1, T2, T3, T4 come unità identificabile.",
+        "esempio": "T1 è osservato ma T3 non è identificabile come turno distinto perché il bambino non produce nessuna traccia tra T2 e l'eventuale T4 — la sequenza è a 3 turni, non a 4",
+        "esito_richiesto": "non_classificabile"
+      },
+      {
+        "id": "NA2",
+        "condizione": "Il contenuto verbale di T2 o T4 non è trascrivibile per indisponibilità del canale audio o per qualità di registrazione insufficiente.",
+        "esempio": "il caregiver pronuncia parole ma il rumore ambientale impedisce la trascrizione; oppure la registrazione è solo di note osservative riassuntive senza trascrizione letterale",
+        "esito_richiesto": "non_classificabile"
+      },
+      {
+        "id": "NA3",
+        "condizione": "Il contenuto di T3 è descrivibile solo in registro qualitativo-interpretativo ('vocalizzazione di stupore', 'gesto di apertura', 'momento di partecipazione') senza tracce verificabili.",
+        "esempio": "le note osservative dicono 'il bambino partecipa attivamente' ma non specificano quale traccia verificabile sostiene questa descrizione",
+        "esito_richiesto": "non_classificabile",
+        "nota_aggiuntiva": "questo caso è particolarmente importante perché è la modalità tipica con cui la pre-strutturazione interpretativa si reintroduce nel dispositivo"
+      },
+      {
+        "id": "NA4",
+        "condizione": "Nessuna baseline di derivabilità è dichiarata, oppure la baseline è dichiarata solo come affermazione generica ('è una continuazione tipica') senza specificare se è di-diade o di-genere e senza fornire i riferimenti corrispondenti.",
+        "esempio": "l'osservatore afferma 'guarda come si muove è una continuazione naturale dopo è un uccellino' senza esplicitare se questo è documentato per la specifica diade o per il genere di scambio",
+        "esito_richiesto": "non_classificabile"
+      },
+      {
+        "id": "NA5",
+        "condizione": "Il canale di registrazione è inadeguato — l'episodio è ricostruito a memoria, da appunti riassuntivi non letterali, o da terze fonti.",
+        "esempio": "il clinico riporta a memoria un episodio osservato ore prima; la trascrizione è una sintesi narrativa dell'osservatore",
+        "esito_richiesto": "non_classificabile"
+      },
+      {
+        "id": "NA6",
+        "condizione": "La sequenza presenta complicazioni strutturali non riducibili a A-B-C-D: turni intermedi di terzi interlocutori, sovrapposizioni di turni che impediscono di distinguere T2 e T3, auto-correzioni o riformulazioni dell'adulto che spezzano T2 in più unità.",
+        "esempio": "tra T2 e T3 interviene un altro adulto con un commento; oppure T2 è interrotto dal bambino e ripreso dall'adulto in forma diversa",
+        "esito_richiesto": "non_classificabile"
+      },
+      {
+        "id": "NA7",
+        "condizione": "L'osservatore non può separare ciò che è osservato da ciò che è inferito. La case_description disponibile è scritta in registro pre-strutturato (con qualifiche interpretative inscritte) e non è disponibile una case_description in registro fenomenico.",
+        "esempio": "l'unica descrizione disponibile è 'la diade mostra co-costruzione attiva con ridefinizione bilaterale del riferimento' — questa è una classificazione, non un'osservazione",
+        "esito_richiesto": "non_classificabile",
+        "nota_aggiuntiva": "questa condizione è la difesa principale contro la circolarità: il proxy non può essere applicato a una case_description che già contiene la sua classificazione"
+      },
+      {
+        "id": "NA8",
+        "condizione": "L'unico episodio disponibile è isolato e la classificazione richiesta è 'aperto'. Per l'apertura, il proxy richiede tipicamente livello sequenza/multi-episodio (test di variabilità W↔Y).",
+        "esempio": "si dispone di un singolo episodio di 4 turni e si vorrebbe classificarlo come 'aperto'",
+        "esito_richiesto": "ambiguo (NON 'aperto') se le condizioni C1–C7 sono soddisfatte; non_classificabile altrimenti",
+        "nota_aggiuntiva": "questa è una restrizione strutturale del proxy: la classificazione 'aperto' è disponibile in modo robusto solo con sequenza multi-episodica con variazione di Y. Su singolo episodio, anche se il proxy è applicabile, l'esito massimo accessibile per direzione di apertura è 'ambiguo'"
+      }
+    ],
+    "regola_globale": "L'attivazione di una sola condizione NA1–NA8 produce sospensione del dispositivo. Non c'è bilanciamento o compensazione: la mancanza non è recuperabile per via interpretativa."
+  },
+
+  "step_5_esito_in_caso_di_dati_insufficienti": {
+    "esito_richiesto": "non_classificabile",
+    "natura_dell_esito": "L'esito 'non_classificabile' è una sospensione del dispositivo, non una classificazione. Il dispositivo dichiara di non poter operare, non sceglie un terzo valore tra aperto e predeterminato.",
+    "differenza_rispetto_a_ambiguo": "'ambiguo' è un esito di classificazione: il dispositivo è applicabile (C1–C7 soddisfatte), i due test interni producono esiti incoerenti o la sequenza è completa ma non discrimina. L'ambiguità è una proprietà strutturale dell'episodio osservato. 'non_classificabile' è una proprietà dei dati osservativi disponibili: i dati non sono sufficienti perché il dispositivo possa operare. Non è una proprietà dell'episodio ma del setting di osservazione.",
+    "perché_il_dispositivo_NON_deve_classificare": [
+      "classificare con dati insufficienti produce falsi positivi indistinguibili da veri positivi",
+      "la classificazione forzata richiederebbe inferenze che il dispositivo ha esplicitamente proibito (inferenze mentali, completamenti narrativi, recupero per competenza)",
+      "la sospensione esplicita preserva la trasparenza epistemica: chi legge l'output sa che non c'è classificazione, non riceve una classificazione apparente",
+      "permette di identificare i casi in cui il setting di osservazione va modificato (es: serve registrazione video, serve baseline esplicita) invece di mascherare il problema con un esito"
+    ],
+    "obblighi_associati_all_esito_non_classificabile": [
+      "il dispositivo deve restituire ESPLICITAMENTE 'non_classificabile' come stringa, non come default silenzioso",
+      "il dispositivo deve indicare quale condizione (NA1–NA8) ha attivato la sospensione",
+      "il dispositivo NON deve produrre una classificazione 'più probabile' o 'best guess' — la sospensione è terminale"
+    ],
+    "tabella_esiti_possibili": {
+      "aperto": "C1–C7 soddisfatte + sequenza multi-episodica con variazione W↔Y dimostrata",
+      "predeterminato": "C1–C7 soddisfatte + (W derivabile da T2-solo secondo baseline) E/O (compressione di turni: T2 esteso che chiude preventivamente lo spazio di T4) E (assenza di dipendenza specifica di W da Y)",
+      "ambiguo": "C1–C7 soddisfatte + i due test interni (derivabilità da T2-solo, dipendenza specifica da T3) producono esiti incoerenti, oppure l'episodio è singolo isolato e la direzione di esito è verso l'apertura",
+      "non_classificabile": "almeno una condizione tra NA1–NA8 attivata"
+    }
+  },
+
+  "step_6_proxy_operativo": {
+    "proxy_name": "Catena di ripresa cross-turno lessicalmente non-derivabile (T2→T3→T4) — versione operativa con condizioni di applicabilità",
+    "what_it_measures": "Discrimina, all'interno del passaggio_trasformativo del dispositivo, tre stati strutturali della sequenza adulto-bambino dopo un atto di apertura del bambino: (a) co-produzione effettiva del riferimento (apertura), in cui il secondo turno dell'adulto è strutturato dal contenuto del turno intermedio del bambino; (b) script unilaterale o bilaterale predeterminato (predeterminazione), in cui il secondo turno dell'adulto è continuazione lineare del primo o ripresa formale priva di dipendenza specifica; (c) ambiguità strutturale, esito legittimo quando i test interni non convergono. Il proxy opera al livello SEQUENZA, non al livello del singolo evento.",
+    "required_observations": [
+      "V1 — atto di apertura del bambino (pointing + sguardo all'adulto): presenza registrata",
+      "V2 — trascrizione letterale del contenuto lessicale di T2 (primo turno adulto)",
+      "V3 — struttura sintattica di T2 identificata (con attenzione alla compressione/auto-chiusura)",
+      "V4 — contenuto di T3 (turno intermedio del bambino) descritto in tracce verificabili (lessicali, gestuali, posturali, o silenzio strutturalmente leggibile)",
+      "V5 — trascrizione letterale del contenuto lessicale di T4 (secondo turno adulto), o registrazione esplicita della sua assenza verbale",
+      "V6 — struttura sintattica di T4 identificata",
+      "V7 — sequenza temporale verificata dei quattro turni, senza turni intermedi non analizzabili",
+      "V8 — baseline di derivabilità dichiarata esplicitamente: di-diade (≥2-3 episodi precedenti) oppure di-genere (convenzioni documentate)",
+      "V9 — canale di registrazione adeguato (audio/video sincronizzati, non ricostruzione a memoria)"
+    ],
+    "applicability_conditions": [
+      "C1 — sequenza completa T1→T2→T3→T4 con tutti i quattro turni identificabili",
+      "C2 — T2 trascritto letteralmente con struttura sintattica identificata",
+      "C3 — T3 descritto in tracce verificabili senza interpretazione qualitativa di stati interni",
+      "C4 — T4 trascritto letteralmente o assenza verbale registrata come dato strutturale",
+      "C5 — baseline di derivabilità dichiarata esplicitamente in una delle due forme ammesse",
+      "C6 — canale di registrazione adeguato per V2, V4, V5",
+      "C7 — sequenza pulita senza turni intermedi di terzi o auto-correzioni che spezzano l'unità di analisi"
+    ],
+    "non_applicability_conditions": [
+      "NA1 — manca uno dei quattro turni come unità identificabile",
+      "NA2 — T2 o T4 non trascrivibili per inadeguatezza del canale",
+      "NA3 — T3 descritto solo in registro qualitativo-interpretativo senza tracce verificabili",
+      "NA4 — baseline assente o dichiarata genericamente",
+      "NA5 — episodio ricostruito a memoria, da appunti riassuntivi, o da terze fonti",
+      "NA6 — sequenza con complicazioni strutturali non riducibili ad A-B-C-D",
+      "NA7 — case_description disponibile solo in registro pre-strutturato/interpretativo, senza versione fenomenica",
+      "NA8 — singolo episodio isolato richiesto per classificazione 'aperto' (ammesso solo come 'ambiguo' al massimo)"
+    ],
+    "allowed_outputs": [
+      "aperto",
+      "predeterminato",
+      "ambiguo",
+      "non_classificabile"
+    ],
+    "decision_logic": "PASSO 1 — Verifica delle condizioni di applicabilità. Se anche una sola condizione NA1–NA8 è attivata → restituire 'non_classificabile' indicando la condizione attivante; il dispositivo si arresta. PASSO 2 — Se C1–C7 sono tutte soddisfatte, eseguire i due test interni: (Test A) derivabilità lineare di W da T2-solo rispetto alla baseline dichiarata — esito SI/NO; (Test B) dipendenza specifica di W da Y — esito SI/NO. PASSO 3 — Combinazione degli esiti dei test secondo la matrice: (A=NO, B=SI) → indicatore di apertura; (A=SI, B=NO) → indicatore di predeterminazione; (A=SI, B=SI) o (A=NO, B=NO) → ambiguo. PASSO 4 — Verifica strutturale aggiuntiva per la predeterminazione: se T2 presenta compressione di turni (estensione che auto-chiude lo spazio di T4) → conferma indipendente di predeterminazione. PASSO 5 — Vincolo di livello: se l'esito è 'apertura' ma il livello disponibile è singolo episodio isolato → la classificazione massima accessibile è 'ambiguo' (la classificazione 'aperto' richiede sequenza multi-episodica con variazione W↔Y). PASSO 6 — Restituzione dell'esito in {aperto, predeterminato, ambiguo}. Nessun esito intermedio o probabilistico è ammesso.",
+    "epistemic_limit": "Il proxy operativo non risolve il problema epistemico fondamentale di distinguere co-produzione effettiva da script bilaterale ben sintonizzato: questa distinzione richiede informazione che eccede la sequenza locale (variazione W↔Y in episodi multipli). Il proxy fa l'unica cosa metodologicamente onesta possibile: (a) sposta la robustezza richiesta dal contenuto qualitativo del singolo evento alla struttura osservabile della sequenza, (b) dichiara esplicitamente le precondizioni osservative di applicabilità, (c) introduce 'non_classificabile' come esito legittimo quando le precondizioni mancano, prevenendo falsi positivi mascherati da risultati strutturali. Il limite residuo è che il proxy è asimmetrico per design: la predeterminazione è leggibile su singolo episodio (specialmente come compressione di T2), l'apertura richiede livello sequenza. Questa asimmetria non è un difetto del proxy ma una proprietà del fenomeno che il proxy rende esplicita invece di nascondere."
+  },
+
+  "step_7_verifica_criteri_di_successo": {
+    "criterio_1_impedisce_applicazioni_su_dati_incompleti": {
+      "soddisfatto": true,
+      "rationale": "le otto condizioni di non applicabilità (NA1–NA8) coprono i casi tipici di dati incompleti: turni mancanti (NA1), trascrizione assente (NA2), descrizione qualitativa di T3 senza tracce (NA3), baseline assente (NA4), ricostruzione a memoria (NA5), complicazioni strutturali (NA6), case_description pre-strutturata (NA7), livello insufficiente per apertura (NA8). L'attivazione di una sola produce sospensione, senza bilanciamento o compensazione."
+    },
+    "criterio_2_non_introduce_nuove_inferenze": {
+      "soddisfatto": true,
+      "rationale": "il proxy operativo opera su contenuti lessicali-sintattici-gestuali trascrivibili, su baseline dichiarata, su sequenza temporale registrata. Non introduce inferenze mentali, qualitative o interpretative. Le 'tracce verificabili' di T3 sono definite per esclusione delle qualifiche interpretative (NA3 esplicita questo). La decision logic è meccanica: combinazione di esiti binari di due test contro una baseline esplicita."
+    },
+    "criterio_3_rende_esplicito_quando_non_decidere": {
+      "soddisfatto": true,
+      "rationale": "'non_classificabile' è un esito formale del dispositivo, restituito esplicitamente con indicazione della condizione attivante. Non è un default silenzioso, non è un terzo valore di classificazione, non è un 'best guess'. Il dispositivo è strutturato per dichiarare la propria sospensione."
+    },
+    "criterio_4_utilizzabile_senza_accesso_alla_observed_configuration": {
+      "soddisfatto": true,
+      "rationale": "le variabili V1–V9 sono definite in termini fenomenici e metodologici (trascrizioni, tracce verificabili, baseline dichiarata, canale di registrazione) senza riferimento alla observed_configuration del dispositivo. La case_description in registro pre-strutturato è esplicitamente esclusa (NA7). Il proxy opera dalle tracce di osservazione, non dalla configurazione interpretativa già attribuita."
+    }
+  },
+
+  "final_note": {
+    "proprietà_introdotta_in_questo_step": "capacità del dispositivo di non funzionare quando non deve funzionare",
+    "rationale": "Senza questa proprietà, il dispositivo produrrebbe inevitabilmente falsi positivi: classificherebbe ogni episodio osservato perché la sua decision logic, applicata a dati incompleti, comunque produce un esito. La proprietà introdotta è la capacità di rifiutare di operare quando le precondizioni non sono soddisfatte, distinguendo 'ambiguo' (esito di classificazione legittimo) da 'non_classificabile' (sospensione del dispositivo).",
+    "che_cosa_non_è_questo_step": "Non è un miglioramento della precisione del proxy. Non aggiunge sensibilità o discriminazione. Aggiunge una modalità di rifiuto strutturata. Il proxy v1b classifica gli stessi episodi del proxy v1 con le stesse regole, ma rifiuta esplicitamente di classificare quando le precondizioni mancano. Il guadagno è di onestà epistemica del dispositivo, non di capacità discriminativa.",
+    "implicazione_per_il_device_v3": "Il device v3 dovrà integrare il proxy v1b nel passaggio_trasformativo con tre conseguenze: (1) il device deve poter restituire 'non_classificabile' come esito complessivo del passaggio (non solo del singolo proxy), (2) il device deve registrare quale precondizione ha attivato la sospensione, per permettere la correzione del setting di osservazione, (3) il device deve esplicitare nella sua documentazione che 'non_classificabile' non è un fallimento del dispositivo ma una sua funzione strutturale."
+  }
+}

@@ -77,7 +77,7 @@ Questa apertura non è illimitata: resta sempre esposta alla discontinuità e al
 
 Concepire la relazione come condizione strutturale della soggettività implica una rivalutazione della dipendenza. La dipendenza non è una fase da superare né un difetto da correggere, ma **la forma originaria della soggettivazione**.
 
-Solo perché il soggetto è originariamente dipendente, può essere trasformato dall’esperienza; solo perché l’esperienza è condivisa, può diventare significativa. L’autonomia, quando emerge, non è la negazione della relazione, ma una sua trasformazione.
+Solo perché il soggetto è originariamente dipendente, può essere trasformato dall’esperienza; solo perché l’esperienza è condivisa, può diventare significativa. L’autonomia, quando emerge, non è la negazione della relazione, ma **una sua trasformazione**.
 
 Questa prospettiva consente di evitare sia l’idealizzazione dell’autonomia precoce sia la patologizzazione della dipendenza infantile.
 

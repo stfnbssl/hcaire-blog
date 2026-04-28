@@ -1,0 +1,793 @@
+{
+  "step": "step_4",
+  "results": [
+    {
+      "theme_id": "tema_01_technoference",
+      "core_configuration": {
+        "description": "Una forma storica di organizzazione dell'attenzione (Asse 6) penetra nella struttura diadica del campo co-regolativo (Asse 1), producendo una deformazione della qualità della co-presenza: il caregiver è fisicamente presente ma strutturalmente assente sul piano attentivo. Il danno non è nell'interruzione episodica ma nella ridefinizione della struttura stessa del campo.",
+        "structure_logic": "Una forma storica di organizzazione dell'attenzione (Asse 6) deforma il campo co-regolativo diadico (Asse 1) alterando la qualità della co-presenza senza eliminarla: il problema non è l'assenza, ma la presenza deformata."
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "function_in_theme": "Presidia il livello esperienziale in cui la deformazione si manifesta: è il campo della co-presenza, della co-regolazione incarnata, della temporalità diadica che viene alterata dalla technoference. Senza questo asse il tema non avrebbe un luogo strutturale in cui il danno accade.",
+          "specific_contribution": "Distingue la technoference da altre forme di distrazione storica: il danno specifico è nella qualità della co-regolazione incarnata, non in una generica riduzione del tempo di relazione. È l'asse che rende il tema leggibile come questione di sviluppo precoce e non di semplice comportamento parentale."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "function_in_theme": "Presidia il livello genetico della deformazione: la technoference non è un errore individuale ma una forma storica di organizzazione dell'attenzione, prodotta da strutture tecnologiche e culturali che precedono e condizionano il singolo caregiver. Senza questo asse il tema resterebbe psicologizzato.",
+          "specific_contribution": "Introduce la dimensione della causalità strutturale: non il caregiver distratto ma il campo storico-tecnologico che organizza l'attenzione in un certo modo. Nessun altro asse confermato porta questa funzione genetica."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Deformazione strutturale dell'attenzione relazionale",
+          "linked_axes": [
+            "asse_1",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "co-presenza",
+            "presenza-incarnata",
+            "forma-storica-tecnologica"
+          ],
+          "function": "Connette la dimensione storica dell'organizzazione attentiva (Asse 6) con il livello esperienziale della co-presenza (Asse 1) attraverso il concetto di deformazione: non interruzione, non assenza, ma alterazione strutturale della qualità della presenza. Questo concetto organizza l'intera configurazione perché senza di esso i due assi rimarrebbero giustapposti — uno descrive la causa, l'altro l'effetto — senza che emerga la logica specifica della technoference.",
+          "type": "organizzativo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "presenza fisica vs. presenza strutturale",
+          "description": "Il caregiver è nello stesso spazio del bambino ma strutturalmente assente sul piano attentivo. I due poli non si annullano: la presenza fisica è reale, la deformazione attentiva è altrettanto reale. La tensione è irrisolvibile nella configurazione perché è precisamente questa coesistenza che definisce la technoference."
+        },
+        {
+          "tension": "causalità storica vs. responsabilità individuale",
+          "description": "La forma storica di organizzazione dell'attenzione è strutturale e precede il singolo caregiver, ma la co-regolazione avviene sempre in una diade specifica. I due poli — struttura sociale e soggetto situato — coesistono senza che uno assorba l'altro: la deformazione è sistemica ma si realizza in un campo diadico concreto."
+        },
+        {
+          "tension": "continuità relazionale vs. discontinuità attentiva",
+          "description": "La relazione caregiver-bambino è continua sul piano fisico e affettivo, ma l'attenzione è strutturalmente frammentata da interruzioni tecnologiche ricorrenti. La continuità è condizione del legame, la discontinuità è condizione della deformazione: entrambe sono costitutive della configurazione."
+        }
+      ],
+      "structural_questions": [
+        "Come si distingue strutturalmente una distrazione attentiva episodica da una deformazione sistematica della qualità della co-presenza?",
+        "In quale misura la qualità della co-regolazione dipende dalla continuità attentiva del caregiver e non solo dalla sua presenza fisica?",
+        "Come si trasferisce una forma storica di organizzazione dell'attenzione nella struttura di un campo diadico specifico?",
+        "Quando la deformazione attentiva supera una soglia strutturale oltre la quale il campo co-regolativo non può più svolgere la sua funzione?",
+        "Quale relazione c'è tra la struttura tecnologica che produce la deformazione e la possibilità del caregiver di sottrarsi ad essa?",
+        "Come si distingue la responsabilità strutturale (storica-culturale) dalla responsabilità individuale in un campo co-regolativo?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "clinico",
+          "reason": "Porta la domanda su come valutare la qualità della co-presenza in una relazione diadica quando il caregiver è fisicamente presente ma strutturalmente deformato sul piano attentivo: non un problema di assenza ma di presenza deformata."
+        },
+        {
+          "domain": "educativo (nido e servizi 0-3)",
+          "reason": "Porta la domanda su come la struttura degli ambienti educativi (inclusa la presenza dei dispositivi nel lavoro degli educatori) organizza il campo attentivo disponibile per il bambino: non solo le famiglie ma anche i contesti istituzionali."
+        },
+        {
+          "domain": "formazione dei professionisti",
+          "reason": "Porta la domanda su come formare alla consapevolezza della propria struttura attentiva in contesti ad alta sollecitazione tecnologica: non solo conoscenza del rischio ma capacità di riconoscere la propria deformazione strutturale."
+        },
+        {
+          "domain": "politiche per l'infanzia",
+          "reason": "Porta la domanda su quali condizioni strutturali (di lavoro, di accesso tecnologico, di tempo) producono e mantengono la deformazione attentiva: la technoference non è solo un problema di schermi ma di organizzazione sociale dell'attenzione."
+        }
+      ],
+      "configuration_summary": "La technoference descrive una configurazione in cui una forma storica di organizzazione dell'attenzione (Asse 6) penetra nel campo co-regolativo diadico (Asse 1) producendo una deformazione strutturale della co-presenza: il caregiver è presente fisicamente ma assente strutturalmente sul piano attentivo. Il concetto-ponte organizzativo 'deformazione strutturale dell'attenzione relazionale' connette i due assi rendendo leggibile la logica specifica del fenomeno, che non è riducibile né a un problema individuale né a una questione puramente tecnologica. Le tensioni strutturali tra presenza fisica e presenza strutturale, e tra causalità storica e responsabilità individuale, rendono questa configurazione uno strumento di lettura utile per ambiti che vanno dalla clinica diadica alle politiche per l'infanzia."
+    },
+    {
+      "theme_id": "tema_02_lettura_dialogica",
+      "core_configuration": {
+        "description": "Un mediatore simbolico culturale (il libro) riorganizza la struttura diadica della co-regolazione (Asse 1) in un campo triadico in cui la presenza del caregiver diventa presenza orientata verso un terzo condiviso. Questo campo triadico diventa a sua volta la condizione strutturale in cui il riconoscimento reciproco mediato (Asse 2) diventa possibile: non riconoscimento diretto faccia a faccia, ma riconoscimento mediato da un oggetto culturale condiviso. La dimensione simbolico-culturale (Asse 6) fornisce il contenuto e la struttura del terzo.",
+        "structure_logic": "Un mediatore simbolico culturale (Asse 6) riorganizza la co-regolazione diadica (Asse 1) in un campo triadico in cui la presenza orientata verso un terzo condiviso diventa condizione per il riconoscimento reciproco mediato (Asse 2)."
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "function_in_theme": "Presidia il substrato esperienziale e incarnato della lettura condivisa: la co-presenza fisica, la voce, la regolazione del ritmo, la condivisione dello spazio attentivo. È il livello in cui la diade si trova prima che il libro entri come mediatore.",
+          "specific_contribution": "Fornisce la base incarnata senza cui la mediazione simbolica resterebbe cognitiva: è l'asse che rende la lettura dialogica una pratica di co-regolazione e non solo di trasmissione culturale. Gli altri assi confermati non presidiano questo livello."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "function_in_theme": "Presidia la dimensione simbolica e culturale del mediatore: il libro non è un oggetto neutro ma un artefatto culturale che porta forme storico-culturali di rappresentazione, narrazione e significato. È l'asse che trasforma la relazione diadica in relazione con la cultura.",
+          "specific_contribution": "Introduce la struttura del terzo: il libro come artefatto culturale che porta significati che eccedono la diade. Senza questo asse la lettura condivisa sarebbe solo co-regolazione, non ingresso nella cultura."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "function_in_theme": "Presidia il livello del riconoscimento mediato: nella lettura dialogica condivisa il bambino è riconosciuto come soggetto capace di orientarsi verso un terzo simbolico, di provare emozioni riguardo a personaggi e situazioni, di costruire una prospettiva morale mediata dalla narrazione.",
+          "specific_contribution": "Introduce la dimensione del riconoscimento reciproco che gli altri assi non presidiano: non solo co-presenza (Asse 1) o mediazione simbolica (Asse 6), ma riconoscimento del bambino come soggetto affettivo e proto-morale attraverso la mediazione narrativa."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Mediazione simbolica condivisa",
+          "linked_axes": [
+            "asse_1",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "mediazione-simbolica",
+            "co-presenza",
+            "artefatto-culturale"
+          ],
+          "function": "Connette il substrato esperienziale della co-presenza (Asse 1) con la dimensione simbolico-culturale del mediatore (Asse 6): descrive il processo attraverso cui un artefatto culturale entra nel campo diadico e lo trasforma senza dissolverlo. Gli assi restano riconoscibili come separati — uno presidia il corpo e la presenza, l'altro il simbolo e la cultura.",
+          "type": "connettivo"
+        },
+        {
+          "concept_label": "Struttura triadica caregiver–bambino–libro",
+          "linked_axes": [
+            "asse_1",
+            "asse_6",
+            "asse_2"
+          ],
+          "linked_nodes": [
+            "co-presenza",
+            "artefatto-culturale",
+            "riconoscimento-mediato",
+            "orientamento-condiviso"
+          ],
+          "function": "Struttura l'intera configurazione: è il concetto che trasforma una diade con un oggetto in un campo triadico con funzione specifica. Organizza la relazione tra i tre assi confermati perché descrive come la presenza (Asse 1), il mediatore culturale (Asse 6) e il riconoscimento mediato (Asse 2) si dispongono in una struttura unitaria. La sua rimozione dissolverebbe la logica specifica del tema.",
+          "type": "organizzativo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "chiusura del testo vs. apertura della relazione",
+          "description": "Il libro porta una struttura narrativa definita (ha inizio, fine, personaggi fissi), mentre la relazione diadica nella lettura dialogica è aperta alle reazioni del bambino, alle domande, alle deviazioni. I due poli coesistono nella pratica: la struttura del testo è la condizione della libertà relazionale, non il suo opposto."
+        },
+        {
+          "tension": "mediazione simbolica vs. presenza diretta",
+          "description": "Il libro introduce un terzo che media la relazione, ma la qualità co-regolativa della lettura dipende dalla presenza incarnata del caregiver. Più il mediatore è elaborato, più rischia di sostituire la presenza; più la presenza è diretta, meno il mediatore simbolico può svolgere la sua funzione. La configurazione vive in questa tensione non risolta."
+        },
+        {
+          "tension": "trasmissione culturale vs. costruzione condivisa",
+          "description": "La lettura dialogica porta cultura (testi, valori, narrazioni già formati), ma la sua efficacia strutturale dipende dalla costruzione condivisa di significato nel momento della lettura. La trasmissione e la costruzione non coincidono: il bambino non riceve passivamente la cultura ma la co-costruisce nella relazione."
+        }
+      ],
+      "structural_questions": [
+        "Qual è la condizione strutturale che rende un mediatore simbolico capace di riorganizzare un campo diadico in campo triadico?",
+        "Come si distingue la lettura dialogica (triadica) dalla lettura in presenza (diadica con oggetto)?",
+        "In quale misura la qualità del riconoscimento mediato dipende dalla qualità della co-presenza che lo sostiene?",
+        "Quale funzione strutturale svolge la narratività (l'avere una storia con inizio e fine) nel processo di mediazione simbolica?",
+        "Come cambia la funzione strutturale del libro al variare dell'età del bambino, ovvero al variare della sua capacità di partecipare attivamente alla struttura triadica?",
+        "Quando il libro diventa strumento di trasmissione piuttosto che mediatore di costruzione condivisa — e qual è la differenza strutturale tra i due casi?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "clinico",
+          "reason": "Porta la domanda su come la struttura triadica della lettura dialogica possa essere usata per valutare e sostenere la qualità della relazione diadica: non come test ma come campo strutturale osservabile."
+        },
+        {
+          "domain": "educativo (nido e servizi 0-6)",
+          "reason": "Porta la domanda su quali condizioni strutturali (spazio, tempo, disponibilità del caregiver, tipo di testo) rendono possibile la costruzione di un campo triadico efficace: non la lettura come attività ma la struttura come condizione."
+        },
+        {
+          "domain": "mediatori culturali e biblioteche per l'infanzia",
+          "reason": "Porta la domanda su quali caratteristiche degli artefatti culturali (libri, storie, immagini) favoriscono o impediscono la costruzione del campo triadico: non solo contenuto ma struttura del mediatore."
+        },
+        {
+          "domain": "ricerca sullo sviluppo del linguaggio e della mente",
+          "reason": "Porta la domanda su come la struttura triadica della lettura dialogica si relaziona allo sviluppo della teoria della mente e della capacità narrativa: la configurazione offre un modello strutturale per interrogare questi processi."
+        }
+      ],
+      "configuration_summary": "La lettura dialogica condivisa descrive una configurazione triadica in cui un mediatore simbolico culturale (Asse 6) riorganizza la co-regolazione diadica incarnata (Asse 1) in un campo in cui il riconoscimento reciproco mediato diventa possibile (Asse 2). Il concetto organizzativo 'struttura triadica caregiver–bambino–libro' connette i tre assi in una logica unitaria: non si tratta di una diade con un oggetto, ma di un campo strutturalmente distinto in cui la presenza, il simbolo e il riconoscimento svolgono funzioni irreducibili l'una all'altra. Le tensioni tra chiusura del testo e apertura relazionale, e tra trasmissione culturale e costruzione condivisa, rendono questa configurazione uno strumento di lettura applicabile dalla clinica alla ricerca sullo sviluppo."
+    },
+    {
+      "theme_id": "tema_03_funzione_riflessiva",
+      "core_configuration": {
+        "description": "La co-regolazione esperienziale (Asse 1) è il substrato incarnato attraverso cui il caregiver esercita la funzione riflessiva (Asse 2): riconoscere l'altro come soggetto distinto, sopravvivere come oggetto mentale nella mente del bambino, rendere disponibile l'interiorizzazione di una presenza che pensa. La funzione riflessiva non è un processo cognitivo astratto ma un evento che accade nel corpo della relazione. L'Asse 2 è dominante perché è il livello a cui la funzione si esercita; l'Asse 1 è il substrato che la rende possibile.",
+        "structure_logic": "La co-regolazione esperienziale (Asse 1) è il substrato incarnato attraverso cui il caregiver esercita la funzione riflessiva (Asse 2) — riconoscendo l'altro come distinto, sopravvivendo come oggetto mentale, rendendo disponibile l'interiorizzazione — in una configurazione in cui il processo di riconoscimento dipende strutturalmente dalla tenuta corporea."
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "function_in_theme": "Presidia il processo centrale del tema: il riconoscimento dell'altro come soggetto distinto con stati mentali propri, la sopravvivenza del caregiver come oggetto mentale nella mente del bambino, la disponibilità all'interiorizzazione. È l'asse dominante perché il tema non è pensabile senza questa struttura di riconoscimento.",
+          "specific_contribution": "Introduce la dimensione del riconoscimento differenziato: non solo presenza (Asse 1) ma presenza che pensa, che attribuisce stati mentali, che sopravvive all'attacco senza dissolversi. Questo livello è irriducibile all'asse esperienziale."
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "function_in_theme": "Presidia il substrato incarnato della funzione riflessiva: il tono affettivo, la regolazione corporea, la qualità della co-presenza fisica in cui il processo di riconoscimento si radica. La funzione riflessiva non è cognitiva in astratto: dipende dalla tenuta esperienziale del caregiver.",
+          "specific_contribution": "Distingue la funzione riflessiva dalla mentalizzazione come capacità cognitiva: la dimensione esperienziale introduce la questione della tenuta sotto stress, della disponibilità corporea, della qualità dell'essere-con che precede il pensare-su. Nessun altro asse confermato porta questa funzione."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Co-regolazione",
+          "linked_axes": [
+            "asse_1",
+            "asse_2"
+          ],
+          "linked_nodes": [
+            "co-regolazione-esperienziale",
+            "riconoscimento-dell-altro-come-soggetto"
+          ],
+          "function": "Connette il substrato incarnato (Asse 1) con il processo di riconoscimento (Asse 2) descrivendo come la co-regolazione esperienziale sia il medium in cui la funzione riflessiva si esercita: non prima la regolazione poi il riconoscimento, ma co-regolazione come processo in cui il riconoscimento accade. Gli assi restano riconoscibili come separati — uno è il corpo della relazione, l'altro è la struttura del riconoscimento.",
+          "type": "connettivo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "riconoscimento vs. tenuta",
+          "description": "Il caregiver deve riconoscere l'altro come soggetto distinto (Asse 2) ma per farlo deve mantenere la tenuta esperienziale sotto lo stress relazionale (Asse 1). Le due esigenze strutturali coesistono in tensione: più il bambino è in difficoltà, più il riconoscimento è necessario e più la tenuta è messa alla prova."
+        },
+        {
+          "tension": "sopravvivenza vs. fusione",
+          "description": "La funzione riflessiva richiede che il caregiver sopravviva come oggetto distinto nella mente del bambino — non si dissolva nell'identificazione. Ma la co-regolazione richiede una forma di sintonizzazione che implica permeabilità. I due poli (distinguersi / sintonizzarsi) coesistono senza risolversi."
+        },
+        {
+          "tension": "struttura del riconoscimento vs. processo incarnato",
+          "description": "La funzione riflessiva ha una struttura definita (riconoscere stati mentali, attribuire intenzionalità, sopravvivere come oggetto), ma il processo attraverso cui si esercita è incarnato, situato, contingente. La struttura non garantisce il processo: il caregiver può conoscere la funzione riflessiva senza poterla esercitare in condizioni di stress."
+        }
+      ],
+      "structural_questions": [
+        "In quale relazione sono la capacità di riconoscere stati mentali dell'altro e la qualità della co-regolazione incarnata che la sostiene?",
+        "Cosa significa strutturalmente 'sopravvivere come oggetto mentale' nella mente del bambino — e quali condizioni lo rendono possibile o impossibile?",
+        "Come si distingue la funzione riflessiva come capacità stabile dalla funzione riflessiva come evento situato dipendente dalla tenuta esperienziale del caregiver?",
+        "Quali condizioni strutturali (di stress, di sostegno, di contesto) alterano la disponibilità della funzione riflessiva senza eliminarla?",
+        "In quale misura la funzione riflessiva del caregiver dipende dall'essere stato oggetto di funzione riflessiva in una relazione precedente?",
+        "Come si distingue l'assenza di funzione riflessiva dalla sua sospensione temporanea sotto stress — e quale differenza strutturale produce per il bambino?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "clinico",
+          "reason": "Porta la domanda su come valutare la qualità della funzione riflessiva in condizioni di stress relazionale — non come tratto stabile ma come capacità situata dipendente dalla tenuta esperienziale."
+        },
+        {
+          "domain": "formazione dei professionisti della prima infanzia",
+          "reason": "Porta la domanda su come sostenere la funzione riflessiva degli educatori e dei professionisti: non solo l'acquisizione di conoscenze sulla mentalizzazione ma il sostegno alla tenuta esperienziale che la rende praticabile."
+        },
+        {
+          "domain": "supervisione clinica ed educativa",
+          "reason": "Porta la domanda su quale funzione strutturale svolge la supervisione: non solo riflessione sui casi ma sostegno alla tenuta esperienziale che rende possibile la funzione riflessiva nel professionista."
+        },
+        {
+          "domain": "ricerca sullo sviluppo",
+          "reason": "Porta la domanda su come misurare la funzione riflessiva come processo situato — dipendente dalla qualità della co-regolazione — e non solo come capacità cognitiva individuale."
+        }
+      ],
+      "configuration_summary": "La funzione riflessiva del caregiver descrive una configurazione in cui il processo di riconoscimento dell'altro come soggetto distinto (Asse 2, dominante) è strutturalmente radicato nella qualità della co-regolazione incarnata (Asse 1): non si può pensare l'altro se non si è in grado di tenersi nella relazione con lui. Il concetto-ponte 'co-regolazione' connette i due assi descrivendo il medium in cui la funzione riflessiva si esercita, mentre le tensioni tra riconoscimento e tenuta, e tra sopravvivenza e sintonizzazione, rendono questa configurazione uno strumento di lettura per ambiti che vanno dalla clinica individuale alla formazione dei professionisti."
+    },
+    {
+      "theme_id": "tema_04_coregolazione_ritmo_biologico",
+      "core_configuration": {
+        "description": "Il tema è interamente interno all'Asse 1: il ritmo biologico del bambino (sonno, alimentazione, veglia) è strutturalmente un campo diadico fin dall'inizio — non prima il ritmo biologico poi la relazione, ma ritmo biologico come evento che accade sempre già in una temporalità condivisa. La corporeità vissuta e la temporalità diadica non sono due elementi separati che si connettono: sono le due dimensioni della stessa configurazione ontologico-fenomenologica.",
+        "structure_logic": "La corporeità vissuta e la temporalità diadica sono le dimensioni attraverso cui la co-regolazione trasforma il ritmo biologico del bambino in campo di regolazione ontologica condiviso: prima che ci sia relazione simbolica o riconoscimento morale, c'è ritmo co-regolato."
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "function_in_theme": "È l'unico asse della configurazione e ne presidia l'intera struttura: il ritmo biologico come evento esperienziale vissuto nella corporeità del bambino, la temporalità diadica come struttura in cui il ritmo si co-regola, la qualità della co-presenza come condizione del campo regolativo.",
+          "specific_contribution": "Non ha confronto con altri assi confermati — è l'asse unico. Il suo contributo specifico è rendere leggibile il ritmo biologico non come funzione fisiologica ma come evento fenomenologico: il sonno non è solo un processo biologico, è un'esperienza vissuta in un campo diadico."
+        }
+      ],
+      "bridge_integration": [],
+      "structural_tensions": [
+        {
+          "tension": "ritmo biologico vs. ritmo relazionale",
+          "description": "Il bambino ha ritmi biologici propri (fame, sonno, veglia) che non coincidono necessariamente con i ritmi del caregiver e del contesto. La co-regolazione non annulla questa differenza: coesistono il ritmo come dato biologico e il ritmo come evento relazionale co-costruito. La tensione è la condizione del processo co-regolativo, non il suo fallimento."
+        },
+        {
+          "tension": "sincronia vs. dissonanza ritmica",
+          "description": "La co-regolazione tende alla sincronia, ma la dissonanza ritmica è strutturalmente necessaria: è attraverso la riparazione della dissonanza che il campo co-regolativo si consolida. La sincronia perfetta eliminerebbe il processo; la dissonanza irrisolvibile lo distruggerebbe. Entrambi i poli sono strutturalmente necessari."
+        },
+        {
+          "tension": "autonomia nascente vs. dipendenza strutturale",
+          "description": "Il bambino ha ritmi propri che lo costituiscono come soggetto biologico distinto (autonomia nascente), ma questi ritmi dipendono strutturalmente dalla co-regolazione diadica per stabilizzarsi e organizzarsi (dipendenza strutturale). I due poli non si risolvono: sono la tensione fondamentale di ogni processo di sviluppo precoce."
+        }
+      ],
+      "structural_questions": [
+        "Qual è la differenza strutturale tra regolazione del ritmo biologico (adattamento del bambino a un ritmo esterno) e co-regolazione del ritmo biologico (costruzione condivisa di un campo ritmico)?",
+        "Come si distingue la sincronia ritmica come esito stabile dalla sincronia come processo in corso — e quale dei due è strutturalmente più rilevante per lo sviluppo?",
+        "In quale misura i ritmi biologici del bambino sono già relazionali prima che ci sia una relazione riconoscibile come tale?",
+        "Cosa succede strutturalmente quando il campo co-regolativo non è disponibile o è discontinuo nelle prime fasi di vita?",
+        "Come cambia la struttura del campo co-regolativo quando il bambino acquisisce la capacità di segnalare i propri stati biologici con maggiore precisione?",
+        "Qual è la relazione strutturale tra la qualità della co-regolazione ritmica precoce e la successiva capacità di autoregolazione del bambino?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "clinico neonatale e perinatale",
+          "reason": "Porta la domanda su come la qualità del campo co-regolativo ritmico nelle prime settimane di vita si struttura e quali condizioni lo sostengono o lo compromettono: non solo interventi sul comportamento del bambino ma sul campo diadico."
+        },
+        {
+          "domain": "educativo (nido fascia 0-1)",
+          "reason": "Porta la domanda su come le pratiche di cura nei nidi (cambio, pasto, sonno) organizzano il campo co-regolativo ritmico: non routine come sequenze di azioni ma come strutture temporali che modellano il campo esperienziale del bambino."
+        },
+        {
+          "domain": "formazione di ostetriche, neonatologi e professionisti del puerperio",
+          "reason": "Porta la domanda su come i professionisti del periodo perinatale intervengono sul campo co-regolativo ritmico: non solo supporto tecnico alle funzioni biologiche ma comprensione della struttura diadica in cui queste funzioni si organizzano."
+        }
+      ],
+      "configuration_summary": "La co-regolazione del ritmo biologico descrive una configurazione integralmente interna all'Asse 1 in cui il ritmo biologico del bambino (sonno, alimentazione, veglia) è strutturalmente un campo diadico fin dall'inizio: non prima un evento biologico individuale poi una relazione, ma ritmo come evento che accade sempre già in una temporalità condivisa. L'assenza di concetti-ponte è strutturalmente coerente: con un solo asse confermato non ci sono assi da connettere. Le tensioni tra ritmo biologico e ritmo relazionale, e tra sincronia e dissonanza, rendono questa configurazione uno strumento di lettura per la clinica perinatale e i servizi educativi nella fascia 0-1."
+    },
+    {
+      "theme_id": "tema_05_salute_mentale_perinatale",
+      "core_configuration": {
+        "description": "La crisi di salute mentale perinatale del caregiver (depressione post-partum, ansia, psicosi) compromette simultaneamente due livelli strutturali: la disponibilità co-regolativa incarnata (Asse 1) e la struttura del riconoscimento dell'altro come soggetto distinto (Asse 2). Non è prima l'uno poi l'altro: la vulnerabilità della presenza produce una catena strutturale in cui la tenuta esperienziale e la capacità di riconoscimento si compromettono insieme. Il bambino si trova in un campo in cui la co-presenza è fisicamente disponibile ma strutturalmente deformata.",
+        "structure_logic": "La crisi perinatale compromette simultaneamente la disponibilità co-regolativa (Asse 1) e la struttura del riconoscimento (Asse 2): la vulnerabilità della presenza produce una catena strutturale che rischia di alterare sia la tenuta esperienziale che l'interiorizzazione dell'altro."
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "function_in_theme": "Presidia il livello della tenuta esperienziale: la disponibilità del caregiver a co-regolare incarnatamente, la qualità della co-presenza sotto stress, la capacità di mantenere il campo diadico funzionante quando la sofferenza psichica altera la presenza. È il livello a cui la crisi perinatale si manifesta prima.",
+          "specific_contribution": "Introduce la dimensione della presenza deformata (non assenza, ma presenza alterata): la crisi perinatale non elimina il caregiver dal campo diadico, ma ne deforma la struttura esperienziale. Questo livello è irriducibile al riconoscimento (Asse 2)."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "function_in_theme": "Presidia il livello del riconoscimento: la crisi perinatale può alterare la capacità del caregiver di riconoscere il bambino come soggetto distinto con stati mentali propri, di attribuirgli intenzionalità, di non confondere la propria sofferenza con quella del bambino.",
+          "specific_contribution": "Introduce la dimensione del riconoscimento compromesso: non solo la co-presenza è deformata (Asse 1) ma può essere compromessa anche la struttura del riconoscimento dell'altro come distinto. Questi sono due livelli di compromissione strutturalmente diversi con implicazioni diverse per lo sviluppo del bambino."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Co-regolazione",
+          "linked_axes": [
+            "asse_1",
+            "asse_2"
+          ],
+          "linked_nodes": [
+            "disponibilita-co-regolativa",
+            "riconoscimento-dell-altro-come-soggetto"
+          ],
+          "function": "Connette il livello esperienziale (Asse 1) con il livello del riconoscimento (Asse 2) attraverso il processo di co-regolazione: è il medium in cui la disponibilità esperienziale del caregiver si traduce in possibilità di riconoscimento per il bambino. La crisi perinatale altera prima la co-regolazione, e attraverso di essa il riconoscimento. Gli assi restano riconoscibili come separati.",
+          "type": "connettivo"
+        },
+        {
+          "concept_label": "Disponibilità affettiva",
+          "linked_axes": [
+            "asse_1",
+            "asse_2"
+          ],
+          "linked_nodes": [
+            "disponibilita-co-regolativa",
+            "tenuta-esperienziale",
+            "riconoscimento-dell-altro-come-soggetto"
+          ],
+          "function": "Struttura l'intera configurazione descrivendo la condizione che la crisi perinatale compromette: la disponibilità affettiva non è né solo esperienziale né solo cognitiva, ma il campo in cui tenuta incarnata e riconoscimento si tengono insieme. La sua compromissione è la crisi perinatale come evento strutturale. La sua rimozione cambierebbe la logica dell'intera micro-matrice.",
+          "type": "organizzativo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "vulnerabilità del caregiver vs. necessità del bambino",
+          "description": "Il caregiver in crisi perinatale ha bisogno di cure e sostegno, ma il bambino ha bisogno della disponibilità del caregiver. I due bisogni coesistono senza risolversi: soddisfare la necessità del bambino ignorando la vulnerabilità del caregiver non è sostenibile; rivolgersi solo alla vulnerabilità del caregiver lascia il bambino in un campo deformato."
+        },
+        {
+          "tension": "presenza fisica vs. disponibilità strutturale",
+          "description": "Il caregiver in crisi perinatale è fisicamente presente ma la sua disponibilità strutturale al campo diadico è compromessa. La presenza fisica non garantisce la disponibilità affettiva; la sua assenza non implica necessariamente l'assenza di disponibilità. La tensione tra presenza come fatto e disponibilità come struttura è costitutiva del tema."
+        },
+        {
+          "tension": "cronicità vs. acuzie",
+          "description": "La crisi perinatale può essere acuta (episodio post-partum) o cronica (condizione psichiatrica preesistente che si intensifica). Le due forme producono strutture diverse nel campo diadico: l'acuzie è un'interruzione in un campo precedentemente funzionante, la cronicità è una deformazione strutturale del campo fin dall'inizio. I due poli coesistono e si sovrappongono nella realtà clinica."
+        }
+      ],
+      "structural_questions": [
+        "Come si distingue strutturalmente la compromissione della disponibilità co-regolativa dalla compromissione della struttura del riconoscimento — e quali conseguenze diverse producono per lo sviluppo del bambino?",
+        "Qual è la soglia strutturale oltre la quale la crisi perinatale del caregiver diventa un evento che altera la traiettoria di sviluppo del bambino?",
+        "Come il bambino si adatta strutturalmente a un campo diadico in cui la disponibilità affettiva è compromessa — e questa adattazione ha costi strutturali propri?",
+        "In quale relazione sono la crisi perinatale come sofferenza psichica individuale e la crisi perinatale come evento che deforma un campo diadico?",
+        "Quando il sostegno al caregiver in crisi perinatale è anche, indirettamente, un intervento sul campo di sviluppo del bambino?",
+        "Come si legge la differenza tra un bambino che ha avuto accesso a un caregiver con disponibilità affettiva compromessa fin dall'inizio e uno che ha subìto un'interruzione tardiva della disponibilità?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "clinico",
+          "reason": "Porta la domanda su come valutare la crisi perinatale non solo come sofferenza individuale del caregiver ma come evento che deforma strutturalmente un campo diadico: la diagnosi psichiatrica non cattura la dimensione relazionale della crisi."
+        },
+        {
+          "domain": "consultori e servizi di salute mentale perinatale",
+          "reason": "Porta la domanda su come i servizi possono intervenire contemporaneamente sulla vulnerabilità del caregiver e sulla disponibilità al campo diadico: non due interventi separati ma un'interrogazione della loro connessione strutturale."
+        },
+        {
+          "domain": "formazione dei professionisti della salute perinatale",
+          "reason": "Porta la domanda su come formare i professionisti a leggere la crisi perinatale come evento che ha effetti su due livelli strutturali simultanei: non solo la sofferenza del caregiver ma il campo di sviluppo del bambino."
+        },
+        {
+          "domain": "politiche per la salute perinatale",
+          "reason": "Porta la domanda su quali strutture di sostegno (continuità di cura, accessibilità dei servizi, congedi parentali) intervengono sulla disponibilità strutturale del caregiver: non solo cura della malattia ma sostegno del campo diadico."
+        }
+      ],
+      "configuration_summary": "La salute mentale perinatale descrive una configurazione in cui la crisi psichica del caregiver compromette simultaneamente la tenuta esperienziale della co-regolazione (Asse 1) e la struttura del riconoscimento del bambino come soggetto distinto (Asse 2). Il concetto organizzativo 'disponibilità affettiva' struttura l'intera configurazione come il campo che la crisi perinatale mette a rischio, mentre il concetto connettivo 'co-regolazione' descrive il medium attraverso cui la compromissione esperienziale si traduce in compromissione del riconoscimento. Le tensioni tra vulnerabilità del caregiver e necessità del bambino, e tra presenza fisica e disponibilità strutturale, rendono questa configurazione utile per la clinica, la formazione e le politiche perinatali."
+    },
+    {
+      "theme_id": "tema_06_avversita_precoci",
+      "core_configuration": {
+        "description": "L'avversità precoce è strutturalmente un incontro tra un evento che eccede le risorse del bambino (Asse 4: limite reale, perdita, separazione, trauma) e la qualità del campo co-regolativo disponibile (Asse 1) che media quell'incontro. Non è l'evento in sé a determinare il destino strutturale: è la qualità della co-regolazione disponibile a determinare se l'eccedenza produce struttura (il limite diventa esperienza elaborabile) o disorganizzazione (il limite produce frammentazione).",
+        "structure_logic": "La qualità della co-regolazione disponibile (Asse 1) è la variabile che determina se l'incontro precoce con il limite reale e l'eccedenza (Asse 4) produce struttura o produce disorganizzazione: non l'evento ma il campo relazionale in cui l'evento accade."
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "function_in_theme": "Presidia la struttura dell'evento avverso: la separazione reale, la perdita, il trauma, l'incontro con qualcosa che non si controlla e che eccede le risorse disponibili. Senza questo asse il tema non avrebbe il suo oggetto specifico.",
+          "specific_contribution": "Introduce la dimensione dell'eccedenza come evento strutturale, non come errore o patologia: l'avversità precoce non è un'anomalia ma un incontro con il limite reale. Nessun altro asse confermato porta questa struttura dell'evento."
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "function_in_theme": "Presidia la condizione relazionale che media l'incontro con l'avversità: la qualità della co-regolazione disponibile, la presenza del caregiver come campo di elaborazione, la capacità del campo diadico di contenere l'eccedenza senza dissolversi.",
+          "specific_contribution": "Introduce la variabile mediana che la letteratura sull'avversità spesso trascura: non l'evento ma il campo relazionale in cui l'evento accade. Distingue questa configurazione da una lettura puramente traumatologica dell'avversità precoce."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Co-regolazione",
+          "linked_axes": [
+            "asse_1",
+            "asse_4"
+          ],
+          "linked_nodes": [
+            "co-regolazione-esperienziale",
+            "eccedenza-reale",
+            "limite-come-struttura"
+          ],
+          "function": "Struttura l'intera configurazione descrivendo il processo attraverso cui il campo co-regolativo (Asse 1) media l'incontro con il limite reale (Asse 4): la co-regolazione non evita l'eccedenza ma trasforma il modo in cui il bambino la incontra. La sua rimozione cambierebbe la logica della micro-matrice: senza questo ponte il tema diventerebbe o una teoria del trauma (solo Asse 4) o una teoria della relazione precoce (solo Asse 1).",
+          "type": "organizzativo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "eccedenza vs. elaborazione",
+          "description": "L'avversità precoce è per definizione qualcosa che eccede le risorse del bambino (altrimenti non sarebbe avversità), ma la configurazione implica che questa eccedenza possa essere elaborata attraverso la co-regolazione. I due poli — eccedenza e capacità di elaborazione — coesistono in tensione: l'elaborazione non cancella l'eccedenza, e l'eccedenza non necessariamente impedisce l'elaborazione."
+        },
+        {
+          "tension": "struttura vs. trauma",
+          "description": "L'incontro con il limite reale può produrre struttura (il bambino impara che il limite esiste, che la perdita è reale, che l'eccedenza è elaborabile) oppure trauma (il limite produce frammentazione, la perdita non è elaborabile). Quale dei due esiti si produce dipende dalla qualità del campo co-regolativo, ma la differenza strutturale tra i due esiti non è sempre prevedibile in anticipo."
+        },
+        {
+          "tension": "urgenza dell'intervento vs. tempo dell'elaborazione",
+          "description": "L'avversità precoce richiede spesso una risposta immediata (protezione, contenimento), ma l'elaborazione strutturale dell'eccedenza richiede tempo e processo. Le due esigenze — risposta urgente e processo di elaborazione — coesistono in tensione: l'intervento urgente non garantisce l'elaborazione, e la priorità all'elaborazione può essere controindicata nell'urgenza."
+        }
+      ],
+      "structural_questions": [
+        "Qual è la differenza strutturale tra un'avversità precoce che produce struttura e una che produce disorganizzazione — e questa differenza è leggibile a priori o solo retrospettivamente?",
+        "Come si qualifica la funzione del caregiver (o del campo co-regolativo) in presenza di un'avversità che eccede le sue stesse risorse?",
+        "Esiste una soglia strutturale dell'eccedenza oltre la quale la co-regolazione non è sufficiente a mediare l'incontro con il limite?",
+        "Come si distingue strutturalmente la protezione dall'avversità (evitare il limite) dalla mediazione dell'avversità (accompagnare l'incontro con il limite)?",
+        "In quale relazione sono l'avversità precoce come evento singolo e l'avversità come condizione cronica del campo di sviluppo?",
+        "Come il bambino costruisce strutturalmente un rapporto con il limite e la perdita attraverso esperienze di avversità che sono state co-regolate?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "clinico",
+          "reason": "Porta la domanda su come valutare l'impatto strutturale di un'avversità precoce non solo in termini di evento traumatico ma in termini di qualità del campo co-regolativo disponibile al momento dell'evento: la stessa avversità può avere esiti strutturalmente diversi."
+        },
+        {
+          "domain": "servizi di protezione e tutela dell'infanzia",
+          "reason": "Porta la domanda su come la struttura degli interventi di protezione (allontanamento, collocamento) si relaziona al campo co-regolativo del bambino: proteggere dall'avversità può implicare la rimozione del campo co-regolativo stesso."
+        },
+        {
+          "domain": "politiche per l'infanzia in contesti di rischio",
+          "reason": "Porta la domanda su come le politiche per le famiglie in condizione di avversità (povertà, migrazione, violenza) intervengono non solo sull'evento avverso ma sul campo co-regolativo che media l'impatto dell'avversità."
+        },
+        {
+          "domain": "ricerca sugli esiti dello sviluppo",
+          "reason": "Porta la domanda su come modellare strutturalmente la relazione tra avversità precoce e traiettorie di sviluppo includendo la variabile mediana della qualità co-regolativa: non solo esposizione ma campo in cui l'esposizione avviene."
+        }
+      ],
+      "configuration_summary": "Le avversità precoci descrivono una configurazione in cui l'esito strutturale dell'incontro con il limite reale e l'eccedenza (Asse 4) dipende dalla qualità del campo co-regolativo disponibile (Asse 1). Il concetto-ponte organizzativo 'co-regolazione' struttura l'intera configurazione come il processo attraverso cui il campo relazionale media — o non media — l'eccedenza: non l'evento avverso in sé determina il destino strutturale del bambino, ma il campo in cui l'evento accade. Le tensioni tra eccedenza e elaborazione, e tra urgenza dell'intervento e tempo dell'elaborazione, rendono questa configurazione uno strumento di lettura per la clinica, i servizi di protezione e le politiche per l'infanzia."
+    },
+    {
+      "theme_id": "tema_07_ecosistema_digitale",
+      "core_configuration": {
+        "description": "L'ecosistema digitale come forma storica contemporanea (Asse 6) penetra nella struttura del desiderio come campo di orientamento verso il possibile (Asse 5): sostituisce il desiderio — che implica mancanza, apertura, indeterminazione — con la motivazione come sistema di rinforzo verso obiettivi predefiniti. Il campo desiderabile viene colonizzato: non il bambino o l'adolescente perde la capacità di desiderare, ma la struttura culturale in cui il desiderio si forma viene alterata alla radice.",
+        "structure_logic": "L'ecosistema digitale come forma storica (Asse 6) colonizza il campo desiderabile (Asse 5) sostituendo il desiderio come struttura di orientamento aperta con la motivazione come sistema di rinforzo verso mete predefinite: il possibile si riduce al raggiungibile."
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "function_in_theme": "Presidia la struttura che il tema mette a rischio: il desiderio come orientamento verso il possibile non ancora determinato, come tensione verso qualcosa che non c'è ancora, come motore di soggettivazione. È l'asse che rende leggibile il danno strutturale specifico dell'ecosistema digitale.",
+          "specific_contribution": "Introduce la distinzione cruciale tra desiderio e motivazione: il desiderio ha struttura aperta (il suo oggetto non è predefinito), la motivazione ha struttura chiusa (l'obiettivo è dato). Questa distinzione è specifica di questo asse e non è accessibile attraverso gli altri."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "function_in_theme": "Presidia la forma storica della deformazione: l'ecosistema digitale non è un'aberrazione individuale ma una struttura storico-culturale che organizza il campo desiderabile in un certo modo. La deformazione non è nel bambino ma nella struttura culturale in cui il bambino si sviluppa.",
+          "specific_contribution": "Introduce la dimensione genetica del problema: l'ecosistema digitale è una forma storica specifica (non tecnologia in genere, ma questa forma storica contemporanea). Distingue il tema da una critica generica ai media e lo radica in una struttura culturale databile e analizzabile."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Deformazione strutturale del desiderio",
+          "linked_axes": [
+            "asse_5",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "campo-desiderabile",
+            "forma-storica-digitale",
+            "soggettivazione-del-desiderio"
+          ],
+          "function": "Struttura l'intera configurazione descrivendo il processo attraverso cui una forma storica (Asse 6) altera la struttura del desiderio (Asse 5): non solo produce certi contenuti ma modifica la struttura stessa del campo in cui il desiderio si forma. La sua rimozione dissolverebbe la logica del tema: senza questo ponte avremmo solo una descrizione dell'ecosistema digitale (Asse 6) e una descrizione del desiderio (Asse 5) senza la connessione strutturale che produce il fenomeno specifico.",
+          "type": "organizzativo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "desiderio vs. motivazione",
+          "description": "Il desiderio ha struttura aperta (il suo oggetto non è predefinito, è qualcosa che si scopre cercando), la motivazione ha struttura chiusa (l'obiettivo è dato, il compito è raggiungerlo). L'ecosistema digitale produce la sostituzione strutturale del primo con la seconda: i due poli coesistono in tensione nella configurazione perché la sostituzione non è mai totale ma sempre parziale."
+        },
+        {
+          "tension": "campo aperto vs. campo programmato",
+          "description": "Il campo desiderabile è strutturalmente aperto — non sa in anticipo dove va. Il campo digitale è strutturalmente programmato — è disegnato per produrre certi comportamenti e non altri. La tensione tra le due strutture non si risolve: il bambino o l'adolescente si muove in entrambi i campi simultaneamente."
+        },
+        {
+          "tension": "determinazione storica vs. struttura soggettiva",
+          "description": "La deformazione è prodotta da una struttura storica (l'ecosistema digitale) che precede il soggetto e lo condiziona, ma la struttura del desiderio è soggettiva — non si riduce alla sua determinazione storica. I due poli coesistono: il soggetto è condizionato ma non determinato, la struttura storica deforma ma non cancella."
+        }
+      ],
+      "structural_questions": [
+        "Qual è la differenza strutturale tra desiderio e motivazione — e come questa differenza diventa leggibile nell'osservazione del comportamento di un bambino o adolescente?",
+        "Come si riconosce strutturalmente la colonizzazione del campo desiderabile rispetto a una semplice preferenza per certi tipi di contenuto?",
+        "In quale momento dello sviluppo la struttura del desiderio è più vulnerabile alla deformazione prodotta da un ecosistema che privilegia la motivazione?",
+        "Quale relazione c'è tra la qualità del campo co-regolativo precoce e la resistenza strutturale alla colonizzazione del desiderio in età successiva?",
+        "Come il campo desiderabile può essere sostenuto strutturalmente in un ecosistema che lo colonizza — non evitando il digitale ma modificando la struttura del campo?",
+        "Qual è la differenza tra un uso del digitale che deforma la struttura del desiderio e un uso che la lascia intatta o la sostiene?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "educativo (scuola e servizi per l'infanzia e l'adolescenza)",
+          "reason": "Porta la domanda su come le pratiche educative possono sostenere la struttura del desiderio come campo aperto in un ecosistema che privilegia la motivazione come sistema di rinforzo: non rifiuto del digitale ma costruzione di spazi strutturalmente diversi."
+        },
+        {
+          "domain": "politiche per l'infanzia e l'adolescenza",
+          "reason": "Porta la domanda su come regolare l'ecosistema digitale non solo in termini di contenuti (cosa vedere) ma di struttura del campo (come il campo è organizzato per produrre motivazione al posto di desiderio)."
+        },
+        {
+          "domain": "clinico (adolescenza)",
+          "reason": "Porta la domanda su come leggere clinicamente la difficoltà adolescenziale nel distinguere desiderio e motivazione: non come deficit individuale ma come effetto di una deformazione strutturale del campo culturale."
+        },
+        {
+          "domain": "ricerca sullo sviluppo",
+          "reason": "Porta la domanda su come misurare la struttura del desiderio (apertura, tolleranza della mancanza, capacità di orientarsi verso l'indeterminato) e come questa struttura si relaziona all'esposizione all'ecosistema digitale."
+        }
+      ],
+      "configuration_summary": "L'ecosistema digitale descrive una configurazione in cui una forma storica contemporanea (Asse 6) colonizza la struttura del desiderio come campo di orientamento verso il possibile (Asse 5) sostituendolo con la motivazione come sistema di rinforzo verso obiettivi predefiniti. Il concetto-ponte organizzativo 'deformazione strutturale del desiderio' connette i due assi rendendo leggibile il processo attraverso cui una struttura culturale modifica la struttura soggettiva: non i contenuti digitali ma il campo in cui si formano i desideri. Le tensioni tra desiderio e motivazione, e tra campo aperto e campo programmato, rendono questa configurazione utile per pensare politiche, pratiche educative e interventi clinici in adolescenza."
+    },
+    {
+      "theme_id": "tema_08_disuguaglianze_precoci",
+      "core_configuration": {
+        "description": "Le strutture storico-sociali (Asse 6) — povertà, segregazione, svantaggio cumulativo — producono differenziali sistematici nella qualità della co-regolazione disponibile per i bambini (Asse 1): non differenze individuali tra caregivers, ma disuguaglianze strutturali che determinano la qualità del campo di sviluppo precoce. Il meccanismo di trasmissione non è psicologico ma strutturale: le condizioni materiali e sociali organizzano il campo esperienziale disponibile prima ancora che le scelte individuali possano esercitarsi.",
+        "structure_logic": "Le strutture storico-sociali (Asse 6) producono differenziali sistematici nella qualità della co-regolazione disponibile (Asse 1) attraverso mediazione istituzionale: non differenze individuali ma disuguaglianze strutturali determinano la qualità del campo di sviluppo precoce."
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "function_in_theme": "Presidia il livello della causalità strutturale: povertà, segregazione residenziale, precarietà lavorativa, svantaggio culturale come strutture storico-sociali che producono differenziali nel campo di sviluppo. Senza questo asse il tema resterebbe psicologizzato (differenze tra caregivers) invece di strutturalizzato (disuguaglianze tra campi di sviluppo).",
+          "specific_contribution": "Introduce la dimensione del meccanismo strutturale di trasmissione: non il caregiver più o meno capace, ma la struttura sociale che organizza le condizioni in cui il caregiver si trova. Questo livello è irriducibile alla fenomenologia esperienziale."
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "function_in_theme": "Presidia il livello esperienziale in cui le disuguaglianze strutturali si traducono: la qualità della co-regolazione disponibile, la densità del campo esperienziale, la presenza o assenza di un campo diadico che sostenga il bambino. È il livello a cui le strutture sociali diventano realtà vissuta per il bambino.",
+          "specific_contribution": "Introduce la traduzione micro del macro strutturale: non solo statistiche sullo svantaggio, ma qualità del campo di sviluppo che un bambino in certe condizioni trova disponibile. Questo livello rende il tema pertinente allo sviluppo precoce e non solo alla sociologia."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Vulnerabilità strutturale",
+          "linked_axes": [
+            "asse_1",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "condizioni-strutturali-dello-svantaggio",
+            "deformazione-strutturale-del-campo"
+          ],
+          "function": "Connette il livello storico-sociale (Asse 6) con il livello esperienziale (Asse 1) descrivendo come le strutture sociali producono una condizione di vulnerabilità strutturale del campo di sviluppo: non vulnerabilità individuale del bambino o del caregiver, ma vulnerabilità del campo come prodotto di condizioni strutturali. Gli assi restano riconoscibili come separati — uno è la struttura sociale, l'altro è il campo esperienziale.",
+          "type": "connettivo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "struttura sociale vs. agenzia individuale",
+          "description": "Le disuguaglianze sono prodotte da strutture che precedono e condizionano il caregiver, ma la qualità della co-regolazione dipende anche da scelte e risorse individuali. I due poli coesistono in tensione: la struttura non determina il campo esperienziale in modo assoluto, ma l'agenzia individuale non può compensare strutture di svantaggio sistematico."
+        },
+        {
+          "tension": "livello macro vs. livello micro",
+          "description": "Le disuguaglianze strutturali agiscono a livello macro (politiche, distribuzione delle risorse, struttura dei servizi), ma i loro effetti si producono a livello micro (qualità del campo diadico, disponibilità del caregiver, densità dell'ambiente esperienziale). La traduzione dal macro al micro non è meccanica: ci sono mediazioni, resistenze, risorse locali."
+        },
+        {
+          "tension": "accumulazione dello svantaggio vs. possibilità di rottura",
+          "description": "Lo svantaggio strutturale tende ad accumularsi — ogni condizione di vulnerabilità aumenta la probabilità di altre condizioni di vulnerabilità. Ma questa logica di accumulazione non è assoluta: ci sono rotture, risorse inattese, interventi che modificano la traiettoria. I due poli (accumulazione e rottura) coesistono strutturalmente."
+        }
+      ],
+      "structural_questions": [
+        "Come si traduce strutturalmente una condizione di svantaggio sociale nella qualità del campo di sviluppo disponibile per un bambino specifico?",
+        "Qual è la differenza strutturale tra un bambino che nasce in una famiglia con risorse limitate e un bambino che nasce in una struttura sociale che produce svantaggio sistematico?",
+        "In quale punto della catena causale (struttura sociale → condizioni del caregiver → campo co-regolativo → campo esperienziale del bambino) è più efficace un intervento?",
+        "Come si distingue l'effetto diretto dello svantaggio strutturale sull'esperienza del bambino dall'effetto mediato attraverso la compromissione della disponibilità del caregiver?",
+        "Quale funzione svolgono le istituzioni educative precoci (nido, servizi 0-3) nella struttura delle disuguaglianze — amplificano o attenuano i differenziali strutturali?",
+        "Come si legge la differenza tra resilienza individuale (il bambino che 'ce la fa' nonostante le condizioni) e riduzione strutturale delle disuguaglianze?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "politiche per l'infanzia e la famiglia",
+          "reason": "Porta la domanda su come le politiche sociali intervengono sulla struttura delle disuguaglianze che producono differenziali nel campo di sviluppo: non solo sostegno economico ma modificazione delle condizioni strutturali che organizzano il campo esperienziale del bambino."
+        },
+        {
+          "domain": "servizi educativi precoci (nido e servizi 0-6)",
+          "reason": "Porta la domanda su come i servizi per la prima infanzia si posizionano nella struttura delle disuguaglianze: possono essere strumenti di compensazione o possono amplificare i differenziali esistenti a seconda di come sono organizzati."
+        },
+        {
+          "domain": "ricerca sullo sviluppo e sulle disuguaglianze",
+          "reason": "Porta la domanda su come misurare la qualità del campo di sviluppo come variabile dipendente dalle condizioni strutturali: non solo outcome individuali ma struttura del campo in cui lo sviluppo avviene."
+        },
+        {
+          "domain": "formazione dei professionisti",
+          "reason": "Porta la domanda su come formare i professionisti a leggere la vulnerabilità del campo di sviluppo come prodotto di strutture sociali e non come deficit individuale del caregiver o del bambino."
+        }
+      ],
+      "configuration_summary": "Le disuguaglianze precoci descrivono una configurazione in cui le strutture storico-sociali (Asse 6) producono differenziali sistematici nella qualità del campo co-regolativo disponibile per il bambino (Asse 1): non differenze individuali ma meccanismi strutturali che determinano la qualità del campo di sviluppo prima che le scelte individuali possano esercitarsi. Il concetto-ponte connettivo 'vulnerabilità strutturale' descrive la condizione che media tra il livello macro delle strutture sociali e il livello micro del campo esperienziale. Le tensioni tra struttura e agenzia, e tra logica dell'accumulazione e possibilità di rottura, rendono questa configurazione utile per politiche, servizi educativi e ricerca sullo sviluppo."
+    },
+    {
+      "theme_id": "tema_09_gioco_libero",
+      "core_configuration": {
+        "description": "Il gioco libero è lo spazio strutturale in cui l'incontro con l'eccedenza e il limite reale (Asse 4 — l'altro che non cede, l'oggetto che non collabora, la regola che non si piega) fonda la soggettivazione del desiderio (Asse 5): il bambino impara a desiderare in modo strutturato — non come impulso indifferenziato verso l'onnipotenza, ma come orientamento verso il possibile attraverso il confronto con il limite. Il limite non nega il campo desiderabile: lo trasforma da campo dell'illimitato in campo del possibile.",
+        "structure_logic": "Il gioco libero è lo spazio strutturale in cui l'incontro con il limite reale e l'eccedenza (Asse 4) fonda la soggettivazione del desiderio (Asse 5): il limite trasforma l'impulso indifferenziato in orientamento verso il possibile, producendo la struttura soggettiva del desiderio."
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "function_in_theme": "Presidia ciò che il gioco libero struttura: il desiderio come campo di orientamento verso il possibile. Il gioco libero è il luogo in cui il bambino non impara contenuti ma impara la struttura del desiderare: come orientarsi verso qualcosa che non c'è ancora, come tollerare la mancanza, come trasformare l'impulso in progetto.",
+          "specific_contribution": "Introduce la dimensione della soggettivazione: non solo cosa il bambino fa nel gioco ma cosa il gioco produce strutturalmente nel soggetto. Questo livello è irriducibile alla struttura del limite (Asse 4)."
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "function_in_theme": "Presidia le condizioni strutturali del gioco che rendono possibile la soggettivazione del desiderio: l'altro che non cede, la regola che vale per tutti, l'oggetto che resiste, la perdita che non è recuperabile. Il limite non è l'ostacolo al gioco libero: è la condizione strutturale che rende il gioco generativo.",
+          "specific_contribution": "Introduce la dimensione dell'incontro con il reale come condizione necessaria: il gioco che non incontra mai il limite non produce soggettivazione del desiderio. Distingue il gioco libero come pratica di sviluppo dalla libertà come assenza di vincoli."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Condizione strutturale del desiderio",
+          "linked_axes": [
+            "asse_4",
+            "asse_5"
+          ],
+          "linked_nodes": [
+            "campo-desiderabile",
+            "limite-come-struttura",
+            "soggettivazione"
+          ],
+          "function": "Struttura l'intera configurazione descrivendo la relazione specifica tra limite e desiderio: il limite non riduce il campo desiderabile ma ne è la condizione strutturale. Questo concetto organizza la logica del tema perché senza di esso il limite (Asse 4) e il desiderio (Asse 5) resterebbero in opposizione — il limite come ostacolo al desiderio — invece di essere in una relazione di fondazione strutturale.",
+          "type": "organizzativo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "libertà vs. limite",
+          "description": "Il gioco libero è libero (non diretto dall'adulto, non orientato a un obiettivo predefinito), ma la sua funzione strutturale dipende dall'incontro con il limite reale. Più il gioco è protetto dal limite, meno produce soggettivazione del desiderio; ma senza libertà non è più gioco. I due poli coesistono come condizioni necessarie e opposte."
+        },
+        {
+          "tension": "struttura del gioco vs. spontaneità",
+          "description": "Il gioco libero ha una struttura (regole implicite, ruoli, spazio e tempo definiti) anche quando non è diretto dall'adulto. La spontaneità non è assenza di struttura ma struttura non prescrittiva. La tensione tra la struttura che organizza il campo del gioco e la spontaneità che lo rende generativo è costitutiva del tema."
+        },
+        {
+          "tension": "desiderio vs. onnipotenza",
+          "description": "Il desiderio soggettivato (che tolera il limite, che si orienta verso il possibile) e l'impulso verso l'onnipotenza (che non tollera il limite, che vuole tutto immediatamente) sono strutturalmente opposti. Il gioco libero è lo spazio in cui questa transizione si produce — ma non è garantita: il gioco può restare nella logica dell'onnipotenza se non incontra il limite reale."
+        }
+      ],
+      "structural_questions": [
+        "Qual è la differenza strutturale tra un gioco che produce soggettivazione del desiderio e un gioco che resta nella logica dell'impulso indifferenziato?",
+        "Come si distingue strutturalmente il limite come condizione generativa del gioco dal limite come ostacolo che frustra il gioco?",
+        "In quale misura la presenza dell'adulto nel gioco del bambino modifica la struttura del campo di incontro con il limite reale?",
+        "Come cambia la struttura del campo desiderabile al variare dell'età del bambino — ovvero come cambia la forma dell'incontro con il limite nelle diverse fasi?",
+        "Quale relazione c'è tra la qualità del gioco libero in età precoce e la struttura del desiderio in età adolescenziale?",
+        "Come si legge strutturalmente la perdita progressiva di spazi di gioco libero (urbano, scolastico, familiare) in termini di impatto sul campo desiderabile?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "educativo (nido, infanzia, scuola primaria)",
+          "reason": "Porta la domanda su come le pratiche educative organizzano il campo del gioco libero in modo che l'incontro con il limite reale sia possibile: non la direttività come alternativa al gioco libero, ma la strutturazione delle condizioni che rendono il gioco libero generativo."
+        },
+        {
+          "domain": "clinico (psicomotricità e terapia attraverso il gioco)",
+          "reason": "Porta la domanda su come il gioco in contesto clinico lavora con la struttura del desiderio: non solo osservazione del gioco come sintomo ma comprensione del gioco come spazio di soggettivazione."
+        },
+        {
+          "domain": "politiche per gli spazi urbani e l'infanzia",
+          "reason": "Porta la domanda su come la progettazione degli spazi urbani (parchi, cortili, spazi pubblici) organizza le condizioni strutturali del gioco libero: non solo sicurezza ma qualità del campo di incontro con il limite reale."
+        },
+        {
+          "domain": "formazione degli educatori",
+          "reason": "Porta la domanda su come gli educatori sostengono o impediscono strutturalmente la funzione generativa del gioco libero: non osservazione passiva né direzione attiva, ma comprensione della struttura del campo che stanno tenendo."
+        }
+      ],
+      "configuration_summary": "Il gioco libero descrive una configurazione in cui l'incontro con il limite reale e l'eccedenza (Asse 4) fonda strutturalmente la soggettivazione del desiderio (Asse 5): non il limite come ostacolo, ma come condizione necessaria perché il desiderio si strutturi come orientamento verso il possibile invece di restare impulso indifferenziato. Il concetto-ponte organizzativo 'condizione strutturale del desiderio' connette i due assi in una relazione di fondazione — il limite non riduce il campo desiderabile ma lo costituisce. Le tensioni tra libertà e limite, e tra desiderio e onnipotenza, rendono questa configurazione uno strumento di lettura per l'educazione, la clinica e le politiche per gli spazi dell'infanzia."
+    },
+    {
+      "theme_id": "tema_10_frammentazione_sistemi",
+      "core_configuration": {
+        "description": "La frammentazione della mediazione istituzionale (Asse 6) produce una deformazione strutturale dell'autorità educativa e dell'imputazione della responsabilità (Asse 3): quando le istituzioni che si occupano del bambino non comunicano tra loro, nessuna ha autorità piena e nessuna può essere ritenuta responsabile di un campo di sviluppo unitario. La frammentazione non è un problema organizzativo ma un problema strutturale: produce un campo educativo senza centro, in cui ogni istituzione agisce come se le altre non esistessero.",
+        "structure_logic": "La frammentazione della mediazione istituzionale (Asse 6) produce una deformazione strutturale dell'autorità educativa e dell'imputazione della responsabilità (Asse 3): quando le istituzioni non si coordinano, l'autorità si dissolve e la responsabilità non ha soggetto."
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "function_in_theme": "Presidia la struttura istituzionale che si frammenta: la pluralità di istituzioni (sanitarie, educative, sociali, familiari) che storicamente si sono differenziate e ora non parlano tra loro. La frammentazione non è un fatto accidentale ma una struttura storica prodotta dalla differenziazione dei sistemi istituzionali.",
+          "specific_contribution": "Introduce la dimensione della causalità storica-istituzionale: non incompetenza dei professionisti o malvolere delle famiglie, ma struttura di sistemi che si sono evoluti in modo separato. Questo livello è irriducibile alla struttura normativa."
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "function_in_theme": "Presidia la struttura normativa che la frammentazione deforma: l'autorità educativa come struttura che orienta il bambino, l'imputazione della responsabilità come capacità di identificare chi risponde di cosa nel campo di sviluppo del bambino.",
+          "specific_contribution": "Introduce la dimensione del collasso normativo: la frammentazione non solo rende il sistema inefficiente, ma dissolve strutturalmente l'autorità e la responsabilità. Questo è il danno specifico per il bambino — non solo servizi peggiori, ma campo di sviluppo senza struttura normativa coerente."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Deformazione strutturale dell'autorità educativa",
+          "linked_axes": [
+            "asse_6",
+            "asse_3"
+          ],
+          "linked_nodes": [
+            "mediazione-istituzionale-frammentata",
+            "autorità-educativa",
+            "imputazione-della-responsabilità"
+          ],
+          "function": "Struttura l'intera configurazione descrivendo il processo attraverso cui la frammentazione istituzionale (Asse 6) produce il collasso della struttura normativa (Asse 3): non solo sistemi che non comunicano, ma autorità che non può esercitarsi perché non ha un referente istituzionale unitario. La sua rimozione dissolverebbe la logica del tema: senza questo ponte avremmo solo una descrizione della frammentazione (Asse 6) e una descrizione del collasso normativo (Asse 3) senza la connessione causale che produce il fenomeno specifico.",
+          "type": "organizzativo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "coordinazione istituzionale vs. autonomia istituzionale",
+          "description": "Ogni istituzione ha un mandato proprio, una cultura organizzativa, una logica di azione che giustifica la sua autonomia. La coordinazione richiede una limitazione di questa autonomia. I due poli coesistono strutturalmente: troppa autonomia produce frammentazione, troppa coordinazione produce omologazione che elimina la specializzazione. La tensione non si risolve."
+        },
+        {
+          "tension": "responsabilità distribuita vs. responsabilità assente",
+          "description": "La frammentazione dei sistemi distribuisce la responsabilità tra molti soggetti istituzionali, ma questa distribuzione può produrre l'effetto opposto: nessuno si sente responsabile di tutto. La responsabilità distribuita è una soluzione strutturale al problema della complessità, ma è anche il meccanismo che produce il vuoto di responsabilità rispetto al bambino come soggetto unitario."
+        },
+        {
+          "tension": "norma vs. struttura",
+          "description": "Si può introdurre una norma che obbliga le istituzioni a coordinarsi (soluzione normativa), ma la struttura della frammentazione può sopravvivere alla norma se le istituzioni continuano ad agire secondo logiche separate. La norma e la struttura non coincidono: la norma può prescrivere il coordinamento senza produrre strutturalmente la coerenza del campo educativo."
+        }
+      ],
+      "structural_questions": [
+        "Qual è la differenza strutturale tra un sistema educativo frammentato che coordina i suoi frammenti e un sistema educativo che ha una struttura unitaria?",
+        "Come si produce strutturalmente il collasso dell'autorità educativa quando nessuna istituzione ha il mandato di tenere il campo di sviluppo del bambino nella sua unitarietà?",
+        "Quale forma deve avere la responsabilità istituzionale per essere attribuibile quando il campo di sviluppo del bambino è distribuito tra molte istituzioni?",
+        "Come il bambino sperimenta strutturalmente la frammentazione del campo educativo — quali effetti produce sulla sua esperienza dello spazio normativo?",
+        "In quale relazione sono la frammentazione istituzionale del sistema e la frammentazione del campo di sviluppo del bambino — la prima produce necessariamente la seconda?",
+        "Come si distingue strutturalmente un sistema multi-istituzionale funzionante da un sistema frammentato — qual è la differenza che fa la differenza?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "politiche per l'infanzia e la famiglia",
+          "reason": "Porta la domanda su come il design dei sistemi istituzionali (integrazione sociosanitaria, coordinamento educativo-sociale) interviene strutturalmente sulla coerenza del campo di sviluppo del bambino: non solo efficienza ma struttura dell'autorità e della responsabilità."
+        },
+        {
+          "domain": "coordinamento interprofessionale",
+          "reason": "Porta la domanda su quale struttura deve avere il coordinamento tra professionisti di istituzioni diverse per produrre un campo educativo coerente — non solo riunioni di coordinamento ma struttura condivisa di responsabilità."
+        },
+        {
+          "domain": "formazione dei professionisti dell'educazione e della cura",
+          "reason": "Porta la domanda su come formare i professionisti a leggere la frammentazione del campo istituzionale come problema strutturale che li riguarda: non solo competenze tecniche ma capacità di interrogare il campo istituzionale in cui operano."
+        },
+        {
+          "domain": "ricerca sui sistemi educativi e di welfare",
+          "reason": "Porta la domanda su come misurare la coerenza del campo istituzionale dal punto di vista del bambino che lo attraversa: non solo indicatori di servizio ma struttura dell'autorità e della responsabilità percepita."
+        }
+      ],
+      "configuration_summary": "La frammentazione dei sistemi educativi e di cura descrive una configurazione in cui la disgregazione della mediazione istituzionale (Asse 6) produce una deformazione strutturale dell'autorità educativa e dell'imputazione della responsabilità (Asse 3): quando le istituzioni non comunicano, il campo di sviluppo del bambino perde la struttura normativa coerente che lo organizza. Il concetto-ponte organizzativo 'deformazione strutturale dell'autorità educativa' — introdotto come eccezione strutturale in STEP 3 per rispondere all'assenza di ponti validi in STEP 2 — connette i due assi rendendo leggibile il meccanismo causale della frammentazione. Le tensioni tra coordinazione e autonomia istituzionale, e tra responsabilità distribuita e responsabilità assente, rendono questa configurazione utile per politiche, coordinamento interprofessionale e ricerca."
+    }
+  ]
+}

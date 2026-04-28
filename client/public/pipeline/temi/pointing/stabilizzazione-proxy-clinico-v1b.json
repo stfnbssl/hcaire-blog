@@ -1,0 +1,111 @@
+{
+  "step": "f3_step_6b",
+  "theme_id": "tema_01_pointing_precoce",
+  "domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+  "source_output_id": "stabilizzazione-proxy-clinico-v1",
+
+  "required_observations": [
+    {
+      "id": "obs_1",
+      "label": "Struttura diadica della fase di chiusura [F]",
+      "description": "Orientamento dello sguardo e della postura dell'adulto durante la fase di chiusura dell'episodio — specificatamente: dopo la seconda risposta dell'adulto, l'adulto è ancora orientato verso l'oggetto (co-orientamento bilaterale) o si è già orientato verso il bambino o altrove (chiusura unilaterale)?",
+      "type": "osservabile_con_mediazione",
+      "type_notes": "Osservabile direttamente in osservazione live con attenzione specifica; osservabile da videoregistrazione; NON ricavabile da descrizione testuale che non includa esplicitamente questa informazione",
+      "observer_dependency": "media",
+      "observer_dependency_notes": "Richiede che l'osservatore abbia esplicitamente registrato la direzione di sguardo e orientamento dell'adulto in questo momento specifico — non è un'informazione che emerge 'spontaneamente' dalle descrizioni cliniche standard"
+    },
+    {
+      "id": "obs_2",
+      "label": "Orientamento del bambino verso l'oggetto in fase [F]",
+      "description": "Il bambino si riorientera verso l'oggetto dopo la seconda risposta dell'adulto? Per quanto tempo?",
+      "type": "direttamente_osservabile",
+      "type_notes": "Comportamento motorio direttamente visibile; frequentemente presente nelle case_description",
+      "observer_dependency": "bassa"
+    },
+    {
+      "id": "obs_3",
+      "label": "Sequenza temporale della chiusura diadica",
+      "description": "Chi esce dal campo verso l'oggetto per primo — l'adulto o il bambino? L'adulto si riorientera verso il bambino prima che il bambino si riorientera verso l'oggetto, o dopo, o contemporaneamente?",
+      "type": "osservabile_con_mediazione",
+      "type_notes": "Richiede osservazione sufficientemente granulare (video o attenzione specifica al momento) per distinguere la sequenza temporale; da descrizione testuale sintetica non è ricavabile",
+      "observer_dependency": "media"
+    },
+    {
+      "id": "obs_4",
+      "label": "Presenza del secondo beat relazionale [D+E]",
+      "description": "Dopo la prima risposta dell'adulto, il bambino produce un secondo segnale verso l'adulto (vocalizzazione + re-orientamento) e l'adulto risponde? Questo beat deve essere presente per isolare strutturalmente la fase [F] come post-sequenza.",
+      "type": "direttamente_osservabile",
+      "type_notes": "Struttura comportamentale osservabile come sequenza di orientamenti e vocalizzazioni",
+      "observer_dependency": "bassa"
+    }
+  ],
+
+  "variable_classification_summary": {
+    "directly_observable": ["obs_2", "obs_4"],
+    "observable_with_mediation": ["obs_1", "obs_3"],
+    "not_observable": [],
+    "note": "Nessuna delle variabili richiede inferenze su stati mentali. Tutte sono comportamentali. Il limite non è la natura delle variabili ma la granularità osservativa richiesta: obs_1 e obs_3 richiedono registrazione specifica del comportamento dell'adulto in un momento preciso dell'episodio."
+  },
+
+  "applicability_conditions": [
+    "La case_description o la registrazione osservativa specifica esplicitamente la direzione di orientamento dell'adulto durante la fase di chiusura [F] — non è sufficiente che l'adulto sia nominato nell'episodio: deve essere descritta la sua postura/sguardo nel momento specifico in cui il bambino si riorientera verso l'oggetto",
+    "Il secondo beat relazionale [D+E] è documentato: il bambino ha prodotto un secondo segnale verso l'adulto dopo la prima risposta, e l'adulto ha risposto — questo isola strutturalmente la fase [F] come momento post-sequenza",
+    "La fase di chiusura [F] è temporalmente distinguibile dalla fase di co-orientamento congiunto [C] — deve essere chiaro che si tratta di un momento successivo al completamento del secondo scambio relazionale, non sovrapposto ad esso",
+    "L'adulto ha co-orientato verso l'oggetto almeno una volta durante l'episodio (fase [C] presente) — il proxy non è applicabile se il campo condiviso verso l'oggetto non si è mai costituito bilateralmente"
+  ],
+
+  "non_applicability_conditions": [
+    "La case_description o la registrazione descrive solo il comportamento del bambino in fase [F] senza informazione sull'orientamento dell'adulto in quel momento — questa è la condizione più comune di non-applicabilità; le case_description cliniche standard spesso tralasciano questo elemento",
+    "L'orientamento dell'adulto in fase [F] è descrito ma ambiguo — ad esempio 'la madre guarda verso il bambino e la trottola' senza ulteriore specificazione",
+    "Il secondo beat relazionale [D+E] è assente o non documentato — senza questo elemento la fase [F] non è strutturalmente isolabile come post-sequenza",
+    "L'adulto non ha mai co-orientato verso l'oggetto durante l'episodio (fase [C] assente) — la struttura bilaterale della chiusura non è valutabile se il campo non si è mai costituito come condiviso",
+    "La sequenza temporale della chiusura non è determinabile — non è possibile stabilire se l'adulto si è ritirato prima, dopo o contemporaneamente al bambino"
+  ],
+
+  "insufficient_data_output": {
+    "result": "non_classificabile",
+    "rationale": "Quando obs_1 (orientamento adulto in fase [F]) è assente o ambiguo, il proxy non dispone dell'informazione strutturale su cui poggia la discriminazione. L'esito corretto è 'non_classificabile' — non 'ambiguo'. La differenza è epistemicamente rilevante: 'ambiguo' indica che il dato c'è ma non discrimina; 'non_classificabile' indica che il dato necessario per applicare il proxy non è disponibile. Classificare in assenza di questa informazione significherebbe introdurre un'inferenza implicita ('probabilmente l'adulto si è comportato in modo X') che il dispositivo vieta.",
+    "what_not_to_do": "Non è valido: (a) inferire l'orientamento dell'adulto dalla classificazione complessiva della configurazione; (b) assumere che un adulto 'sensibile' o 'responsivo' si comporti in modo bilaterale; (c) compensare l'assenza di dati con la competenza clinica dell'osservatore ('chi ha visto l'episodio saprebbe'); (d) declassare il proxy a 'suggestivo' e classificare comunque"
+  },
+
+  "operative_proxy": {
+    "proxy_name": "Co-orientamento finale bilaterale vs. chiusura unilaterale",
+    "what_it_measures": "La struttura diadica della fase di chiusura dell'episodio di pointing: se entrambi i partecipanti sono ancora co-orientati verso l'oggetto quando il bambino compie il suo ultimo atto di orientamento pre-chiusura (campo ancora condiviso → configurazione aperta), oppure se solo il bambino si orienta verso l'oggetto mentre l'adulto ha già chiuso la sequenza orientandosi verso il bambino o altrove (chiusura unilaterale → configurazione predeterminata).",
+    "required_observations": [
+      "Orientamento dello sguardo/postura dell'adulto nel momento in cui il bambino compie l'ultimo orientamento verso l'oggetto [fase F] — specificato esplicitamente nella documentazione osservativa",
+      "Presenza del secondo beat relazionale [bambino → adulto → adulto → bambino] dopo la prima risposta dell'adulto",
+      "Distinguibilità temporale della fase [F] come momento post-sequenza"
+    ],
+    "applicability_conditions": [
+      "obs_1 (orientamento adulto in fase [F]) è documentato esplicitamente e non ambiguo",
+      "obs_4 (secondo beat relazionale) è presente e documentato",
+      "La fase [C] (co-orientamento congiunto verso l'oggetto) si è costituita durante l'episodio"
+    ],
+    "non_applicability_conditions": [
+      "obs_1 è assente dalla documentazione osservativa",
+      "obs_1 è presente ma ambiguo",
+      "obs_4 è assente o non documentato",
+      "La fase [C] non si è mai costituita"
+    ],
+    "allowed_outputs": [
+      "aperto",
+      "predeterminato",
+      "non_classificabile"
+    ],
+    "decision_logic": "SE tutte le condizioni di applicabilità sono soddisfatte: (1) adulto ancora co-orientato verso l'oggetto durante fase [F] → 'aperto'; (2) adulto già ritirato dall'oggetto, orientato verso bambino o altrove durante fase [F] → 'predeterminato'; (3) orientamento adulto presente ma non distinguibile tra (1) e (2) → 'non_classificabile'. SE anche una sola condizione di non-applicabilità è presente → 'non_classificabile' senza tentativo di classificazione.",
+    "epistemic_limit": "Il proxy è applicabile solo quando la documentazione osservativa include esplicitamente la struttura diadica della fase di chiusura. Nelle case_description testuali cliniche standard, che tipicamente descrivono solo il comportamento del bambino in questo momento, il proxy produrrà sistematicamente 'non_classificabile'. Questo non è un fallimento del proxy: è la risposta corretta a dati insufficienti. Il dispositivo non deve supplire all'assenza di informazione — deve dichiarare che quella informazione è necessaria e non disponibile."
+  },
+
+  "protocol_implication": {
+    "description": "Il proxy operativo identifica un requisito di protocollo osservativo: per applicare il dispositivo con il proxy stabilizzato, l'osservazione clinica deve includere esplicitamente la registrazione dell'orientamento dell'adulto nella fase di chiusura dell'episodio. Questo non è un requisito aggiuntivo rispetto all'osservazione standard — è la formalizzazione di ciò che un osservatore attento fa implicitamente. La funzione del proxy operativo è rendere questo requisito esplicito e vincolante: non può essere soddisfatto implicitamente, deve essere documentato.",
+    "checklist_item": "Nella fase di chiusura dell'episodio [dopo la seconda risposta dell'adulto]: l'adulto è ancora orientato verso l'oggetto insieme al bambino, oppure si è già orientato verso il bambino o altrove? — registrare esplicitamente."
+  },
+
+  "final_assessment": {
+    "proxy_is_operative": true,
+    "proxy_is_self_limiting": true,
+    "self_limiting_notes": "Il proxy nella sua forma operativa produce 'non_classificabile' ogni volta che i dati necessari non sono disponibili — incluse le case_description attuali di F3 STEP 4, che non documentano l'orientamento dell'adulto in fase [F]. Questa è la proprietà richiesta dallo STEP 6-B: il dispositivo non funziona quando non deve funzionare.",
+    "improvement_over_original": "Il proxy originale (qualità intonativa della vocalizzazione) produceva una classificazione anche in assenza di informazione affidabile, perché la qualità intonativa veniva introdotta come lettura strutturale nella observed_configuration. Il proxy operativo stabilizzato non consente questo: in assenza di obs_1 documentato, l'unico output ammesso è 'non_classificabile'.",
+    "remaining_structural_note": "Anche nella sua forma operativa, il proxy richiede che la fase [C] (co-orientamento congiunto) si sia costituita durante l'episodio. In episodi in cui il campo condiviso verso l'oggetto non si è mai stabilito bilateralmente, il proxy non è applicabile indipendentemente dalla qualità della documentazione — ma in quel caso la classificazione 'configurazione reale' è già esclusa a livello di campo intenzionale, prima di arrivare al bridge."
+  }
+}

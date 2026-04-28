@@ -35,7 +35,7 @@ export default function SviluppoBambinoInterlocuzioniDisciplineIndex() {
           { label: 'Le discipline' },
         ]} />
 
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Le undici discipline</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Le discipline</h1>
         <p className="text-gray-500 mb-10">
           Tre famiglie di discipline, tre sguardi sullo sviluppo — in dialogo critico con il modello degli assi.
         </p>

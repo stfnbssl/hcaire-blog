@@ -1,0 +1,100 @@
+{
+  "step": "f3_step_1",
+  "domain_selected": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+  "results": [
+    {
+      "device_id": "tema-01-pointing-clinico-dispositivo",
+      "theme_id": "tema_01_pointing_precoce",
+      "domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+      "device_type": "lettura_configurazionale",
+
+      "function": "Il dispositivo rende leggibile la struttura interna del pointing come atto semiotico co-prodotto — non come comportamento da rilevare ma come configurazione di livelli (corporeo, intenzionale, co-regolatorio, semiotico) che possono essere presenti, assenti, distorte o oscillanti in modo strutturalmente distinto. Il cieco che contribuisce a colmare è la tendenza del contesto clinico a trattare il pointing come marker evolutivo binario (presente/assente) o come indicatore cognitivo isolato (joint attention, precursore linguistico), perdendo sia la struttura relazionale e processuale che lo costituisce sia la varietà delle sue forme degradate. Il dispositivo sposta la domanda clinica da 'il bambino punta?' a 'quale configurazione strutturale assume il gesto in questa relazione, e dove si localizza la discontinuità quando la configurazione non si costituisce pienamente?'",
+
+      "structural_reference": {
+        "core_configuration": "la base corporea orientata (corporeità-vissuta) costituisce un campo di orientamento aperto (campo-intenzionale) che diventa condiviso e significabile (mediazione-simbolica) solo attraverso la risposta co-regolatoria dell'altro (co-regolazione): il corpo si trasforma in segno non da solo ma nella relazione",
+        "axes": ["asse_1", "asse_6"],
+        "nodes": ["corporeità-vissuta", "campo-intenzionale", "co-regolazione", "mediazione-simbolica"],
+        "bridge_concepts": ["Il gesto corporeo come atto semiotico co-prodotto"]
+      },
+
+      "reading_focus": [
+        {
+          "dimension": "Base corporea del gesto",
+          "description": "La corporeità vissuta come condizione originaria della configurazione: il corpo che si orienta nello spazio relazionale prima di qualsiasi elaborazione cognitiva deliberata. Questa dimensione può essere presente (il corpo è strutturalmente orientato verso qualcosa nell'interazione, il gesto emerge dalla postura e dall'orientamento dell'intero corpo), assente (il gesto motorio c'è ma non è radicato in un orientamento corporeo-relazionale — è un movimento senza base), distorta (il corpo si orienta ma in modo rigido, ripetitivo o desincronizzato rispetto all'altro) o oscillante (la base corporea è disponibile solo in certi momenti o con certi interlocutori). La sua assenza o alterazione non è riducibile a un deficit cognitivo: segnala qualcosa al livello del corpo-in-relazione, a prescindere dalla presenza o assenza del gesto come comportamento."
+        },
+        {
+          "dimension": "Apertura del campo intenzionale condiviso",
+          "description": "Il campo intenzionale come struttura che il gesto istituisce: non l'oggetto indicato ma l'orientamento condiviso verso di esso — la struttura in cui due soggetti si trovano orientati verso la stessa cosa. Questa dimensione può essere presente (si apre effettivamente una struttura di orientamento condiviso, distinta dalla semplice coincidenza di direzione visiva), assente (il gesto non apre un campo — rimane atto unilaterale), distorta (il campo si apre ma in modo asimmetrico o instabile — uno dei due interlocutori vi entra parzialmente o lo abbandona) o oscillante (il campo si apre e si chiude rapidamente, senza consolidarsi anche per un istante). La distinzione tra campo aperto e coincidenza visiva è clinicamente rilevante: richiede di osservare non dove guardano entrambi ma se si costituisce un orientamento condiviso."
+        },
+        {
+          "dimension": "Qualità co-regolatoria della risposta",
+          "description": "La co-regolazione come condizione strutturale necessaria del passaggio semiotico: la risposta dell'altro che trasforma il gesto corporeo in atto configurativo. Questa dimensione è la più variabile nella realtà clinica e può essere presente (la risposta riconosce il gesto come significante e co-regola il campo — si colloca al livello della mediazione simbolica), assente (l'adulto non risponde o risponde fuori campo), distorta (l'adulto risponde ma sposta l'attenzione su un oggetto diverso, interrompe il campo aperto, o risponde in modo che chiude invece di sostenere) o oscillante (la co-regolazione è intermittente — sostiene il passaggio in alcuni momenti e non in altri, senza stabilizzarsi). La co-regolazione è diadica: non è attributo dell'adulto ma struttura della relazione, il che significa che la sua qualità dipende dalla configurazione complessiva e non è riducibile alla 'bontà' della risposta del caregiver."
+        },
+        {
+          "dimension": "Produzione di mediazione simbolica",
+          "description": "La mediazione simbolica come esito strutturale della configurazione: il momento in cui il percepito diventa condiviso e potenzialmente significabile — non solo guardato insieme ma costituito come condiviso attraverso il gesto. Questa dimensione può essere presente (si produce effettivamente il passaggio dal percepito al condiviso-significabile), assente (la configurazione si arresta ai livelli precedenti — campo intenzionale senza passaggio semiotico), distorta (il significato viene co-prodotto ma in modo che non appartiene al bambino — l'adulto lo impone invece di co-costituirlo) o oscillante (il passaggio avviene in modo instabile, dipendente dalla singola risposta senza diventare struttura ripetibile). La mediazione simbolica non è equivalente alla nominazione dell'oggetto: può avvenire anche in assenza di linguaggio."
+        },
+        {
+          "dimension": "Struttura del passaggio trasformativo",
+          "description": "Il concetto-ponte come dimensione leggibile in sé: il fatto che il significato non sia nel gesto né nell'interpretazione dell'adulto ma nel processo relazionale in cui entrambi si costituiscono simultaneamente. Questa dimensione può essere presente (il passaggio avviene come co-produzione — né il bambino porta il significato da solo né l'adulto lo assegna unilateralmente), assente (il passaggio non avviene o avviene in modo unilaterale), distorta (la co-produzione è formalmente presente ma asimmetrica — uno dei due porta tutto il lavoro trasformativo) o oscillante (il passaggio trasformativo si realizza in certi scambi e non in altri, senza diventare struttura stabile dell'interazione). Quando questa dimensione collassa, la co-produzione viene attribuita unilateralmente — e questo è il primo segnale che il dispositivo sta scivolando verso la valutazione del singolo invece che della configurazione."
+        }
+      ],
+
+      "access_points": [
+        {
+          "label": "Osservazione dell'interazione diadica in setting libero",
+          "description": "Il bambino e il caregiver interagiscono con oggetti o nello spazio senza struttura imposta. È il contesto in cui la configurazione del pointing può emergere nella sua forma spontanea: corporeità, apertura del campo e risposta co-regolatoria si rendono leggibili nella struttura naturale dell'interazione. La possibilità di fallimento strutturale in questo access point è alta: il pointing può non emergere affatto (la configurazione non si attiva in questo contesto), può emergere come gesto non condiviso (il bambino indica senza cercare la risposta dell'altro), può essere assorbito dall'adulto senza co-produzione del campo (l'adulto risponde ma chiude invece di aprire), oppure il professionista stesso può interrompere la configurazione con interventi che spostano l'attenzione. Il non-emergere è informazione strutturale tanto quanto l'emergere."
+        },
+        {
+          "label": "Momento di novità o evento inatteso nell'ambiente",
+          "description": "Qualcosa di nuovo o inatteso entra nel campo percettivo del bambino durante la sessione. È un access point strutturalmente privilegiato perché attiva la salienza nella sua forma elementare e mette in gioco la co-regolazione senza la mediazione di un compito. La possibilità di fallimento strutturale: il bambino può reagire all'evento senza cercare la condivisione (la salienza c'è ma rimane privata), l'adulto può rispondere all'evento senza entrare nel campo del bambino (risposta parallela invece che co-regolatoria), oppure entrambi si orientano verso l'evento ma senza che si costituisca un campo condiviso — guardano nella stessa direzione senza che il gesto diventi atto semiotico. La differenza tra orientamento parallelo e campo condiviso è il segnale strutturale da leggere in questo contesto."
+        },
+        {
+          "label": "Sequenza di pointing dell'adulto verso oggetti o eventi",
+          "description": "Il clinico o il caregiver introduce pointing verso qualcosa nell'ambiente, selezionando per il bambino qualcosa come degno di attenzione. Permette di leggere la configurazione dal polo dell'adulto-che-istituisce e come il bambino risponde alla struttura co-regolatoria proposta. La possibilità di fallimento strutturale: il bambino può ignorare il gesto dell'adulto (campo proposto ma non accolto), può seguire lo sguardo senza entrare nel campo intenzionale (orientamento senza co-regolazione), può rispondere con un pointing proprio che va in direzione diversa (campo alternativo invece che condiviso), oppure l'adulto può produrre un pointing talmente strutturato da non lasciare spazio alla co-produzione — un campo già chiuso prima che il bambino vi entri."
+        },
+        {
+          "label": "Colloquio con il caregiver sulle interazioni quotidiane",
+          "description": "Il caregiver descrive come si svolgono tipicamente le interazioni con il bambino nei contesti di vita quotidiana. È un access point indiretto ma strutturalmente rilevante: il modo in cui il caregiver descrive il gesto del bambino rivela a quale livello lo legge — come comportamento ('lo fa', 'non lo fa'), come comunicazione ('cerca di dirmi qualcosa'), o come configurazione relazionale ('sembra che voglia che io veda quello che lui vede'). La possibilità di fallimento strutturale: il caregiver può descrivere interazioni in cui il pointing emerge ma la co-regolazione è sistematicamente assente o distorta, senza che questo sia percepito come problema — o al contrario può interpretare come pointing gesti che non hanno la struttura configurazionale. Il colloquio non produce osservazione diretta della configurazione ma è un access point alla rappresentazione che il caregiver ha della relazione."
+        }
+      ],
+
+      "structural_questions": [
+        "Il gesto di pointing che si osserva si configura come apertura di un campo intenzionale condiviso o come orientamento corporeo verso qualcosa che rimane privato — e cosa rende strutturalmente visibile la differenza tra i due?",
+        "La risposta dell'adulto al gesto del bambino si colloca al livello del gesto (registra che indica qualcosa), al livello del campo (partecipa all'orientamento condiviso) o al livello della mediazione simbolica (co-produce il passaggio del percepito a condiviso e significabile) — e questo livello è stabile o varia nel corso della stessa interazione?",
+        "Quando la configurazione del pointing non si costituisce pienamente, dove si localizza strutturalmente la discontinuità: nel piano corporeo, nel piano co-regolatorio, nel piano intenzionale o nel piano semiotico — e la localizzazione cambia con interlocutori diversi?",
+        "La dipendenza co-regolatoria che la configurazione richiede è strutturalmente generativa in questo caso — la risposta dell'altro produce emergenza semiotica — oppure la dipendenza è presente ma non genera il passaggio, o genera un passaggio che appartiene all'adulto più che alla relazione?",
+        "Il bambino indica ma non orienta lo sguardo verso l'adulto dopo il gesto — qual è la struttura di questo pointing: gesto senza ricerca di condivisione, o gesto la cui struttura co-regolatoria è alterata?",
+        "L'adulto risponde al pointing del bambino nominando l'oggetto indicato, ma il bambino non registra la risposta e ripete il gesto — cosa segnala questa sequenza sulla qualità del campo semiotico co-prodotto: la risposta si è collocata a quale livello strutturale?",
+        "Entrambi guardano verso lo stesso oggetto ma l'interazione si interrompe senza che si costituisca nulla di condiviso — la soglia del passaggio semiotico non è stata attraversata: quale dimensione della configurazione è assente o distorta in questa sequenza?"
+      ],
+
+      "interpretive_warnings": [
+        {
+          "risk_type": "comportamentismo",
+          "description": "Quando i quattro nodi vengono operazionalizzati come comportamenti osservabili e misurabili — frequenza del pointing, latenza della risposta, durata del contatto visivo, numero di episodi di attenzione condivisa — la struttura configurazionale collassa in variabili indipendenti e il dispositivo perde la sua funzione. I nodi hanno senso solo nella loro relazione strutturale: un campo intenzionale che si apre con co-regolazione di bassa qualità produce una configurazione strutturalmente diversa da un campo che non si apre con co-regolazione apparentemente alta — ma la frequenza del pointing non distingue i due casi, e un'analisi per variabili separate non li rende leggibili."
+        },
+        {
+          "risk_type": "normatività",
+          "description": "Quando la tensione dipendenza vs. emergenza viene letta come criterio di giudizio — la dipendenza co-regolatoria è 'eccessiva', la risposta dell'adulto è 'adeguata' o 'inadeguata' — il dispositivo si trasforma in strumento valutativo e perde la sua funzione strutturale. La dipendenza è sempre strutturalmente necessaria alla configurazione: senza co-regolazione non c'è configurazione, non c'è deficit di autonomia. Applicare una norma alla dipendenza porta a valutare la relazione invece di leggerne la struttura, e produce giudizi sul caregiver che il dispositivo non autorizza."
+        },
+        {
+          "risk_type": "tecnicismo",
+          "description": "Quando il dispositivo viene trasformato in protocollo di osservazione strutturata — con criteri di scoring per ciascuna dimensione del reading_focus e procedure di rilevazione per ciascun access point — produce la forma del dispositivo strutturale con il contenuto di una checklist valutativa. La struttura configurazionale scompare dietro le singole voci perché i nodi vengono letti isolatamente invece che nella loro relazione: si 'misura' la corporeità, si 'misura' il campo, si 'misura' la co-regolazione, e il passaggio trasformativo che li connette — l'unico elemento che rende il fenomeno leggibile come configurazione — non è misurabile ed esce dal quadro."
+        },
+        {
+          "risk_type": "riduzione_cognitiva",
+          "description": "Quando la corporeità-vissuta scompare dalla lettura clinica — come accade sistematicamente nelle concettualizzazioni che privilegiano il piano cognitivo (joint attention come precursore della teoria della mente) o linguistico (pointing come precursore del linguaggio) — il dispositivo perde il suo livello strutturale fondante. Senza corporeità-vissuta il pointing clinicamente osservato diventa una competenza cognitivo-comunicativa, e l'interrogazione strutturale si sposta su 'il bambino sa condividere l'attenzione?' invece che su 'il corpo è strutturalmente disponibile all'orientamento relazionale?'. Questo non è un dettaglio teorico: cambia il livello a cui si localizza la discontinuità quando la configurazione non si costituisce."
+        }
+      ],
+
+      "non_permitted_transformations": [
+        "Quando viene usato come strumento di valutazione dello sviluppo comunicativo del bambino, la struttura configurazionale collassa in tappe evolutive e il dispositivo perde la sua funzione: non descrive più una configurazione relazionale ma misura una competenza individuale.",
+        "Quando viene usato per classificare il pointing come presente/assente, adeguato/inadeguato, tipico/atipico, l'interrogazione strutturale sulla qualità della configurazione viene sostituita da un giudizio binario — e la domanda 'quale struttura assume il gesto?' diventa irrispondibile.",
+        "Quando produce diagnosi o orienta verso categorie diagnostiche, il livello strutturale del dispositivo viene assorbito dal frame classificatorio: la configurazione non è più leggibile come tale ma solo come sintomo di una categoria già data.",
+        "Quando viene trasformato in linea guida di intervento terapeutico o in sequenza di azioni da proporre al caregiver, il dispositivo di lettura si trasforma in prescrizione — e perde la sua funzione di rendere visibile la struttura a favore di quella di modificare il comportamento.",
+        "Quando la co-regolazione viene usata per valutare la qualità della risposta del caregiver come attributo individuale, la struttura diadica del nodo collassa in giudizio sulla competenza parentale — e il dispositivo smette di descrivere una configurazione relazionale per diventare uno strumento di valutazione dell'adulto."
+      ]
+    }
+  ]
+}

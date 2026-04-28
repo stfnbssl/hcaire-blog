@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-04-26T10:58:12.137Z",
+  "ricerche": [
+    {
+      "id": "ricerca-01-comunicazione-precoce",
+      "label": "Comunicazione precoce",
+      "steps_completed": [
+        "f2_step_1",
+        "f2_step_2",
+        "f2_step_3",
+        "f2_step_4",
+        "f2_step_5"
+      ],
+      "files": {
+        "f2_step_5": "ricerche/ricerca-01-comunicazione-precoce/output-family-v1.json",
+        "f2_step_1": "ricerche/ricerca-01-comunicazione-precoce/theme-discovery-v1.json",
+        "f2_step_4": "ricerche/ricerca-01-comunicazione-precoce/theme-matrix-v1.json",
+        "f2_step_2": "ricerche/ricerca-01-comunicazione-precoce/theme-relevance-v1.json",
+        "f2_step_3": "ricerche/ricerca-01-comunicazione-precoce/theme-verification-v1.json"
+      }
+    },
+    {
+      "id": "ricerca-02-pointing-precoce",
+      "label": "Pointing precoce",
+      "steps_completed": [
+        "f2_step_1",
+        "f2_step_2",
+        "f2_step_3",
+        "f2_step_4",
+        "f2_step_5"
+      ],
+      "files": {
+        "f2_step_5": "ricerche/ricerca-02-pointing-precoce/output-family-v2.json",
+        "f2_step_1": "ricerche/ricerca-02-pointing-precoce/theme-discovery-v2.json",
+        "f2_step_4": "ricerche/ricerca-02-pointing-precoce/theme-matrix-v2.json",
+        "f2_step_2": "ricerche/ricerca-02-pointing-precoce/theme-relevance-v2.json",
+        "f2_step_3": "ricerche/ricerca-02-pointing-precoce/theme-verification-v2.json"
+      }
+    }
+  ],
+  "temi": [
+    {
+      "id": "pointing",
+      "label": "Pointing",
+      "steps_completed": [
+        "f3_step_1",
+        "f3_step_2",
+        "f3_step_3",
+        "f3_step_4",
+        "f3_step_5",
+        "f3_step_6",
+        "f3_step_6b",
+        "f3_step_7",
+        "f3_step_9",
+        "f3_step_10"
+      ],
+      "files": {
+        "f3_step_5": "temi/pointing/audit-clinico-v2.json",
+        "f3_step_3": "temi/pointing/correzione-strutturale-clinico-v2.json",
+        "f3_step_9": "temi/pointing/dispositivo-pointing-clinico-neuropsviluppo-v1.json",
+        "f3_step_7": "temi/pointing/f3-step-7-trasferibilita-clinico-v1.json",
+        "f3_step_4": "temi/pointing/indistinguibility-test-clinico-v2.json",
+        "f3_step_1": "temi/pointing/lettura-configurazionale-clinico-v2.json",
+        "f3_step_6": "temi/pointing/stabilizzazione-proxy-clinico-v1.json",
+        "f3_step_6b": "temi/pointing/stabilizzazione-proxy-clinico-v1b.json",
+        "f3_step_2": "temi/pointing/stress-test-clinico-v2.json",
+        "f3_step_10": "temi/pointing/stress-test-pointing-clinico-v1.json"
+      },
+      "canonical_device": {
+        "file": "temi/pointing/dispositivo-pointing-clinico-neuropsviluppo-v1.json",
+        "shape": "device"
+      },
+      "theme_id": "tema_01_pointing_precoce",
+      "ricerca_origine": "ricerca-02-pointing-precoce",
+      "dispositivo_sorgente": null,
+      "steps_skipped": [
+        {
+          "step": "f3_step_8",
+          "reason": "gli adattamenti non richiedono ricostruzione dei blocchi strutturali (corporeità, bridge, proxy rimangono validi). Step-8 serve per nuovi temi, non per specializzazioni di dominio."
+        }
+      ],
+      "external_inputs": [
+        {
+          "step": "f3_step_7",
+          "file": "inputs/temi/pointing/f3-step-7-contesto-clinico.json",
+          "type": "esterno_obbligatorio",
+          "label": "Contesto clinico"
+        }
+      ],
+      "robustezza": "alta",
+      "correzioni_residue": 0,
+      "has_revisioni": true,
+      "revisioni_file": "temi/pointing/revisioni.md"
+    },
+    {
+      "id": "richiesta-aiuto-clinico",
+      "label": "Richiesta aiuto clinico",
+      "steps_completed": [
+        "f3_step_7",
+        "f3_step_8",
+        "f3_step_9",
+        "f3_step_10"
+      ],
+      "files": {
+        "f3_step_8": "temi/richiesta-aiuto-clinico/adattamento-strutturale-clinico-richiesta-v2.json",
+        "f3_step_9": "temi/richiesta-aiuto-clinico/dispositivo-richiesta-aiuto-clinico-v1.json",
+        "f3_step_10": "temi/richiesta-aiuto-clinico/stress-test-richiesta-aiuto-v1.json",
+        "f3_step_7": "temi/richiesta-aiuto-clinico/trasferibilità-clinico-richiesta-v1.json"
+      },
+      "canonical_device": {
+        "file": "temi/richiesta-aiuto-clinico/dispositivo-richiesta-aiuto-clinico-v1.json",
+        "shape": "device"
+      },
+      "theme_id": "tema_richiesta_aiuto_precoce",
+      "ricerca_origine": null,
+      "dispositivo_sorgente": {
+        "tema_id": "pointing",
+        "file": "temi/pointing/correzione-strutturale-clinico-v2.json",
+        "device_id": "tema-01-pointing-clinico-dispositivo-corrected"
+      },
+      "steps_skipped": [],
+      "external_inputs": [],
+      "robustezza": "alta",
+      "correzioni_residue": 0,
+      "has_revisioni": true,
+      "revisioni_file": "temi/richiesta-aiuto-clinico/revisioni.md"
+    }
+  ]
+}

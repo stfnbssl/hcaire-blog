@@ -1,0 +1,125 @@
+{
+  "step": "f3_step_8",
+  "version": "v2",
+  "source_device_id": "tema-01-pointing-clinico-dispositivo-corrected",
+  "target_theme": "comportamento di richiesta di aiuto — dominio clinico",
+  "revision_note": "Versione v2: proxy ricostruito a partire dalla verifica. Il proxy precedente ('continuazione diadica') era indistinguibile dallo scaffolding routinizzato. Il nuovo proxy promuove la struttura dell'ingresso dell'adulto (fase di valutazione vs. esecuzione diretta) come elemento discriminante, ispirandosi alla logica dello STEP 6: isolare un'asimmetria strutturale non mimabile dallo script.",
+
+  "new_corporeity": {
+    "description": "Il corpo del bambino nella richiesta di aiuto è strutturato da una doppia orientazione simultanea: verso la difficoltà (il corpo è impegnato nell'azione che non cede) e verso l'adulto (il corpo — o la parte superiore: volto, sguardo — si re-orienta verso l'altro a partire da quella presa). Non è un gesto direzionato verso l'adulto come nel pointing: il corpo non si libera verso l'altro ma rimane parzialmente agganciato allo spazio dell'azione difficile. L'atto corporeo emerge dall'arresto dell'azione — è la postura del corpo che non riesce — non da una decisione di comunicare.",
+    "structural_features": [
+      "Arresto o rallentamento dell'azione al punto di resistenza: il corpo si ferma nell'azione verso l'oggetto (tentativo non riuscito, presa interrotta, sequenza bloccata) — questa è la condizione corporea originaria della richiesta",
+      "Doppia orientazione diadica: il corpo rimane parzialmente ancorato allo spazio della difficoltà (mani sull'oggetto, postura rivolta al compito) mentre il volto e lo sguardo si re-orientano verso l'adulto — il corpo tiene insieme i due poli senza abbandonare il primo per il secondo",
+      "Qualità della postura: la postura del bambino è quella dell'attesa produttiva, non del ritiro — il corpo non abbandona lo spazio della difficoltà ma lo mantiene aperto mentre cerca l'adulto",
+      "Gesto eventuale: può accompagnarsi a protensione delle mani aperte verso l'adulto, indicazione dell'oggetto, vocalizzazione — ma questi sono elementi facoltativi; l'elemento strutturale è la doppia orientazione del corpo e l'arresto dell'azione"
+    ],
+    "differences_from_source_theme": "Nel pointing precoce: (a) il gesto è primariamente direzionato verso l'adulto attraverso l'indice esteso — il corpo si orienta verso l'altro portando l'oggetto nel campo; (b) il bambino non è fisicamente impegnato con l'oggetto al momento del gesto; (c) l'atto corporeo è un gesto intenzionalmente visibile. Nella richiesta di aiuto: (a) l'atto corporeo emerge dall'arresto dell'azione — non è primariamente un gesto verso l'adulto ma una postura di difficoltà da cui emerge la re-orientazione; (b) il corpo rimane impegnato con l'oggetto/difficoltà durante la richiesta; (c) la struttura diadica del corpo (doppia orientazione) è l'elemento costitutivo, non il gesto verso l'adulto in sé.",
+    "observer_dependency": "media"
+  },
+
+  "new_bridge": {
+    "from": "La difficoltà come evento privato dell'azione: la resistenza dell'oggetto o del compito appartiene all'azione del bambino come suo problema isolato — esiste come arresto nell'azione del bambino, non ancora come cosa-nella-relazione. Il bambino incontra la difficoltà da solo.",
+    "to": "La difficoltà come problema co-prodotto nella relazione: la resistenza dell'oggetto o del compito diventa qualcosa che esiste nella relazione tra bambino e adulto — entrambi sono orientati verso essa come cosa-da-affrontare-insieme. La difficoltà non viene eliminata ma trasformata da evento privato a campo relazionale condiviso.",
+    "process_description": "Il bambino re-orienta verso l'adulto dall'interno dello spazio della difficoltà (la doppia orientazione corporea apre un campo relazionale verso la difficoltà stessa). Se l'adulto entra in questo campo orientandosi verso la difficoltà specifica — guardando cosa sta facendo il bambino, valutando dove e come l'azione è arrestata — la difficoltà acquista statuto relazionale: diventa problema che esiste nel campo tra i due. Questo è il passaggio trasformativo: la difficoltà non è più arresto dell'azione del bambino ma oggetto di orientamento condiviso co-prodotto nell'atto dell'ingresso valutativo dell'adulto.",
+    "open_form": "L'adulto entra nello spazio della difficoltà con una fase di valutazione: si orienta verso il punto specifico della difficoltà del bambino, guarda cosa sta facendo e dove l'azione è arrestata, e la propria azione è determinata da questa osservazione. Il passaggio trasformativo è aperto perché l'adulto non sa già cosa farà prima di guardare — la risposta è costruita a partire dalla difficoltà specifica, non applicata come soluzione standard.",
+    "predetermined_form": "L'adulto entra nello spazio della difficoltà con esecuzione diretta: agisce immediatamente al ricevere il segnale del bambino senza una fase di orientamento verso la difficoltà specifica. Lo script determina la risposta indipendentemente dalla specifica forma della difficoltà — l'adulto sa già cosa fare prima di guardare, e fa quello. Il passaggio è predeterminato perché il significato della richiesta (tipo-di-difficoltà → tipo-di-risposta) esiste nel repertorio comune prima che la difficoltà si presenti."
+  },
+
+  "new_proxy": {
+    "name": "Struttura dell'ingresso dell'adulto nello spazio della difficoltà: fase di valutazione vs. esecuzione diretta",
+    "what_it_measures": "La struttura dell'ingresso dell'adulto nel tempo tra la ricezione del segnale del bambino e la prima azione di risposta: l'adulto compie una fase di orientamento verso la difficoltà specifica del bambino (guarda dove e come l'azione è arrestata) prima di agire — oppure agisce direttamente al segnale senza orientarsi verso la specifica difficoltà? Questa struttura si situa PRIMA della risposta, non dopo, e non dipende dall'esito della risposta.",
+    "observable_sequence": [
+      "[A] Il bambino è nello spazio della difficoltà: arresto dell'azione, doppia orientazione corporea, segnale verso l'adulto",
+      "[B — finestra pre-risposta] L'adulto riceve il segnale: in questa finestra temporale, l'adulto orienta la propria attenzione verso il punto dell'azione del bambino dove la difficoltà si è prodotta (dove sono le mani, cosa stava cercando di fare, dove l'azione si è arrestata) — oppure agisce immediatamente senza questa fase di orientamento verso la difficoltà specifica",
+      "[C] Prima azione dell'adulto: adattata alla difficoltà osservata (indirizzo il punto specifico di arresto) vs. risposta standard (applica la soluzione nota al tipo di segnale ricevuto)"
+    ],
+    "discriminating_element": "La fase [B]: la presenza vs. assenza di un orientamento dell'adulto verso la difficoltà SPECIFICA del bambino nella finestra pre-risposta. L'elemento strutturalmente discriminante non è cosa l'adulto fa nella risposta, né quanto a lungo rimane nel campo, ma se c'è un momento in cui guarda dove e come il bambino è bloccato — un momento che precede e determina l'azione. In ingresso valutativo: l'adulto guarda la difficoltà prima di agire, e la propria azione è determinata da questa osservazione (affronta quel punto specifico). In ingresso esecutivo: l'adulto agisce al segnale senza che ci sia stato un orientamento informativo verso la difficoltà — la risposta sarebbe stata la stessa indipendentemente dalla forma specifica della difficoltà."
+  },
+
+  "non_reversibility_test": {
+    "counter_reading": "Un adulto altamente competente in scaffolding routinizzato potrebbe eseguire una fase di 'orientamento verso la difficoltà' come parte dello script: guarda le mani del bambino per convenzione sociale o come passaggio ritualizzato della sequenza di aiuto nota, prima di eseguire la risposta già pianificata. In questo caso la fase di orientamento è presente ma non è informativa — l'adulto farebbe la stessa cosa anche senza guardare.",
+    "rebuttal": "La contro-lettura è valida ma ha un'asimmetria strutturale osservabile: l'orientamento-come-parte-dello-script è breve, orientato verso l'oggetto come categoria (la cosa da aprire, il blocco da sistemare) piuttosto che verso il punto specifico di arresto dell'azione del bambino. L'orientamento valutativo è orientato verso la configurazione specifica del tentativo fallito: dove sono posizionate le mani del bambino, come ha impugnato l'oggetto, in quale punto dell'azione si è prodotto l'arresto. Questa distinzione è osservabile come direzione fine dello sguardo dell'adulto e come durata dell'orientamento: l'orientamento informativo richiede abbastanza tempo da 'leggere' la configurazione specifica, e quella lettura si riflette nella corrispondenza tra il punto osservato e il punto affrontato nell'azione successiva. Lo script produce azione standard indipendentemente dalla configurazione — l'azione non corrisponde necessariamente al punto specifico di arresto, perché era già determinata prima di guardare.",
+    "result": "resistente",
+    "result_notes": "Il proxy resiste alla contro-lettura se l'osservazione include: (a) la direzione fine dello sguardo dell'adulto nella finestra pre-risposta (verso la configurazione specifica del tentativo del bambino, non verso l'oggetto come categoria); (b) la corrispondenza tra il punto osservato e il punto affrontato nell'azione successiva. Con queste condizioni soddisfatte, la distinzione ingresso-valutativo vs. ingresso-esecutivo non è facilmente mimabile dallo script: un adulto non può facilmente simulare un'azione adattata alla configurazione specifica se non l'ha effettivamente osservata. Il proxy passa da parzialmente_resistente a resistente rispetto al proxy precedente (continuazione diadica), a condizione che la finestra pre-risposta sia documentata con sufficiente risoluzione."
+  },
+
+  "observability_requirements": [
+    {
+      "id": "obs_1",
+      "label": "Finestra pre-risposta dell'adulto: orientamento verso la difficoltà specifica",
+      "description": "Nella finestra temporale tra la ricezione del segnale del bambino e la prima azione di risposta, l'adulto orienta la propria attenzione (sguardo, postura) verso il punto dell'azione del bambino dove la difficoltà si è prodotta? La documentazione deve specificare se l'adulto guarda le mani/azione del bambino (dove è l'arresto) oppure agisce direttamente senza questo orientamento.",
+      "type": "con_mediazione",
+      "observer_dependency": "media",
+      "required_for_proxy": true,
+      "notes": "Elemento discriminante principale. Richiede documentazione della finestra pre-risposta — il comportamento dell'adulto PRIMA di agire, non dopo. Osservabile da videoregistrazione o da osservazione diretta attenta a questo momento specifico. Tipicamente assente nelle descrizioni cliniche testuali standard che registrano la risposta ma non la fase pre-risposta."
+    },
+    {
+      "id": "obs_2",
+      "label": "Direzione fine dello sguardo dell'adulto nella finestra pre-risposta",
+      "description": "Verso cosa è orientato lo sguardo dell'adulto nella fase di valutazione, se presente? Verso la configurazione specifica del tentativo del bambino (dove sono le mani, come ha impugnato, dove si è arrestata l'azione) — oppure verso l'oggetto come categoria (la cosa da aprire/sistemare/raggiungere) — oppure verso il bambino come persona?",
+      "type": "con_mediazione",
+      "observer_dependency": "media",
+      "required_for_proxy": true,
+      "notes": "Necessario per distinguere orientamento informativo (verso configurazione specifica del tentativo) da orientamento sociale o categoriale (verso oggetto o bambino genericamente). Richiede risoluzione osservativa fine: video con possibilità di rallentare o osservazione diretta con attenzione specifica a questo elemento."
+    },
+    {
+      "id": "obs_3",
+      "label": "Corrispondenza tra punto osservato e punto affrontato nell'azione dell'adulto",
+      "description": "L'azione dell'adulto affronta il punto specifico di arresto dell'azione del bambino che era stato osservato nella fase pre-risposta? (Se l'adulto ha guardato la presa del bambino sull'oggetto, l'azione affronta quella presa? Se ha guardato l'angolazione, l'azione corregge quella angolazione?)",
+      "type": "con_mediazione",
+      "observer_dependency": "media",
+      "required_for_proxy": false,
+      "notes": "Non obbligatorio per applicare il proxy ma aumenta significativamente la robustezza contro la contro-lettura: la corrispondenza tra osservato e affrontato è il marker più resistente all'imitazione, perché richiede che l'osservazione sia effettivamente avvenuta e sia stata informativa. Utile quando obs_1 e obs_2 sono documentati ma la distinzione rimane ambigua."
+    },
+    {
+      "id": "obs_4",
+      "label": "Struttura corporea del bambino nel momento del segnale",
+      "description": "La doppia orientazione simultanea del corpo del bambino è documentata: corpo ancora nello spazio della difficoltà + volto/sguardo re-orientato verso l'adulto?",
+      "type": "diretto",
+      "observer_dependency": "bassa",
+      "required_for_proxy": false,
+      "notes": "Necessario per la lettura della corporeità-vissuta; contribuisce alla lettura complessiva della configurazione. Non è il dato discriminante del proxy ma è la condizione che attiva la finestra pre-risposta come momento strutturalmente rilevante."
+    }
+  ],
+
+  "non_classifiability_rules": [
+    {
+      "id": "ncr_1",
+      "trigger": "obs_1 non documentato: la finestra pre-risposta dell'adulto non è documentata nella descrizione osservativa",
+      "required_output": "non_classificabile",
+      "rationale": "Senza documentazione della finestra pre-risposta, non è possibile determinare se l'adulto ha compiuto una fase di orientamento verso la difficoltà specifica. La distinzione ingresso-valutativo vs. ingresso-esecutivo non è ricavabile dal comportamento post-risposta dell'adulto — richiede il dato nella finestra temporale specifica."
+    },
+    {
+      "id": "ncr_2",
+      "trigger": "obs_2 non documentato o ambiguo: la direzione dello sguardo dell'adulto nella finestra pre-risposta non è specificata",
+      "required_output": "non_classificabile",
+      "rationale": "Senza documentazione della direzione dello sguardo, non è distinguibile tra orientamento verso configurazione specifica (informativo) e orientamento verso oggetto come categoria o verso bambino (sociale/confermativo). La classificazione richiederebbe un'inferenza non supportata dall'osservazione."
+    },
+    {
+      "id": "ncr_3",
+      "trigger": "La finestra pre-risposta è troppo breve per essere osservata: l'adulto agisce in meno di un secondo dal segnale del bambino senza che sia possibile determinare struttura",
+      "required_output": "ambiguo",
+      "rationale": "Distinto da non_classificabile: il dato nella finestra pre-risposta è presente (latenza minima) ma non è sufficiente per determinare se c'è stata una fase di valutazione. La brevità estrema della risposta è compatibile sia con ingresso-valutativo molto competente (adulto che coglie immediatamente la configurazione) sia con ingresso-esecutivo rapido (script). In questo caso la struttura non è distinguibile con il proxy corrente."
+    },
+    {
+      "id": "ncr_4",
+      "trigger": "Arresto dell'azione del bambino non documentato: la descrizione registra il segnale di richiesta ma non la fase di difficoltà che lo precede",
+      "required_output": "non_classificabile",
+      "rationale": "Senza la fase di arresto dell'azione, non è definita la 'difficoltà specifica' verso cui l'adulto dovrebbe orientarsi. Il proxy perde il termine di riferimento per distinguere orientamento verso difficoltà specifica da orientamento verso oggetto genericamente."
+    }
+  ],
+
+  "structural_consistency_check": {
+    "configurational_logic_preserved": true,
+    "configurational_logic_notes": "La sequenza corporeità (doppia orientazione dall'arresto) → campo intenzionale → co-regolazione (ingresso valutativo vs. esecutivo) → mediazione simbolica (difficoltà come problema co-prodotto) è strutturalmente coerente. Il proxy si situa al livello della co-regolazione — la qualità dell'ingresso dell'adulto nel campo — che è esattamente il nodo pivot della configurazione.",
+    "no_psychological_inference": true,
+    "no_psychological_inference_notes": "Il proxy non richiede inferenze su stati mentali. 'Fase di valutazione' è operazionalizzata come struttura comportamentale osservabile: direzione dello sguardo dell'adulto verso la configurazione specifica del tentativo del bambino nella finestra pre-risposta. Non si inferisce che l'adulto 'stia valutando' — si osserva dove guarda e per quanto. 'Esecuzione diretta' è operazionalizzata come assenza di questa struttura osservabile.",
+    "no_circularity": true,
+    "no_circularity_notes": "Il proxy è determinabile indipendentemente dalla classificazione finale: la presenza/assenza di orientamento verso la difficoltà specifica nella finestra pre-risposta è osservabile prima di sapere se la configurazione è reale o apparente. Non si rischia di 'vedere' la valutazione perché si sa già che è configurazione reale.",
+    "proxy_observable": true,
+    "proxy_observable_notes": "Il proxy richiede documentazione della finestra pre-risposta con sufficiente risoluzione (video o osservazione diretta attenta). La finestra temporale è specifica e breve (secondi tra segnale e prima azione). Non è ricavabile da descrizioni testuali standard che registrano la risposta ma non il pre-risposta — ma è osservabile in modo diretto quando si sa dove guardare.",
+    "proxy_not_reused_from_source": true,
+    "proxy_not_reused_notes": "Il proxy è strutturalmente distinto da entrambi i proxy del pointing. Non reusa 'co-orientamento finale verso oggetto spaziale' (pointing) né 'continuazione diadica dello spazio di difficoltà' (v1). Si focalizza sulla struttura dell'ingresso dell'adulto PRIMA della risposta — livello temporale e fenomenologico non presente nel dispositivo del pointing.",
+    "improvement_over_v1": "Il proxy v1 ('continuazione diadica') era indistinguibile dallo scaffolding routinizzato perché misurava struttura post-risposta ugualmente prodotta da campo aperto e da script competente. Il proxy v2 misura struttura pre-risposta — la fase di orientamento dell'adulto verso la difficoltà specifica — che lo script non produce sistematicamente: lo script risponde al SEGNALE (tipo di richiesta), non alla CONFIGURAZIONE SPECIFICA (dove e come il bambino è bloccato). Questa asimmetria non è facilmente mimabile."
+  }
+}

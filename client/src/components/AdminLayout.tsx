@@ -5,6 +5,7 @@ const ADMIN_LINKS = [
   { to: '/admin',               label: 'Dashboard',   end: true  },
   { to: '/admin/workflow',      label: 'Workflow Log', end: false },
   { to: '/admin/requests',      label: 'Richieste',    end: false },
+  { to: '/admin/letture',       label: 'Letture',      end: false },
   { to: '/admin/site-config',   label: 'Stato sito',   end: false },
 ];
 

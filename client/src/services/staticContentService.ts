@@ -56,4 +56,6 @@ export const sviluppoBambinoApi = {
   getInterlocuzioni: () => get<{ ambiti: InterlocuzioniItem[] }>('/sviluppo-bambino/interlocuzioni'),
   getInterlocuzioniIndex: () => get<InterlocuzioniIndex>('/sviluppo-bambino/interlocuzioni'),
   getInterlocuzioneDisciplina: (slug: string) => get<DisciplinaDetail>(`/sviluppo-bambino/interlocuzioni/${slug}`),
+  getProduzioniGuidaPipeline: () => get<{ title: string; content: string }>('/sviluppo-bambino/produzioni/guida-pipeline'),
+  getProduzioniNuovaRicercaInfo: () => get<{ title: string; content: string }>('/sviluppo-bambino/produzioni/nuova-ricerca-info'),
 };

@@ -1,0 +1,82 @@
+{
+  "step": "step_4",
+  "results": [
+    {
+      "theme_id": "tema_01_pointing_precoce",
+      "core_configuration": {
+        "description": "I quattro nodi confermati formano un arco strutturale con una direzione e una dipendenza interna precisa. Corporeità-vissuta è il livello fondante: il corpo come luogo originario di senso, la condizione ontologica da cui il gesto emerge prima di qualsiasi funzione comunicativa. Campo-intenzionale è la struttura che il gesto apre: non l'oggetto puntato ma l'orientamento condiviso verso di esso — dipende dalla corporeità (senza il corpo orientato non si apre alcun campo) ma non si riduce ad essa. Co-regolazione è il meccanismo che condiziona tutti gli altri nodi: senza la risposta dell'altro il campo intenzionale non diventa condiviso, il gesto non si costituisce come atto e la corporeità rimane in-relazione-con-sé-stessa. Mediazione-simbolica è il livello di arrivo della trasformazione: il percepito diventa condiviso e significabile — dipende strutturalmente dalla co-regolazione (è la risposta che riconosce il gesto come significante) e dal campo intenzionale (è il campo aperto che viene costituito come condiviso). La co-regolazione è il nodo pivot: distribuisce la sua funzione su tutti gli altri e rende possibile il passaggio tra i livelli.",
+        "structure_logic": "la base corporea orientata (corporeità-vissuta) costituisce un campo di orientamento aperto (campo-intenzionale) che diventa condiviso e significabile (mediazione-simbolica) solo attraverso la risposta co-regolatoria dell'altro (co-regolazione): il corpo si trasforma in segno non da solo ma nella relazione"
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "function_in_theme": "Asse 1 presidia l'intero piano fenomenologico del pointing: il corpo come luogo originario (corporeità-vissuta), la struttura intenzionale che il gesto apre (campo-intenzionale) e il meccanismo intersoggettivo che rende il gesto efficace (co-regolazione). È il piano del 'come si produce' la configurazione — la struttura processuale e incarnata che precede e fonda il salto semiotico.",
+          "specific_contribution": "Asse 1 descrive il versante generativo della micro-matrice: senza di esso la configurazione ha solo un output (il significato condiviso) senza il processo che lo produce. Asse 6 da solo non può spiegare l'origine del gesto semiotico — può solo descriverne la struttura una volta avvenuto. Asse 1 porta l'irriducibilità corporea e relazionale: il pointing non emerge da un soggetto cognitivo che decide di comunicare, ma da un corpo che si orienta nell'interazione prima di qualsiasi intenzione deliberata."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "function_in_theme": "Asse 6 presidia il piano semiotico e culturale del pointing: la struttura attraverso cui il gesto corporeo-relazionale si trasforma in mediazione simbolica, ossia in atto che trasforma il percepito in condiviso e significabile (mediazione-simbolica). È il piano del 'cosa produce' la configurazione — la struttura di arrivo della trasformazione.",
+          "specific_contribution": "Asse 6 nomina il salto strutturale che Asse 1 da solo non può descrivere: il passaggio dal corporeo-relazionale al semiotico-culturale. Senza Asse 6 la configurazione descrive solo un'interazione corporea co-regolata (per quanto ricca) senza la sua funzione di mediazione del significato. Asse 6 porta la dimensione antropologica: il pointing non condivide solo attenzione ma istituisce qualcosa come culturalmente significativo, incorporando il gesto nella struttura semiotica condivisa tra soggetti."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Il gesto corporeo come atto semiotico co-prodotto",
+          "linked_axes": ["asse_1", "asse_6"],
+          "linked_nodes": ["campo-intenzionale", "co-regolazione", "mediazione-simbolica"],
+          "function": "Il ponte descrive la trasformazione strutturale che è la logica interna dell'intera micro-matrice: il gesto corporeo co-regolato (Asse 1 — campo intenzionale aperto nella relazione, attraverso la co-regolazione) diventa atto semiotico (Asse 6 — mediazione simbolica che trasforma il percepito in condiviso) solo attraverso la risposta che lo riconosce come gesto significante. Il significato del pointing non è nel gesto né nell'interpretazione separati: è nel processo di co-produzione in cui entrambi si costituiscono simultaneamente. Il ponte nomina questo processo come trasformazione e non come somma: il gesto non porta con sé il significato né l'adulto lo assegna unilateralmente — il significato emerge nella soglia tra i due assi.",
+          "type": "organizzativo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "gesto vs. segno",
+          "description": "Il pointing è simultaneamente atto corporeo (Asse 1 — corporeità-vissuta come base ontologica irriducibile: il dito, il braccio, lo sguardo) e atto semiotico (Asse 6 — mediazione simbolica: il gesto che trasforma il percepito in condiviso e significabile). I due poli coesistono perché il pointing è esattamente il momento in cui non sono ancora separati: risolverlo verso il gesto motorio ne perderebbe la funzione semiotica; risolverlo verso il segno ne perderebbe la base corporea necessaria. La tensione non si annulla — è la struttura stessa della soglia."
+        },
+        {
+          "tension": "apertura vs. stabilizzazione",
+          "description": "Il pointing costituisce un campo condiviso (lo apre nell'atto) ma non lo stabilizza: il significato prodotto è dipendente dalla co-regolazione e non è ancora consolidato come riferimento culturale autonomo. La configurazione proto-triadica è strutturalmente aperta — crea condivisione senza ancora fissarla. La tensione è tra la necessità strutturale di apertura (il pointing deve poter costituire ogni volta qualcosa di nuovo, non riprodurre significati già fissati) e la necessità di stabilizzazione (il significato deve poter depositarsi per diventare culturalmente utilizzabile). Il pointing vive in questo intervallo: più dell'apertura pura, meno della stabilizzazione triadica."
+        },
+        {
+          "tension": "condivisione vs. deposito",
+          "description": "La condivisione del pointing è strutturalmente completa nel momento dell'atto: il campo intenzionale si apre, il percepito diventa condiviso, la mediazione simbolica avviene. Ma la domanda strutturale è se questo momento lasci traccia: se il valore che l'altro ha reso significativo diventi, nel tempo, riferimento interno. La tensione è tra la sufficienza del momento (il pointing è funzionalmente completo in sé, senza bisogno di deposito) e il potenziale formativo della ripetizione (la stessa configurazione, iterata, può diventare struttura stabile di orientamento). La micro-matrice non risolve questa tensione: descrive il pointing come atto completo che può ma non deve lasciare deposito."
+        },
+        {
+          "tension": "dipendenza vs. emergenza",
+          "description": "Il pointing è massimalmente dipendente dalla risposta dell'altro: senza co-regolazione non vi è configurazione. Tuttavia è precisamente attraverso questa dipendenza strutturale che emerge la capacità di mediazione simbolica — la prima forma di atto che trasporta significato attraverso un segno. La tensione è tra la dipendenza costitutiva (il pointing non può esistere da solo: richiede la risposta per essere ciò che è) e il fatto che questa dipendenza produca emergenza (la capacità semiotica si costituisce proprio nella relazione che la rende possibile). La dipendenza non è un limite ma il meccanismo generativo."
+        }
+      ],
+      "structural_questions": [
+        "Cosa rende un gesto corporeo l'inizio di un atto semiotico e non solo un movimento orientato — qual è il momento strutturale in cui la soglia viene attraversata?",
+        "La co-regolazione è una condizione che il pointing richiede dall'esterno o è interna alla struttura stessa del gesto — e cosa cambia tra le due possibilità per come si legge la configurazione?",
+        "Cosa accade strutturalmente quando la risposta dell'altro manca, è tardiva, asimmetrica o non riconosce il gesto come significante — la configurazione si interrompe o si trasforma?",
+        "Il campo condiviso aperto dal pointing del bambino e quello aperto dal pointing dell'adulto hanno la stessa struttura o producono configurazioni diverse — e dove sta la differenza strutturale?",
+        "In che misura la mediazione simbolica del pointing è già pienamente culturale o è ancora pre-culturale — e dove si colloca il confine tra i due livelli nella struttura della micro-matrice?",
+        "La proto-triadicità del pointing è una fase necessaria per la triadicità stabilizzata (es. lettura dialogica) o può esistere come configurazione autonoma senza evolvere verso strutture più dense?",
+        "Cosa distingue strutturalmente il pointing da altri gesti che producono orientamento condiviso — sguardo condiviso, tocco, chiamata vocale — in termini di co-regolazione e mediazione simbolica?",
+        "La tensione tra apertura e stabilizzazione è risolvibile nel tempo attraverso la ripetizione della configurazione, o il pointing rimane strutturalmente aperto indipendentemente dalla frequenza?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+          "reason": "La struttura soglia_tra_assi porta la domanda: dove e come si inceppa il passaggio dal gesto corporeo all'atto semiotico co-prodotto? La micro-matrice non offre un checklist diagnostico ma una mappa strutturale: le condizioni — corporee (corporeità-vissuta), co-regolatorie (co-regolazione), intenzionali (campo-intenzionale), semiotiche (mediazione-simbolica) — possono essere interrogate separatamente per capire quale livello è alterato e quale resta integro. La tensione dipendenza vs. emergenza è particolarmente rilevante: porta la domanda su come la dipendenza co-regolatoria sia o non sia generativa nei diversi quadri."
+        },
+        {
+          "domain": "educativo (contesti 0-3, asili nido, educazione precoce)",
+          "reason": "La struttura del ponte (co-produzione del significato attraverso la risposta) porta nell'ambito educativo la domanda: come si può pensare la qualità della risposta dell'adulto non come rinforzo comportamentale (validazione del gesto) ma come partecipazione strutturale alla co-produzione del significato? La tensione apertura vs. stabilizzazione porta la domanda su quale tipo di presenza educativa favorisce la costituzione di campi condivisi senza chiuderli prematuramente in significati già dati."
+        },
+        {
+          "domain": "formazione dei professionisti (operatori dell'infanzia, educatori, supervisori)",
+          "reason": "La micro-matrice porta la domanda: come si forma la capacità di riconoscere il gesto come proto-atto semiotico — cioè non solo come comportamento comunicativo osservabile ma come configurazione strutturale che richiede una risposta co-regolatoria specifica? La tensione gesto vs. segno apre la domanda su quale tipo di sguardo professionale è necessario per cogliere la soglia tra i due livelli senza ridurla all'uno o all'altro."
+        },
+        {
+          "domain": "ricerca (developmental science, semiotica dello sviluppo, infant research)",
+          "reason": "La struttura proto-triadica e la tensione gesto vs. segno portano la domanda metodologica: quali strumenti di osservazione e analisi sono capaci di cogliere il momento di soglia — il punto in cui il gesto corporeo diventa atto semiotico co-prodotto — senza ridurlo ex post a comportamento o ex ante a linguaggio? La tensione condivisione vs. deposito porta la domanda longitudinale: come si studia la eventuale stratificazione di configurazioni proto-triadiche ripetute e il loro possibile contributo a strutture semiotiche più stabili?"
+        }
+      ],
+      "configuration_summary": "Il pointing precoce è una configurazione proto-triadica che si colloca alla soglia tra struttura corporea-relazionale (il gesto che emerge dalla corporeità, apre un campo intenzionale e si compie nella co-regolazione) e struttura semiotica (il gesto che diventa mediazione simbolica e trasforma il percepito in condiviso e significabile). La logica dell'intera micro-matrice è il passaggio tra questi due livelli: il corpo si trasforma in segno non da solo ma attraverso la risposta dell'altro che riconosce il gesto come significante — una co-produzione in cui il significato non è nel gesto né nell'interpretazione ma nella soglia tra essi. Le tensioni interne (gesto vs. segno, apertura vs. stabilizzazione, condivisione vs. deposito, dipendenza vs. emergenza) non sono problemi ma la struttura generativa di questo momento fondativo: il pointing è completo in sé come atto e potenzialmente formativo come configurazione ripetuta."
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "step": "f3_step_10",
+  "device_id": "pointing-clinico-neuropsviluppo-v1",
+  "domain": "clinico — neuropsviluppo, osservazione precoce caregiver-bambino, 9-24 mesi",
+  "cases_source": "costruiti autonomamente (nessun caso fornito dal ricercatore)",
+  "stress_test_results": [
+    {
+      "case_id": "caso_1",
+      "case_type": "configurazione_assente",
+      "case_description": "Bambino di 14 mesi in prima valutazione di neuropsviluppo. Setting: ambulatorio con tavolo basso, materiali vari (pallina, macchina, animali di gomma). Caregiver presente, seduta vicino al bambino. Clinico seduto di fronte. Il bambino esplora i materiali manipolandoli, allinea alcuni oggetti, li lancia. Nessun episodio di orientamento verso l'adulto durante l'esplorazione. Il caregiver commenta e nomina gli oggetti; il bambino non registra le verbalizzazioni. Il clinico introduce un oggetto inatteso (una palla che rotola): il bambino la segue con lo sguardo ma non cerca la condivisione con l'adulto. In 20 minuti di osservazione libera: nessun episodio di pointing, nessuna alternanza visiva bambino-adulto in risposta a un evento, nessun gesto proto-dichiarativo. Nota del clinico: 'comportamento esplorativo autonomo, assenza di condivisione attentiva'.",
+      "observed_configuration": {
+        "corporeity": "Il bambino si orienta verso gli oggetti con il corpo intero, con coordinazione oculo-manuale presente. La base corporea non è strutturata verso la relazione: il corpo è disponibile alla manipolazione ma non all'orientamento relazionale verso l'adulto.",
+        "field": "assente — nessun tentativo di apertura del campo intenzionale condiviso in 20 minuti. Il bambino non cerca lo sguardo dell'adulto dopo eventi salienti, non alterna visiva bambino-oggetto-adulto.",
+        "co_regulation": "assente — le vocalizzazioni del caregiver non producono riorientamento nel bambino. Il bambino non registra le risposte dell'adulto come segnali di partecipazione al campo.",
+        "symbolic_mediation": "assente",
+        "transformative_passage": "non applicabile — il campo non si è mai costituito"
+      },
+      "proxy_application": {
+        "applicable": false,
+        "reason": "Il proxy richiede almeno un episodio di pointing spontaneo (obs_req_4). Non si è prodotto alcun episodio di pointing nel corso della sessione. Il dispositivo non può classificare il passaggio trasformativo in assenza della struttura minima.",
+        "required_observations_present": [],
+        "missing_observations": [
+          "obs_req_4 (pointing spontaneo assente)",
+          "obs_req_1 (fase [F] non raggiungibile)",
+          "obs_req_2 (secondo beat non raggiungibile)",
+          "obs_req_3 (co-orientamento non costituito)"
+        ],
+        "proxy_output": "non_classificabile"
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo legge la discontinuità al livello del campo intenzionale: assente. La localizzazione strutturale è chiara — non è la corporeità ad essere compromessa (la base corporea è disponibile alla manipolazione) ma l'apertura del campo relazionale verso l'adulto. Questo è strutturalmente diverso da 'il bambino non punta': segnala che l'adulto non è entrato nel campo percettivo-relazionale del bambino come co-partecipante potenziale.",
+        "what_becomes_unclear": "Il dispositivo non produce lettura sul 'perché' strutturale dell'assenza — se dipende dal setting (prima sessione, adulto non familiare), dallo stato del bambino, o da una caratteristica strutturale della relazione. Questo non è un limite del dispositivo: è il confine corretto della lettura configurazionale.",
+        "ambiguity_level": "basso"
+      },
+      "breaking_point": {
+        "present": false,
+        "where": "",
+        "why": ""
+      },
+      "false_positive_risk": {
+        "risk_present": true,
+        "description": "Il rischio non è un falso positivo configurazionale ma una riduzione diagnostica: la clinica tende a leggere l'assenza di condivisione attentiva come indicatore di ASD o ritardo comunicativo. Il dispositivo non autorizza questa lettura — legge la discontinuità strutturale nella sessione, non il livello di sviluppo del bambino. L'assenza potrebbe dipendere dal setting (primo incontro, adulto non familiare).",
+        "mitigation": "L'interpretive_warning 'uso_diagnostico' presidia esattamente questo rischio. La domanda strutturale sul confronto tra sessione clinica e contesto naturale (colloquio con caregiver) è il passaggio necessario prima di qualsiasi lettura sullo sviluppo."
+      },
+      "test_verdict": "regge"
+    },
+    {
+      "case_id": "caso_2",
+      "case_type": "configurazione_parziale",
+      "case_description": "Bambino di 16 mesi, seconda visita. Setting libero con materiali familiari. Caregiver presente, coinvolta nell'interazione. Episodio documentato: un uccellino di gomma cade dal tavolo e produce un suono. Il bambino si orienta verso il suono (corpo intero, gesto incipiente di pointing con indice destro), poi alterna lo sguardo verso il caregiver (alternanza visiva bambino-oggetto-adulto documentata). Il caregiver risponde con una verbalizzazione: 'È caduto! Sì, che rumore!' e riprende l'oggetto dal pavimento. Il bambino segue brevemente il gesto della madre, poi si riorientera verso un altro oggetto sul tavolo. Non si costituisce un secondo beat relazionale: il bambino non produce segnale secondario verso il caregiver dopo la risposta. Nota clinica: 'buona attenzione condivisa, risposta appropriata del caregiver'.",
+      "observed_configuration": {
+        "corporeity": "presente — orientamento corporeo verso l'evento sonoro, gesto di pointing incipiente con alternanza visiva. La base corporea è strutturata verso la relazione.",
+        "field": "tentato-in-attesa — il bambino apre il campo (alternanza visiva documentata), il caregiver si orienta verso l'oggetto caduto. Il campo è aperto bilateralmente ma transisce velocemente verso la risposta della madre senza costituirsi come condiviso con durata strutturale.",
+        "co_regulation": "registrativa — la risposta del caregiver ('È caduto! Sì, che rumore!') nomina l'evento e riprende l'oggetto. Riconosce il segnale del bambino ma non entra nel campo intenzionale: si colloca al livello comportamentale (nomina-recupera) senza partecipare alla struttura di orientamento condiviso.",
+        "symbolic_mediation": "assente — la risposta registrativa non produce passaggio semiotico. Il bambino non registra la risposta come ingresso nel campo.",
+        "transformative_passage": "non_classificabile — il secondo beat relazionale non si è prodotto; la fase [F] non è strutturalmente isolabile"
+      },
+      "proxy_application": {
+        "applicable": false,
+        "reason": "obs_req_2 assente: il secondo beat relazionale [bambino → adulto → adulto → bambino] non si è prodotto. La risposta del caregiver ha chiuso la sequenza prima che si costituisse la fase [F]. NCR_2 si applica.",
+        "required_observations_present": [
+          "obs_req_4 (pointing spontaneo presente)",
+          "obs_req_3 (co-orientamento verso oggetto parzialmente costituito)"
+        ],
+        "missing_observations": [
+          "obs_req_2 (secondo beat assente)",
+          "obs_req_1 (fase [F] non raggiungibile senza secondo beat)"
+        ],
+        "proxy_output": "non_classificabile"
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo localizza la discontinuità al livello della co-regolazione: la risposta del caregiver è registrativa, non partecipativa. Questo produce un'interruzione della sequenza prima che la fase [F] si possa costituire. La lettura è strutturalmente precisa: non è il bambino a non aprire il campo, è la risposta dell'adulto a non entrarvi. Il campo era tentato-in-attesa e la risposta registrativa lo ha interrotto prima che si stabilizzasse.",
+        "what_becomes_unclear": "Il dispositivo non può classificare il passaggio trasformativo (proxy non applicabile per ncr_2). Rimane aperta la questione se, con una risposta partecipativa del caregiver, il bambino avrebbe prodotto un secondo beat. Questa informazione non è recuperabile dal caso.",
+        "ambiguity_level": "basso"
+      },
+      "breaking_point": {
+        "present": false,
+        "where": "",
+        "why": ""
+      },
+      "false_positive_risk": {
+        "risk_present": true,
+        "description": "La nota clinica ('buona attenzione condivisa, risposta appropriata del caregiver') è un falso positivo rispetto alla lettura strutturale del dispositivo. La risposta del caregiver è strutturalmente registrativa — correttamente descritta come 'risposta' al comportamento del bambino, ma non come ingresso nel campo intenzionale. Il dispositivo rivela che 'risposta appropriata' sul piano comportamentale non equivale a co-regolazione partecipativa sul piano strutturale.",
+        "mitigation": "L'interpretive_warning 'comportamentismo' e la definizione esplicita dei 5 livelli co-regolatori presidiano questa distinzione. La differenza tra registrativa e partecipativa è il segnale strutturale centrale in questo caso."
+      },
+      "test_verdict": "regge"
+    },
+    {
+      "case_id": "caso_3",
+      "case_type": "configurazione_chiudente",
+      "case_description": "Bambino di 18 mesi, terza visita, bambino familiare al setting e al clinico. Episodio documentato da videoregistrazione: un treno meccanico inizia a muoversi sul bordo del tavolo. Il bambino lo vede, alza il braccio destro con indice esteso verso il treno, guarda il clinico (alternanza visiva), vocalizza con intonazione ascendente. Il clinico risponde immediatamente: 'Ah, il treno! Sì, si muove!' con tono entusiasta, nomina l'oggetto, indica a sua volta il treno. Il bambino osserva la risposta del clinico, poi si riorientera verso il treno. Seconda risposta del clinico (dopo che il bambino si è riorientato verso il treno): 'Bravissimo, hai visto il treno!' — il clinico non si riorientera verso il treno, si orienta verso il bambino. Fase [F] documentata dalla videoregistrazione: il bambino si orienta verso il treno; il clinico è già orientato verso il bambino, non verso il treno. Nota clinica: 'ottimo scambio comunicativo, buona risposta del clinico, segnale di joint attention presente'.",
+      "observed_configuration": {
+        "corporeity": "presente — orientamento corporeo verso l'evento, pointing con indice esteso, alternanza visiva, vocalizzazione con intonazione ascendente. Base corporea pienamente strutturata verso la relazione.",
+        "field": "condiviso — il bambino apre il campo (alternanza visiva + vocalizzazione), il clinico vi entra orientandosi verso l'oggetto insieme al bambino. Il campo si costituisce bilateralmente.",
+        "co_regulation": "chiudente — la risposta del clinico nomina l'oggetto, conferma il gesto ('Bravissimo, hai visto il treno!') e si orienta verso il bambino come feedback finale. La risposta interpreta il gesto del bambino come richiesta di conferma e vi risponde pragmaticamente invece di mantenere aperto il campo verso l'oggetto condiviso. È strutturalmente chiudente indipendentemente dalla sua qualità relazionale apparente (tono entusiasta, coinvolgimento).",
+        "symbolic_mediation": "assente — la risposta chiudente non produce passaggio semiotico. Il campo si è aperto ma l'adulto ha chiuso la sequenza prima che si costituisse la mediazione.",
+        "transformative_passage": "predeterminato — la fase [F] documentata dalla videoregistrazione mostra il bambino orientato verso il treno mentre il clinico è già ritirato verso il bambino. La struttura diadica della chiusura è unilaterale: chiusura unilaterale del bambino verso l'oggetto con adulto già uscito dal campo."
+      },
+      "proxy_application": {
+        "applicable": true,
+        "reason": "Tutte le condizioni di applicabilità sono soddisfatte: pointing spontaneo (obs_req_4 presente), obs_req_1 documentato esplicitamente dalla videoregistrazione (adulto orientato verso il bambino, non verso il treno in fase [F]), obs_req_2 presente (secondo beat: bambino si riorientera verso il treno → clinico risponde con 'Bravissimo'), obs_req_3 presente (co-orientamento verso il treno costituito).",
+        "required_observations_present": [
+          "obs_req_4 (pointing spontaneo)",
+          "obs_req_1 (adulto già orientato verso bambino in fase [F])",
+          "obs_req_2 (secondo beat presente)",
+          "obs_req_3 (co-orientamento costituito)"
+        ],
+        "missing_observations": [],
+        "proxy_output": "predeterminato"
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo legge la configurazione chiudente: il campo si è aperto (corporeità pienamente strutturata, campo condiviso costituito), ma la risposta del clinico ha chiuso la sequenza prima del passaggio semiotico. Il proxy rileva la chiusura unilaterale nella fase [F]: il bambino è ancora orientato verso l'oggetto ma il clinico ha già ritirato la co-orientazione. Questo è il caso paradigmatico del 'clinico che risponde correttamente sul piano comportamentale ma strutturalmente chiude il campo'. Il dispositivo distingue questa configurazione dalla configurazione aperta anche quando tutto sembra 'andare bene'.",
+        "what_becomes_unclear": "Nulla di rilevante nel dato di questo caso. Il dispositivo produce una lettura netta.",
+        "ambiguity_level": "basso"
+      },
+      "breaking_point": {
+        "present": false,
+        "where": "",
+        "why": ""
+      },
+      "false_positive_risk": {
+        "risk_present": true,
+        "description": "Caso paradigmatico di falso positivo clinico: la nota clinica ('ottimo scambio comunicativo, buona risposta del clinico, segnale di joint attention presente') è strutturalmente errata rispetto alla lettura del dispositivo. La risposta del clinico è chiudente, non partecipativa o trasformativa. Il 'segnale di joint attention' è presente come forma comportamentale ma la struttura configurazionale non ha prodotto passaggio semiotico. Questo è esattamente il cieco che il dispositivo è costruito per rivelare.",
+        "mitigation": "La definizione esplicita del livello 'chiudente' (risposta ad alta qualità comportamentale ma struttura chiudente) e il divieto di lettura come scala ordinale presidiano questo rischio. Il dispositivo non valuta la 'qualità' della risposta del clinico — legge la sua funzione strutturale."
+      },
+      "test_verdict": "regge"
+    },
+    {
+      "case_id": "caso_4",
+      "case_type": "configurazione_apparente_scripted",
+      "case_description": "Bambino di 20 mesi in valutazione standardizzata con CSBS (Communication and Symbolic Behavior Scales). Il clinico, seguendo il protocollo, chiede al caregiver di prendere un libro di figure. Il clinico indica una pagina e chiede: 'Dov'è il cane?' Il bambino indica la figura del cane con indice esteso, guarda il clinico. Il clinico risponde: 'Bravo! È il cane!' L'episodio viene documentato come 'pointing presente' nel protocollo CSBS. Sequenza ripetuta per 4 figure: bambino indica figura nominata, clinico conferma. In tutti e 4 gli episodi il bambino ha prodotto pointing con indice esteso e ha guardato il clinico dopo. Nessun episodio di pointing spontaneo documentato nella sessione.",
+      "observed_configuration": {
+        "corporeity": "presente nella forma — il bambino produce pointing con indice esteso. Tuttavia la base corporea è strutturata per rispondere alla domanda dell'adulto, non per orientarsi verso qualcosa di percettivamente saliente nell'ambiente. Il gesto emerge dalla richiesta, non dall'incontro corporeo con l'oggetto.",
+        "field": "pre-strutturato dall'adulto — il clinico ha già orientato il bambino verso la figura con la domanda 'Dov'è il cane?'. Il campo verso l'oggetto era già determinato prima che il bambino producesse il gesto. Non si può distinguere tra apertura del campo da parte del bambino e risposta a un campo già strutturato.",
+        "co_regulation": "non applicabile per ncr_5 — la struttura sollecitata del gesto rende non leggibile la qualità co-regolatoria della risposta nel senso configurazionale del dispositivo.",
+        "symbolic_mediation": "non applicabile per ncr_5",
+        "transformative_passage": "non_classificabile per ncr_5"
+      },
+      "proxy_application": {
+        "applicable": false,
+        "reason": "NCR_5 si applica: il pointing è stato prodotto in risposta a sollecitazione diretta dell'adulto ('Dov'è il cane?'). La co-orientazione verso la figura era già pre-strutturata dalla domanda prima del gesto del bambino. Il proxy non può discriminare tra passaggio aperto e predeterminato quando il campo era già determinato dall'adulto. Questa è la condizione sistematica di tutti e 4 gli episodi.",
+        "required_observations_present": [],
+        "missing_observations": [
+          "obs_req_4 (pointing spontaneo assente — tutti gli episodi sono sollecitati)"
+        ],
+        "proxy_output": "non_classificabile"
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo legge la distinzione strutturale che il protocollo CSBS non produce: il bambino risponde con pointing a una struttura già determinata dall'adulto. Il dispositivo non può classificare la configurazione come aperta o predeterminata — non perché manchi informazione tecnica (la videoregistrazione è disponibile) ma perché la struttura del compito rende il proxy non applicabile. Il 'pointing presente' del protocollo CSBS è informazione sul comportamento, non sulla configurazione. Il dispositivo produce non_classificabile in modo corretto e informativo.",
+        "what_becomes_unclear": "Se il bambino sia capace di pointing configurazionale spontaneo — informazione non disponibile da questa sessione. Il colloquio con il caregiver sulle interazioni quotidiane è il passaggio necessario.",
+        "ambiguity_level": "basso"
+      },
+      "breaking_point": {
+        "present": false,
+        "where": "",
+        "why": ""
+      },
+      "false_positive_risk": {
+        "risk_present": true,
+        "description": "Caso di falso positivo sistematico prodotto da protocolli standardizzati: il pointing sollecitato viene documentato come 'pointing presente' e contribuisce a un risk score. Il dispositivo rivela che questi episodi non sono classificabili come configurazione aperta — non perché il bambino non 'sappia' puntare, ma perché il compito strutturato non attiva la struttura configurazionale. L'uso del dispositivo come voce di uno score (es. CSBS) è esplicitamente non_permitted_transformation.",
+        "mitigation": "NCR_5 e la non_permitted_transformation 'uso come screening' presidiano direttamente questo caso. Il dispositivo è costruito per non classificare in questa condizione."
+      },
+      "test_verdict": "regge"
+    },
+    {
+      "case_id": "caso_5a",
+      "case_type": "quasi_indistinguibile — pointing configurazionale reale",
+      "case_description": "Bambino di 19 mesi, terza visita, setting libero. Un aereo passa fuori dalla finestra producendo un rumore. Il bambino si blocca nell'esplorazione, si orienta verso la finestra, alza il braccio con gesto ampio verso la finestra, guarda la madre (alternanza visiva), vocalizza 'eh! eh!' con intonazione ascendente. La madre si orienta verso la finestra insieme al bambino: 'Sì! L'aereo!' Il bambino vocalizza ancora verso la madre (secondo segnale), la madre risponde orientandosi ancora verso la finestra: 'È passato l'aereo, sì!' Fase [F] documentata dalla videoregistrazione: il bambino si riorientera verso la finestra; la madre è ancora orientata verso la finestra insieme al bambino. Poi entrambi si riorientano verso l'interno della stanza quasi simultaneamente.",
+      "observed_configuration": {
+        "corporeity": "presente — orientamento corporeo spontaneo verso evento esterno inatteso, gesto ampio (non pointing prototipico con indice ma gesto di orientamento corporeo strutturato verso la finestra), alternanza visiva, vocalizzazione con intonazione ascendente.",
+        "field": "condiviso — il bambino apre il campo (alternanza visiva + vocalizzazione), la madre vi entra orientandosi verso la finestra. Il campo si costituisce bilateralmente con durata strutturale.",
+        "co_regulation": "partecipativa — la madre entra nel campo condiviso, si orienta verso l'oggetto con il bambino, sostiene il campo aperto senza chiuderlo. La seconda risposta ('È passato l'aereo, sì!') mantiene il co-orientamento verso l'oggetto invece di ritirarlo verso il bambino.",
+        "symbolic_mediation": "presente — il percepito (suono/visione dell'aereo) diventa condiviso e significabile ('aereo') come fatto della relazione, non solo come nominazione dell'adulto.",
+        "transformative_passage": "aperto — fase [F] documentata: madre ancora orientata verso la finestra insieme al bambino. Co-orientamento bilaterale nella chiusura."
+      },
+      "proxy_application": {
+        "applicable": true,
+        "reason": "Tutte le condizioni di applicabilità soddisfatte: pointing spontaneo (evento inatteso, non sollecitato); obs_req_1 documentato (madre ancora orientata verso finestra in fase [F]); obs_req_2 presente (secondo beat: bambino vocalizza di nuovo → madre risponde); obs_req_3 presente (co-orientamento verso finestra costituito bilateralmente).",
+        "required_observations_present": [
+          "obs_req_4",
+          "obs_req_1",
+          "obs_req_2",
+          "obs_req_3"
+        ],
+        "missing_observations": [],
+        "proxy_output": "aperto"
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo legge la configurazione aperta: corporeità pienamente strutturata, campo condiviso costituito, co-regolazione partecipativa, passaggio trasformativo aperto (fase [F] bilaterale). Il proxy produce 'aperto' con triangolazione: (1) proxy presente — co-orientamento bilaterale in fase [F]; (2) direzione — la madre non si è ritirata verso il bambino durante la chiusura; (3) contro-indicatore testato — si potrebbe sostenere che la seconda risposta della madre ('È passato l'aereo, sì!') ha un tono di chiusura; questo viene scartato perché la madre era ancora fisicamente orientata verso la finestra nel momento documentato della fase [F].",
+        "what_becomes_unclear": "Nulla di rilevante.",
+        "ambiguity_level": "basso"
+      },
+      "breaking_point": {
+        "present": false,
+        "where": "",
+        "why": ""
+      },
+      "false_positive_risk": {
+        "risk_present": false,
+        "description": "Il dispositivo legge la configurazione correttamente. Il rischio opposto (falso negativo) sarebbe la mancata documentazione della fase [F] — ma in questo caso è documentata dalla videoregistrazione.",
+        "mitigation": ""
+      },
+      "test_verdict": "regge"
+    },
+    {
+      "case_id": "caso_5b",
+      "case_type": "quasi_indistinguibile — pointing routinizzato mascherato da spontaneo",
+      "case_description": "Stesso bambino, stessa sessione, 8 minuti dopo caso_5a. Il clinico, volendo verificare la replicabilità del comportamento, introduce lo stesso libro di animali che il bambino aveva esplorato nelle due sessioni precedenti. Il bambino lo riconosce (sorride, lo prende), lo apre alla pagina degli animali della fattoria. Spontaneamente (senza domande del clinico) indica il cavallo con indice esteso, guarda il clinico con sorriso, vocalizza. Il clinico risponde: 'Sì! Il cavallo!' orientandosi verso il libro. Il bambino indica un secondo animale (mucca), guarda ancora il clinico. La sequenza si ripete per 3 animali in modo regolare: indica → guarda clinico → clinico nomina → bambino indica il prossimo. Fase [F] documentata dalla videoregistrazione: al terzo episodio, il bambino indica la pecora, guarda il clinico; il clinico si orienta verso il libro ('La pecora!'); il bambino, prima che il clinico abbia terminato la nomina, ha già spostato il dito verso l'animale successivo. Nessun secondo beat relazionale: il bambino non attende la risposta del clinico prima di indicare il prossimo animale.",
+      "observed_configuration": {
+        "corporeity": "presente nella forma — pointing con indice esteso, alternanza visiva, vocalizzazione. La forma corporea è identica al caso_5a. Tuttavia il gesto emerge da una struttura nota (libro degli animali delle sessioni precedenti) e si inserisce in una sequenza regolare di turni.",
+        "field": "pre-strutturato dalla routine — il libro degli animali è un oggetto della routine interattiva delle sessioni precedenti. L'apertura spontanea del libro e la sequenza regolare degli indici suggeriscono che il bambino attiva una struttura nota, non apre un campo verso qualcosa di percettivamente inatteso. Il campo è strutturato prima del gesto.",
+        "co_regulation": "registrativa con funzione di conferma — la nomina del clinico ('La pecora!') funziona come conferma di un turno noto, non come ingresso in un campo aperto. Il bambino non attende la risposta come partecipazione al campo — la struttura del prossimo turno è già determinata prima della risposta.",
+        "symbolic_mediation": "apparente — la nomina produce l'apparenza di mediazione simbolica ma il significato è già dato nella struttura della routine. Non si produce passaggio semiotico aperto.",
+        "transformative_passage": "predeterminato — il bambino sposta il dito verso l'animale successivo prima che la risposta del clinico sia completata: la sequenza del prossimo turno è già determinata, indipendentemente dalla risposta."
+      },
+      "proxy_application": {
+        "applicable": true,
+        "reason": "Il pointing è formalmente spontaneo (il bambino apre il libro senza sollecitazione diretta). NCR_5 si applica se si considera la struttura routinizzata del libro degli animali — il libro è un oggetto della routine interattiva delle sessioni precedenti, non un evento nuovo. La decisione sull'applicabilità di ncr_5 richiede giudizio contestuale: il pointing 'spontaneo' in un contesto routinizzato è un caso limite che la regola ncr_5 copre nella sua formulazione ('contesto routinizzato'). Tuttavia, se si considerasse il pointing come spontaneo (nessuna domanda dell'adulto), obs_req_2 è assente: il bambino non attende il secondo beat prima di indicare l'animale successivo — si applica ncr_2.",
+        "required_observations_present": [
+          "obs_req_4 (pointing formalmente spontaneo, ma in contesto routinizzato)",
+          "obs_req_3 (co-orientamento verso libro costituito)"
+        ],
+        "missing_observations": [
+          "obs_req_2 assente (nessun secondo beat — il bambino indica il prossimo animale prima di ricevere la risposta)"
+        ],
+        "proxy_output": "non_classificabile"
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo produce non_classificabile per ncr_2 (secondo beat assente). Tuttavia la lettura strutturale è disponibile a livello di campo: il campo è pre-strutturato dalla routine (libro noto, struttura di turni attesa). La distinzione con caso_5a è precisa: in caso_5a il bambino si è bloccato nell'esplorazione in risposta a un evento inatteso; in caso_5b apre un oggetto noto e attiva una sequenza nota. La forma del gesto è identica — la struttura è diversa.",
+        "what_becomes_unclear": "Se ncr_5 si applica (contesto routinizzato) o ncr_2 si applica prima. In entrambi i casi l'output è non_classificabile — la distinzione tra le due regole è epistemicamente rilevante ma non cambia l'output del proxy. Il dispositivo è robusto: le due percorrenze diagnostiche convergono allo stesso esito.",
+        "ambiguity_level": "medio"
+      },
+      "breaking_point": {
+        "present": true,
+        "where": "La distinzione tra pointing spontaneo in contesto routinizzato (caso_5b) e pointing genuinamente spontaneo verso evento inatteso (caso_5a) è strutturalmente identificabile dal dispositivo ma richiede giudizio contestuale su ncr_5: il clinico deve valutare se il libro degli animali costituisce 'contesto routinizzato' sulla base della storia della sessione.",
+        "why": "NCR_5 nella sua formulazione attuale copre il pointing routinizzato ma non specifica esplicitamente come trattare il pointing 'spontaneo' in contesto routinizzato — dove il gesto non è sollecitato dall'adulto ma emerge da una struttura interattiva già nota. Questo è un caso limite che richiede giudizio del clinico, non classificazione automatica."
+      },
+      "false_positive_risk": {
+        "risk_present": true,
+        "description": "Il rischio principale è classificare questo episodio come pointing configurazionale spontaneo sulla base della forma del gesto (identica al caso_5a) e della spontaneità apparente (il bambino apre il libro senza sollecitazione). Il dispositivo resiste a questo falso positivo attraverso due percorsi: (a) ncr_5 se il clinico riconosce il contesto routinizzato; (b) ncr_2 se il secondo beat è assente. Entrambi producono non_classificabile.",
+        "mitigation": "La struttura a doppia copertura (ncr_5 + ncr_2 convergenti) è il punto di forza del dispositivo in questo caso limite. Il clinico che non riconosce il contesto routinizzato sarà comunque bloccato da ncr_2 (secondo beat assente prima della risposta). L'obs_req_4 esteso al 'tipo di contesto' (non solo spontaneo/sollecitato ma anche routinizzato) è il requisito che deve essere documentato."
+      },
+      "test_verdict": "regge_con_riserva"
+    }
+  ],
+  "global_assessment": {
+    "device_robustness": "alta",
+    "main_strengths": [
+      "NCR_5 presidia sistematicamente il rischio principale del dominio clinico: il pointing sollecitato in compiti strutturati viene correttamente bloccato prima dell'applicazione del proxy (caso_4)",
+      "La distinzione tra livelli co-regolatori (registrativa vs. partecipativa vs. chiudente) produce letture strutturalmente precise che il frame comportamentale clinico non rende visibili (caso_2, caso_3)",
+      "Il dispositivo legge correttamente la configurazione assente localizzando la discontinuità al livello del campo — non al livello del comportamento del bambino (caso_1), resistendo alla riduzione diagnostica",
+      "La copertura doppia ncr_5 + ncr_2 nel caso_5b garantisce robustezza anche quando il clinico non riconosce il contesto routinizzato: il secondo beat assente blocca il proxy indipendentemente",
+      "Il dispositivo produce non_classificabile correttamente in 4 dei 6 episodi analizzati (caso_1, caso_2, caso_4, caso_5b) — e questo è una proprietà di robustezza, non un limite"
+    ],
+    "main_weaknesses": [
+      "NCR_5 nel caso limite del pointing spontaneo in contesto routinizzato (caso_5b) richiede giudizio contestuale del clinico su cosa costituisce 'contesto routinizzato': la regola non specifica come trattare il pointing non-sollecitato ma in struttura interattiva nota dalla storia della sessione",
+      "Il dispositivo non ha un criterio esplicito per distinguere, a livello di campo intenzionale, il campo pre-strutturato dall'adulto (caso_4: 'Dov'è il cane?') dal campo pre-strutturato dalla routine (caso_5b: libro noto) — entrambi producono non_classificabile ma attraverso percorsi leggermente diversi che non sono esplicitati nella formulazione delle regole"
+    ],
+    "required_corrections": [
+      "Esplicitare in ncr_5 la distinzione tra pointing sollecitato (adulto fa domanda diretta) e pointing in contesto routinizzato (bambino attiva struttura interattiva nota): entrambi producono non_classificabile, ma la distinzione è utile per il clinico. Proposta: ncr_5 con due sotto-condizioni: ncr_5a (sollecitato) e ncr_5b (contesto routinizzato riconoscibile dalla storia della sessione/interazione)",
+      "Aggiungere in obs_req_4 una nota sul contesto: non solo 'spontaneo / sollecitato / routinizzato' ma 'contesto contestuale dell'episodio' — incluso se il bambino stava usando un materiale già noto dalla storia della relazione con quel setting"
+    ]
+  }
+}

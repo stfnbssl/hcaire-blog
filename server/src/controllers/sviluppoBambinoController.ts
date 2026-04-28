@@ -203,6 +203,31 @@ export function getMetodoRicercaScientifica(req: Request, res: Response) {
   }
 }
 
+// GET /api/sviluppo-bambino/produzioni/guida-pipeline
+export function getProduzioniGuidaPipeline(req: Request, res: Response) {
+  try {
+    const relPath = 'progetti/sviluppo bambino/metodologia/guida-pipeline.md';
+    const { content, isEmpty } = readMarkdownFile(relPath);
+    if (isEmpty) return res.status(404).json({ error: 'Guida pipeline non trovata' });
+    res.json({ title: 'Guida alla pipeline F2/F3', content });
+  } catch {
+    res.status(500).json({ error: 'Errore lettura guida pipeline' });
+  }
+}
+
+// GET /api/sviluppo-bambino/produzioni/nuova-ricerca-info
+// Testo esplicativo per la pagina di avvio di una nuova ricerca tematica F2.
+export function getProduzioniNuovaRicercaInfo(req: Request, res: Response) {
+  try {
+    const relPath = 'progetti/sviluppo bambino/metodologia/nuova-ricerca-temi.md';
+    const { content, isEmpty } = readMarkdownFile(relPath);
+    if (isEmpty) return res.status(404).json({ error: 'Testo nuova ricerca non trovato' });
+    res.json({ title: 'Avviare una nuova ricerca', content });
+  } catch {
+    res.status(500).json({ error: 'Errore lettura testo nuova ricerca' });
+  }
+}
+
 // GET /api/sviluppo-bambino/metodo/ricerca-scientifica/collocazione
 export function getMetodoCollocazione(req: Request, res: Response) {
   try {

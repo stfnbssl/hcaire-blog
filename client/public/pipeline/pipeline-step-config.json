@@ -1,0 +1,349 @@
+{
+  "$schema_version": "1.0",
+  "description": "Grafo dichiarativo degli step della pipeline F2/F3. Sostituisce l'euristica inferPipelineInputs e alimenta sia il frontend (DeviceLineage) sia il motore di esecuzione backend. Sorgente di verità: D1-pipeline-step-graph.md.",
+  "steps": [
+    {
+      "id": "f2_step_1",
+      "label": "Discovery",
+      "phase": "F2",
+      "output_prefix": "theme-discovery",
+      "output_path_template": "ricerche/{ricerca_id}/theme-discovery-v{N}.json",
+      "inputs_pipeline": [],
+      "inputs_strutturali": ["assi-strutturali.json"],
+      "inputs_esterni": [
+        {
+          "id": "research_scope",
+          "label": "Note di indirizzo",
+          "type": "esterno_facoltativo",
+          "schema": null,
+          "note": "Testo libero del ricercatore per orientare il fuoco della ricerca. Inviato come { notes: string } e mostrato all'agente come research_scope: { \"notes\": \"...\" } nella sezione INPUT FORNITI DAL RICERCATORE."
+        }
+      ],
+      "verifica": false,
+      "can_skip": false,
+      "blocks": ["f2_step_2", "f2_step_3", "f2_step_4", "f2_step_5"]
+    },
+    {
+      "id": "f2_step_2",
+      "label": "Rilevanza strutturale",
+      "phase": "F2",
+      "output_prefix": "theme-relevance",
+      "output_path_template": "ricerche/{ricerca_id}/theme-relevance-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f2_step_1", "role": "theme-discovery", "required": true }
+      ],
+      "inputs_strutturali": ["assi-strutturali.json"],
+      "inputs_esterni": [
+        {
+          "id": "scelta_tema",
+          "label": "Scelta del tema (atto/fenomeno)",
+          "type": "esterno_obbligatorio",
+          "schema": "external-input-schemas/f2-step-2-scelta-tema.json"
+        }
+      ],
+      "verifica": true,
+      "can_skip": false,
+      "blocks": ["f2_step_3"]
+    },
+    {
+      "id": "f2_step_3",
+      "label": "Verifica strutturale",
+      "phase": "F2",
+      "output_prefix": "theme-verification",
+      "output_path_template": "ricerche/{ricerca_id}/theme-verification-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f2_step_1", "role": "theme-discovery", "required": true },
+        { "step": "f2_step_2", "role": "theme-relevance", "required": true, "requires_verifica": true }
+      ],
+      "inputs_strutturali": ["assi-strutturali.json"],
+      "inputs_esterni": [],
+      "verifica": false,
+      "can_skip": false,
+      "blocks": ["f2_step_4", "f2_step_5"]
+    },
+    {
+      "id": "f2_step_4",
+      "label": "Micro-matrice",
+      "phase": "F2",
+      "output_prefix": "theme-matrix",
+      "output_path_template": "ricerche/{ricerca_id}/theme-matrix-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f2_step_1", "role": "theme-discovery", "required": true },
+        { "step": "f2_step_3", "role": "theme-verification", "required": true }
+      ],
+      "inputs_strutturali": ["assi-strutturali.json"],
+      "inputs_esterni": [],
+      "verifica": false,
+      "can_skip": false,
+      "blocks": ["f2_step_5"]
+    },
+    {
+      "id": "f2_step_5",
+      "label": "Output family",
+      "phase": "F2",
+      "output_prefix": "output-family",
+      "output_path_template": "ricerche/{ricerca_id}/output-family-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f2_step_1", "role": "theme-discovery", "required": true },
+        { "step": "f2_step_3", "role": "theme-verification", "required": true },
+        { "step": "f2_step_4", "role": "theme-matrix", "required": true }
+      ],
+      "inputs_strutturali": ["assi-strutturali.json"],
+      "inputs_esterni": [],
+      "verifica": true,
+      "can_skip": false,
+      "blocks": ["[human_decision] → f3_step_1"]
+    },
+    {
+      "id": "f3_step_1",
+      "label": "Lettura configurazionale",
+      "phase": "F3",
+      "output_prefix": "lettura-configurazionale",
+      "output_path_template": "temi/{tema_id}/lettura-configurazionale-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f2_step_5", "role": "output-family", "required": true, "requires_verifica": true }
+      ],
+      "inputs_strutturali": ["f3-step-1/reading-device-schema.json"],
+      "inputs_esterni": [
+        {
+          "id": "tema_selezionato",
+          "label": "Tema selezionato da F2",
+          "type": "esterno_obbligatorio",
+          "schema": "external-input-schemas/f3-step-1-tema.json"
+        }
+      ],
+      "verifica": true,
+      "can_skip": false,
+      "blocks": ["f3_step_2"]
+    },
+    {
+      "id": "f3_step_2",
+      "label": "Stress test",
+      "phase": "F3",
+      "output_prefix": "stress-test",
+      "output_path_template": "temi/{tema_id}/stress-test-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f3_step_1", "role": "lettura-configurazionale", "required": true, "requires_verifica": true }
+      ],
+      "inputs_strutturali": ["f3-step-2/stress-test-schema.json"],
+      "inputs_esterni": [],
+      "verifica": false,
+      "can_skip": false,
+      "blocks": ["f3_step_3"]
+    },
+    {
+      "id": "f3_step_3",
+      "label": "Correzione strutturale",
+      "phase": "F3",
+      "output_prefix": "correzione-strutturale",
+      "output_path_template": "temi/{tema_id}/correzione-strutturale-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f3_step_1", "role": "lettura-configurazionale", "required": true },
+        { "step": "f3_step_2", "role": "stress-test", "required": true }
+      ],
+      "inputs_strutturali": ["f3-step-3/structural-correction-schema.json"],
+      "inputs_esterni": [],
+      "verifica": false,
+      "can_skip": false,
+      "blocks": ["f3_step_4", "f3_step_5", "f3_step_6", "f3_step_7", "f3_step_9"]
+    },
+    {
+      "id": "f3_step_4",
+      "label": "Test di indistinguibilità",
+      "phase": "F3",
+      "output_prefix": "indistinguibility-test",
+      "output_path_template": "temi/{tema_id}/indistinguibility-test-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f3_step_3", "role": "correzione-strutturale", "required": true }
+      ],
+      "inputs_strutturali": ["f3-step-4/indistinguibility-test-schema.json"],
+      "inputs_esterni": [],
+      "verifica": true,
+      "can_skip": false,
+      "blocks": ["f3_step_5", "f3_step_6"]
+    },
+    {
+      "id": "f3_step_5",
+      "label": "Audit",
+      "phase": "F3",
+      "output_prefix": "audit",
+      "output_path_template": "temi/{tema_id}/audit-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f3_step_3", "role": "correzione-strutturale", "required": true },
+        { "step": "f3_step_4", "role": "indistinguibility-test", "required": true, "requires_verifica": true }
+      ],
+      "inputs_strutturali": ["f3-step-5/audit-schema.json"],
+      "inputs_esterni": [],
+      "verifica": true,
+      "can_skip": false,
+      "blocks": ["f3_step_6"]
+    },
+    {
+      "id": "f3_step_6",
+      "label": "Stabilizzazione proxy",
+      "phase": "F3",
+      "output_prefix": "stabilizzazione-proxy",
+      "output_path_template": "temi/{tema_id}/stabilizzazione-proxy-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f3_step_3", "role": "correzione-strutturale", "required": true },
+        { "step": "f3_step_4", "role": "indistinguibility-test", "required": true, "requires_verifica": true },
+        { "step": "f3_step_5", "role": "audit", "required": true, "requires_verifica": true }
+      ],
+      "inputs_strutturali": [],
+      "inputs_esterni": [
+        {
+          "id": "severita_test",
+          "label": "Severità test non-reversibilità",
+          "type": "esterno_facoltativo",
+          "values": ["standard", "forte"],
+          "default": "standard"
+        }
+      ],
+      "verifica": false,
+      "can_skip": false,
+      "blocks": ["f3_step_6b"]
+    },
+    {
+      "id": "f3_step_6b",
+      "label": "Proxy forma operativa",
+      "phase": "F3",
+      "output_prefix": "stabilizzazione-proxy",
+      "output_suffix": "b",
+      "output_path_template": "temi/{tema_id}/stabilizzazione-proxy-v{N}b.json",
+      "inputs_pipeline": [
+        { "step": "f3_step_6", "role": "stabilizzazione-proxy", "required": true }
+      ],
+      "inputs_strutturali": [],
+      "inputs_esterni": [],
+      "verifica": true,
+      "overrides": ["operative_proxies", "observability_requirements", "non_classifiability_rules"],
+      "can_skip": false,
+      "blocks": ["f3_step_6c", "f3_step_7", "f3_step_9"]
+    },
+    {
+      "id": "f3_step_6c",
+      "label": "Integrazione proxy stabilizzato",
+      "phase": "F3",
+      "output_prefix": "correzione-strutturale",
+      "output_path_template": "temi/{tema_id}/correzione-strutturale-v{N+1}.json",
+      "note": "Nuova versione del dispositivo corretto. Diventa il canonical_device per gli step successivi.",
+      "inputs_pipeline": [
+        { "step": "f3_step_3", "role": "correzione-strutturale", "required": true },
+        { "step": "f3_step_6b", "role": "stabilizzazione-proxy-b", "required": true, "requires_verifica": true }
+      ],
+      "inputs_strutturali": [],
+      "inputs_esterni": [],
+      "verifica": false,
+      "can_skip": true,
+      "skip_condition": "La verifica di f3_step_6b non richiede integrazione strutturale",
+      "blocks": ["f3_step_7", "f3_step_9"]
+    },
+    {
+      "id": "f3_step_7",
+      "label": "Trasferibilità",
+      "phase": "F3",
+      "output_prefix": "trasferibilità",
+      "output_path_template": "temi/{tema_id}/trasferibilità-v{N}.json",
+      "inputs_pipeline": [
+        {
+          "step": "f3_step_3_or_6c",
+          "role": "correzione-strutturale",
+          "required": true,
+          "note": "f3_step_6c se presente, altrimenti f3_step_3"
+        },
+        { "step": "f3_step_6b", "role": "stabilizzazione-proxy-b", "required": true, "requires_verifica": true }
+      ],
+      "inputs_strutturali": [],
+      "inputs_esterni": [
+        {
+          "id": "contesto_ambito",
+          "label": "Contesto/ambito target",
+          "type": "esterno_obbligatorio",
+          "schema": "external-input-schemas/f3-step-7-contesto.json",
+          "file_template": "inputs/temi/{tema_id}/f3-step-7-contesto-{label}.json"
+        }
+      ],
+      "verifica": false,
+      "can_skip": false,
+      "blocks": ["f3_step_8", "f3_step_9"]
+    },
+    {
+      "id": "f3_step_8",
+      "label": "Adattamento strutturale",
+      "phase": "F3",
+      "output_prefix": "adattamento-strutturale",
+      "output_path_template": "temi/{tema_id}/adattamento-strutturale-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f3_step_7", "role": "trasferibilità", "required": true }
+      ],
+      "inputs_dispositivo_sorgente": {
+        "required": true,
+        "description": "Dispositivo corretto del tema di origine",
+        "path_template": "temi/{tema_sorgente_id}/correzione-strutturale-v{N}.json"
+      },
+      "inputs_strutturali": [],
+      "inputs_esterni": [
+        {
+          "id": "specificita_dispositivo",
+          "label": "Livello di specificità del dispositivo finale",
+          "type": "esterno_facoltativo",
+          "values": ["standard", "alta"],
+          "default": "standard"
+        }
+      ],
+      "verifica": true,
+      "can_skip": true,
+      "skip_condition": "Specializzazione di dominio (non nuovo tema) — step 8 non necessario",
+      "blocks": ["f3_step_9"]
+    },
+    {
+      "id": "f3_step_9",
+      "label": "Dispositivo completo",
+      "phase": "F3",
+      "output_prefix": "dispositivo",
+      "output_path_template": "temi/{tema_id}/dispositivo-{label}-v{N}.json",
+      "inputs_pipeline_standard": [
+        { "step": "f3_step_6b", "role": "stabilizzazione-proxy-b", "required": true },
+        { "step": "f3_step_8", "role": "adattamento-strutturale", "required": true, "requires_verifica": true }
+      ],
+      "inputs_pipeline_skip_8": [
+        { "step": "f3_step_3_or_6c", "role": "correzione-strutturale", "required": true },
+        { "step": "f3_step_6b", "role": "stabilizzazione-proxy-b", "required": true },
+        { "step": "f3_step_7", "role": "trasferibilità", "required": true }
+      ],
+      "inputs_dispositivo_sorgente": {
+        "required": "se step 8 eseguito",
+        "description": "Dispositivo corretto del tema di origine",
+        "path_template": "temi/{tema_sorgente_id}/correzione-strutturale-v{N}.json"
+      },
+      "inputs_esterni": [],
+      "verifica": false,
+      "can_skip": false,
+      "blocks": ["f3_step_10"]
+    },
+    {
+      "id": "f3_step_10",
+      "label": "Stress test dispositivo",
+      "phase": "F3",
+      "output_prefix": "stress-test-dispositivo",
+      "output_path_template": "temi/{tema_id}/stress-test-dispositivo-{label}-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f3_step_9", "role": "dispositivo", "required": true }
+      ],
+      "inputs_strutturali": [],
+      "inputs_esterni": [
+        {
+          "id": "casi_stress_test",
+          "label": "5 casi critici per lo stress test",
+          "type": "esterno_obbligatorio",
+          "schema": "external-input-schemas/f3-step-10-casi.json",
+          "file_template": "inputs/temi/{tema_id}/f3-step-10-casi-{label}.json",
+          "note": "Deve coprire i 5 tipi: assente, parziale, chiudente, apparente_scripted, quasi_indistinguibile"
+        }
+      ],
+      "verifica": false,
+      "can_skip": false,
+      "blocks": []
+    }
+  ]
+}

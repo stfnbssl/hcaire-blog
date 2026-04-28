@@ -1,0 +1,133 @@
+{
+  "step": "f3_step_6b",
+  "theme_id": "tema_07_ecosistema_digitale",
+  "domain": "educativo (servizi per la prima infanzia, 0–6)",
+  "source_output_id": "stabilizzazione-proxy-v1",
+  "required_observations": [
+    {
+      "id": "obs_1",
+      "label": "Identificazione delle trasformazioni del materiale (G_n)",
+      "description": "Per ogni episodio osservato, devono essere identificabili nella case_description i singoli gesti distinti che la bambina applica al materiale (es. prendere, annusare, scuotere, far scomparire, passare a un altro oggetto). Ogni gesto distinto costituisce un evento G_n. Le trasformazioni devono essere descritte come azioni discrete e non come continuum non segmentato.",
+      "type": "direttamente_osservabile",
+      "type_notes": "Le trasformazioni sono leggibili direttamente dal testo della case_description: corrispondono a verbi di azione applicati al materiale e sono separabili in unità sequenziali distinte.",
+      "observer_dependency": "bassa",
+      "observer_dependency_notes": "L'identificazione dei gesti distinti applicati al materiale richiede solo segmentazione descrittiva del testo, non interpretazione dello stato interno della bambina o della funzione del gesto."
+    },
+    {
+      "id": "obs_2",
+      "label": "Numero minimo di transizioni nella sequenza osservata",
+      "description": "La sequenza osservata deve contenere almeno tre transizioni distinte tra trasformazioni del materiale (almeno quattro gesti G_n distinti, che producono tre transizioni G_n → G_n+1). Sequenze più brevi non permettono di leggere la forma della distribuzione (sistematica vs discontinua).",
+      "type": "direttamente_osservabile",
+      "type_notes": "La verifica della soglia è puramente conteggiativa rispetto agli elementi identificati in obs_1.",
+      "observer_dependency": "bassa",
+      "observer_dependency_notes": "Conteggio diretto, non interpretativo."
+    },
+    {
+      "id": "obs_3",
+      "label": "Direzione dello sguardo della bambina nel periodo della transizione (S_n)",
+      "description": "Per ciascuna transizione G_n → G_n+1, la case_description deve registrare esplicitamente la direzione dello sguardo della bambina nel periodo immediatamente precedente, contemporaneo o immediatamente successivo a G_n+1. La registrazione deve essere esplicita sia in presenza (es. 'guarda l'educatrice') sia in assenza (es. 'guarda la pigna', 'senza guardare l'educatrice', 'sguardo non rilevato perché la bambina è di spalle'). La sola assenza di menzione non è sufficiente: l'omissione non è leggibile come S−.",
+      "type": "direttamente_osservabile",
+      "type_notes": "La direzione dello sguardo è osservabile nei contesti in cui la bambina è frontalmente o lateralmente accessibile alla vista dell'osservatore. È osservabile con mediazione (videoregistrazione con angolazione adeguata) negli altri casi. Non è ricostruibile a posteriori se non registrata.",
+      "observer_dependency": "bassa",
+      "observer_dependency_notes": "La direzione dello sguardo è un dato fenomenico binario (verso/non verso l'educatrice) che non richiede inferenze su stato interno o funzione. La dipendenza dall'osservatore è bassa a condizione che la registrazione sia stata fatta al momento dell'osservazione e non ricostruita."
+    },
+    {
+      "id": "obs_4",
+      "label": "Identificabilità dell'educatrice come referente dello sguardo",
+      "description": "Nell'osservazione deve essere chiaramente identificabile chi sia 'l'educatrice' verso cui lo sguardo viene o non viene diretto. Nei contesti con più adulti presenti (sezione, salone), la registrazione deve specificare verso quale adulto lo sguardo è diretto, per evitare che uno sguardo verso un altro adulto venga letto come S+.",
+      "type": "direttamente_osservabile",
+      "type_notes": "La presenza e identificabilità dell'educatrice di riferimento è data direttamente dalla scena osservata.",
+      "observer_dependency": "bassa",
+      "observer_dependency_notes": "Identificazione fattuale di una persona, non interpretazione."
+    },
+    {
+      "id": "obs_5",
+      "label": "Posizionamento osservativo che permette la lettura dello sguardo in tutte le transizioni",
+      "description": "L'osservatore (o la registrazione video) deve avere accesso visivo continuativo al volto della bambina lungo l'intera sequenza osservata. Se la bambina è di spalle o parzialmente coperta in alcune transizioni, queste transizioni devono essere dichiarate come 'sguardo non rilevabile' e non come S+ né come S−.",
+      "type": "osservabile_con_mediazione",
+      "type_notes": "Direttamente osservabile in osservazione frontale; osservabile con mediazione (videoregistrazione con angolazione adeguata) negli altri casi. Le transizioni con sguardo non rilevabile devono essere registrate come tali, non interpretate.",
+      "observer_dependency": "bassa",
+      "observer_dependency_notes": "La condizione di posizionamento è verificabile dichiarando esplicitamente, per ogni transizione, se lo sguardo era rilevabile o no."
+    },
+    {
+      "id": "obs_6",
+      "label": "Continuità della sequenza osservata",
+      "description": "La sequenza delle transizioni osservate deve essere continua: non ci devono essere interruzioni (uscita della bambina dal campo visivo, intervento di altri bambini che modifica l'oggetto dell'attenzione, fine arbitraria dell'osservazione) che spezzino la catena G_n → G_n+1 e impediscano la lettura della forma distribuzionale sull'intera sequenza.",
+      "type": "direttamente_osservabile",
+      "type_notes": "La continuità è verificabile direttamente sul testo della case_description controllando l'assenza di interruzioni dichiarate.",
+      "observer_dependency": "bassa",
+      "observer_dependency_notes": "Verifica fattuale della continuità descrittiva."
+    },
+    {
+      "id": "obs_7",
+      "label": "Forma della distribuzione di S_n attraverso le transizioni",
+      "description": "Una volta registrati gli elementi precedenti, la forma della distribuzione (sistematica vs discontinua) è ricostruibile per composizione: si marca per ogni transizione T_i la presenza di S+ (sguardo verso l'educatrice), S− (sguardo verso altro target esplicitamente registrato), o S? (sguardo non rilevabile). La forma è sistematica se tutte le transizioni rilevabili sono S+; è discontinua se almeno una transizione rilevabile è S−.",
+      "type": "direttamente_osservabile",
+      "type_notes": "Composizione formale degli elementi obs_1, obs_3 e obs_5. Non introduce inferenze ulteriori.",
+      "observer_dependency": "bassa",
+      "observer_dependency_notes": "Operazione composizionale rispetto a dati già registrati. La lettura della forma è separata dalla classificazione finale: il discriminante (presenza di almeno una S−) è un fatto della distribuzione, non un esito interpretativo."
+    }
+  ],
+  "variable_classification_summary": {
+    "directly_observable": ["obs_1", "obs_2", "obs_3", "obs_4", "obs_6", "obs_7"],
+    "observable_with_mediation": ["obs_5"],
+    "not_observable": [],
+    "note": "Tutte le variabili necessarie sono direttamente osservabili dalla case_description o richiedono mediazione tecnica (videoregistrazione) ma nessuna richiede inferenza su stato interno. Nessuna variabile è non-osservabile. Il proxy è strutturalmente compatibile con una documentazione educativa di buona qualità a condizione che la registrazione dello sguardo sia stata fatta sistematicamente al momento dell'osservazione, sia in presenza sia in assenza. Il limite osservativo principale non è la qualità delle variabili ma la formulazione delle case_description: case_description che registrano lo sguardo solo in modo asimmetrico (es. solo S+ menzionato, S− desunto dall'assenza di menzione) non soddisfano il requisito e devono produrre esito di non-classificabilità."
+  },
+  "applicability_conditions": [
+    "La case_description identifica almeno quattro trasformazioni distinte del materiale compiute dalla bambina, per un totale di almeno tre transizioni G_n → G_n+1.",
+    "Per ciascuna transizione, la case_description registra esplicitamente la direzione dello sguardo della bambina nel periodo immediatamente precedente, contemporaneo o immediatamente successivo (S+ verso l'educatrice, S− verso un target diverso esplicitamente nominato, oppure S? sguardo non rilevabile dichiarato).",
+    "L'educatrice di riferimento verso cui lo sguardo è o non è diretto è univocamente identificabile nel contesto dell'osservazione.",
+    "Il posizionamento dell'osservatore (o la mediazione video) garantisce accesso visivo al volto della bambina sufficiente a discriminare la direzione dello sguardo nelle transizioni rilevabili.",
+    "La sequenza osservata è continua: non ci sono interruzioni che spezzino la catena delle transizioni dentro l'arco temporale di lettura.",
+    "Almeno tre transizioni della sequenza sono rilevabili (S+ o S−); le transizioni S? non possono coprire più di un terzo del totale, altrimenti la forma della distribuzione non è leggibile."
+  ],
+  "non_applicability_conditions": [
+    "La sequenza osservata contiene meno di tre transizioni distinte tra trasformazioni del materiale.",
+    "La case_description registra lo sguardo della bambina in modo asimmetrico tra S+ e S− (es. menziona solo gli sguardi verso l'educatrice e tace sulle direzioni alternative): in questo caso la presunta sistematicità è solo assenza di registrazione di S−, non osservazione positiva di S+ in tutte le transizioni.",
+    "In una o più transizioni la direzione dello sguardo non è registrata né come S+ né come S− né come S? esplicitamente dichiarato: l'omissione non è interpretabile.",
+    "L'educatrice di riferimento non è univocamente identificabile (es. presenza di più adulti senza specificazione di verso quale lo sguardo sia diretto).",
+    "Il posizionamento osservativo non permette di rilevare lo sguardo in più di un terzo delle transizioni (S? prevalente).",
+    "La sequenza è interrotta da eventi esogeni (uscita della bambina dal campo, intervento di altri bambini che modifica l'oggetto, fine arbitraria dell'osservazione) che rendono non leggibile la forma distribuzionale sull'intera catena.",
+    "La case_description contiene qualifiche interpretative dello sguardo (es. 'sguardo che cerca conferma', 'sguardo di condivisione') al posto della registrazione fattuale della direzione: il proxy opera sul dato fenomenico, non sulla qualifica funzionale.",
+    "L'osservazione viene ricostruita a posteriori senza una registrazione sistematica della direzione dello sguardo fatta al momento dell'evento."
+  ],
+  "insufficient_data_output": {
+    "result": "non_classificabile",
+    "rationale": "L'esito corretto in caso di dati insufficienti è 'non_classificabile' e non 'ambiguo'. La distinzione è epistemicamente decisiva. 'Ambiguo' è l'esito appropriato quando le informazioni necessarie sono presenti ma la struttura osservata non discrimina tra le configurazioni (es. la forma della distribuzione è internamente non univoca, o esiste una controprova strutturale che non si risolve a livello del solo proxy). 'Non_classificabile' è l'esito appropriato quando una o più informazioni necessarie sono assenti dalla case_description: in questo caso il proxy non si applica perché manca la base osservativa, non perché la base osservativa fallisca a discriminare. Restituire 'ambiguo' a fronte di dati assenti significherebbe trattare l'omissione come dato osservato (in particolare leggere l'assenza di menzione di S− come osservazione di S+ in tutte le transizioni), che è precisamente il rischio di completamento implicito vietato dal vincolo metodologico. La classificazione di non-applicabilità è epistemicamente preferibile a una classificazione forzata: il dispositivo deve dichiarare di non poter funzionare prima di funzionare male.",
+    "what_not_to_do": "È vietato (a) leggere l'assenza di registrazione di sguardi alternativi come prova di sistematicità di sguardi verso l'educatrice; (b) compensare l'assenza di un dato osservativo con la competenza clinica o pedagogica dell'osservatore ('un osservatore esperto capirebbe che…'); (c) declassare il proxy a 'indicatore suggestivo' o 'orientamento di lettura' quando le condizioni di applicabilità non sono soddisfatte: il proxy o si applica integralmente o non si applica; (d) integrare informazioni provenienti dalla observed_configuration di step precedenti per supplire ai dati mancanti nella case_description, perché il proxy è stato stabilizzato proprio per ancorarsi alla case_description e non alla observed_configuration; (e) inferire la direzione dello sguardo a partire dalla qualità dell'interazione descritta o dalla risposta dell'educatrice; (f) trattare 'non_classificabile' come fallimento del dispositivo: la non-classificabilità è un esito valido ed è la condizione che impedisce i falsi positivi."
+  },
+  "operative_proxy": {
+    "proxy_name": "Forma della distribuzione dello sguardo della bambina verso l'educatrice attraverso le transizioni tra trasformazioni del materiale",
+    "what_it_measures": "Misura la struttura della relazione tra il gesto della bambina e il legame visivo con l'educatrice come pattern distribuito sull'intera sequenza delle trasformazioni del materiale. Discrimina tra una forma sistematica (legame visivo presente in ogni transizione, senza eccezioni) e una forma discontinua (almeno una transizione in cui la trasformazione successiva si dà senza re-stabilimento del legame visivo). La discriminazione opera sul piano della forma della sequenza, non sulla qualità interna del singolo gesto, sulla temporalità inferenziale di un singolo evento o sulla funzione attribuita allo sguardo.",
+    "required_observations": [
+      "Identificazione di almeno quattro trasformazioni distinte del materiale (almeno tre transizioni G_n → G_n+1).",
+      "Registrazione esplicita della direzione dello sguardo della bambina in ogni transizione (S+, S− o S? dichiarato).",
+      "Identificabilità univoca dell'educatrice di riferimento.",
+      "Posizionamento osservativo che permette la lettura dello sguardo nelle transizioni rilevabili.",
+      "Continuità della sequenza osservata.",
+      "Almeno tre transizioni rilevabili (non S?), con S? che non coprono più di un terzo del totale."
+    ],
+    "applicability_conditions": [
+      "Sequenza con almeno tre transizioni distinte.",
+      "Registrazione esplicita simmetrica di S+ e S− nella case_description.",
+      "Educatrice di riferimento univocamente identificabile.",
+      "Accesso visivo al volto della bambina nelle transizioni rilevabili.",
+      "Continuità della sequenza osservata.",
+      "S? non superiori a un terzo delle transizioni totali."
+    ],
+    "non_applicability_conditions": [
+      "Meno di tre transizioni nella sequenza.",
+      "Registrazione asimmetrica dello sguardo (solo S+ menzionato, S− desunto dall'omissione).",
+      "Direzione dello sguardo non registrata in una o più transizioni.",
+      "Educatrice di riferimento non univocamente identificabile.",
+      "Posizionamento osservativo che rende S? prevalente.",
+      "Sequenza interrotta da eventi esogeni.",
+      "Sguardo registrato in forma interpretativa anziché fattuale.",
+      "Osservazione ricostruita a posteriori senza registrazione sistematica al momento dell'evento."
+    ],
+    "allowed_outputs": ["aperto", "predeterminato", "non_classificabile", "ambiguo"],
+    "decision_logic": "Passo 1 — Verifica delle condizioni di applicabilità: se anche una sola condizione non è soddisfatta, l'esito è 'non_classificabile' e la procedura termina senza produrre classificazione. Passo 2 — Costruzione della mappa di distribuzione: per ciascuna transizione G_n → G_n+1 rilevabile, marcare S+ (sguardo verso l'educatrice esplicitamente registrato) o S− (sguardo verso target diverso esplicitamente registrato). Le S? sono escluse dalla forma e contate solo per verificare che non superino un terzo del totale. Passo 3 — Lettura della forma: se tutte le transizioni rilevabili sono S+ e il numero di transizioni rilevabili è almeno tre, la forma è sistematica e l'esito è 'predeterminato'. Se almeno una transizione rilevabile è S−, la forma è discontinua e l'esito è 'aperto'. Passo 4 — Esito 'ambiguo': è restituito quando le condizioni di applicabilità sono soddisfatte e tutte le transizioni rilevabili sono S+, ma esiste una controprova strutturale di pari peso (es. la sequenza è S+ sistematica ma con elementi nella case_description che indicano una struttura di condivisione del campo non riducibile a chiusura su feedback). 'Ambiguo' non è mai usato in caso di dati assenti — quello è 'non_classificabile'.",
+    "epistemic_limit": "Il proxy non determina la funzione dello sguardo. La distinzione tra sguardo come ratifica del feedback (chiusura su risposta adulta) e sguardo come condivisione del campo (apertura della co-presenza) non è risolvibile dalla sola distribuzione dello sguardo e resta zona di indistinguibilità non risolvibile dal proxy. La discriminazione opera al livello della forma (sistematicità vs eccezione), non al livello della funzione. Il proxy non valuta lo sviluppo socio-comunicativo della bambina, non attribuisce intenzioni, non legge stati interni: opera esclusivamente sulla forma osservabile della catena di transizioni. Inoltre il proxy non si difende dal limite costitutivo della non-assimilabilità del dispositivo: la sua articolazione corretta nei documenti progettuali del servizio o nei verbali di équipe può diventare essa stessa marcatore identitario di qualità della lettura, e questa controprova resta strutturalmente esterna al proxy stesso. Infine il proxy presuppone che la formulazione della case_description sia stata costruita con la registrazione simmetrica della direzione dello sguardo in tutte le transizioni; case_description prodotte senza questo vincolo (anche se descrittivamente ricche) producono esito di non-classificabilità, indipendentemente dalla qualità della scena osservata."
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "step": "f3_step_2",
+  "theme_id": "tema_07_ecosistema_digitale",
+  "domain": "educativo (servizi per la prima infanzia, 0–6)",
+  "device_id": "tema-07-ecosistema-digitale-educativo-dispositivo",
+  "stress_test_results": [
+    {
+      "case_id": "case_01",
+      "case_type": "assenza_configurazione",
+      "case_description": "Asilo nido comunale di un piccolo centro, équipe stabile da molti anni, rapporto educatore-bambino favorevole, famiglie soddisfatte. La giornata è scandita con cura, la documentazione è accurata, la collaborazione con le famiglie è continuativa. La questione del rapporto del servizio con l'ecosistema digitale non è mai stata sollevata internamente — quando affiora, è circoscritta alla pubblicazione di foto sul sito istituzionale. In équipe non c'è disagio percepito, non c'è eccedenza non rendicontata che chieda di essere nominata, non c'è tensione tra pratica e linguaggio del servizio. La grammatica della restituzione visibile organizza l'intera giornata senza che questo sia oggetto di interrogazione, perché coincide con la forma stessa del 'fare bene il proprio lavoro'.",
+      "observed_configuration": {
+        "corporeita": "Il piano corporeo del campo desiderabile (ritmi, qualità del contatto, sensorialità del materiale, temporalità della pausa) è praticato con cura ma non è leggibile come piano strutturale distinto dall'attività concreta. Il corpo del bambino e dell'educatore sono curati, mai interrogati come strato pre-riflessivo in cui opera una mediazione tecnica del desiderabile.",
+        "campo_intenzionale": "L'orizzonte del desiderabile è completamente compresente con l'organizzazione del servizio: ciò che è proposto è ciò che appare desiderabile, e la coincidenza non è percepita come problema. Non si apre alcuna domanda sulla qualità del campo desiderabile come orizzonte pre-riflessivo, perché non è disponibile la nozione di un campo desiderabile distinto dall'attività offerta.",
+        "co_regolazione": "La mediazione adulta è continua e attenta, interpretata internamente come 'qualità della relazione'. La sua dimensione strutturale (operatore sullo stesso piano pre-riflessivo dell'organizzazione algoritmica del campo) non emerge come oggetto possibile di lettura: l'adulto è 'antidoto', non co-operatore.",
+        "mediazione_simbolica": "La grammatica della prestazionalizzazione del valore opera in pieno (documentazione, restituzione, indicatori di qualità) senza essere riconosciuta come grammatica. È vissuta come trasparenza — 'rendere conto del lavoro' — non come configurazione storica del valore."
+      },
+      "device_performance": {
+        "readable": false,
+        "what_it_reads": "Il dispositivo registra che nessuna delle dimensioni di lettura ha appiglio nel servizio così come si presenta. Riesce a rendere leggibile l'assenza di soglia di apertura: né disagio, né eccedenza, né tensione percepita offrono entry point per la lettura strutturale.",
+        "what_becomes_unclear": "Resta strutturalmente indistinguibile se questa assenza di configurazione esprima un servizio in continuità coerente con le proprie pratiche o un servizio in cui la deformazione del campo desiderabile opera con la massima profondità proprio perché completamente naturalizzata. Il dispositivo non dispone di un piano interno per distinguere la non-attivazione del campo desiderabile dalla sua desensibilizzazione strutturale.",
+        "ambiguity_level": "alto"
+      },
+      "breaking_point": {
+        "present": true,
+        "where": "Sulla soglia di apertura della lettura. Il dispositivo è uno strumento di lettura di un campo già aperto: presuppone che da qualche parte (un disagio non nominato, un'eccedenza che resiste alla restituzione, una tensione tra pratica e linguaggio) si dia un appiglio strutturale. Quando la grammatica della prestazionalizzazione del valore è completamente naturalizzata, questo appiglio non esiste, e il dispositivo non ha dove agganciarsi.",
+        "why": "La funzione del dispositivo, come definita in F3 STEP 1, è rendere leggibile una mediazione tecnica del campo desiderabile che opera al di sotto dell'esposizione. Ma la leggibilità presuppone un'apertura. Il dispositivo non contiene un livello che spieghi come si apra una domanda strutturale dove non se ne apre nessuna: questa è una soglia che eccede la sua struttura."
+      },
+      "discriminative_value": {
+        "what_distinguishes_this_case": "La differenza strutturale tra un servizio che non ha ancora aperto la domanda strutturale e un servizio in cui la domanda non si apre perché il campo è completamente assorbito nella grammatica della prestazionalizzazione naturalizzata. In superficie sono identici: entrambi non hanno disagio, entrambi non hanno domande, entrambi 'funzionano bene'.",
+        "device_can_distinguish": false
+      },
+      "misreading_risks": {
+        "without_device": "L'operatore legge il caso come 'servizio funzionante' o 'servizio di qualità', e la questione del rapporto con l'ecosistema digitale viene archiviata: 'qui non ci sono dispositivi, il problema non si pone'. La mediazione strutturale del campo desiderabile resta integralmente illeggibile.",
+        "with_device_misused": "L'uso del dispositivo come griglia di domande da somministrare al servizio produce risposte che il servizio fornisce nel proprio linguaggio già disponibile, simulando un'apertura strutturale che non c'è. Le dimensioni del dispositivo vengono compilate, e questa compilazione viene scambiata per attivazione della lettura: il dispositivo viene così riassorbito dentro la grammatica della restituzione del servizio fin dal primo uso."
+      }
+    },
+    {
+      "case_id": "case_02",
+      "case_type": "configurazione_parziale",
+      "case_description": "Scuola dell'infanzia statale che da due anni ha avviato un percorso interno di revisione delle pratiche di documentazione fotografica, dopo un confronto su privacy e sul fenomeno dei bambini 'che posano'. Le educatrici hanno ridotto significativamente le foto, riconoscono che la documentazione modifica l'attività mentre essa accade, hanno articolato in équipe la differenza tra il bambino che gioca e il bambino che gioca-per-essere-fotografato. Tuttavia, la riflessione resta circoscritta al settore della documentazione visiva. Quando si parla di partecipazione e coinvolgimento dei bambini nelle attività, la motivazione viene letta come indicatore positivo di sviluppo. La grammatica della valutazione del progetto educativo, gli indicatori di qualità, la forma della restituzione alle famiglie attraverso colloqui e narrazioni non sono toccati dalla riflessione.",
+      "observed_configuration": {
+        "corporeita": "Si apre parzialmente nel riconoscimento che la presenza della macchina fotografica modifica il corpo del bambino — il riconoscimento corporeo della 'posa' come trasformazione strutturale della scena. Ma il piano corporeo del campo desiderabile come ritmo, sensorialità, qualità del contatto in tutti gli altri momenti della giornata non è articolato.",
+        "campo_intenzionale": "Non si articola come piano distinto. La distinzione tra orientamento del desiderio e motivazione come sostituto non è disponibile nel lessico interno: quando un bambino è 'molto coinvolto' in un'attività, viene letto come indicatore di sviluppo positivo, senza che si apra la domanda sulla struttura interna del coinvolgimento.",
+        "co_regolazione": "Parzialmente leggibile rispetto alla mediazione documentale (come la presenza dello strumento modifica la mediazione adulta), ma non come piano strutturale generale. La coabitazione tra mediazione adulta e organizzazione algoritmica del campo opera fuori dal piano della documentazione senza essere riconosciuta.",
+        "mediazione_simbolica": "La grammatica della prestazionalizzazione del valore è interrogata in un suo settore (la documentazione visiva) ma non riconosciuta come grammatica più ampia che attraversa l'organizzazione dell'attività, gli indicatori di qualità, la forma della restituzione narrativa, la valutazione del progetto educativo."
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo legge bene l'apertura parziale: il punto di accesso 'Forme della restituzione del lavoro educativo' è attivato, e il dispositivo rende leggibile cosa è stato problematizzato e cosa rimane fuori dalla problematizzazione. Mette in evidenza l'asimmetria tra l'attivazione su un piano e la non-attivazione sugli altri.",
+        "what_becomes_unclear": "Resta ambiguo se la parzialità sia condizione di transizione (la riflessione si sta progressivamente estendendo agli altri piani) o stabilizzazione (l'attivazione su un settore opera come 'lavoro fatto' che chiude la questione e protegge dall'interrogazione degli altri piani). Il dispositivo non distingue tra parzialità in espansione e parzialità in funzione di chiusura.",
+        "ambiguity_level": "medio"
+      },
+      "breaking_point": {
+        "present": false
+      },
+      "discriminative_value": {
+        "what_distinguishes_this_case": "La differenza tra un servizio in cui la riflessione strutturale si sta aprendo e un servizio che ha trovato un settore in cui circoscrivere e chiudere la questione. In superficie entrambi appaiono 'consapevoli sul digitale'. Il dispositivo coglie la differenza nella modalità con cui il piano aperto comunica con i piani non aperti — se vi è permeabilità o se vi è confine difensivo.",
+        "device_can_distinguish": true
+      },
+      "misreading_risks": {
+        "without_device": "L'operatore legge il caso come 'servizio avanzato sulla questione digitale', riassorbendo la parzialità in una valutazione positiva di consapevolezza. La parte non aperta diventa invisibile perché la parte aperta soddisfa l'aspettativa di consapevolezza.",
+        "with_device_misused": "Trasformare la lettura della parzialità in una lista di 'altri piani da aprire', spingendo il servizio verso l'apertura simultanea di tutte le dimensioni come obiettivo formativo. Il dispositivo, da operatore di lettura della struttura, diventa programma di sviluppo della consapevolezza — collassando dentro la stessa grammatica della prestazionalizzazione che dovrebbe rendere leggibile (la 'lettura strutturale' come nuova prestazione del servizio)."
+      }
+    },
+    {
+      "case_id": "case_03",
+      "case_type": "configurazione_distorta",
+      "case_description": "Rete di nidi in autogestione che ha esplicitamente costruito la propria identità in opposizione alle pratiche di documentazione e restituzione standard. Niente foto, niente report quotidiani alle famiglie, narrazione orale degli incontri settimanali, materiali naturali, ritmi 'lenti'. Il discorso interno valorizza 'l'autenticità della relazione', 'la qualità della presenza', 'il rispetto del tempo del bambino', 'la resistenza alla performance'. Le famiglie scelgono questi nidi perché cercano 'qualcosa di diverso' dall'educazione standard. Le educatrici si riconoscono come professioniste che 'leggono criticamente' l'ecosistema digitale e i suoi effetti sull'infanzia.",
+      "observed_configuration": {
+        "corporeita": "La dimensione corporea è esplicitamente centrale nel discorso del servizio (lentezza, contatto, materiali naturali, ritmo non scandito). Ma questa centralità è essa stessa diventata cifra identitaria del servizio, e funziona come restituzione qualitativa di tipo nuovo — 'la qualità della nostra presenza corporea' è il marchio. Il piano corporeo è simultaneamente sostenuto come pratica e trasformato in performance dell'identità.",
+        "campo_intenzionale": "L'orizzonte del desiderabile è esplicitamente tematizzato. La distinzione tra bambino orientato e bambino motivato circola nel lessico del servizio, ma opera come marcatore di appartenenza identitaria ('noi sappiamo distinguerli, gli altri no') più che come piano di interrogazione strutturale aperto: la distinzione è già conclusa, già applicata.",
+        "co_regolazione": "La mediazione adulta è valorizzata come antidoto al digitale e all'ecosistema della prestazione, idealizzata. La distinzione strutturale tra adulto e organizzazione algoritmica come operatori sullo stesso piano pre-riflessivo (formulata nel concetto-ponte 'Mediazione tecnica del campo desiderabile') collassa nell'opposizione adulto-buono / dispositivo-cattivo, restituendo al piano della relazione una purezza che il dispositivo intende invece interrogare.",
+        "mediazione_simbolica": "La grammatica della prestazionalizzazione del valore è apparentemente rifiutata, ma riemerge invertita: l'autenticità, la qualità della relazione, la 'purezza' del progetto educativo, la resistenza alla performance sono indicatori di valore con la stessa struttura grammaticale, soltanto con segno invertito. La misura non è abolita, è ridefinita."
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo legge bene la distorsione: il rifiuto della grammatica come riproduzione invertita della grammatica. Le dimensioni 'Mediazione strutturale dell'orizzonte di valore prima dell'uso consapevole' e 'Coabitazione di livello tra mediazione adulta e organizzazione algoritmica del campo' sono direttamente attivate e rese leggibili, e il punto di accesso 'Selezione implicita di ciò che conta come attività' rivela la grammatica invertita all'opera.",
+        "what_becomes_unclear": "Resta ambiguo se la distorsione sia totale (il servizio è completamente assorbito dalla grammatica invertita, in ogni piega della sua pratica) o parziale (esistono pieghe in cui la presenza opera fuori dalla restituzione anche identitaria — momenti di gioco non valorizzato, gesti non raccontati, presenze non testimoniate). Il dispositivo riconosce la struttura della distorsione ma non dispone di strumenti fini per cogliere questa distinzione di grado.",
+        "ambiguity_level": "medio"
+      },
+      "breaking_point": {
+        "present": true,
+        "where": "Sulla qualità interna della distorsione. Il dispositivo riconosce la distorsione strutturale (la grammatica della prestazionalizzazione opera in forma invertita) ma non distingue tra distorsione che mantiene comunque pieghe non assorbite e distorsione totale che attraversa ogni gesto del servizio. La domanda strutturale 'quali momenti restano fuori dalla grammatica della misurabilità' non si applica con la stessa forza quando la grammatica è invertita: ciò che resta fuori è essa stessa marcatore identitario.",
+        "why": "Il concetto-ponte 'Mediazione tecnica del campo desiderabile' nomina la coabitazione di livello, non la fenomenologia delle pieghe in cui la coabitazione si rompe o si attenua localmente. Il dispositivo è uno strumento di lettura della struttura, non della tessitura. La distinzione tra strutturale e fenomenologico è qui un limite costitutivo."
+      },
+      "discriminative_value": {
+        "what_distinguishes_this_case": "La differenza strutturale tra un servizio che ha trovato un'articolazione fuori dalla grammatica della prestazionalizzazione e un servizio che ha invertito la grammatica mantenendone intatta la struttura. In superficie i due appaiono come gli unici servizi 'che vedono il problema del digitale', e il secondo è particolarmente attraente perché propone una soluzione coerente.",
+        "device_can_distinguish": true
+      },
+      "misreading_risks": {
+        "without_device": "L'operatore legge il caso come modello positivo di alternativa al servizio 'performativo standard', eventualmente come buona pratica da diffondere. La grammatica della prestazionalizzazione invertita diventa programma educativo desiderabile, e la sua continuità strutturale con la grammatica che intende criticare resta invisibile.",
+        "with_device_misused": "L'uso del dispositivo come strumento di critica al servizio 'performativo standard' e di legittimazione del servizio 'alternativo' fissa la distorsione in modello virtuoso. Il dispositivo, da operatore di lettura, diventa schierato — applicato selettivamente sui servizi standard e sospeso sui servizi alternativi. La grammatica invertita opera attraverso il dispositivo che dovrebbe renderla leggibile."
+      }
+    },
+    {
+      "case_id": "case_04",
+      "case_type": "configurazione_oscillante",
+      "case_description": "Sezione di scuola dell'infanzia in cui un'educatrice di riferimento, dopo una formazione, ha iniziato a porsi domande sulla differenza tra orientamento e motivazione nei bambini. La domanda si attiva nei colloqui informali con i colleghi su casi specifici (un bambino che si blocca quando manca il feedback, una bambina che chiede continuamente conferma) ed è viva nei momenti di équipe pedagogica dedicati a quei casi. Nella pratica quotidiana di sezione, lo sguardo sui bambini 'che vanno bene' si appiattisce sugli indicatori comportamentali (attenzione, partecipazione, continuità dell'azione). Quando arriva il momento della restituzione alle famiglie nei colloqui periodici, o della compilazione delle osservazioni nelle griglie istituzionali, la domanda strutturale si dissolve completamente: non c'è linguaggio per articolarla nei format previsti, e la logica della griglia riassorbe ogni osservazione dentro indicatori già disponibili.",
+      "observed_configuration": {
+        "corporeita": "Si attiva nei momenti informali (l'osservazione di un bambino che si blocca corporalmente quando manca il feedback è uno degli inneschi della consapevolezza) e si dissolve nella codifica osservativa formale, dove il corpo del bambino diventa rilevazione di indicatori.",
+        "campo_intenzionale": "Si articola in équipe come piano di lettura dei 'casi particolari', non si stabilizza come sguardo costante sulla quotidianità dei bambini 'ordinari'. La distinzione tra orientamento e motivazione opera come strumento per leggere l'eccezione, non come piano per leggere la norma.",
+        "co_regolazione": "La qualità della mediazione adulta è leggibile come piano strutturale nei momenti di consapevolezza individuale e d'équipe, ed è invisibile come piano nei momenti formalizzati (osservazione, restituzione, valutazione del progetto). L'oscillazione segue il confine tra informalità e formalizzazione.",
+        "mediazione_simbolica": "La grammatica della prestazionalizzazione del valore opera nei momenti formalizzati con la stessa intensità di prima — le griglie istituzionali sono il suo veicolo — e si attenua nei momenti informali. L'oscillazione non si stabilizza in struttura del servizio: rimane tratto di alcuni operatori, in alcuni momenti."
+      },
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo legge bene l'oscillazione e il suo tracciato: dove la configurazione si attiva, dove si dissolve, e perché si dissolve (l'assenza di linguaggio strutturale nelle forme istituzionali di rendicontazione, l'assorbimento delle griglie nella grammatica della misurabilità). Rende leggibile l'asimmetria tra consapevolezza individuale e struttura del servizio.",
+        "what_becomes_unclear": "Resta ambiguo se l'oscillazione sia condizione di transizione (la consapevolezza si sta progressivamente strutturando in pratica del servizio) o condizione stabile (l'oscillazione è la forma in cui la consapevolezza coabita con la struttura senza modificarla, o addirittura la forma in cui la struttura tollera la consapevolezza confinandola in zone non strutturali). Il dispositivo non distingue tra oscillazione come fase e oscillazione come stato.",
+        "ambiguity_level": "medio"
+      },
+      "breaking_point": {
+        "present": true,
+        "where": "Sulla temporalità della configurazione. Il dispositivo legge la configurazione come stato (presente, assente, distorto, oscillante, apparente) ma non dispone di un livello interno per cogliere la dimensione temporale della stabilizzazione, della cristallizzazione o della dispersione. La domanda 'questa oscillazione si sta strutturando o si sta cristallizzando come oscillazione permanente' non è formulabile dal dispositivo nei suoi termini propri.",
+        "why": "La struttura del dispositivo è sincronica. Le dimensioni di lettura sono articolate come stati di disponibilità (presente / assente / distorta / oscillante), non come processi di stabilizzazione di queste disponibilità nella struttura del servizio. Il piano della temporalità di costituzione strutturale non è un piano interno al dispositivo F3 STEP 1: è un piano che eccede la sua articolazione."
+      },
+      "discriminative_value": {
+        "what_distinguishes_this_case": "La differenza tra una consapevolezza che si sta strutturando in pratica del servizio e una consapevolezza che resta come dotazione individuale di alcuni operatori senza modificare la grammatica del servizio. In superficie i due servizi appaiono identici: alcuni operatori 'consapevoli', altri no, e una pratica quotidiana che procede.",
+        "device_can_distinguish": false
+      },
+      "misreading_risks": {
+        "without_device": "L'operatore legge il caso come 'servizio in cammino' e la consapevolezza individuale di alcune educatrici come segnale di sviluppo del servizio nel suo insieme. La discontinuità tra consapevolezza individuale e struttura istituzionale resta invisibile.",
+        "with_device_misused": "L'uso del dispositivo per certificare l'attivazione delle dimensioni di lettura senza interrogare la loro stabilizzazione produce una lettura sovrastimata della consapevolezza del servizio: la presenza intermittente in alcuni operatori viene letta come presenza piena del servizio. Il dispositivo, applicato come check di attivazione delle dimensioni, perde la dimensione temporale della loro tenuta."
+      }
+    },
+    {
+      "case_id": "case_05",
+      "case_type": "configurazione_apparente",
+      "case_description": "Coordinamento pedagogico di una rete di servizi 0–6 che ha investito significativamente in formazione strutturale. Il lessico del campo desiderabile, della mediazione tecnica, della prestazionalizzazione del valore, della distinzione tra esposizione e configurazione è entrato nei documenti progettuali, nelle giornate formative, nei verbali delle équipe, nei colloqui con le famiglie. Le restituzioni alle famiglie integrano il vocabolario strutturale. Le riflessioni di équipe usano in modo articolato le distinzioni del dispositivo: orientamento vs motivazione, esposizione vs configurazione, mediazione adulta come piano strutturale, rischi di tecnicismo e normatività esplicitamente nominati. I documenti di progetto educativo sono accuratamente redatti su queste basi. Tutto sembra fluire in modo coerente.",
+      "observed_configuration": {
+        "corporeita": "La dimensione corporea è citata accuratamente nei documenti, descritta nelle riunioni con il vocabolario corretto. Ma è descritta, non leggibile come piano corporeo che opera nella concretezza del gesto educativo. La descrizione corretta del piano corporeo è essa stessa la prestazione attesa dal coordinamento.",
+        "campo_intenzionale": "La distinzione orientamento/motivazione è formulata correttamente in ogni équipe ma applicata come categoria di classificazione dei bambini ('è un bambino motivato', 'è un bambino orientato'), non come piano di interrogazione strutturale aperto. La distinzione, da operatore di lettura, è diventata griglia diagnostica.",
+        "co_regolazione": "La mediazione adulta è tematizzata costantemente come piano strutturale, e questa tematizzazione corretta è essa stessa diventata performance del coordinamento — mostrare di leggere strutturalmente è ora la nuova forma di restituzione del valore della rete di servizi.",
+        "mediazione_simbolica": "La grammatica della prestazionalizzazione del valore opera al livello più sottile e più protetto: ha incorporato la critica strutturale della grammatica come nuovo strato della grammatica stessa. La 'lettura strutturale' è diventata indicatore di qualità del servizio, e la sua articolazione fluente è la nuova forma di rendere conto. Il dispositivo è stato assorbito dentro ciò che esso intendeva interrogare."
+      },
+      "device_performance": {
+        "readable": false,
+        "what_it_reads": "Il dispositivo registra l'attivazione formale di ogni dimensione di lettura: ogni domanda strutturale trova risposta articolata, ogni rischio interpretativo (comportamentismo, normatività, tecnicismo, riduzione cognitiva) è nominato come noto, ogni 'non permitted transformation' è citata come da evitare. Sul piano formale, la lettura è impeccabile.",
+        "what_becomes_unclear": "Diventa strutturalmente indistinguibile la lettura configurazionale autentica dalla riproduzione fluente del lessico configurazionale. Il dispositivo non dispone di un criterio interno per cogliere la differenza tra 'leggere con il dispositivo' e 'performare la lettura del dispositivo'. Questa è la zona di massima opacità — il falso positivo strutturale a cui il dispositivo è particolarmente vulnerabile per la sua stessa funzione, perché l'oggetto che interroga (la mediazione tecnica del campo desiderabile come grammatica del valore) è precisamente ciò che lo assorbe quando il dispositivo viene praticato bene.",
+        "ambiguity_level": "alto"
+      },
+      "breaking_point": {
+        "present": true,
+        "where": "Sul criterio interno di non-assimilabilità del dispositivo alla grammatica che interroga. Il dispositivo nomina il rischio di assorbimento (negli interpretive_warnings sotto la voce tecnicismo, nelle non_permitted_transformations come quinto punto: 'la funzione di lettura collassa in audit') ma il rischio si realizza precisamente quando la nominazione corretta del rischio diventa anch'essa parte della performance corretta. La nominazione del rischio non è auto-resistente.",
+        "why": "Il principio guida del dispositivo è che la mediazione tecnica del campo desiderabile opera come configurazione storica dell'esperienza prima e indipendentemente dall'uso consapevole. Quando il dispositivo viene usato consapevolmente in un dominio in cui la grammatica della prestazionalizzazione del valore è già strutturale, l'uso del dispositivo opera dentro la stessa configurazione che esso intende interrogare. Non esiste, dentro il dispositivo F3 STEP 1, un livello che gli garantisca di restare fuori dalla grammatica della prestazionalizzazione: la sua applicazione è essa stessa una pratica del valore, e diventa nuovo indicatore di qualità del servizio. Questo è un limite costitutivo del dispositivo, non una sua disfunzione."
+      },
+      "discriminative_value": {
+        "what_distinguishes_this_case": "La differenza tra un servizio attraversato dalla lettura strutturale del dispositivo (lettura che modifica la qualità della mediazione perché interroga il proprio operare) e un servizio che ha incorporato il lessico strutturale come nuovo strato della propria restituzione qualificata (lettura che si performa). In superficie il secondo è indistinguibile dal primo, anzi appare strutturalmente più solido perché tutte le dimensioni risultano esplicitamente articolate.",
+        "device_can_distinguish": false
+      },
+      "misreading_risks": {
+        "without_device": "L'operatore esterno (formatore, valutatore, ricercatore) legge il caso come modello virtuoso, esempio di applicazione riuscita del dispositivo, e raccomanda la diffusione delle pratiche di questa rete come buona prassi. La performance del lessico strutturale viene scambiata per attivazione strutturale.",
+        "with_device_misused": "L'uso del dispositivo come griglia di valutazione della 'qualità della lettura strutturale di un servizio' produce esattamente il caso 5: la performance corretta del lessico strutturale diventa criterio di adeguatezza del servizio, e il dispositivo opera come motore della propria assimilazione dentro la grammatica della prestazionalizzazione del valore. È il caso in cui il dispositivo, applicato come audit, produce ciò che dovrebbe rendere leggibile."
+      }
+    }
+  ]
+}

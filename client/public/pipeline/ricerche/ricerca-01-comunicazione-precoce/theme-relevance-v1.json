@@ -1,0 +1,1288 @@
+{
+  "step": "step_2",
+  "results": [
+    {
+      "theme_id": "tema_01_technoference",
+      "candidate_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "reason": "La technoference modifica strutturalmente la qualità della co-presenza relazionale: il campo intenzionale diadico è alterato dalla divisione cronica dell'attenzione del caregiver, che riduce la contingenza e la regolazione ontologica. La co-regolazione come condizione ontologica è il nodo direttamente messo in gioco."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "reason": "La technoference non è errore individuale ma forma storica di organizzazione dell'attenzione prodotta dall'ecosistema tecnologico contemporaneo (Stiegler: proletarizzazione dell'attenzione). L'Asse 6 fornisce la chiave strutturale per leggere il fenomeno senza moralizzarlo."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "relevance_level": "plausibile",
+          "reason": "La qualità della presenza del caregiver è condizione strutturale per l'interiorizzazione dell'altro come istanza. Una presenza cronicamente divisa può modificare la struttura affettiva disponibile come riferimento interno. Il legame con Asse 2 è indiretto ma strutturalmente plausibile."
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "relevance_level": "da_verificare",
+          "reason": "La technoference può produrre un messaggio implicito sul valore dell'altro, ma questo appartiene più all'Asse 6 (orizzonte di senso storico) che all'Asse 3 (normatività strutturale del giudizio). Da verificare se la dimensione normativa è attivata in modo distinto."
+        }
+      ],
+      "candidate_nodes": [
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Meccanismo centrale direttamente modificato dalla divisione dell'attenzione del caregiver: la co-regolazione come condizione ontologica è ridotta nella qualità e nella contingenza."
+        },
+        {
+          "node_id": "campo-intenzionale",
+          "node_label": "Campo intenzionale",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "L'orizzonte pre-riflessivo del possibile si costituisce attraverso la co-regolazione: la divisione cronica dell'attenzione del caregiver riduce la ricchezza del campo diadico disponibile per il bambino."
+        },
+        {
+          "node_id": "relazione-costitutiva",
+          "node_label": "Relazione costitutiva",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La relazione come condizione strutturale della soggettività è ciò che la technoference mette sotto pressione: non elimina la relazione ma ne altera la struttura costitutiva."
+        },
+        {
+          "node_id": "tecnica-come-forma-storica",
+          "node_label": "Tecnica come forma storica",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il dispositivo tecnologico non è strumento neutro ma forma storica di organizzazione dell'attenzione che precede qualsiasi uso consapevole. La technoference è effetto strutturale di questa forma, non scelta individuale."
+        },
+        {
+          "node_id": "deformazione-strutturale",
+          "node_label": "Deformazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "La technoference come configurazione sistemica che produce effetti strutturali sulla qualità della presenza relazionale: non errore individuale ma esito dell'incontro tra strutture fondative e forme storiche del mondo contemporaneo."
+        },
+        {
+          "node_id": "temporalità-vissuta",
+          "node_label": "Temporalità vissuta",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "La divisione dell'attenzione del caregiver altera la qualità della temporalizzazione condivisa: il bambino sperimenta una discontinuità implicita nel ritmo della presenza, che incide sulla costituzione dello spessore temporale dell'esperienza."
+        },
+        {
+          "node_id": "interiorizzazione-dell-altro",
+          "node_label": "Interiorizzazione dell'altro",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "relevance_level": "da_verificare",
+          "is_derived": false,
+          "reason": "La disponibilità del caregiver come presenza affettiva persistente è condizione per l'interiorizzazione dell'altro come istanza. Una presenza cronicamente divisa potrebbe modificare la qualità di questo processo, ma il legame causale richiede verifica nella micro-matrice."
+        }
+      ],
+      "candidate_bridge_concepts": [
+        {
+          "concept_label": "Co-regolazione",
+          "linked_axes": [
+            "asse_1",
+            "asse_2"
+          ],
+          "linked_nodes": [
+            "co-regolazione",
+            "interiorizzazione-dell-altro",
+            "campo-intenzionale"
+          ],
+          "relevance_level": "forte",
+          "reason": "Connette la condizione ontologica (Asse 1: regolazione come tenuta dell'esperienza) con la condizione affettiva (Asse 2: la presenza che rende possibile l'interiorizzazione dell'altro). La technoference la riduce su entrambi i versanti."
+        },
+        {
+          "concept_label": "Deformazione strutturale dell'attenzione relazionale",
+          "linked_axes": [
+            "asse_6",
+            "asse_1"
+          ],
+          "linked_nodes": [
+            "tecnica-come-forma-storica",
+            "deformazione-strutturale",
+            "relazione-costitutiva"
+          ],
+          "relevance_level": "plausibile",
+          "is_derived": true,
+          "reason": "Ponte tra la lettura storico-culturale del fenomeno (Asse 6) e il suo impatto sulle strutture ontologiche della relazione costitutiva (Asse 1). Concetto ex novo — da verificare se coperto dall'incrocio tra i nodi esistenti."
+        }
+      ],
+      "theme_structure_assessment": {
+        "type": "multi_assiale",
+        "notes": "Il tema ha due assi co-dominanti: Asse 1 (struttura della presenza relazionale e della co-regolazione) e Asse 6 (tecnica come forma storica che produce la deformazione). L'Asse 2 è secondario ma plausibile. L'articolazione tra i due assi dominanti è il nodo strutturale più produttivo del tema."
+      },
+      "selection_rationale": "Asse 1 e Asse 6 sono stati selezionati come forti perché attivati direttamente dalla definizione: la co-regolazione (Asse 1) è il meccanismo che la technoference riduce; la tecnica come forma storica (Asse 6) è la struttura che produce il fenomeno al di là delle scelte individuali. Asse 2 è plausibile perché la qualità dell'interiorizzazione dell'altro dipende dalla qualità della presenza del caregiver. Asse 3 segnalato da_verificare per non escluderlo prematuramente.",
+      "notes_for_review": "Il rischio principale è la sovrainterpretazione di Asse 2: il collegamento con l'interiorizzazione è plausibile ma non direttamente derivabile senza passare per Asse 1. Verificare in micro-matrice se il nodo interiorizzazione-dell-altro richiede uno step intermedio esplicito. Il concetto-ponte derivato va valutato se necessario o se i nodi esistenti già lo coprono."
+    },
+    {
+      "theme_id": "tema_02_lettura_dialogica",
+      "candidate_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "reason": "La lettura condivisa struttura ritmo corporeo, temporalità condivisa e co-regolazione: dimensioni fondative dell'Asse 1. Il contesto è un campo relazionale in cui corporeità vissuta (voce, contatto, ritmo), temporalizzazione condivisa (attesa, anticipazione) e relazione costitutiva si esercitano simultaneamente."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "reason": "Il libro è mediatore simbolico nel senso di Vygotskij: non strumento neutro ma dispositivo culturale che co-costituisce le funzioni psichiche superiori. La zona di sviluppo prossimale descrive esattamente il meccanismo della lettura dialogica condivisa."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "relevance_level": "plausibile",
+          "reason": "La struttura triadica (caregiver–bambino–libro) crea un campo in cui caregiver e bambino condividono un oggetto simbolico comune: condizione di riconoscimento reciproco mediato, in cui il bambino può sperimentare l'altro come presenza orientata verso un terzo. Presupposto per forme precoci di interiorizzazione dell'altro come istanza attorno a un oggetto condiviso."
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "relevance_level": "da_verificare",
+          "reason": "I testi letti trasmettono orizzonti di senso impliciti prima di qualsiasi riflessione critica. Per bambini sotto i 3 anni, l'applicabilità di 'trasmissione normativa' è incerta: più appropriato parlare di 'strutturazione di primi orizzonti di significato'. Richiede verifica in relazione alla fascia d'età."
+        },
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "relevance_level": "da_verificare",
+          "reason": "La lettura condivisa introduce il bambino al campo simbolico come orizzonte di possibilità: potenziale connessione con il campo del desiderabile (Asse 5). Il legame è meno diretto rispetto agli altri assi e richiede verifica."
+        }
+      ],
+      "candidate_nodes": [
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La lettura condivisa è un contesto in cui la co-regolazione si esercita attraverso ritmo, voce, contatto e scambio attentivo: forma incarnata e situata della co-regolazione come condizione ontologica."
+        },
+        {
+          "node_id": "mediazione-simbolica",
+          "node_label": "Mediazione simbolica",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il libro come mediatore simbolico (Vygotskij) è elemento co-costitutivo del contesto: non semplice supporto ma terzo della struttura triadica che riorganizza il campo relazionale e introduce il bambino alla cultura attraverso il linguaggio narrativo condiviso."
+        },
+        {
+          "node_id": "temporalità-vissuta",
+          "node_label": "Temporalità vissuta",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La lettura condivisa è una delle prime esperienze di temporalità strutturata condivisa: ritmo, attesa, anticipazione della pagina successiva, ripetizione. Struttura il tempo vissuto diadico in modo non riducibile alla semplice traiettoria biologica."
+        },
+        {
+          "node_id": "zona-di-sviluppo-prossimale",
+          "node_label": "Zona di sviluppo prossimale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La lettura dialogica è un caso paradigmatico di ZSP: il bambino accede a strutture linguistiche, narrative e simboliche attraverso la mediazione di un adulto culturalmente competente. Il libro è il dispositivo culturale che abilita il processo."
+        },
+        {
+          "node_id": "interiorizzazione-dell-altro",
+          "node_label": "Interiorizzazione dell'altro",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "La presenza condivisa attorno a un oggetto terzo (il libro) crea una forma di interiorizzazione dell'altro come presenza orientata: il bambino sperimenta il caregiver come soggetto che guarda qualcosa insieme a lui. Plausibile come condizione per forme precoci dell'istanza interna."
+        },
+        {
+          "node_id": "orizzonti-di-senso",
+          "node_label": "Orizzonti di senso",
+          "source_axis": "asse_3",
+          "source_axis_name": "Normativo–educativo",
+          "relevance_level": "da_verificare",
+          "is_derived": false,
+          "reason": "Le narrazioni trasmettono implicitamente orizzonti di senso (cosa è bello, cosa fa paura, cosa è buono). Per la fascia 0-3 anni, va verificata l'applicabilità: si tratta di 'strutturazione di primi orizzonti di significato' più che di trasmissione normativa in senso pieno."
+        },
+        {
+          "node_id": "relazione-costitutiva",
+          "node_label": "Relazione costitutiva",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "La relazione nel contesto della lettura è costitutiva non solo per il bambino ma per la stessa struttura triadica: il significato del libro è co-costruito nella relazione, non preesistente."
+        }
+      ],
+      "candidate_bridge_concepts": [
+        {
+          "concept_label": "Mediazione simbolica condivisa",
+          "linked_axes": [
+            "asse_6",
+            "asse_1"
+          ],
+          "linked_nodes": [
+            "mediazione-simbolica",
+            "co-regolazione",
+            "temporalità-vissuta"
+          ],
+          "relevance_level": "forte",
+          "reason": "Il libro come mediatore simbolico (Asse 6) che organizza simultaneamente co-regolazione e temporalità condivisa (Asse 1): ponte tra la dimensione culturale-vygotskijana e quella ontologico-fenomenologica della lettura condivisa."
+        },
+        {
+          "concept_label": "Struttura triadica caregiver–bambino–libro",
+          "linked_axes": [
+            "asse_1",
+            "asse_2",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "mediazione-simbolica",
+            "co-regolazione",
+            "interiorizzazione-dell-altro"
+          ],
+          "relevance_level": "forte",
+          "is_derived": true,
+          "reason": "La struttura triadica è costitutiva del tema e non riducibile alla diade caregiver-bambino. Il libro come terzo costitutivo connette simultaneamente mediazione simbolica (Asse 6), co-regolazione (Asse 1) e condizioni per l'interiorizzazione dell'altro attorno a un oggetto condiviso (Asse 2). Concetto derivato obbligatorio: non coperto dai nodi esistenti."
+        },
+        {
+          "concept_label": "Zona di sviluppo prossimale",
+          "linked_axes": [
+            "asse_6",
+            "asse_1"
+          ],
+          "linked_nodes": [
+            "zona-di-sviluppo-prossimale",
+            "co-regolazione",
+            "mediazione-simbolica"
+          ],
+          "relevance_level": "plausibile",
+          "reason": "La ZSP come struttura relazionale che connette mediazione culturale (Asse 6) e co-regolazione come forma relazionale del sapere nascente (Asse 1). Da verificare se aggiunge valore come concetto-ponte distinto dalla mediazione simbolica."
+        }
+      ],
+      "theme_structure_assessment": {
+        "type": "multi_assiale",
+        "notes": "Il tema ha tre assi strutturalmente coinvolti (Asse 1, Asse 6, Asse 2) con Asse 1 e Asse 6 come co-dominanti. L'articolazione chiave è la struttura triadica caregiver–bambino–libro. Gli assi 3 e 5 richiedono verifica prima di essere inclusi."
+      },
+      "selection_rationale": "Asse 1 e Asse 6 sono forti perché la lettura condivisa è simultaneamente un contesto di co-regolazione (Asse 1) e un dispositivo di mediazione simbolica vygotskijana (Asse 6). Asse 2 è plausibile sulla base della struttura triadica: il libro come oggetto terzo condiviso crea condizioni per forme precoci di interiorizzazione. Asse 3 da_verificare per la fascia 0-3. Asse 5 da_verificare perché il campo simbolico è potenzialmente connesso al campo del desiderabile.",
+      "notes_for_review": "La struttura triadica è il contributo più originale: va esplicitata nella formulazione definitiva dell'etichetta. La prudenza su Asse 3 per la fascia 0-3 è confermata: 'strutturazione di primi orizzonti di significato' è più appropriato di 'trasmissione normativa'. Il concetto-ponte derivato 'struttura triadica' richiede validazione: se confermato, dovrebbe diventare parte integrante della definizione al livello STEP 1."
+    },
+    {
+      "theme_id": "tema_03_funzione_riflessiva",
+      "candidate_axes": [
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "relevance_level": "forte",
+          "reason": "La PRF è il meccanismo relazionale dell'Asse 2 dal lato del caregiver: essere visti come soggetti portatori di stati mentali è la condizione strutturale per l'interiorizzazione dell'altro come istanza. Il caregiver con alta PRF fornisce la presenza che il bambino può interiorizzare come struttura affettiva interna."
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "reason": "La PRF rende possibile una co-regolazione più fine e contingente: il caregiver che legge gli stati mentali del bambino risponde con maggiore adeguatezza, sostenendo la qualità del campo intenzionale diadico."
+        },
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "relevance_level": "plausibile",
+          "reason": "Il caregiver con alta PRF riconosce il desiderio del bambino come orientamento verso qualcosa di suo (non solo bisogno da soddisfare): distinzione strutturalmente rilevante per lo sviluppo del desiderio come orientamento autonomo distinto dalla motivazione."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "relevance_level": "da_verificare",
+          "reason": "La capacità di mentalizzazione del caregiver non è solo tratto individuale: è modulata da condizioni storiche e culturali (isolamento, supporto sociale, qualità delle istituzioni di cura). Incluso per non escludere prematuramente la dimensione contestuale della PRF."
+        }
+      ],
+      "candidate_nodes": [
+        {
+          "node_id": "interiorizzazione-dell-altro",
+          "node_label": "Interiorizzazione dell'altro",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Nodo centrale: essere visti come portatori di stati mentali è la condizione perché il bambino possa interiorizzare l'altro come istanza. La PRF è il processo dal lato del caregiver che rende questo possibile."
+        },
+        {
+          "node_id": "istanza-interna",
+          "node_label": "Istanza interna",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La PRF crea le condizioni per la costituzione dell'istanza interna del bambino: il caregiver che vede il bambino come soggetto è la condizione della trasformazione dell'altro da presenza esterna a struttura affettiva interna vincolante."
+        },
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La PRF abilita una co-regolazione più fine: il caregiver che legge gli stati mentali del bambino può rispondere con maggiore contingenza, elevando la qualità della co-regolazione come condizione ontologica."
+        },
+        {
+          "node_id": "sopravvivenza-dell-oggetto",
+          "node_label": "Sopravvivenza dell'altro",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "Il caregiver con alta PRF mantiene il legame dopo le manifestazioni disturbanti del bambino senza ritrarsi: condizione strutturale della riparazione. La PRF come capacità di 'sopravvivere' al bambino è strutturalmente rilevante."
+        },
+        {
+          "node_id": "desiderio-come-struttura",
+          "node_label": "Desiderio come struttura",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "La PRF riconosce il desiderio del bambino come orientamento, non solo come bisogno: questa distinzione è strutturalmente rilevante per la differenza tra un bambino il cui desiderio viene rispecchiato come struttura di orientamento e uno il cui comportamento viene solo regolato."
+        },
+        {
+          "node_id": "campo-intenzionale",
+          "node_label": "Campo intenzionale",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "Un caregiver che rispecchia accuratamente gli stati mentali contribuisce all'espansione del campo intenzionale diadico: la qualità della PRF è condizione per la costruzione del campo intenzionale del bambino."
+        }
+      ],
+      "candidate_bridge_concepts": [
+        {
+          "concept_label": "Co-regolazione",
+          "linked_axes": [
+            "asse_1",
+            "asse_2"
+          ],
+          "linked_nodes": [
+            "co-regolazione",
+            "interiorizzazione-dell-altro",
+            "campo-intenzionale"
+          ],
+          "relevance_level": "forte",
+          "reason": "Connette la qualità ontologica della presenza del caregiver (Asse 1) con le condizioni affettive dell'interiorizzazione dell'altro come istanza (Asse 2). La PRF è il meccanismo che eleva la qualità della co-regolazione su entrambi i versanti."
+        },
+        {
+          "concept_label": "Istanza interna",
+          "linked_axes": [
+            "asse_2",
+            "asse_5"
+          ],
+          "linked_nodes": [
+            "istanza-interna",
+            "interiorizzazione-dell-altro",
+            "desiderio-come-struttura"
+          ],
+          "relevance_level": "plausibile",
+          "reason": "L'istanza interna come forma di presenza interiorizzata del caregiver è condizione per la soggettivazione del desiderio (Asse 5): essere visto come portatore di stati mentali propri è condizione perché il desiderio possa diventare 'mio'. Connette Asse 2 e Asse 5."
+        }
+      ],
+      "theme_structure_assessment": {
+        "type": "asse_dominante",
+        "notes": "L'Asse 2 è dominante: la PRF è il meccanismo relazionale che struttura l'interiorizzazione dell'altro come istanza. L'Asse 1 è essenziale come substrato (co-regolazione) ma serve la dinamica dell'Asse 2. L'Asse 5 è pertinenza secondaria che arricchisce il tema senza costituirne il nucleo."
+      },
+      "selection_rationale": "Asse 2 è dominante perché la PRF descrive esattamente il meccanismo relazionale che rende possibile l'interiorizzazione dell'altro come istanza: essere visti come portatori di stati mentali è la condizione strutturale del processo che l'Asse 2 descrive. Asse 1 è forte perché la co-regolazione è la forma concreta attraverso cui la PRF si esercita. Asse 5 è plausibile perché riconoscere il desiderio come orientamento (e non solo bisogno) è una dimensione della PRF strutturalmente rilevante.",
+      "notes_for_review": "La connessione tra PRF e Asse 2 è la più diretta del corpus: questo tema è il migliore candidato per esplorare la traduzione del concetto di 'interiorizzazione dell'altro' verso la ricerca empirica sull'attaccamento. Il raccordo con le schede di interlocuzione (attaccamento, infant research) va esplicitato. Verificare se la PRF come 'sopravvivenza dell'oggetto' (Winnicott) richiede un concetto-ponte dedicato."
+    },
+    {
+      "theme_id": "tema_04_coregolazione_ritmo_biologico",
+      "candidate_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "reason": "Il ritmo biologico è la prima forma di temporalizzazione incarnata che si costituisce attraverso la relazione. La temporalità vissuta (Asse 1) trova qui la sua forma più precoce e primaria: prima di qualsiasi rappresentazione o linguaggio, il bambino acquista il ritmo del tempo attraverso il corpo e la relazione."
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "relevance_level": "plausibile",
+          "reason": "Fame, stanchezza, discontinuità del ritmo sono le prime forme in cui il reale eccede l'intenzione del bambino: prime forme di eccedenza come decentramento strutturale. Il corpo biologico come primo 'limite reale' che il soggetto incontra."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "relevance_level": "plausibile",
+          "reason": "Il ritmo biologico del bambino si costituisce in un contesto storico-istituzionale: orari del nido, ritmi lavorativi dei genitori, organizzazione del tempo sociale. Le istituzioni (Asse 6) strutturano il campo in cui la co-regolazione del ritmo avviene."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "relevance_level": "da_verificare",
+          "reason": "La ritmica della presenza/assenza del caregiver potrebbe avere connessioni con l'interiorizzazione dell'altro come istanza (Asse 2). Il legame è molto indiretto per questa fase precocissima dello sviluppo."
+        }
+      ],
+      "candidate_nodes": [
+        {
+          "node_id": "temporalità-vissuta",
+          "node_label": "Temporalità vissuta",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il ritmo biologico è la prima forma di temporalizzazione incarnata: il bambino non acquisce il tempo come concetto ma come ritmo corporeo co-costruito con il caregiver. Questo è esattamente la temporalità vissuta come struttura fenomenologica."
+        },
+        {
+          "node_id": "corporeità-vissuta",
+          "node_label": "Corporeità vissuta",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il corpo vissuto come luogo originario di senso è il sito primario della co-regolazione del ritmo: fame, sonno, veglia sono vissuti corporei prima di essere fisiologia. La corporeità vissuta è il campo in cui la temporalizzazione biologica si costituisce come esperienza."
+        },
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il caregiver come co-costruttore del ritmo biologico del bambino è la forma più precoce di co-regolazione: il ritmo circadiano non matura autonomamente ma si costituisce attraverso la mediazione relazionale (luce, voce, ritmo alimentare, contatto)."
+        },
+        {
+          "node_id": "regolazione-ontologica",
+          "node_label": "Regolazione ontologica",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il tema descrive la regolazione del ritmo biologico come forma primaria della regolazione ontologica come tenuta dell'esperienza nel tempo: prima che l'esperienza possa avere struttura, il corpo deve avere ritmo."
+        },
+        {
+          "node_id": "eccedenza",
+          "node_label": "Eccedenza",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "Il corpo biologico eccede il desiderio di continuità del bambino (fame che non aspetta, stanchezza che impone la caduta): prime forme di sproporzione strutturale tra soggetto e reale. L'eccedenza come decentramento trova qui una delle sue manifestazioni più precoci."
+        },
+        {
+          "node_id": "istituzione-come-dispositivo",
+          "node_label": "Istituzione come dispositivo",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "Orari del nido, ritmi di lavoro dei genitori, calendari familiari strutturano le condizioni del caregiving ritmico. Il ritmo biologico del bambino si costituisce dentro queste mediazioni istituzionali storicamente determinate."
+        }
+      ],
+      "candidate_bridge_concepts": [
+        {
+          "concept_label": "Co-regolazione",
+          "linked_axes": [
+            "asse_1",
+            "asse_4"
+          ],
+          "linked_nodes": [
+            "co-regolazione",
+            "temporalità-vissuta",
+            "eccedenza"
+          ],
+          "relevance_level": "forte",
+          "reason": "Ponte tra la dimensione ontologica (Asse 1: il ritmo come temporalizzazione incarnata) e la dimensione del limite (Asse 4: l'eccedenza del biologico come primo reale che non risponde all'intenzione). La qualità della co-regolazione determina se l'eccedenza biologica è attraversabile o disorganizzante."
+        },
+        {
+          "concept_label": "Temporalità vissuta",
+          "linked_axes": [
+            "asse_1",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "temporalità-vissuta",
+            "istituzione-come-dispositivo",
+            "co-regolazione"
+          ],
+          "relevance_level": "plausibile",
+          "reason": "Ponte tra la struttura fenomenologica della temporalizzazione (Asse 1) e le sue condizioni di possibilità storicamente determinate (Asse 6): il ritmo biologico del bambino è sia struttura fenomenologica che prodotto di mediazioni istituzionali storiche."
+        }
+      ],
+      "theme_structure_assessment": {
+        "type": "asse_dominante",
+        "notes": "L'Asse 1 è dominante: il tema riguarda primariamente la costituzione della temporalità incarnata attraverso la relazione. L'Asse 4 e l'Asse 6 sono pertinenze reali ma secondarie: il primo introduce l'eccedenza del biologico come primo reale, il secondo le condizioni storiche del caregiving ritmico."
+      },
+      "selection_rationale": "Asse 1 è dominante perché il tema descrive la prima forma di temporalizzazione incarnata come co-costruzione relazionale: temporalità vissuta, corporeità vissuta, co-regolazione e regolazione ontologica sono tutti direttamente attivati. Asse 4 è plausibile perché il corpo biologico è il primo reale che eccede l'intenzione (eccedenza come prima forma di incontro con il limite). Asse 6 è plausibile perché le condizioni del caregiving ritmico sono istituzionalmente determinate.",
+      "notes_for_review": "Il tema richiede un lavoro specifico di distinzione dalla semplice fisiologia: il rischio principale è la biologizzazione. La chiave è 'co-costruzione relazionale del ritmo biologico' vs. 'maturazione del sistema circadiano'. Valutare se questo tema può essere pilota autonomo o va integrato con il tema della co-regolazione più ampia."
+    },
+    {
+      "theme_id": "tema_05_salute_mentale_perinatale",
+      "candidate_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "reason": "La disponibilità affettiva del caregiver è la condizione della co-regolazione come condizione ontologica: un caregiver non disponibile non offre la presenza che sostiene la costituzione della temporalità vissuta e del campo intenzionale del bambino."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "relevance_level": "forte",
+          "reason": "La qualità dell'interiorizzazione dell'altro come istanza dipende dalla qualità della presenza del caregiver: la salute mentale perinatale determina la struttura dell'altro che il bambino ha disponibile per interiorizzare. Un caregiver con disponibilità affettiva alterata offre un altro strutturalmente diverso da interiorizzare."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "relevance_level": "plausibile",
+          "reason": "La salute mentale perinatale non è solo condizione individuale: è determinata strutturalmente da condizioni storiche e sociali (supporto, isolamento, lavoro, sistemi di welfare). La disponibilità affettiva del caregiver è co-determinata dal campo storico-istituzionale."
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "relevance_level": "da_verificare",
+          "reason": "La salute mentale compromessa del caregiver può rendere più precaria la capacità di mantenere il legame dopo le manifestazioni del bambino (connessione con Asse 2, sopravvivenza dell'altro). Il legame con Asse 4 è indiretto."
+        }
+      ],
+      "candidate_nodes": [
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La salute mentale perinatale è la condizione strutturale della qualità della co-regolazione: non un fattore di rischio ma ciò che determina la disponibilità del caregiver a fungere da base di co-regolazione. Nodo centrale del tema."
+        },
+        {
+          "node_id": "relazione-costitutiva",
+          "node_label": "Relazione costitutiva",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La salute mentale del caregiver determina la qualità strutturale della relazione costitutiva: la relazione resta formalmente presente anche con un caregiver in difficoltà, ma la sua struttura costitutiva è alterata in modi che incidono sullo sviluppo."
+        },
+        {
+          "node_id": "interiorizzazione-dell-altro",
+          "node_label": "Interiorizzazione dell'altro",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La qualità dell'altro disponibile per l'interiorizzazione dipende dalla struttura della presenza del caregiver: un caregiver con disponibilità affettiva alterata offre un altro strutturalmente diverso come istanza interna."
+        },
+        {
+          "node_id": "vulnerabilità-strutturale",
+          "node_label": "Vulnerabilità strutturale",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il bambino nel periodo perinatale è nella fase di massima vulnerabilità strutturale: la dipendenza dalla presenza del caregiver rende il tema della salute mentale perinatale particolarmente critico."
+        },
+        {
+          "node_id": "sopravvivenza-dell-oggetto",
+          "node_label": "Sopravvivenza dell'altro",
+          "source_axis": "asse_2",
+          "source_axis_name": "Affettivo–morale",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "La capacità del caregiver di mantenere il legame dopo le manifestazioni disturbanti del bambino è condizione strutturale della riparazione: la salute mentale perinatale compromessa può rendere più difficile questa sopravvivenza senza ritiro."
+        },
+        {
+          "node_id": "deformazione-strutturale",
+          "node_label": "Deformazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "Le condizioni di isolamento, sovraccarico lavorativo e assenza di supporto che compromettono la salute mentale perinatale sono deformazioni strutturali storico-istituzionali, non fragilità individuali."
+        }
+      ],
+      "candidate_bridge_concepts": [
+        {
+          "concept_label": "Co-regolazione",
+          "linked_axes": [
+            "asse_1",
+            "asse_2"
+          ],
+          "linked_nodes": [
+            "co-regolazione",
+            "interiorizzazione-dell-altro",
+            "vulnerabilità-strutturale"
+          ],
+          "relevance_level": "forte",
+          "reason": "Ponte tra la condizione ontologica del campo del bambino (Asse 1) e le condizioni affettive dell'interiorizzazione dell'altro (Asse 2): la salute mentale del caregiver la determina su entrambi i versanti."
+        },
+        {
+          "concept_label": "Disponibilità affettiva",
+          "linked_axes": [
+            "asse_1",
+            "asse_2",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "co-regolazione",
+            "relazione-costitutiva",
+            "interiorizzazione-dell-altro",
+            "deformazione-strutturale"
+          ],
+          "relevance_level": "plausibile",
+          "is_derived": true,
+          "reason": "Concetto-ponte che connette la dimensione ontologica della presenza relazionale (Asse 1), la dimensione affettiva dell'interiorizzazione (Asse 2) e le condizioni storico-strutturali che la determinano (Asse 6). Concetto derivato che esplicita la specificità del tema rispetto alla semplice co-regolazione."
+        }
+      ],
+      "theme_structure_assessment": {
+        "type": "multi_assiale",
+        "notes": "Asse 1 e Asse 2 come co-dominanti, con Asse 6 come condizione di possibilità. L'Asse 1 descrive il meccanismo (co-regolazione alterata), l'Asse 2 il processo che questo meccanismo determina (qualità dell'interiorizzazione), l'Asse 6 le condizioni strutturali che producono l'alterazione."
+      },
+      "selection_rationale": "Asse 1 e Asse 2 sono entrambi forti perché il tema interroga simultaneamente le condizioni della co-regolazione (Asse 1) e le condizioni dell'interiorizzazione (Asse 2). Asse 6 è plausibile perché la salute mentale perinatale è determinata da condizioni storiche, non solo da tratti individuali. Asse 4 segnalato da_verificare ma considerato indiretto.",
+      "notes_for_review": "La formulazione 'condizione strutturale' (non 'fattore di rischio') è il contributo concettuale centrale del tema: va preservata nella micro-matrice. Il rischio di psicologizzazione/medicalizzazione è molto alto: la distinzione tra disponibilità affettiva (strutturale) e patologia individuale (diagnosi) deve essere mantenuta con rigore."
+    },
+    {
+      "theme_id": "tema_06_avversita_precoci",
+      "candidate_axes": [
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "relevance_level": "forte",
+          "reason": "L'avversità precoce è la forma più intensa di incontro con il limite reale nella prima infanzia: perdita, eccedenza non contenibile, separazione. Il tema interroga le condizioni che determinano se questo incontro diventa traumatico (disorganizzante) o strutturante (attraversabile), che è esattamente la domanda strutturale dell'Asse 4."
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "reason": "La co-regolazione relazionale è il meccanismo principale del buffering: la presenza di un caregiver responsivo riduce la disorganizzazione dello stress tossico modificando la qualità del campo intenzionale e la tenuta dell'esperienza. Il buffering è la co-regolazione come condizione ontologica applicata all'incontro con l'avversità."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "relevance_level": "plausibile",
+          "reason": "Le condizioni di avversità (povertà, violenza, instabilità) sono storicamente e socialmente determinate. Il buffering relazionale dipende da risorse comunitarie e istituzionali che il macrosistema culturale distribuisce in modo diseguale."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "relevance_level": "da_verificare",
+          "reason": "L'avversità precoce può alterare la qualità dell'interiorizzazione dell'altro come istanza (Asse 2), in particolare quando il caregiver è la fonte dell'avversità. Il legame è strutturalmente plausibile ma richiede distinzione dalla patologizzazione."
+        }
+      ],
+      "candidate_nodes": [
+        {
+          "node_id": "limite-reale",
+          "node_label": "Limite reale",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "L'avversità precoce è la manifestazione più intensa del limite reale: non norma né frustrazione educativa ma evento che accade senza essere posto e che non può essere rimosso dal caregiver. Nodo centrale del tema."
+        },
+        {
+          "node_id": "eccedenza",
+          "node_label": "Eccedenza",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "L'avversità come eccedenza sistematica che non decentra ma disorganizza quando non è bufferizzata: la sproporzione strutturale assume in condizioni di avversità una forma cronica che può chiudere il campo intenzionale invece di aprirlo."
+        },
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il buffering relazionale è esattamente la co-regolazione come condizione ontologica applicata all'incontro con l'avversità: la presenza di un caregiver responsivo trasforma l'incontro con il limite reale da disorganizzante ad attraversabile."
+        },
+        {
+          "node_id": "vulnerabilità-strutturale",
+          "node_label": "Vulnerabilità strutturale",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La vulnerabilità strutturale del bambino piccolo rende l'avversità precoce particolarmente determinante: la dipendenza originaria rende impossibile l'autonoma elaborazione dell'avversità senza mediazione relazionale."
+        },
+        {
+          "node_id": "perdita",
+          "node_label": "Perdita",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "Molte forme di avversità precoce implicano perdite irreversibili (di una figura di accudimento, di una casa, di una condizione). La struttura della perdita come irreversibilità è presente nel tema anche se non come forma esclusiva."
+        },
+        {
+          "node_id": "deformazione-strutturale",
+          "node_label": "Deformazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "Le condizioni di avversità cronica non sono eventi individuali ma configurazioni strutturali storico-sociali che producono effetti sistematici: la deformazione strutturale come concetto dell'Asse 6 descrive come la povertà e la violenza strutturale non siano fragilità individuali."
+        },
+        {
+          "node_id": "rischio-educativo",
+          "node_label": "Rischio educativo",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "relevance_level": "da_verificare",
+          "is_derived": false,
+          "reason": "L'adulto che non tollera il reale può produrre le tre strategie del rischio educativo anche in contesti di avversità: iper-regolazione, spiegazionismo, riparazione forzata. Da verificare nella traduzione verso i professionisti."
+        }
+      ],
+      "candidate_bridge_concepts": [
+        {
+          "concept_label": "Co-regolazione",
+          "linked_axes": [
+            "asse_1",
+            "asse_4"
+          ],
+          "linked_nodes": [
+            "co-regolazione",
+            "limite-reale",
+            "eccedenza",
+            "vulnerabilità-strutturale"
+          ],
+          "relevance_level": "forte",
+          "reason": "Ponte tra Asse 1 (buffering come presenza relazionale che sostiene l'esperienza) e Asse 4 (limite reale come ciò che il buffering rende attraversabile): è il meccanismo che trasforma l'incontro con l'avversità da disorganizzante a strutturante."
+        },
+        {
+          "concept_label": "Limite reale",
+          "linked_axes": [
+            "asse_4",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "limite-reale",
+            "eccedenza",
+            "deformazione-strutturale"
+          ],
+          "relevance_level": "plausibile",
+          "reason": "Il limite reale come ponte tra la struttura ontologica dell'incontro con il reale (Asse 4) e le sue determinazioni storico-strutturali (Asse 6): l'avversità non è solo evento ma configurazione storica che produce esposizione sistematica al reale in condizioni di vulnerabilità."
+        }
+      ],
+      "theme_structure_assessment": {
+        "type": "soglia_tra_assi",
+        "notes": "Il tema è strutturalmente posizionato sulla soglia tra Asse 4 (incontro con il limite reale come struttura) e Asse 1 (co-regolazione come condizione che determina l'esito dell'incontro). Non è dominato da un solo asse: il buffering relazionale è esattamente il meccanismo per cui la qualità ontologica della relazione (Asse 1) determina l'esito strutturale dell'incontro con il limite (Asse 4)."
+      },
+      "selection_rationale": "Asse 4 e Asse 1 sono entrambi forti e strutturalmente co-dipendenti: l'avversità è il limite reale (Asse 4), il buffering è la co-regolazione (Asse 1), e la domanda strutturale del tema è esattamente l'articolazione tra i due. Asse 6 è plausibile perché le avversità sono storicamente e socialmente determinate. Asse 2 è segnalato da_verificare ma il legame è mediato.",
+      "notes_for_review": "Il tema è posizionato esattamente sulla soglia tra Asse 4 e Asse 1: questa postura strutturale è il suo valore principale. La formulazione 'buffering relazionale' (vs. 'fattori protettivi') va preservata perché mantiene la struttura relazionale come meccanismo. Verificare il raccordo con le schede di interlocuzione sulla psicopatologia dello sviluppo."
+    },
+    {
+      "theme_id": "tema_07_ecosistema_digitale",
+      "candidate_axes": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "relevance_level": "forte",
+          "reason": "L'ecosistema digitale modifica la struttura del campo del desiderabile sostituendo orientamento con reattività immediata e motivazione esterna: questa è esattamente la 'patologia strutturale' del desiderio sostituito dalla motivazione descritta nell'Asse 5. Il tema attiva direttamente campo-desiderabile, desiderio-come-struttura e motivazione-come-sostituto."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "reason": "L'ecosistema digitale come forma storica contemporanea più pervasiva di organizzazione dell'attenzione e del tempo: tecnica come mediazione strutturale della soggettività (Stiegler), che organizza l'orizzonte del desiderabile prima di qualsiasi riflessione."
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "plausibile",
+          "reason": "La frammentazione dell'attenzione prodotta dall'ecosistema digitale può alterare la struttura del campo intenzionale: la discontinuità delle sequenze digitali potrebbe modificare la costituzione della temporalità vissuta. Il legame è indiretto ma strutturalmente plausibile."
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "relevance_level": "plausibile",
+          "reason": "L'ecosistema digitale produce orizzonti normativi impliciti (cosa vale, cosa è normale, cosa è successo) che strutturano il giudizio prima di qualsiasi riflessione critica. Attiva il nodo orizzonti-di-senso come mediazione storica del campo normativo."
+        }
+      ],
+      "candidate_nodes": [
+        {
+          "node_id": "campo-desiderabile",
+          "node_label": "Campo desiderabile",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Nodo centrale: l'ecosistema digitale è un dispositivo di strutturazione del campo desiderabile che opera prima di qualsiasi tematizzazione. Non modifica i contenuti del desiderio ma l'orizzonte stesso in cui alcune direzioni appaiono cariche di valore."
+        },
+        {
+          "node_id": "desiderio-come-struttura",
+          "node_label": "Desiderio come struttura",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il tema interroga come l'ecosistema digitale trasformi strutturalmente il desiderio da orientamento pre-riflessivo verso il possibile a reattività immediata verso stimoli progettati: incide sulla struttura del desiderio, non solo sui suoi contenuti."
+        },
+        {
+          "node_id": "motivazione-come-sostituto",
+          "node_label": "Motivazione come sostituto",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "L'ecosistema digitale produce esattamente la motivazione esterna come sostituto del desiderio strutturale: ricompense variabili, feedback immediato e engagement-design sostituiscono l'orientamento autonomo con la reattività agli stimoli."
+        },
+        {
+          "node_id": "tecnica-come-forma-storica",
+          "node_label": "Tecnica come forma storica",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "L'ecosistema digitale come forma storica di organizzazione dell'esperienza (Stiegler): non strumento da usare bene o male, ma configurazione storica che organizza strutturalmente l'orizzonte dell'attenzione e del desiderabile prima di qualsiasi uso consapevole."
+        },
+        {
+          "node_id": "prestazionalizzazione-del-valore",
+          "node_label": "Prestazionalizzazione del valore",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "L'ecosistema digitale è uno dei principali vettori della prestazionalizzazione contemporanea: tutto è misurabile in engagement, likes, tempo-di-sessione. Configura un orizzonte di senso in cui il valore coincide con la misurabilità, alterando il campo del desiderabile."
+        },
+        {
+          "node_id": "orizzonte-di-senso",
+          "node_label": "Orizzonte di senso",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "L'ecosistema digitale produce orizzonti di senso impliciti che organizzano ciò che appare rilevante, possibile e desiderabile: connessione con il nodo orizzonte-di-senso dell'Asse 6 (e con orizzonti-di-senso dell'Asse 3)."
+        }
+      ],
+      "candidate_bridge_concepts": [
+        {
+          "concept_label": "Campo desiderabile",
+          "linked_axes": [
+            "asse_5",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "campo-desiderabile",
+            "tecnica-come-forma-storica",
+            "motivazione-come-sostituto",
+            "prestazionalizzazione-del-valore"
+          ],
+          "relevance_level": "forte",
+          "reason": "Il campo desiderabile come ponte tra la struttura del desiderio (Asse 5) e la sua determinazione storica (Asse 6): l'ecosistema digitale non incontra un desiderio già formato che poi modifica, ma struttura l'orizzonte stesso in cui il desiderio si costituisce come orientamento o si deforma in reattività."
+        },
+        {
+          "concept_label": "Deformazione strutturale del desiderio",
+          "linked_axes": [
+            "asse_5",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "desiderio-come-struttura",
+            "motivazione-come-sostituto",
+            "tecnica-come-forma-storica"
+          ],
+          "relevance_level": "plausibile",
+          "is_derived": true,
+          "reason": "La deformazione strutturale (Asse 6) applicata specificamente alla struttura del desiderio (Asse 5): forma specifica in cui l'ecosistema digitale trasforma il desiderio come orientamento in reattività immediata. Concetto derivato che esplicita l'articolazione specifica tra i due assi."
+        }
+      ],
+      "theme_structure_assessment": {
+        "type": "soglia_tra_assi",
+        "notes": "Il tema si costituisce sulla soglia tra Asse 5 e Asse 6: non è comprensibile come tema dell'Asse 5 senza l'Asse 6 (che spiega come si produce storicamente la deformazione) né come tema dell'Asse 6 senza l'Asse 5 (che descrive la struttura che viene deformata). La co-dominanza è strutturalmente necessaria."
+      },
+      "selection_rationale": "Asse 5 e Asse 6 sono entrambi forti e co-dipendenti: l'ecosistema digitale è leggibile come tema strutturale solo nell'articolazione tra struttura del desiderio (Asse 5) e forma storica che la deforma (Asse 6). Asse 1 è plausibile perché la frammentazione dell'attenzione incide sul campo intenzionale. Asse 3 è plausibile perché l'ecosistema produce orizzonti normativi impliciti.",
+      "notes_for_review": "La distinzione da technoference (tema 1) va mantenuta nella micro-matrice: technoference = struttura della presenza del caregiver; ecosistema digitale = struttura del campo del bambino. Il rischio di sovrapposizione può essere gestito attraverso la distinzione tra assi co-dominanti (diversi nei due temi). Verificare se la pertinenza di Asse 3 è sufficientemente distinta dall'Asse 6 per il nodo orizzonti-di-senso."
+    },
+    {
+      "theme_id": "tema_08_disuguaglianze_precoci",
+      "candidate_axes": [
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "reason": "Le disuguaglianze precoci sono una delle deformazioni strutturali più pervasive prodotte dal macrosistema storico-culturale contemporaneo: modificano le condizioni di possibilità dello sviluppo attraverso mediazioni istituzionali, economiche e geografiche. L'Asse 6 è l'asse dominante per la comprensione strutturale (non sociologica) del fenomeno."
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "reason": "Le condizioni di povertà modificano strutturalmente la qualità della co-regolazione attraverso gli effetti sulla salute mentale del caregiver, sulla stabilità del contesto di vita e sulla qualità delle interazioni diadiche. Le disuguaglianze non producono solo differenze di opportunità ma differenze nelle condizioni fondative della soggettività."
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "relevance_level": "plausibile",
+          "reason": "La povertà strutturale produce esposizione precoce e sistematica all'avversità che può rendere traumatici incontri con il limite che in altri contesti sarebbero strutturanti: connessione con il tema 6 e con il concetto di limite reale come deformazione cronica."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "relevance_level": "da_verificare",
+          "reason": "Le condizioni di povertà e stress cronico possono alterare la qualità dell'interiorizzazione dell'altro come istanza attraverso la loro incidenza sulla disponibilità affettiva del caregiver (connessione con tema 5). Il legame è mediato e richiede verifica."
+        }
+      ],
+      "candidate_nodes": [
+        {
+          "node_id": "mediazione-strutturale",
+          "node_label": "Mediazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Le disuguaglianze precoci agiscono come mediazioni strutturali che organizzano le condizioni dell'esperienza prima di qualsiasi riflessione: non sfondo esterno ma campo già organizzato in cui alcune possibilità sono date e altre impedite strutturalmente."
+        },
+        {
+          "node_id": "deformazione-strutturale",
+          "node_label": "Deformazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Le disuguaglianze sono deformazioni strutturali sistemiche che producono effetti sullo sviluppo senza essere patologie individuali né errori educativi: richiedono lettura strutturale e non psicologizzante."
+        },
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La qualità della co-regolazione come condizione ontologica è direttamente influenzata dalle condizioni di povertà: stress cronico, salute mentale del caregiver compromessa, instabilità del contesto incidono sulla disponibilità del caregiver a fungere da base di co-regolazione."
+        },
+        {
+          "node_id": "vulnerabilità-strutturale",
+          "node_label": "Vulnerabilità strutturale",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La vulnerabilità strutturale del bambino piccolo come condizione fondativa: le disuguaglianze precoci agiscono sulla fase di massima dipendenza dalla qualità del caregiving."
+        },
+        {
+          "node_id": "istituzione-come-dispositivo",
+          "node_label": "Istituzione come dispositivo",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "I servizi per l'infanzia, le politiche di welfare e le strutture economiche sono istituzioni che organizzano la distribuzione delle condizioni di possibilità dello sviluppo: la loro presenza o assenza è strutturalmente determinante."
+        },
+        {
+          "node_id": "limite-reale",
+          "node_label": "Limite reale",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "Le condizioni di povertà strutturale producono forme di eccedenza cronica e di perdita che non dipendono da scelte educative: il limite reale come ciò che accade senza essere posto dal soggetto. Connessione con l'Asse 4 attraverso la forma storico-strutturale dell'avversità."
+        }
+      ],
+      "candidate_bridge_concepts": [
+        {
+          "concept_label": "Mediazione strutturale",
+          "linked_axes": [
+            "asse_6",
+            "asse_1"
+          ],
+          "linked_nodes": [
+            "mediazione-strutturale",
+            "co-regolazione",
+            "vulnerabilità-strutturale"
+          ],
+          "relevance_level": "forte",
+          "reason": "Ponte tra la dimensione storico-istituzionale delle disuguaglianze (Asse 6) e le loro conseguenze sulle condizioni fondative della soggettività (Asse 1): le disuguaglianze non sono sfondo esterno ma campo organizzato che determina strutturalmente le condizioni della co-regolazione."
+        },
+        {
+          "concept_label": "Vulnerabilità strutturale",
+          "linked_axes": [
+            "asse_1",
+            "asse_6"
+          ],
+          "linked_nodes": [
+            "vulnerabilità-strutturale",
+            "deformazione-strutturale",
+            "co-regolazione"
+          ],
+          "relevance_level": "plausibile",
+          "reason": "La vulnerabilità strutturale del bambino (Asse 1) che le disuguaglianze precoci rendono più esposta: connette la dipendenza originaria con la dimensione storico-strutturale delle condizioni che la rendono più o meno sostenibile."
+        }
+      ],
+      "theme_structure_assessment": {
+        "type": "multi_assiale",
+        "notes": "Asse 6 come dominante (lettura strutturale delle disuguaglianze come mediazioni storiche) e Asse 1 come asse di traduzione (impatto sulle condizioni fondative della soggettività). L'Asse 4 è pertinenza reale ma secondaria. Il rischio principale è la sociologizzazione (Asse 6 come unico asse), ma la connessione con Asse 1 preserva la densità strutturale del modello."
+      },
+      "selection_rationale": "Asse 6 è dominante perché le disuguaglianze precoci sono forme storico-strutturali di organizzazione dell'esperienza che richiedono lettura storica, non riduzione a variabili di rischio individuali. Asse 1 è forte perché le disuguaglianze incidono direttamente sulla qualità della co-regolazione come condizione fondativa. Asse 4 è plausibile per la connessione con il tema delle avversità. Asse 2 da_verificare perché il legame è mediato.",
+      "notes_for_review": "Pilot_suitability bassa (come in STEP 1): più utile come cornice contestuale per altri temi che come micro-matrice autonoma. Il rischio di sociologizzazione è il più alto del corpus. Va verificato se la lettura strutturale delle disuguaglianze produce domande genuine sulle strutture fondative (assi 1-5) o rimane al livello dell'Asse 6."
+    },
+    {
+      "theme_id": "tema_09_gioco_libero",
+      "candidate_axes": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "relevance_level": "forte",
+          "reason": "Il gioco libero è il contesto in cui il campo del desiderabile si esercita senza prescrizioni adulte: il bambino esplora possibilità senza che l'adulto ne definisca il valore o l'obiettivo. È la forma incarnata della soggettivazione del desiderio come orientamento autonomo, distinto dalla motivazione esterna."
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "relevance_level": "forte",
+          "reason": "Il gioco libero include incontri non mediati con l'eccedenza e la perdita: la cosa che non funziona, il gioco che non riesce, il conflitto con un pari non risolto dall'adulto. È un contesto strutturale di incontro con il limite reale senza sistematica mediazione adulta, condizione per la riorganizzazione del campo del possibile."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "relevance_level": "plausibile",
+          "reason": "La progressiva scomparsa del gioco libero è una deformazione strutturale storica prodotta dalla prestazionalizzazione del contesto di sviluppo. Non è scelta individuale ma configurazione del macrosistema contemporaneo che riduce strutturalmente l'accesso del bambino al campo del possibile non prescritto."
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "plausibile",
+          "reason": "Il gioco libero coinvolge corporeità, temporalità non prescritte e strutturazione del campo intenzionale in assenza di obiettivi adulti. La corporeità vissuta e la temporalizzazione incarnata sono direttamente implicate nel gioco non strutturato."
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "relevance_level": "da_verificare",
+          "reason": "Il gioco libero tra pari include momenti di negoziazione normativa spontanea (le regole del gioco negoziate tra bambini). Questa dimensione potrebbe attivare l'Asse 3 in forma nascente, ma il legame è indiretto e dipende dall'età."
+        }
+      ],
+      "candidate_nodes": [
+        {
+          "node_id": "campo-desiderabile",
+          "node_label": "Campo desiderabile",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il gioco libero è il contesto in cui il campo desiderabile si manifesta e si esercita senza prescrizioni: il bambino si muove verso ciò che appare carico di valore nel campo pre-riflessivo, senza che questo valore sia assegnato dall'adulto."
+        },
+        {
+          "node_id": "soggettivazione-del-desiderio",
+          "node_label": "Soggettivazione del desiderio",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il gioco libero come contesto in cui il desiderio diventa 'mio': il bambino torna verso certe attività, insiste su certi gesti, mantiene certi investimenti senza direzione adulta. La continuità vissuta del gioco libero è una delle forme primarie della soggettivazione del desiderio."
+        },
+        {
+          "node_id": "eccedenza",
+          "node_label": "Eccedenza",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il gioco libero include eccedenze sistematiche non mediate: la cosa che non funziona come previsto, il materiale che non si piega all'intenzione, l'altro bambino che non collabora. Queste eccedenze costituiscono l'incontro con il reale in forma non mediata dall'adulto."
+        },
+        {
+          "node_id": "limite-reale",
+          "node_label": "Limite reale",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Il gioco libero è uno dei pochi contesti in cui il bambino incontra il limite reale senza che l'adulto lo medii sistematicamente: il conflitto, la difficoltà, il fallimento del progetto di gioco sono incontri con il reale in forma non ammorbidita."
+        },
+        {
+          "node_id": "prestazionalizzazione-del-valore",
+          "node_label": "Prestazionalizzazione del valore",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La scomparsa del gioco libero è la manifestazione più visibile della prestazionalizzazione del contesto di sviluppo: ogni attività diventa 'per qualcosa', lo spazio non strutturato è visto come spreco. Il nodo descrive la deformazione storica che produce la riduzione del gioco libero."
+        },
+        {
+          "node_id": "condizione-del-desiderio",
+          "node_label": "Condizione del desiderio",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "Il gioco libero è un contesto in cui il limite reale funziona come condizione del desiderio come orientamento: il bambino che incontra l'ostacolo può riorganizzare il campo del possibile. Il nodo dell'Asse 4 descrive esattamente questa funzione strutturale del limite nel gioco."
+        },
+        {
+          "node_id": "corporeità-vissuta",
+          "node_label": "Corporeità vissuta",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "Il gioco libero è primariamente corporeo: il bambino esplora possibilità incarnate di azione nel mondo prima di qualsiasi rappresentazione. La corporeità vissuta come luogo originario di senso è il substrato del gioco libero."
+        }
+      ],
+      "candidate_bridge_concepts": [
+        {
+          "concept_label": "Campo desiderabile",
+          "linked_axes": [
+            "asse_5",
+            "asse_4"
+          ],
+          "linked_nodes": [
+            "campo-desiderabile",
+            "soggettivazione-del-desiderio",
+            "eccedenza",
+            "condizione-del-desiderio"
+          ],
+          "relevance_level": "forte",
+          "reason": "Ponte tra la struttura del desiderio (Asse 5) e l'incontro con il limite reale (Asse 4): nel gioco libero il bambino sperimenta il campo del possibile (Asse 5) attraverso incontri non mediati con l'eccedenza e il limite (Asse 4). I due assi si costituiscono strutturalmente insieme nel gioco libero."
+        },
+        {
+          "concept_label": "Eccedenza",
+          "linked_axes": [
+            "asse_4",
+            "asse_5"
+          ],
+          "linked_nodes": [
+            "eccedenza",
+            "condizione-del-desiderio",
+            "soggettivazione-del-desiderio"
+          ],
+          "relevance_level": "plausibile",
+          "reason": "L'eccedenza come ponte tra Asse 4 (incontro con il reale che decentra) e Asse 5 (riorganizzazione del campo del possibile): nel gioco libero l'eccedenza non travolge ma apre nuove direzioni al desiderio, rendendo possibile la soggettivazione del desiderio come orientamento incarnato."
+        }
+      ],
+      "theme_structure_assessment": {
+        "type": "soglia_tra_assi",
+        "notes": "Il tema è strutturalmente sulla soglia tra Asse 5 e Asse 4: il gioco libero è il contesto in cui la struttura del desiderio come orientamento (Asse 5) si costituisce attraverso l'incontro non mediato con il limite reale (Asse 4). Senza Asse 4 il gioco libero è solo 'libertà positiva'; senza Asse 5 è solo 'esposizione al reale'. L'Asse 6 descrive la deformazione storica che rimuove questa condizione strutturale."
+      },
+      "selection_rationale": "Asse 5 e Asse 4 sono entrambi forti e strutturalmente co-dipendenti: il gioco libero come tema strutturale è comprensibile solo nell'articolazione tra campo del desiderabile (Asse 5) e incontro con il limite reale (Asse 4). Asse 6 è plausibile perché la scomparsa del gioco libero è una deformazione strutturale storica. Asse 1 è plausibile per la dimensione corporea e temporale del gioco.",
+      "notes_for_review": "Alta pilot_suitability (come in STEP 1): direttamente osservabile, permette di distinguere tra contesti educativi con diverse strutture di possibilità. Il rischio principale è la riduzione a 'play-based learning': la distinzione tra gioco libero e gioco guidato va preservata come distinzione strutturale."
+    },
+    {
+      "theme_id": "tema_10_frammentazione_sistemi",
+      "candidate_axes": [
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "reason": "Le istituzioni come dispositivi di esperienza (Asse 6) non solo sostengono ma possono frammentare la continuità relazionale. La configurazione attuale dei sistemi di welfare è una forma storica specifica di organizzazione dell'esperienza del bambino: la frammentazione istituzionale è una deformazione strutturale sistemica."
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "relevance_level": "forte",
+          "reason": "La responsabilità condivisa tra sistemi di cura è una forma istituzionale della normatività: chi si assume la responsabilità del bambino quando nessuna istituzione lo fa interamente? Il tema interroga la struttura istituzionale dell'autorità educativa e della responsabilità come imputazione."
+        },
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "plausibile",
+          "reason": "La continuità relazionale come condizione della co-regolazione richiede che le figure di riferimento del bambino si coordinino: la frammentazione istituzionale interrompe strutturalmente questa continuità, con effetti sulla qualità del campo intenzionale e della co-regolazione."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "relevance_level": "da_verificare",
+          "reason": "La discontinuità delle figure di riferimento prodotta dalla frammentazione istituzionale potrebbe alterare le condizioni dell'interiorizzazione dell'altro come istanza: il bambino che cambia ripetutamente i propri riferimenti significativi trova condizioni diverse per l'istanza interna. Richiede verifica."
+        }
+      ],
+      "candidate_nodes": [
+        {
+          "node_id": "istituzione-come-dispositivo",
+          "node_label": "Istituzione come dispositivo",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "Nodo centrale: i sistemi di cura come istituzioni in senso ampio, configurazioni stabili di pratiche, ruoli e aspettative. La frammentazione istituzionale è esattamente il caso in cui queste configurazioni entrano in conflitto o si contraddicono."
+        },
+        {
+          "node_id": "mediazione-strutturale",
+          "node_label": "Mediazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La frammentazione produce discontinuità nelle mediazioni strutturali che il bambino sperimenta: anziché ricevere mediazioni coerenti che organizzano il campo dell'esperienza, il bambino si trova in campi mediati in modo incoerente o contraddittorio."
+        },
+        {
+          "node_id": "responsabilità-come-imputazione",
+          "node_label": "Responsabilità come imputazione",
+          "source_axis": "asse_3",
+          "source_axis_name": "Normativo–educativo",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La frammentazione produce una diffusione della responsabilità: nessuna istituzione si riconosce come autore del prendersi cura del bambino nel suo insieme. La responsabilità come imputazione è esattamente ciò che la frammentazione strutturale rende impossibile."
+        },
+        {
+          "node_id": "autorità-educativa",
+          "node_label": "Autorità educativa",
+          "source_axis": "asse_3",
+          "source_axis_name": "Normativo–educativo",
+          "relevance_level": "forte",
+          "is_derived": false,
+          "reason": "La frammentazione produce una crisi dell'autorità educativa: nessuna istituzione ha l'asimmetria storico-simbolica sufficiente per 'tenersi' il bambino nel suo insieme. La questione dell'autorità educativa come struttura (non come potere) è il nucleo normativo del tema."
+        },
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "La continuità relazionale come condizione della co-regolazione è interrotta dalla frammentazione istituzionale: quando i riferimenti del bambino cambiano frequentemente o si contraddicono, la co-regolazione perde la base relazionale che la rende possibile."
+        },
+        {
+          "node_id": "deformazione-strutturale",
+          "node_label": "Deformazione strutturale",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "relevance_level": "plausibile",
+          "is_derived": false,
+          "reason": "La frammentazione dei sistemi di cura come deformazione strutturale sistemica che produce discontinuità nell'esperienza del bambino: non problema logistico ma configurazione istituzionale che produce effetti strutturali."
+        }
+      ],
+      "candidate_bridge_concepts": [
+        {
+          "concept_label": "Istituzione come dispositivo",
+          "linked_axes": [
+            "asse_6",
+            "asse_3"
+          ],
+          "linked_nodes": [
+            "istituzione-come-dispositivo",
+            "mediazione-strutturale",
+            "responsabilità-come-imputazione",
+            "autorità-educativa"
+          ],
+          "relevance_level": "forte",
+          "reason": "Ponte tra la dimensione storico-strutturale (Asse 6: le istituzioni come forme stabili di esperienza) e la dimensione normativo-educativa (Asse 3: l'istituzione come portatore di autorità educativa e responsabilità). La frammentazione è simultaneamente un problema di struttura dell'esperienza e di struttura della responsabilità."
+        },
+        {
+          "concept_label": "Mediazione strutturale",
+          "linked_axes": [
+            "asse_6",
+            "asse_1"
+          ],
+          "linked_nodes": [
+            "mediazione-strutturale",
+            "istituzione-come-dispositivo",
+            "co-regolazione"
+          ],
+          "relevance_level": "plausibile",
+          "reason": "Ponte tra la dimensione istituzionale (Asse 6: le istituzioni come mediazioni dell'esperienza) e la dimensione ontologica (Asse 1: le condizioni della co-regolazione continua). La frammentazione istituzionale produce discontinuità nelle mediazioni che rendono possibile la co-regolazione."
+        }
+      ],
+      "theme_structure_assessment": {
+        "type": "soglia_tra_assi",
+        "notes": "Il tema è sulla soglia tra Asse 6 e Asse 3: non è comprensibile solo come problema istituzionale (Asse 6) senza la dimensione della responsabilità educativa e dell'autorità (Asse 3), né come problema normativo senza la dimensione strutturale delle istituzioni come dispositivi di esperienza."
+      },
+      "selection_rationale": "Asse 6 e Asse 3 sono entrambi forti e co-dipendenti: la frammentazione istituzionale è simultaneamente una questione di struttura dell'esperienza mediata dalle istituzioni (Asse 6) e una questione di struttura della responsabilità educativa (Asse 3). Asse 1 è plausibile perché la continuità relazionale è condizione della co-regolazione. Asse 2 è segnalato da_verificare per il possibile effetto sulla qualità dell'interiorizzazione dell'altro.",
+      "notes_for_review": "Pilot_suitability bassa (come in STEP 1): più utile come cornice per interventi sul mesosistema. Il raccordo con le schede di interlocuzione sulla psicologia di comunità e sull'ecologia dello sviluppo va esplicitato. Verificare se la coppia Asse 6/Asse 3 produce domande strutturali sufficientemente distinte da quelle dei temi 8 e 5."
+    }
+  ]
+}

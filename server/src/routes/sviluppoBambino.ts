@@ -21,6 +21,8 @@ import {
   getRiflessioni,
   getInterlocuzioni,
   getInterlocuzioneDisciplina,
+  getProduzioniGuidaPipeline,
+  getProduzioniNuovaRicercaInfo,
 } from '../controllers/sviluppoBambinoController';
 
 const router = Router();
@@ -46,5 +48,7 @@ router.get('/assi/:asseSlug/:chapterSlug', getChapter);
 router.get('/riflessioni',                  getRiflessioni);
 router.get('/interlocuzioni',                        getInterlocuzioni);
 router.get('/interlocuzioni/:disciplinaSlug',        getInterlocuzioneDisciplina);
+router.get('/produzioni/guida-pipeline',             getProduzioniGuidaPipeline);
+router.get('/produzioni/nuova-ricerca-info',         getProduzioniNuovaRicercaInfo);
 
 export default router;

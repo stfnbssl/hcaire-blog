@@ -1,0 +1,109 @@
+{
+  "step": "step_3",
+  "results": [
+    {
+      "theme_id": "tema_01_pointing_precoce",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "role": "asse della struttura corporea, co-regolatoria e intenzionale — il livello in cui il gesto si radica nel corpo e nella relazione prima di diventare segno",
+          "reason": "Il pointing non è pensabile senza Asse 1: è costitutivamente un atto corporeo che si compie nella co-regolazione e apre un campo intenzionale condiviso. Senza questo asse il pointing viene ridotto a indicatore cognitivo e perde la sua radice fenomenologica. Tre nodi confermati appartengono a questo asse (campo-intenzionale, co-regolazione, corporeità-vissuta), a segnalare che la densità strutturale del tema risiede principalmente qui."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "role": "asse della mediazione simbolica e culturale — il livello in cui il gesto corporeo diventa atto semiotico che costituisce il percepito come condiviso e significabile",
+          "reason": "Il pointing non è pensabile senza Asse 6: il tema è esplicitamente centrato sulla 'mediazione del significato', ossia sul passaggio dal percepito al condiviso-significabile. Senza Asse 6 il pointing rimane un gesto corporeo-relazionale senza la sua dimensione semiotica, e il tema perde il suo polo strutturale essenziale. Nodo confermato: mediazione-simbolica, che descrive con precisione la funzione di Asse 6 in questo fenomeno."
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "rejection_reason": "secondario — il pointing è pensabile e strutturalmente leggibile senza interiorizzazione: la condivisione attentiva può restare momentanea senza depositarsi come riferimento interno. Il tema non perde la sua identità strutturale senza Asse 2. L'interiorizzazione è un esito possibile, non una condizione necessaria della configurazione. Un solo nodo candidato (interiorizzazione-dell-altro, da_verificare in STEP 2): soglia insufficiente per la conferma."
+        },
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "rejection_reason": "non necessario — la connessione al campo desiderabile come struttura è speculativa per la fascia 0–3 e non supera nessuno dei tre test per la conferma: il tema è pensabile senza Asse 5, l'intenzionalità affettiva non distingue specificamente il pointing da altri gesti orientati affettivamente nella stessa fascia, e la pertinenza del nodo intenzionalità-affettiva rischia di essere confusa con la semplice risposta percettiva differenziale. Densità strutturale insufficiente per un tema micro in questa fascia."
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "campo-intenzionale",
+          "node_label": "Campo intenzionale",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "TEST 1 — necessario: il tema non è pensabile senza campo intenzionale; il pointing è precisamente l'atto che apre e condivide una struttura intenzionale — senza di essa non vi è pointing, solo movimento. TEST 2 — specifico: distingue il pointing da altri gesti comunicativi (toccare, afferrare, richiamare) che non costituiscono un campo intenzionale condiviso. TEST 3 — non ridondante: funzione distinta da co-regolazione (che descrive il meccanismo relazionale) e da corporeità-vissuta (che descrive la base ontologica): campo-intenzionale descrive la struttura globale che il gesto istituisce."
+        },
+        {
+          "node_id": "co-regolazione",
+          "node_label": "Co-regolazione",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "TEST 1 — necessario: la co-regolazione è la condizione strutturale del pointing, non il suo contesto. Senza la risposta dell'altro il gesto non costituisce condivisione di significato: rimane movimento motorio. TEST 2 — specifico: distingue il pointing come configurazione relazionale dalla produzione di un segnale unidirezionale; è il meccanismo che rende il gesto efficace come atto semiotico. TEST 3 — non ridondante: funzione distinta da campo-intenzionale (struttura aperta) e da corporeità-vissuta (base ontologica): co-regolazione descrive il processo intersoggettivo che trasforma il gesto in configurazione condivisa."
+        },
+        {
+          "node_id": "corporeità-vissuta",
+          "node_label": "Corporeità vissuta",
+          "source_axis": "asse_1",
+          "source_axis_name": "Ontologico–fenomenologico",
+          "reason": "TEST 1 — necessario: la definizione del tema include esplicitamente 'atto corporeo' come dimensione irriducibile; senza corporeità-vissuta il pointing perde la sua ancoratura fenomenologica e rischia di essere letto come atto cognitivo o semiotico puro. Il tema distingue esplicitamente il pointing dal 'gesto motorio' e dall'indicatore cognitivo, il che richiede un nodo che nomini la base corporea in quanto tale. TEST 2 — specifico: distingue il pointing da atti deittici non corporei (es. sguardo isolato, riferimento verbale) e da gesti virtuali o protocollarizzati. TEST 3 — non ridondante rispetto a campo-intenzionale: quest'ultimo descrive la struttura intenzionale che il gesto apre; corporeità-vissuta descrive il piano ontologico da cui il gesto emerge prima di aprire quella struttura."
+        },
+        {
+          "node_id": "mediazione-simbolica",
+          "node_label": "Mediazione simbolica",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "TEST 1 — necessario: il tema è definito esplicitamente come 'mediazione del significato'; senza mediazione-simbolica il polo semiotico del pointing scompare e il tema si riduce a pura interazione corporea. TEST 2 — specifico: distingue il pointing da qualsiasi gesto che non produca il passaggio strutturale dal percepito al condiviso-significabile; è il nodo che differenzia il pointing come fenomeno semiotico dal gesto come semplice comportamento. TEST 3 — non ridondante: unico nodo di Asse 6; nessun altro nodo confermato presidia la dimensione semiotica e culturale."
+        }
+      ],
+      "secondary_nodes": [],
+      "rejected_nodes": [
+        {
+          "node_id": "interiorizzazione-dell-altro",
+          "node_label": "Interiorizzazione dell'altro",
+          "source_axis": "asse_2",
+          "rejection_reason": "TEST 1 fallisce — il tema è pensabile senza interiorizzazione: il pointing può condividere senza depositare. L'asse di origine (asse_2) non è confermato. Eliminato per coerenza con la selezione degli assi."
+        },
+        {
+          "node_id": "intenzionalità-affettiva",
+          "node_label": "Intenzionalità affettiva",
+          "source_axis": "asse_5",
+          "rejection_reason": "TEST 1 fallisce — il tema è pensabile senza la struttura del desiderio nella fascia 0–3; TEST 2 fallisce — l'intenzionalità affettiva non distingue il pointing da altri gesti orientati affettivamente in questa fascia. L'asse di origine (asse_5) non è confermato. Eliminato per coerenza con la selezione degli assi."
+        }
+      ],
+      "confirmed_bridge_concepts": [
+        {
+          "concept_label": "Il gesto corporeo come atto semiotico co-prodotto",
+          "linked_axes": ["asse_1", "asse_6"],
+          "linked_nodes": ["campo-intenzionale", "co-regolazione", "mediazione-simbolica"],
+          "reason": "TEST 1 — collega i due assi confermati. TEST 2 — aggiunge valore rispetto ai soli nodi: nessun nodo preso singolarmente descrive il passaggio trasformativo; il ponte nomina il processo in cui il gesto corporeo co-regolato (Asse 1 — campo intenzionale aperto nella relazione) diventa atto semiotico (Asse 6 — mediazione simbolica che trasforma il percepito in condiviso e significabile) solo attraverso la risposta dell'altro. La direzione della trasformazione — dal corporeo-relazionale al semiotico-culturale — è la struttura dinamica specifica del pointing e non è espressa da nessun singolo nodo. TEST 3 — unico ponte confermato, nessuna ridondanza interna."
+        }
+      ],
+      "rejected_bridge_concepts": [
+        {
+          "concept_label": "Dalla co-significazione all'interiorizzazione",
+          "rejection_reason": "TEST 1 fallisce — collega asse_6 e asse_2, ma asse_2 non è confermato. Il ponte non può essere mantenuto senza il suo asse di arrivo strutturalmente verificato."
+        },
+        {
+          "concept_label": "Salienza affettiva come orientamento semiotico emergente",
+          "rejection_reason": "TEST 1 fallisce — collega asse_5 e asse_6, ma asse_5 non è confermato. Il ponte non può essere mantenuto senza il suo asse di partenza strutturalmente verificato."
+        }
+      ],
+      "structural_configuration": {
+        "type": "soglia_tra_assi",
+        "description": "Il pointing si colloca alla soglia tra Asse 1 e Asse 6. Asse 1 → struttura corporea, co-regolatoria e intenzionale: il gesto come atto radicato nel corpo (corporeità-vissuta), che apre un campo di orientamento condiviso (campo-intenzionale) attraverso la risposta dell'altro (co-regolazione). Asse 6 → struttura semiotica e culturale: il passaggio in cui il gesto diventa mediazione simbolica che trasforma il percepito in condiviso e significabile (mediazione-simbolica). Il pointing è il punto esatto di questa soglia: è l'atto in cui la corporeità intenzionale (Asse 1) è sul limite della sua trasformazione in atto semiotico (Asse 6). La configurazione è intenzionalmente meno densa di fenomeni strutturalmente più complessi (es. lettura dialogica): il pointing è proto-triadico — apre il campo condiviso senza ancora stabilizzarlo. Densità ridotta non come difetto ma come informazione strutturale."
+      },
+      "synthetic_formulation": "Proto-triadicità: il gesto corporeo co-regolato alla soglia della sua trasformazione in atto semiotico — apertura del campo condiviso prima della sua stabilizzazione triadica.",
+      "selection_rationale": "Asse 1 e Asse 6 sono stati confermati perché ciascuno è irriducibile per il tema: senza Asse 1 il pointing diventa indicatore cognitivo; senza Asse 6 il pointing rimane gesto corporeo-relazionale senza la sua funzione semiotica. I due assi non si sommano ma si articolano al confine: la struttura soglia_tra_assi esprime questa relazione. Asse 2 è rigettato perché l'interiorizzazione è un esito possibile ma non strutturalmente necessario: il tema è leggibile senza di esso. Asse 5 è rigettato perché la connessione al campo desiderabile è speculativa per la fascia 0–3 e non supera i test di necessità e specificità. I nodi confermati formano un arco strutturale coerente: corporeità-vissuta → campo-intenzionale → co-regolazione → mediazione-simbolica, che descrive il passaggio dal piano ontologico (il corpo come luogo di senso) al piano semiotico (il gesto come mediazione del significato condiviso). Il ponte confermato nomina esattamente questo passaggio come trasformazione, non come co-presenza.",
+      "critical_notes": [
+        "La distinzione tra pointing del bambino (ricerca di condivisione di qualcosa già saliente) e pointing dell'adulto (selezione di ciò che è degno di attenzione) rimane aperta: per questo STEP la configurazione è trattata come unitaria. In STEP 4 verificare se la micro-matrice regge per entrambe le direzioni o richiede biforcazione.",
+        "Asse 2 (interiorizzazione) è rigettato come non strutturalmente necessario in questa configurazione, ma non esclude che in un tema adiacente (es. lettura dialogica come triadicità stabilizzata) Asse 2 rientri come asse confermato. La gerarchia pointing → lettura dialogica = proto-triadicità → triadicità va mantenuta come principio interpretativo per STEP 4.",
+        "Corporeità-vissuta è confermato come terzo nodo di Asse 1: la concentrazione di 3 nodi su Asse 1 e 1 su Asse 6 è coerente con la struttura soglia_tra_assi ma richiede attenzione in STEP 4 affinché mediazione-simbolica non risulti sottorappresentata nella micro-matrice.",
+        "Il ponte confermato è uno solo: densità corretta per un tema micro con 2 assi e 4 nodi. Non aggiungere ponti per compensare — la configurazione meno densa è strutturalmente informativa."
+      ]
+    }
+  ]
+}

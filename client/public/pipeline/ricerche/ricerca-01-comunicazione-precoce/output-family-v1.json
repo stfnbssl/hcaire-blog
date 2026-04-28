@@ -1,0 +1,982 @@
+{
+  "step": "step_5",
+  "results": [
+    {
+      "theme_id": "tema_01_technoference",
+      "output_families": [
+        {
+          "domain": "clinico",
+          "output_type": "lettura configurazionale della qualità della co-presenza in contesti di osservazione clinica della diade",
+          "description": "La configurazione permette di leggere la qualità della co-presenza non come variabile binaria (presente/assente) ma come struttura che può essere fisicamente disponibile e strutturalmente deformata. In contesti di osservazione clinica, questo apre la domanda su come valutare la deformazione attentiva senza ridurla a indicatori comportamentali dell'uso del dispositivo.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_6"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "campo-intenzionale",
+              "tecnica-come-forma-storica"
+            ],
+            "tensions": [
+              "presenza fisica vs. presenza strutturale"
+            ],
+            "node_interpretation": "co-regolazione come qualità strutturale della co-presenza diadica; campo-intenzionale come dimensione attentiva del caregiver orientata verso il bambino; tecnica-come-forma-storica come configurazione che organizza l'attenzione"
+          },
+          "value_added": "Rende distinguibile clinicamente la presenza fisica dalla presenza strutturale: due condizioni che a un'osservazione non strutturata appaiono identiche ma producono effetti diversi sul campo co-regolativo del bambino. Questa distinzione non è accessibile senza la configurazione.",
+          "reduction_risk": "Scivolare verso la valutazione del comportamento d'uso del dispositivo durante la visita o l'osservazione — perdendo la dimensione strutturale della deformazione attentiva, che non si riduce al numero di volte che il caregiver guarda il telefono."
+        },
+        {
+          "domain": "educativo (nido e servizi 0-3)",
+          "output_type": "orientamento alla qualità strutturale del campo attentivo nei setting educativi 0-3",
+          "description": "La configurazione permette di interrogare il setting educativo non solo come spazio organizzato di cura ma come campo attentivo strutturato: quali condizioni del contesto (organizzazione del lavoro, presenza dei dispositivi, densità delle richieste) organizzano strutturalmente l'attenzione disponibile per il bambino, indipendentemente dall'intenzione del singolo educatore.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_6"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "tecnica-come-forma-storica"
+            ],
+            "tensions": [
+              "continuità relazionale vs. discontinuità attentiva"
+            ],
+            "node_interpretation": "co-regolazione come disponibilità attentiva strutturale del caregiver nel setting educativo; tecnica-come-forma-storica come configurazione del contesto lavorativo che organizza l'attenzione degli educatori"
+          },
+          "value_added": "Sposta l'interrogazione dall'educatore individuale alla struttura del setting come campo attentivo: permette di leggere la discontinuità attentiva come proprietà del contesto organizzativo, non come carenza del singolo professionista.",
+          "reduction_risk": "Trasformarsi in regole sull'uso dei dispositivi per gli educatori — perdendo la dimensione strutturale dell'organizzazione del campo attentivo a favore di norme comportamentali individuali."
+        },
+        {
+          "domain": "formazione dei professionisti",
+          "output_type": "interrogazione strutturale sulla propria struttura attentiva in contesti ad alta sollecitazione tecnologica",
+          "description": "La configurazione permette di collocare la questione della consapevolezza attentiva dei professionisti tra causalità storica e responsabilità individuale: non colpa del professionista distratto, ma riconoscimento della propria deformazione strutturale come effetto di una forma storica di organizzazione dell'attenzione che precede il singolo e lo condiziona.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_6"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "campo-intenzionale",
+              "tecnica-come-forma-storica"
+            ],
+            "tensions": [
+              "causalità storica vs. responsabilità individuale"
+            ],
+            "node_interpretation": "co-regolazione come struttura attentiva del professionista; campo-intenzionale come qualità della presenza orientata; tecnica-come-forma-storica come struttura storica che precede e condiziona il singolo"
+          },
+          "value_added": "Rende praticabile una formazione che non colpevolizza il professionista né lo deresponsabilizza: la tensione strutturale tra causalità storica e responsabilità individuale diventa il campo in cui il lavoro formativo si colloca.",
+          "reduction_risk": "Ridursi a sensibilizzazione sul rischio della distrazione tecnologica — perdendo la tensione strutturale che rende la formazione non moralistica ma strutturalmente fondata."
+        },
+        {
+          "domain": "politiche per l'infanzia",
+          "output_type": "analisi della struttura delle condizioni organizzative e tecnologiche che producono deformazione attentiva nei contesti di cura",
+          "description": "La configurazione permette di interrogare le politiche non sui contenuti degli schermi ma sulla struttura delle condizioni di lavoro e di vita che producono sistematicamente deformazione attentiva nei caregivers: organizzazione del lavoro di cura, accessibilità tecnologica, frammentazione delle richieste attentive.",
+          "structural_basis": {
+            "axes": [
+              "asse_6"
+            ],
+            "nodes": [
+              "tecnica-come-forma-storica",
+              "deformazione-strutturale"
+            ],
+            "tensions": [
+              "causalità storica vs. responsabilità individuale"
+            ],
+            "node_interpretation": "tecnica-come-forma-storica come organizzazione strutturale dell'attenzione nei contesti di cura; deformazione-strutturale come esito sistemico sul campo co-regolativo"
+          },
+          "value_added": "Sposta il livello di intervento dal dispositivo (regolare gli schermi) alla struttura che organizza l'attenzione disponibile per la cura: un'interrogazione che le politiche tradizionali centrate sui contenuti non possono formulare.",
+          "reduction_risk": "Ridursi a campagne di sensibilizzazione o divieti normativi sull'uso degli schermi — perdendo la dimensione strutturale della causalità storica a favore di interventi comportamentali."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le quattro famiglie restano fedeli alla configurazione evitando di trasformare la deformazione strutturale in prescrizione comportamentale. Il rischio principale — il comportamentismo attentivo — è esplicitato in ogni reduction_risk come la forma più probabile di scivolamento.",
+        "limitations": "La configurazione non copre la prospettiva del bambino come soggetto che si adatta strutturalmente alla deformazione attentiva del caregiver — questo aspetto è strutturalmente implicato ma richiederebbe l'integrazione con tema_03 (funzione riflessiva) o tema_04 (co-regolazione ritmica).",
+        "next_step_orientation": "Le famiglie clinica ed educativa sono le più mature per lo sviluppo di strumenti di osservazione e valutazione. La famiglia formativa richiede prima un lavoro sulla tensione causalità/responsabilità come frame formativo, prima di costruire strumenti concreti."
+      }
+    },
+    {
+      "theme_id": "tema_02_lettura_dialogica",
+      "output_families": [
+        {
+          "domain": "clinico",
+          "output_type": "lettura configurazionale della struttura triadica in contesti di osservazione della relazione caregiver-bambino",
+          "description": "La configurazione permette di usare la lettura condivisa come campo osservativo strutturato: non per valutare la tecnica del lettore ma per leggere la qualità della struttura triadica — come il caregiver si orienta verso il mediatore insieme al bambino, se il libro diventa un terzo condiviso o resta un oggetto in mano al caregiver. Il campo triadico è osservabile e ha caratteristiche strutturali distinguibili da un campo diadico con un oggetto.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_2"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "interiorizzazione-dell-altro",
+              "temporalità-vissuta"
+            ],
+            "tensions": [
+              "mediazione simbolica vs. presenza diretta"
+            ],
+            "node_interpretation": "co-regolazione come base incarnata della lettura condivisa; interiorizzazione-dell-altro come riconoscimento del bambino come soggetto orientato verso un terzo condiviso; temporalità-vissuta come struttura ritmica condivisa nell'atto della lettura"
+          },
+          "value_added": "Permette di leggere la qualità relazionale attraverso il campo triadico: non come si guardano negli occhi (campo diadico diretto) ma come si orientano insieme verso un terzo. Questa prospettiva cattura dimensioni della relazione che l'osservazione faccia a faccia non vede.",
+          "reduction_risk": "Ridursi a checklist di comportamenti osservabili durante la lettura (quante domande fa il caregiver, quanto guarda il bambino) — perdendo la dimensione strutturale della qualità del campo triadico a favore di indicatori comportamentali frequenziali."
+        },
+        {
+          "domain": "educativo (nido e servizi 0-6)",
+          "output_type": "orientamento alla qualità delle condizioni strutturali che rendono possibile il campo triadico nei setting educativi",
+          "description": "La configurazione permette di interrogare il setting non su come si legge ai bambini ma su quali condizioni strutturali (spazio, tempo, qualità della presenza del caregiver, tipo di testo) rendono possibile la costruzione di un campo triadico: non la lettura come attività da programmare ma la struttura come condizione da sostenere.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_6"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "mediazione-simbolica",
+              "temporalità-vissuta"
+            ],
+            "tensions": [
+              "trasmissione culturale vs. costruzione condivisa"
+            ],
+            "node_interpretation": "co-regolazione come qualità della presenza del caregiver nel setting educativo; mediazione-simbolica come funzione strutturale del libro nel campo triadico; temporalità-vissuta come struttura temporale delle condizioni del setting"
+          },
+          "value_added": "Sposta l'interrogazione dalla tecnica del lettore alle condizioni che rendono il campo triadico possibile o impossibile: permette di leggere il setting come struttura che facilita o ostacola la costruzione del campo, indipendentemente dalla competenza del singolo educatore.",
+          "reduction_risk": "Trasformarsi in tecniche di lettura ad alta voce o di animazione del libro — perdendo la dimensione strutturale delle condizioni che rendono possibile il campo triadico a favore di competenze esecutive del lettore."
+        },
+        {
+          "domain": "mediatori culturali e biblioteche per l'infanzia",
+          "output_type": "analisi della struttura dei mediatori simbolici in funzione della loro capacità di costruire campo triadico",
+          "description": "La configurazione permette di interrogare non solo il contenuto dei libri per l'infanzia ma la struttura del mediatore: quali caratteristiche formali (apertura narrativa, possibilità di deviazione, struttura delle immagini, forma del dialogo) favoriscono l'apertura relazionale invece della chiusura testuale; quali testi favoriscono la costruzione condivisa di significato invece della trasmissione unidirezionale.",
+          "structural_basis": {
+            "axes": [
+              "asse_6",
+              "asse_2"
+            ],
+            "nodes": [
+              "mediazione-simbolica",
+              "interiorizzazione-dell-altro"
+            ],
+            "tensions": [
+              "chiusura del testo vs. apertura della relazione"
+            ],
+            "node_interpretation": "mediazione-simbolica come struttura del mediatore culturale (libro come artefatto storico-culturale); interiorizzazione-dell-altro come tipo di riconoscimento mediato che la struttura del testo apre o chiude"
+          },
+          "value_added": "Permette di interrogare il mediatore come struttura che produce certi tipi di campo relazionale: non solo quali libri sono belli o appropriati per età ma quali libri hanno una struttura che favorisce il campo triadico — un criterio strutturale che le raccomandazioni bibliografiche tradizionali non usano.",
+          "reduction_risk": "Ridursi a selezione di libri consigliati per età o per tema — perdendo la dimensione strutturale del mediatore a favore di criteri contenutistici o di sviluppo normativo."
+        },
+        {
+          "domain": "ricerca sullo sviluppo del linguaggio e della mente",
+          "output_type": "interrogazione strutturale sul rapporto tra qualità del campo triadico e processi di sviluppo cognitivo e affettivo",
+          "description": "La configurazione fornisce un modello strutturale per interrogare come la qualità del campo triadico (non la quantità di lettura condivisa) si relaziona allo sviluppo della teoria della mente, della capacità narrativa, del linguaggio: non solo correlazioni comportamentali tra frequenza di lettura e outcome, ma struttura del campo in cui i processi di sviluppo si producono.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_2",
+              "asse_6"
+            ],
+            "nodes": [
+              "interiorizzazione-dell-altro",
+              "temporalità-vissuta",
+              "mediazione-simbolica"
+            ],
+            "tensions": [
+              "trasmissione culturale vs. costruzione condivisa"
+            ],
+            "node_interpretation": "interiorizzazione-dell-altro come variabile strutturale del campo triadico misurata dalla ricerca; temporalità-vissuta come struttura dell'orientamento condiviso verso il testo; mediazione-simbolica come qualità del mediatore che organizza il campo"
+          },
+          "value_added": "Introduce la qualità strutturale del campo triadico come variabile di ricerca: non tempo di lettura ma grado in cui la lettura costruisce un campo triadico con le caratteristiche strutturali descritte dalla configurazione — una variabile che i modelli dose-risposta della ricerca non catturano.",
+          "reduction_risk": "Ridursi a misurazione della quantità di lettura condivisa o del vocabolario esposto — perdendo la dimensione strutturale del campo triadico a favore di variabili quantitative facilmente misurabili."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le quattro famiglie mantengono la specificità triadica della configurazione — nessuna scivola in prescrizioni su come leggere ai bambini. La distinzione tra campo diadico con un oggetto e campo triadico con funzione strutturale specifica è il riferimento costante.",
+        "limitations": "Non viene sviluppato un dominio inter-settoriale che connette il contesto educativo con quello dei mediatori culturali — un gap rilevante dato che in molti contesti (biblioteche, librerie per l'infanzia) la lettura dialogica si produce fuori dal setting familiare o scolastico.",
+        "next_step_orientation": "La famiglia educativa (condizioni strutturali del setting) e quella dei mediatori culturali (struttura del mediatore) sono le più pronte per strumenti. La famiglia clinica è più innovativa ma richiede un lavoro preliminare sulla distinzione osservativa tra campo diadico e triadico."
+      }
+    },
+    {
+      "theme_id": "tema_03_funzione_riflessiva",
+      "output_families": [
+        {
+          "domain": "clinico",
+          "output_type": "lettura configurazionale della funzione riflessiva come capacità situata dipendente dalla tenuta esperienziale",
+          "description": "La configurazione permette di interrogare la valutazione della funzione riflessiva non come misurazione di un tratto cognitivo stabile ma come lettura di una capacità situata: la stessa persona può esercitare o non esercitare la funzione riflessiva in funzione della qualità della co-regolazione esperienziale disponibile nel momento della valutazione. Questo introduce la distinzione tra funzione riflessiva come disposizione e funzione riflessiva come processo.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_2"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "interiorizzazione-dell-altro"
+            ],
+            "tensions": [
+              "struttura del riconoscimento vs. processo incarnato"
+            ],
+            "node_interpretation": "co-regolazione come substrato esperienziale incarnato attraverso cui la funzione riflessiva si esercita; interiorizzazione-dell-altro come processo di riconoscimento dell'altro come soggetto distinto con stati mentali propri"
+          },
+          "value_added": "Rende distinguibile clinicamente la funzione riflessiva come tratto (stabile, misurabile con scala) dalla funzione riflessiva come processo (situato, dipendente dalla tenuta esperienziale nel momento). Questa distinzione ha implicazioni dirette per la prognosi e il tipo di intervento.",
+          "reduction_risk": "Ridursi all'applicazione di una scala di mentalizzazione — perdendo la dimensione incarnata e situata della funzione riflessiva a favore di un punteggio che cattura la disposizione cognitiva ma non la disponibilità nel momento della cura."
+        },
+        {
+          "domain": "formazione dei professionisti della prima infanzia",
+          "output_type": "orientamento alla qualità della tenuta esperienziale come condizione strutturale della funzione riflessiva nei percorsi formativi",
+          "description": "La configurazione permette di costruire percorsi formativi che non si limitano a insegnare a riconoscere gli stati mentali del bambino ma si interrogano su quali condizioni esperienziali rendono praticabile la funzione riflessiva: la tenuta sotto stress, la qualità della co-regolazione con il collega e con il supervisore, le condizioni di lavoro che sostengono o compromettono la disponibilità corporea.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_2"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "interiorizzazione-dell-altro"
+            ],
+            "tensions": [
+              "riconoscimento vs. tenuta"
+            ],
+            "node_interpretation": "co-regolazione come tenuta esperienziale incarnata che la formazione deve sostenere; interiorizzazione-dell-altro come capacità che la tenuta rende praticabile nei contesti di cura reali"
+          },
+          "value_added": "Sposta l'oggetto della formazione: non solo acquisire competenze sulla mentalizzazione ma sviluppare la tenuta esperienziale che la rende praticabile nei contesti di lavoro reali. Questo è un cambiamento strutturale della logica formativa, non solo un aggiustamento dei contenuti.",
+          "reduction_risk": "Ridursi a training sulla mentalizzazione — insegnare tecniche per riconoscere gli stati mentali del bambino senza lavorare sulla tenuta esperienziale che le rende praticabili sotto stress."
+        },
+        {
+          "domain": "supervisione clinica ed educativa",
+          "output_type": "analisi della struttura della supervisione come campo di sostegno alla tenuta esperienziale del professionista",
+          "description": "La configurazione permette di interrogare la supervisione non solo come spazio di riflessione sui casi ma come campo che sostiene la tenuta esperienziale del professionista — la condizione strutturale che rende possibile la funzione riflessiva nel lavoro. Questo orienta il design della supervisione verso la qualità del campo co-regolativo che essa stessa produce, non solo verso i contenuti discussi.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_2"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "interiorizzazione-dell-altro",
+              "sopravvivenza-dell-oggetto"
+            ],
+            "tensions": [
+              "sopravvivenza vs. fusione"
+            ],
+            "node_interpretation": "co-regolazione come campo che la supervisione riproduce per sostenere la tenuta del professionista; interiorizzazione-dell-altro come processo che il professionista deve poter esercitare con il bambino; sopravvivenza-dell-oggetto come capacità del supervisore di restare distinto senza dissolversi nell'identificazione"
+          },
+          "value_added": "Introduce la supervisione come campo co-regolativo che riproduce le condizioni strutturali necessarie alla funzione riflessiva: non solo spazio di pensiero ma campo in cui il professionista sperimenta la tenuta e il riconoscimento che deve poi rendere disponibile al bambino.",
+          "reduction_risk": "Ridursi a riflessione tecnica sui casi difficili — perdendo la dimensione del sostegno alla tenuta esperienziale del professionista a favore di un formato di supervisione centrato esclusivamente sull'analisi del caso."
+        },
+        {
+          "domain": "ricerca sullo sviluppo",
+          "output_type": "interrogazione strutturale sui limiti degli strumenti di misurazione della funzione riflessiva come processo situato",
+          "description": "La configurazione fornisce un frame per interrogare i limiti metodologici degli strumenti esistenti di misurazione della mentalizzazione: progettati per misurare una capacità cognitiva stabile, non catturano la variabilità situazionale che dipende dalla qualità della co-regolazione esperienziale nel momento. Questo apre domande sul design di strumenti che misurino la funzione riflessiva come processo, non come tratto.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_2"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "interiorizzazione-dell-altro"
+            ],
+            "tensions": [
+              "struttura del riconoscimento vs. processo incarnato"
+            ],
+            "node_interpretation": "co-regolazione come dimensione situata e incarnata che gli strumenti di misurazione del tratto non catturano; interiorizzazione-dell-altro come processo che varia in funzione della qualità co-regolativa nel momento"
+          },
+          "value_added": "Introduce una critica strutturale agli strumenti di ricerca esistenti: non solo validazione di nuovi strumenti ma interrogazione sulla coerenza tra il costrutto teorico (processo situato) e gli strumenti usati per misurarlo (tratto stabile). Una critica che la letteratura raramente formula in modo esplicito.",
+          "reduction_risk": "Ridursi alla proposta di nuovi strumenti di misura senza interrogare strutturalmente il costrutto sottostante — perdendo la critica fondamentale alla logica del tratto a favore di un aggiustamento metodologico."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le quattro famiglie mantengono la distinzione strutturale tra funzione riflessiva come capacità cognitiva e come processo incarnato situato, che è la specificità di questa configurazione rispetto alla letteratura standard sulla mentalizzazione.",
+        "limitations": "Non viene sviluppato il dominio genitoriale — come la funzione riflessiva dei genitori (non solo dei professionisti) è sostenuta o compromessa nelle condizioni ordinarie della cura. Questo aspetto è strutturalmente presente nella configurazione ma non è stato tradotto in output family.",
+        "next_step_orientation": "La famiglia clinica e quella della supervisione sono le più mature per strumenti; la famiglia formativa richiede prima un lavoro sulla ridefinizione dell'oggetto della formazione (dalla mentalizzazione alla tenuta esperienziale); la famiglia ricerca è la più innovativa ma richiede un investimento metodologico preliminare."
+      }
+    },
+    {
+      "theme_id": "tema_04_coregolazione_ritmo_biologico",
+      "output_families": [
+        {
+          "domain": "clinico neonatale e perinatale",
+          "output_type": "lettura configurazionale della qualità del campo co-regolativo ritmico nelle prime settimane di vita",
+          "description": "La configurazione permette di interrogare le funzioni biologiche del neonato (sonno, alimentazione, veglia) non come processi individuali da regolare ma come eventi che accadono in un campo diadico con caratteristiche strutturali proprie: qualità della co-presenza, temporalità condivisa, capacità del caregiver di partecipare al ritmo senza imporlo. Questo orienta l'interrogazione clinica dal bambino al campo.",
+          "structural_basis": {
+            "axes": [
+              "asse_1"
+            ],
+            "nodes": [
+              "corporeità-vissuta",
+              "co-regolazione",
+              "temporalità-vissuta"
+            ],
+            "tensions": [
+              "ritmo biologico vs. ritmo relazionale"
+            ],
+            "node_interpretation": "corporeità-vissuta come sede dei ritmi biologici primari (sonno, alimentazione, veglia); co-regolazione come struttura diadica in cui il ritmo biologico si organizza; temporalità-vissuta come campo temporale condiviso in cui il ritmo prende forma"
+          },
+          "value_added": "Rende distinguibile l'intervento sulla fisiologia del ritmo biologico (agire sul bambino) dall'intervento sul campo co-regolativo diadico (agire sulla struttura della relazione): due interventi con logiche diverse, spesso confusi nella pratica clinica perinatale.",
+          "reduction_risk": "Ridursi a protocollo di regolazione del sonno o dell'alimentazione — perdendo la dimensione diadica del campo ritmico a favore di tecniche di gestione del comportamento del neonato."
+        },
+        {
+          "domain": "educativo (nido fascia 0-1)",
+          "output_type": "orientamento alla qualità strutturale delle routine di cura come campo co-regolativo ritmico",
+          "description": "La configurazione permette di leggere le routine di cura al nido (cambio, pasto, sonno, transizioni) non come sequenze di azioni da eseguire correttamente ma come strutture temporali che modellano il campo esperienziale del bambino: la loro qualità dipende non solo dall'efficienza esecutiva ma dalla struttura del campo co-regolativo che producono.",
+          "structural_basis": {
+            "axes": [
+              "asse_1"
+            ],
+            "nodes": [
+              "corporeità-vissuta",
+              "co-regolazione",
+              "temporalità-vissuta",
+              "regolazione-ontologica"
+            ],
+            "tensions": [
+              "sincronia vs. dissonanza ritmica"
+            ],
+            "node_interpretation": "corporeità-vissuta come dimensione incarnata delle routine di cura; co-regolazione come qualità del campo che la routine produce; temporalità-vissuta come struttura temporale della routine; regolazione-ontologica come condizione strutturale dell'esperienza che la routine sostiene o compromette"
+          },
+          "value_added": "Sposta l'interrogazione sulla qualità delle routine dal piano esecutivo (quanto tempo impiega, se il bambino mangia tutto) al piano strutturale del campo co-regolativo prodotto: permette di leggere la routine come campo esperienziale, non come compito da ottimizzare.",
+          "reduction_risk": "Ridursi a ottimizzazione delle routine (organizzare meglio i tempi, ridurre le attese) — perdendo la dimensione del campo co-regolativo ritmico a favore di criteri di efficienza gestionale."
+        },
+        {
+          "domain": "formazione di ostetriche, neonatologi e professionisti del puerperio",
+          "output_type": "interrogazione strutturale sulla distinzione tra supporto alla funzione biologica e sostegno al campo diadico nei programmi di formazione professionale",
+          "description": "La configurazione permette di costruire percorsi formativi che distinguono due livelli di intervento professionale: il supporto alle funzioni biologiche del neonato (competenza tecnica) e il sostegno al campo diadico in cui queste funzioni si organizzano (competenza strutturale). I due livelli richiedono sensibilità diverse e producono effetti diversi.",
+          "structural_basis": {
+            "axes": [
+              "asse_1"
+            ],
+            "nodes": [
+              "corporeità-vissuta",
+              "temporalità-vissuta"
+            ],
+            "tensions": [
+              "autonomia nascente vs. dipendenza strutturale"
+            ],
+            "node_interpretation": "corporeità-vissuta come dimensione biologica e fenomenologica che la formazione tecnica tradizionale tratta separatamente; temporalità-vissuta come struttura diadica condivisa che la competenza strutturale deve riconoscere"
+          },
+          "value_added": "Introduce nei programmi di formazione la distinzione strutturale tra il bambino come organismo biologico e il bambino come soggetto situato in un campo diadico: una distinzione che la formazione tecnica tradizionale non ha e che orienta verso una competenza professionale più integrata.",
+          "reduction_risk": "Ridursi a trasmissione di informazioni sulla fisiologia del neonato — perdendo la dimensione fenomenologica e diadica che è specifica di questa configurazione."
+        },
+        {
+          "domain": "clinico-educativo (transizione casa-nido)",
+          "output_type": "analisi della struttura del campo ritmico nella transizione tra contesti di cura nei primi mesi di vita",
+          "description": "La configurazione permette di interrogare la transizione casa-nido nei primi mesi come un evento che modifica strutturalmente il campo co-regolativo ritmico del bambino: non solo un cambiamento di routine o di persone di riferimento, ma una discontinuità nel campo temporale e ritmico in cui il bambino si trova. Questo orienta l'interrogazione sulla qualità della transizione al livello del campo, non delle azioni degli adulti.",
+          "structural_basis": {
+            "axes": [
+              "asse_1"
+            ],
+            "nodes": [
+              "corporeità-vissuta",
+              "co-regolazione",
+              "temporalità-vissuta"
+            ],
+            "tensions": [
+              "ritmo biologico vs. ritmo relazionale",
+              "autonomia nascente vs. dipendenza strutturale"
+            ],
+            "node_interpretation": "corporeità-vissuta come sede del campo ritmico che la transizione interrompe; co-regolazione come campo diadico che cambia strutturalmente nel passaggio tra contesti; temporalità-vissuta come struttura temporale del bambino che deve riorganizzarsi nella transizione"
+          },
+          "value_added": "Permette di interrogare la transizione come evento strutturale che tocca il campo co-regolativo ritmico in un momento in cui questo campo non è ancora consolidato: introduce una prospettiva che né il setting clinico né quello educativo, da soli, possono formulare.",
+          "reduction_risk": "Ridursi a consigli per rendere la transizione meno difficile (più gradualità, più tempo di ambientamento) — perdendo la dimensione strutturale del campo ritmico come variabile della transizione."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le quattro famiglie restano coerentemente all'interno dell'Asse 1, in accordo con la configurazione mono-assiale del tema. Non vengono introdotti livelli di analisi che appartengono ad assi non confermati, pur essendo chiaramente rilevanti nella realtà (Asse 6: pratiche culturali del sonno; Asse 3: norme sul puerperio).",
+        "limitations": "La configurazione mono-assiale limita strutturalmente la gamma degli output: non è possibile interrogare le dimensioni culturali o normative del ritmo biologico senza uscire dalla configurazione confermata. Questo è un limite strutturale del tema, non della famiglia di output.",
+        "next_step_orientation": "La famiglia educativa (nido 0-1) è la più matura per strumenti pratici di osservazione e progettazione delle routine. La famiglia clinica perinatale è pronta per strumenti di valutazione. La famiglia inter-dominio (transizione casa-nido) è la più innovativa ma richiede un lavoro trasversale con tema_08 (disuguaglianze) per catturarne le implicazioni strutturali."
+      }
+    },
+    {
+      "theme_id": "tema_05_salute_mentale_perinatale",
+      "output_families": [
+        {
+          "domain": "clinico",
+          "output_type": "lettura configurazionale della crisi perinatale come evento che deforma simultaneamente co-regolazione e riconoscimento",
+          "description": "La configurazione permette di leggere la crisi di salute mentale perinatale non come diagnosi psichiatrica individuale ma come evento che compromette due livelli strutturali distinti e con diversa dinamica: la disponibilità co-regolativa incarnata (Asse 1) e la struttura del riconoscimento del bambino come soggetto distinto (Asse 2). La distinzione tra i due livelli ha implicazioni dirette per la valutazione e l'intervento.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_2"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "vulnerabilità-strutturale",
+              "interiorizzazione-dell-altro"
+            ],
+            "tensions": [
+              "presenza fisica vs. disponibilità strutturale"
+            ],
+            "node_interpretation": "co-regolazione come livello in cui la disponibilità affettiva si manifesta nel campo diadico; vulnerabilità-strutturale come deformazione della tenuta esperienziale prodotta dalla crisi perinatale; interiorizzazione-dell-altro come processo di riconoscimento del bambino come soggetto distinto che la crisi compromette"
+          },
+          "value_added": "Rende distinguibili clinicamente due forme di compromissione che le categorie diagnostiche tradizionali non separano: la compromissione della tenuta esperienziale (che altera la qualità della co-presenza) e la compromissione della struttura del riconoscimento (che altera la capacità di attribuire intenzionalità al bambino). I due livelli richiedono interventi diversi.",
+          "reduction_risk": "Ridursi a valutazione della qualità dell'attaccamento madre-bambino — perdendo la distinzione strutturale tra tenuta esperienziale e struttura del riconoscimento, che nella letteratura sull'attaccamento tendono a essere trattate come un'unica dimensione."
+        },
+        {
+          "domain": "consultori e servizi di salute mentale perinatale",
+          "output_type": "orientamento alla qualità degli interventi come azioni simultanee sulla vulnerabilità del caregiver e sulla disponibilità al campo diadico",
+          "description": "La configurazione permette di interrogare gli interventi dei servizi perinatali come interventi che agiscono necessariamente su due livelli: la sofferenza del caregiver come soggetto e la disponibilità del campo diadico come struttura. Non due interventi sequenziali (prima la madre, poi la relazione) ma un'interrogazione della loro connessione strutturale come obiettivo unitario.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_2"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "vulnerabilità-strutturale",
+              "interiorizzazione-dell-altro"
+            ],
+            "tensions": [
+              "vulnerabilità del caregiver vs. necessità del bambino"
+            ],
+            "node_interpretation": "co-regolazione come campo diadico che i servizi devono sostenere come unità; vulnerabilità-strutturale come condizione del caregiver che i servizi prendono in carico; interiorizzazione-dell-altro come capacità verso il bambino che l'intervento deve restituire"
+          },
+          "value_added": "Permette di leggere gli interventi dei servizi non come presa in carico individuale (del caregiver o del bambino) ma come intervento sul campo diadico come unità strutturale: un cambio di prospettiva che ridisegna gli obiettivi dell'intervento perinatale.",
+          "reduction_risk": "Ridursi alla presa in carico della madre o del caregiver con depressione post-partum — perdendo la dimensione del campo diadico come unità di intervento e trattando la crisi come problema individuale."
+        },
+        {
+          "domain": "formazione dei professionisti della salute perinatale",
+          "output_type": "interrogazione strutturale sulla lettura bi-livello della crisi perinatale (tenuta esperienziale e struttura del riconoscimento) nei programmi di formazione",
+          "description": "La configurazione permette di costruire percorsi formativi che distinguono acuzie e cronicità non come gradi di gravità ma come strutture diverse del campo diadico: l'acuzie come interruzione in un campo precedentemente funzionante, la cronicità come deformazione strutturale del campo fin dall'inizio. I due casi richiedono letture diverse delle implicazioni per lo sviluppo del bambino.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_2"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "interiorizzazione-dell-altro"
+            ],
+            "tensions": [
+              "cronicità vs. acuzie"
+            ],
+            "node_interpretation": "co-regolazione come livello a cui la crisi acuta interrompe un campo precedentemente funzionante; interiorizzazione-dell-altro come livello a cui la crisi cronica deforma il campo fin dall'inizio"
+          },
+          "value_added": "Introduce nella formazione perinatale la distinzione strutturale tra acuzie e cronicità come configurazioni diverse del danno per il bambino — non solo gravità clinica della crisi del caregiver ma struttura del campo diadico prodotto. Una distinzione che le categorie diagnostiche standard non catturano.",
+          "reduction_risk": "Ridursi al riconoscimento dei sintomi della depressione post-partum — perdendo la dimensione relazionale e sviluppale della crisi perinatale come evento che deforma un campo diadico."
+        },
+        {
+          "domain": "politiche per la salute perinatale",
+          "output_type": "analisi della struttura dei sistemi di sostegno perinatale come condizioni strutturali della disponibilità affettiva del caregiver",
+          "description": "La configurazione permette di interrogare le politiche di salute perinatale non solo come sistemi di cura della malattia psichiatrica del caregiver ma come sistemi che sostengono o compromettono la disponibilità affettiva come campo: continuità di cura, accessibilità dei servizi, congedi parentali, organizzazione del lavoro post-partum sono strutture che agiscono sulla disponibilità strutturale del caregiver al campo diadico.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_2"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "vulnerabilità-strutturale"
+            ],
+            "tensions": [
+              "vulnerabilità del caregiver vs. necessità del bambino"
+            ],
+            "node_interpretation": "co-regolazione come disponibilità strutturale del caregiver al campo diadico che le politiche devono sostenere; vulnerabilità-strutturale come condizione che le politiche di sostegno perinatale devono ridurre"
+          },
+          "value_added": "Sposta il livello delle politiche dalla cura della malattia al sostegno delle condizioni strutturali che rendono possibile la disponibilità affettiva: un'interrogazione che le politiche di salute mentale tradizionali non possono formulare perché non lavorano con la dimensione del campo diadico.",
+          "reduction_risk": "Ridursi a politiche di accesso ai servizi di salute mentale o di congedo parentale — perdendo la dimensione strutturale del sostegno al campo diadico come obiettivo unitario delle politiche perinatali."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le quattro famiglie mantengono la distinzione strutturale tra i due livelli (co-regolazione e riconoscimento) che è la specificità di questa configurazione rispetto alle letture standard della depressione post-partum.",
+        "limitations": "La configurazione non copre la dimensione storico-culturale (Asse 6) delle rappresentazioni della maternità e della paternità in crisi — dimensione rilevante per capire perché certi caregivers non accedono ai servizi. Questo livello è presente nella realtà ma non strutturalmente confermato per questo tema.",
+        "next_step_orientation": "Le famiglie clinica e dei servizi perinatali sono le più mature per strumenti di valutazione e progettazione dell'intervento. La famiglia formativa richiede un lavoro preliminare sulla distinzione acuzie/cronicità come struttura del campo. La famiglia politiche richiede un lavoro più ampio di analisi dei sistemi di welfare perinatale."
+      }
+    },
+    {
+      "theme_id": "tema_06_avversita_precoci",
+      "output_families": [
+        {
+          "domain": "clinico",
+          "output_type": "lettura configurazionale dell'impatto strutturale dell'avversità precoce in funzione della qualità del campo co-regolativo disponibile",
+          "description": "La configurazione permette di valutare l'impatto di un'avversità precoce non solo in termini di tipo e intensità dell'evento ma in termini di qualità del campo co-regolativo disponibile al momento dell'evento: la stessa avversità può produrre struttura o disorganizzazione in funzione di questa variabile mediana. Questo introduce una dimensione della valutazione clinica che le categorie diagnostiche standard non catturano.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_4"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "eccedenza",
+              "limite-reale"
+            ],
+            "tensions": [
+              "struttura vs. trauma"
+            ],
+            "node_interpretation": "co-regolazione come variabile mediana che determina l'esito strutturale dell'avversità; eccedenza come carattere specifico dell'avversità precoce che supera le risorse del bambino; limite-reale come struttura dell'evento avverso irriducibile alla sua intensità"
+          },
+          "value_added": "Permette di valutare la stessa avversità come producente esiti strutturalmente diversi — struttura o trauma — in funzione del campo co-regolativo disponibile. Questa prospettiva introduce una dimensione della prognosi che la sola analisi dell'evento traumatico non può fornire.",
+          "reduction_risk": "Ridursi alla diagnosi di PTSD o di trauma complesso — perdendo la variabile mediana del campo co-regolativo e trattando l'esito come funzione diretta dell'evento piuttosto che del campo in cui l'evento è accaduto."
+        },
+        {
+          "domain": "servizi di protezione e tutela dell'infanzia",
+          "output_type": "analisi della struttura degli interventi di protezione come interventi che agiscono sul campo co-regolativo (non solo sull'evento avverso)",
+          "description": "La configurazione permette di interrogare gli interventi di protezione (allontanamento, collocamento, affido) non solo come risposte all'evento avverso ma come azioni che modificano il campo co-regolativo del bambino: proteggere dall'avversità può implicare la rimozione del campo co-regolativo stesso. Questa tensione strutturale tra protezione e continuità del campo è costitutiva del lavoro di tutela.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_4"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "eccedenza"
+            ],
+            "tensions": [
+              "urgenza dell'intervento vs. tempo dell'elaborazione"
+            ],
+            "node_interpretation": "co-regolazione come campo che l'intervento protettivo può rimuovere insieme all'avversità; eccedenza come struttura dell'evento avverso a cui l'intervento risponde — con il rischio di produrre una seconda discontinuità"
+          },
+          "value_added": "Introduce la domanda strutturale che il lavoro di tutela raramente si pone esplicitamente: l'intervento protettivo che rimuove il bambino dall'avversità può produrre una seconda discontinuità del campo co-regolativo con effetti strutturali propri. Non un argomento contro la protezione, ma una dimensione che va inclusa nella valutazione.",
+          "reduction_risk": "Ridursi a criteri per le decisioni di allontanamento o collocamento — perdendo la dimensione strutturale del campo co-regolativo come variabile dell'intervento a favore di procedure decisionali."
+        },
+        {
+          "domain": "politiche per l'infanzia in contesti di rischio",
+          "output_type": "orientamento alla qualità delle politiche di sostegno alle famiglie in condizione di avversità come politiche che agiscono sul campo co-regolativo",
+          "description": "La configurazione permette di interrogare le politiche per le famiglie in condizione di avversità (povertà, migrazione, violenza) non solo come riduzione del rischio (meno avversità) ma come sostegno al campo co-regolativo che media l'impatto dell'avversità: una diversa logica di intervento che agisce sulla variabile mediana piuttosto che sull'evento.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_4"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "eccedenza",
+              "limite-reale"
+            ],
+            "tensions": [
+              "eccedenza vs. elaborazione"
+            ],
+            "node_interpretation": "co-regolazione come variabile mediana su cui le politiche possono intervenire; eccedenza come struttura dell'avversità che le politiche cercano di ridurre; limite-reale come struttura non eliminabile ma mediabile attraverso il campo co-regolativo"
+          },
+          "value_added": "Introduce un livello di intervento politico che le politiche di prevenzione tradizionali non considerano: non solo ridurre le avversità ma sostenere la qualità del campo co-regolativo che le famiglie in difficoltà hanno a disposizione. Una logica di sostegno distinta da quella della prevenzione.",
+          "reduction_risk": "Ridursi a politiche di prevenzione delle avversità o di sostegno economico — perdendo la dimensione del campo co-regolativo come variabile mediante che determina l'esito strutturale dell'avversità."
+        },
+        {
+          "domain": "ricerca sugli esiti dello sviluppo",
+          "output_type": "interrogazione strutturale sulla modellazione della relazione tra avversità precoce e traiettorie di sviluppo includendo la variabile mediana del campo co-regolativo",
+          "description": "La configurazione fornisce un frame per interrogare i limiti dei modelli dose-risposta dell'avversità: questi modelli trattano l'esposizione all'avversità come variabile indipendente e l'outcome come variabile dipendente, senza includere la qualità del campo co-regolativo come variabile strutturalmente mediana. Non una semplice variabile di moderazione, ma una dimensione che cambia la logica del modello.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_4"
+            ],
+            "nodes": [
+              "co-regolazione",
+              "eccedenza",
+              "limite-reale"
+            ],
+            "tensions": [
+              "struttura vs. trauma",
+              "eccedenza vs. elaborazione"
+            ],
+            "node_interpretation": "co-regolazione come variabile strutturalmente mediana che i modelli dose-risposta non includono; eccedenza e limite-reale come dimensioni strutturali dell'avversità che il modello distingue dall'esposizione quantitativa"
+          },
+          "value_added": "Introduce una critica strutturale ai modelli dose-risposta dell'avversità: il campo co-regolativo non è una variabile aggiuntiva nel modello ma una dimensione che cambia la struttura del modello stesso — non solo cosa viene misurato, ma come si pensa la relazione tra esposizione ed esito.",
+          "reduction_risk": "Ridursi all'aggiunta del costrutto di co-regolazione come variabile moderatrice nelle analisi esistenti — perdendo la critica strutturale al modello dose-risposta e trattando il campo come una variabile da includere piuttosto che come un cambio di prospettiva."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le quattro famiglie mantengono la specificità strutturale del tema — la variabile mediana del campo co-regolativo — evitando sia di scivolare in una teoria del trauma (centrata sull'evento) sia in una teoria della resilienza (centrata sull'individuo).",
+        "limitations": "La configurazione non esplora la dimensione storico-culturale delle avversità (povertà strutturale, violenza istituzionale, migrazione forzata): questo livello connette con tema_08 (disuguaglianze precoci) e potrebbe essere sviluppato in un dominio inter-tema, che questa famiglia non copre.",
+        "next_step_orientation": "La famiglia clinica è la più matura per strumenti di valutazione. La famiglia dei servizi di protezione è la più innovativa strutturalmente ma richiede un lavoro sulla tensione urgenza/elaborazione che è complessa da tradurre in strumenti pratici. La famiglia politiche richiede un investimento più ampio."
+      }
+    },
+    {
+      "theme_id": "tema_07_ecosistema_digitale",
+      "output_families": [
+        {
+          "domain": "educativo (scuola e servizi per l'infanzia e l'adolescenza)",
+          "output_type": "orientamento alla qualità degli spazi educativi come campi strutturalmente distinti dall'ecosistema digitale",
+          "description": "La configurazione permette di interrogare le pratiche educative non come alternative al digitale (meno schermi, più attività) ma come costruzione di spazi strutturalmente diversi: campi in cui il desiderio come struttura aperta è possibile, in contrasto con i campi programmati dell'ecosistema digitale. La distinzione è strutturale (tipo di campo) non contenutistica (tipo di attività).",
+          "structural_basis": {
+            "axes": [
+              "asse_5",
+              "asse_6"
+            ],
+            "nodes": [
+              "campo-desiderabile",
+              "desiderio-come-struttura"
+            ],
+            "tensions": [
+              "desiderio vs. motivazione",
+              "campo aperto vs. campo programmato"
+            ],
+            "node_interpretation": "campo-desiderabile come struttura aperta che le pratiche educative devono sostenere; desiderio-come-struttura come orientamento verso il possibile non predefinito che distingue il campo educativo dal campo programmato digitale"
+          },
+          "value_added": "Sposta la domanda educativa da «meno digitale?» a «che tipo di campo stiamo costruendo?»: permette di interrogare strutturalmente le pratiche educative come produttrici di campi aperti o programmati, indipendentemente dal fatto che usino o meno tecnologia.",
+          "reduction_risk": "Ridursi a proposte di uso responsabile dei dispositivi o di digital detox — perdendo la distinzione strutturale tra campo aperto e campo programmato a favore di una logica di limitazione quantitativa."
+        },
+        {
+          "domain": "politiche per l'infanzia e l'adolescenza",
+          "output_type": "analisi della struttura del campo digitale come campo che sostituisce la struttura del desiderio con sistemi di motivazione",
+          "description": "La configurazione permette di interrogare la regolazione dell'ecosistema digitale non solo in termini di contenuti (cosa vedere, per quanto tempo) ma di struttura del campo: come le piattaforme digitali sono progettate per produrre motivazione (obiettivi predefiniti, rinforzo immediato, riduzione dell'incertezza) invece di sostenere il desiderio (apertura, mancanza tollerata, orientamento verso l'indeterminato).",
+          "structural_basis": {
+            "axes": [
+              "asse_5",
+              "asse_6"
+            ],
+            "nodes": [
+              "tecnica-come-forma-storica",
+              "campo-desiderabile",
+              "motivazione-come-sostituto"
+            ],
+            "tensions": [
+              "campo aperto vs. campo programmato",
+              "determinazione storica vs. struttura soggettiva"
+            ],
+            "node_interpretation": "tecnica-come-forma-storica come configurazione strutturale dell'ecosistema digitale nella sua forma storica contemporanea; campo-desiderabile come struttura che la regolazione deve proteggere; motivazione-come-sostituto come meccanismo che le piattaforme digitali installano al posto del desiderio"
+          },
+          "value_added": "Introduce una prospettiva di regolazione strutturale che le politiche sui contenuti digitali non possono formulare: non censura o limitazione dell'accesso ma modificazione della struttura del campo — come il design delle piattaforme organizza la motivazione al posto del desiderio.",
+          "reduction_risk": "Ridursi a politiche sull'età minima di accesso ai social media o sul numero di ore di schermo — perdendo la dimensione strutturale del campo desiderabile a favore di interventi normativi quantitativi."
+        },
+        {
+          "domain": "clinico (adolescenza)",
+          "output_type": "lettura configurazionale delle difficoltà adolescenziali nel distinguere desiderio e motivazione come effetto di deformazione strutturale del campo culturale",
+          "description": "La configurazione permette di leggere certi sintomi adolescenziali (apatia verso attività non programmate, difficoltà di tollerare la mancanza, ricerca compulsiva di stimoli immediati, incapacità di progettare) non come deficit individuali o come patologie ma come effetti di una deformazione strutturale del campo culturale in cui il desiderio si è formato. Questo cambia il frame clinico dal soggetto al campo.",
+          "structural_basis": {
+            "axes": [
+              "asse_5",
+              "asse_6"
+            ],
+            "nodes": [
+              "campo-desiderabile",
+              "desiderio-come-struttura",
+              "tecnica-come-forma-storica"
+            ],
+            "tensions": [
+              "desiderio vs. motivazione",
+              "determinazione storica vs. struttura soggettiva"
+            ],
+            "node_interpretation": "campo-desiderabile come struttura che il clinico legge nei sintomi dell'adolescente; desiderio-come-struttura come orientamento aperto che la deformazione digitale sostituisce con obiettivi predefiniti; tecnica-come-forma-storica come causa strutturale della deformazione (non deficit individuale)"
+          },
+          "value_added": "Introduce un frame clinico per l'adolescenza che legge certi sintomi come effetti strutturali di un campo culturale deformante — non come patologia individuale da trattare ma come risposta strutturale a una struttura culturale specifica. Questo cambia sia la valutazione che il tipo di intervento possibile.",
+          "reduction_risk": "Ridursi alla diagnosi di dipendenza da tecnologia o da social media — perdendo la dimensione strutturale del campo desiderabile a favore di un modello addittivo che tratta il problema come individuale e comportamentale."
+        },
+        {
+          "domain": "ricerca sullo sviluppo",
+          "output_type": "interrogazione strutturale sulla misurazione della struttura del desiderio come campo distinto dalla motivazione",
+          "description": "La configurazione fornisce un frame per costruire domande di ricerca sulla struttura del desiderio come oggetto misurabile: non tempo di schermo o frequenza di comportamenti specifici, ma qualità della struttura del campo desiderabile — apertura verso l'indeterminato, tolleranza della mancanza, capacità di orientarsi verso ciò che non è ancora determinato. Come si misura questa struttura e come si relaziona all'esposizione all'ecosistema digitale?",
+          "structural_basis": {
+            "axes": [
+              "asse_5",
+              "asse_6"
+            ],
+            "nodes": [
+              "campo-desiderabile",
+              "desiderio-come-struttura",
+              "motivazione-come-sostituto"
+            ],
+            "tensions": [
+              "desiderio vs. motivazione"
+            ],
+            "node_interpretation": "campo-desiderabile come oggetto di misurazione strutturale autonomo; desiderio-come-struttura come costrutto da operazionalizzare in modo distinto dalla motivazione; motivazione-come-sostituto come variabile comparativa che permette di definire la distinzione concettuale"
+          },
+          "value_added": "Introduce la struttura del desiderio (distinta dalla motivazione) come costrutto di ricerca autonomo: non una variabile già operazionalizzata in letteratura ma un nuovo livello di interrogazione che richiede strumenti concettuali e metodologici specifici.",
+          "reduction_risk": "Ridursi a studi sul tempo di schermo e sugli outcome cognitivi o emotivi — perdendo la dimensione strutturale (desiderio come campo vs. motivazione come sistema di rinforzo) a favore di variabili comportamentali già esistenti nella letteratura."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le quattro famiglie mantengono la distinzione strutturale centrale tra desiderio e motivazione come strutture di campo diverse, evitando di scivolare in una critica generica ai media o in una difesa del digitale. Il livello strutturale (tipo di campo prodotto) viene mantenuto in ogni famiglia.",
+        "limitations": "La configurazione non esplora esplicitamente la variabile evolutiva: in quale momento dello sviluppo la struttura del desiderio è più vulnerabile alla deformazione? Questo aspetto è presente nelle domande strutturali di STEP 4 ma non è stato sviluppato come output family separata.",
+        "next_step_orientation": "La famiglia clinica (adolescenza) è la più pronta per strumenti di lettura clinica. La famiglia educativa richiede un lavoro preliminare sul concetto di «campo strutturalmente diverso» che è centrale ma ancora operativamente vago. La famiglia politiche è la più innovativa ma richiede un confronto con il dibattito regolatorio europeo sul digitale."
+      }
+    },
+    {
+      "theme_id": "tema_08_disuguaglianze_precoci",
+      "output_families": [
+        {
+          "domain": "politiche per l'infanzia e la famiglia",
+          "output_type": "analisi della struttura delle politiche sociali come interventi sulla catena causale strutture sociali → campo co-regolativo disponibile",
+          "description": "La configurazione permette di interrogare le politiche per l'infanzia non solo come riduzione della povertà materiale o come sostegno economico alle famiglie, ma come interventi sulla struttura della catena causale che produce differenziali nel campo co-regolativo disponibile: condizioni di lavoro, organizzazione dei servizi, struttura residenziale, segregazione. Diverso punto di leva con diversa logica di intervento.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_6"
+            ],
+            "nodes": [
+              "mediazione-strutturale",
+              "deformazione-strutturale",
+              "co-regolazione"
+            ],
+            "tensions": [
+              "struttura sociale vs. agenzia individuale",
+              "livello macro vs. livello micro"
+            ],
+            "node_interpretation": "mediazione-strutturale come meccanismo attraverso cui le strutture sociali producono differenziali di sviluppo; deformazione-strutturale come esito sistemico delle disuguaglianze sul campo co-regolativo; co-regolazione come variabile del campo di sviluppo che le politiche devono interrogare"
+          },
+          "value_added": "Introduce il campo co-regolativo come variabile delle politiche sociali: non solo quanto denaro hanno le famiglie ma quale campo di sviluppo hanno a disposizione i bambini. Una prospettiva che le politiche di lotta alla povertà tradizionalmente non formulano.",
+          "reduction_risk": "Ridursi a politiche di sostegno economico o di trasferimento monetario — perdendo la dimensione strutturale del campo co-regolativo come variabile dello sviluppo che le politiche devono interrogare."
+        },
+        {
+          "domain": "servizi educativi precoci (nido e servizi 0-6)",
+          "output_type": "orientamento alla qualità dei servizi educativi precoci come fattori che amplificano o attenuano i differenziali strutturali nel campo di sviluppo",
+          "description": "La configurazione permette di interrogare i servizi educativi precoci non come strutture neutrali rispetto alle disuguaglianze ma come campi che si posizionano strutturalmente nella catena causale: possono amplificare i differenziali esistenti (se favoriscono chi ha già risorse) o attenuarli (se organizzano un campo co-regolativo disponibile indipendentemente dalla struttura familiare). La qualità strutturale del servizio va interrogata rispetto a questa posizione.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_6"
+            ],
+            "nodes": [
+              "deformazione-strutturale",
+              "mediazione-strutturale",
+              "istituzione-come-dispositivo"
+            ],
+            "tensions": [
+              "livello macro vs. livello micro",
+              "accumulazione dello svantaggio vs. possibilità di rottura"
+            ],
+            "node_interpretation": "deformazione-strutturale come condizione che i servizi possono amplificare o ridurre; mediazione-strutturale come meccanismo che i servizi intervengono nella catena causale; istituzione-come-dispositivo come struttura che si posiziona nella riproduzione o rottura delle disuguaglianze"
+          },
+          "value_added": "Introduce il nido e i servizi 0-6 come fattori che si posizionano nella struttura delle disuguaglianze — non come soluzioni neutrali ma come strutture con effetti propri sulla catena delle disuguaglianze. Permette di interrogare se un servizio amplifichi o attenui i differenziali, indipendentemente dalla sua qualità intrinseca.",
+          "reduction_risk": "Ridursi a indicatori di qualità del servizio (rapporto bambini/educatori, formazione del personale) — perdendo la dimensione strutturale della posizione del servizio nella catena delle disuguaglianze."
+        },
+        {
+          "domain": "ricerca sullo sviluppo e sulle disuguaglianze",
+          "output_type": "interrogazione strutturale sulla misurazione della qualità del campo di sviluppo come variabile dipendente dalle condizioni strutturali",
+          "description": "La configurazione fornisce un frame per costruire domande di ricerca sulla qualità del campo di sviluppo come variabile autonoma, distinta dagli outcome individuali del bambino: non solo chi ce la fa nonostante le condizioni avverse (resilienza) ma quale campo di sviluppo ha avuto a disposizione. Questo richiede strumenti che misurino la struttura del campo, non solo i comportamenti o le competenze del bambino.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_6"
+            ],
+            "nodes": [
+              "mediazione-strutturale",
+              "deformazione-strutturale"
+            ],
+            "tensions": [
+              "struttura sociale vs. agenzia individuale"
+            ],
+            "node_interpretation": "mediazione-strutturale come meccanismo causale da includere nei modelli di ricerca; deformazione-strutturale come variabile dello sviluppo da operazionalizzare come oggetto di misurazione autonomo"
+          },
+          "value_added": "Introduce la qualità del campo di sviluppo come oggetto di misurazione autonomo rispetto agli outcome individuali: non solo cosa il bambino sa fare o come si comporta, ma quale campo strutturale ha avuto a disposizione — una variabile intermedia che i modelli di ricerca sulle disuguaglianze raramente operazionalizzano.",
+          "reduction_risk": "Ridursi a studi sulle differenze di outcome tra bambini di diverso status socioeconomico — perdendo la dimensione strutturale del campo di sviluppo a favore di variabili di esito individuali già consolidate nella letteratura."
+        },
+        {
+          "domain": "formazione dei professionisti",
+          "output_type": "interrogazione strutturale sulla lettura della vulnerabilità del campo di sviluppo come prodotto di strutture sociali nei programmi di formazione professionale",
+          "description": "La configurazione permette di costruire percorsi formativi che distinguono strutturalmente la vulnerabilità del campo (prodotto di condizioni strutturali che precedono il caregiver) dalla vulnerabilità individuale (deficit del caregiver o del bambino): una distinzione che cambia la responsabilità attribuita, la logica dell'intervento e la qualità della relazione tra professionista e famiglia.",
+          "structural_basis": {
+            "axes": [
+              "asse_1",
+              "asse_6"
+            ],
+            "nodes": [
+              "deformazione-strutturale",
+              "mediazione-strutturale"
+            ],
+            "tensions": [
+              "struttura sociale vs. agenzia individuale"
+            ],
+            "node_interpretation": "deformazione-strutturale come esito di condizioni sociali che precedono il caregiver e il bambino; mediazione-strutturale come meccanismo attraverso cui le strutture sociali diventano campo esperienziale del bambino"
+          },
+          "value_added": "Sposta la formazione dalla «lavorare con famiglie vulnerabili» (frame centrato sul deficit individuale) alla «leggere la vulnerabilità strutturale del campo» (frame centrato sulla struttura sociale): un cambiamento che modifica la posizione del professionista rispetto alla famiglia e il tipo di intervento che ritiene legittimo.",
+          "reduction_risk": "Ridursi a formazione sulla sensibilità culturale o sulla povertà — perdendo la dimensione strutturale della causalità sociale a favore di un frame di adattamento culturale o di comprensione empatica."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le quattro famiglie mantengono la distinzione strutturale tra causalità strutturale (Asse 6) e traduzione micro nel campo co-regolativo (Asse 1), evitando sia la psicologizzazione della povertà che la riduzione sociologica che ignora il livello esperienziale.",
+        "limitations": "La configurazione non esplora la prospettiva del bambino come soggetto attivo nella struttura delle disuguaglianze — come il bambino naviga strutturalmente un campo di svantaggio. Questo aspetto richiede l'integrazione con altri temi (es. tema_06 per le avversità, tema_09 per il gioco libero come risorsa strutturale).",
+        "next_step_orientation": "Le famiglie politiche e servizi educativi sono le più mature per strumenti di analisi e progettazione. La famiglia ricerca è la più innovativa ma richiede un lavoro metodologico sulla misurazione del campo. La famiglia formativa è la più immediatamente implementabile nei percorsi formativi esistenti."
+      }
+    },
+    {
+      "theme_id": "tema_09_gioco_libero",
+      "output_families": [
+        {
+          "domain": "educativo (nido, infanzia, scuola primaria)",
+          "output_type": "orientamento alla qualità delle condizioni strutturali del gioco libero come campo di incontro con il limite reale",
+          "description": "La configurazione permette di interrogare il ruolo dell'adulto nel gioco libero non come osservatore passivo né come guida attiva, ma come strutturatore delle condizioni che rendono possibile l'incontro con il limite reale: la tenuta dello spazio, la presenza senza direzione, la disponibilità a non risolvere i conflitti prima che il bambino li attraversi. Questo orienta verso una qualità specifica della funzione educativa nel gioco.",
+          "structural_basis": {
+            "axes": [
+              "asse_4",
+              "asse_5"
+            ],
+            "nodes": [
+              "campo-desiderabile",
+              "limite-reale",
+              "soggettivazione-del-desiderio"
+            ],
+            "tensions": [
+              "libertà vs. limite",
+              "struttura del gioco vs. spontaneità"
+            ],
+            "node_interpretation": "campo-desiderabile come struttura che le condizioni del gioco libero devono tenere aperta; limite-reale come condizione generativa (non ostacolo) che l'educatore struttura senza eliminare; soggettivazione-del-desiderio come processo che il gioco libero fonda attraverso l'incontro con il limite"
+          },
+          "value_added": "Permette di interrogare la funzione educativa nel gioco come «tenuta delle condizioni» piuttosto che come direzione o osservazione: una categoria funzionale che né la pedagogia del gioco direttivo né quella del gioco libero totalmente non diretto riescono a nominare.",
+          "reduction_risk": "Ridursi a tecniche di gioco non direttivo o a linee guida su «come non intervenire nel gioco» — perdendo la dimensione strutturale del limite come condizione generativa a favore di una tecnica relazionale di non interferenza."
+        },
+        {
+          "domain": "clinico (psicomotricità e terapia attraverso il gioco)",
+          "output_type": "lettura configurazionale del gioco come spazio strutturale di soggettivazione del desiderio in contesti clinici",
+          "description": "La configurazione permette di leggere il gioco in contesto clinico non come sintomo da decodificare (il bambino esprime qualcosa nel gioco) né come tecnica da applicare (gioco come strumento terapeutico), ma come spazio strutturale in cui la relazione tra limite e desiderio si manifesta e può essere osservata: come il bambino incontra il limite dell'altro, dell'oggetto, della regola — e cosa questo produce nella struttura del suo desiderio.",
+          "structural_basis": {
+            "axes": [
+              "asse_4",
+              "asse_5"
+            ],
+            "nodes": [
+              "campo-desiderabile",
+              "limite-reale",
+              "soggettivazione-del-desiderio"
+            ],
+            "tensions": [
+              "desiderio vs. onnipotenza",
+              "libertà vs. limite"
+            ],
+            "node_interpretation": "campo-desiderabile come struttura del gioco che il clinico osserva (non solo il contenuto espresso); limite-reale come punto di incontro strutturalmente rilevante nel gioco clinico; soggettivazione-del-desiderio come processo che il gioco terapeutico dovrebbe sostenere"
+          },
+          "value_added": "Introduce un frame clinico per il gioco che distingue l'osservazione del gioco come espressione (cosa il bambino «dice» attraverso il gioco) dall'osservazione del gioco come struttura (come il bambino si relaziona al limite e al desiderio nel gioco). Il secondo livello è strutturalmente più ricco per l'intervento.",
+          "reduction_risk": "Ridursi al gioco come tecnica proiettiva (il bambino esprime contenuti inconsci nel gioco) — perdendo la dimensione strutturale del gioco come campo di soggettivazione del desiderio a favore di un frame interpretativo sui contenuti."
+        },
+        {
+          "domain": "politiche per gli spazi urbani e l'infanzia",
+          "output_type": "analisi della struttura degli spazi urbani in funzione della qualità del campo di incontro con il limite reale che producono",
+          "description": "La configurazione permette di interrogare la progettazione degli spazi urbani destinati ai bambini (parchi, cortili, spazi pubblici) non solo in termini di sicurezza e accesso ma in termini di qualità del campo strutturale che producono: quali spazi permettono l'incontro con il limite reale (rischio gestibile, resistenza degli oggetti, conflitto tra pari non immediatamente mediato dall'adulto) e quali invece lo eliminano sistematicamente.",
+          "structural_basis": {
+            "axes": [
+              "asse_4",
+              "asse_5"
+            ],
+            "nodes": [
+              "limite-reale",
+              "campo-desiderabile"
+            ],
+            "tensions": [
+              "libertà vs. limite",
+              "struttura del gioco vs. spontaneità"
+            ],
+            "node_interpretation": "limite-reale come criterio strutturale della progettazione: quali spazi permettono l'incontro con il reale; campo-desiderabile come struttura che gli spazi urbani devono rendere possibile"
+          },
+          "value_added": "Introduce un criterio strutturale per la progettazione degli spazi del gioco che il discorso sulla sicurezza non può formulare: non solo quanto è sicuro lo spazio, ma quale tipo di incontro con il limite reale permette. Rischio strutturalmente necessario e sicurezza non sono opposti — questa distinzione è accessibile solo con la configurazione.",
+          "reduction_risk": "Ridursi a criteri di sicurezza degli spazi (normativa, protezione fisica) — perdendo la dimensione del limite come condizione necessaria del gioco generativo a favore di standard di sicurezza passiva."
+        },
+        {
+          "domain": "formazione degli educatori",
+          "output_type": "interrogazione strutturale sulla funzione del limite nel gioco libero come condizione generativa (non ostacolo)",
+          "description": "La configurazione permette di costruire percorsi formativi che lavorano sulla lettura del limite nel gioco come condizione strutturalmente necessaria alla soggettivazione del desiderio: formare gli educatori a distinguere il limite come ostacolo da eliminare dal limite come condizione generativa da preservare. Questa distinzione ha implicazioni dirette sul modo in cui gli educatori intervengono (o non intervengono) nei conflitti e nelle frustrazioni del gioco.",
+          "structural_basis": {
+            "axes": [
+              "asse_4",
+              "asse_5"
+            ],
+            "nodes": [
+              "limite-reale",
+              "soggettivazione-del-desiderio",
+              "campo-desiderabile"
+            ],
+            "tensions": [
+              "desiderio vs. onnipotenza",
+              "libertà vs. limite"
+            ],
+            "node_interpretation": "limite-reale come condizione generativa che la formazione aiuta gli educatori a distinguere dall'ostacolo; soggettivazione-del-desiderio come processo fondato dal limite che orienta la lettura strutturale del conflitto nel gioco; campo-desiderabile come struttura che l'educatore è chiamato a tenere aperta"
+          },
+          "value_added": "Introduce nella formazione degli educatori una lettura strutturale del conflitto nel gioco: non come problema da gestire ma come incontro con il limite reale che ha funzione strutturale. Questa prospettiva cambia sia la posizione dell'educatore rispetto al conflitto che la logica dell'intervento.",
+          "reduction_risk": "Ridursi a tecniche di gestione del conflitto nel gioco — perdendo la dimensione strutturale del limite come fondamento della soggettivazione del desiderio a favore di competenze operative di de-escalation."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le quattro famiglie mantengono la relazione strutturale tra limite (Asse 4) e desiderio (Asse 5) come campo di fondazione reciproca, evitando sia di ridurre il gioco ad attività ludica che di trasformarlo in strumento terapeutico o didattico.",
+        "limitations": "La configurazione non esplora la dimensione culturale del gioco libero (quali culture e quali classi sociali valorizzano il gioco non diretto, quali lo limitano) — una dimensione che connette con tema_08 (disuguaglianze) e sarebbe strutturalmente rilevante per le politiche e la formazione.",
+        "next_step_orientation": "La famiglia educativa e quella formativa sono le più pronte per strumenti pratici. La famiglia delle politiche urbane è la più innovativa e richiede un lavoro interdisciplinare (urbanistica, pedagogia, sviluppo). La famiglia clinica è pronta per lo sviluppo di frame osservativi specifici per la psicomotricità e la terapia attraverso il gioco."
+      }
+    },
+    {
+      "theme_id": "tema_10_frammentazione_sistemi",
+      "output_families": [
+        {
+          "domain": "politiche per l'infanzia e la famiglia",
+          "output_type": "analisi della struttura dei sistemi istituzionali come produttori di coerenza o frammentazione del campo di sviluppo del bambino",
+          "description": "La configurazione permette di interrogare il design dei sistemi di welfare per l'infanzia (integrazione sociosanitaria, coordinamento educativo-sociale, continuità dei servizi) non come questione organizzativa ma come questione strutturale: come la struttura istituzionale produce o dissolve l'autorità educativa e l'imputazione della responsabilità rispetto al campo di sviluppo del bambino come unità.",
+          "structural_basis": {
+            "axes": [
+              "asse_3",
+              "asse_6"
+            ],
+            "nodes": [
+              "istituzione-come-dispositivo",
+              "mediazione-strutturale",
+              "autorità-educativa",
+              "responsabilità-come-imputazione"
+            ],
+            "tensions": [
+              "coordinazione istituzionale vs. autonomia istituzionale",
+              "norma vs. struttura"
+            ],
+            "node_interpretation": "istituzione-come-dispositivo come struttura organizzativa del sistema di welfare; mediazione-strutturale come funzione che la frammentazione compromette; autorità-educativa e responsabilità-come-imputazione come dimensioni normative che il design istituzionale produce o dissolve"
+          },
+          "value_added": "Introduce il livello strutturale dell'autorità e della responsabilità come variabili del design istituzionale: non solo quanto comunicano le istituzioni, ma quale struttura di autorità e responsabilità producono nel campo del bambino. Una dimensione che le analisi organizzative dei sistemi di welfare raramente formulano.",
+          "reduction_risk": "Ridursi a proposte di riorganizzazione amministrativa dei servizi — perdendo la dimensione strutturale della produzione di autorità e responsabilità a favore di ottimizzazioni gestionali che non toccano la struttura del campo educativo del bambino."
+        },
+        {
+          "domain": "coordinamento interprofessionale",
+          "output_type": "orientamento alla qualità del coordinamento come produzione di struttura condivisa di responsabilità (non solo condivisione di informazioni)",
+          "description": "La configurazione permette di distinguere il coordinamento come scambio informativo tra istituzioni (riunioni di équipe, cartelle condivise, protocolli di segnalazione) dal coordinamento come produzione di una struttura condivisa di responsabilità rispetto al campo di sviluppo del bambino: due logiche diverse con esiti strutturalmente diversi per il bambino che attraversa il sistema.",
+          "structural_basis": {
+            "axes": [
+              "asse_3",
+              "asse_6"
+            ],
+            "nodes": [
+              "autorità-educativa",
+              "responsabilità-come-imputazione",
+              "mediazione-strutturale"
+            ],
+            "tensions": [
+              "responsabilità distribuita vs. responsabilità assente"
+            ],
+            "node_interpretation": "autorità-educativa come struttura che il coordinamento deve produrre (non solo condividere informazioni); responsabilità-come-imputazione come prodotto del coordinamento strutturale rispetto al campo del bambino come unità; mediazione-strutturale come funzione che distingue il coordinamento operativo da quello strutturale"
+          },
+          "value_added": "Introduce la distinzione tra coordinamento operativo (chi fa cosa, quando, come) e coordinamento strutturale (chi è responsabile del campo di sviluppo del bambino come unità): il primo è necessario, il secondo è la condizione perché il primo produca coerenza invece di frammentazione coordinata.",
+          "reduction_risk": "Ridursi a procedure di coordinamento multi-agenzia (riunioni, protocolli, case manager) — perdendo la dimensione della struttura di responsabilità condivisa che il coordinamento deve produrre a favore di miglioramenti procedurali che non toccano la struttura."
+        },
+        {
+          "domain": "formazione dei professionisti dell'educazione e della cura",
+          "output_type": "interrogazione strutturale sulla capacità di leggere la frammentazione istituzionale come problema strutturale che riguarda il proprio lavoro",
+          "description": "La configurazione permette di costruire percorsi formativi che sviluppano nei professionisti la capacità di interrogare il campo istituzionale in cui operano: non solo competenze tecniche per il proprio ruolo ma capacità di leggere la struttura dell'autorità e della responsabilità nel sistema in cui si trovano, e di identificare come la frammentazione istituzionale si traduce nel campo di sviluppo del bambino che seguono.",
+          "structural_basis": {
+            "axes": [
+              "asse_3",
+              "asse_6"
+            ],
+            "nodes": [
+              "istituzione-come-dispositivo",
+              "mediazione-strutturale",
+              "autorità-educativa"
+            ],
+            "tensions": [
+              "norma vs. struttura",
+              "coordinazione istituzionale vs. autonomia istituzionale"
+            ],
+            "node_interpretation": "istituzione-come-dispositivo come campo istituzionale che il professionista deve imparare a leggere; mediazione-strutturale come funzione che il professionista svolge o non svolge nel sistema frammentato; autorità-educativa come struttura che la frammentazione dissolve e che la formazione deve rendere visibile"
+          },
+          "value_added": "Introduce nella formazione professionale la dimensione istituzionale come variabile del lavoro con il bambino: non solo competenze relazionali o tecniche, ma capacità di leggere come la struttura del sistema in cui si opera si traduce nel campo di sviluppo del bambino. Una dimensione che le formazioni tradizionali trattano raramente in modo strutturale.",
+          "reduction_risk": "Ridursi a formazione sulle competenze di lavoro in rete o sulla comunicazione interprofessionale — perdendo la dimensione strutturale dell'autorità e della responsabilità a favore di competenze relazionali."
+        },
+        {
+          "domain": "ricerca sui sistemi educativi e di welfare",
+          "output_type": "interrogazione strutturale sulla misurazione della coerenza del campo istituzionale dal punto di vista del bambino che lo attraversa",
+          "description": "La configurazione fornisce un frame per costruire domande di ricerca sulla coerenza del campo istituzionale come variabile dello sviluppo: non solo qualità dei singoli servizi (accessibilità, efficienza, soddisfazione degli utenti) ma struttura del campo normativo che il bambino sperimenta attraversando più istituzioni — la coerenza dell'autorità e la chiarezza dell'imputazione della responsabilità come dimensioni misurabili.",
+          "structural_basis": {
+            "axes": [
+              "asse_3",
+              "asse_6"
+            ],
+            "nodes": [
+              "autorità-educativa",
+              "responsabilità-come-imputazione",
+              "istituzione-come-dispositivo"
+            ],
+            "tensions": [
+              "responsabilità distribuita vs. responsabilità assente"
+            ],
+            "node_interpretation": "autorità-educativa come dimensione misurata dal punto di vista del bambino che attraversa le istituzioni; responsabilità-come-imputazione come chiarezza percepita di chi risponde del campo di sviluppo del bambino; istituzione-come-dispositivo come unità di analisi strutturale della coerenza del sistema"
+          },
+          "value_added": "Introduce la coerenza del campo istituzionale come variabile di ricerca autonoma, distinta dalla qualità dei singoli servizi: non solo se ogni istituzione funziona bene, ma quale struttura di autorità e responsabilità sperimenta il bambino che le attraversa tutte. Una variabile che la ricerca sui sistemi di welfare raramente operazionalizza.",
+          "reduction_risk": "Ridursi a valutazione della soddisfazione degli utenti o a indicatori di efficienza dei servizi — perdendo la dimensione strutturale dell'autorità e della responsabilità a favore di variabili di esito o di processo già consolidate nella letteratura."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "Le quattro famiglie mantengono la distinzione strutturale tra frammentazione come problema organizzativo (non questo) e come problema strutturale che dissolve autorità e responsabilità nel campo educativo del bambino (questo). Il rischio principale — la riduzione a ottimizzazione procedurale — è esplicitato in ogni reduction_risk.",
+        "limitations": "La configurazione non esplora la prospettiva delle famiglie come soggetti che navigano la frammentazione istituzionale: come le famiglie, specialmente quelle in condizioni di svantaggio, sperimentano l'assenza di un campo istituzionale coerente e come questa esperienza si traduce nella loro relazione con i singoli servizi. Questa prospettiva richiederebbe l'integrazione con tema_08 (disuguaglianze).",
+        "next_step_orientation": "La famiglia del coordinamento interprofessionale è la più matura e innovativa per strumenti pratici. La famiglia formativa è la più immediatamente implementabile nei percorsi esistenti. La famiglia politiche richiede un investimento più ampio; la famiglia ricerca è la più innovativa ma richiede un lavoro preliminare sull'operazionalizzazione del costrutto."
+      }
+    }
+  ]
+}

@@ -35,6 +35,7 @@ export default function Navigation() {
             <NavLink to="/" active={location.pathname === '/'}>Home</NavLink>
             <NavLink to="/hcaire" active={location.pathname.startsWith('/hcaire')}>HCAIRE</NavLink>
             <NavLink to="/sviluppo-bambino" active={location.pathname.startsWith('/sviluppo-bambino')}>Sviluppo bambino</NavLink>
+            <NavLink to="/letture" active={location.pathname.startsWith('/letture')}>Letture</NavLink>
             {items.map((item) => (
               <NavLink key={item._id} to={navPath(item)} active={location.pathname === navPath(item)}>
                 {item.titolo}
@@ -81,6 +82,7 @@ export default function Navigation() {
             <MobileNavLink to="/" onClick={() => setOpen(false)}>Home</MobileNavLink>
             <MobileNavLink to="/hcaire" onClick={() => setOpen(false)}>HCAIRE</MobileNavLink>
             <MobileNavLink to="/sviluppo-bambino" onClick={() => setOpen(false)}>Sviluppo bambino</MobileNavLink>
+            <MobileNavLink to="/letture" onClick={() => setOpen(false)}>Letture</MobileNavLink>
             {items.map((item) => (
               <MobileNavLink key={item._id} to={navPath(item)} onClick={() => setOpen(false)}>
                 {item.titolo}

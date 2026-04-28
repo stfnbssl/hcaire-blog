@@ -1,0 +1,46 @@
+{
+  "step": "f3_step_7",
+  "source_theme": "pointing precoce",
+  "target_domain": "clinico (neuropsviluppo, osservazione precoce caregiver-bambino)",
+  "context_definition": {
+    "setting": "Interazione bambino-caregiver o bambino-clinico in contesto osservativo (ambulatorio, stanza di valutazione, o setting semi-strutturato con oggetti condivisi)",
+    "child_age_range": "9–24 mesi (fase di emergenza e stabilizzazione del pointing)",
+    "interaction_type": "situazioni triadiche con oggetti o eventi che possono diventare oggetto di condivisione attentiva"
+  },
+  "phenomenon_in_context": {
+    "description": "Il pointing emerge nel contesto clinico come atto osservabile di orientamento del bambino verso un oggetto o evento in presenza di un adulto, e viene spesso utilizzato come indicatore di sviluppo comunicativo e sociale. Tuttavia, nel contesto osservativo, il gesto può essere influenzato dalla struttura della situazione (presenza dell'adulto, aspettativa di risposta, setting strutturato), producendo varianti che mantengono la forma del gesto ma non necessariamente la struttura configurazionale originaria."
+  },
+  "contextual_variants": [
+    {
+      "type": "pointing spontaneo",
+      "description": "Il bambino indica un oggetto/evento senza sollecitazione diretta, emergendo da un proprio orientamento percettivo-motorio"
+    },
+    {
+      "type": "pointing sollecitato",
+      "description": "Il bambino produce il gesto in risposta a una richiesta o aspettativa dell'adulto (es. 'Dov'è la palla?')"
+    },
+    {
+      "type": "pointing routinizzato",
+      "description": "Il gesto è prodotto come risposta appresa in una sequenza interattiva ripetuta (es. giochi strutturati)"
+    },
+    {
+      "type": "pointing ambiguo",
+      "description": "Il gesto è presente nella forma ma non è chiaro se costituisca un atto di condivisione attentiva o una richiesta strumentale"
+    }
+  ],
+  "contextual_risks": [
+    {
+      "risk": "falso positivo",
+      "description": "Il gesto viene interpretato come pointing configurazionale (condivisione attentiva) quando è in realtà risposta a una routine o a una sollecitazione implicita"
+    },
+    {
+      "risk": "falso negativo",
+      "description": "L'assenza del gesto viene interpretata come deficit quando il contesto non ha generato condizioni per l'emergere della struttura (assenza di evento interessante, adulto non disponibile)"
+    },
+    {
+      "risk": "riduzione comportamentale",
+      "description": "Il pointing viene ridotto a presenza/assenza del gesto, ignorando la struttura relazionale che lo produce"
+    }
+  ],
+  "structural_constraint": "Il dispositivo deve distinguere tra la forma comportamentale del gesto (indice esteso verso oggetto) e la struttura configurazionale dell'atto (co-orientamento triadico reale verso oggetto condiviso), indipendentemente dal fatto che il gesto sia prodotto."
+}

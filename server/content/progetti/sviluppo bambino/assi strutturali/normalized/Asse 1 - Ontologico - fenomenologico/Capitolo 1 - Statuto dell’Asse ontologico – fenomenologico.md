@@ -24,8 +24,6 @@ Senza una chiarificazione dello statuto del soggetto[^1] <img src="/assets/autor
 * un riduzionismo funzionale (il soggetto come insieme di capacità),  
 * e un normativismo implicito (il soggetto come ciò che deve diventare).
 
-L’Asse 1 nasce per sottrarre il modello a entrambe queste derive.
-
 ## 2. Ontologico non significa astratto
 
 Definire questo asse come “ontologico” non significa collocarlo su un piano astratto o distante dall’esperienza concreta. Al contrario, l’ontologia qui in gioco è un’ontologia **dell’esperienza vissuta**, che interroga le condizioni di possibilità dell’essere-soggetto nel mondo.
@@ -36,8 +34,7 @@ L’asse non chiede:
 * *che cosa il bambino prova*,  
 * *che cosa il bambino sa fare*,
 
-ma:  
-**che cosa significa esistere come bambino**, cioè quale forma assume l’essere-soggetto in una fase della vita caratterizzata da dipendenza, corporeità primaria, esposizione e trasformazione continua.
+ma: **che cosa significa esistere come bambino**, cioè quale forma assume l’essere-soggetto in una fase della vita caratterizzata da dipendenza, corporeità primaria, esposizione e trasformazione continua.
 
 In questo senso, l’Asse 1 si colloca nel solco della fenomenologia, e in particolare del pensiero di **Maurice Merleau-Ponty**, assumendo l’esperienza incarnata come punto di partenza non negoziabile[^2] <img src="/assets/libri/merleau-ponty-fenomenologia-della-percezione.jpg" alt="Fenomenologia della percezione" title="Fenomenologia della percezione" class="ref-cover" style="height:208px;vertical-align:middle;margin:0 4px 0 2px;box-shadow:0 1px 4px rgba(0,0,0,.3)">.
 

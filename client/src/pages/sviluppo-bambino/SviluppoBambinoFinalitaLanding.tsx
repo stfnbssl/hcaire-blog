@@ -104,7 +104,7 @@ const SEZIONI_HCAIRE = [
   },
   {
     label: 'Le interlocuzioni',
-    desc: 'Il dialogo critico con undici tradizioni di ricerca: convergenze, limiti e indicazioni operative per ciascuna disciplina.',
+    desc: 'Il dialogo critico con le tradizioni di ricerca: convergenze, limiti e indicazioni operative per ciascuna disciplina.',
     to: '/sviluppo-bambino/interlocuzioni',
     obiettivi: '1, 2',
   },

@@ -1,0 +1,155 @@
+{
+  "step": "f3_step_7",
+  "source_device_id": "tema-01-pointing-clinico-dispositivo-corrected",
+  "target_theme_or_domain": "pointing precoce — dominio clinico (neuropsviluppo, osservazione precoce caregiver-bambino, 9-24 mesi)",
+  "input_context_file": "input/produzioni/temi/pointing/f3-step-7-contesto-clinico.json",
+
+  "transferability_assessment": {
+    "overall_verdict": "trasferibile_con_adattamenti",
+    "reason": "Il dispositivo è già costruito nel dominio clinico come riferimento. Il presente step 7 valuta la specificazione del dispositivo per un contesto clinico definito (neuropsviluppo, setting osservativo strutturato/semi-strutturato, fasce 9-24 mesi). La struttura configurazionale trasferisce integralmente; ciò che richiede adattamento è la gestione delle varianti contestuali del contesto clinico (pointing sollecitato, routinizzato, ambiguo) che il setting strutturato introduce sistematicamente, e il presidio dei rischi specifici del dominio (uso come indicatore diagnostico, riduzione comportamentale). Il dispositivo non richiede ricostruzione: richiede specificazione delle condizioni di applicabilità e rafforzamento dei vincoli per il contesto clinico."
+  },
+
+  "transferable_elements": [
+    {
+      "element": "core_configuration (corporeità-vissuta → campo-intenzionale → co-regolazione → mediazione-simbolica)",
+      "transfer_status": "integrale",
+      "reason": "La logica configurazionale è indipendente dal contesto di osservazione. La struttura 'corpo che si trasforma in segno solo nella relazione' è la struttura del pointing indipendentemente dal setting clinico o naturale."
+    },
+    {
+      "element": "reading_focus — Base corporea del gesto",
+      "transfer_status": "integrale",
+      "reason": "La distinzione tra gesto corporeo spontaneo dall'incontro percettivo e postura performata è centrale nel contesto clinico, dove il setting strutturato può produrre posture da esibizione. La dimensione è già formulata in termini che la rendono applicabile a questa distinzione."
+    },
+    {
+      "element": "reading_focus — Apertura del campo intenzionale condiviso",
+      "transfer_status": "integrale",
+      "reason": "La distinzione tra campo aperto (struttura triadica reale verso l'oggetto) e campo pre-strutturato (dall'adulto che ha già orientato il bambino con la domanda) è leggibile con questa dimensione. Trasferisce integralmente — è anzi più rilevante nel contesto clinico."
+    },
+    {
+      "element": "reading_focus — Qualità co-regolatoria della risposta",
+      "transfer_status": "integrale",
+      "reason": "I 5 livelli (assente, registrativa, partecipativa, trasformativa, chiudente) sono applicabili al clinico che risponde al pointing del bambino. La risposta chiudente è particolarmente rilevante nel setting clinico dove il professionista tende a nominare-confermare-chiudere."
+    },
+    {
+      "element": "reading_focus — Mediazione simbolica e passaggio trasformativo",
+      "transfer_status": "integrale",
+      "reason": "La distinzione passaggio aperto / predeterminato è strutturalmente invariante. Nel contesto clinico il passaggio predeterminato è sistematicamente prodotto dal pointing sollecitato e routinizzato — la dimensione ne diventa la chiave di lettura principale."
+    },
+    {
+      "element": "proxy operativo — Co-orientamento finale bilaterale vs. chiusura unilaterale",
+      "transfer_status": "con_adattamento",
+      "reason": "Il proxy trasferisce ma richiede un'estensione delle condizioni di non-applicabilità per il contesto clinico: il pointing sollecitato compromette la struttura della fase [F] perché la co-orientazione finale può essere prodotta dall'adulto che ha già indotto il gesto, non dalla struttura configurazionale del bambino. Serve una nuova NCR per questa condizione."
+    },
+    {
+      "element": "observability_requirements (obs_req_1, obs_req_2, obs_req_3)",
+      "transfer_status": "con_adattamento",
+      "reason": "I tre requisiti trasferiscono nella struttura. L'adattamento riguarda le condizioni di documentazione: nel setting clinico la videoregistrazione è standard (a differenza di molti contesti naturali), il che rende i requisiti potenzialmente più soddisfacibili. Tuttavia la brevità delle sessioni cliniche aumenta il rischio che la fase [F] non venga raggiunta — da notare esplicitamente nei protocol_note."
+    },
+    {
+      "element": "non_classifiability_rules (ncr_1–ncr_4)",
+      "transfer_status": "con_adattamento",
+      "reason": "Le 4 regole trasferiscono. Il contesto clinico aggiunge una quinta condizione sistematica: il pointing è avvenuto in risposta a sollecitazione diretta o struttura routinizzata del setting → la fase [F] non può essere interpretata come chiusura di un campo aperto. Serve ncr_5 specifica per il dominio."
+    },
+    {
+      "element": "interpretive_warnings (comportamentismo, normatività, tecnicismo, riduzione_cognitiva)",
+      "transfer_status": "con_adattamento",
+      "reason": "I 4 warning trasferiscono e si rafforzano nel dominio clinico. È necessario aggiungere un warning specifico per l'uso diagnostico: la tendenza a usare il pointing come indicatore di sviluppo (presenza = milestone raggiunta; assenza = flag per ASD o ritardo comunicativo) è la forma più comune di riduzione comportamentale nel dominio neuropsviluppo."
+    },
+    {
+      "element": "non_permitted_transformations",
+      "transfer_status": "con_adattamento",
+      "reason": "Le trasformazioni non permesse si rafforzano nel contesto clinico. Va aggiunta esplicitamente la trasformazione più frequente nel dominio: uso del dispositivo come strumento di screening o come voce di una scala di sviluppo."
+    },
+    {
+      "element": "access_points",
+      "transfer_status": "con_adattamento",
+      "reason": "Gli access point attuali (interazione diadica libera, evento inatteso, pointing dell'adulto, colloquio caregiver) richiedono una riflessione sulla struttura del setting clinico: l'interazione libera in ambulatorio non è equivalente all'interazione libera in contesto naturale. Serve un access point specifico per il setting semi-strutturato clinico e una nota esplicita sul rischio di sollecitazione implicita nel setting."
+    }
+  ],
+
+  "theme_specific_elements": [
+    {
+      "element": "Pointing con indice esteso come forma comportamentale privilegiata",
+      "why_specific": "Il pointing con indice è storicamente e clinicamente la forma prototipica osservata e studiata, ma la struttura configurazionale non richiede l'indice esteso — può essere prodotta con apertura della mano, con lo sguardo, con un movimento del corpo. Nel contesto clinico l'attesa dell'indice esteso rischia di far perdere le varianti gestuali strutturalmente equivalenti.",
+      "risk_if_transferred": "Il dispositivo verrebbe applicato solo alle istanze con indice esteso, perdendo tutte le varianti configurazionalmente equivalenti — producendo sistematicamente falsi negativi per bambini che producono la struttura senza il gesto prototipico."
+    },
+    {
+      "element": "Assenza di pressione temporale nella sessione osservativa",
+      "why_specific": "Il dispositivo è costruito per sessioni osservative con tempo sufficiente per documentare la fase [F] e il secondo beat relazionale. Il contesto clinico introduce pressione temporale (sessioni di 20-40 minuti, più compiti da osservare) che riduce sistematicamente la documentazione delle fasi post-risposta.",
+      "risk_if_transferred": "Sistematica produzione di non_classificabile per mancanza di documentazione della fase [F] — non perché la struttura sia assente ma perché il setting non ha permesso di documentarla. Rischio di interpretare il non_classificabile come assenza della configurazione."
+    }
+  ],
+
+  "proxy_assessment": [
+    {
+      "proxy_name": "Co-orientamento finale bilaterale vs. chiusura unilaterale",
+      "status": "adattabile",
+      "reason": "Il proxy è strutturalmente valido e trasferisce. L'adattamento riguarda due aspetti: (1) aggiunta di una nuova condizione di non-applicabilità per il pointing sollecitato/routinizzato (quando la co-orientazione verso l'oggetto è stata pre-strutturata dall'adulto, la fase [F] non può essere discriminante); (2) esplicitazione nel protocol_note che nel setting clinico la fase [F] è spesso non documentata per ragioni di gestione del tempo — il dispositivo deve produrre non_classificabile in questi casi senza che ciò venga interpretato come assenza della struttura configurazionale.",
+      "required_new_observations": [
+        "Documentazione della modalità di emergenza del pointing nella sessione: spontaneo, sollecitato, routinizzato (prerequisito per applicare il proxy)",
+        "Nota sul tempo disponibile per la fase [F]: se la sessione è stata interrotta o il contesto ha prodotto una chiusura forzata, obs_req_1 non è soddisfatto indipendentemente da ciò che è stato osservato"
+      ]
+    }
+  ],
+
+  "observability_check": {
+    "minimum_observations_available": true,
+    "missing_observations": [
+      "Documentazione della modalità di emergenza del pointing (spontaneo vs. sollecitato vs. routinizzato): non presente come requisito esplicito nel dispositivo attuale, ma necessaria per la nuova ncr_5"
+    ],
+    "non_classifiability_risks": [
+      "La pressione temporale del setting clinico aumenta sistematicamente la probabilità che obs_req_1 (fase [F]) non sia documentata → sistematica produzione di non_classificabile ncr_1",
+      "Il pointing sollecitato (risposta a 'Dov'è la palla?') è frequente in setting clinici standardizzati: l'adulto ha pre-strutturato il campo verso l'oggetto, rendendo non applicabile il proxy per ncr_5 (nuova)",
+      "Il pointing routinizzato nei giochi strutturati produce una fase [F] dove il co-orientamento finale può essere artefatto della routine, non della struttura configurazionale: ncr_5 coprirà anche questo caso"
+    ]
+  },
+
+  "reduction_risks": [
+    {
+      "risk_type": "uso_come_indicatore_diagnostico",
+      "description": "Nel dominio neuropsviluppo il pointing è storicamente associato allo screening per ASD (pointing assente a 12 mesi come red flag) e a scale di sviluppo comunicativo. Il dispositivo rischia di essere utilizzato per dare valore diagnostico a ciò che legge: 'il campo è predeterminato → il bambino non ha raggiunto la struttura configurazionale → indicatore di ritardo'. Questa catena non è autorizzata dal dispositivo.",
+      "mitigation": "Aggiungere interpretive_warning specifico per 'uso diagnostico'. Rafforzare non_permitted_transformations con divieto esplicito di uso come voce di screening o scala di sviluppo."
+    },
+    {
+      "risk_type": "quantificazione_delle_occorrenze",
+      "description": "Il contesto clinico tende a produrre conteggi (quante volte il bambino ha indicato nella sessione). Il dispositivo legge la struttura di un episodio, non la frequenza degli episodi. Aggregare episodi per frequenza produce perdita della struttura configurazionale.",
+      "mitigation": "Il dispositivo non prevede aggregazione. L'interpretive_warning sul comportamentismo copre parzialmente questo rischio, ma andrebbe rafforzato con un riferimento esplicito alla frequenza come modalità non ammessa di lettura."
+    },
+    {
+      "risk_type": "confronto_normativo",
+      "description": "Il dominio neuropsviluppo ha norme di sviluppo per il pointing (emergenza attesa a 9-12 mesi, consolidamento a 18 mesi). Il dispositivo legge la struttura di una configurazione in un episodio specifico — non misura il livello di sviluppo del bambino rispetto alle norme. Introdurre il confronto normativo trasforma la lettura strutturale in valutazione evolutiva.",
+      "mitigation": "L'interpretive_warning sulla normatività copre questo rischio. Nel contesto clinico va rafforzato: non 'il bambino è in ritardo nel pointing' ma 'quale struttura assume il pointing in questa relazione e in questo episodio'."
+    },
+    {
+      "risk_type": "falso_negativo_da_setting_inadeguato",
+      "description": "L'assenza del pointing in una sessione clinica può essere prodotta dal setting (nessun evento sufficientemente interessante, adulto non disponibile relazionalmente, durata insufficiente) piuttosto che dall'assenza della struttura configurazionale nel bambino. Il setting clinico non garantisce le condizioni per l'emergere del pointing.",
+      "mitigation": "Aggiungere access point specifico per il setting clinico con nota esplicita: 'l'assenza del pointing nella sessione è informazione sul setting prima di essere informazione sul bambino'. Rafforzare la sezione sul colloquio con il caregiver come source primaria per capire se il pointing emerge nel contesto naturale."
+    }
+  ],
+
+  "domain_specific_adaptations_required": {
+    "new_non_classifiability_rule": {
+      "id": "ncr_5",
+      "dimension": "Struttura del passaggio trasformativo",
+      "trigger": "Il pointing osservato è stato prodotto in risposta a sollecitazione diretta dell'adulto (es. 'Dov'è X?') o in contesto routinizzato (gioco strutturato noto): la co-orientazione verso l'oggetto era già pre-strutturata prima del gesto del bambino",
+      "required_output": "non_classificabile",
+      "rationale": "Quando l'adulto ha già orientato il campo verso l'oggetto con una domanda o con una struttura routinizzata, la fase [F] del gesto del bambino non può essere discriminante: il co-orientamento finale può essere prodotto dalla struttura del campo pre-esistente, non dalla configurazione aperta-vs-predeterminata dell'atto del bambino. Il proxy perde il suo termine di riferimento."
+    },
+    "new_interpretive_warning": {
+      "risk_type": "uso_diagnostico",
+      "description": "Nel dominio neuropsviluppo il pointing è utilizzato come indicatore di screening e come voce di scale di sviluppo comunicativo-sociale. Il dispositivo rischia di essere trasformato in strumento di valutazione diagnostica: 'configurazione predeterminata → struttura non acquisita → red flag per ASD o ritardo comunicativo'. Questa catena non è autorizzata: il dispositivo legge la struttura di un episodio relazionale, non il livello di sviluppo del bambino. La stessa struttura predeterminata può essere prodotta da setting inadeguato, stanchezza, relazione non familiare — e non indica nulla sull'acquisizione della struttura configurazionale da parte del bambino."
+    },
+    "new_access_point": {
+      "label": "Setting clinico semi-strutturato con oggetti calibrati",
+      "description": "Il setting clinico introduce condizioni specifiche che modificano le probabilità di emergenza del pointing configurazionale: presenza di un adulto non familiare (clinico), aspettativa di performance, durata limitata. L'access point deve prevedere materiali sufficientemente interessanti da evocare orientamento percettivo genuino, tempo libero non strutturato (almeno 10 minuti) prima di qualsiasi compito guidato, e documentazione della modalità di emergenza di ogni episodio di pointing (spontaneo / sollecitato / routinizzato). La condizione minima: almeno un episodio di pointing spontaneo documentato. In assenza di episodi spontanei, il dispositivo produce non_classificabile per assenza delle condizioni minime del setting, non per assenza della struttura configurazionale nel bambino."
+    },
+    "new_non_permitted_transformation": "Quando viene utilizzato come voce di uno strumento di screening (es. M-CHAT, CSBS) o come indicatore per la determinazione di un risk score per ASD o ritardo comunicativo, il dispositivo di lettura configurazionale viene trasformato in misura di sviluppo individuale. La struttura configurazionale di un episodio non è equivalente al livello di sviluppo del bambino: un bambino può produrre una struttura configurazionale piena in un episodio e predeterminata in un altro, in funzione del setting e della relazione. Aggregare questa lettura in uno score è epistemicamente non autorizzato."
+  },
+
+  "next_step_recommendation": {
+    "recommendation": "procedere_a_nuovo_dispositivo",
+    "reason": "Il dispositivo sorgente trasferisce con adattamenti specifici e ben delimitati. Non è necessaria la ricostruzione dei quattro blocchi strutturali (f3-step-8): la corporeità, il bridge e il proxy rimangono validi. Ciò che serve è la produzione di un dispositivo domain-adapted che integri: (1) ncr_5 per pointing sollecitato/routinizzato; (2) interpretive_warning sull'uso diagnostico; (3) access point per setting clinico; (4) nuova non_permitted_transformation per uso come screening. Procedere direttamente a f3-step-9 usando il dispositivo sorgente come base e integrando gli adattamenti identificati in questo step 7.",
+    "skip_step_8": true,
+    "skip_step_8_reason": "Gli adattamenti necessari non richiedono ricostruzione strutturale dei blocchi base (corporeità, bridge, proxy) — solo specificazione di regole applicative e warning per il contesto clinico. Step 8 serve per nuovi temi dove la struttura deve essere ricostruita; qui la struttura è già valida."
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "step": "f3_step_2",
+  "theme_id": "tema_01_pointing_precoce",
+  "domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+  "device_id": "tema-01-pointing-clinico-dispositivo",
+  "stress_test_results": [
+    {
+      "case_id": "case_01",
+      "case_type": "assenza_configurazione",
+      "case_description": "Durante una sessione di osservazione libera, un bambino di 14 mesi estende ripetutamente l'indice verso oggetti nell'ambiente. Il gesto ha la forma motoria del pointing: braccio esteso, dito protratto. Tuttavia, il bambino non orienta lo sguardo verso il caregiver prima, durante o dopo il gesto. Non c'è pausa di attesa dopo l'estensione. L'adulto presente nella stanza non viene cercato come destinatario. Subito dopo ogni gesto il bambino passa ad altra attività.",
+
+      "observed_configuration": {
+        "corporeita": "Il corpo produce il gesto nella sua forma motoria: braccio che si estende, dito protratto, postura orientata verso l'oggetto. La base corporea è presente come movimento ma non come orientamento relazionale — il corpo non si rivolge verso l'altro, non cerca la co-presenza.",
+        "campo_intenzionale": "Assente. Non si apre alcuna struttura di orientamento condiviso: il gesto è orientato verso l'oggetto ma non verso la condivisione con un altro soggetto. Non c'è ricerca della risposta, non c'è pausa di attesa che lasci spazio all'altro per entrare nel campo.",
+        "co_regolazione": "Assente. Non vi è ricerca della risposta dell'altro, non vi è attesa co-regolatoria. La risposta eventuale dell'adulto non è cercata e, quando avviene spontaneamente, non viene integrata nel gesto.",
+        "mediazione_simbolica": "Assente. Il percepito non diventa condiviso: l'oggetto rimane oggetto del gesto motorio del bambino, non costituito come condiviso e significabile attraverso la relazione."
+      },
+
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo legge questo caso con chiarezza: identifica la rottura al livello del campo intenzionale — il gesto motorio c'è, la corporeità è attiva, ma la struttura relazionale non si apre. Rende visibile la distinzione tra pointing come gesto motorio e pointing come configurazione: non il 'bambino che non sa puntare' ma il 'gesto che non costituisce campo condiviso'. Le domande strutturali del dispositivo (in particolare: 'il gesto si configura come apertura di un campo intenzionale condiviso o come orientamento corporeo verso qualcosa che rimane privato?') si attivano immediatamente e producono una lettura precisa.",
+        "what_becomes_unclear": "Il dispositivo fatica a distinguere se l'assenza di campo intenzionale sia dovuta a una mancanza strutturale del bambino o a una mancanza di disponibilità co-regolatoria nell'ambiente. Nel caso descritto c'è un adulto presente ma non attivo: se l'adulto fosse stato più disponibile, la configurazione sarebbe emersa? Il dispositivo segnala l'assenza ma non può attribuirne la causa a uno dei due poli della relazione senza ulteriori osservazioni.",
+        "ambiguity_level": "basso"
+      },
+
+      "breaking_point": {
+        "present": false
+      },
+
+      "discriminative_value": {
+        "what_distinguishes_this_case": "Il gesto ha la forma esterna del pointing ma non la struttura. Questa differenza — forma senza struttura — è precisamente ciò che il dispositivo è costruito per rendere visibile e che una lettura comportamentale non distingue: il bambino 'punta' (comportamento presente) ma non 'costituisce campo condiviso' (configurazione assente).",
+        "device_can_distinguish": true
+      },
+
+      "misreading_risks": {
+        "without_device": "L'operatore registra il pointing come competenza presente e lo conta come indicatore evolutivo positivo (frequenza del pointing nella sessione). Non vede la differenza strutturale tra gesto motorio e atto semiotico co-prodotto. Il caso viene letto come 'pointing presente' invece che come 'configurazione assente'.",
+        "with_device_misused": "L'operatore che usa il dispositivo come checklist potrebbe segnare 'corporeità: presente' come indicatore positivo e costruire un profilo parzialmente rassicurante, senza cogliere che la corporeità senza campo intenzionale non è la prima tappa di una configurazione in corso — è un piano che non si connette agli altri. Il rischio è la lettura per item invece che per struttura relazionale."
+      }
+    },
+    {
+      "case_id": "case_02",
+      "case_type": "configurazione_parziale",
+      "case_description": "Un bambino di 18 mesi, durante una seduta con il caregiver, vede un cane attraverso la finestra. Si gira verso il caregiver con un'espressione di eccitazione, estende il braccio verso la finestra e lo guarda con attesa evidente — lo sguardo oscilla tra la finestra e il caregiver. Il caregiver, distratto dal telefono, alza brevemente lo sguardo, dice 'sì, bello' con tono piatto e torna al telefono. Il bambino insiste: ripete il gesto, guarda di nuovo il caregiver, ma la risposta non cambia. Dopo tre tentativi il bambino abbandona il gesto e si allontana dalla finestra.",
+
+      "observed_configuration": {
+        "corporeita": "Pienamente presente e relazionalmente orientata: il corpo si volge verso il caregiver, il gesto emerge da una postura di ricerca attiva. La corporeità non è solo motoria ma è già relazionale — il bambino si orienta verso l'altro come parte del gesto.",
+        "campo_intenzionale": "Si apre dal lato del bambino: c'è ricerca di orientamento condiviso, pausa di attesa, alternanza dello sguardo. Tuttavia il campo non si costituisce come condiviso perché il caregiver non vi entra: si apre unilateralmente e rimane aperto-in-attesa senza che l'altro lo popoli. Il campo è tentato, non costituito.",
+        "co_regolazione": "Presente ma insufficiente per sostenere il passaggio. La risposta del caregiver registra il gesto ('sì, bello') ma si colloca al livello comportamentale: non entra nel campo, non orienta l'attenzione verso la finestra, non co-regola la struttura intenzionale aperta dal bambino. La co-regolazione è formalmente presente come risposta e strutturalmente assente come partecipazione al campo.",
+        "mediazione_simbolica": "Assente. Il percepito (il cane) non diventa condiviso e significabile: rimane oggetto del gesto del bambino senza che il passaggio semiotico si compia. La configurazione si ferma prima della soglia."
+      },
+
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo legge con precisione la distinzione tra risposta comportamentale e co-regolazione strutturale: rende visibile che il caregiver risponde ('sì, bello') senza co-regolare — che si colloca al livello del gesto ma non al livello del campo intenzionale. Attiva la domanda strutturale: 'la risposta dell'adulto si colloca al livello del gesto, del campo o della mediazione simbolica?' — e la risposta è 'al livello del gesto, senza entrare nel campo'. Il segnale grezzo è leggibile: il bambino ripete il gesto — ripetizione come indice che il campo tentato non ha ricevuto risposta strutturale.",
+        "what_becomes_unclear": "Il dispositivo produce una zona di ambiguità sulla natura del campo intenzionale: si può dire che il campo si 'apre' se solo uno dei due soggetti vi entra? O il campo intenzionale richiede per definizione la co-presenza di entrambi? Il dispositivo non risolve questa questione: descrive il campo come 'tentato' o 'unilaterale' ma non ha una categoria per il campo aperto da uno che l'altro non abita. Questa zona di ambiguità non è un difetto del dispositivo — è un'ambiguità reale nella struttura del fenomeno.",
+        "ambiguity_level": "medio"
+      },
+
+      "breaking_point": {
+        "present": true,
+        "where": "La distinzione tra 'campo che si apre ma non viene abitato' e 'campo che non si apre affatto'. Il dispositivo non ha una categoria per il campo intenzionale unilaterale: la dimensione del reading_focus descrive il campo come aperto o assente, ma non ha un termine per il tentativo di apertura che non trova risposta.",
+        "why": "Il concetto di campo intenzionale nella micro-matrice è strutturalmente diadico: si costituisce nella co-regolazione, non prima. Applicato a un caso in cui uno dei due soggetti cerca la co-regolazione e l'altro non risponde, il dispositivo deve scegliere tra 'campo assente' (che non cattura la ricerca attiva del bambino) e 'campo presente' (che non è accurato perché l'altro non vi entra). La categoria mancante è il campo tentato o campo in attesa — uno stato strutturale intermedio che questo tipo di caso rende visibile come lacuna del dispositivo."
+      },
+
+      "discriminative_value": {
+        "what_distinguishes_this_case": "Il bambino ha tutte le competenze per la configurazione e le attiva: la corporeità è relazionale, il campo viene cercato, la pausa di attesa c'è. Ciò che manca non è nel bambino ma nella disponibilità strutturale del caregiver a entrare nel campo. Questo caso distingue 'bambino che non costituisce configurazione' da 'configurazione che non si costituisce perché l'altro non è disponibile strutturalmente' — una distinzione clinicamente decisiva.",
+        "device_can_distinguish": true
+      },
+
+      "misreading_risks": {
+        "without_device": "L'operatore legge il caso come 'buona capacità comunicativa del bambino' (cerca l'attenzione condivisa, alterna lo sguardo) con 'caregiver poco responsivo'. Questa lettura è corretta in superficie ma non strutturalmente precisa: non coglie che il problema non è la quantità di risposta ma il livello strutturale a cui si colloca la risposta che c'è.",
+        "with_device_misused": "L'operatore che usa il dispositivo normativamente valuta il caregiver come 'inadeguato' perché la sua co-regolazione non sostiene il passaggio semiotico. Questa è esattamente la trasformazione che il dispositivo proibisce: convertire la lettura della co-regolazione come struttura diadica in giudizio sulla competenza del caregiver. Il caso facilita questo scivolamento perché la risposta del caregiver è chiaramente insufficiente — ma insufficiente strutturalmente, non moralmente."
+      }
+    },
+    {
+      "case_id": "case_03",
+      "case_type": "configurazione_distorta",
+      "case_description": "Un bambino di 16 mesi punta verso una palla sul pavimento. Il caregiver — attento, responsivo, molto coinvolto — vede immediatamente il gesto, raccoglie la palla e la porta al bambino, dicendo 'vuoi la palla? eccola!'. Il bambino prende la palla ma senza particolare reazione alla risposta — non c'è il momento di soddisfazione condivisa che segue tipicamente un pointing riuscito come costituzione di campo. Il caregiver ha risposto prontamente e in modo affettuoso. La configurazione superficialmente funziona. Ma il gesto è stato letto come richiesta e soddisfatto come tale, non come apertura di un campo semiotico.",
+
+      "observed_configuration": {
+        "corporeita": "Presente e relazionalmente orientata: il gesto emerge da una postura di orientamento verso l'oggetto e verso il caregiver.",
+        "campo_intenzionale": "Si apre brevemente ma viene immediatamente chiuso dalla risposta del caregiver: prima che il campo intenzionale possa costituirsi come orientamento condiviso verso l'oggetto, la risposta lo converte in transazione pragmatica. Il campo non viene abitato — viene sostituito dall'azione.",
+        "co_regolazione": "Presente ma distorta: il caregiver risponde prontamente e affettuosamente, ma la risposta si colloca al livello della soddisfazione della richiesta invece che al livello della co-regolazione del campo semiotico. La co-regolazione 'funziona' pragmaticamente ma 'chiude' strutturalmente: entra nel gesto interpretandolo come richiesta di possesso invece che come proposta di campo condiviso.",
+        "mediazione_simbolica": "Assente come co-produzione. Il percepito (la palla) diventa oggetto posseduto, non oggetto condiviso e significabile. Il passaggio non attraversa la soglia semiotica — si risolve prima, al livello pragmatico della soddisfazione del desiderio."
+      },
+
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo rende visibile la distinzione strutturale tra pointing come richiesta (funzione pragmatica: ottenere l'oggetto) e pointing come apertura di campo semiotico (funzione semiotica: costituire l'oggetto come condiviso e significabile). La domanda strutturale 'la risposta si colloca al livello del campo o al livello della mediazione simbolica?' si attiva e produce la lettura precisa: la co-regolazione si è collocata al livello della risposta al desiderio, non al livello della co-produzione del significato. Il segnale grezzo è disponibile: l'assenza del momento di soddisfazione condivisa — il bambino prende la palla senza 'registrare' la risposta come partecipazione al campo.",
+        "what_becomes_unclear": "Il dispositivo fatica a distinguere questa distorsione da una co-regolazione alta-qualità: entrambe producono risposta rapida, coinvolgimento affettuoso, soddisfazione del bambino. La differenza è strutturale (a quale livello si colloca la risposta) ma non immediatamente leggibile dal comportamento della risposta. Il dispositivo può identificare la distorsione solo osservando l'esito — l'assenza della co-produzione semiotica — non il processo.",
+        "ambiguity_level": "medio"
+      },
+
+      "breaking_point": {
+        "present": true,
+        "where": "La distinzione tra co-regolazione distorta e co-regolazione assente. In entrambi i casi la mediazione simbolica non si produce: il dispositivo identifica correttamente l'assenza di esito semiotico ma non distingue con precisione se è perché la co-regolazione non c'è (case_02) o perché c'è ma produce chiusura invece di apertura (questo caso). La differenza strutturale è significativa — implica interventi molto diversi — ma il dispositivo la rende leggibile solo indirettamente, attraverso la qualità della risposta.",
+        "why": "Il nodo co-regolazione nella micro-matrice descrive la risposta come condizione del passaggio semiotico, ma non differenzia tra risposta-assente e risposta-distorcente. Entrambe producono 'co-regolazione non strutturalmente sostenente' ma la differenza tra un caregiver che non risponde e un caregiver che risponde al livello sbagliato è clinicamente rilevante e il dispositivo non ha un punto di ingresso preciso per distinguerle."
+      },
+
+      "discriminative_value": {
+        "what_distinguishes_this_case": "La risposta del caregiver è alta per qualità comportamentale (rapida, affettuosa, coinvolta) ma bassa per qualità strutturale (si colloca al livello pragmatico, non al livello semiotico). Questo caso mette in crisi la correlazione tra responsività comportamentale e qualità strutturale della co-regolazione — una correlazione che il senso comune e molti strumenti clinici danno per scontata.",
+        "device_can_distinguish": true
+      },
+
+      "misreading_risks": {
+        "without_device": "L'operatore legge il caregiver come altamente responsivo e affettuoso — il che è vero — e il pointing come funzionante. Non vede che il gesto non ha prodotto co-costituzione semiotica ma soddisfazione pragmatica: il livello strutturale del passaggio non è distinguibile dal comportamento osservabile.",
+        "with_device_misused": "L'operatore che usa il dispositivo normativamente potrebbe valutare negativamente il caregiver ('risposta al livello sbagliato') ignorando che questa modalità di risposta è culturalmente molto frequente, spesso adattiva, e non è strutturalmente patologica. Il dispositivo non autorizza a giudicare il livello della risposta — autorizza a descriverlo strutturalmente e a chiedersi se produce o meno co-costituzione semiotica nel contesto specifico."
+      }
+    },
+    {
+      "case_id": "case_04",
+      "case_type": "configurazione_oscillante",
+      "case_description": "In una sessione di osservazione di 20 minuti, un bambino di 15 mesi produce 9 episodi di pointing. In 3 episodi la configurazione si costituisce pienamente: il bambino punta, il caregiver entra nel campo, il campo diventa condiviso, si produce scambio semiotico con vocalizzazioni reciproche e sguardi condivisi. In 4 episodi il caregiver risponde ma in modo parziale — guarda brevemente, risponde verbalmente senza orientare l'attenzione, torna all'attività. In 2 episodi il bambino punta senza cercare la risposta del caregiver. La qualità della co-regolazione dipende dall'attività in corso del caregiver: quando è libero, la configurazione si costituisce; quando è parzialmente occupato, si degrada.",
+
+      "observed_configuration": {
+        "corporeita": "Costantemente presente e relazionalmente orientata in tutti i 9 episodi: la base corporea del gesto è stabile e non oscilla.",
+        "campo_intenzionale": "Oscillante: si apre nei 3 episodi con co-regolazione piena, si apre parzialmente nei 4 episodi con risposta comportamentale, non si apre nei 2 episodi senza ricerca dell'altro. La disponibilità del bambino ad aprire il campo è presente, ma l'apertura effettiva dipende dalla disponibilità dell'adulto.",
+        "co_regolazione": "Il nodo pivot della oscillazione: la sua qualità fluctua sistematicamente in funzione della disponibilità attentiva del caregiver nel momento. Non è assente né distorta in senso strutturale — è variabile nella sua intensità e nel livello a cui si colloca.",
+        "mediazione_simbolica": "Presente nei 3 episodi a co-regolazione piena, assente negli altri. Il passaggio semiotico si produce solo quando la co-regolazione sostiene il campo con sufficiente intensità e al livello giusto."
+      },
+
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo rende leggibile la struttura dell'oscillazione: non 'configurazione parzialmente presente' ma 'configurazione disponibile ma non stabilizzata — contesto-dipendente'. La domanda strutturale che si attiva è: la configurazione è nell'interlocutore (dipende dalla disponibilità del caregiver), nel bambino (dipende dalla sua soglia di ricerca), o nella struttura diadica (dipende dalla qualità della sintonizzazione complessiva)? Il dispositivo rivela che la corporeità è stabile e che l'oscillazione è nel polo co-regolatorio — informazione strutturalmente rilevante.",
+        "what_becomes_unclear": "Il dispositivo non ha una categoria per 'configurazione disponibile ma non stabilizzata': la lettura oscillante richiede di aggregare più episodi per descrivere una struttura, e il dispositivo non specifica come si passa dalla lettura del singolo episodio alla lettura della struttura complessiva dell'interazione. Qual è la soglia oltre la quale un'oscillazione è 'normale variabilità contestuale' e quando diventa 'struttura instabile'? Il dispositivo non risponde a questa domanda.",
+        "ambiguity_level": "medio"
+      },
+
+      "breaking_point": {
+        "present": true,
+        "where": "La transizione dalla lettura episodica alla lettura strutturale complessiva. Il dispositivo è costruito per leggere la configurazione nell'atto — nel singolo episodio di pointing. Applicato a una sequenza di episodi con qualità variabile, deve aggregare letture diverse per produrre una descrizione della struttura della relazione. Non ha un livello di aggregazione esplicito.",
+        "why": "La micro-matrice descrive la configurazione come struttura di un atto (singolo episodio), non come struttura di una relazione (sequenza di atti nel tempo). L'oscillazione è un fenomeno che emerge solo su sequenze: non è leggibile nell'episodio singolo. Per leggere l'oscillazione come struttura, il dispositivo avrebbe bisogno di un livello di analisi longitudinale o sequenziale che non è esplicitato."
+      },
+
+      "discriminative_value": {
+        "what_distinguishes_this_case": "La configurazione è disponibile nel bambino (corporeità stabile, ricerca dell'altro presente) ma non stabilizzata nella relazione (dipende dalla disponibilità momentanea del caregiver). Questo distingue strutturalmente 'bambino che non ha la configurazione' da 'bambino che ha la configurazione in un contesto che non la sostiene sistematicamente'. La differenza orienta in modi molto diversi qualsiasi riflessione sull'intervento — non sulla competenza del bambino ma sulla disponibilità strutturale del campo relazionale.",
+        "device_can_distinguish": true
+      },
+
+      "misreading_risks": {
+        "without_device": "L'operatore calcola la frequenza del pointing (9 episodi in 20 minuti — alta) e la percentuale di episodi riusciti (3/9 = 33%). Questa lettura quantitativa oscura la struttura: non vede che la corporeità è stabile, che il problema non è nel bambino, e che la variabilità è sistematicamente correlata alla disponibilità co-regolatoria del caregiver. Il caso viene letto come 'competenza emergente' quando è strutturalmente 'configurazione disponibile in contesto inadeguato'.",
+        "with_device_misused": "L'operatore che usa il dispositivo come checklist applica la lettura episodica a ogni singolo caso, ottiene 3 positivi e 6 negativi, e costruisce una valutazione dell'interazione come '33% funzionante'. Questa aggregazione quantitativa perde esattamente ciò che lo stress test rivela come rilevante: la struttura dell'oscillazione, la stabilità della corporeità, la sistematicità della correlazione tra disponibilità del caregiver e qualità della configurazione."
+      }
+    },
+    {
+      "case_id": "case_05",
+      "case_type": "configurazione_apparente",
+      "case_description": "Un bambino di 22 mesi in una seduta di valutazione strutturata. Il clinico ha appena mostrato dei libri illustrati. Il bambino, molto verbale per la sua età, punta ripetutamente verso le immagini. Il clinico risponde sistematicamente nominando gli oggetti indicati. Il bambino ripete le parole dopo il clinico. Lo scambio è fluente, l'alternanza è regolare, il bambino sembra soddisfatto, il clinico soddisfatto. Tutti i comportamenti associati al pointing riuscito sono presenti. Tuttavia, lo scambio è altamente routinizzato: il bambino ha imparato lo script 'puntare → adulto nomina → ripetere', lo applica correttamente, ma non sta co-producendo un campo semiotico — sta riproducendo una sequenza appresa. Il significato è già dato prima del gesto.",
+
+      "observed_configuration": {
+        "corporeita": "Presente e formalmente corretta: il gesto è preciso, l'orientamento verso il clinico è presente. Ma la corporeità non è aperta — è in una postura esecutiva, come chi svolge un compito noto, non come chi apre qualcosa di non ancora determinato.",
+        "campo_intenzionale": "Apparentemente presente, strutturalmente assente. Lo scambio ha la forma del campo condiviso (alternanza di sguardi, risposta del clinico, ritmo dialogico) ma non la struttura: il campo è già chiuso prima di aprirsi, perché lo script predetermina cosa verrà prodotto. Non c'è apertura verso l'indeterminato — c'è completamento di una sequenza nota.",
+        "co_regolazione": "Presente come sincronizzazione comportamentale, assente come co-produzione strutturale. Il clinico e il bambino sono sincronizzati nella sequenza (punta → nomina → ripete) ma non stanno co-regolando: stanno eseguendo ruoli precostituiti. La risposta del clinico non trasforma il gesto — lo completa secondo uno script.",
+        "mediazione_simbolica": "Apparentemente presente (i significati vengono nominati), strutturalmente assente come co-produzione. Il significato pre-esiste al gesto: l'immagine ha già un nome, il bambino lo sa, il clinico lo sa. Il gesto non produce mediazione simbolica — riceve conferma di un significato già dato."
+      },
+
+      "device_performance": {
+        "readable": true,
+        "what_it_reads": "Il dispositivo, applicato con attenzione al bridge, rende leggibile la differenza strutturale: il passaggio trasformativo (gesto corporeo co-regolato → atto semiotico co-prodotto) non avviene — il significato non viene costituito nella relazione ma confermato da una sequenza. La domanda strutturale che discrimina è: 'il passaggio trasformativo è genuino o riproduce uno script?' La risposta è disponibile osservando se c'è apertura verso l'indeterminato nel gesto — e in questo caso non c'è.",
+        "what_becomes_unclear": "Questo è il caso in cui il dispositivo è più a rischio di fallire silenziosamente. Tutti gli indicatori comportamentali del dispositivo (corporeità presente, risposta presente, scambio fluente) segnalano positivo. Solo il bridge — la natura del passaggio trasformativo — rivela la differenza. Ma il bridge è la dimensione più difficile da leggere senza padronanza del modello: richiede di osservare non cosa accade ma se il processo è genuinamente aperto o predeterminato. La zona di opacità è alta perché l'ambiguità non è nel comportamento ma nella struttura del processo.",
+        "ambiguity_level": "alto"
+      },
+
+      "breaking_point": {
+        "present": true,
+        "where": "Il bridge come dimensione discriminante. Il dispositivo ha il bridge tra le sue dimensioni di lettura, ma la distinzione tra co-produzione genuina e riproduzione di script non è accessibile attraverso le altre dimensioni del reading_focus — corporeità, campo, co-regolazione, mediazione simbolica descrivono il caso come positivo o ambiguo. Solo il bridge rende visibile la differenza, e il bridge è la dimensione strutturalmente più esigente.",
+        "why": "Il caso della configurazione apparente mette in crisi il dispositivo perché la differenza strutturale è a un livello di astrazione più alto di quello descritto dalle singole dimensioni di lettura. La distinzione tra apertura e script non è osservabile nel comportamento — richiede una lettura della struttura del processo, non del suo contenuto. Il dispositivo ha questa lettura (il bridge), ma non l'ha resa sufficientemente operativa: la dimensione 'Struttura del passaggio trasformativo' nel reading_focus descrive il bridge come leggibile ma non indica come distinguere empiricamente tra passaggio genuino e riproduzione."
+      },
+
+      "discriminative_value": {
+        "what_distinguishes_this_case": "Il bambino produce tutti i comportamenti associati al pointing riuscito, inclusa la risposta al clinico e la ripetizione delle parole. Ciò che manca è l'apertura: il campo non si apre verso qualcosa di non ancora determinato. Questa distinzione — apertura vs. completamento di script — è invisibile a una lettura comportamentale e molto difficile a una lettura configurazionale senza attenzione specifica al bridge.",
+        "device_can_distinguish": false
+      },
+
+      "misreading_risks": {
+        "without_device": "L'operatore legge il caso come pointing pienamente funzionante: tutti gli indicatori comportamentali sono positivi, lo scambio è fluente e verbalmente ricco. Il bambino viene valutato come avanzato per la sua età. La differenza strutturale tra co-produzione e riproduzione di script non è accessibile a una lettura non strutturale.",
+        "with_device_misused": "L'operatore che usa il dispositivo come checklist ottiene tutti positivi su tutte le dimensioni — corporeità presente, campo presente, co-regolazione presente, mediazione simbolica presente — e conclude che la configurazione è piena. Il dispositivo viene usato esattamente nel modo che produce il falso positivo: come verifica item per item invece che come lettura della struttura del processo trasformativo. Questo è il caso che giustifica l'esistenza del bridge come dimensione autonoma e obbligatoria nel reading_focus."
+      }
+    }
+  ]
+}

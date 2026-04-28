@@ -1,0 +1,355 @@
+{
+  "step": "f3_step_4",
+  "version": "v1",
+  "test_type": "indistinguibility_test",
+  "based_on": {
+    "device": "tema-01-pointing-clinico-dispositivo-v2",
+    "step_reference": "f3_step_3 — correzione strutturale"
+  },
+  "domain": "clinico (neuropsviluppo, psicologia dell'infanzia, terapia della comunicazione precoce)",
+
+  "shared_behavioral_surface": {
+    "description": "Entrambi i casi presentano la stessa superficie comportamentale: stesso bambino di 18 mesi (in due osservazioni distinte) con il proprio caregiver in setting domestico abituale. La sequenza osservabile è la medesima — un uccellino si posa sul davanzale esterno, il bambino lo nota, indica con dito esteso, guarda il caregiver, il caregiver verbalizza una nominazione e un commento, il bambino vocalizza e guarda di nuovo l'uccellino, l'uccellino vola via, l'interazione si chiude con un breve scambio reciproco di sguardi. Età, setting, oggetto-evento, gesto, sequenza, tono apparente dell'interazione, durata complessiva e numero di scambi sono indistinguibili.",
+    "observable_sequence": [
+      "il bambino è in postura seduta/seminstabile sul tappeto",
+      "un uccellino si posa sul davanzale esterno entrando nel campo percettivo",
+      "il bambino estende il braccio e indica con il dito teso verso la finestra",
+      "il bambino orienta lo sguardo verso il caregiver",
+      "il caregiver verbalizza nominando l'oggetto ('è un uccellino') e aggiunge un breve commento ('hai visto?', 'guarda come si muove')",
+      "il bambino vocalizza e ri-orienta lo sguardo verso l'uccellino",
+      "l'uccellino vola via",
+      "il bambino e il caregiver si scambiano un breve sguardo, l'episodio si chiude"
+    ],
+    "what_is_NOT_distinguishable_at_this_level": "frequenza del pointing, latenza dello sguardo all'adulto, durata dell'attenzione condivisa, tono affettivo manifesto, qualità formale della risposta verbale del caregiver, presenza/assenza del gesto, presenza/assenza dello sguardo di riferimento, presenza/assenza della verbalizzazione adulta, presenza/assenza della vocalizzazione del bambino"
+  },
+
+  "cases": [
+    {
+      "case_id": "caso_A",
+      "case_type": "configurazione_reale",
+      "label": "Pointing con passaggio aperto — co-produzione genuina",
+
+      "narrative_thick_description": "L'uccellino si posa. Il bambino interrompe l'attività in corso (sta sfogliando un libro), il corpo si riassesta — la postura si riorienta verso la finestra prima che il braccio si sollevi. Il braccio si estende, il dito si tende, e il braccio resta sospeso un istante più di quanto la pura segnalazione richiederebbe: il braccio non torna giù subito, mantiene una struttura di richiamo. Lo sguardo va all'uccellino, poi al caregiver, poi torna all'uccellino, poi di nuovo al caregiver in un movimento che non è meccanico ma cerca qualcosa nello sguardo dell'altro. Il caregiver dice 'è un uccellino'. Il bambino fa una micro-pausa nella vocalizzazione che stava per iniziare — la pausa non è inerzia, è ascolto attivo. Poi vocalizza 'oh!' con un'inflessione che non è eco della parola dell'adulto ma aggiunge qualcosa: una qualità di stupore che non era nella nominazione neutra del caregiver. Il bambino fa un piccolo movimento del corpo verso la finestra come a dire 'guardalo'. Il caregiver coglie questa ripresa e la riprende a sua volta: 'sì, guarda come si muove!' — il commento del caregiver è inflesso dalla vocalizzazione del bambino, non era previsto come passo successivo dello script. Il bambino sorride e torna a guardare. L'uccellino vola via. Lo scambio di sguardi finale è breve ma il bambino e il caregiver condividono qualcosa di simile a una piccola complicità — qualcosa è stato co-prodotto in quel momento e entrambi lo sanno.",
+
+      "observed_configuration": {
+        "corporeità_vissuta": {
+          "state": "presente",
+          "structural_description": "il corpo si riorienta verso la finestra prima del gesto manuale; il braccio teso mantiene una struttura di sospensione dopo il pointing iniziale; la postura accompagna il gesto invece di limitarsi a produrlo. Il gesto è radicato in un orientamento corporeo-relazionale, non è un movimento isolato della mano."
+        },
+        "campo_intenzionale": {
+          "state": "condiviso",
+          "structural_description": "il campo si costituisce come spazio di orientamento condiviso: il bambino apre, il caregiver entra, e la co-presenza ha una durata strutturale (più scambi, ripresa reciproca). L'apertura non è solo un atto di segnalazione ma una struttura sostenuta che invita all'ingresso.",
+          "who_opens": "il bambino",
+          "who_enters": "il caregiver, in modo riconoscibile e sostenuto",
+          "duration_of_co_presence": "presente come elemento strutturale dell'episodio, non istantanea"
+        },
+        "co_regolazione": {
+          "function": "trasformativa",
+          "structural_description": "la risposta del caregiver entra nel campo aperto e consente il passaggio dal percepito condiviso al percepito condiviso e significabile. La nominazione iniziale ('è un uccellino') sarebbe in sé registrativa, ma viene immediatamente articolata da una ripresa della vocalizzazione del bambino ('guarda come si muove') che è inflessa dal contributo del bambino — il caregiver non rimane sulla nominazione chiusa, segue la qualità di stupore che il bambino ha aggiunto. La funzione strutturale della risposta complessiva è di abilitazione del passaggio semiotico co-prodotto."
+        },
+        "mediazione_simbolica": {
+          "state": "presente",
+          "structural_description": "il passaggio dal percepito al condiviso-significabile si produce: l'uccellino non è solo guardato insieme, è costituito come 'qualcosa-che-stiamo-vedendo-insieme-e-ci-sorprende'. Il significato non è solo 'l'oggetto si chiama uccellino' (che sarebbe la mediazione registrativa) ma include la qualità relazionale dello stupore condiviso. La mediazione non è equivalente alla nominazione."
+        },
+        "passaggio_trasformativo": {
+          "class": "aperto",
+          "structural_description": "il significato del gesto si articola nel corso dello scambio: parte come 'lo vedo' (segnalazione), si trasforma in 'guardalo con me' (apertura del campo), si arricchisce di 'che bello, si muove' (qualità di stupore co-prodotta). Né il bambino né il caregiver hanno determinato a priori questo esito: si è costituito nello scambio."
+        }
+      },
+
+      "proxy_analysis": {
+        "applied_class": "aperto",
+        "proxies_present": [
+          {
+            "proxy": "non-prevedibilità della sequenza",
+            "evidence_in_case": "la ripresa del caregiver ('guarda come si muove') non è il passo successivo prevedibile dopo la nominazione: è inflessa dalla vocalizzazione di stupore del bambino. Se il bambino non avesse aggiunto la qualità di stupore, la sequenza avrebbe potuto chiudersi sulla nominazione.",
+            "indicates": "apertura"
+          },
+          {
+            "proxy": "asimmetria dinamica del lavoro semiotico",
+            "evidence_in_case": "il contributo trasformativo si sposta nel corso della sequenza: il bambino apre il campo, il caregiver nomina, il bambino aggiunge la qualità di stupore, il caregiver la riprende e articola. Nessuno dei due concentra stabilmente il lavoro semiotico.",
+            "indicates": "apertura"
+          },
+          {
+            "proxy": "ridefinizione in corso d'opera",
+            "evidence_in_case": "il significato del gesto cambia nel corso dello scambio: da segnalazione, a apertura di campo, a stupore condiviso. La modifica è riconoscibile come prodotta dalla relazione, non da uno dei due isolatamente.",
+            "indicates": "apertura"
+          },
+          {
+            "proxy": "tracce di sospensione strutturale",
+            "evidence_in_case": "il braccio teso mantiene la struttura di richiamo dopo il pointing iniziale; la micro-pausa del bambino dopo la nominazione del caregiver è ascolto attivo, non inerzia. Sono micro-attese strutturali, non latenze.",
+            "indicates": "apertura"
+          }
+        ],
+        "why_proxies_indicate_openness": "i quattro proxy sono coerenti tra loro: la non-prevedibilità è sostenuta dall'asimmetria dinamica e dalla ridefinizione, la sospensione strutturale è la condizione che rende possibile la ridefinizione. Sono incompatibili con l'esecuzione di uno script abituale, perché uno script minimizza non-prevedibilità, sospensione e ridefinizione, e centralizza il lavoro semiotico in chi lo conosce.",
+        "mandatory_counter_indicator": {
+          "potential_alternative_reading": "la sequenza 'pointing-nominazione-vocalizzazione-commento' è una struttura diadica ricorrente in molte interazioni con questo caregiver, e potrebbe essere letta come uno script abituale del tipo 'show-and-tell'.",
+          "why_discarded": "la ripresa del caregiver ('guarda come si muove') non è la formula stabilizzata dello script: è inflessa dalla qualità di stupore aggiunta dal bambino, che non era prevista dalla nominazione iniziale. Se l'episodio fosse stato l'esecuzione dello script, la sequenza si sarebbe chiusa sulla nominazione o avrebbe seguito una forma stabilizzata di commento, non si sarebbe articolata seguendo l'inflessione della vocalizzazione del bambino. La presenza di una ridefinizione effettiva — non solo di un'aggiunta — distingue la sequenza dall'esecuzione di una struttura già data."
+        },
+        "proxy_confidence": {
+          "decisive_proxy": "ridefinizione in corso d'opera, sostenuta dalla asimmetria dinamica del lavoro semiotico",
+          "observability": "media",
+          "observability_rationale": "la ridefinizione richiede di leggere lo scambio nella sua totalità qualitativa — riconoscere che il commento del caregiver è inflesso dalla vocalizzazione del bambino richiede attenzione qualitativa specifica. Non è direttamente leggibile in un singolo fotogramma o in una trascrizione che riporti solo il contenuto verbale."
+        },
+        "classification_status": "probabile",
+        "classification_status_rationale": "la triangolazione regge — i quattro proxy sono coerenti, il contro-indicatore è stato esplicitato e scartato — ma lo status non è 'netto' perché il proxy decisivo (ridefinizione) ha osservabilità media: la classificazione dipende dalla qualità dell'osservazione qualitativa. Un osservatore che leggesse solo il contenuto verbale senza cogliere l'inflessione potrebbe non distinguere il caso dall'esecuzione di uno script.",
+        "ambiguity_conditions": [
+          "se l'osservazione è limitata al contenuto verbale e non include la qualità prosodico-corporea della ripresa del caregiver, il proxy decisivo (ridefinizione) perde osservabilità e il caso deve essere classificato come ambiguo",
+          "se la diade è osservata per la prima volta e non è possibile valutare se la sequenza è abituale o nuova, il proxy della non-prevedibilità diventa difficilmente triangolabile e la classificazione deve diventare ambigua",
+          "se il setting introduce un disturbo che riduce la leggibilità delle micro-sospensioni (rumore, presenza di altri soggetti, postura del bambino non visibile), il proxy della sospensione strutturale perde affidabilità e la classificazione non deve essere forzata"
+        ],
+        "classification": "aperto"
+      },
+
+      "alternative_interpretation": {
+        "could_be_read_as": "predeterminato",
+        "rationale": "la sequenza 'pointing-nominazione-vocalizzazione-commento-chiusura' è formalmente compatibile con uno script di routine 'show-and-tell' molto frequente in diadi caregiver-bambino di questa fascia d'età. Un osservatore che leggesse il caso da una trascrizione verbale (ignorando la qualità prosodica e le micro-sospensioni corporee) potrebbe ragionevolmente classificarlo come esecuzione di tale script: il contenuto verbale del caregiver ('è un uccellino', 'guarda come si muove') è formalmente sovrapponibile alla forma standard dello script. La distinzione si gioca interamente sull'inflessione della ripresa, sulla micro-sospensione del braccio, sulla qualità della pausa-ascolto del bambino — elementi che non emergono in una rilevazione solo verbale o solo cinetica."
+      },
+
+      "device_discrimination": {
+        "device_distinguishes_this_case": true,
+        "discriminating_dimension": "passaggio_trasformativo (bridge)",
+        "discriminating_basis": "la triangolazione obbligatoria del bridge — non gli stati del campo o le funzioni co-regolatorie isolatamente, che potrebbero essere classificate identicamente nei due casi se ci si limitasse alla forma osservabile. Sono i quattro proxy strutturali del bridge (non-prevedibilità, asimmetria dinamica, ridefinizione, sospensione) e la loro coerenza che rendono leggibile la qualità co-prodotta del passaggio.",
+        "secondary_support": "la corporeità-vissuta come livello che radica il gesto in un orientamento — la postura che si riorienta prima del braccio, il braccio che mantiene struttura di richiamo — sostiene la lettura strutturale ma non è da sola sufficiente a discriminare: anche un caso predeterminato può presentare un gesto corporeamente integrato."
+      },
+
+      "failure_risk": {
+        "conditions_under_which_device_would_fail_on_this_case": [
+          "se l'osservatore opera con una checklist comportamentale (presenza di pointing, presenza di sguardo di riferimento, presenza di risposta verbale) il caso viene classificato come 'pointing tipico con risposta adeguata' senza che la struttura del passaggio venga interrogata",
+          "se l'osservatore non conosce la diade e non ha accesso a una baseline che permetta di valutare se la sequenza è abituale o emergente, il proxy della non-prevedibilità non è triangolabile",
+          "se l'osservatore opera in tecnicismo — scorando isolatamente lo stato del campo, la funzione co-regolatoria e la classe del passaggio — la coerenza dei proxy del bridge si perde e la lettura collassa nella tassonomia",
+          "se le micro-sospensioni e la qualità prosodica della ripresa non sono accessibili (osservazione mediata da resoconto verbale, video di bassa qualità, audio assente) il proxy decisivo perde osservabilità: l'esito corretto non è classificare 'aperto' di default ma dichiarare l'ambiguità"
+        ]
+      }
+    },
+
+    {
+      "case_id": "caso_B",
+      "case_type": "configurazione_apparente",
+      "label": "Pointing con passaggio predeterminato — script 'show-and-tell'",
+
+      "narrative_thick_description": "L'uccellino si posa. Il bambino è sul tappeto, sta sfogliando un libro. Vede l'uccellino, e c'è un momento riconoscibile in cui si attiva una struttura familiare: il braccio si solleva con un movimento lineare e fluido, il dito si tende, lo sguardo va all'uccellino e poi al caregiver in una sequenza pulita, regolare, che assomiglia a un movimento già fatto altre volte. Lo sguardo all'adulto non ha la qualità di richiamo del caso A, ha la qualità della consegna: 'tocca a te, ora dici come si chiama'. Il caregiver risponde nella forma stabilizzata della diade: 'è un uccellino, hai visto l'uccellino? guarda come si muove'. La frase è prodotta in un'unica unità, senza inflessioni che rispondano a qualcosa di specifico nel gesto del bambino — è la formula della diade, applicata. Il bambino vocalizza 'oh!' subito dopo la conferma del caregiver: la vocalizzazione è formalmente identica a quella del caso A, ma è la presa di consegna della nominazione, non un'inflessione che aggiunge qualcosa. Il braccio del bambino torna giù regolarmente, il bambino guarda di nuovo l'uccellino come per chiudere la sequenza. L'uccellino vola via. Il bambino e il caregiver si scambiano un breve sguardo: l'episodio si chiude. Lo scambio di sguardi finale ha la qualità della conclusione di una routine ben riuscita, non quella della complicità per qualcosa di emerso insieme. Niente di drammaticamente diverso si è verificato — la sequenza ha funzionato perfettamente — ma il significato del gesto era già lì prima che fosse prodotto: era 'cosa si fa quando entra un uccellino'.",
+
+      "observed_configuration": {
+        "corporeità_vissuta": {
+          "state": "presente",
+          "structural_description": "il corpo accompagna il gesto, l'orientamento è strutturalmente leggibile, il pointing non è disincarnato. La corporeità-vissuta è presente — questo è uno degli elementi che rende il caso comportamentalmente sovrapponibile al caso A. Tuttavia il gesto manca della qualità di sospensione del braccio dopo il pointing: il movimento è lineare e si conclude, non sostiene una struttura di richiamo."
+        },
+        "campo_intenzionale": {
+          "state": "condiviso (formalmente)",
+          "structural_description": "formalmente il campo si costituisce: il bambino apre, il caregiver entra, c'è co-presenza nello sguardo verso l'uccellino. La durata strutturale è presente. Da qui sola dimensione il caso è indistinguibile da caso A. La differenza sta nel come l'apertura è strutturata: lo sguardo del bambino al caregiver ha la qualità della consegna a una sequenza nota piuttosto che dell'invito a una co-costruzione, ma questo elemento da solo non è sufficientemente leggibile per modificare la classificazione dello stato del campo.",
+          "who_opens": "il bambino (formalmente)",
+          "who_enters": "il caregiver, in modo riconoscibile",
+          "duration_of_co_presence": "presente come elemento strutturale dell'episodio"
+        },
+        "co_regolazione": {
+          "function": "ambiguità tra partecipativa e chiudente",
+          "structural_description": "la risposta del caregiver è formalmente partecipativa: entra nel campo, sostiene la co-presenza, non lo chiude bruscamente. Tuttavia, strutturalmente, è la formula stabilizzata dello script della diade: nomina, conferma, commenta secondo una sequenza fissata. La funzione strutturale tende verso 'chiudente' nella misura in cui sostituisce un passaggio co-prodotto con un passaggio predeterminato, ma lo fa in forma morbida — non interrompe né impone, semplicemente esegue. La zona di sovrapposizione tra 'partecipativa' e 'chiudente' va dichiarata: la classificazione si appoggia interamente alla lettura del bridge, non alla classificazione isolata della funzione co-regolatoria."
+        },
+        "mediazione_simbolica": {
+          "state": "distorta",
+          "structural_description": "il significato viene co-prodotto formalmente — l'uccellino è guardato insieme e nominato — ma non appartiene al bambino: è la sequenza nota della diade, in cui il caregiver assegna il significato 'questo è un uccellino' come riempimento della casella prevista dallo script. La mediazione simbolica formalmente avviene ma è imposta nella struttura — non da un atto autoritario isolato dell'adulto, ma dalla ripetizione della struttura di scambio. Il bambino partecipa correttamente alla forma ma il contributo trasformativo non si distribuisce."
+        },
+        "passaggio_trasformativo": {
+          "class": "predeterminato",
+          "structural_description": "il significato del gesto è dato in anticipo dalla struttura abituale dell'interazione: 'quando un oggetto entra nel campo percettivo e il bambino indica, l'adulto nomina e commenta, il bambino vocalizza, l'episodio si chiude'. Il gesto del bambino si inserisce nello script senza modificarlo. Il passaggio formalmente avviene — l'uccellino è nominato e condiviso — ma non è co-prodotto: è riprodotto."
+        }
+      },
+
+      "proxy_analysis": {
+        "applied_class": "predeterminato",
+        "proxies_present": [
+          {
+            "proxy": "prevedibilità della sequenza",
+            "evidence_in_case": "la sequenza 'pointing-nominazione-conferma-commento-vocalizzazione-chiusura' è la forma stabilizzata della diade, riconoscibile come ricorrente. Ciò che segue al gesto del bambino è desumibile dallo script abituale e si verifica senza variazione strutturale. Il commento del caregiver ('guarda come si muove') non è inflesso da qualcosa di specifico nel gesto: è la chiusura prevista della formula.",
+            "indicates": "predeterminazione"
+          },
+          {
+            "proxy": "concentrazione stabile del lavoro semiotico nell'adulto",
+            "evidence_in_case": "il contributo trasformativo non si sposta: il caregiver produce nominazione, conferma e commento; il bambino esegue il pointing iniziale e una vocalizzazione di acknowledgment. La co-costruzione del significato non avviene, la divisione del lavoro semiotico è stabile per l'intero episodio.",
+            "indicates": "predeterminazione"
+          },
+          {
+            "proxy": "assenza di ridefinizione",
+            "evidence_in_case": "il significato del gesto resta quello pre-assegnato dallo script — 'oggetto da nominare' — e non si articola nel corso dello scambio. La vocalizzazione del bambino non aggiunge una qualità al significato (come accade nel caso A) ma riempie una casella della sequenza nota.",
+            "indicates": "predeterminazione"
+          },
+          {
+            "proxy": "assenza di sospensione strutturale",
+            "evidence_in_case": "il braccio si tende e torna giù in un movimento lineare; la vocalizzazione segue immediatamente la conferma del caregiver senza la micro-pausa di ascolto del caso A; la sequenza fluisce in modo lineare senza micro-attese o esitazioni che segnalino indeterminazione.",
+            "indicates": "predeterminazione"
+          }
+        ],
+        "why_proxies_indicate_predetermination": "i quattro proxy sono coerenti tra loro: la prevedibilità della sequenza è sostenuta dalla concentrazione stabile del lavoro semiotico e dall'assenza di ridefinizione, e la linearità (assenza di sospensione) è la traccia corporea dell'esecuzione di una struttura già data. Sono compatibili con — e tipici di — l'esecuzione di una struttura abituale, in cui il significato non emerge ma viene riprodotto.",
+        "mandatory_counter_indicator": {
+          "potential_alternative_reading": "la sequenza presenta tutti gli elementi formali di un pointing tipico ben riuscito (gesto integrato, sguardo di riferimento, risposta verbale articolata, vocalizzazione di partecipazione, chiusura affettiva positiva) ed è in linea con i marker comportamentali considerati indicatori di sviluppo comunicativo tipico. Potrebbe essere letta come configurazione aperta esemplare.",
+          "why_discarded": "la presenza di forma comportamentale tipica e l'assenza di disfunzione manifesta NON sono criteri di apertura del passaggio: il dispositivo distingue forma da struttura. La triangolazione si fonda sui quattro proxy strutturali, non sulla qualità apparente della sequenza. La linearità della sequenza, la concentrazione stabile del lavoro semiotico e l'assenza di ridefinizione sono i tratti che distinguono un'esecuzione efficiente di uno script da una co-produzione: una sequenza può essere formalmente 'tipica' e strutturalmente predeterminata. Inoltre, in un punto della sequenza (la vocalizzazione del bambino) si potrebbe leggere un'aggiunta del bambino — ma l'aggiunta è formalmente identica alla casella prevista dallo script per quel turno (il bambino vocalizza dopo la nominazione), e non altera la struttura della sequenza: il caregiver non riprende l'inflessione della vocalizzazione, prosegue nella formula stabilizzata.",
+          "secondary_counter_indicator": {
+            "alternative_reading": "la presenza dello sguardo del bambino al caregiver dopo il pointing è classicamente considerata un marker di intenzionalità comunicativa condivisa e potrebbe far propendere per la classificazione 'aperto'.",
+            "why_discarded": "lo sguardo di riferimento è una condizione necessaria del campo intenzionale condiviso ma non è un proxy del bridge. Il bridge riguarda come la co-presenza si trasforma in significato co-prodotto, non se la co-presenza si è costituita. Lo sguardo all'adulto può essere consegna a uno script o invito a co-costruire: solo la triangolazione successiva del bridge lo distingue."
+          }
+        },
+        "proxy_confidence": {
+          "decisive_proxy": "assenza di ridefinizione, sostenuta dalla concentrazione stabile del lavoro semiotico nell'adulto",
+          "observability": "media",
+          "observability_rationale": "l'assenza di ridefinizione è leggibile solo se si coglie che il commento del caregiver non è inflesso dalla vocalizzazione del bambino — che è la formula della diade applicata, non una ripresa specifica. Richiede attenzione qualitativa allo scambio nella sua totalità e, idealmente, conoscenza della diade per riconoscere la formula stabilizzata."
+        },
+        "classification_status": "probabile",
+        "classification_status_rationale": "la triangolazione regge — i quattro proxy sono coerenti e il contro-indicatore principale (forma comportamentale tipica) è stato esplicitato e scartato — ma lo status non è 'netto' perché il proxy decisivo (assenza di ridefinizione) ha osservabilità media e perché il caso B è strutturalmente costruito per essere quasi-indistinguibile dal caso A. La classificazione dipende dalla qualità dell'osservazione qualitativa e dalla capacità dell'osservatore di riconoscere la formula stabilizzata della diade.",
+        "ambiguity_conditions": [
+          "se l'osservatore non ha accesso ad altre interazioni della stessa diade e non può quindi riconoscere la sequenza come 'forma stabilizzata', il proxy della prevedibilità diventa solo congetturale e la classificazione deve diventare ambigua",
+          "se l'osservazione è limitata a una sola occorrenza e non include la qualità prosodica della risposta del caregiver, la distinzione tra formula applicata e ripresa specifica si appiattisce — entrambi i proxy decisivi (assenza di ridefinizione, prevedibilità) perdono osservabilità",
+          "se la diade è osservata in un contesto eccezionale (prima occorrenza dell'oggetto, situazione inattesa), il proxy della prevedibilità non è ancorabile a una baseline e la classificazione 'predeterminato' non deve essere forzata: la lettura corretta è ambigua",
+          "se la triangolazione del bridge non è sostenibile a livello di episodio singolo ma il dispositivo viene usato per valutare la struttura relazionale, il rischio di ricaduta in giudizio sulla qualità del caregiver è alto: la classificazione 'predeterminato' deve restare al livello episodico, non diventare descrizione della relazione senza ulteriori sequenze"
+        ],
+        "classification": "predeterminato"
+      },
+
+      "alternative_interpretation": {
+        "could_be_read_as": "aperto",
+        "rationale": "il caso presenta tutti i marker comportamentali classici del pointing dichiarativo riuscito: gesto corporeamente integrato, sguardo di riferimento, risposta verbale dell'adulto articolata, vocalizzazione partecipativa del bambino, chiusura affettiva condivisa. Su una griglia comportamentale standard di valutazione dello sviluppo comunicativo, questo caso sarebbe classificato come esempio paradigmatico di interazione comunicativa precoce ben funzionante. La lettura 'aperto' è quella che un osservatore non addestrato al dispositivo strutturale produrrebbe quasi inevitabilmente. La distinzione richiede di sostituire il criterio 'la forma è riuscita' con il criterio 'il passaggio è co-prodotto o riprodotto', e la sostituzione non è ovvia perché la forma riuscita può accompagnare entrambi gli esiti."
+      },
+
+      "device_discrimination": {
+        "device_distinguishes_this_case": true,
+        "discriminating_dimension": "passaggio_trasformativo (bridge)",
+        "discriminating_basis": "la triangolazione obbligatoria del bridge — esattamente la stessa che ha discriminato il caso A, applicata in direzione opposta. Sono i quattro proxy strutturali (prevedibilità della sequenza, concentrazione stabile del lavoro semiotico, assenza di ridefinizione, assenza di sospensione strutturale) e la loro coerenza che rendono leggibile la natura riprodotta del passaggio. Da soli, gli stati del campo e le funzioni co-regolatorie non sono sufficientemente discriminanti: lo stato 'condiviso' formalmente si applica e la funzione co-regolatoria è in zona di ambiguità tra partecipativa e chiudente. È solo il bridge a chiudere la classificazione.",
+        "secondary_support": "la mediazione simbolica come 'distorta' nel senso strutturale (significato co-prodotto formalmente ma non appartenente al bambino) sostiene la lettura del bridge ma è essa stessa leggibile solo se il bridge è già stato triangolato — è un esito, non un punto d'appoggio indipendente."
+      },
+
+      "failure_risk": {
+        "conditions_under_which_device_would_fail_on_this_case": [
+          "se l'osservatore opera con una griglia di marker comportamentali dello sviluppo comunicativo, il caso viene classificato come 'pointing tipico ben riuscito' e la struttura predeterminata del passaggio non viene mai interrogata — è il rischio più alto e più frequente su casi di questo tipo, perché la forma è impeccabile",
+          "se la triangolazione del bridge viene saltata e ci si appoggia agli stati del campo o alle funzioni co-regolatorie, la lettura tende verso 'aperto' perché lo stato del campo è formalmente 'condiviso' e la funzione co-regolatoria può essere classificata come 'partecipativa' senza sostegno del bridge",
+          "se l'osservatore non ha accesso a una baseline della diade e non può riconoscere la sequenza come formula stabilizzata, il proxy della prevedibilità non è triangolabile e la classificazione 'predeterminato' può essere indebitamente abbandonata a favore di 'aperto' invece di essere correttamente abbassata ad 'ambiguo'",
+          "se l'osservatore confonde 'forma riuscita' con 'co-produzione' — l'errore di base che il dispositivo è costruito per evitare — il caso B è esattamente lo scenario in cui questa confusione produce la classificazione errata. Il rischio è strutturalmente alto perché caso B è il caso in cui la forma è massimamente riuscita senza co-produzione",
+          "se il dispositivo viene usato per valutare la qualità del caregiver, la classificazione 'predeterminato' può essere letta come giudizio negativo sul caregiver — esito che il dispositivo esplicitamente non autorizza. Il rischio non è di errore classificatorio ma di trasformazione del dispositivo da descrittivo a valutativo, e su casi come B la tentazione è alta perché il caregiver appare 'in difetto' anche se la forma della sua risposta è impeccabile"
+        ]
+      }
+    }
+  ],
+
+  "comparative_analysis": {
+    "behavioral_similarity": {
+      "description": "I due casi sono comportamentalmente quasi identici e la sovrapposizione è strutturale, non occasionale: stesso bambino, stesso caregiver, stesso oggetto-evento, stessa sequenza osservabile, stessa qualità apparente dell'interazione. Tutti i marker comportamentali classici del pointing dichiarativo riuscito sono presenti in entrambi i casi.",
+      "indistinguishable_dimensions": [
+        "presenza, qualità formale e integrazione corporea del gesto di pointing",
+        "presenza dello sguardo di riferimento all'adulto",
+        "presenza, articolazione e tono apparente della risposta verbale del caregiver",
+        "presenza e forma della vocalizzazione del bambino dopo la risposta",
+        "presenza dello scambio di sguardi conclusivo",
+        "durata complessiva e numero di scambi della sequenza",
+        "tono affettivo manifesto dell'interazione",
+        "stato formale del campo intenzionale (condiviso in entrambi i casi)",
+        "presenza formale di una mediazione simbolica (l'oggetto è nominato e condiviso in entrambi i casi)"
+      ]
+    },
+    "structural_difference": {
+      "where_they_differ": "esclusivamente sul piano del passaggio trasformativo (bridge), e in modo strutturale e non metrico",
+      "specific_loci_of_difference": [
+        {
+          "locus": "natura della ripresa del caregiver",
+          "case_A": "il commento del caregiver è inflesso dalla vocalizzazione del bambino — non era previsto come passo successivo dello script, segue la qualità di stupore aggiunta dal bambino",
+          "case_B": "il commento del caregiver è la chiusura prevista della formula stabilizzata della diade — la frase è prodotta in un'unica unità senza inflessioni che rispondano a qualcosa di specifico nel gesto del bambino"
+        },
+        {
+          "locus": "qualità della vocalizzazione del bambino",
+          "case_A": "la vocalizzazione aggiunge una qualità di stupore al significato del gesto, ridefinendo cosa il gesto stia significando — è un'inflessione che non era nella nominazione neutra del caregiver",
+          "case_B": "la vocalizzazione è la presa di consegna della nominazione, formalmente identica al caso A ma strutturalmente la casella prevista dello script per quel turno"
+        },
+        {
+          "locus": "struttura del braccio dopo il pointing",
+          "case_A": "il braccio teso mantiene una micro-sospensione, una struttura di richiamo dopo il pointing iniziale",
+          "case_B": "il braccio si tende e torna giù in un movimento lineare e fluido, senza struttura di richiamo"
+        },
+        {
+          "locus": "micro-pausa del bambino dopo la nominazione",
+          "case_A": "il bambino fa una micro-pausa di ascolto attivo prima di vocalizzare — la pausa non è inerzia ma sostanza strutturale dell'ascolto",
+          "case_B": "la vocalizzazione segue immediatamente la conferma del caregiver senza micro-pausa di ascolto — la sequenza fluisce in modo lineare"
+        },
+        {
+          "locus": "distribuzione del lavoro semiotico",
+          "case_A": "il contributo trasformativo si sposta tra bambino e caregiver nel corso della sequenza (asimmetria dinamica)",
+          "case_B": "il contributo trasformativo è stabilmente concentrato nel caregiver (concentrazione stabile)"
+        },
+        {
+          "locus": "natura della chiusura",
+          "case_A": "lo scambio di sguardi finale ha la qualità della complicità per qualcosa di emerso insieme",
+          "case_B": "lo scambio di sguardi finale ha la qualità della conclusione di una routine ben riuscita"
+        }
+      ]
+    },
+    "discriminating_factor": {
+      "description": "L'unico elemento del dispositivo corretto che rende leggibile la differenza tra i due casi è la triangolazione obbligatoria del bridge attraverso i quattro proxy strutturali: non-prevedibilità/prevedibilità, asimmetria dinamica/concentrazione stabile, ridefinizione/assenza di ridefinizione, sospensione strutturale/linearità. Senza il bridge, i due casi sono strutturalmente sovrapponibili a tutti i livelli che il dispositivo legge.",
+      "why_other_dimensions_are_not_sufficient": {
+        "corporeità_vissuta": "presente in entrambi i casi a livello strutturale base — la struttura di richiamo del braccio nel caso A è un proxy del bridge (sospensione strutturale), non una differenza autonoma della corporeità-vissuta",
+        "campo_intenzionale": "stato 'condiviso' formalmente applicabile in entrambi i casi — la differenza nella qualità dell'apertura (richiamo vs. consegna) è leggibile solo se il bridge è già triangolato",
+        "co_regolazione": "la funzione co-regolatoria nel caso B è in zona di ambiguità tra partecipativa e chiudente, ma la classificazione si appoggia al bridge per chiudere — senza il bridge resterebbe ambigua",
+        "mediazione_simbolica": "il caso B è leggibile come 'distorta' solo retrospettivamente, una volta che il bridge ha rivelato la natura riprodotta del passaggio; senza il bridge la mediazione formalmente avviene in entrambi i casi"
+      },
+      "the_decisive_role_of_the_bridge_correction": "la correzione strutturale del bridge introdotta in F3 STEP 3 — proxy strutturali non metrici, triangolazione obbligatoria con contro-indicatore esplicitato, classificazione 'ambiguo' come esito legittimo — è ciò che rende possibile la discriminazione su questo tipo di casi. Senza C3 (operatività del bridge) il dispositivo collasserebbe sulla forma comportamentale e non distinguerebbe."
+    }
+  },
+
+  "test_verdict": {
+    "device_discriminates": true,
+    "discrimination_basis": [
+      "la triangolazione obbligatoria del bridge produce classificazioni opposte (aperto vs. predeterminato) sui due casi pur a parità di superficie comportamentale",
+      "la coerenza interna dei quattro proxy strutturali nel caso A (tutti coerenti con apertura) e nel caso B (tutti coerenti con predeterminazione) sostiene la triangolazione",
+      "il contro-indicatore obbligatorio è esplicitabile e scartabile in entrambi i casi su base strutturale, non con inferenze esterne alla configurazione",
+      "la distinzione non si appoggia a indicatori comportamentali metrici (durata, frequenza, latenza) né a giudizi di qualità, né a informazioni contestuali esterne all'interazione: si fonda sulla descrizione strutturale del passaggio"
+    ],
+    "discrimination_qualifications": [
+      {
+        "qualification": "la discriminazione ha status 'probabile', non 'netto'",
+        "rationale": "il proxy decisivo in entrambi i casi (ridefinizione/assenza di ridefinizione) ha osservabilità media: richiede attenzione qualitativa specifica e accesso a una baseline della diade per essere triangolato in modo robusto. La discriminazione regge ma dipende dalla qualità dell'osservazione."
+      },
+      {
+        "qualification": "la discriminazione richiede osservazione qualitativa di alto livello",
+        "rationale": "se il dispositivo viene applicato da un osservatore che usa una checklist comportamentale, o da una rilevazione mediata (trascrizione verbale, video di bassa qualità, audio assente), il proxy decisivo perde osservabilità in entrambi i casi e l'esito corretto non è una classificazione forzata ma la dichiarazione di ambiguità."
+      },
+      {
+        "qualification": "il caso B è strutturalmente il caso ad alto rischio di errore",
+        "rationale": "perché presenta forma comportamentale impeccabile: senza triangolazione del bridge, viene quasi inevitabilmente classificato come 'aperto' da chiunque applichi una griglia di marker comportamentali tipici. Il dispositivo discrimina ma il rischio di non-applicazione corretta è strutturalmente alto su casi di questo tipo."
+      }
+    ],
+    "residual_ambiguity": [
+      {
+        "ambiguity": "soglia di osservabilità del proxy decisivo",
+        "description": "la distinzione tra ripresa inflessa dalla vocalizzazione del bambino (caso A) e formula stabilizzata applicata (caso B) è qualitativa e richiede attenzione prosodico-temporale fine. Esiste una soglia di osservabilità sotto la quale i due casi diventano effettivamente indistinguibili anche con il dispositivo corretto: il dispositivo non risolve i casi sotto questa soglia, li dichiara correttamente ambigui."
+      },
+      {
+        "ambiguity": "necessità di baseline della diade",
+        "description": "il proxy della prevedibilità della sequenza richiede una baseline della diade per essere triangolato. In una prima osservazione senza accesso ad altre interazioni della diade, il proxy diventa congetturale: il dispositivo non può chiudere la classificazione 'predeterminato' su una sola occorrenza isolata. Su un singolo episodio osservato senza contesto relazionale, l'esito strutturalmente corretto è classificare 'ambiguo' invece di 'predeterminato', anche se altri proxy puntano verso predeterminazione."
+      },
+      {
+        "ambiguity": "casi a configurazione mista",
+        "description": "il test ha generato due casi puri (apertura piena vs. predeterminazione piena) per testare la discriminazione al limite. Restano da testare casi misti — sequenze in cui alcuni proxy puntano in una direzione e altri nell'altra, configurazioni di passaggio parzialmente aperto e parzialmente scriptato. Su questi casi il dispositivo dovrebbe correttamente produrre classificazione 'ambigua', ma il test su casi misti non è stato condotto in questo step."
+      },
+      {
+        "ambiguity": "rischio di valutazione del caregiver",
+        "description": "il dispositivo discrimina i casi su base strutturale, ma la classificazione 'predeterminato' applicata al caso B può essere indebitamente trasformata in giudizio sul caregiver. Il rischio non è discriminativo (la classificazione strutturale è corretta) ma applicativo: il dispositivo può essere usato impropriamente come strumento valutativo. Questa ambiguità non è risolta dal dispositivo stesso ma dipende dalle condizioni d'uso."
+      }
+    ],
+    "limit_conditions_to_declare_failure": "il verdetto sarebbe stato dichiarato negativo se: (a) la differenza tra i due casi avesse richiesto inferenze psicologiche sul bambino o sul caregiver (intenzioni, motivazioni, qualità affettive non strutturali); (b) la differenza si fosse appoggiata a indicatori metrici (conteggi, durate, latenze); (c) il contro-indicatore obbligatorio non fosse stato scartabile su base strutturale; (d) la classificazione netta in entrambi i casi fosse risultata sostenibile solo trascurando i contro-indicatori. Nessuna di queste condizioni è verificata: la discriminazione si fonda sui proxy strutturali del bridge applicati con triangolazione obbligatoria, e la qualifica 'probabile' (non 'netta') è essa stessa un esito previsto e legittimo del dispositivo, non un fallimento.",
+    "verdict_summary": "il dispositivo corretto F3 STEP 3 supera il test di indistinguibilità apparente: distingue configurazione reale da configurazione apparente su casi comportamentalmente quasi identici, attraverso la triangolazione obbligatoria del bridge. La discriminazione regge ma è di status 'probabile' e dipende dalla qualità dell'osservazione qualitativa: il dispositivo ha la struttura per discriminare, ma la sua applicabilità effettiva richiede condizioni di osservazione adeguate. Sotto soglia di osservabilità del proxy decisivo, il dispositivo correttamente dichiara ambiguità invece di forzare la classificazione — esito previsto e funzionalmente corretto, non fallimento del test."
+  },
+
+  "implications_for_device": {
+    "device_correctness_confirmed": [
+      "la correzione C3 (operatività del bridge con proxy strutturali e triangolazione obbligatoria) è il fattore decisivo della capacità discriminativa: senza di essa il test sarebbe fallito",
+      "la clausola di ambiguità come esito strutturale legittimo (non fallimento) si è dimostrata necessaria: senza di essa il dispositivo sarebbe stato costretto a classificazioni forzate sotto soglia di osservabilità",
+      "la clausola no_behavioral_reduction (proxy come dimensioni descrittive non come variabili da rilevare) si è dimostrata essenziale: il caso B è esattamente il caso in cui un osservatore con griglia comportamentale produrrebbe la classificazione errata"
+    ],
+    "device_use_conditions_to_emphasize": [
+      "il dispositivo richiede osservazione qualitativa di alto livello — non è applicabile come checklist e non produce risultati affidabili sotto questa condizione",
+      "il dispositivo richiede, idealmente, accesso a più sequenze della diade per triangolare il proxy della prevedibilità: su singolo episodio isolato la classificazione 'predeterminato' deve essere abbassata ad 'ambiguo'",
+      "il dispositivo non autorizza la trasformazione delle classificazioni in giudizi sul caregiver: la classificazione 'predeterminato' descrive una struttura del passaggio, non una qualità dell'adulto"
+    ],
+    "open_questions_for_subsequent_steps": [
+      "test su casi a configurazione mista (passaggio parzialmente aperto e parzialmente scriptato): il dispositivo produce correttamente classificazione 'ambigua' o tende a forzare in una delle due direzioni?",
+      "test su casi in cui il passaggio si trasforma all'interno della stessa sequenza (apertura iniziale che si chiude, predeterminazione iniziale che si apre): la struttura temporale del passaggio è leggibile dal dispositivo?",
+      "definizione operativa più stringente delle condizioni di osservabilità minima sotto le quali la classificazione deve essere dichiarata ambigua a priori, prima ancora di applicare la triangolazione"
+    ]
+  }
+}
