@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon --watch src --ext ts --exec ts-node src/index.ts",
-    "build": "tsc && node scripts/copy-pipeline-config.mjs",
+    "build": "tsc",
     "start": "node dist/index.js",
     "seed:bartleby": "ts-node src/scripts/seedBartleby.ts"
   },

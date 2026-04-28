@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Test di coerenza per client/public/pipeline/pipeline-step-config.json
+// Test di coerenza per server/pipeline-step-config.json
 // Esegue con: node --test scripts/test-pipeline-step-config.mjs
 //          o: npm run test:pipeline-config
 
@@ -10,7 +10,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const CONFIG_PATH = path.join(REPO_ROOT, 'client', 'public', 'pipeline', 'pipeline-step-config.json');
+const CONFIG_PATH = path.join(REPO_ROOT, 'server', 'pipeline-step-config.json');
 
 // Marker speciali ammessi nel campo "step" che NON sono step reali del grafo.
 const VIRTUAL_STEP_REFS = new Set(['f3_step_3_or_6c']);

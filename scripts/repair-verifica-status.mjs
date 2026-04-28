@@ -31,7 +31,7 @@ const CTX_FILTER = (() => {
 
 async function main() {
   // 1. Carica step config per scoprire quali step hanno verifica:true
-  const cfgPath = path.join(REPO_ROOT, 'client', 'public', 'pipeline', 'pipeline-step-config.json');
+  const cfgPath = path.join(REPO_ROOT, 'server', 'pipeline-step-config.json');
   const cfg = JSON.parse(await fs.readFile(cfgPath, 'utf8'));
   const stepsWithVerifica = new Set(
     cfg.steps.filter((s) => s.verifica === true).map((s) => s.id),

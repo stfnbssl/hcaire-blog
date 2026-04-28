@@ -1,5 +1,5 @@
 import path from 'path';
-import { promises as fs, existsSync } from 'fs';
+import { promises as fs } from 'fs';
 
 export interface StepConfigInputPipeline {
   step: string;
@@ -54,25 +54,15 @@ export interface PipelineStepConfig {
   steps: StepConfig[];
 }
 
-// Risolve il path della step config provando, in ordine:
-//   1. PIPELINE_STEP_CONFIG_PATH (env, override esplicito)
-//   2. <server>/dist/pipeline-step-config.json — copiato dal postbuild (deploy cloud)
-//   3. <server>/pipeline-step-config.json — eventuale copia in server/ (fallback)
-//   4. <repo>/client/public/pipeline/pipeline-step-config.json — sviluppo locale
+// Risolve il path della step config. Default: <server>/pipeline-step-config.json
+// (file checked-in in server/, sempre presente sia in dev che sul deploy Railway).
+// Override esplicito tramite PIPELINE_STEP_CONFIG_PATH.
 function resolveConfigPath(): string {
   if (process.env.PIPELINE_STEP_CONFIG_PATH) {
     return process.env.PIPELINE_STEP_CONFIG_PATH;
   }
-  const candidates = [
-    path.resolve(__dirname, '..', 'pipeline-step-config.json'),
-    path.resolve(__dirname, '..', '..', 'pipeline-step-config.json'),
-    path.resolve(__dirname, '..', '..', '..', 'client', 'public', 'pipeline', 'pipeline-step-config.json'),
-  ];
-  for (const c of candidates) {
-    if (existsSync(c)) return c;
-  }
-  // Restituisce comunque l'ultimo (path repo) per generare un errore chiaro a fs.readFile.
-  return candidates[candidates.length - 1];
+  // __dirname dopo build = <server>/dist/services
+  return path.resolve(__dirname, '..', '..', 'pipeline-step-config.json');
 }
 
 let cached: PipelineStepConfig | null = null;

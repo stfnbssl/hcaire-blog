@@ -379,7 +379,6 @@ async function copyFromSource(rel, sourceRoot = SOURCE_ROOT) {
 
 async function clearTarget() {
   // Cancella solo le directory rigenerate dallo script + l'index.
-  // Preserva file scritti a mano nel target (es. pipeline-step-config.json).
   await ensureDir(TARGET_ROOT);
   for (const sub of ['ricerche', 'temi', 'inputs']) {
     await fs.rm(path.join(TARGET_ROOT, sub), { recursive: true, force: true });
@@ -390,7 +389,8 @@ async function clearTarget() {
 // ---------- MongoDB seed (D2 §7) ----------
 
 async function loadStepConfig() {
-  const configPath = path.join(TARGET_ROOT, 'pipeline-step-config.json');
+  // Step config è un file di server (server/pipeline-step-config.json), non un asset client.
+  const configPath = path.resolve(REPO_ROOT, 'server', 'pipeline-step-config.json');
   try {
     return JSON.parse(await fs.readFile(configPath, 'utf8'));
   } catch (err) {
