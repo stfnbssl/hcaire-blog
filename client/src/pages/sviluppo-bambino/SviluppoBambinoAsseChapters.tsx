@@ -3,8 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { sviluppoBambinoApi } from '../../services/staticContentService';
 import type { AsseChapters } from '../../types/staticContent';
 import Breadcrumb from '../../components/Breadcrumb';
-import SviluppoBambinoNav from '../../components/SviluppoBambinoNav';
-import SviluppoBambinoAssiNav from '../../components/SviluppoBambinoAssiNav';
+import AssiStrutturaliNav from '../../components/AssiStrutturaliNav';
 
 export default function SviluppoBambinoAsseChapters() {
   const { asseSlug = '' } = useParams<{ asseSlug: string }>();
@@ -21,14 +20,12 @@ export default function SviluppoBambinoAsseChapters() {
 
   return (
     <>
-      <SviluppoBambinoNav />
-      <SviluppoBambinoAssiNav />
+      <AssiStrutturaliNav />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
       <Breadcrumb items={[
         { label: 'Home', to: '/' },
-        { label: 'Sviluppo bambino', to: '/sviluppo-bambino' },
-        { label: 'Assi strutturali', to: '/sviluppo-bambino/assi' },
-        { label: 'Capitoli', to: '/sviluppo-bambino/assi/capitoli' },
+        { label: 'Assi strutturali', to: '/assi-strutturali' },
+        { label: 'Capitoli', to: '/assi-strutturali/capitoli' },
         { label: data?.title ?? asseSlug },
       ]} />
 
@@ -50,7 +47,7 @@ export default function SviluppoBambinoAsseChapters() {
             {data.chapters.map((ch) => (
               <li key={ch.slug}>
                 <Link
-                  to={`/sviluppo-bambino/assi/${asseSlug}/${ch.slug}`}
+                  to={`/assi-strutturali/${asseSlug}/${ch.slug}`}
                   className="flex items-start gap-3 p-4 rounded-lg border border-gray-100 hover:border-primary-200 hover:shadow-sm transition-all group"
                 >
                   <span className="text-gray-400 font-mono text-sm mt-0.5 shrink-0">
@@ -67,7 +64,7 @@ export default function SviluppoBambinoAsseChapters() {
       )}
 
       <div className="mt-10 pt-8 border-t border-gray-100">
-        <Link to="/sviluppo-bambino/assi/capitoli" className="text-sm text-gray-500 hover:text-gray-800">
+        <Link to="/assi-strutturali/capitoli" className="text-sm text-gray-500 hover:text-gray-800">
           ← Tutti gli assi
         </Link>
       </div>

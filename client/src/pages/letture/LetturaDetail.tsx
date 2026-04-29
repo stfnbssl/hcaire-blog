@@ -58,7 +58,7 @@ export default function LetturaDetail() {
     return (
       <div className="max-w-2xl mx-auto px-4 py-24 text-center">
         <p className="text-gray-600">{error ?? 'Lettura non trovata.'}</p>
-        <Link to="/letture" className="inline-block mt-4 text-sm text-primary-600 hover:text-primary-700 underline">
+        <Link to="/letture/elenco" className="inline-block mt-4 text-sm text-primary-600 hover:text-primary-700 underline">
           ← Torna all'elenco delle letture
         </Link>
       </div>
@@ -76,7 +76,7 @@ export default function LetturaDetail() {
       {/* Hero opera */}
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <Link to="/letture" className="text-sm text-gray-500 hover:text-gray-700">← Letture</Link>
+          <Link to="/letture/elenco" className="text-sm text-gray-500 hover:text-gray-700">← Letture</Link>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3">{opera.titolo}</h1>
           <p className="text-gray-700 text-lg mt-1">{opera.autore}</p>
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-3 text-sm text-gray-500">

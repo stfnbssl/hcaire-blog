@@ -57,7 +57,7 @@ export default function SviluppoBambinoModello() {
                     Leggi →
                   </Link>
                   <Link
-                    to={`/sviluppo-bambino/assi/${asse.slug}`}
+                    to={`/assi-strutturali/${asse.slug}`}
                     className="text-xs text-gray-400 hover:text-gray-600 whitespace-nowrap"
                   >
                     Capitoli

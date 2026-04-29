@@ -1,7 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 
 const links = [
-  { to: '/bartleby',               label: 'Invia traccia',    exact: true },
+  { to: '/bartleby',                label: 'Bartleby',        exact: true },
+  { to: '/bartleby/console',        label: 'Invia traccia',   exact: true },
   { to: '/bartleby/knowledge-base', label: 'Knowledge Base',  exact: false },
   { to: '/bartleby/outputs',        label: 'Output generati', exact: false },
 ];

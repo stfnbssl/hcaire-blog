@@ -32,10 +32,9 @@ export default function Navigation() {
 
           {/* Desktop */}
           <div className="hidden md:flex items-center space-x-6">
-            <NavLink to="/" active={location.pathname === '/'}>Home</NavLink>
-            <NavLink to="/hcaire" active={location.pathname.startsWith('/hcaire')}>HCAIRE</NavLink>
-            <NavLink to="/sviluppo-bambino" active={location.pathname.startsWith('/sviluppo-bambino')}>Sviluppo bambino</NavLink>
-            <NavLink to="/letture" active={location.pathname.startsWith('/letture')}>Letture</NavLink>
+            <NavLink to="/hcaire" active={location.pathname.startsWith('/hcaire')}>Laboratorio</NavLink>
+            <NavLink to="/assi-strutturali" active={location.pathname.startsWith('/assi-strutturali')}>Assi Strutturali</NavLink>
+            <NavLink to="/progetti" active={location.pathname.startsWith('/progetti') || location.pathname.startsWith('/sviluppo-bambino')}>Progetti</NavLink>
             {items.map((item) => (
               <NavLink key={item._id} to={navPath(item)} active={location.pathname === navPath(item)}>
                 {item.titolo}
@@ -46,6 +45,7 @@ export default function Navigation() {
                 Bartleby
               </NavLink>
             )}
+            <NavLink to="/letture" active={location.pathname.startsWith('/letture')}>Letture critiche</NavLink>
             {isAdmin && (
               <NavLink to="/admin" active={location.pathname.startsWith('/admin')}>
                 Admin
@@ -79,10 +79,9 @@ export default function Navigation() {
         {/* Mobile menu */}
         {open && (
           <div className="md:hidden pb-4 space-y-1 border-t border-gray-100 pt-2">
-            <MobileNavLink to="/" onClick={() => setOpen(false)}>Home</MobileNavLink>
-            <MobileNavLink to="/hcaire" onClick={() => setOpen(false)}>HCAIRE</MobileNavLink>
-            <MobileNavLink to="/sviluppo-bambino" onClick={() => setOpen(false)}>Sviluppo bambino</MobileNavLink>
-            <MobileNavLink to="/letture" onClick={() => setOpen(false)}>Letture</MobileNavLink>
+            <MobileNavLink to="/hcaire" onClick={() => setOpen(false)}>Laboratorio</MobileNavLink>
+            <MobileNavLink to="/assi-strutturali" onClick={() => setOpen(false)}>Assi Strutturali</MobileNavLink>
+            <MobileNavLink to="/progetti" onClick={() => setOpen(false)}>Progetti</MobileNavLink>
             {items.map((item) => (
               <MobileNavLink key={item._id} to={navPath(item)} onClick={() => setOpen(false)}>
                 {item.titolo}
@@ -91,6 +90,7 @@ export default function Navigation() {
             {(isBartleby || isAdmin) && (
               <MobileNavLink to="/bartleby" onClick={() => setOpen(false)}>Bartleby</MobileNavLink>
             )}
+            <MobileNavLink to="/letture" onClick={() => setOpen(false)}>Letture critiche</MobileNavLink>
             {isAdmin && (
               <MobileNavLink to="/admin" onClick={() => setOpen(false)}>Admin</MobileNavLink>
             )}

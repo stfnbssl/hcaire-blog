@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import { ClerkProvider, useUser } from '@clerk/clerk-react';
 import { SubscriptionProvider } from './context/SubscriptionContext';
@@ -13,7 +13,9 @@ import BlogPost from './pages/BlogPost';
 import NotFound from './pages/NotFound';
 import Pricing from './pages/Pricing';
 import Account from './pages/Account';
+import Progetti from './pages/Progetti';
 import WorkInProgress from './pages/WorkInProgress';
+import BartlebyLanding   from './pages/bartleby/BartlebyLanding';
 import BartlebyHome      from './pages/bartleby/BartlebyHome';
 import OutputList        from './pages/bartleby/OutputList';
 import OutputDetail      from './pages/bartleby/OutputDetail';
@@ -50,6 +52,7 @@ import SviluppoBambinoPipelineNuovaRicerca from './pages/sviluppo-bambino/Svilup
 
 const KnowledgeBase   = lazy(() => import('./pages/bartleby/KnowledgeBase'));
 const AdminSiteConfig = lazy(() => import('./pages/AdminSiteConfig'));
+const LettureCriticheLanding = lazy(() => import('./pages/letture/LettureCriticheLanding'));
 const LettureLanding  = lazy(() => import('./pages/letture/LettureLanding'));
 const LetturaDetail   = lazy(() => import('./pages/letture/LetturaDetail'));
 
@@ -61,6 +64,16 @@ const AdminLetturaNuova   = lazy(() => import('./pages/AdminLetturaNuova'));
 const AdminLetturaDetail  = lazy(() => import('./pages/AdminLetturaDetail'));
 
 const clerkPublishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string;
+
+function RedirectAsseChapters() {
+  const { asseSlug } = useParams();
+  return <Navigate to={`/assi-strutturali/${asseSlug}`} replace />;
+}
+
+function RedirectAsseChapter() {
+  const { asseSlug, chapterSlug } = useParams();
+  return <Navigate to={`/assi-strutturali/${asseSlug}/${chapterSlug}`} replace />;
+}
 
 const muiTheme = createTheme({
   typography: { fontFamily: 'Inter, system-ui, sans-serif' },
@@ -116,7 +129,9 @@ function AppLayout() {
           <Route path="/blog/:slug"      element={<BlogPost />} />
           <Route path="/pricing"         element={<Pricing />} />
           <Route path="/account"         element={<Account />} />
-          <Route path="/bartleby"                                              element={<BartlebyHome />} />
+          <Route path="/progetti"        element={<Progetti />} />
+          <Route path="/bartleby"                                              element={<BartlebyLanding />} />
+          <Route path="/bartleby/console"                                      element={<BartlebyHome />} />
           <Route path="/bartleby/knowledge-base"                            element={<AdminSuspense><KnowledgeBase /></AdminSuspense>} />
           <Route path="/bartleby/knowledge-base/:section"                   element={<AdminSuspense><KnowledgeBase /></AdminSuspense>} />
           <Route path="/bartleby/knowledge-base/:section/:itemId"           element={<AdminSuspense><KnowledgeBase /></AdminSuspense>} />
@@ -128,8 +143,9 @@ function AppLayout() {
           <Route path="/hcaire/protocolli/:slug"                   element={<HcaireProtocolPage />} />
           <Route path="/hcaire/:section"                           element={<HcairePage />} />
           {/* Sviluppo bambino */}
-          {/* Letture (sezione pubblica) */}
-          <Route path="/letture"          element={<AdminSuspense><LettureLanding /></AdminSuspense>} />
+          {/* Letture critiche (sezione pubblica) */}
+          <Route path="/letture"          element={<AdminSuspense><LettureCriticheLanding /></AdminSuspense>} />
+          <Route path="/letture/elenco"   element={<AdminSuspense><LettureLanding /></AdminSuspense>} />
           <Route path="/letture/:slug"    element={<AdminSuspense><LetturaDetail /></AdminSuspense>} />
           <Route path="/sviluppo-bambino"                                        element={<SviluppoBambinoLanding />} />
           <Route path="/sviluppo-bambino/finalita"                              element={<SviluppoBambinoFinalitaLanding />} />
@@ -155,10 +171,16 @@ function AppLayout() {
           <Route path="/sviluppo-bambino/produzioni/pipeline/temi/:temaId/stress-test"         element={<SviluppoBambinoPipelineStressTest />} />
           <Route path="/sviluppo-bambino/modello"                               element={<SviluppoBambinoModello />} />
           <Route path="/sviluppo-bambino/modello/:asseSlug"                     element={<SviluppoBambinoAsseOverview />} />
-          <Route path="/sviluppo-bambino/assi"                                  element={<SviluppoBambinoAssiLanding />} />
-          <Route path="/sviluppo-bambino/assi/capitoli"                         element={<SviluppoBambinoAssi />} />
-          <Route path="/sviluppo-bambino/assi/:asseSlug"                        element={<SviluppoBambinoAsseChapters />} />
-          <Route path="/sviluppo-bambino/assi/:asseSlug/:chapterSlug"           element={<SviluppoBambinoChapter />} />
+          {/* Assi Strutturali — sezione top-level */}
+          <Route path="/assi-strutturali"                                       element={<SviluppoBambinoAssiLanding />} />
+          <Route path="/assi-strutturali/capitoli"                              element={<SviluppoBambinoAssi />} />
+          <Route path="/assi-strutturali/:asseSlug"                             element={<SviluppoBambinoAsseChapters />} />
+          <Route path="/assi-strutturali/:asseSlug/:chapterSlug"                element={<SviluppoBambinoChapter />} />
+          {/* Redirect dalle vecchie URL /sviluppo-bambino/assi/* */}
+          <Route path="/sviluppo-bambino/assi"                                  element={<Navigate to="/assi-strutturali" replace />} />
+          <Route path="/sviluppo-bambino/assi/capitoli"                         element={<Navigate to="/assi-strutturali/capitoli" replace />} />
+          <Route path="/sviluppo-bambino/assi/:asseSlug"                        element={<RedirectAsseChapters />} />
+          <Route path="/sviluppo-bambino/assi/:asseSlug/:chapterSlug"           element={<RedirectAsseChapter />} />
           <Route path="/admin"           element={<AdminRoute><AdminDashboard /></AdminRoute>} />
           <Route path="/admin/workflow"  element={<AdminRoute><WorkflowLog /></AdminRoute>} />
           <Route path="/admin/requests"    element={<AdminRoute><AdminRequests /></AdminRoute>} />

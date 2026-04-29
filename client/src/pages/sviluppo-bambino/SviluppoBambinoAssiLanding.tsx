@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-import SviluppoBambinoNav from '../../components/SviluppoBambinoNav';
-import SviluppoBambinoAssiNav from '../../components/SviluppoBambinoAssiNav';
+import AssiStrutturaliNav from '../../components/AssiStrutturaliNav';
 
 interface Asse {
   number: number;
@@ -117,8 +116,7 @@ const ASSI: Asse[] = [
 export default function SviluppoBambinoAssiLanding() {
   return (
     <div>
-      <SviluppoBambinoNav />
-      <SviluppoBambinoAssiNav />
+      <AssiStrutturaliNav />
 
       {/* Hero */}
       <div className="bg-slate-950 text-white">
@@ -130,7 +128,7 @@ export default function SviluppoBambinoAssiLanding() {
             Le sei dimensioni costitutive dell'esperienza del bambino: non tappe evolutive, ma strutture dell'esperienza che ne rendono possibile la forma.
           </p>
           <Link
-            to="/sviluppo-bambino/assi/capitoli"
+            to="/assi-strutturali/capitoli"
             className="inline-block text-sm font-medium bg-white/10 hover:bg-white/20 text-white border border-white/20 px-5 py-2.5 rounded-md transition-colors"
           >
             Vai all'indice dei capitoli →
@@ -201,7 +199,7 @@ export default function SviluppoBambinoAssiLanding() {
                 <p className="mt-8 text-sm text-gray-400 italic">{asse.chapters}</p>
                 <div className="mt-6 flex gap-4">
                   <Link
-                    to={`/sviluppo-bambino/assi/${asse.slug}`}
+                    to={`/assi-strutturali/${asse.slug}`}
                     className="text-sm font-medium text-gray-700 hover:text-indigo-700 transition-colors"
                   >
                     Indice capitoli →
@@ -234,7 +232,7 @@ export default function SviluppoBambinoAssiLanding() {
           </p>
           <div className="mt-10">
             <Link
-              to="/sviluppo-bambino/assi/capitoli"
+              to="/assi-strutturali/capitoli"
               className="inline-block text-sm font-medium bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md transition-colors"
             >
               Leggi i capitoli →

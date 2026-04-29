@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { hcaireApi } from '../../services/staticContentService';
 import type { HcaireSection } from '../../types/staticContent';
 import Breadcrumb from '../../components/Breadcrumb';
+import LaboratorioNav from '../../components/LaboratorioNav';
 import TableOfContents from '../../components/TableOfContents';
 import StubNotice from '../../components/StubNotice';
 import MarkdownRenderer from '../../components/MarkdownRenderer';
@@ -34,10 +35,12 @@ export default function HcairePage() {
   const label = SECTION_LABELS[section] ?? data?.title ?? section;
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <>
+      <LaboratorioNav />
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
       <Breadcrumb items={[
         { label: 'Home', to: '/' },
-        { label: 'HCAIRE', to: '/hcaire' },
+        { label: 'Laboratorio', to: '/hcaire' },
         { label: label },
       ]} />
 
@@ -72,7 +75,7 @@ export default function HcairePage() {
 
           <div className="mt-10 pt-8 border-t border-gray-100">
             <Link to="/hcaire" className="text-sm text-gray-500 hover:text-gray-800 transition-colors">
-              ← Torna a HCAIRE
+              ← Torna al Laboratorio
             </Link>
           </div>
         </article>
@@ -80,5 +83,6 @@ export default function HcairePage() {
         <TableOfContents />
       </div>
     </div>
+    </>
   );
 }

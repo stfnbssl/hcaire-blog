@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { hcaireApi } from '../../services/staticContentService';
 import type { HcaireSection } from '../../types/staticContent';
 import Breadcrumb from '../../components/Breadcrumb';
+import LaboratorioNav from '../../components/LaboratorioNav';
 import TableOfContents from '../../components/TableOfContents';
 import MarkdownRenderer from '../../components/MarkdownRenderer';
 import AgenticLabel from '../../components/AgenticLabel';
@@ -48,10 +49,12 @@ export default function HcaireProtocolPage() {
     : { before: '', workflow: '', after: '' };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <>
+      <LaboratorioNav />
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
       <Breadcrumb items={[
         { label: 'Home', to: '/' },
-        { label: 'HCAIRE', to: '/hcaire' },
+        { label: 'Laboratorio', to: '/hcaire' },
         { label: 'Protocolli', to: '/hcaire/protocolli' },
         { label: breadcrumbLabel },
       ]} />
@@ -101,5 +104,6 @@ export default function HcaireProtocolPage() {
         <TableOfContents />
       </div>
     </div>
+    </>
   );
 }

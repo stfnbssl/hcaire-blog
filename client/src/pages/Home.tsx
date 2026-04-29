@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useFetchContentList } from '../hooks/useFetchContent';
 import Header from '../components/Header';
-import { APP_NAME } from '../utils/constants';
+import { APP_NAME_LABEL } from '../utils/constants';
 
 export default function Home() {
   const [page, setPage] = useState(1);
@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div>
-      <Header title={APP_NAME} subtitle="Articoli, guide e pensieri" />
+      <Header title={APP_NAME_LABEL} subtitle="Articoli, guide e pensieri" />
       <main className="max-w-6xl mx-auto px-4 py-12">
         {loading && <Spinner />}
         {error && <ErrorMessage message={error} />}

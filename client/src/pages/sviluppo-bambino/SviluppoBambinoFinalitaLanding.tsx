@@ -23,7 +23,7 @@ const OBIETTIVI: Obiettivo[] = [
       'Ogni pratica educativa, clinica o istituzionale porta con sé presupposti ontologici e antropologici impliciti: un\'idea di chi è il bambino, di cosa conta nel suo sviluppo, di che cosa significa crescere bene. Quando questi presupposti restano impliciti, diventano invisibili e non possono essere messi a confronto, corretti o condivisi. Il progetto li rende espliciti e li organizza in un sistema coerente di categorie interpretative capaci di sostenere una lettura strutturale e non frammentata dell\'esperienza di crescita.',
       'Il nucleo di questa grammatica è il modello dei sei assi strutturali di sviluppo: dimensioni costitutive dell\'esperienza del bambino che precedono e fondano qualsiasi descrizione specialistica.',
     ],
-    link: { to: '/sviluppo-bambino/assi', label: 'Gli assi strutturali →' },
+    link: { to: '/assi-strutturali', label: 'Gli assi strutturali →' },
     headerBg: 'bg-indigo-950',
     borderAccent: 'border-l-indigo-400',
     badgeBg: 'bg-indigo-800',
@@ -93,7 +93,7 @@ const SEZIONI_HCAIRE = [
   {
     label: 'Gli assi strutturali',
     desc: 'La grammatica concettuale fondamentale: 44 capitoli che elaborano in profondità le sei dimensioni costitutive dello sviluppo.',
-    to: '/sviluppo-bambino/assi',
+    to: '/assi-strutturali',
     obiettivi: '1',
   },
   {

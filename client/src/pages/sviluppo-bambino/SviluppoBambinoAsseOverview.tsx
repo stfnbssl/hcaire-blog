@@ -46,7 +46,7 @@ export default function SviluppoBambinoAsseOverview() {
               <div className="mt-8 rounded-lg bg-gray-50 border border-gray-100 p-5">
                 <p className="text-sm text-gray-600 mb-3">Leggi i capitoli integrali di questo asse</p>
                 <Link
-                  to={`/sviluppo-bambino/assi/${asseSlug}`}
+                  to={`/assi-strutturali/${asseSlug}`}
                   className="font-medium text-primary-600 hover:text-primary-800 transition-colors"
                 >
                   Assi strutturali – {data.title} →

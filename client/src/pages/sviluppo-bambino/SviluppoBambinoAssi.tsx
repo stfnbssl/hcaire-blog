@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { sviluppoBambinoApi } from '../../services/staticContentService';
 import type { AssiIndex } from '../../types/staticContent';
 import Breadcrumb from '../../components/Breadcrumb';
-import SviluppoBambinoNav from '../../components/SviluppoBambinoNav';
-import SviluppoBambinoAssiNav from '../../components/SviluppoBambinoAssiNav';
+import AssiStrutturaliNav from '../../components/AssiStrutturaliNav';
 
 export default function SviluppoBambinoAssi() {
   const [data, setData] = useState<AssiIndex | null>(null);
@@ -19,13 +18,11 @@ export default function SviluppoBambinoAssi() {
 
   return (
     <>
-      <SviluppoBambinoNav />
-      <SviluppoBambinoAssiNav />
+      <AssiStrutturaliNav />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
       <Breadcrumb items={[
         { label: 'Home', to: '/' },
-        { label: 'Sviluppo bambino', to: '/sviluppo-bambino' },
-        { label: 'Assi strutturali', to: '/sviluppo-bambino/assi' },
+        { label: 'Assi strutturali', to: '/assi-strutturali' },
         { label: 'Capitoli' },
       ]} />
 
@@ -49,7 +46,7 @@ export default function SviluppoBambinoAssi() {
               <div className="flex items-center justify-between mb-3">
                 <h2 className="font-semibold text-gray-800">{asse.title}</h2>
                 <Link
-                  to={`/sviluppo-bambino/assi/${asse.slug}`}
+                  to={`/assi-strutturali/${asse.slug}`}
                   className="text-sm text-gray-400 hover:text-primary-600 transition-colors"
                 >
                   {asse.chapterCount} capitoli →
@@ -59,7 +56,7 @@ export default function SviluppoBambinoAssi() {
                 {asse.chapters.map((ch) => (
                   <li key={ch.slug}>
                     <Link
-                      to={`/sviluppo-bambino/assi/${asse.slug}/${ch.slug}`}
+                      to={`/assi-strutturali/${asse.slug}/${ch.slug}`}
                       className="text-sm text-gray-600 hover:text-primary-700 transition-colors"
                     >
                       <span className="text-gray-400 mr-2">{ch.chapter}.</span>
@@ -74,7 +71,7 @@ export default function SviluppoBambinoAssi() {
       )}
 
       <div className="mt-10 pt-8 border-t border-gray-100">
-        <Link to="/sviluppo-bambino/assi" className="text-sm text-gray-500 hover:text-gray-800">
+        <Link to="/assi-strutturali" className="text-sm text-gray-500 hover:text-gray-800">
           ← Assi strutturali
         </Link>
       </div>

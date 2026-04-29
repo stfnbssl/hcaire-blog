@@ -4,8 +4,7 @@ import MarkdownRenderer, { type RilevanzaMap } from '../../components/MarkdownRe
 import { sviluppoBambinoApi } from '../../services/staticContentService';
 import type { Chapter } from '../../types/staticContent';
 import Breadcrumb from '../../components/Breadcrumb';
-import SviluppoBambinoNav from '../../components/SviluppoBambinoNav';
-import SviluppoBambinoAssiNav from '../../components/SviluppoBambinoAssiNav';
+import AssiStrutturaliNav from '../../components/AssiStrutturaliNav';
 import PrevNext from '../../components/PrevNext';
 import TableOfContents from '../../components/TableOfContents';
 import StubNotice from '../../components/StubNotice';
@@ -58,15 +57,13 @@ export default function SviluppoBambinoChapter() {
 
   return (
     <>
-      <SviluppoBambinoNav />
-      <SviluppoBambinoAssiNav />
+      <AssiStrutturaliNav />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
       <Breadcrumb items={[
         { label: 'Home', to: '/' },
-        { label: 'Sviluppo bambino', to: '/sviluppo-bambino' },
-        { label: 'Assi strutturali', to: '/sviluppo-bambino/assi' },
-        { label: 'Capitoli', to: '/sviluppo-bambino/assi/capitoli' },
-        { label: fm?.asse ?? asseSlug, to: `/sviluppo-bambino/assi/${asseSlug}` },
+        { label: 'Assi strutturali', to: '/assi-strutturali' },
+        { label: 'Capitoli', to: '/assi-strutturali/capitoli' },
+        { label: fm?.asse ?? asseSlug, to: `/assi-strutturali/${asseSlug}` },
         { label: fm?.title ?? chapterSlug },
       ]} />
 
@@ -81,7 +78,7 @@ export default function SviluppoBambinoChapter() {
                   <p className="text-sm text-gray-400 mb-1">
                     Capitolo {fm.chapter} ·{' '}
                     <Link
-                      to={`/sviluppo-bambino/assi/${asseSlug}`}
+                      to={`/assi-strutturali/${asseSlug}`}
                       className="hover:text-primary-600 transition-colors"
                     >
                       {fm.asse}
@@ -93,7 +90,7 @@ export default function SviluppoBambinoChapter() {
 
               {data.isEmpty ? (
                 <StubNotice
-                  parentTo={`/sviluppo-bambino/assi/${asseSlug}`}
+                  parentTo={`/assi-strutturali/${asseSlug}`}
                   parentLabel={fm?.asse ?? 'Asse'}
                 />
               ) : (
@@ -108,11 +105,11 @@ export default function SviluppoBambinoChapter() {
                   <PrevNext
                     prevSlug={fm.prev ?? undefined}
                     nextSlug={fm.next ?? undefined}
-                    baseUrl={`/sviluppo-bambino/assi/${asseSlug}`}
+                    baseUrl={`/assi-strutturali/${asseSlug}`}
                   />
                   <div className="mt-4 text-center">
                     <Link
-                      to={`/sviluppo-bambino/assi/${asseSlug}`}
+                      to={`/assi-strutturali/${asseSlug}`}
                       className="text-sm text-gray-400 hover:text-gray-700 transition-colors"
                     >
                       Tutti i capitoli di {fm.asse}
