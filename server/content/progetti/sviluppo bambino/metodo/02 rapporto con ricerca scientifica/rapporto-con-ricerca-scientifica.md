@@ -10,15 +10,13 @@ stato: bozza
 
 # Rapporto con la ricerca scientifica
 
-## 1. Posizionamento metateorico
+## Posizionamento metateorico
 
 Il Progetto Sviluppo Bambino non è una teoria esplicativa dello sviluppo infantile, né un protocollo clinico o educativo standardizzato. Si configura come un'**infrastruttura metodologica e concettuale** che si colloca a un livello metateorico rispetto alla ricerca empirica: non produce dati, ma costruisce le condizioni di intelligibilità che rendono possibile produrre dati coerenti con la complessità dei fenomeni di sviluppo.
 
-Questo posizionamento non è modestia strategica — è rigore metodologico. Un progetto che promette di occupare simultaneamente tutti i livelli della produzione di conoscenza non ne occupa davvero nessuno. La chiarezza del livello a cui si lavora è la condizione per contribuire utilmente agli altri.
-
 ---
 
-## 2. Il problema che giustifica questo livello di lavoro
+## Il problema che giustifica questo livello di lavoro
 
 La ricerca sullo sviluppo umano si svolge in un contesto epistemologico più complesso di quello delle scienze naturali. A differenza di un oggetto fisico, lo sviluppo infantile comprende simultaneamente dimensioni biologiche, esperienziali, relazionali e culturali che non sono completamente riducibili le une alle altre.
 
@@ -28,7 +26,7 @@ Il progetto nasce per rendere esplicito questo livello di presupposti, non per n
 
 ---
 
-## 3. I tre livelli della produzione di conoscenza
+## I tre livelli della produzione di conoscenza
 
 È utile distinguere tre livelli nella produzione di conoscenza sullo sviluppo umano e collocare il progetto con precisione rispetto a ciascuno.
 
@@ -45,9 +43,9 @@ Il Progetto Sviluppo Bambino opera ai livelli 1 e 2. La relazione con il livello
 
 ---
 
-## 4. Come il progetto si relaziona con la ricerca empirica esistente
+## Come il progetto si relaziona con la ricerca empirica esistente
 
-Il framework non compete con le teorie e le ricerche sullo sviluppo già consolidate — teoria dell'attaccamento, neuroscienze relazionali, approcci sistemici, psicologia dello sviluppo cognitivo. Lavora a un livello diverso: non propone di sostituire queste teorie, ma di costruire le condizioni metodologiche che permettano di usarle insieme in modo coerente.
+Il framework metodologico non compete con le teorie e le ricerche sullo sviluppo già consolidate — teoria dell'attaccamento, neuroscienze relazionali, approcci sistemici, psicologia dello sviluppo cognitivo. Lavora a un livello diverso: non propone di sostituire queste teorie, ma di costruire le condizioni metodologiche che permettano di usarle insieme in modo coerente.
 
 I Nodi Trasversali (N1–N7) e le Configurazioni Evolutive (CE) non sono costrutti empirici da validare direttamente: sono operatori interpretativi che organizzano l'osservazione e orientano la costruzione degli strumenti. La loro funzione è analoga a quella di costrutti teorici come il sistema di attaccamento o le strutture cognitive piagetiane — non si misurano direttamente, ma la ricerca empirica può valutare gli strumenti e gli interventi costruiti nel loro quadro.
 
@@ -55,7 +53,7 @@ La verifica empirica degli strumenti è pertanto possibile e auspicabile, ma rig
 
 ---
 
-## 5. I criteri di validità del framework
+## I criteri di validità del framework
 
 Nel progetto la validità non è riducibile alla sola efficacia empirica degli interventi. Sono rilevanti quattro criteri distinti:
 
@@ -71,7 +69,7 @@ Questi criteri non sono alternativi ma complementari. Un framework coerente e tr
 
 ---
 
-## 6. Cosa il progetto non rivendica
+## Cosa il progetto non rivendica
 
 Tre limitazioni sono costitutive, non contingenti.
 

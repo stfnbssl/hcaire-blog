@@ -255,10 +255,14 @@ export function getMetodoStatutoEpistemologico(req: Request, res: Response) {
 }
 
 // GET /api/sviluppo-bambino/metodo/fasi
+// Le fasi 4, 5, 6 e 7 sono volutamente escluse dall'indice pubblico in attesa di implementazione completa;
+// i file markdown corrispondenti restano nel repository e l'endpoint di dettaglio resta accessibile.
 export function getFasiIndex(req: Request, res: Response) {
   try {
     res.json({
-      fasi: FASI_META.map(({ slug, numero, title, excerpt }) => ({ slug, numero, title, excerpt })),
+      fasi: FASI_META
+        .filter((f) => f.numero <= 3)
+        .map(({ slug, numero, title, excerpt }) => ({ slug, numero, title, excerpt })),
     });
   } catch {
     res.status(500).json({ error: 'Errore lettura fasi' });

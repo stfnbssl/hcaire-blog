@@ -40,7 +40,7 @@ La Fase 2 separa esplicitamente osservazione e decisione operativa: ogni suo pro
 
 ## 2. Il problema di fondo: traduzione senza riduzione
 
-Ogni disciplina coinvolta nello sviluppo infantile opera attraverso propri oggetti, propri metodi e proprie soglie di validità. Il passaggio diretto tra livelli produce tipicamente tre errori:
+Ogni disciplina coinvolta nello sviluppo infantile opera attraverso propri oggetti, metodi e soglie di validità. Il passaggio diretto tra contesti rischia tipicamente tre anomalie:
 
 - **Riduzione psicologica**: concetti ontologici trasformati in tratti individuali
 - **Tecnicizzazione precoce**: concetti interpretativi trasformati in procedure

@@ -1,0 +1,17 @@
+{
+  "laboratorio.nav.back": "← Laboratorio",
+  "laboratorio.nav.manifesto": "Manifesto",
+  "laboratorio.nav.metodo": "Metodo",
+  "laboratorio.nav.progetti": "Progetti",
+  "laboratorio.nav.ambiente-editoriale": "Ambiente editoriale",
+  "laboratorio.nav.agentic-shift": "Agentic Shift",
+  "laboratorio.nav.protocolli": "Protocolli",
+
+  "laboratorio.sezioni.manifesto.label": "Manifesto",
+  "laboratorio.sezioni.manifesto.tagline": "Prima della risposta viene il contesto",
+  "laboratorio.sezioni.manifesto.cta": "Leggi il manifesto →",
+
+  "laboratorio.sezioni.metodo.label": "Il metodo",
+  "laboratorio.sezioni.metodo.tagline": "Tre livelli di lavoro per pensare l'intelligenza artificiale",
+  "laboratorio.sezioni.metodo.cta": "Approfondisci il metodo →"
+}

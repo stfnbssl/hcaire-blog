@@ -8,6 +8,8 @@ data: 2026-04-21
 stato: bozza
 ---
 
+<!-- FASE NON IMPLEMENTATA — Esclusa dall'indice pubblico /sviluppo-bambino/metodo/fasi. Contenuto conservato in attesa di completamento. -->
+
 # Fase 5 — Valutazione Configurazionale dell'Efficacia
 
 ## 1. Il problema epistemologico della valutazione

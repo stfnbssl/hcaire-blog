@@ -3,9 +3,11 @@ import { readMarkdownFile, splitByH2 } from '../services/staticContentReader';
 
 const HCAIRE_INDEX = 'hcaire/index.md';
 
-// Slugs for the sections derived from ## headings in index.md
+// Slugs for the sections derived from ## headings in index.md.
+// Le sezioni con file standalone in hcaire/<slug>.md NON vanno mappate qui:
+// il controller cerca prima nelle sezioni di index.md, poi nei file standalone.
+// Migrate: "metodo" è ora servito da hcaire/metodo.md, "manifesto" da hcaire/manifesto.md.
 const SECTION_SLUGS: Record<string, string> = {
-  'un metodo': 'metodo',
   'un progetto fondativo': 'progetti',
   'un ambiente editoriale': 'ambiente-editoriale',
   'bartleby': 'bartleby-preview',

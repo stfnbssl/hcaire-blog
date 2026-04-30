@@ -4,6 +4,7 @@ import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import { ClerkProvider, useUser } from '@clerk/clerk-react';
 import { SubscriptionProvider } from './context/SubscriptionContext';
 import { SiteConfigProvider } from './context/SiteConfigContext';
+import { SiteContentProvider } from './context/SiteContentContext';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import AdminLayout from './components/AdminLayout';
@@ -50,8 +51,9 @@ import SviluppoBambinoPipelineStressTest     from './pages/sviluppo-bambino/Svil
 import SviluppoBambinoPipelineRicercaOverview from './pages/sviluppo-bambino/SviluppoBambinoPipelineRicercaOverview';
 import SviluppoBambinoPipelineNuovaRicerca from './pages/sviluppo-bambino/SviluppoBambinoPipelineNuovaRicerca';
 
-const KnowledgeBase   = lazy(() => import('./pages/bartleby/KnowledgeBase'));
-const AdminSiteConfig = lazy(() => import('./pages/AdminSiteConfig'));
+const KnowledgeBase    = lazy(() => import('./pages/bartleby/KnowledgeBase'));
+const AdminSiteConfig  = lazy(() => import('./pages/AdminSiteConfig'));
+const AdminSiteContent = lazy(() => import('./pages/AdminSiteContent'));
 const LettureCriticheLanding = lazy(() => import('./pages/letture/LettureCriticheLanding'));
 const LettureLanding  = lazy(() => import('./pages/letture/LettureLanding'));
 const LetturaDetail   = lazy(() => import('./pages/letture/LetturaDetail'));
@@ -141,6 +143,8 @@ function AppLayout() {
           <Route path="/hcaire"                                    element={<HcaireLanding />} />
           <Route path="/hcaire/protocolli"                         element={<HcaireProtocolliLanding />} />
           <Route path="/hcaire/protocolli/:slug"                   element={<HcaireProtocolPage />} />
+          {/* Redirect del vecchio slug "ia-centrata-sull-umano" al nuovo Manifesto */}
+          <Route path="/hcaire/ia-centrata-sull-umano"             element={<Navigate to="/hcaire/manifesto" replace />} />
           <Route path="/hcaire/:section"                           element={<HcairePage />} />
           {/* Sviluppo bambino */}
           {/* Letture critiche (sezione pubblica) */}
@@ -187,7 +191,8 @@ function AppLayout() {
           <Route path="/admin/letture"          element={<AdminRoute><AdminLetture /></AdminRoute>} />
           <Route path="/admin/letture/nuova"    element={<AdminRoute><AdminLetturaNuova /></AdminRoute>} />
           <Route path="/admin/letture/:slug"    element={<AdminRoute><AdminLetturaDetail /></AdminRoute>} />
-          <Route path="/admin/site-config" element={<AdminRoute><AdminSiteConfig /></AdminRoute>} />
+          <Route path="/admin/site-config"  element={<AdminRoute><AdminSiteConfig /></AdminRoute>} />
+          <Route path="/admin/testi"        element={<AdminRoute><AdminSiteContent /></AdminRoute>} />
           <Route path="*"               element={<NotFound />} />
         </Routes>
       </div>
@@ -204,9 +209,11 @@ export default function App() {
         <CssBaseline />
         <BrowserRouter>
           <SiteConfigProvider>
-            <SubscriptionProvider>
-              <AppLayout />
-            </SubscriptionProvider>
+            <SiteContentProvider>
+              <SubscriptionProvider>
+                <AppLayout />
+              </SubscriptionProvider>
+            </SiteContentProvider>
           </SiteConfigProvider>
         </BrowserRouter>
       </ThemeProvider>

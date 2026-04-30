@@ -9,7 +9,16 @@ data: 2026-04-21
 stato: bozza
 ---
 
-# Fase 1 — Fondazione Ontologica
+# Fase 1 — Fondazion Ontologica
+
+| | |
+|---|---|
+| **Oggetto** | Lo sviluppo come processo incarnato, relazionale, temporale, normativo |
+| **Strumenti concettuali** | I sei assi strutturali e la loro gerarchia |
+| **Statuto epistemologico** | Strutture interpretative, non variabili empiriche |
+| **Funzione nell'architettura** | Fondare i vincoli che rendono possibili F2–F3 senza riduzione |
+| **Output verso F2** | Condizioni di possibilità per la matrice di traducibilità e i Nodi Trasversali |
+| **Principio operativo** | Circolazione controllata dei concetti attraverso tutto il framework |
 
 ## 1. Funzione della fase
 
@@ -17,7 +26,8 @@ La Fase 1 ha una funzione fondativa rispetto all'intera architettura del progett
 
 Senza questa fondazione, ogni strumento operativo rischia di ridurre lo sviluppo a ciò che è più facilmente misurabile — comportamenti, performance, soglie — perdendo le dimensioni che ne costituiscono la specificità: l'incarnazione, la temporalità, la relazionalità, la normatività intrinseca.
 
-La F1 risponde a una domanda preliminare che le fasi operative non possono fare a meno di presupporre: **cosa resta non ridotto quando osserviamo uno sviluppo?**
+La F1 risponde a una domanda preliminare: **quale dimensione essenziale dello sviluppo umano rimane riconosciuta nella sua interezza**, anche quando la osserviamo attraverso indicatori, comportamenti, dati, strumenti o procedure operative
+
 
 ---
 
@@ -40,13 +50,13 @@ Questa scelta ontologica non è solo teorica: ha conseguenze dirette sulla forma
 
 ### 3.1 Cosa sono
 
-Gli assi strutturali sono le **dimensioni strutturali dell'esperienza** del soggetto in sviluppo. Sono sempre attivi e compresenti lungo tutto l'arco evolutivo: non rappresentano fasi cronologiche da attraversare né competenze da acquisire, ma descrivono ciò che è strutturalmente in gioco nello sviluppo, indipendentemente dall'età o dalla tappa.
+Gli assi strutturali sono le **dimensioni strutturali dell'esperienza** del soggetto in sviluppo. Sono sempre attivi e compresenti lungo tutto l'arco evolutivo: non rappresentano fasi cronologiche da attraversare né competenze da acquisire, ma descrivono ciò che è strutturalmente in gioco nello sviluppo.
 
 Un asse non "arriva" e poi scompare; non viene superato dai successivi. Resta attivo lungo tutto lo sviluppo, trasformandosi nel suo peso relativo e nel modo in cui si manifesta, ma mai assente.
 
 ### 3.2 La gerarchia strutturale
 
-Gli assi non sono sullo stesso piano logico. Il modello prevede una **gerarchia strutturale** — non valutativa né cronologica — che indica dipendenze logiche tra le dimensioni:
+Il modello prevede una **gerarchia strutturale** — non valutativa né cronologica — che indica dipendenze logiche tra le dimensioni:
 
 **Asse 1 — Ontologico-fenomenologico**: ha funzione fondativa rispetto a tutti gli altri. Chiarisce che tipo di soggetto è il bambino: incarnato, temporale, relazionale. Stabilisce il principio per cui ogni asse successivo è possibile. Tutti gli altri assi lo presuppongono.
 
@@ -78,6 +88,8 @@ Quattro proprietà definiscono il funzionamento degli assi nell'architettura del
 
 ### 4.1 Non variabili empiriche
 
+Gli assi sono **strutture interpretative** che organizzano l'osservazione e orientano la costruzione degli strumenti.
+
 Il punto più delicato dello statuto epistemologico degli assi riguarda la loro relazione con la ricerca empirica. Gli assi strutturali non sono variabili empiriche direttamente falsificabili: non si misurano, non si operazionalizzano direttamente, non producono ipotesi verificabili nella forma standard della ricerca quantitativa.
 
 Questo non li rende speculativi o scientificamente irrilevanti. Svolgono una funzione analoga ad altri concetti teorici ampiamente accettati nelle scienze dello sviluppo:
@@ -86,7 +98,7 @@ Questo non li rende speculativi o scientificamente irrilevanti. Svolgono una fun
 - le **strutture cognitive** (Piaget) non si misurano direttamente, ma orientano disegni sperimentali e strumenti di valutazione;
 - le **affordances** (Gibson) non sono proprietà fisiche misurabili, ma organizzano il modo di osservare la relazione tra organismo e ambiente.
 
-Gli assi strutturali hanno lo stesso statuto: sono **strutture interpretative** che organizzano l'osservazione e orientano la costruzione degli strumenti. La verificabilità empirica riguarda gli strumenti costruiti nel loro quadro, non gli assi direttamente.
+La verificabilità empirica riguarda gli strumenti costruiti nel loro quadro, non gli assi direttamente.
 
 ### 4.2 La mediazione metodologica
 
@@ -106,13 +118,13 @@ Questa mediazione non è un limite, ma una garanzia: impedisce che la complessit
 
 ### 4.3 Apertura alla revisione
 
-Gli assi strutturali non sono dogmi. Sono ipotesi teoriche di livello elevato, soggette a revisione come qualsiasi costrutto scientifico — ma attraverso un processo diverso dalla falsificazione diretta. Si revisionano quando:
+Gli assi strutturali non sono dogmi, sono ipotesi teoriche soggette a revisione come qualsiasi costrutto scientifico, ma attraverso un processo diverso dalla falsificazione diretta. Si revisionano quando:
 
 - producono contraddizioni interne nella loro applicazione;
 - risultano incapaci di rendere conto di fenomeni evolutivi rilevanti che la ricerca mette in evidenza;
 - alternative teoriche mostrano maggiore potere organizzativo a parità di coerenza.
 
-La revisione non è una debolezza del sistema: è la condizione per cui il progetto rimane un framework scientifico e non diventa una dottrina.
+Il progetto mantiene lo statuto di framework scientifico.
 
 ---
 
@@ -128,9 +140,9 @@ Questo principio garantisce **coerenza lessicale** attraverso tutto il framework
 
 ## 6. Dalla fondazione alla Fase 2
 
-La F1 non produce strumenti operativi, ma produce le condizioni di possibilità per la F2. Il passaggio è preciso:
+La F1 non produce strumenti operativi, ma produce le condizioni di possibilità per la F2.
 
-Gli assi strutturali sono **dimensioni troppo astratte** per essere usati direttamente nel lavoro professionale. Un pediatra non può "osservare l'Asse 4" durante un bilancio di salute. Un educatore non può "leggere l'Asse 2" in una situazione di conflitto in classe. Serve un livello intermedio che traduca la fondazione ontologica in operatori leggibili nei contesti reali.
+Gli assi strutturali sono **dimensioni astratte** per essere usati direttamente nel lavoro professionale. Serve un livello intermedio che traduca la fondazione ontologica in operatori leggibili nei contesti reali.
 
 La Fase 2 costruisce esattamente questo livello intermedio attraverso due strumenti:
 
@@ -141,15 +153,3 @@ In questo senso, ogni Nodo Trasversale è un *punto di contatto tra la fondazion
 
 La F1 resta sullo sfondo della F2, della F3 e di tutto il progetto — non come contenuto da applicare, ma come insieme di **vincoli che impediscono le riduzioni**. Ogni volta che uno strumento rischia di trasformare l'abitabilità in punteggio, il campo relazionale in comportamento del bambino, o la configurazione evolutiva in diagnosi, è la fondazione ontologica che segnala lo scarto.
 
----
-
-## 7. Sintesi
-
-| Dimensione | Contenuto |
-|---|---|
-| **Oggetto** | Lo sviluppo come processo incarnato, relazionale, temporale, normativo |
-| **Strumenti concettuali** | I sei assi strutturali e la loro gerarchia |
-| **Statuto epistemologico** | Strutture interpretative, non variabili empiriche |
-| **Funzione nell'architettura** | Fondare i vincoli che rendono possibili F2–F7 senza riduzione |
-| **Output verso F2** | Condizioni di possibilità per la matrice di traducibilità e i Nodi Trasversali |
-| **Principio operativo** | Circolazione controllata dei concetti attraverso tutto il framework |

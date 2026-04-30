@@ -10,6 +10,7 @@ import MarkdownRenderer from '../../components/MarkdownRenderer';
 import AgenticLabel from '../../components/AgenticLabel';
 
 const SECTION_LABELS: Record<string, string> = {
+  'manifesto':              'Il manifesto di HCAIRE',
   'metodo':                 'Il metodo HCAIRE',
   'progetti':               'Progetti',
   'ambiente-editoriale':    'Ambiente editoriale',

@@ -10,29 +10,19 @@ stato: bozza
 
 # Introduzione alla metodologia del Progetto Sviluppo Bambino
 
-## 1. Che tipo di metodologia è questa
+## Che tipo di metodologia è questa
 
-La metodologia del Progetto Sviluppo Bambino non è una sequenza applicativa lineare — teoria che diventa tecnica, concetti che si traducono automaticamente in strumenti. È un'architettura stratificata che muove da una fondazione filosofico-concettuale attraverso passaggi intermedi espliciti e controllati, ciascuno con uno statuto proprio e non comprimibile nel successivo.
+La metodologia del Progetto Sviluppo Bambino è un'architettura stratificata che muove da una fondazione filosofico-concettuale attraverso passaggi intermedi espliciti e controllati, ciascuno con uno statuto proprio e non comprimibile nel successivo.
 
-Il principio che governa l'intera struttura è la **non-sovrapponibilità dei livelli**: fondazione concettuale, traduzione interdisciplinare, progettazione degli strumenti, formazione, valutazione e adozione istituzionale sono operazioni distinte che si presuppongono a vicenda ma non si sostituiscono. Saltare un livello non accelera il processo — lo distorce.
+Il principio che governa l'intera struttura è la **non-sovrapponibilità dei livelli**: fondazione concettuale, traduzione interdisciplinare e progettazione degli strumenti sono operazioni distinte che si presuppongono a vicenda ma non si sostituiscono. 
 
-L'obiettivo non è dedurre strumenti dalla teoria, ma costruire condizioni di intelligibilità che rendano possibile progettare strumenti responsabili nei contesti reali.
-
----
-
-## 2. La questione di partenza
-
-La metodologia nasce da un problema preciso: le discipline che si occupano di sviluppo infantile — psicologia, pediatria, neuroscienze, pedagogia, neuropsichiatria — comprendono sempre meglio le proprie parti, ma faticano a condividere una lettura comune nei contesti ordinari di cura. Il problema non è assenza di conoscenze; è **assenza di traducibilità**.
-
-Ne deriva una frammentazione tra sapere scientifico, pratica clinica quotidiana, esperienza familiare e organizzazione dei servizi. I professionisti che incontrano ogni giorno bambini in zone di incertezza evolutiva — non patologia definita, ma fragilità, instabilità, preoccupazione senza criteri chiari — dispongono raramente di strumenti condivisi per orientarsi insieme.
-
-Il progetto risponde costruendo un'infrastruttura metodologica che non sostituisce le discipline, ma crea le condizioni perché possano dialogare senza riduzioni.
+L'obiettivo non è dedurre strumenti da una teoria, ma costruire condizioni di intelligibilità che rendano possibile progettare strumenti responsabili nei contesti reali.
 
 ---
 
-## 3. L'architettura del framework: sette fasi
+## L'architettura del framework
 
-L'architettura è organizzata in sette fasi progressive. Ogni fase rende operativa la precedente; ogni passaggio mantiene coerenza con i vincoli originari.
+L'architettura è organizzata in fasi progressive. Ogni fase rende operativa la precedente; ogni passaggio mantiene coerenza con i vincoli originari.
 
 **F1 — Fondazione ontologica**
 Definisce i vincoli concettuali dello sviluppo: il bambino come soggetto incarnato, temporale, relazionale, dotato di normatività intrinseca. Stabilisce cosa deve restare non ridotto. Output: assi strutturali dello sviluppo.
@@ -43,25 +33,14 @@ Costruisce le condizioni di traducibilità tra discipline diverse attraverso la 
 **F3 — Traduzioni operative controllate e generazione dei dispositivi**
 Traduce la lettura configurazionale in azione. Introduce la tipologia universale dei dispositivi (U1–U6) e la logica decisionale non prescrittiva sintetizzata nel Ciclo Decisionale Breve. Output: micro-dispositivi di sostegno allo sviluppo.
 
-**F4 — Formazione e trasformazione dei sistemi**
-Opera su due livelli simultanei: la trasformazione dello sguardo professionale (acquisizione della lettura configurazionale) e la trasformazione dei servizi letti come configurazioni evolutive. Output: linguaggio condiviso tra professionisti e istituzioni.
 
-**F5 — Valutazione configurazionale**
-Verifica l'efficacia degli interventi senza riduzione diagnostica, attraverso l'analisi delle Transizioni Configurazionali nel tempo (TC+/TC≈/TC±/TC−). Compatibile con scale validate esistenti che vengono integrate come input osservativi.
-
-**F6 — Adozione e stabilizzazione istituzionale**
-Governa il percorso dal pilot alla pratica ordinaria secondo il principio dell'integrazione progressiva, non della riforma. Il modello entra nelle istituzioni dove emerge utilità pratica e adesione volontaria.
-
-**F7 — Architettura integrata**
-Consolida l'identità del progetto, garantisce coerenza tra le versioni (scientifica, clinica, istituzionale) e definisce i confini metodologici che proteggono il framework da derive riduzioniste.
-
-La relazione tra le fasi segue una trasformazione continua: Comprensione (F1) → Traduzione (F2) → Azione (F3) → Apprendimento professionale (F4-A) → Trasformazione sistemica (F4-B) → Valutazione (F5) → Stabilizzazione (F6) → Identità integrata (F7).
+La relazione tra le fasi segue una trasformazione continua: Comprensione (F1) → Traduzione (F2) → Azione (F3).
 
 ---
 
-## 4. Principi trasversali
+## Principi trasversali
 
-Quattro principi percorrono l'intera architettura e devono essere mantenuti in ogni fase.
+Questi principi percorrono l'intera architettura e devono essere mantenuti in ogni fase.
 
 **Non-riduzione**: lo sviluppo è un processo relazionale, dinamico, normativo. Nessuno strumento del progetto riduce questa complessità a prestazioni misurabili, soglie di normalità o profili individuali. La fondazione ontologica agisce come vincolo permanente contro le riduzioni.
 
@@ -73,16 +52,9 @@ Quattro principi percorrono l'intera architettura e devono essere mantenuti in o
 
 ---
 
-## 5. Cosa il progetto non è
+## Cosa il progetto non è
 
 La metodologia è definita anche dai propri confini. Il framework non produce nuove categorie diagnostiche, non prescrive interventi obbligatori, non automatizza decisioni cliniche, non richiede aumento strutturale di risorse, non trasforma i professionisti in terapeuti né definisce modelli normativi di genitorialità.
 
-Questi non sono limiti contingenti: sono scelte metodologiche costitutive. Il loro rispetto è condizione per la coerenza dell'architettura.
+Queste sono scelte metodologiche costitutive. Il loro rispetto è condizione per la coerenza dell'architettura.
 
----
-
-## 6. La documentazione per fasi
-
-Per ciascuna delle sette fasi esiste un documento dedicato che ne sviluppa statuto, strumenti, principi operativi e connessioni con le fasi adiacenti. Questa introduzione è la mappa; i documenti di fase sono il territorio.
-
-La lettura consigliata segue l'ordine dell'architettura, ma i documenti sono progettati per essere consultabili anche in modo selettivo: ogni documento richiama i vincoli della fondazione e segnala i passaggi verso le fasi successive.

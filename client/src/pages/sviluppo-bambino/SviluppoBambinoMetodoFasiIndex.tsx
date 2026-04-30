@@ -31,13 +31,13 @@ export default function SviluppoBambinoMetodoFasiIndex() {
 
         <h1 className="text-3xl font-bold text-gray-900 mb-3">Le fasi del metodo</h1>
         <p className="text-gray-500 mb-10">
-          Il percorso metodologico si articola in sette fasi progressive, dalla fondazione ontologica
-          all'architettura integrata del progetto.
+          Il percorso metodologico si articola in fasi progressive, dalla fondazione ontologica
+          agli strumenti operativi contestualizzati.
         </p>
 
         {loading && (
           <div className="space-y-4">
-            {[...Array(7)].map((_, i) => (
+            {[...Array(3)].map((_, i) => (
               <div key={i} className="h-24 bg-gray-50 animate-pulse rounded-lg" />
             ))}
           </div>

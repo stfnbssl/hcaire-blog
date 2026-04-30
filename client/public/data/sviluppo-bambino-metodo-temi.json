@@ -6,20 +6,20 @@
       "themes": [
         {
           "code": "A1",
-          "title": "Il problema non è sapere poco: è non riuscire a tradurre",
-          "tagline": "Le discipline che studiano lo sviluppo sanno moltissimo. Il problema è che non riescono a parlarsi senza ridursi a vicenda.",
-          "body": "Il passaggio diretto tra livelli disciplinari produce sistematicamente errori: stessi bambini descritti in modo incompatibile da un pediatra e da un educatore, non per incompetenza, ma per assenza di un'infrastruttura di traduzione. Questo è il punto di partenza del metodo."
+          "title": "Il problema è la traducibilità",
+          "tagline": "Le discipline che studiano lo sviluppo sanno moltissimo. Il problema è la traduzione interdisciplinare.",
+          "body": "Il passaggio diretto tra livelli disciplinari può produrre incomprensioni: stessi fenomeni possono essere descritti in modo incompatibile per assenza di un'infrastruttura di traduzione. Questo è il punto di partenza del metodo."
         },
         {
           "code": "A2",
           "title": "La traduzione è un percorso, non una mappatura",
           "tagline": "Non basta mettere accanto i vocabolari delle discipline. Serve un percorso strutturato che garantisca che il concetto non si perda durante il passaggio.",
-          "body": "La pipeline di traducibilità è composta da sette operatori in sequenza, ciascuno accompagnato da un guard-rail che protegge da riduzioni specifiche. Non è un framework da leggere: è un percorso da attraversare. La sua forza sta nel fatto che ogni deviazione diventa riconoscibile."
+          "body": "La pipeline di traducibilità è composta da operatori in sequenza, ciascuno accompagnato da un guard-rail che protegge da riduzioni specifiche."
         },
         {
           "code": "A3",
           "title": "Osservare e decidere non sono la stessa cosa",
-          "tagline": "Il metodo separa nettamente il momento dell'osservazione dal momento della decisione. Non perché la decisione non conti — ma perché confonderli produce errori sistematici.",
+          "tagline": "Il metodo separa il momento dell'osservazione dal momento della decisione.",
           "body": "Un sistema che produce leggibilità e azione simultaneamente tende a confondere la descrizione con la soluzione. Il metodo produce leggibilità: la decisione finale appartiene sempre alle discipline competenti. Non è un limite del metodo: è la sua protezione più importante."
         }
       ]
@@ -30,31 +30,31 @@
       "themes": [
         {
           "code": "B1",
-          "title": "I Nodi Trasversali: strutture dello sviluppo che nessuna disciplina possiede",
+          "title": "I Nodi Trasversali: strutture dello sviluppo che non sono prerogativa di specifiche discipline",
           "tagline": "Ci sono aspetti dello sviluppo che appartengono a tutte le discipline insieme. Il metodo li nomina, li stabilizza e li rende interrogabili da chiunque.",
           "body": "I sette Nodi Trasversali (Regolazione, Campo relazionale, Accesso al mondo condiviso, Apertura, Separazione, Continuità temporale del Sé, Desiderio) sono configurazioni strutturali che attraversano le discipline senza appartenere a nessuna. Diventano leggibili da un pediatra, un educatore e un genitore attraverso domande diverse ma coerenti."
         },
         {
           "code": "B2",
           "title": "La Configurazione Evolutiva: descrizione senza diagnosi",
-          "tagline": "Non un profilo, non un punteggio, non una diagnosi. Una descrizione strutturale di come il bambino sta organizzando la propria esperienza in questo momento.",
-          "body": "La Configurazione Evolutiva è sempre situata, reversibile e dinamica — mai identitaria. Offre ai professionisti uno strumento descrittivo che evita sia la vaghezza narrativa soggettiva sia la rigidità classificatoria delle scale, ed è al tempo stesso più ricco di un punteggio e più condivisibile di una descrizione clinica libera."
+          "tagline": "Una descrizione strutturale di come il bambino sta organizzando la propria esperienza in questo momento. Non un profilo, non un punteggio, non una diagnosi.",
+          "body": "La Configurazione Evolutiva è sempre situata, reversibile e dinamica. Offre ai professionisti uno strumento descrittivo che evita sia la vaghezza narrativa soggettiva sia la rigidità classificatoria delle scale numeriche."
         },
         {
           "code": "B3",
-          "title": "Dal bambino all'operatore all'istituzione: la stessa grammatica su tre scale",
+          "title": "Dal bambino all'operatore all'istituzione: la stessa grammatica",
           "tagline": "Il metodo funziona alla stessa identica maniera che si stia leggendo la situazione di un bambino, il modo di lavorare di un professionista, o l'organizzazione di un servizio.",
-          "body": "L'isomorfismo micro-meso-macro è la proprietà integrativa più importante del framework: la grammatica configurazionale opera sulle medesime strutture sia a livello del singolo bambino, sia a livello del professionista, sia a livello dell'istituzione. Chi impara a leggere configurazioni a un livello acquisisce implicitamente le categorie per leggere gli altri."
+          "body": "L'isomorfismo micro-meso-macro è la proprietà integrativa più importante del framework: la grammatica configurazionale opera sulle medesime strutture. Chi impara a leggere configurazioni a un livello acquisisce implicitamente le categorie per leggere gli altri."
         },
         {
           "code": "B4",
           "title": "Gli strumenti nascono dalle configurazioni, non dai problemi",
-          "tagline": "Ogni strumento del metodo nasce da una lettura configurazionale, non da un sintomo. Questo cambia radicalmente il tipo di azione che diventa possibile.",
+          "tagline": "Ogni strumento del metodo nasce da una lettura configurazionale, non da un sintomo. Questo cambia il tipo di azione possibile.",
           "body": "Il percorso CE → nodo → funzione → dispositivo impedisce la tecnicizzazione precoce e garantisce che lo strumento agisca sempre sul campo relazionale e non direttamente sul bambino. I sei tipi universali di dispositivo (regolazione, sintonizzazione, apertura, mediazione simbolica, limite generativo, riattivazione del desiderio) derivano da questa logica."
         },
         {
           "code": "B5",
-          "title": "La valutazione che non diventa scala",
+          "title": "La valutazione non diventa scala numerica",
           "tagline": "Il metodo consente di valutare se il lavoro ha funzionato — non misurando un outcome specifico, ma osservando come cambia la configurazione nel tempo.",
           "body": "L'unità di analisi valutativa è la Transizione Configurazionale: il cambiamento osservabile tra due Configurazioni Evolutive a distanza di tempo. Questa logica produce dati comparabili e longitudinali senza numerizzare i nodi né costruire scale, ed è compatibile con gli strumenti validati esistenti."
         }
@@ -66,21 +66,21 @@
       "themes": [
         {
           "code": "C1",
-          "title": "Non un'altra teoria: un'infrastruttura per quelle che già esistono",
-          "tagline": "Il metodo non dice che la teoria dell'attaccamento è sbagliata, o che le neuroscienze dello sviluppo sono insufficienti. Costruisce il livello che rende possibile usarle insieme senza ridurle.",
-          "body": "Il posizionamento epistemologico è deliberatamente metateorico: si colloca al livello dell'architettura concettuale e della traduzione, lasciando alle discipline il livello esplicativo-meccanicistico. Non è eclettismo: è gerarchia metodologica esplicita. Questo non sostituisce ciò che già funziona — aggiunge il livello di coerenza che mancava."
+          "title": "Una infrastruttura per le teorie già praticate",
+          "tagline": "Il metodo non dice che la teoria dell'attaccamento o le neuroscienze dello sviluppo sono insufficienti. Costruisce il livello che rende possibile usarle insieme senza ridurle.",
+          "body": "Il posizionamento epistemologico è deliberatamente metateorico: si colloca al livello dell'architettura concettuale e della traduzione, lasciando alle discipline il livello esplicativo-meccanicistico. La gerarchia metodologica è esplicita. Non si sostituisce ciò che già funziona — si aggiunge un livello di coerenza."
         },
         {
           "code": "C2",
           "title": "I confini sono parte del metodo",
-          "tagline": "Un metodo che sa cosa non farà è più affidabile di uno che promette tutto. I confini del progetto non sono debolezze: sono garanzie.",
-          "body": "Il metodo definisce esplicitamente dieci confini costituzionali: non diventerà una teoria totale, non introdurrà nuove categorie diagnostiche, non sostituirà il giudizio professionale, non utilizzerà l'AI come decisore clinico, non diventerà un modello normativo di genitorialità. Questi confini derivano direttamente dai principi ontologici ed epistemologici del framework."
+          "tagline": "Il darsi dei limiti è un punto di forza. I confini del progetto non sono debolezze: sono garanzie.",
+          "body": "Il metodo definisce esplicitamente i propri confini costituzionali: non diventare una teoria totale, non introdurre nuove categorie diagnostiche, non sostituire il giudizio professionale, non utilizzare l'AI come decisore, non diventare un modello normativo di genitorialità. Questi confini derivano direttamente dai principi ontologici ed epistemologici del framework."
         },
         {
           "code": "C3",
-          "title": "L'adozione avviene per integrazione, non per sostituzione",
-          "tagline": "Il metodo non chiede ai professionisti di cambiare il modo in cui lavorano. Chiede di aggiungere uno strato di lettura a ciò che già fanno.",
-          "body": "La strategia di adozione istituzionale segue una logica deliberatamente progressiva: pilot come osservazione accompagnata, restituzione invece di proposta, richiesta spontanea come segnale di maturazione. Il metodo si integra nelle pratiche esistenti senza modificare ruoli, responsabilità né flussi organizzativi."
+          "title": "L'adozione avviene per integrazione",
+          "tagline": "Il metodo non chiede di rinunciare a procedure esistenti. Chiede di aggiungere uno strato di lettura a ciò che già si fa.",
+          "body": "La strategia di adozione segue una logica deliberatamente progressiva. Il metodo si integra nelle pratiche esistenti senza modificare ruoli, responsabilità né flussi organizzativi."
         }
       ]
     }

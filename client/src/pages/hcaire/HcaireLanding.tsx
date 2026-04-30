@@ -1,9 +1,7 @@
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import MarkdownRenderer from '../../components/MarkdownRenderer';
 import LaboratorioNav from '../../components/LaboratorioNav';
-import { hcaireApi } from '../../services/staticContentService';
-import type { HcaireSection } from '../../types/staticContent';
+import T from '../../components/T';
+import { useT } from '../../context/SiteContentContext';
 
 interface SezioneLab {
   slug: string;
@@ -18,6 +16,17 @@ interface SezioneLab {
 }
 
 const SEZIONI: SezioneLab[] = [
+  {
+    slug: 'manifesto',
+    label: 'Manifesto',
+    tagline: 'Prima della risposta viene il contesto',
+    body: 'Per usare l\'AI nelle scienze umane bisogna governare la memoria di contesto: scopo, lessico, riferimenti, vincoli. È il fondamento del laboratorio HCAIRE — la qualità di ciò che il modello restituisce dipende dalla qualità del contesto che gli viene affidato.',
+    cta: 'Leggi il manifesto →',
+    headerBg: 'bg-amber-900',
+    borderAccent: 'border-l-amber-400',
+    subtitleColor: 'text-amber-300',
+    ctaHover: 'hover:text-amber-700',
+  },
   {
     slug: 'metodo',
     label: 'Il metodo',
@@ -52,17 +61,6 @@ const SEZIONI: SezioneLab[] = [
     ctaHover: 'hover:text-violet-700',
   },
   {
-    slug: 'ia-centrata-sull-umano',
-    label: 'IA orientata alla comprensione',
-    tagline: 'L\'IA come supporto al pensiero, non come sostituto del giudizio',
-    body: 'HCAIRE adotta un orientamento preciso nell\'uso degli LLM: l\'intelligenza artificiale è uno strumento per affinare il pensiero, non per sostituire il giudizio professionale o la responsabilità interpretativa. Questo orientamento ha conseguenze concrete sulla progettazione degli strumenti e sui protocolli di interazione con i modelli.',
-    cta: 'Leggi l\'orientamento →',
-    headerBg: 'bg-amber-900',
-    borderAccent: 'border-l-amber-400',
-    subtitleColor: 'text-amber-300',
-    ctaHover: 'hover:text-amber-700',
-  },
-  {
     slug: 'agentic-shift',
     label: 'HCAIRE adotta l\'Agentic Shift',
     tagline: 'Il sito stesso come dispositivo agentico',
@@ -87,19 +85,7 @@ const SEZIONI: SezioneLab[] = [
 ];
 
 export default function HcaireLanding() {
-  const [sections, setSections] = useState<HcaireSection[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    hcaireApi.getIndex()
-      .then((data) => setSections(data.sections))
-      .catch(() => setSections([]))
-      .finally(() => setLoading(false));
-  }, []);
-
-  const preamble = sections.find((s) => s.slug === '__preamble__' || s.title === '__preamble__');
-  const bartleby = sections.find((s) => s.slug === 'bartleby-preview');
-  const ambitoAperto = sections.find((s) => s.slug === 'ambiente-aperto');
+  const t = useT();
 
   return (
     <div>
@@ -119,43 +105,18 @@ export default function HcaireLanding() {
         </div>
       </div>
 
-      {/* Preamble — testo identitario */}
-      <div className="bg-white border-b border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-          {loading ? (
-            <div className="space-y-3">
-              <div className="h-4 bg-gray-100 animate-pulse rounded w-3/4" />
-              <div className="h-4 bg-gray-100 animate-pulse rounded w-full" />
-              <div className="h-4 bg-gray-100 animate-pulse rounded w-5/6" />
-            </div>
-          ) : preamble ? (
-            <div className="prose-lg text-gray-700 leading-relaxed">
-              <MarkdownRenderer content={preamble.content} />
-            </div>
-          ) : null}
-        </div>
-      </div>
-
-      {/* Intro sezioni */}
-      <div className="bg-slate-50 border-b border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-5">
-            Le sezioni del laboratorio
-          </h2>
-          <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-3xl">
-            Le aree di lavoro di HCAIRE: dal metodo ai progetti, dall'ambiente editoriale ai protocolli che regolano l'interazione con i modelli linguistici.
-          </p>
-        </div>
-      </div>
-
       {/* Le 6 sezioni — stile assi-strutturali */}
       {SEZIONI.map((s, idx) => (
         <div key={s.slug} id={`sezione-${s.slug}`}>
           {/* Header colorato */}
           <div className={`${s.headerBg} text-white`}>
             <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-2">{s.label}</h2>
-              <p className={`text-lg sm:text-xl italic ${s.subtitleColor}`}>{s.tagline}</p>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+                {t(`laboratorio.sezioni.${s.slug}.label`, s.label)}
+              </h2>
+              <p className={`text-lg sm:text-xl italic ${s.subtitleColor}`}>
+                {t(`laboratorio.sezioni.${s.slug}.tagline`, s.tagline)}
+              </p>
             </div>
           </div>
 
@@ -163,14 +124,17 @@ export default function HcaireLanding() {
           <div className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
             <div className="max-w-4xl mx-auto px-4 sm:px-6">
               <div className={`border-l-4 ${s.borderAccent} pl-8 sm:pl-12 py-12 sm:py-16`}>
-                <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
-                  {s.body}
-                </p>
+                <T
+                  id={`laboratorio.sezioni.${s.slug}.body`}
+                  fallback={s.body}
+                  markdown
+                  className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mb-8 prose prose-sm sm:prose-base max-w-none"
+                />
                 <Link
                   to={`/hcaire/${s.slug}`}
                   className={`text-sm font-medium text-gray-700 ${s.ctaHover} transition-colors`}
                 >
-                  {s.cta}
+                  {t(`laboratorio.sezioni.${s.slug}.cta`, s.cta)}
                 </Link>
               </div>
             </div>
@@ -179,39 +143,44 @@ export default function HcaireLanding() {
       ))}
 
       {/* Bartleby preview */}
-      {bartleby && (
-        <div className="bg-white border-t border-gray-100">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-            <div className="rounded-lg bg-slate-900 text-white p-8 sm:p-10 border-l-4 border-sky-400">
-              <p className="text-xs font-medium text-sky-300 uppercase tracking-widest mb-4">
-                Strumento del laboratorio
-              </p>
-              <div className="prose prose-invert max-w-none mb-6 [&_*]:text-slate-200 [&_h1]:text-white [&_h2]:text-white [&_h3]:text-white [&_strong]:text-white">
-                <MarkdownRenderer content={bartleby.content} />
-              </div>
-              <Link
-                to="/bartleby"
-                className="inline-block text-sm font-medium bg-white/10 hover:bg-white/20 text-white border border-white/20 px-5 py-2.5 rounded-md transition-colors"
-              >
-                Scopri Bartleby →
-              </Link>
-            </div>
+      {/* Strumenti del laboratorio */}
+      <div className="bg-slate-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20 space-y-6">
+          {/* Bartleby */}
+          <div className="rounded-lg bg-white p-8 sm:p-10 border border-gray-200 border-l-4 border-l-sky-400 shadow-sm">
+            <p className="text-xs font-medium text-sky-700 uppercase tracking-widest mb-4">
+              Strumento del laboratorio
+            </p>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Bartleby</h3>
+            <p className="text-base text-gray-700 leading-relaxed mb-6 max-w-2xl">
+              Un assistente che traduce situazioni concrete in dispositivi di lavoro, attraverso una base di conoscenza strutturata sullo sviluppo del bambino. Riservato agli abbonati.
+            </p>
+            <Link
+              to="/bartleby"
+              className="inline-block text-sm font-medium bg-sky-700 hover:bg-sky-800 text-white px-5 py-2.5 rounded-md transition-colors"
+            >
+              Scopri Bartleby →
+            </Link>
           </div>
-        </div>
-      )}
 
-      {/* Ambiente aperto */}
-      {ambitoAperto && (
-        <div className="bg-white border-t border-gray-100">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-            <div className="border-l-4 border-l-slate-300 pl-8 sm:pl-12">
-              <div className="prose-lg text-gray-600 leading-relaxed">
-                <MarkdownRenderer content={ambitoAperto.content} />
-              </div>
-            </div>
+          {/* Letture critiche */}
+          <div className="rounded-lg bg-white p-8 sm:p-10 border border-gray-200 border-l-4 border-l-amber-400 shadow-sm">
+            <p className="text-xs font-medium text-amber-700 uppercase tracking-widest mb-4">
+              Strumento del laboratorio
+            </p>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Letture critiche</h3>
+            <p className="text-base text-gray-700 leading-relaxed mb-6 max-w-2xl">
+              Letture critiche di opere culturali — romanzi, racconti, film e altri testi — costruite a partire da una pipeline analitica multi-stadio. Strumenti per orientare lo sguardo, non recensioni.
+            </p>
+            <Link
+              to="/letture"
+              className="inline-block text-sm font-medium bg-amber-700 hover:bg-amber-800 text-white px-5 py-2.5 rounded-md transition-colors"
+            >
+              Vedi le letture critiche →
+            </Link>
           </div>
         </div>
-      )}
+      </div>
 
       <div className="h-16" />
     </div>

@@ -7,6 +7,7 @@ const ADMIN_LINKS = [
   { to: '/admin/requests',      label: 'Richieste',    end: false },
   { to: '/admin/letture',       label: 'Letture',      end: false },
   { to: '/admin/site-config',   label: 'Stato sito',   end: false },
+  { to: '/admin/testi',         label: 'Testi',        end: false },
 ];
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {

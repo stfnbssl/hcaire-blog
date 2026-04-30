@@ -2,24 +2,24 @@
   "groups": [
     {
       "id": "A",
-      "title": "Perché questo progetto esiste",
+      "title": "Perché questo progetto",
       "themes": [
         {
           "code": "A1",
-          "title": "Il vuoto di grammatica condivisa",
-          "tagline": "Quando chi cura, chi educa e chi ricerca non riescono a parlarsi, il bambino ne paga le conseguenze.",
-          "body": "La frammentazione dei saperi sullo sviluppo produce linguaggi disciplinari incompatibili: stesse parole con significati diversi, o cose diverse senza saperlo. Non è una critica al sistema, è una constatazione che ogni professionista riconosce immediatamente nella propria esperienza quotidiana."
+          "title": "L'esigenza di una grammatica condivisa",
+          "tagline": "Chi cura, chi educa e chi ricerca spesso non utilizza un linguaggio condiviso.",
+          "body": "La frammentazione dei saperi sullo sviluppo produce linguaggi disciplinari incompatibili: stesse parole con significati diversi, o cose diverse senza saperlo. Non è una critica, è una constatazione che ogni professionista riconosce immediatamente nella propria esperienza quotidiana."
         },
         {
           "code": "A2",
           "title": "Non spiegare, non valutare: leggere",
-          "tagline": "Prima di intervenire, bisogna saper leggere. Non diagnosticare, non valutare: leggere.",
-          "body": "Spiegare, valutare e leggere sono tre operazioni diverse che richiedono strumenti diversi. Il progetto si colloca deliberatamente sul piano della lettura, fornendo operatori interpretativi — non criteri diagnostici. Il messaggio implicito: non devi emettere verdetti, devi capire cosa sta succedendo."
+          "tagline": "Prima di intervenire, bisogna saper leggere la configurazione esperienziale del bambino.",
+          "body": "Spiegare, valutare e leggere sono tre operazioni diverse che richiedono strumenti diversi. Il progetto si colloca deliberatamente sul piano della lettura, fornendo operatori interpretativi — non criteri diagnostici. Il messaggio implicito: prima di emettere giudizi, dobbiamo capire cosa sta succedendo."
         },
         {
           "code": "A3",
           "title": "Il bambino non si misura, il campo relazionale si legge",
-          "tagline": "Il problema non è nel bambino. È nel campo di relazioni, esperienze e azioni in cui il bambino esiste.",
+          "tagline": "Il problema è leggere il campo di relazioni, esperienze e azioni in cui il bambino esiste.",
           "body": "L'oggetto di osservazione non è il bambino come individuo isolato, ma il campo relazionale che lo costituisce. Nessun intervento agisce sul bambino: tutti agiscono sul campo. E nessuna configurazione è identitaria — è sempre situata, reversibile, dinamica."
         }
       ]
@@ -31,13 +31,13 @@
         {
           "code": "B1",
           "title": "Una grammatica che tutti i professionisti possono usare",
-          "tagline": "Un linguaggio comune che non appiattisce le differenze disciplinari, ma le rende finalmente compatibili.",
-          "body": "I Nodi Trasversali attraversano le discipline senza appartenere a nessuna, si traducono in domande professionali senza diventare indicatori clinici. Il valore non è \"impara una nuova teoria\", ma \"puoi parlare con i tuoi colleghi di altre discipline\"."
+          "tagline": "Un linguaggio comune che non appiattisce le differenze disciplinari, ma aiuta a renderle compatibili.",
+          "body": "I Nodi Trasversali attraversano le discipline senza appartenere a nessuna, si traducono in domande professionali senza diventare indicatori clinici. Il valore non è \"imparare una nuova teoria\", ma \"poter parlare con i colleghi di altre discipline\"."
         },
         {
           "code": "B2",
           "title": "Gli strumenti non prescrivono, orientano",
-          "tagline": "Nessuno strumento del progetto decide al posto tuo. La responsabilità professionale resta dove deve restare: con te.",
+          "tagline": "Nessuno strumento del progetto decide al posto del professionista. La responsabilità professionale resta dove deve restare.",
           "body": "Gli output-tipo non contengono criteri precompilati, non definiscono soglie di normalità, non prescrivono azioni. In un contesto in cui i professionisti vengono sempre più guidati da protocolli e checklist, il progetto si posiziona come alleato dell'autonomia professionale."
         },
         {
@@ -56,7 +56,7 @@
           "code": "B5",
           "title": "Il Ciclo Decisionale Breve",
           "tagline": "In ambulatorio, in classe, in un colloquio: cinque minuti per osservare, leggere, orientarsi e agire.",
-          "body": "Osserva → leggi la configurazione → orienta la funzione → agisci con un micro-dispositivo → osserva di nuovo. Non è una semplificazione del metodo: è il metodo nella sua forma operativa più essenziale, la prova concreta che il progetto non è solo teoria."
+          "body": "Osserva → leggi la configurazione → orienta la funzione → agisci con un micro-dispositivo → osserva di nuovo. Non è una semplificazione del metodo: è il metodo nella sua forma operativa più essenziale."
         }
       ]
     },
@@ -81,12 +81,6 @@
           "title": "L'AI come infrastruttura, non come automatismo",
           "tagline": "L'intelligenza artificiale come supporto cognitivo: garantisce coerenza, non produce decisioni.",
           "body": "L'AI conserva la memoria strutturata del modello, garantisce coerenza terminologica, facilita la produzione di output contestualizzati. La responsabilità epistemica resta interamente in capo ai ricercatori e ai professionisti."
-        },
-        {
-          "code": "C4",
-          "title": "Ogni ruolo resta intatto: il progetto aggiunge, non sostituisce",
-          "tagline": "Il clinico continua a curare, l'educatore a educare, il genitore a essere genitore — con in più uno strumento di lettura condiviso.",
-          "body": "Le prerogative disciplinari e genitoriali non vengono toccate. Il progetto non assegna nuovi compiti né ridefinisce responsabilità esistenti. Offre un livello aggiuntivo di leggibilità — una grammatica condivisa — che arricchisce l'esercizio di ciascun ruolo senza interferire con esso."
         }
       ]
     }

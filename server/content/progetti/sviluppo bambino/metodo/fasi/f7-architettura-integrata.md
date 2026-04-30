@@ -12,6 +12,8 @@ data: 2026-04-21
 stato: bozza
 ---
 
+<!-- FASE NON IMPLEMENTATA — Esclusa dall'indice pubblico /sviluppo-bambino/metodo/fasi. Contenuto conservato in attesa di completamento. -->
+
 # Fase 7 — Architettura Integrata del Progetto Sviluppo Bambino
 
 ## 1. Perché questo progetto era necessario

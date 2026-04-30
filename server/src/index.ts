@@ -18,6 +18,7 @@ import hcaireRoutes from './routes/hcaire';
 import sviluppoBambinoRoutes from './routes/sviluppoBambino';
 import pipelineRoutes from './routes/pipeline';
 import lettureRoutes, { lettureAdminRouter } from './routes/letture';
+import { siteContentPublicRouter, siteContentAdminRouter } from './routes/siteContent';
 import { startTelegramBot } from './services/telegramBot';
 import { startPipelineEventSubscriber, startPipelineWatchdog } from './services/pipelineEventSubscriber';
 import { startLettureEventSubscriber, startLettureWatchdog } from './services/lettureEventSubscriber';
@@ -63,6 +64,8 @@ app.use('/api/sviluppo-bambino',     sviluppoBambinoRoutes);
 app.use('/api/pipeline',             pipelineRoutes);
 app.use('/api/letture',              lettureRoutes);
 app.use('/api/admin/letture',        lettureAdminRouter);
+app.use('/api/site-content',         siteContentPublicRouter);
+app.use('/api/admin/site-content',   siteContentAdminRouter);
 app.use('/api',                      authRoutes);
 
 app.listen(PORT, () => {

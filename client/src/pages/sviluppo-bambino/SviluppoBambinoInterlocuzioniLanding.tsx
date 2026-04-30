@@ -71,10 +71,10 @@ export default function SviluppoBambinoInterlocuzioniLanding() {
             Le <span className="text-indigo-300">interlocuzioni</span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-200 max-w-2xl leading-relaxed mb-4">
-            Discipline in dialogo con il progetto. Nessuna lo fonda: tutte contribuiscono.
+            Discipline in dialogo con il progetto.
           </p>
           <p className="text-base text-slate-400 max-w-xl leading-relaxed mb-10">
-            La ricerca sullo sviluppo sa moltissimo. Il progetto costruisce il livello in cui quel sapere diventa fruibile insieme.
+            La ricerca sullo sviluppo del bambino ha prodotto risultati in vari ambiti. Il progetto mira a quel livello di astrazione in cui quel sapere diventa traducibile e fruibile insieme.
           </p>
           <Link
             to="/sviluppo-bambino/interlocuzioni/discipline"
@@ -89,7 +89,7 @@ export default function SviluppoBambinoInterlocuzioniLanding() {
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
           <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-6">
-            Il problema non è la mancanza di conoscenze scientifiche sullo sviluppo del bambino. Negli ultimi cinquant'anni, neuroscienze, teoria dell'attaccamento, ricerca sull'infante, psicopatologia dello sviluppo hanno prodotto conoscenze straordinarie.
+            Negli ultimi cinquant'anni, neuroscienze, teoria dell'attaccamento, ricerca sull'infante, psicopatologia dello sviluppo hanno prodotto conoscenze straordinarie.
           </p>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 max-w-3xl">
             Il problema è usarle insieme senza che nessuna sopprima le altre. Ogni disciplina produce conoscenze genuine ma parziali. Le neuroscienze descrivono i meccanismi biologici ma non la normatività. La teoria dell'attaccamento descrive la relazione precoce ma non il desiderio. La psicopatologia descrive le traiettorie ma non la struttura soggettiva.
@@ -181,10 +181,10 @@ export default function SviluppoBambinoInterlocuzioniLanding() {
           <div className="space-y-10 max-w-3xl">
             <div className="border-l-4 border-amber-400 pl-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                Nessuna disciplina risponde alle domande normative
+                Nessuna disciplina affronta gli aspetti fondativi dello sviluppo del bambino
               </h3>
               <p className="text-base text-gray-600 leading-relaxed">
-                Tutte le discipline concordano su un punto: nessuna di esse può dire cosa vale, cosa è bene, come si orienta il bambino verso il bene. Tutte descrivono come lo sviluppo avviene, quali condizioni lo favoriscono, quali traiettorie porta — ma nessuna risponde alla domanda su cosa vale. Questa assenza non è un difetto delle discipline: è una caratteristica strutturale delle scienze descrittive. Il progetto occupa questo spazio con gli strumenti dell'Asse 3.
+                Tutte le discipline sono equiparabili su un punto: i fondamenti ontologici dello sviluppo sono al di fuori del loro ambito empirico. Come il bambino si orienta nel proprio campo esperienziale non è da porre necessariamente in correlazione con le osservazioni specialistiche. Tutte descrivono come lo sviluppo avviene, quali condizioni lo favoriscono, quali traiettorie porta — ma nessuna risponde alla domanda su cosa lo fonda. Questa assenza non è un difetto delle discipline: è una caratteristica strutturale delle scienze empiriche. Il progetto occupa questo spazio con gli strumenti degli Assi Strutturali di Sviluppo.
               </p>
             </div>
 
@@ -193,7 +193,7 @@ export default function SviluppoBambinoInterlocuzioniLanding() {
                 La convergenza sull'inizio: i primi anni come priorità
               </h3>
               <p className="text-base text-gray-600 leading-relaxed">
-                Da discipline molto diverse — neuroscienze, attaccamento, sistemi dinamici, pediatria — emerge una convergenza sorprendente: i primi anni di vita sono la finestra temporale più rilevante per qualsiasi intervento preventivo. Questa convergenza non viene da una sola teoria: viene da tradizioni metodologicamente indipendenti, e rafforza la logica preventiva del progetto in modo pluridisciplinare.
+                Da discipline molto diverse — neuroscienze, attaccamento, sistemi dinamici, pediatria — emerge una convergenza forte: i primi anni di vita sono la finestra temporale più rilevante per qualsiasi intervento preventivo. Questa convergenza non viene da una sola teoria: viene da tradizioni metodologicamente indipendenti, e rafforza la logica preventiva del progetto in modo pluridisciplinare.
               </p>
             </div>
 

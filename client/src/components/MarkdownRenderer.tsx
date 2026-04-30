@@ -64,16 +64,16 @@ const baseComponents: Components = {
   },
   sup: ({ children }) => <sup>{children}</sup>,
   pre: ({ children }) => (
-    <pre className="bg-gray-900 rounded-lg overflow-x-auto mb-4 p-4">
+    <pre className="bg-gray-50 border border-gray-200 rounded-lg overflow-x-auto mb-4 p-4 text-gray-800">
       {children}
     </pre>
   ),
   code: ({ children, className }) => {
     const isBlock = !!className;
     return isBlock ? (
-      <code className="text-gray-100 text-sm font-mono">{children}</code>
+      <code className="text-gray-800 text-sm font-mono whitespace-pre">{children}</code>
     ) : (
-      <code className="bg-gray-100 text-red-600 px-1 py-0.5 rounded text-sm font-mono">
+      <code className="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">
         {children}
       </code>
     );

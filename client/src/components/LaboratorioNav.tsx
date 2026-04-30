@@ -1,16 +1,18 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useT } from '../context/SiteContentContext';
 
 const NAV_LINKS = [
-  { to: '/hcaire/metodo',                 label: 'Metodo' },
-  { to: '/hcaire/progetti',               label: 'Progetti' },
-  { to: '/hcaire/ambiente-editoriale',    label: 'Ambiente editoriale' },
-  { to: '/hcaire/ia-centrata-sull-umano', label: 'IA orientata' },
-  { to: '/hcaire/agentic-shift',          label: 'Agentic Shift' },
-  { to: '/hcaire/protocolli',             label: 'Protocolli' },
+  { to: '/hcaire/manifesto',              key: 'laboratorio.nav.manifesto',            fallback: 'Manifesto' },
+  { to: '/hcaire/metodo',                 key: 'laboratorio.nav.metodo',               fallback: 'Metodo' },
+  { to: '/hcaire/progetti',               key: 'laboratorio.nav.progetti',             fallback: 'Progetti' },
+  { to: '/hcaire/ambiente-editoriale',    key: 'laboratorio.nav.ambiente-editoriale',  fallback: 'Ambiente editoriale' },
+  { to: '/hcaire/agentic-shift',          key: 'laboratorio.nav.agentic-shift',        fallback: 'Agentic Shift' },
+  { to: '/hcaire/protocolli',             key: 'laboratorio.nav.protocolli',           fallback: 'Protocolli' },
 ];
 
 export default function LaboratorioNav() {
   const location = useLocation();
+  const t = useT();
 
   return (
     <div className="sticky top-16 z-40 bg-white border-b border-gray-200 shadow-sm">
@@ -24,7 +26,7 @@ export default function LaboratorioNav() {
                 : 'text-gray-500 hover:text-gray-900 hover:bg-gray-50'
             }`}
           >
-            ← Laboratorio
+            {t('laboratorio.nav.back', '← Laboratorio')}
           </Link>
           <span className="self-center text-gray-200 mx-1">|</span>
           {NAV_LINKS.map((link) => (
@@ -37,7 +39,7 @@ export default function LaboratorioNav() {
                   : 'text-gray-500 hover:text-gray-900 hover:bg-gray-50'
               }`}
             >
-              {link.label}
+              {t(link.key, link.fallback)}
             </Link>
           ))}
         </nav>

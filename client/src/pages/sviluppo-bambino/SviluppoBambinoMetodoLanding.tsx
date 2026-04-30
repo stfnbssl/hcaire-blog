@@ -49,7 +49,7 @@ export default function SviluppoBambinoMetodoLanding() {
             Il <span className="text-indigo-300">Metodo</span>
           </h1>
           <p className="text-xl sm:text-2xl text-indigo-100 max-w-2xl leading-relaxed">
-            Come funziona e perché questo metodo e non un altro: i temi fondamentali della sezione.
+            Come funziona e perché questo metodo.
           </p>
         </div>
       </div>
