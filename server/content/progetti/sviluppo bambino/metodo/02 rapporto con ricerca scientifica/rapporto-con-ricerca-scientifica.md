@@ -10,9 +10,7 @@ stato: bozza
 
 # Rapporto con la ricerca scientifica
 
-## Posizionamento metateorico
-
-Il Progetto Sviluppo Bambino non è una teoria esplicativa dello sviluppo infantile, né un protocollo clinico o educativo standardizzato. Si configura come un'**infrastruttura metodologica e concettuale** che si colloca a un livello metateorico rispetto alla ricerca empirica: non produce dati, ma costruisce le condizioni di intelligibilità che rendono possibile produrre dati coerenti con la complessità dei fenomeni di sviluppo.
+Il Progetto Sviluppo Bambino è un'**infrastruttura metodologica e concettuale** che si colloca a un livello metateorico rispetto alla ricerca empirica: non produce dati, ma costruisce le condizioni di intelligibilità che rendono possibile produrre dati coerenti con la complessità dei fenomeni di sviluppo.
 
 ---
 
@@ -20,15 +18,15 @@ Il Progetto Sviluppo Bambino non è una teoria esplicativa dello sviluppo infant
 
 La ricerca sullo sviluppo umano si svolge in un contesto epistemologico più complesso di quello delle scienze naturali. A differenza di un oggetto fisico, lo sviluppo infantile comprende simultaneamente dimensioni biologiche, esperienziali, relazionali e culturali che non sono completamente riducibili le une alle altre.
 
-Ne consegue un problema spesso sottovalutato: ogni metodo di osservazione presuppone, implicitamente, una certa concezione del fenomeno che osserva. La scelta degli strumenti di misurazione, dei costrutti da operazionalizzare, delle unità di analisi — tutto questo incorpora assunzioni su cosa sia lo sviluppo e quale tipo di soggetto sia il bambino. Quando queste assunzioni restano implicite, orientano la ricerca senza essere mai messe in discussione.
+Ne consegue che ogni metodo di osservazione presuppone, implicitamente, una certa concezione del fenomeno che osserva. La scelta degli strumenti di misurazione, dei costrutti da operazionalizzare, delle unità di analisi — tutto questo incorpora assunzioni su cosa sia lo sviluppo e quale tipo di soggetto sia il bambino. Quando queste assunzioni restano implicite, orientano la ricerca senza essere mai messe in discussione.
 
-Il progetto nasce per rendere esplicito questo livello di presupposti, non per neutralizzarlo — il che sarebbe impossibile — ma per gestirlo consapevolmente.
+Il progetto nasce per rendere esplicito questo livello di presupposti e per gestirlo consapevolmente.
 
 ---
 
 ## I tre livelli della produzione di conoscenza
 
-È utile distinguere tre livelli nella produzione di conoscenza sullo sviluppo umano e collocare il progetto con precisione rispetto a ciascuno.
+È utile distinguere tre livelli nella produzione di conoscenza sullo sviluppo umano e collocare il progetto rispetto a ciascuno.
 
 **Livello 1 — Fondazione concettuale**
 Costruisce il quadro entro cui lo sviluppo può essere pensato e osservato. Nel progetto questo livello è rappresentato dal modello degli assi strutturali (F1) e dalla grammatica configurazionale (F2). Non produce dati né strumenti operativi: produce le categorie interpretative che rendono possibile costruirli.
@@ -45,17 +43,17 @@ Il Progetto Sviluppo Bambino opera ai livelli 1 e 2. La relazione con il livello
 
 ## Come il progetto si relaziona con la ricerca empirica esistente
 
-Il framework metodologico non compete con le teorie e le ricerche sullo sviluppo già consolidate — teoria dell'attaccamento, neuroscienze relazionali, approcci sistemici, psicologia dello sviluppo cognitivo. Lavora a un livello diverso: non propone di sostituire queste teorie, ma di costruire le condizioni metodologiche che permettano di usarle insieme in modo coerente.
+Il framework metodologico non compete con le teorie e le ricerche sullo sviluppo già consolidate. Non propone di sostituire queste teorie, ma di costruire le condizioni che permettano di usarle insieme in modo coerente.
 
-I Nodi Trasversali (N1–N7) e le Configurazioni Evolutive (CE) non sono costrutti empirici da validare direttamente: sono operatori interpretativi che organizzano l'osservazione e orientano la costruzione degli strumenti. La loro funzione è analoga a quella di costrutti teorici come il sistema di attaccamento o le strutture cognitive piagetiane — non si misurano direttamente, ma la ricerca empirica può valutare gli strumenti e gli interventi costruiti nel loro quadro.
+I Nodi Trasversali (N1–N7) e le Configurazioni Evolutive (CE) non sono costrutti empirici da validare direttamente: sono operatori interpretativi che organizzano l'osservazione e orientano la costruzione degli strumenti. Non si misurano direttamente, ma possono essere valutati gli interventi costruiti nel loro quadro.
 
-La verifica empirica degli strumenti è pertanto possibile e auspicabile, ma riguarda gli output del livello 2, non i costrutti del livello 1.
+In modo indiretto la verifica empirica degli output del livello 2 è pertanto possibile e auspicabile.
 
 ---
 
 ## I criteri di validità del framework
 
-Nel progetto la validità non è riducibile alla sola efficacia empirica degli interventi. Sono rilevanti quattro criteri distinti:
+Sono rilevanti i seguenti criteri distinti:
 
 **Coerenza interna**: gli strumenti sono coerenti con la fondazione ontologica? Le categorie operative rispecchiano le assunzioni del livello 1?
 
@@ -63,18 +61,4 @@ Nel progetto la validità non è riducibile alla sola efficacia empirica degli i
 
 **Utilità professionale**: gli strumenti migliorano la capacità dei professionisti di orientarsi nelle situazioni di incertezza evolutiva? Sono sostenibili nei contesti reali?
 
-**Validità empirica indiretta**: la ricerca empirica sugli strumenti e sugli interventi produce risultati interpretabili e cumulabili?
-
-Questi criteri non sono alternativi ma complementari. Un framework coerente e traducibile ma inutilizzabile nella pratica fallisce il proprio scopo; uno utile ma internamente incoerente produce distorsioni che si accumulano silenziosamente nel tempo.
-
----
-
-## Cosa il progetto non rivendica
-
-Tre limitazioni sono costitutive, non contingenti.
-
-Il progetto non pretende di essere una teoria totale dello sviluppo. Il suo ruolo è metodologico e integrativo: crea le condizioni per costruire teorie e strumenti empiricamente più coerenti, non li sostituisce.
-
-Il progetto non produce classificazioni diagnostiche né soglie di normalità. Ogni decisione clinica e diagnostica resta competenza delle discipline specialistiche appropriate.
-
-Il progetto non esclude la revisione. I costrutti del livello 1 non sono dogmi — sono ipotesi teoriche di livello elevato, soggette a revisione quando producono contraddizioni interne, quando risultano incapaci di rendere conto di fenomeni rilevanti, o quando alternative teoriche mostrano maggiore potere organizzativo.
+Questi criteri sono complementari. Un framework deve essere non solo coerente e traducibile ma anche utilizzabile nella pratica.

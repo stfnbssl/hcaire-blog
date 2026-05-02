@@ -372,6 +372,6 @@ Serve a verificare che la catena di traducibilità sia completa prima della cost
 
 ## 11. Limiti epistemologici della Fase 2
 
-La traduzione interdisciplinare non costituisce validazione clinica, non produce evidenza empirica autonoma, non sostituisce scale standardizzate, non genera diagnosi. Rappresenta un **fondamento interpretativo operativo**.
+La traduzione rappresenta un **fondamento interpretativo operativo** e non produce evidenza empirica autonoma.
 
 Se correttamente sviluppata, la Fase 2 rende comunicabili discipline diverse, permette la costruzione controllata di strumenti, previene derive prescrittive, consente replicabilità metodologica e rende possibile l'uso responsabile dell'AI.

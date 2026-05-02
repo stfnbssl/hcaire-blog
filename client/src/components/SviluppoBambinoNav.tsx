@@ -1,10 +1,11 @@
 import { Link, useLocation } from 'react-router-dom';
 
 const NAV_LINKS = [
-  { to: '/sviluppo-bambino/finalita',       label: 'Finalità' },
-  { to: '/sviluppo-bambino/metodo',         label: 'Metodo' },
-  { to: '/sviluppo-bambino/interlocuzioni', label: 'Interlocuzioni' },
-  { to: '/sviluppo-bambino/produzioni',     label: 'Produzioni' },
+  { to: '/sviluppo-bambino/finalita',                    label: 'Finalità' },
+  { to: '/sviluppo-bambino/metodo',                      label: 'Metodo' },
+  { to: '/sviluppo-bambino/interlocuzioni',              label: 'Interlocuzioni' },
+  { to: '/sviluppo-bambino/produzioni',                  label: 'Produzioni' },
+  { to: '/sviluppo-bambino/traduzione-interdisciplinare', label: 'Traduzione interdisciplinare' },
 ];
 
 export default function SviluppoBambinoNav() {

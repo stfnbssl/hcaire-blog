@@ -51,6 +51,8 @@ import SviluppoBambinoPipelineStressTest     from './pages/sviluppo-bambino/Svil
 import SviluppoBambinoPipelineRicercaOverview from './pages/sviluppo-bambino/SviluppoBambinoPipelineRicercaOverview';
 import SviluppoBambinoPipelineNuovaRicerca from './pages/sviluppo-bambino/SviluppoBambinoPipelineNuovaRicerca';
 
+const CorsoFase2Page = lazy(() => import('./pages/sviluppo-bambino/corso-fase2/CorsoFase2Page'));
+
 const KnowledgeBase    = lazy(() => import('./pages/bartleby/KnowledgeBase'));
 const AdminSiteConfig  = lazy(() => import('./pages/AdminSiteConfig'));
 const AdminSiteContent = lazy(() => import('./pages/AdminSiteContent'));
@@ -175,6 +177,10 @@ function AppLayout() {
           <Route path="/sviluppo-bambino/produzioni/pipeline/temi/:temaId/stress-test"         element={<SviluppoBambinoPipelineStressTest />} />
           <Route path="/sviluppo-bambino/modello"                               element={<SviluppoBambinoModello />} />
           <Route path="/sviluppo-bambino/modello/:asseSlug"                     element={<SviluppoBambinoAsseOverview />} />
+          {/* Corso "Traduzione interdisciplinare" — slide app */}
+          <Route path="/sviluppo-bambino/traduzione-interdisciplinare"                                  element={<AdminSuspense><CorsoFase2Page /></AdminSuspense>} />
+          <Route path="/sviluppo-bambino/traduzione-interdisciplinare/:moduleId"                        element={<AdminSuspense><CorsoFase2Page /></AdminSuspense>} />
+          <Route path="/sviluppo-bambino/traduzione-interdisciplinare/:moduleId/:slideId"               element={<AdminSuspense><CorsoFase2Page /></AdminSuspense>} />
           {/* Assi Strutturali — sezione top-level */}
           <Route path="/assi-strutturali"                                       element={<SviluppoBambinoAssiLanding />} />
           <Route path="/assi-strutturali/capitoli"                              element={<SviluppoBambinoAssi />} />
