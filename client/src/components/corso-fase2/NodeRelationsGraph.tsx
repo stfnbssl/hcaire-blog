@@ -66,15 +66,15 @@ export default function NodeRelationsGraph({ config }: Props) {
   };
 
   return (
-    <div className="cf2-noderel">
-      <div className="cf2-noderel__legend">
-        <span className="cf2-noderel__legend-label">Tipo di relazione:</span>
+    <div className="corso-noderel">
+      <div className="corso-noderel__legend">
+        <span className="corso-noderel__legend-label">Tipo di relazione:</span>
         {relationTypes.map((t) => (
           <button
             key={t.id}
             type="button"
-            className={`cf2-noderel__legend-item ${activeType === t.id ? 'cf2-noderel__legend-item--active' : ''}`}
-            style={{ ['--cf2-rel-color' as never]: t.color } as React.CSSProperties}
+            className={`corso-noderel__legend-item ${activeType === t.id ? 'corso-noderel__legend-item--active' : ''}`}
+            style={{ ['--corso-rel-color' as never]: t.color } as React.CSSProperties}
             onClick={() => setActiveType(activeType === t.id ? null : t.id)}
             title={t.description}
           >
@@ -95,7 +95,7 @@ export default function NodeRelationsGraph({ config }: Props) {
         {(activeType || activeNode) && (
           <button
             type="button"
-            className="cf2-noderel__legend-clear"
+            className="corso-noderel__legend-clear"
             onClick={() => {
               setActiveType(null);
               setActiveNode(null);
@@ -106,9 +106,9 @@ export default function NodeRelationsGraph({ config }: Props) {
         )}
       </div>
 
-      <div className="cf2-noderel__svg-wrap">
+      <div className="corso-noderel__svg-wrap">
         <svg
-          className="cf2-noderel__svg"
+          className="corso-noderel__svg"
           viewBox={`0 0 ${VB_W} ${VB_H}`}
           preserveAspectRatio="xMidYMid meet"
           role="img"
@@ -118,7 +118,7 @@ export default function NodeRelationsGraph({ config }: Props) {
             {relationTypes.map((t) => (
               <marker
                 key={t.id}
-                id={`cf2-arrow-${t.id}`}
+                id={`corso-arrow-${t.id}`}
                 viewBox="0 0 10 10"
                 refX="8"
                 refY="5"
@@ -158,8 +158,8 @@ export default function NodeRelationsGraph({ config }: Props) {
                 strokeWidth={t.style === 'solid' ? 3.5 : 2.5}
                 strokeDasharray={dashFor(t.style)}
                 opacity={dim ? 0.12 : 0.85}
-                markerEnd={`url(#cf2-arrow-${t.id})`}
-                markerStart={rel.bidirectional ? `url(#cf2-arrow-${t.id})` : undefined}
+                markerEnd={`url(#corso-arrow-${t.id})`}
+                markerStart={rel.bidirectional ? `url(#corso-arrow-${t.id})` : undefined}
                 style={{ transition: 'opacity 200ms' }}
               />
             );
@@ -213,7 +213,7 @@ export default function NodeRelationsGraph({ config }: Props) {
         </svg>
       </div>
 
-      <p className="cf2-noderel__hint">
+      <p className="corso-noderel__hint">
         Clicca un Nodo per evidenziare le sue relazioni · clicca un tipo nella legenda per filtrare.
       </p>
     </div>

@@ -16,13 +16,13 @@ export default function ChipAccordion({ config }: Props) {
   const open = openId ? items.find((i) => i.id === openId) : null;
 
   return (
-    <div className="cf2-chip-acc">
-      <div className="cf2-chip-acc__chips">
+    <div className="corso-chip-acc">
+      <div className="corso-chip-acc__chips">
         {items.map((item) => (
           <button
             key={item.id}
             type="button"
-            className={`cf2-chip-acc__chip ${openId === item.id ? 'cf2-chip-acc__chip--active' : ''}`}
+            className={`corso-chip-acc__chip ${openId === item.id ? 'corso-chip-acc__chip--active' : ''}`}
             onClick={() => setOpenId(openId === item.id ? null : item.id)}
             aria-expanded={openId === item.id}
           >
@@ -32,7 +32,7 @@ export default function ChipAccordion({ config }: Props) {
       </div>
       {open && (
         <div
-          className="cf2-chip-acc__panel"
+          className="corso-chip-acc__panel"
           dangerouslySetInnerHTML={{ __html: open.bodyHtml }}
         />
       )}

@@ -18,15 +18,15 @@ export default function ProgressiveReveal({ config }: Props) {
   const allRevealed = revealed >= total;
 
   return (
-    <div className="cf2-reveal">
-      <div className="cf2-reveal__items">
+    <div className="corso-reveal">
+      <div className="corso-reveal__items">
         {items.slice(0, revealed).map((item) => (
-          <article key={item.id} className="cf2-reveal__item">
-            {item.badge && <span className="cf2-reveal__badge">{item.badge}</span>}
-            <div className="cf2-reveal__body">
-              <h3 className="cf2-reveal__title">{item.title}</h3>
+          <article key={item.id} className="corso-reveal__item">
+            {item.badge && <span className="corso-reveal__badge">{item.badge}</span>}
+            <div className="corso-reveal__body">
+              <h3 className="corso-reveal__title">{item.title}</h3>
               <div
-                className="cf2-reveal__content"
+                className="corso-reveal__content"
                 dangerouslySetInnerHTML={{ __html: item.bodyHtml }}
               />
             </div>
@@ -35,21 +35,21 @@ export default function ProgressiveReveal({ config }: Props) {
       </div>
 
       {!allRevealed ? (
-        <div className="cf2-reveal__controls">
+        <div className="corso-reveal__controls">
           <button
             type="button"
-            className="cf2-reveal__btn"
+            className="corso-reveal__btn"
             onClick={() => setRevealed((r) => Math.min(r + 1, total))}
           >
-            {ctaShow} <span className="cf2-reveal__counter">{revealed} / {total}</span>
+            {ctaShow} <span className="corso-reveal__counter">{revealed} / {total}</span>
           </button>
         </div>
       ) : (
         conclusionHtml && (
           <>
-            <hr className="cf2-divider" />
+            <hr className="corso-divider" />
             <div
-              className="cf2-reveal__conclusion"
+              className="corso-reveal__conclusion"
               dangerouslySetInnerHTML={{ __html: conclusionHtml }}
             />
           </>

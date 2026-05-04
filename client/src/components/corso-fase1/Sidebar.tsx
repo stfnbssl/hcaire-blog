@@ -1,4 +1,4 @@
-import { Module } from '../../data/corso-fase2/types';
+import type { Module } from '../../data/corso-fase1/types';
 
 interface Props {
   modules: Module[];
@@ -10,8 +10,8 @@ export default function Sidebar({ modules, currentModuleId, onSelect }: Props) {
   return (
     <aside className="corso-sidebar" aria-label="Moduli del corso">
       <div className="corso-sidebar__head">
-        <div className="corso-sidebar__eyebrow">Fase 2</div>
-        <div className="corso-sidebar__title">Traduzione interdisciplinare</div>
+        <div className="corso-sidebar__eyebrow">Fase 1</div>
+        <div className="corso-sidebar__title">Fondazione ontologica</div>
       </div>
       <ul className="corso-sidebar__list">
         {modules.map((m) => {

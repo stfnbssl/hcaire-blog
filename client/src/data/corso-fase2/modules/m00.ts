@@ -14,21 +14,21 @@ export const Module00: Module = {
       type: 'narrative',
       title: 'Il problema di partenza',
       content: `
-        <div class="cf2-narrative cf2-narrative--centered">
-          <blockquote class="cf2-quote">
+        <div class="corso-narrative corso-narrative--centered">
+          <blockquote class="corso-quote">
             <p>Un bambino di 20 mesi guarda un libro illustrato insieme alla madre.</p>
             <p>Indica una figura, vocalizza, poi guarda la madre.</p>
             <p>Lei nomina la figura e sorride.</p>
-            <p class="cf2-quote__cta"><strong>Come leggiamo questa scena?</strong></p>
+            <p class="corso-quote__cta"><strong>Come leggiamo questa scena?</strong></p>
           </blockquote>
 
-          <div class="cf2-chips">
-            <div class="cf2-chip"><span class="cf2-chip__icon">🩺</span><span class="cf2-chip__label">Il pediatra</span><span class="cf2-chip__sub">«Competenza linguistica nella norma?»</span></div>
-            <div class="cf2-chip"><span class="cf2-chip__icon">📚</span><span class="cf2-chip__label">L'educatore</span><span class="cf2-chip__sub">«Attenzione sostenuta?»</span></div>
-            <div class="cf2-chip"><span class="cf2-chip__icon">👨‍👩‍👧</span><span class="cf2-chip__label">Il genitore</span><span class="cf2-chip__sub">«Capisce già le immagini?»</span></div>
+          <div class="corso-chips">
+            <div class="corso-chip"><span class="corso-chip__icon">🩺</span><span class="corso-chip__label">Il pediatra</span><span class="corso-chip__sub">«Competenza linguistica nella norma?»</span></div>
+            <div class="corso-chip"><span class="corso-chip__icon">📚</span><span class="corso-chip__label">L'educatore</span><span class="corso-chip__sub">«Attenzione sostenuta?»</span></div>
+            <div class="corso-chip"><span class="corso-chip__icon">👨‍👩‍👧</span><span class="corso-chip__label">Il genitore</span><span class="corso-chip__sub">«Capisce già le immagini?»</span></div>
           </div>
 
-          <p class="cf2-narrative__caption">
+          <p class="corso-narrative__caption">
             Tre osservatori, tre linguaggi, tre domande diverse — sulla stessa scena.
           </p>
         </div>
@@ -58,7 +58,7 @@ export const Module00: Module = {
             detail: `
               <p><strong>Funzione</strong> · Stabilisce <em>che tipo di realtà</em> è lo sviluppo infantile e <em>che tipo di soggetto</em> è il bambino.</p>
               <p><strong>Output verso F2</strong> · I sei assi strutturali come condizioni di possibilità.</p>
-              <p class="cf2-card__hint">Non produce strumenti. Fonda i vincoli.</p>
+              <p class="corso-card__hint">Non produce strumenti. Fonda i vincoli.</p>
             `,
           },
           {
@@ -71,7 +71,7 @@ export const Module00: Module = {
               <p><strong>Funzione</strong> · Rende lo sviluppo <strong>leggibile</strong> nei contesti professionali senza perderne la complessità.</p>
               <p><strong>Input</strong> · gli assi strutturali della F1.</p>
               <p><strong>Output</strong> · condizioni di traducibilità (Nodi, Matrice, Grammatica).</p>
-              <p class="cf2-card__hint cf2-card__hint--accent">Regola fondamentale: <strong>F2 produce leggibilità, non azione.</strong></p>
+              <p class="corso-card__hint corso-card__hint--accent">Regola fondamentale: <strong>F2 produce leggibilità, non azione.</strong></p>
             `,
           },
           {
@@ -88,11 +88,11 @@ export const Module00: Module = {
         ],
       },
       content: `
-        <div class="cf2-fase-keywords">
+        <div class="corso-fase-keywords">
           <span><strong>DEFINISCE</strong></span>
-          <span class="cf2-fase-keywords__sep">→</span>
+          <span class="corso-fase-keywords__sep">→</span>
           <span><strong>RENDE LEGGIBILE</strong></span>
-          <span class="cf2-fase-keywords__sep">→</span>
+          <span class="corso-fase-keywords__sep">→</span>
           <span><strong>RENDE POSSIBILE L'AZIONE</strong></span>
         </div>
       `,
@@ -105,19 +105,19 @@ export const Module00: Module = {
       title: 'Da dove veniamo: la Fase 1',
       subtitle: 'Gli assi strutturali di sviluppo',
       content: `
-        <div class="cf2-two-col cf2-two-col--40-60">
-          <div class="cf2-col">
+        <div class="corso-two-col corso-two-col--40-60">
+          <div class="corso-col">
             <p>Il metodo assume un'ontologia specifica: il bambino non è un organismo che accumula competenze, né un insieme di funzioni che maturano in sequenza.</p>
             <p>È un <strong>soggetto incarnato, temporale e relazionale</strong>.</p>
             <p>Gli assi strutturali non sono fasi da attraversare né competenze da misurare. Sono le <strong>dimensioni sempre attive</strong> dell'esperienza in sviluppo.</p>
           </div>
-          <div class="cf2-col">
-            <table class="cf2-table cf2-table--axes">
+          <div class="corso-col">
+            <table class="corso-table corso-table--axes">
               <thead>
                 <tr><th>#</th><th>Asse</th><th>Domanda guida</th></tr>
               </thead>
               <tbody>
-                <tr class="cf2-table__row--highlight">
+                <tr class="corso-table__row--highlight">
                   <td>1</td>
                   <td>Ontologico-fenomenologico</td>
                   <td>Come abita il bambino l'esperienza?</td>
@@ -143,18 +143,18 @@ export const Module00: Module = {
       title: 'Cosa fa la Fase 2',
       subtitle: 'Il cuore metodologico',
       content: `
-        <div class="cf2-section">
-          <blockquote class="cf2-blockquote cf2-blockquote--accent-f2">
+        <div class="corso-section">
+          <blockquote class="corso-blockquote corso-blockquote--accent-f2">
             «Costruire condizioni di traducibilità tra livelli disciplinari differenti senza perdita dello statuto teorico originario.»
           </blockquote>
           <p>La F2 occupa il <strong>cuore metodologico</strong> dell'intero progetto. Non produce ancora strumenti operativi. Il suo scopo è uno solo: rendere lo sviluppo <strong>leggibile</strong> ai professionisti di discipline diverse.</p>
         </div>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <div class="cf2-two-col">
-          <div class="cf2-box cf2-box--valid">
-            <div class="cf2-box__title">✓ F2 produce</div>
+        <div class="corso-two-col">
+          <div class="corso-box corso-box--valid">
+            <div class="corso-box__title">✓ F2 produce</div>
             <ul>
               <li>Leggibilità strutturale</li>
               <li>Domande professionali condivisibili</li>
@@ -162,8 +162,8 @@ export const Module00: Module = {
               <li>Condizioni per costruire strumenti</li>
             </ul>
           </div>
-          <div class="cf2-box cf2-box--invalid">
-            <div class="cf2-box__title">✗ F2 non produce</div>
+          <div class="corso-box corso-box--invalid">
+            <div class="corso-box__title">✗ F2 non produce</div>
             <ul>
               <li>Strumenti operativi</li>
               <li>Protocolli d'intervento</li>
@@ -173,7 +173,7 @@ export const Module00: Module = {
           </div>
         </div>
 
-        <p class="cf2-emph cf2-emph--center">La F2 separa esplicitamente osservazione e decisione operativa.</p>
+        <p class="corso-emph corso-emph--center">La F2 separa esplicitamente osservazione e decisione operativa.</p>
       `,
     },
 
@@ -184,28 +184,29 @@ export const Module00: Module = {
       title: 'Il nostro caso-guida',
       subtitle: 'Una lettura condivisa in ambulatorio',
       content: `
-        <div class="cf2-narrative">
-          <div class="cf2-scena">
+        <div class="corso-narrative">
+          <div class="corso-scena">
             ${CASO_GUIDA.scena
               .split('\n\n')
               .map((p) => `<p><em>${p.trim()}</em></p>`)
               .join('')}
           </div>
 
-          <h3 class="cf2-narrative__h3">Come la leggono le discipline</h3>
-          <table class="cf2-table cf2-table--readings">
+          <h3 class="corso-narrative__h3">Come la leggono le discipline</h3>
+          <table class="corso-table corso-table--readings">
             <thead>
-              <tr><th>Disciplina</th><th>Lettura comune</th><th>Problema</th></tr>
+              <tr><th>Disciplina</th><th>Lettura comune</th><th>Cosa resta in ombra</th></tr>
             </thead>
             <tbody>
-              <tr><td>🩺 Pediatria</td><td>«Competenza linguistica nella norma»</td><td>Riduce a prestazione</td></tr>
-              <tr><td>📚 Pedagogia</td><td>«Buona attenzione sostenuta»</td><td>Riduce a funzione cognitiva</td></tr>
-              <tr><td>🧠 NPI</td><td>«Assenza di segnali di allerta»</td><td>Riduce a esclusione del deficit</td></tr>
+              <tr><td>🩺 Pediatria</td><td>«Competenza linguistica nella norma»</td><td>Il piano della prestazione è in primo piano; il campo relazionale che la sostiene resta sullo sfondo</td></tr>
+              <tr><td>📚 Pedagogia</td><td>«Buona attenzione sostenuta»</td><td>La funzione cognitiva è ben colta; la dimensione di scambio fra bambino e adulto non viene tematizzata</td></tr>
+              <tr><td>🧠 NPI</td><td>«Assenza di segnali di allerta»</td><td>Lo sguardo clinico esclude il rischio; non è il suo compito descrivere la configurazione evolutiva positiva</td></tr>
             </tbody>
           </table>
+          <p class="corso-narrative__caption">Ogni disciplina opera legittimamente una propria focalizzazione. Il problema non è la focalizzazione in sé, ma la difficoltà di mettere in relazione gli sguardi quando ognuno parla solo il proprio linguaggio.</p>
 
-          <p class="cf2-question">Come leggiamo questa scena senza ridurla?</p>
-          <p class="cf2-narrative__caption">Questo è il problema che la Fase 2 risolve. Torneremo su questa scena in ogni modulo.</p>
+          <p class="corso-question">Come integriamo questi sguardi senza perdere ampiezza?</p>
+          <p class="corso-narrative__caption">Questo è il problema che la Fase 2 affronta — non sostituendo le letture disciplinari, ma offrendo una cornice che permetta di metterle in relazione. Torneremo su questa scena in ogni modulo.</p>
         </div>
       `,
     },

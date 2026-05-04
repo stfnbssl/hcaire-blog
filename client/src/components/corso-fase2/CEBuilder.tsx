@@ -128,14 +128,14 @@ export default function CEBuilder({ config }: Props) {
   const reset = () => setCe(DEFAULT_CE);
 
   return (
-    <div className="cf2-ceb">
-      <div className="cf2-ceb__panes">
-        <div className="cf2-ceb__selectors">
-          <div className="cf2-ceb__actions">
+    <div className="corso-ceb">
+      <div className="corso-ceb__panes">
+        <div className="corso-ceb__selectors">
+          <div className="corso-ceb__actions">
             {config.preset && (
               <button
                 type="button"
-                className="cf2-ceb__action cf2-ceb__action--ghost"
+                className="corso-ceb__action corso-ceb__action--ghost"
                 onClick={loadPreset}
               >
                 {config.presetLabel ?? 'Carica preset'}
@@ -143,30 +143,30 @@ export default function CEBuilder({ config }: Props) {
             )}
             <button
               type="button"
-              className="cf2-ceb__action cf2-ceb__action--ghost"
+              className="corso-ceb__action corso-ceb__action--ghost"
               onClick={reset}
             >
               Reset
             </button>
           </div>
 
-          <div className="cf2-ceb__group">
-            <div className="cf2-ceb__group-head">
-              <span className="cf2-ceb__group-code">S</span>
-              <span className="cf2-ceb__group-name">Stato dei nodi</span>
+          <div className="corso-ceb__group">
+            <div className="corso-ceb__group-head">
+              <span className="corso-ceb__group-code">S</span>
+              <span className="corso-ceb__group-name">Stato dei nodi</span>
             </div>
-            <div className="cf2-ceb__nodes">
+            <div className="corso-ceb__nodes">
               {NODES.map((n) => (
-                <div key={n} className="cf2-ceb__node-row">
-                  <span className="cf2-ceb__node-label">{n}</span>
-                  <div className="cf2-ceb__radio-group">
+                <div key={n} className="corso-ceb__node-row">
+                  <span className="corso-ceb__node-label">{n}</span>
+                  <div className="corso-ceb__radio-group">
                     {STATES.map((s) => {
                       const active = ce.S[n] === s.code;
                       return (
                         <button
                           key={s.code}
                           type="button"
-                          className={`cf2-ceb__radio ${active ? 'cf2-ceb__radio--active' : ''}`}
+                          className={`corso-ceb__radio ${active ? 'corso-ceb__radio--active' : ''}`}
                           style={
                             active
                               ? ({
@@ -189,15 +189,15 @@ export default function CEBuilder({ config }: Props) {
             </div>
           </div>
 
-          <div className="cf2-ceb__group">
-            <div className="cf2-ceb__group-head">
-              <span className="cf2-ceb__group-code">R</span>
-              <span className="cf2-ceb__group-name">Relazione dominante</span>
+          <div className="corso-ceb__group">
+            <div className="corso-ceb__group-head">
+              <span className="corso-ceb__group-code">R</span>
+              <span className="corso-ceb__group-name">Relazione dominante</span>
             </div>
-            <div className="cf2-ceb__radio-group">
+            <div className="corso-ceb__radio-group">
               <button
                 type="button"
-                className={`cf2-ceb__radio cf2-ceb__radio--wide ${ce.R === null ? 'cf2-ceb__radio--active' : ''}`}
+                className={`corso-ceb__radio corso-ceb__radio--wide ${ce.R === null ? 'corso-ceb__radio--active' : ''}`}
                 onClick={() => setCe((p) => ({ ...p, R: null }))}
                 aria-pressed={ce.R === null}
               >
@@ -209,7 +209,7 @@ export default function CEBuilder({ config }: Props) {
                   <button
                     key={r.code}
                     type="button"
-                    className={`cf2-ceb__radio cf2-ceb__radio--wide ${active ? 'cf2-ceb__radio--active' : ''}`}
+                    className={`corso-ceb__radio corso-ceb__radio--wide ${active ? 'corso-ceb__radio--active' : ''}`}
                     style={
                       active
                         ? ({ background: r.color, borderColor: r.color } as React.CSSProperties)
@@ -226,20 +226,20 @@ export default function CEBuilder({ config }: Props) {
             </div>
           </div>
 
-          <div className="cf2-ceb__row-group">
-            <div className="cf2-ceb__group cf2-ceb__group--inline">
-              <div className="cf2-ceb__group-head">
-                <span className="cf2-ceb__group-code">D</span>
-                <span className="cf2-ceb__group-name">Direzione</span>
+          <div className="corso-ceb__row-group">
+            <div className="corso-ceb__group corso-ceb__group--inline">
+              <div className="corso-ceb__group-head">
+                <span className="corso-ceb__group-code">D</span>
+                <span className="corso-ceb__group-name">Direzione</span>
               </div>
-              <div className="cf2-ceb__radio-group">
+              <div className="corso-ceb__radio-group">
                 {DIRECTIONS.map((d) => {
                   const active = ce.D === d.code;
                   return (
                     <button
                       key={d.code}
                       type="button"
-                      className={`cf2-ceb__radio ${active ? 'cf2-ceb__radio--active' : ''}`}
+                      className={`corso-ceb__radio ${active ? 'corso-ceb__radio--active' : ''}`}
                       style={
                         active
                           ? ({ background: d.color, borderColor: d.color } as React.CSSProperties)
@@ -256,19 +256,19 @@ export default function CEBuilder({ config }: Props) {
               </div>
             </div>
 
-            <div className="cf2-ceb__group cf2-ceb__group--inline">
-              <div className="cf2-ceb__group-head">
-                <span className="cf2-ceb__group-code">T</span>
-                <span className="cf2-ceb__group-name">Stabilità</span>
+            <div className="corso-ceb__group corso-ceb__group--inline">
+              <div className="corso-ceb__group-head">
+                <span className="corso-ceb__group-code">T</span>
+                <span className="corso-ceb__group-name">Stabilità</span>
               </div>
-              <div className="cf2-ceb__radio-group">
+              <div className="corso-ceb__radio-group">
                 {STABILITY.map((t) => {
                   const active = ce.T === t.code;
                   return (
                     <button
                       key={t.code}
                       type="button"
-                      className={`cf2-ceb__radio ${active ? 'cf2-ceb__radio--active' : ''}`}
+                      className={`corso-ceb__radio ${active ? 'corso-ceb__radio--active' : ''}`}
                       style={
                         active
                           ? ({ background: t.color, borderColor: t.color } as React.CSSProperties)
@@ -285,19 +285,19 @@ export default function CEBuilder({ config }: Props) {
               </div>
             </div>
 
-            <div className="cf2-ceb__group cf2-ceb__group--inline">
-              <div className="cf2-ceb__group-head">
-                <span className="cf2-ceb__group-code">A</span>
-                <span className="cf2-ceb__group-name">Abitabilità</span>
+            <div className="corso-ceb__group corso-ceb__group--inline">
+              <div className="corso-ceb__group-head">
+                <span className="corso-ceb__group-code">A</span>
+                <span className="corso-ceb__group-name">Abitabilità</span>
               </div>
-              <div className="cf2-ceb__radio-group">
+              <div className="corso-ceb__radio-group">
                 {HABITABILITY.map((a) => {
                   const active = ce.A === a.code;
                   return (
                     <button
                       key={a.code}
                       type="button"
-                      className={`cf2-ceb__radio ${active ? 'cf2-ceb__radio--active' : ''}`}
+                      className={`corso-ceb__radio ${active ? 'corso-ceb__radio--active' : ''}`}
                       style={
                         active
                           ? ({ background: a.color, borderColor: a.color } as React.CSSProperties)
@@ -316,22 +316,22 @@ export default function CEBuilder({ config }: Props) {
           </div>
         </div>
 
-        <div className="cf2-ceb__output">
-          <div className="cf2-ceb__output-head">
+        <div className="corso-ceb__output">
+          <div className="corso-ceb__output-head">
             <span>CE risultante</span>
             <button
               type="button"
-              className="cf2-ceb__action"
+              className="corso-ceb__action"
               onClick={handleCopy}
               disabled={copied}
             >
               {copied ? '✓ Copiato' : 'Copia CE'}
             </button>
           </div>
-          <pre className="cf2-ceb__block">{block}</pre>
+          <pre className="corso-ceb__block">{block}</pre>
 
-          <div className="cf2-ceb__natural">
-            <span className="cf2-ceb__natural-label">Testo naturale</span>
+          <div className="corso-ceb__natural">
+            <span className="corso-ceb__natural-label">Testo naturale</span>
             <p>
               <em>{naturalText}</em>
             </p>

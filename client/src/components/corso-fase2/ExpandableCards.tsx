@@ -24,28 +24,28 @@ export default function ExpandableCards({ config }: { config: ExpandableCardsCon
   };
 
   return (
-    <div className={`cf2-cards cf2-cards--${layout}`}>
+    <div className={`corso-cards corso-cards--${layout}`}>
       {cards.map((card) => {
         const isOpen = open.has(card.id);
         return (
           <article
             key={card.id}
-            className={`cf2-card ${isOpen ? 'cf2-card--open' : ''}`}
-            style={card.color ? ({ ['--cf2-card-accent' as never]: card.color } as React.CSSProperties) : undefined}
+            className={`corso-card ${isOpen ? 'corso-card--open' : ''}`}
+            style={card.color ? ({ ['--corso-card-accent' as never]: card.color } as React.CSSProperties) : undefined}
           >
             <button
               type="button"
-              className="cf2-card__head"
+              className="corso-card__head"
               onClick={() => toggle(card.id)}
               aria-expanded={isOpen}
             >
-              {card.badge && <span className="cf2-card__badge">{card.badge}</span>}
-              <span className="cf2-card__title">{card.title}</span>
-              {card.summary && <span className="cf2-card__summary">{card.summary}</span>}
-              <span className="cf2-card__chevron" aria-hidden>{isOpen ? '–' : '+'}</span>
+              {card.badge && <span className="corso-card__badge">{card.badge}</span>}
+              <span className="corso-card__title">{card.title}</span>
+              {card.summary && <span className="corso-card__summary">{card.summary}</span>}
+              <span className="corso-card__chevron" aria-hidden>{isOpen ? '–' : '+'}</span>
             </button>
             {isOpen && (
-              <div className="cf2-card__body" dangerouslySetInnerHTML={{ __html: card.detail }} />
+              <div className="corso-card__body" dangerouslySetInnerHTML={{ __html: card.detail }} />
             )}
           </article>
         );

@@ -1,18 +1,18 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import SviluppoBambinoNav from '../../../components/SviluppoBambinoNav';
-import Sidebar from '../../../components/corso-fase2/Sidebar';
-import SlideRenderer from '../../../components/corso-fase2/SlideRenderer';
-import { MODULES, MODULES_BY_ID } from '../../../data/corso-fase2/modules';
+import Sidebar from '../../../components/corso-fase3/Sidebar';
+import SlideRenderer from '../../../components/corso-fase3/SlideRenderer';
+import { MODULES, MODULES_BY_ID } from '../../../data/corso-fase3/modules';
 import '../../../styles/corso.css';
 
-const BASE_PATH = '/sviluppo-bambino/traduzione-interdisciplinare';
+const BASE_PATH = '/sviluppo-bambino/strumenti-operativi-contestualizzati';
 
 function buildPath(moduleId: string, slideIndex: number): string {
   return `${BASE_PATH}/${moduleId}/${slideIndex + 1}`;
 }
 
-export default function CorsoFase2Page() {
+export default function CorsoFase3Page() {
   const navigate = useNavigate();
   const params = useParams<{ moduleId?: string; slideId?: string }>();
   const rootRef = useRef<HTMLDivElement>(null);
@@ -24,7 +24,6 @@ export default function CorsoFase2Page() {
 
   const currentModule = MODULES_BY_ID[currentModuleId];
 
-  // 1-based slide index nelle URL, 0-based internamente.
   const requestedIndex = params.slideId ? parseInt(params.slideId, 10) - 1 : 0;
   const currentSlideIndex = Number.isFinite(requestedIndex)
     && requestedIndex >= 0
@@ -97,7 +96,6 @@ export default function CorsoFase2Page() {
     return () => document.removeEventListener('fullscreenchange', onFsChange);
   }, []);
 
-  // Keybindings: ← → per navigare, 0–9 per saltare ai moduli.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.target instanceof HTMLElement) {
@@ -125,7 +123,6 @@ export default function CorsoFase2Page() {
     return () => window.removeEventListener('keydown', onKey);
   }, [goNext, goPrev, goToSlide, toggleFullscreen]);
 
-  // Imposta il colore accent dinamico del modulo come variabile CSS.
   const rootStyle = { ['--corso-module-accent' as never]: currentModule.accent } as React.CSSProperties;
 
   return (

@@ -37,54 +37,54 @@ export default function TemplateTable({ config }: Props) {
   };
 
   return (
-    <div className="cf2-tpl">
-      <div className="cf2-tpl__header">
-        <div className="cf2-tpl__chip">
-          <span className="cf2-tpl__chip-label">Template</span>
+    <div className="corso-tpl">
+      <div className="corso-tpl__header">
+        <div className="corso-tpl__chip">
+          <span className="corso-tpl__chip-label">Template</span>
           <span>{header.titolo}</span>
         </div>
         {header.nodo && (
-          <div className="cf2-tpl__chip">
-            <span className="cf2-tpl__chip-label">Nodo</span>
+          <div className="corso-tpl__chip">
+            <span className="corso-tpl__chip-label">Nodo</span>
             <span>{header.nodo}</span>
           </div>
         )}
         {header.concettoPonte && (
-          <div className="cf2-tpl__chip">
-            <span className="cf2-tpl__chip-label">Concetto-ponte</span>
+          <div className="corso-tpl__chip">
+            <span className="corso-tpl__chip-label">Concetto-ponte</span>
             <span>{header.concettoPonte}</span>
           </div>
         )}
       </div>
 
-      <div className="cf2-tpl__controls">
-        <button type="button" className="cf2-tpl__action" onClick={toggleAll}>
+      <div className="corso-tpl__controls">
+        <button type="button" className="corso-tpl__action" onClick={toggleAll}>
           {allFilled ? 'Nascondi compilazione' : 'Mostra compilazione caso-guida'}
         </button>
-        <span className="cf2-tpl__hint">Oppure clicca su una riga per compilarla singolarmente.</span>
+        <span className="corso-tpl__hint">Oppure clicca su una riga per compilarla singolarmente.</span>
       </div>
 
-      <div className="cf2-tpl__rows">
+      <div className="corso-tpl__rows">
         {sezioni.map((s) => {
           const isFilled = filled.has(s.numero);
           return (
             <button
               key={s.numero}
               type="button"
-              className={`cf2-tpl__row ${isFilled ? 'cf2-tpl__row--filled' : ''}`}
+              className={`corso-tpl__row ${isFilled ? 'corso-tpl__row--filled' : ''}`}
               onClick={() => toggleRow(s.numero)}
               aria-pressed={isFilled}
             >
-              <span className="cf2-tpl__num">{s.numero}</span>
-              <div className="cf2-tpl__meta">
-                <span className="cf2-tpl__sezione">{s.sezione}</span>
-                <em className="cf2-tpl__domanda">{s.domanda}</em>
+              <span className="corso-tpl__num">{s.numero}</span>
+              <div className="corso-tpl__meta">
+                <span className="corso-tpl__sezione">{s.sezione}</span>
+                <em className="corso-tpl__domanda">{s.domanda}</em>
               </div>
-              <div className="cf2-tpl__campo">
+              <div className="corso-tpl__campo">
                 {isFilled ? (
-                  <span className="cf2-tpl__campo-filled">{s.compilazione}</span>
+                  <span className="corso-tpl__campo-filled">{s.compilazione}</span>
                 ) : (
-                  <span className="cf2-tpl__campo-empty">{s.campoVuoto}</span>
+                  <span className="corso-tpl__campo-empty">{s.campoVuoto}</span>
                 )}
               </div>
             </button>
@@ -92,18 +92,18 @@ export default function TemplateTable({ config }: Props) {
         })}
       </div>
 
-      <div className="cf2-tpl__formula">
-        <div className="cf2-tpl__formula-head">
+      <div className="corso-tpl__formula">
+        <div className="corso-tpl__formula-head">
           <span>Formula di sintesi</span>
           <button
             type="button"
-            className="cf2-tpl__action cf2-tpl__action--ghost"
+            className="corso-tpl__action corso-tpl__action--ghost"
             onClick={() => setFormulaFilled((v) => !v)}
           >
             {formulaFilled ? 'Mostra modello vuoto' : 'Mostra formula compilata'}
           </button>
         </div>
-        <p className={`cf2-tpl__formula-body ${formulaFilled ? 'cf2-tpl__formula-body--filled' : ''}`}>
+        <p className={`corso-tpl__formula-body ${formulaFilled ? 'corso-tpl__formula-body--filled' : ''}`}>
           <em>{formulaFilled ? formulaCompilata : formulaSintesi}</em>
         </p>
       </div>

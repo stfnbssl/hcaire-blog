@@ -50,7 +50,11 @@
       "Bash(grep -v \"^$\")",
       "Bash(echo \"EXIT=$?\")",
       "Bash(npx -p typescript@5 tsc --noEmit -p client/tsconfig.json)",
-      "Bash(echo \"EXIT_CODE=$?\")"
+      "Bash(echo \"EXIT_CODE=$?\")",
+      "PowerShell(Rename-Item *)",
+      "Bash(xxd)",
+      "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\(\"C:\\\\my\\\\projects\\\\hcaire-blog\\\\client\\\\src\\\\styles\\\\corso.css\"\\); $bomIndices = @\\(\\); for \\($i = 0; $i -lt $bytes.Length - 2; $i++\\) { if \\($bytes[$i] -eq 0xEF -and $bytes[$i+1] -eq 0xBB -and $bytes[$i+2] -eq 0xBF\\) { $bomIndices += $i } }; \"BOM occurrences: $\\($bomIndices.Count\\) at: $\\($bomIndices -join ', '\\); Total bytes: $\\($bytes.Length\\)\")",
+      "Bash(npx vite *)"
     ]
   }
 }

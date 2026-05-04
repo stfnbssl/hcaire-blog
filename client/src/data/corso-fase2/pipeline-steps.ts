@@ -44,7 +44,7 @@ export const PIPELINE_STEPS: PipelineStep[] = [
         'Mantiene la funzione strutturale? È osservabile senza ridursi a variabile?',
     },
     glossario:
-      'Rende compatibili linguaggi disciplinari senza appiattire il concetto originario. Non è una semplificazione: è una traduzione che conserva la struttura.',
+      "Rende compatibili linguaggi disciplinari mantenendo l'ampiezza del concetto originario. Non è una semplificazione: è una traduzione che conserva la struttura. Il termine «non-riduzionismo» è qui un tecnicismo metodologico — riguarda la condizione del concetto-ponte (non deve coincidere con una singola variabile disciplinare) e non costituisce un giudizio sulle discipline, ognuna delle quali opera legittimamente la propria focalizzazione.",
     casoGuida:
       'Concetto-ponte: "Accesso al mondo condiviso". Non "attenzione condivisa" (troppo specifico) né "sviluppo simbolico" (troppo astratto). Mantiene insieme corpo, gesto, relazione e significato.',
   },

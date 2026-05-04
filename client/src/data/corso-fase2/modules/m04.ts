@@ -237,9 +237,9 @@ const ESERCIZIO_N5G: ProgressiveRevealItem[] = [
     badge: '1',
     title: 'Domanda professionale valida',
     bodyHtml: `
-      <div class="cf2-box cf2-box--valid">
+      <div class="corso-box corso-box--valid">
         <p style="margin: 0 0 8px;"><strong>«Posso dire no a mio figlio senza che il rapporto si rompa?»</strong></p>
-        <p style="margin: 0; font-size: 0.9rem; color: var(--cf2-text-2);"><em>Perché è valida</em>: è osservabile, è nel linguaggio del genitore, non implica un giudizio («sono un buon/cattivo genitore»), e apre una riflessione sulla configurazione relazionale — non dà una risposta.</p>
+        <p style="margin: 0; font-size: 0.9rem; color: var(--corso-text-2);"><em>Perché è valida</em>: è osservabile, è nel linguaggio del genitore, non implica un giudizio («sono un buon/cattivo genitore»), e apre una riflessione sulla configurazione relazionale — non dà una risposta.</p>
       </div>
     `,
   },
@@ -248,18 +248,18 @@ const ESERCIZIO_N5G: ProgressiveRevealItem[] = [
     badge: '2',
     title: 'Lettura metodologicamente valida',
     bodyHtml: `
-      <div class="cf2-scena">
+      <div class="corso-scena">
         <p><em>Il «no» non riguarda l'obbedienza: riguarda se il campo relazionale può reggere la resistenza del reale e riorganizzarsi. La protesta breve che si risolve non è un problema — è il segno che il limite è abitabile.</em></p>
       </div>
-      <div class="cf2-box cf2-box--invalid" style="margin-top: 12px;">
-        <div class="cf2-box__title">⚠ Errori da evitare</div>
+      <div class="corso-box corso-box--invalid" style="margin-top: 12px;">
+        <div class="corso-box__title">⚠ Errori da evitare</div>
         <ul>
           <li>«Devo essere più duro» — moralizza sul genitore</li>
           <li>«Devo cedere di più» — moralizza in senso opposto</li>
         </ul>
         <p style="margin: 8px 0 0; font-size: 0.88rem;">Entrambi spostano l'attenzione dal campo al giudizio.</p>
       </div>
-      <p class="cf2-narrative__caption" style="margin-top: 12px;"><strong>Output possibile</strong>: linguaggio restitutivo sul limite; domande-guida per il colloquio con genitori.</p>
+      <p class="corso-narrative__caption" style="margin-top: 12px;"><strong>Output possibile</strong>: linguaggio restitutivo sul limite; domande-guida per il colloquio con genitori.</p>
     `,
   },
 ];
@@ -278,9 +278,9 @@ export const Module04: Module = {
       title: 'La stessa struttura, quattro sguardi',
       subtitle: 'Nodo invariante · Contesto come prospettiva',
       content: `
-        <blockquote class="cf2-blockquote">«I Nodi Trasversali sono invarianti strutturali: non cambiano passando tra contesti professionali. Cambia solo il tipo di domanda, il livello di osservazione, il tipo di output.»</blockquote>
+        <blockquote class="corso-blockquote">«I Nodi Trasversali sono invarianti strutturali: non cambiano passando tra contesti professionali. Cambia solo il tipo di domanda, il livello di osservazione, il tipo di output.»</blockquote>
 
-        <div class="cf2-section">
+        <div class="corso-section">
           <p>La Matrice Nodo × Contesto formalizza questa relazione. Si legge così:</p>
           <ul>
             <li><strong>Riga</strong> · un Nodo (invariante: sempre lo stesso, in qualsiasi contesto)</li>
@@ -289,30 +289,30 @@ export const Module04: Module = {
           </ul>
         </div>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <h3 class="cf2-narrative__h3" style="text-align: center;">Esempio: N3 nei quattro contesti</h3>
-        <div class="cf2-cards cf2-cards--grid">
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #2980b9;">
-            <div class="cf2-card__head"><span class="cf2-card__badge">🩺 C</span><span class="cf2-card__title">Clinico</span></div>
-            <div class="cf2-card__body"><p><em>Il gesto apre condivisione?</em></p></div>
+        <h3 class="corso-narrative__h3" style="text-align: center;">Esempio: N3 nei quattro contesti</h3>
+        <div class="corso-cards corso-cards--grid">
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #2980b9;">
+            <div class="corso-card__head"><span class="corso-card__badge">🩺 C</span><span class="corso-card__title">Clinico</span></div>
+            <div class="corso-card__body"><p><em>Il gesto apre condivisione?</em></p></div>
           </div>
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #27ae60;">
-            <div class="cf2-card__head"><span class="cf2-card__badge" style="background: #27ae60;">📚 P</span><span class="cf2-card__title">Pedagogico</span></div>
-            <div class="cf2-card__body"><p><em>L'attività genera partecipazione?</em></p></div>
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #27ae60;">
+            <div class="corso-card__head"><span class="corso-card__badge" style="background: #27ae60;">📚 P</span><span class="corso-card__title">Pedagogico</span></div>
+            <div class="corso-card__body"><p><em>L'attività genera partecipazione?</em></p></div>
           </div>
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #e67e22;">
-            <div class="cf2-card__head"><span class="cf2-card__badge" style="background: #e67e22;">👨‍👩‍👧 G</span><span class="cf2-card__title">Genitoriale</span></div>
-            <div class="cf2-card__body"><p><em>Mio figlio cerca di condividere qualcosa?</em></p></div>
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #e67e22;">
+            <div class="corso-card__head"><span class="corso-card__badge" style="background: #e67e22;">👨‍👩‍👧 G</span><span class="corso-card__title">Genitoriale</span></div>
+            <div class="corso-card__body"><p><em>Mio figlio cerca di condividere qualcosa?</em></p></div>
           </div>
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #8e44ad;">
-            <div class="cf2-card__head"><span class="cf2-card__badge" style="background: #8e44ad;">🏛 I</span><span class="cf2-card__title">Istituzionale</span></div>
-            <div class="cf2-card__body"><p><em>Il servizio crea partecipazione o prestazione?</em></p></div>
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #8e44ad;">
+            <div class="corso-card__head"><span class="corso-card__badge" style="background: #8e44ad;">🏛 I</span><span class="corso-card__title">Istituzionale</span></div>
+            <div class="corso-card__body"><p><em>Il servizio crea partecipazione o prestazione?</em></p></div>
           </div>
         </div>
 
-        <p class="cf2-emph cf2-emph--center">Il contesto cambia la domanda, non il Nodo.</p>
-        <p class="cf2-narrative__caption" style="text-align: center;">Clinico, pedagogico, genitoriale e istituzionale non vedono cose diverse: vedono lo stesso processo da responsabilità diverse.</p>
+        <p class="corso-emph corso-emph--center">Il contesto cambia la domanda, non il Nodo.</p>
+        <p class="corso-narrative__caption" style="text-align: center;">Clinico, pedagogico, genitoriale e istituzionale non vedono cose diverse: vedono lo stesso processo da responsabilità diverse.</p>
       `,
     },
 
@@ -323,63 +323,63 @@ export const Module04: Module = {
       title: 'I quattro contesti stabili',
       subtitle: 'Chi interroga · da dove · con quali responsabilità',
       content: `
-        <div class="cf2-cards cf2-cards--vertical">
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #2980b9;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge">🩺 C</span>
-              <span class="cf2-card__title">Clinico</span>
+        <div class="corso-cards corso-cards--vertical">
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #2980b9;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge">🩺 C</span>
+              <span class="corso-card__title">Clinico</span>
             </div>
-            <div class="cf2-card__body">
+            <div class="corso-card__body">
               <p><strong>Attori</strong> · Pediatra, NPI, psicologo, medico</p>
               <p><strong>Prospettiva</strong> · Osservazione clinica situata: come si presenta il bambino in questo setting? Quali configurazioni sono leggibili durante la visita o il colloquio?</p>
-              <div class="cf2-two-col">
-                <div class="cf2-box cf2-box--invalid"><div class="cf2-box__title">✗ Errore tipico</div><p>Trasformare ogni configurazione in sospetto diagnostico.</p></div>
-                <div class="cf2-box cf2-box--valid"><div class="cf2-box__title">✓ Correzione F2</div><p>Descrivere prima la forma della configurazione, poi distinguere se servono approfondimenti.</p></div>
+              <div class="corso-two-col">
+                <div class="corso-box corso-box--invalid"><div class="corso-box__title">✗ Errore tipico</div><p>Trasformare ogni configurazione in sospetto diagnostico.</p></div>
+                <div class="corso-box corso-box--valid"><div class="corso-box__title">✓ Correzione F2</div><p>Descrivere prima la forma della configurazione, poi distinguere se servono approfondimenti.</p></div>
               </div>
             </div>
           </div>
 
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #27ae60;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge" style="background: #27ae60;">📚 P</span>
-              <span class="cf2-card__title">Pedagogico-educativo</span>
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #27ae60;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge" style="background: #27ae60;">📚 P</span>
+              <span class="corso-card__title">Pedagogico-educativo</span>
             </div>
-            <div class="cf2-card__body">
+            <div class="corso-card__body">
               <p><strong>Attori</strong> · Educatore al nido, insegnante, pedagogista</p>
               <p><strong>Prospettiva</strong> · Il contesto di apprendimento e cura: come l'ambiente, le routine e la relazione educativa sostengono o ostacolano lo sviluppo?</p>
-              <div class="cf2-two-col">
-                <div class="cf2-box cf2-box--invalid"><div class="cf2-box__title">✗ Errore tipico</div><p>Trasformare ogni lettura in tecnica educativa.</p></div>
-                <div class="cf2-box cf2-box--valid"><div class="cf2-box__title">✓ Correzione F2</div><p>Mantenere uno spazio riflessivo tra osservazione, interpretazione e progettazione.</p></div>
+              <div class="corso-two-col">
+                <div class="corso-box corso-box--invalid"><div class="corso-box__title">✗ Errore tipico</div><p>Trasformare ogni lettura in tecnica educativa.</p></div>
+                <div class="corso-box corso-box--valid"><div class="corso-box__title">✓ Correzione F2</div><p>Mantenere uno spazio riflessivo tra osservazione, interpretazione e progettazione.</p></div>
               </div>
             </div>
           </div>
 
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #e67e22;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge" style="background: #e67e22;">👨‍👩‍👧 G</span>
-              <span class="cf2-card__title">Genitoriale</span>
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #e67e22;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge" style="background: #e67e22;">👨‍👩‍👧 G</span>
+              <span class="corso-card__title">Genitoriale</span>
             </div>
-            <div class="cf2-card__body">
+            <div class="corso-card__body">
               <p><strong>Attori</strong> · Genitori, famiglia, caregiver primari</p>
               <p><strong>Prospettiva</strong> · La relazione quotidiana: cosa vede il genitore? Come può riconoscere le configurazioni senza sentirsi valutato?</p>
-              <div class="cf2-two-col">
-                <div class="cf2-box cf2-box--invalid"><div class="cf2-box__title">✗ Errore tipico</div><p>Trasformare la lettura in colpa o prestazione genitoriale.</p></div>
-                <div class="cf2-box cf2-box--valid"><div class="cf2-box__title">✓ Correzione F2</div><p>Usare un linguaggio che aumenti la capacità di vedere, non il senso di inadeguatezza.</p></div>
+              <div class="corso-two-col">
+                <div class="corso-box corso-box--invalid"><div class="corso-box__title">✗ Errore tipico</div><p>Trasformare la lettura in colpa o prestazione genitoriale.</p></div>
+                <div class="corso-box corso-box--valid"><div class="corso-box__title">✓ Correzione F2</div><p>Usare un linguaggio che aumenti la capacità di vedere, non il senso di inadeguatezza.</p></div>
               </div>
             </div>
           </div>
 
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #8e44ad;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge" style="background: #8e44ad;">🏛 I</span>
-              <span class="cf2-card__title">Istituzionale / Servizi</span>
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #8e44ad;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge" style="background: #8e44ad;">🏛 I</span>
+              <span class="corso-card__title">Istituzionale / Servizi</span>
             </div>
-            <div class="cf2-card__body">
+            <div class="corso-card__body">
               <p><strong>Attori</strong> · Coordinatori, responsabili di servizio, équipe multiprofessionali, rete dei servizi</p>
               <p><strong>Prospettiva</strong> · L'organizzazione dei servizi: le strutture, le routine e le procedure facilitano o ostacolano le condizioni per lo sviluppo?</p>
-              <div class="cf2-two-col">
-                <div class="cf2-box cf2-box--invalid"><div class="cf2-box__title">✗ Errore tipico</div><p>Trasformare la metodologia in procedura standardizzata.</p></div>
-                <div class="cf2-box cf2-box--valid"><div class="cf2-box__title">✓ Correzione F2</div><p>Usare i Nodi come criteri di leggibilità, non come adempimenti.</p></div>
+              <div class="corso-two-col">
+                <div class="corso-box corso-box--invalid"><div class="corso-box__title">✗ Errore tipico</div><p>Trasformare la metodologia in procedura standardizzata.</p></div>
+                <div class="corso-box corso-box--valid"><div class="corso-box__title">✓ Correzione F2</div><p>Usare i Nodi come criteri di leggibilità, non come adempimenti.</p></div>
               </div>
             </div>
           </div>
@@ -413,53 +413,53 @@ export const Module04: Module = {
       title: 'Lo stesso Nodo, quattro sguardi',
       subtitle: 'N3 — Accesso al mondo condiviso · attraverso i quattro contesti',
       content: `
-        <div class="cf2-scena">
+        <div class="corso-scena">
           <p><em>Un bambino di circa 20 mesi guarda un libro illustrato con un adulto. Indica una figura, vocalizza, guarda l'adulto, attende una risposta. L'adulto nomina l'immagine e il bambino torna a indicarla.</em></p>
-          <p><strong>Nodo attivo</strong> · <span class="cf2-guardrail__code" style="background: #2980b9; color: white;">N3</span> Accesso al mondo condiviso simbolico</p>
+          <p><strong>Nodo attivo</strong> · <span class="corso-guardrail__code" style="background: #2980b9; color: white;">N3</span> Accesso al mondo condiviso simbolico</p>
         </div>
 
-        <div class="cf2-cards cf2-cards--grid">
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #2980b9;">
-            <div class="cf2-card__head"><span class="cf2-card__badge">🩺 C</span><span class="cf2-card__title">Clinico</span></div>
-            <div class="cf2-card__body">
+        <div class="corso-cards corso-cards--grid">
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #2980b9;">
+            <div class="corso-card__head"><span class="corso-card__badge">🩺 C</span><span class="corso-card__title">Clinico</span></div>
+            <div class="corso-card__body">
               <p><strong>Chi osserva</strong> · il pediatra durante il bilancio di salute</p>
               <p><strong>Domanda</strong> · <em>«Il gesto, lo sguardo o la vocalizzazione aprono condivisione con l'adulto?»</em></p>
               <p><strong>Lettura</strong> · Il bambino indica, cerca lo sguardo, attende risposta. Accesso al mondo condiviso presente, mediato da gesto e parola.</p>
-              <p style="font-size: 0.85rem; color: var(--cf2-invalid);"><strong>Errore</strong> · «Buona attenzione condivisa» (etichetta competenziale)</p>
-              <p style="font-size: 0.85rem; color: var(--cf2-text-muted);"><strong>Output</strong> · traccia osservativa per bilancio</p>
+              <p style="font-size: 0.85rem; color: var(--corso-invalid);"><strong>Errore</strong> · «Buona attenzione condivisa» (etichetta competenziale)</p>
+              <p style="font-size: 0.85rem; color: var(--corso-text-muted);"><strong>Output</strong> · traccia osservativa per bilancio</p>
             </div>
           </div>
 
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #27ae60;">
-            <div class="cf2-card__head"><span class="cf2-card__badge" style="background: #27ae60;">📚 P</span><span class="cf2-card__title">Pedagogico</span></div>
-            <div class="cf2-card__body">
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #27ae60;">
+            <div class="corso-card__head"><span class="corso-card__badge" style="background: #27ae60;">📚 P</span><span class="corso-card__title">Pedagogico</span></div>
+            <div class="corso-card__body">
               <p><strong>Chi osserva</strong> · l'educatrice durante la lettura al nido</p>
               <p><strong>Domanda</strong> · <em>«Il libro diventa occasione di partecipazione o resta esecuzione guidata dall'adulto?»</em></p>
               <p><strong>Lettura</strong> · Il bambino partecipa quando può scegliere, indicare, ricevere risposta. Costruzione di campo comune.</p>
-              <p style="font-size: 0.85rem; color: var(--cf2-invalid);"><strong>Errore</strong> · «Il bambino segue bene l'attività» (adesione, non partecipazione)</p>
-              <p style="font-size: 0.85rem; color: var(--cf2-text-muted);"><strong>Output</strong> · traccia per lettura in piccolo gruppo</p>
+              <p style="font-size: 0.85rem; color: var(--corso-invalid);"><strong>Errore</strong> · «Il bambino segue bene l'attività» (adesione, non partecipazione)</p>
+              <p style="font-size: 0.85rem; color: var(--corso-text-muted);"><strong>Output</strong> · traccia per lettura in piccolo gruppo</p>
             </div>
           </div>
 
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #e67e22;">
-            <div class="cf2-card__head"><span class="cf2-card__badge" style="background: #e67e22;">👨‍👩‍👧 G</span><span class="cf2-card__title">Genitoriale</span></div>
-            <div class="cf2-card__body">
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #e67e22;">
+            <div class="corso-card__head"><span class="corso-card__badge" style="background: #e67e22;">👨‍👩‍👧 G</span><span class="corso-card__title">Genitoriale</span></div>
+            <div class="corso-card__body">
               <p><strong>Chi osserva</strong> · il genitore a casa, durante la lettura o il gioco</p>
               <p><strong>Domanda</strong> · <em>«In quali momenti mio figlio cerca di condividere qualcosa con me?»</em></p>
               <p><strong>Lettura</strong> · Quando indica e guarda il genitore, non riconosce solo l'immagine: invita l'adulto nello stesso piccolo mondo.</p>
-              <p style="font-size: 0.85rem; color: var(--cf2-invalid);"><strong>Errore</strong> · «Devo insegnargli più parole» (sposta sulla prestazione)</p>
-              <p style="font-size: 0.85rem; color: var(--cf2-text-muted);"><strong>Output</strong> · scheda restitutiva; Dialogic Book Sharing</p>
+              <p style="font-size: 0.85rem; color: var(--corso-invalid);"><strong>Errore</strong> · «Devo insegnargli più parole» (sposta sulla prestazione)</p>
+              <p style="font-size: 0.85rem; color: var(--corso-text-muted);"><strong>Output</strong> · scheda restitutiva; Dialogic Book Sharing</p>
             </div>
           </div>
 
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #8e44ad;">
-            <div class="cf2-card__head"><span class="cf2-card__badge" style="background: #8e44ad;">🏛 I</span><span class="cf2-card__title">Istituzionale</span></div>
-            <div class="cf2-card__body">
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #8e44ad;">
+            <div class="corso-card__head"><span class="corso-card__badge" style="background: #8e44ad;">🏛 I</span><span class="corso-card__title">Istituzionale</span></div>
+            <div class="corso-card__body">
               <p><strong>Chi osserva</strong> · il coordinatore / responsabile del servizio</p>
               <p><strong>Domanda</strong> · <em>«Le routine del servizio creano occasioni di partecipazione simbolica o riducono l'interazione a prestazione?»</em></p>
               <p><strong>Lettura</strong> · Predisporre oggetti, tempi, setting rende più probabile l'emergere di campi condivisi.</p>
-              <p style="font-size: 0.85rem; color: var(--cf2-invalid);"><strong>Errore</strong> · «Bisogna introdurre un protocollo di lettura obbligatorio» (già F3)</p>
-              <p style="font-size: 0.85rem; color: var(--cf2-text-muted);"><strong>Output</strong> · criteri per setting; tracce organizzative</p>
+              <p style="font-size: 0.85rem; color: var(--corso-invalid);"><strong>Errore</strong> · «Bisogna introdurre un protocollo di lettura obbligatorio» (già F3)</p>
+              <p style="font-size: 0.85rem; color: var(--corso-text-muted);"><strong>Output</strong> · criteri per setting; tracce organizzative</p>
             </div>
           </div>
         </div>
@@ -473,11 +473,11 @@ export const Module04: Module = {
       title: 'La regola della matrice',
       subtitle: 'Invariante vs. variabile',
       intro: `
-        <blockquote class="cf2-quote" style="text-align: center;"><p>«Il contesto cambia la domanda, non il Nodo.»</p></blockquote>
-        <p class="cf2-narrative__caption" style="text-align: center;">Clinico, pedagogico, genitoriale e istituzionale non vedono cose diverse: vedono lo stesso processo da responsabilità diverse.</p>
+        <blockquote class="corso-quote" style="text-align: center;"><p>«Il contesto cambia la domanda, non il Nodo.»</p></blockquote>
+        <p class="corso-narrative__caption" style="text-align: center;">Clinico, pedagogico, genitoriale e istituzionale non vedono cose diverse: vedono lo stesso processo da responsabilità diverse.</p>
       `,
       content: `
-        <table class="cf2-table">
+        <table class="corso-table">
           <thead>
             <tr><th></th><th>Non cambia mai</th><th>Cambia sempre</th></tr>
           </thead>
@@ -492,17 +492,17 @@ export const Module04: Module = {
           </tbody>
         </table>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <h3 class="cf2-narrative__h3">I quattro errori tipici (uno per contesto)</h3>
-        <div class="cf2-chips">
-          <div class="cf2-chip" style="border-color: #2980b9;"><span class="cf2-chip__icon">🩺</span><span class="cf2-chip__label">Clinico</span><span class="cf2-chip__sub">→ ogni configurazione diventa sospetto diagnostico</span></div>
-          <div class="cf2-chip" style="border-color: #27ae60;"><span class="cf2-chip__icon">📚</span><span class="cf2-chip__label">Pedagogico</span><span class="cf2-chip__sub">→ ogni lettura diventa tecnica educativa</span></div>
-          <div class="cf2-chip" style="border-color: #e67e22;"><span class="cf2-chip__icon">👨‍👩‍👧</span><span class="cf2-chip__label">Genitoriale</span><span class="cf2-chip__sub">→ ogni osservazione diventa giudizio</span></div>
-          <div class="cf2-chip" style="border-color: #8e44ad;"><span class="cf2-chip__icon">🏛</span><span class="cf2-chip__label">Istituzionale</span><span class="cf2-chip__sub">→ ogni Nodo diventa procedura</span></div>
+        <h3 class="corso-narrative__h3">I quattro errori tipici (uno per contesto)</h3>
+        <div class="corso-chips">
+          <div class="corso-chip" style="border-color: #2980b9;"><span class="corso-chip__icon">🩺</span><span class="corso-chip__label">Clinico</span><span class="corso-chip__sub">→ ogni configurazione diventa sospetto diagnostico</span></div>
+          <div class="corso-chip" style="border-color: #27ae60;"><span class="corso-chip__icon">📚</span><span class="corso-chip__label">Pedagogico</span><span class="corso-chip__sub">→ ogni lettura diventa tecnica educativa</span></div>
+          <div class="corso-chip" style="border-color: #e67e22;"><span class="corso-chip__icon">👨‍👩‍👧</span><span class="corso-chip__label">Genitoriale</span><span class="corso-chip__sub">→ ogni osservazione diventa giudizio</span></div>
+          <div class="corso-chip" style="border-color: #8e44ad;"><span class="corso-chip__icon">🏛</span><span class="corso-chip__label">Istituzionale</span><span class="corso-chip__sub">→ ogni Nodo diventa procedura</span></div>
         </div>
 
-        <p class="cf2-narrative__caption">Questi errori non derivano dalla malafede professionale: derivano dall'assenza di un livello intermedio. La Matrice è quel livello.</p>
+        <p class="corso-narrative__caption">Questi errori non derivano dalla malafede professionale: derivano dall'assenza di un livello intermedio. La Matrice è quel livello.</p>
       `,
     },
 
@@ -513,18 +513,18 @@ export const Module04: Module = {
       title: 'Prova tu',
       subtitle: 'N5 — Separazione / Limite reale · Contesto Genitoriale',
       intro: `
-        <div class="cf2-scena">
+        <div class="corso-scena">
           <p><em>A casa, il bambino vuole prendere un oggetto fragile. Il genitore dice «no» e sposta l'oggetto. Il bambino protesta, piange brevemente, poi guarda il genitore. L'adulto resta presente e propone un altro oggetto manipolabile.</em></p>
           <p>
-            <span class="cf2-guardrail__code" style="background: #e74c3c; color: white;">N5</span> Separazione / Limite reale
+            <span class="corso-guardrail__code" style="background: #e74c3c; color: white;">N5</span> Separazione / Limite reale
             &nbsp;·&nbsp;
-            <span class="cf2-guardrail__code" style="background: #e67e22; color: white;">G</span> Contesto Genitoriale
+            <span class="corso-guardrail__code" style="background: #e67e22; color: white;">G</span> Contesto Genitoriale
           </p>
         </div>
 
-        <div class="cf2-section">
+        <div class="corso-section">
           <p>N5 riguarda l'incontro tra l'intenzionalità del bambino e la resistenza del reale. La domanda strutturale è: <em>il limite organizza o collassa il campo?</em></p>
-          <p class="cf2-narrative__caption">Ora prova a tradurla nel linguaggio del contesto Genitoriale. Come la direbbe un genitore a se stesso? Quando hai una formulazione, clicca per vedere la risposta.</p>
+          <p class="corso-narrative__caption">Ora prova a tradurla nel linguaggio del contesto Genitoriale. Come la direbbe un genitore a se stesso? Quando hai una formulazione, clicca per vedere la risposta.</p>
         </div>
       `,
       interactive: {
@@ -532,8 +532,8 @@ export const Module04: Module = {
         items: ESERCIZIO_N5G,
         ctaShow: 'Mostra il prossimo passo',
         conclusionHtml: `
-          <p class="cf2-narrative__caption" style="text-align: center;">Hai visto come lo stesso Nodo (N5) genera una domanda completamente diversa se cambia il contesto.</p>
-          <p class="cf2-emph cf2-emph--center">→ Modulo 5 — La Dinamica tra Nodi</p>
+          <p class="corso-narrative__caption" style="text-align: center;">Hai visto come lo stesso Nodo (N5) genera una domanda completamente diversa se cambia il contesto.</p>
+          <p class="corso-emph corso-emph--center">→ Modulo 5 — La Dinamica tra Nodi</p>
         `,
       },
       notes:

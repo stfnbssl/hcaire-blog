@@ -117,15 +117,15 @@ export default function InteractiveMatrix({ config }: Props) {
   } as React.CSSProperties;
 
   return (
-    <div className="cf2-matrix">
-      <div className="cf2-matrix__filters">
-        <span className="cf2-matrix__filters-label">Filtra per contesto:</span>
+    <div className="corso-matrix">
+      <div className="corso-matrix__filters">
+        <span className="corso-matrix__filters-label">Filtra per contesto:</span>
         {cols.map((c) => (
           <button
             key={c.id}
             type="button"
-            className={`cf2-matrix__filter ${filterCol === c.id ? 'cf2-matrix__filter--active' : ''}`}
-            style={c.color ? ({ ['--cf2-mx-color' as never]: c.color } as React.CSSProperties) : undefined}
+            className={`corso-matrix__filter ${filterCol === c.id ? 'corso-matrix__filter--active' : ''}`}
+            style={c.color ? ({ ['--corso-mx-color' as never]: c.color } as React.CSSProperties) : undefined}
             onClick={() => setFilterCol(filterCol === c.id ? null : c.id)}
           >
             {c.icon && <span aria-hidden>{c.icon}</span>} {c.label}
@@ -133,21 +133,21 @@ export default function InteractiveMatrix({ config }: Props) {
         ))}
       </div>
 
-      <div className="cf2-matrix__scroll">
-        <div className="cf2-matrix__grid" style={gridStyle}>
-          <div className="cf2-matrix__corner" />
+      <div className="corso-matrix__scroll">
+        <div className="corso-matrix__grid" style={gridStyle}>
+          <div className="corso-matrix__corner" />
           {cols.map((c) => (
             <button
               key={c.id}
               type="button"
-              className={`cf2-matrix__col-head ${filterCol === c.id ? 'cf2-matrix__col-head--active' : ''}`}
-              style={c.color ? ({ ['--cf2-mx-color' as never]: c.color } as React.CSSProperties) : undefined}
+              className={`corso-matrix__col-head ${filterCol === c.id ? 'corso-matrix__col-head--active' : ''}`}
+              style={c.color ? ({ ['--corso-mx-color' as never]: c.color } as React.CSSProperties) : undefined}
               onClick={() => setFilterCol(filterCol === c.id ? null : c.id)}
               title={`Filtra: ${c.label}`}
             >
-              {c.icon && <span className="cf2-matrix__col-icon" aria-hidden>{c.icon}</span>}
-              <span className="cf2-matrix__col-label">{c.label}</span>
-              {c.sublabel && <span className="cf2-matrix__col-sub">{c.sublabel}</span>}
+              {c.icon && <span className="corso-matrix__col-icon" aria-hidden>{c.icon}</span>}
+              <span className="corso-matrix__col-label">{c.label}</span>
+              {c.sublabel && <span className="corso-matrix__col-sub">{c.sublabel}</span>}
             </button>
           ))}
 
@@ -155,13 +155,13 @@ export default function InteractiveMatrix({ config }: Props) {
             <div key={r.id} style={{ display: 'contents' }}>
               <button
                 type="button"
-                className={`cf2-matrix__row-head ${filterRow === r.id ? 'cf2-matrix__row-head--active' : ''}`}
-                style={r.color ? ({ ['--cf2-mx-color' as never]: r.color } as React.CSSProperties) : undefined}
+                className={`corso-matrix__row-head ${filterRow === r.id ? 'corso-matrix__row-head--active' : ''}`}
+                style={r.color ? ({ ['--corso-mx-color' as never]: r.color } as React.CSSProperties) : undefined}
                 onClick={() => setFilterRow(filterRow === r.id ? null : r.id)}
                 title={`Filtra: ${r.label}`}
               >
-                <span className="cf2-matrix__row-badge">{r.label}</span>
-                {r.sublabel && <span className="cf2-matrix__row-sub">{r.sublabel}</span>}
+                <span className="corso-matrix__row-badge">{r.label}</span>
+                {r.sublabel && <span className="corso-matrix__row-sub">{r.sublabel}</span>}
               </button>
               {cols.map((c) => {
                 const cell = cells[r.id]?.[c.id];
@@ -171,7 +171,7 @@ export default function InteractiveMatrix({ config }: Props) {
                   <button
                     key={key}
                     type="button"
-                    className={`cf2-matrix__cell ${dim ? 'cf2-matrix__cell--dim' : ''} ${open?.key === key ? 'cf2-matrix__cell--open' : ''}`}
+                    className={`corso-matrix__cell ${dim ? 'corso-matrix__cell--dim' : ''} ${open?.key === key ? 'corso-matrix__cell--open' : ''}`}
                     onClick={(e) => handleCellClick(e, r.id, c.id)}
                     disabled={!cell}
                   >
@@ -187,53 +187,53 @@ export default function InteractiveMatrix({ config }: Props) {
       {open && open.cell && open.row && open.col && (
         <>
           <div
-            className="cf2-matrix__popover-backdrop"
+            className="corso-matrix__popover-backdrop"
             onClick={() => setOpenCell(null)}
             aria-hidden
           />
           <div
             ref={popoverRef}
-            className="cf2-matrix__popover"
+            className="corso-matrix__popover"
             style={open.style}
             role="dialog"
             aria-label="Dettaglio cella matrice"
           >
-            <header className="cf2-matrix__popover-head">
+            <header className="corso-matrix__popover-head">
               <span
-                className="cf2-matrix__panel-badge"
+                className="corso-matrix__panel-badge"
                 style={open.row.color ? { background: open.row.color } : undefined}
               >
                 {open.row.label}
               </span>
-              <span className="cf2-matrix__panel-sep">×</span>
+              <span className="corso-matrix__panel-sep">×</span>
               <span
-                className="cf2-matrix__panel-badge"
+                className="corso-matrix__panel-badge"
                 style={open.col.color ? { background: open.col.color } : undefined}
               >
                 {open.col.icon} {open.col.label}
               </span>
               <button
                 type="button"
-                className="cf2-matrix__panel-close"
+                className="corso-matrix__panel-close"
                 onClick={() => setOpenCell(null)}
                 aria-label="Chiudi pannello"
               >
                 ✕
               </button>
             </header>
-            <div className="cf2-matrix__popover-body">
+            <div className="corso-matrix__popover-body">
               <section>
                 <h4>Domanda professionale</h4>
                 <p>{open.cell.domanda}</p>
               </section>
               {open.cell.lettura && (
-                <section className="cf2-matrix__panel-section--valid">
+                <section className="corso-matrix__panel-section--valid">
                   <h4>✓ Lettura valida</h4>
                   <p><em>{open.cell.lettura}</em></p>
                 </section>
               )}
               {open.cell.errore && (
-                <section className="cf2-matrix__panel-section--invalid">
+                <section className="corso-matrix__panel-section--invalid">
                   <h4>⚠ Errore da evitare</h4>
                   <p>{open.cell.errore}</p>
                 </section>

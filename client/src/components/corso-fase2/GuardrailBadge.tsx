@@ -7,15 +7,15 @@ interface Props {
 
 export default function GuardrailBadge({ control, inline = false }: Props) {
   return (
-    <div className={`cf2-guardrail ${inline ? 'cf2-guardrail--inline' : ''}`}>
-      <span className="cf2-guardrail__icon" aria-hidden>🛡</span>
-      <div className="cf2-guardrail__body">
-        <div className="cf2-guardrail__head">
-          <span className="cf2-guardrail__code">{control.code}</span>
-          <span className="cf2-guardrail__label">{control.label}</span>
+    <div className={`corso-guardrail ${inline ? 'corso-guardrail--inline' : ''}`}>
+      <span className="corso-guardrail__icon" aria-hidden>ðŸ›¡</span>
+      <div className="corso-guardrail__body">
+        <div className="corso-guardrail__head">
+          <span className="corso-guardrail__code">{control.code}</span>
+          <span className="corso-guardrail__label">{control.label}</span>
         </div>
         {(control.text || control.domanda) && (
-          <p className="cf2-guardrail__text">{control.text ?? control.domanda}</p>
+          <p className="corso-guardrail__text">{control.text ?? control.domanda}</p>
         )}
       </div>
     </div>

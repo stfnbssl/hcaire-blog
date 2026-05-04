@@ -6,12 +6,12 @@ const TRE_ANOMALIE: ProgressiveRevealItem[] = [
     badge: '01',
     title: 'Riduzione psicologica',
     bodyHtml: `
-      <p>Un concetto ontologico — che riguarda la struttura dell'esperienza del bambino — viene trasformato in un <strong>tratto individuale</strong>: una caratteristica della sua personalità, del suo temperamento, del suo funzionamento interno.</p>
-      <div class="cf2-reveal__examples">
-        <div class="cf2-reveal__ex cf2-reveal__ex--bad"><span class="cf2-reveal__ex-mark">✗</span><em>«Il bambino ha scarsa capacità di attenzione condivisa.»</em></div>
-        <div class="cf2-reveal__ex cf2-reveal__ex--good"><span class="cf2-reveal__ex-mark">✓</span><em>«In questa sequenza il campo condiviso si interrompe rapidamente e richiede forte sostegno adulto per riorganizzarsi.»</em></div>
+      <p>Il termine «riduzione» è qui usato in senso tecnico-metodologico: indica il passaggio per cui un concetto strutturale dell'esperienza del bambino viene <strong>ricondotto a un tratto individuale</strong> — una caratteristica della sua personalità, del suo temperamento, del suo funzionamento interno. Non è un giudizio sui professionisti: è la descrizione di un effetto che può prodursi nel passaggio diretto fra linguaggi disciplinari.</p>
+      <div class="corso-reveal__examples">
+        <div class="corso-reveal__ex corso-reveal__ex--bad"><span class="corso-reveal__ex-mark">✗</span><em>«Il bambino ha scarsa capacità di attenzione condivisa.»</em></div>
+        <div class="corso-reveal__ex corso-reveal__ex--good"><span class="corso-reveal__ex-mark">✓</span><em>«In questa sequenza il campo condiviso si interrompe rapidamente e richiede forte sostegno adulto per riorganizzarsi.»</em></div>
       </div>
-      <p class="cf2-reveal__loss"><strong>Cosa si perde</strong> · Il campo relazionale sparisce. Resta solo il bambino con le sue caratteristiche.</p>
+      <p class="corso-reveal__loss"><strong>Cosa resta in ombra</strong> · Il campo relazionale che sostiene lo scambio. Lo sguardo si concentra sul bambino isolato, mentre la configurazione che rende possibile (o difficile) la sua azione non viene tematizzata.</p>
     `,
   },
   {
@@ -19,12 +19,12 @@ const TRE_ANOMALIE: ProgressiveRevealItem[] = [
     badge: '02',
     title: 'Tecnicizzazione precoce',
     bodyHtml: `
-      <p>Un concetto interpretativo — che serve a leggere una situazione — viene trasformato in <strong>procedura d'intervento</strong>: cosa fare, quando, con quali passi.</p>
-      <div class="cf2-reveal__examples">
-        <div class="cf2-reveal__ex cf2-reveal__ex--bad"><span class="cf2-reveal__ex-mark">✗</span><em>«Occorre proporre al genitore un training sulla lettura dialogica.»</em></div>
-        <div class="cf2-reveal__ex cf2-reveal__ex--good"><span class="cf2-reveal__ex-mark">✓</span><em>«La situazione suggerisce una configurazione in cui il campo relazionale sostiene l'accesso al mondo condiviso, ma la continuità temporale dello scambio resta fragile.»</em></div>
+      <p>Un concetto interpretativo — che serve a leggere una situazione — viene tradotto direttamente in <strong>procedura d'intervento</strong>: cosa fare, quando, con quali passi. È un passaggio frequente quando le pressioni operative sono forti: la lettura e la decisione tendono naturalmente a saldarsi. La F2 propone di tenerle distinte come due momenti professionalmente distinti.</p>
+      <div class="corso-reveal__examples">
+        <div class="corso-reveal__ex corso-reveal__ex--bad"><span class="corso-reveal__ex-mark">✗</span><em>«Occorre proporre al genitore un training sulla lettura dialogica.»</em></div>
+        <div class="corso-reveal__ex corso-reveal__ex--good"><span class="corso-reveal__ex-mark">✓</span><em>«La situazione suggerisce una configurazione in cui il campo relazionale sostiene l'accesso al mondo condiviso, ma la continuità temporale dello scambio resta fragile.»</em></div>
       </div>
-      <p class="cf2-reveal__loss"><strong>Cosa si perde</strong> · La lettura della configurazione salta. Si va direttamente all'azione senza passare per la comprensione.</p>
+      <p class="corso-reveal__loss"><strong>Cosa resta in ombra</strong> · Lo spazio della comprensione condivisa fra discipline. Quando la lettura e l'azione coincidono, il momento in cui più sguardi possono incontrarsi sulla stessa configurazione tende a non aprirsi.</p>
     `,
   },
   {
@@ -32,12 +32,12 @@ const TRE_ANOMALIE: ProgressiveRevealItem[] = [
     badge: '03',
     title: 'Normatività implicita',
     bodyHtml: `
-      <p>Una descrizione del funzionamento evolutivo diventa implicitamente <strong>prescrizione</strong>: suggerisce cosa è normale, cosa è adeguato, cosa dovrebbe succedere.</p>
-      <div class="cf2-reveal__examples">
-        <div class="cf2-reveal__ex cf2-reveal__ex--bad"><span class="cf2-reveal__ex-mark">✗</span><em>«L'adulto deve rallentare, attendere tre secondi e poi nominare l'immagine.»</em></div>
-        <div class="cf2-reveal__ex cf2-reveal__ex--good"><span class="cf2-reveal__ex-mark">✓</span><em>«Quando l'adulto accelera troppo la sequenza, il bambino interrompe lo scambio; quando attende, il bambino riprende a indicare e vocalizzare.»</em></div>
+      <p>Una descrizione del funzionamento evolutivo si carica, spesso senza che ce ne accorgiamo, di un <strong>contenuto prescrittivo</strong>: suggerisce ciò che è atteso, adeguato, auspicabile. È una soglia sottile — molte formulazioni utili sul piano clinico o pedagogico contengono questa componente. Renderla esplicita aiuta a distinguere quando si sta descrivendo e quando si sta orientando l'azione.</p>
+      <div class="corso-reveal__examples">
+        <div class="corso-reveal__ex corso-reveal__ex--bad"><span class="corso-reveal__ex-mark">✗</span><em>«L'adulto deve rallentare, attendere tre secondi e poi nominare l'immagine.»</em></div>
+        <div class="corso-reveal__ex corso-reveal__ex--good"><span class="corso-reveal__ex-mark">✓</span><em>«Quando l'adulto accelera la sequenza, il bambino interrompe lo scambio; quando attende, il bambino riprende a indicare e vocalizzare.»</em></div>
       </div>
-      <p class="cf2-reveal__loss"><strong>Cosa si perde</strong> · La descrizione si trasforma in norma. Il professionista si trova a dire cosa si deve fare, non cosa si vede.</p>
+      <p class="corso-reveal__loss"><strong>Cosa resta in ombra</strong> · La differenza fra ciò che si vede e ciò che si raccomanda. Una descrizione che incorpora una norma rende difficile per altri professionisti leggere la stessa scena con un'altra grammatica.</p>
     `,
   },
 ];
@@ -54,7 +54,7 @@ const CRITERI_VALIDITA: FlipCardData[] = [
     },
     invalid: {
       text: 'Il bambino ha buona attenzione visiva.',
-      perche: "Isola una funzione, perde il campo relazionale, riduce l'esperienza a prestazione cognitiva.",
+      perche: "Isola una funzione e lascia in ombra il campo relazionale: l'esperienza viene letta principalmente sul piano della prestazione cognitiva.",
     },
   },
   {
@@ -188,7 +188,7 @@ const CRITERI_VALIDITA: FlipCardData[] = [
 export const Module01: Module = {
   id: 'm01',
   number: 1,
-  title: 'Il problema della traduzione senza riduzione',
+  title: 'Il problema della traduzione fra discipline',
   shortTitle: 'Traduzione',
   accent: '#6c63ff',
   slides: [
@@ -199,23 +199,23 @@ export const Module01: Module = {
       title: 'Il problema di partenza',
       subtitle: 'Più linguaggi, stessa scena',
       content: `
-        <div class="cf2-narrative">
-          <div class="cf2-scena">
+        <div class="corso-narrative">
+          <div class="corso-scena">
             <p><em>Il bambino indica una figura del libro. Vocalizza. Guarda la madre. Lei sorride e nomina l'immagine.</em></p>
           </div>
 
-          <h3 class="cf2-narrative__h3">Quattro discipline, quattro domande</h3>
-          <div class="cf2-chips">
-            <div class="cf2-chip"><span class="cf2-chip__icon">🩺</span><span class="cf2-chip__label">Pediatria</span><span class="cf2-chip__sub">«È nella norma per 18 mesi?»</span></div>
-            <div class="cf2-chip"><span class="cf2-chip__icon">📚</span><span class="cf2-chip__label">Pedagogia</span><span class="cf2-chip__sub">«L'ambiente è stimolante?»</span></div>
-            <div class="cf2-chip"><span class="cf2-chip__icon">🧠</span><span class="cf2-chip__label">NPI</span><span class="cf2-chip__sub">«Ci sono segnali d'allerta?»</span></div>
-            <div class="cf2-chip"><span class="cf2-chip__icon">👨‍👩‍👧</span><span class="cf2-chip__label">Counseling</span><span class="cf2-chip__sub">«Il legame genitore-bambino funziona?»</span></div>
+          <h3 class="corso-narrative__h3">Quattro discipline, quattro domande</h3>
+          <div class="corso-chips">
+            <div class="corso-chip"><span class="corso-chip__icon">🩺</span><span class="corso-chip__label">Pediatria</span><span class="corso-chip__sub">«È nella norma per 18 mesi?»</span></div>
+            <div class="corso-chip"><span class="corso-chip__icon">📚</span><span class="corso-chip__label">Pedagogia</span><span class="corso-chip__sub">«L'ambiente è stimolante?»</span></div>
+            <div class="corso-chip"><span class="corso-chip__icon">🧠</span><span class="corso-chip__label">NPI</span><span class="corso-chip__sub">«Ci sono segnali d'allerta?»</span></div>
+            <div class="corso-chip"><span class="corso-chip__icon">👨‍👩‍👧</span><span class="corso-chip__label">Counseling</span><span class="corso-chip__sub">«Il legame genitore-bambino funziona?»</span></div>
           </div>
 
-          <p class="cf2-emph cf2-emph--center">Quattro sguardi legittimi. Quattro linguaggi diversi. Nessuno sbagliato.</p>
-          <p class="cf2-narrative__caption">Ma se ognuno legge solo con il proprio linguaggio, il passaggio dall'uno all'altro rischia di produrre errori. La traduzione diretta tra discipline — senza un livello intermedio — genera anomalie.</p>
+          <p class="corso-emph corso-emph--center">Quattro sguardi legittimi. Quattro linguaggi diversi. Ognuno coglie un aspetto reale della scena.</p>
+          <p class="corso-narrative__caption">Quando il passaggio fra un linguaggio e l'altro avviene per traduzione diretta — senza un livello intermedio condiviso — possono insorgere alcuni effetti tipici, che chiamiamo «anomalie» in senso strutturale: non difetti delle discipline, ma effetti di interfaccia.</p>
 
-          <p class="cf2-question">Quali anomalie?</p>
+          <p class="corso-question">Quali effetti?</p>
         </div>
       `,
     },
@@ -224,14 +224,17 @@ export const Module01: Module = {
     {
       id: 'm01-s02',
       type: 'interactive',
-      title: 'Tre anomalie da prevenire',
-      subtitle: 'Cosa accade quando si salta la traduzione',
+      title: 'Tre anomalie strutturali da prevenire',
+      subtitle: 'Effetti tipici del passaggio diretto fra linguaggi',
+      intro: `
+        <p>Le «anomalie» qui descritte non sono errori imputabili a una disciplina, ma <strong>effetti strutturali di interfaccia</strong>: emergono quando concetti che hanno una funzione dentro un linguaggio vengono trasferiti in un altro senza un livello intermedio condiviso. Riconoscerle è ciò che permette alla F2 di costruire un terreno comune fra sguardi diversi.</p>
+      `,
       interactive: {
         kind: 'progressive-reveal',
         items: TRE_ANOMALIE,
         ctaShow: 'Mostra prossima anomalia',
         conclusionHtml: `
-          <blockquote class="cf2-blockquote">«Le tre anomalie hanno un'origine comune: il passaggio diretto tra discipline senza un livello intermedio che protegga la struttura del concetto.»</blockquote>
+          <blockquote class="corso-blockquote">«Le tre anomalie hanno un'origine comune: il passaggio diretto fra discipline senza un livello intermedio che ne preservi la struttura. La F2 non corregge gli sguardi disciplinari: offre il livello in cui possono incontrarsi.»</blockquote>
         `,
       },
     },
@@ -240,47 +243,47 @@ export const Module01: Module = {
     {
       id: 'm01-s03',
       type: 'standard',
-      title: 'Cosa significa tradurre senza ridurre',
+      title: 'Cosa significa tradurre fra discipline',
       subtitle: 'La definizione operativa',
       content: `
-        <div class="cf2-section">
-          <blockquote class="cf2-blockquote">«Il processo mediante cui un concetto mantiene la propria funzione strutturale pur cambiando linguaggio disciplinare.»</blockquote>
-          <p class="cf2-narrative__caption" style="text-align: right;">— F2 · Traduzione Interdisciplinare</p>
+        <div class="corso-section">
+          <blockquote class="corso-blockquote">«Il processo mediante cui un concetto mantiene la propria funzione strutturale pur cambiando linguaggio disciplinare.»</blockquote>
+          <p class="corso-narrative__caption" style="text-align: right;">— F2 · Traduzione Interdisciplinare</p>
           <p>La parola chiave è <strong>funzione strutturale</strong>: non si chiede che il concetto rimanga identico (sarebbe impossibile tra discipline diverse), ma che <strong>conservi il lavoro che fa</strong> nella comprensione del fenomeno.</p>
         </div>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <h3 class="cf2-narrative__h3">Traduzione ≠ semplificazione</h3>
-        <table class="cf2-table">
+        <h3 class="corso-narrative__h3">Traduzione ≠ semplificazione</h3>
+        <table class="corso-table">
           <thead>
             <tr><th></th><th>Cosa è</th><th>Cosa fa</th></tr>
           </thead>
           <tbody>
             <tr><td><strong>Semplificazione</strong></td><td>Togliere complessità</td><td><em>«Spiego in modo facile»</em></td></tr>
             <tr><td><strong>Adattamento</strong></td><td>Cambiare il concetto per renderlo familiare</td><td><em>«Uso un termine equivalente»</em></td></tr>
-            <tr class="cf2-table__row--highlight"><td><strong>Traduzione strutturale</strong></td><td>Cambiare linguaggio mantenendo la funzione</td><td><em>«Uso un altro linguaggio che fa lo stesso lavoro»</em></td></tr>
+            <tr class="corso-table__row--highlight"><td><strong>Traduzione strutturale</strong></td><td>Cambiare linguaggio mantenendo la funzione</td><td><em>«Uso un altro linguaggio che fa lo stesso lavoro»</em></td></tr>
           </tbody>
         </table>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <div class="cf2-section">
-          <h3 class="cf2-narrative__h3">Esempio: tre livelli di linguaggio, stessa funzione</h3>
-          <div class="cf2-cards cf2-cards--vertical">
-            <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #6c63ff;">
-              <div class="cf2-card__head"><span class="cf2-card__badge" style="background: #6c63ff;">F1</span><span class="cf2-card__title">«Soggetto incarnato, relazionale, temporale»</span></div>
+        <div class="corso-section">
+          <h3 class="corso-narrative__h3">Esempio: tre livelli di linguaggio, stessa funzione</h3>
+          <div class="corso-cards corso-cards--vertical">
+            <div class="corso-card corso-card--open" style="--corso-card-accent: #6c63ff;">
+              <div class="corso-card__head"><span class="corso-card__badge" style="background: #6c63ff;">F1</span><span class="corso-card__title">«Soggetto incarnato, relazionale, temporale»</span></div>
             </div>
-            <p class="cf2-emph cf2-emph--center" style="color: var(--cf2-text-muted);">↓ traduzione strutturale</p>
-            <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #1a6b8a;">
-              <div class="cf2-card__head"><span class="cf2-card__badge" style="background: #1a6b8a;">F2</span><span class="cf2-card__title">«Il bambino entra in un campo di esperienza condivisibile»</span></div>
+            <p class="corso-emph corso-emph--center" style="color: var(--corso-text-muted);">↓ traduzione strutturale</p>
+            <div class="corso-card corso-card--open" style="--corso-card-accent: #1a6b8a;">
+              <div class="corso-card__head"><span class="corso-card__badge" style="background: #1a6b8a;">F2</span><span class="corso-card__title">«Il bambino entra in un campo di esperienza condivisibile»</span></div>
             </div>
-            <p class="cf2-emph cf2-emph--center" style="color: var(--cf2-text-muted);">↓ traduzione strutturale</p>
-            <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #124f67;">
-              <div class="cf2-card__head"><span class="cf2-card__badge" style="background: #124f67;">F2</span><span class="cf2-card__title">«Il bambino usa il libro come occasione di scambio con l'adulto»</span></div>
+            <p class="corso-emph corso-emph--center" style="color: var(--corso-text-muted);">↓ traduzione strutturale</p>
+            <div class="corso-card corso-card--open" style="--corso-card-accent: #124f67;">
+              <div class="corso-card__head"><span class="corso-card__badge" style="background: #124f67;">F2</span><span class="corso-card__title">«Il bambino usa il libro come occasione di scambio con l'adulto»</span></div>
             </div>
           </div>
-          <p class="cf2-narrative__caption">La funzione strutturale è conservata: il bambino come soggetto relazionale che abita un campo.</p>
+          <p class="corso-narrative__caption">La funzione strutturale è conservata: il bambino come soggetto relazionale che abita un campo.</p>
         </div>
       `,
       notes:
@@ -302,7 +305,7 @@ export const Module01: Module = {
         cols: 5,
         reformulationTable: {
           title: 'Tabella di riformulazione rapida',
-          headers: ['Formulazione riduttiva', 'Formulazione metodologicamente valida'],
+          headers: ['Formulazione mono-registro', 'Formulazione condivisibile fra discipline'],
           rows: [
             [
               'Il bambino ha scarsa attenzione',
@@ -335,33 +338,33 @@ export const Module01: Module = {
       type: 'narrative',
       title: 'Il criterio in una frase',
       content: `
-        <div class="cf2-narrative cf2-narrative--centered">
-          <blockquote class="cf2-quote">
+        <div class="corso-narrative corso-narrative--centered">
+          <blockquote class="corso-quote">
             <p>«Un esempio valido della Fase 2 non dice ancora che cosa fare.</p>
-            <p class="cf2-quote__cta">Mostra che cosa diventa leggibile.»</p>
+            <p class="corso-quote__cta">Mostra che cosa diventa leggibile.»</p>
           </blockquote>
           <p>Questo è il criterio che raccoglie tutti gli altri. La F2 produce <strong>leggibilità strutturale</strong> — non azione, non diagnosi, non giudizio.</p>
         </div>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <h3 class="cf2-narrative__h3">Le tre anomalie e la protezione F2</h3>
-        <table class="cf2-table">
+        <h3 class="corso-narrative__h3">Le tre anomalie e il contributo della F2</h3>
+        <table class="corso-table">
           <thead>
-            <tr><th>Anomalia</th><th>Errore</th><th>Protezione F2</th></tr>
+            <tr><th>Anomalia strutturale</th><th>Effetto di interfaccia</th><th>Contributo della F2</th></tr>
           </thead>
           <tbody>
-            <tr><td><strong>Riduzione psicologica</strong></td><td>Il concetto diventa tratto del bambino</td><td>Mantiene il campo relazionale come unità di osservazione</td></tr>
-            <tr><td><strong>Tecnicizzazione precoce</strong></td><td>La lettura diventa procedura</td><td>Separa esplicitamente osservazione e decisione operativa</td></tr>
-            <tr><td><strong>Normatività implicita</strong></td><td>La descrizione diventa prescrizione</td><td>Produce configurazioni, non norme</td></tr>
+            <tr><td><strong>Riduzione psicologica</strong></td><td>Il concetto strutturale viene ricondotto a un tratto del bambino</td><td>Mantiene il campo relazionale come unità di osservazione</td></tr>
+            <tr><td><strong>Tecnicizzazione precoce</strong></td><td>La lettura e la decisione operativa si saldano in un unico passaggio</td><td>Tiene distinte osservazione e decisione, lasciando alla disciplina la responsabilità della seconda</td></tr>
+            <tr><td><strong>Normatività implicita</strong></td><td>La descrizione incorpora un contenuto prescrittivo</td><td>Produce configurazioni leggibili, lasciando esplicito il momento normativo</td></tr>
           </tbody>
         </table>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <div class="cf2-narrative cf2-narrative--centered">
-          <p class="cf2-narrative__caption">Come si costruisce concretamente la leggibilità? Attraverso una sequenza precisa di sette operatori.</p>
-          <p class="cf2-emph cf2-emph--center">→ Modulo 2 — La pipeline di traducibilità</p>
+        <div class="corso-narrative corso-narrative--centered">
+          <p class="corso-narrative__caption">Come si costruisce concretamente la leggibilità? Attraverso una sequenza precisa di sette operatori.</p>
+          <p class="corso-emph corso-emph--center">→ Modulo 2 — La pipeline di traducibilità</p>
         </div>
       `,
       notes:

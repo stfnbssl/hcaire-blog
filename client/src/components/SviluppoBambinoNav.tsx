@@ -1,11 +1,26 @@
 import { Link, useLocation } from 'react-router-dom';
 
-const NAV_LINKS = [
-  { to: '/sviluppo-bambino/finalita',                    label: 'Finalità' },
-  { to: '/sviluppo-bambino/metodo',                      label: 'Metodo' },
-  { to: '/sviluppo-bambino/interlocuzioni',              label: 'Interlocuzioni' },
-  { to: '/sviluppo-bambino/produzioni',                  label: 'Produzioni' },
-  { to: '/sviluppo-bambino/traduzione-interdisciplinare', label: 'Traduzione interdisciplinare' },
+interface NavLink {
+  to: string;
+  label: string;
+  /** Path aggiuntivi che mantengono questo link "attivo". */
+  activeOn?: string[];
+}
+
+const NAV_LINKS: NavLink[] = [
+  { to: '/sviluppo-bambino/finalita',        label: 'Finalità' },
+  { to: '/sviluppo-bambino/metodo',          label: 'Metodo' },
+  { to: '/sviluppo-bambino/interlocuzioni',  label: 'Interlocuzioni' },
+  { to: '/sviluppo-bambino/produzioni',      label: 'Produzioni' },
+  {
+    to: '/sviluppo-bambino/presentazione',
+    label: 'Presentazione',
+    activeOn: [
+      '/sviluppo-bambino/fondazione-ontologica',
+      '/sviluppo-bambino/traduzione-interdisciplinare',
+      '/sviluppo-bambino/strumenti-operativi-contestualizzati',
+    ],
+  },
 ];
 
 export default function SviluppoBambinoNav() {
@@ -26,19 +41,24 @@ export default function SviluppoBambinoNav() {
             ← Sezione
           </Link>
           <span className="self-center text-gray-200 mx-1">|</span>
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={`flex-shrink-0 text-sm px-3 py-1.5 rounded-md transition-colors whitespace-nowrap ${
-                location.pathname.startsWith(link.to)
-                  ? 'bg-primary-50 text-primary-700 font-medium'
-                  : 'text-gray-500 hover:text-gray-900 hover:bg-gray-50'
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {NAV_LINKS.map((link) => {
+            const isActive =
+              location.pathname.startsWith(link.to) ||
+              (link.activeOn?.some((p) => location.pathname.startsWith(p)) ?? false);
+            return (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`flex-shrink-0 text-sm px-3 py-1.5 rounded-md transition-colors whitespace-nowrap ${
+                  isActive
+                    ? 'bg-primary-50 text-primary-700 font-medium'
+                    : 'text-gray-500 hover:text-gray-900 hover:bg-gray-50'
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
       </div>
     </div>

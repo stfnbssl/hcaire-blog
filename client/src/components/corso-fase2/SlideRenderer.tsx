@@ -23,7 +23,7 @@ export default function SlideRenderer({ slide }: Props) {
     <>
       {slide.intro && (
         <div
-          className="cf2-slide__intro"
+          className="corso-slide__intro"
           dangerouslySetInnerHTML={{ __html: slide.intro }}
         />
       )}
@@ -62,7 +62,7 @@ export default function SlideRenderer({ slide }: Props) {
       )}
       {slide.content && (
         <div
-          className="cf2-slide__content"
+          className="corso-slide__content"
           dangerouslySetInnerHTML={{ __html: slide.content }}
         />
       )}
@@ -75,16 +75,16 @@ export default function SlideRenderer({ slide }: Props) {
     : -1;
 
   return (
-    <article className={`cf2-slide cf2-slide--${slide.type}`} key={slide.id}>
+    <article className={`corso-slide corso-slide--${slide.type}`} key={slide.id}>
       {topbar && (
-        <div className="cf2-pipe-topbar" aria-label="Progresso pipeline">
+        <div className="corso-pipe-topbar" aria-label="Progresso pipeline">
           {topbar.steps.map((s, i) => {
             const state =
               i === currentIdx ? 'current' : i < currentIdx ? 'visited' : 'upcoming';
             return (
               <span
                 key={s.id}
-                className={`cf2-pipe-topbar__step cf2-pipe-topbar__step--${state}`}
+                className={`corso-pipe-topbar__step corso-pipe-topbar__step--${state}`}
                 style={
                   s.color && state === 'current'
                     ? ({ background: s.color, borderColor: s.color } as React.CSSProperties)
@@ -98,14 +98,14 @@ export default function SlideRenderer({ slide }: Props) {
         </div>
       )}
 
-      <header className="cf2-slide__head">
-        {slide.subtitle && <div className="cf2-slide__eyebrow">{slide.subtitle}</div>}
-        <h1 className="cf2-slide__title">{slide.title}</h1>
+      <header className="corso-slide__head">
+        {slide.subtitle && <div className="corso-slide__eyebrow">{slide.subtitle}</div>}
+        <h1 className="corso-slide__title">{slide.title}</h1>
       </header>
 
       {hasAside ? (
-        <div className="cf2-slide__body cf2-slide__body--with-aside">
-          <aside className="cf2-slide__aside">
+        <div className="corso-slide__body corso-slide__body--with-aside">
+          <aside className="corso-slide__aside">
             <PipelineAnimator
               config={{
                 kind: 'pipeline-animator',
@@ -117,20 +117,20 @@ export default function SlideRenderer({ slide }: Props) {
               }}
             />
           </aside>
-          <div className="cf2-slide__content-area">{bodyInner}</div>
+          <div className="corso-slide__content-area">{bodyInner}</div>
         </div>
       ) : (
-        <div className="cf2-slide__body">{bodyInner}</div>
+        <div className="corso-slide__body">{bodyInner}</div>
       )}
 
       {slide.guardrail && (
-        <footer className="cf2-slide__guardrail">
+        <footer className="corso-slide__guardrail">
           <GuardrailBadge control={slide.guardrail} />
         </footer>
       )}
 
       {slide.notes && !slide.guardrail && (
-        <footer className="cf2-slide__notes">{slide.notes}</footer>
+        <footer className="corso-slide__notes">{slide.notes}</footer>
       )}
     </article>
   );

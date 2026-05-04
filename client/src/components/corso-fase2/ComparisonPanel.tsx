@@ -8,23 +8,23 @@ export default function ComparisonPanel({ config }: Props) {
   const { valid, invalid, label } = config;
 
   return (
-    <div className="cf2-cmp">
-      {label && <div className="cf2-cmp__label">{label}</div>}
+    <div className="corso-cmp">
+      {label && <div className="corso-cmp__label">{label}</div>}
 
-      <div className="cf2-cmp__grid">
-        <section className="cf2-cmp__col cf2-cmp__col--valid">
-          <header className="cf2-cmp__head">
-            <span className="cf2-cmp__icon" aria-hidden>✓</span>
-            <h3 className="cf2-cmp__title">{valid.title}</h3>
+      <div className="corso-cmp__grid">
+        <section className="corso-cmp__col corso-cmp__col--valid">
+          <header className="corso-cmp__head">
+            <span className="corso-cmp__icon" aria-hidden>âœ“</span>
+            <h3 className="corso-cmp__title">{valid.title}</h3>
           </header>
           {valid.content && (
             <div
-              className="cf2-cmp__content"
+              className="corso-cmp__content"
               dangerouslySetInnerHTML={{ __html: valid.content }}
             />
           )}
           {valid.items && valid.items.length > 0 && (
-            <ul className="cf2-cmp__list">
+            <ul className="corso-cmp__list">
               {valid.items.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}
@@ -32,24 +32,24 @@ export default function ComparisonPanel({ config }: Props) {
           )}
         </section>
 
-        <section className="cf2-cmp__col cf2-cmp__col--invalid">
-          <header className="cf2-cmp__head">
-            <span className="cf2-cmp__icon" aria-hidden>✗</span>
-            <h3 className="cf2-cmp__title">{invalid.title}</h3>
+        <section className="corso-cmp__col corso-cmp__col--invalid">
+          <header className="corso-cmp__head">
+            <span className="corso-cmp__icon" aria-hidden>âœ—</span>
+            <h3 className="corso-cmp__title">{invalid.title}</h3>
           </header>
           {invalid.content && (
             <div
-              className="cf2-cmp__content"
+              className="corso-cmp__content"
               dangerouslySetInnerHTML={{ __html: invalid.content }}
             />
           )}
           {invalid.items && invalid.items.length > 0 && (
-            <ul className="cf2-cmp__items">
+            <ul className="corso-cmp__items">
               {invalid.items.map((item, i) => (
-                <li key={i} className="cf2-cmp__item">
-                  <span className="cf2-cmp__item-text">{item.text}</span>
+                <li key={i} className="corso-cmp__item">
+                  <span className="corso-cmp__item-text">{item.text}</span>
                   {item.problem && (
-                    <span className="cf2-cmp__item-problem">{item.problem}</span>
+                    <span className="corso-cmp__item-problem">{item.problem}</span>
                   )}
                 </li>
               ))}

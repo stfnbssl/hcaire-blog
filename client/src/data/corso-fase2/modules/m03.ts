@@ -273,7 +273,7 @@ const PROPRIETA_CARDS: ExpandableCardData[] = SETTE_PROPRIETA.map((p) => ({
   summary: p.testo.split('. ')[0] + '.',
   detail: `
     <p>${p.testo}</p>
-    <div class="cf2-card__hint cf2-card__hint--accent"><strong>Test</strong> · <em>${p.test}</em></div>
+    <div class="corso-card__hint corso-card__hint--accent"><strong>Test</strong> · <em>${p.test}</em></div>
   `,
 }));
 
@@ -282,7 +282,7 @@ function nodoCard(n: (typeof SETTE_NODI)[number]): ExpandableCardData {
   const assiBadges = n.assi
     .map(
       (a) =>
-        `<span class="cf2-guardrail__code" style="background: var(--cf2-bg); padding: 2px 8px; border-radius: 4px; margin-right: 4px;">Asse ${a}</span>`,
+        `<span class="corso-guardrail__code" style="background: var(--corso-bg); padding: 2px 8px; border-radius: 4px; margin-right: 4px;">Asse ${a}</span>`,
     )
     .join('');
   const domandeList = n.domande.map((d) => `<li>${d}</li>`).join('');
@@ -295,7 +295,7 @@ function nodoCard(n: (typeof SETTE_NODI)[number]): ExpandableCardData {
     title: n.nome,
     summary: n.struttura,
     detail: `
-      <div class="cf2-scena" style="margin-bottom: 14px;">
+      <div class="corso-scena" style="margin-bottom: 14px;">
         <p><strong>Situazione concreta</strong></p>
         <p>${n.situazione}</p>
       </div>
@@ -305,13 +305,13 @@ function nodoCard(n: (typeof SETTE_NODI)[number]): ExpandableCardData {
       <p><strong>Domande professionali</strong></p>
       <ul>${domandeList}</ul>
 
-      <div class="cf2-box cf2-box--valid" style="margin: 12px 0;">
-        <div class="cf2-box__title">✓ Lettura valida</div>
+      <div class="corso-box corso-box--valid" style="margin: 12px 0;">
+        <div class="corso-box__title">✓ Lettura valida</div>
         <p style="margin: 8px 0 0;"><em>${n.lettura_valida}</em></p>
       </div>
 
-      <div class="cf2-box cf2-box--invalid" style="margin: 12px 0;">
-        <div class="cf2-box__title">⚠ Errore da evitare</div>
+      <div class="corso-box corso-box--invalid" style="margin: 12px 0;">
+        <div class="corso-box__title">⚠ Errore da evitare</div>
         <p style="margin: 8px 0 0;">${n.errore}</p>
       </div>
 
@@ -371,26 +371,26 @@ export const Module03: Module = {
       title: 'Tra la fondazione e la pratica',
       subtitle: 'Perché serve un livello intermedio',
       content: `
-        <div class="cf2-cards cf2-cards--vertical">
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #6c63ff; opacity: 0.85;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge" style="background: #6c63ff;">F1</span>
-              <span class="cf2-card__title">La fondazione è astratta — non si usa direttamente</span>
+        <div class="corso-cards corso-cards--vertical">
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #6c63ff; opacity: 0.85;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge" style="background: #6c63ff;">F1</span>
+              <span class="corso-card__title">La fondazione è astratta — non si usa direttamente</span>
             </div>
-            <div class="cf2-card__body">
+            <div class="corso-card__body">
               <p>Gli assi strutturali descrivono dimensioni dello sviluppo con precisione ontologica. Ma proprio per questo <strong>non si usano direttamente nel lavoro professionale</strong>.</p>
               <p>Un pediatra non può concludere una visita scrivendo «Asse 1 presente, Asse 4 in tensione». Un educatore non può osservare un bambino usando «Asse 5 — Desiderio» come categoria operativa.</p>
             </div>
           </div>
 
-          <p class="cf2-emph cf2-emph--center" style="color: var(--cf2-text-muted);">↓ Come si passa dalla fondazione alla leggibilità professionale senza perdere complessità?</p>
+          <p class="corso-emph corso-emph--center" style="color: var(--corso-text-muted);">↓ Come si passa dalla fondazione alla leggibilità professionale senza perdere complessità?</p>
 
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #e67e22;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge">NODO</span>
-              <span class="cf2-card__title">Il livello intermedio</span>
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #e67e22;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge">NODO</span>
+              <span class="corso-card__title">Il livello intermedio</span>
             </div>
-            <div class="cf2-card__body">
+            <div class="corso-card__body">
               <p>Il <strong>Nodo Trasversale</strong> si colloca tra la struttura ontologica (assi) e i dispositivi operativi (Fase 3). È il punto dove:</p>
               <ul>
                 <li>più assi si incontrano in una <strong>configurazione riconoscibile</strong></li>
@@ -400,14 +400,14 @@ export const Module03: Module = {
             </div>
           </div>
 
-          <p class="cf2-emph cf2-emph--center" style="color: var(--cf2-text-muted);">↓ Senza il Nodo, riduzione · tecnicizzazione · normatività implicita (M1)</p>
+          <p class="corso-emph corso-emph--center" style="color: var(--corso-text-muted);">↓ Senza il Nodo possono insorgere le tre anomalie strutturali viste in M1: riduzione, tecnicizzazione, normatività implicita.</p>
 
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #2d9cdb; opacity: 0.85;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge" style="background: #2d9cdb;">F3</span>
-              <span class="cf2-card__title">Gli strumenti operativi</span>
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #2d9cdb; opacity: 0.85;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge" style="background: #2d9cdb;">F3</span>
+              <span class="corso-card__title">Gli strumenti operativi</span>
             </div>
-            <div class="cf2-card__body">
+            <div class="corso-card__body">
               <p>Senza il Nodo, il passaggio agli strumenti operativi produce le tre anomalie viste nel Modulo 1.</p>
             </div>
           </div>
@@ -424,24 +424,24 @@ export const Module03: Module = {
       title: "Cos'è un Nodo Trasversale",
       subtitle: 'La definizione canonica',
       intro: `
-        <blockquote class="cf2-quote" style="text-align: center;">
+        <blockquote class="corso-quote" style="text-align: center;">
           <p>«Un Nodo Trasversale è una <strong>configurazione ontogenetica</strong> ricorrente in cui <strong>più assi strutturali si co-organizzano</strong> producendo una <strong>trasformazione emergente</strong> e <strong>strutturalmente necessaria</strong>, fenomenicamente densa e <strong>potenzialmente traducibile</strong>.»</p>
         </blockquote>
-        <p class="cf2-narrative__caption" style="text-align: center;">Clicca su una parola-chiave per leggerne la funzione nella definizione.</p>
+        <p class="corso-narrative__caption" style="text-align: center;">Clicca su una parola-chiave per leggerne la funzione nella definizione.</p>
       `,
       interactive: {
         kind: 'chip-accordion',
         items: DEFINIZIONE_CHIPS,
       },
       content: `
-        <hr class="cf2-divider" />
-        <h3 class="cf2-narrative__h3" style="text-align: center;">Tre cose che il Nodo non è</h3>
-        <div class="cf2-chips">
-          <div class="cf2-chip" style="border-color: var(--cf2-invalid);"><span class="cf2-chip__icon">✗</span><span class="cf2-chip__label">Non è un nuovo asse</span></div>
-          <div class="cf2-chip" style="border-color: var(--cf2-invalid);"><span class="cf2-chip__icon">✗</span><span class="cf2-chip__label">Non è un meccanismo causale</span></div>
-          <div class="cf2-chip" style="border-color: var(--cf2-invalid);"><span class="cf2-chip__icon">✗</span><span class="cf2-chip__label">Non è un caso clinico</span></div>
+        <hr class="corso-divider" />
+        <h3 class="corso-narrative__h3" style="text-align: center;">Tre cose che il Nodo non è</h3>
+        <div class="corso-chips">
+          <div class="corso-chip" style="border-color: var(--corso-invalid);"><span class="corso-chip__icon">✗</span><span class="corso-chip__label">Non è un nuovo asse</span></div>
+          <div class="corso-chip" style="border-color: var(--corso-invalid);"><span class="corso-chip__icon">✗</span><span class="corso-chip__label">Non è un meccanismo causale</span></div>
+          <div class="corso-chip" style="border-color: var(--corso-invalid);"><span class="corso-chip__icon">✗</span><span class="corso-chip__label">Non è un caso clinico</span></div>
         </div>
-        <p class="cf2-emph cf2-emph--center">È la forma in cui assi già definiti si rendono leggibili come configurazione.</p>
+        <p class="corso-emph corso-emph--center">È la forma in cui assi già definiti si rendono leggibili come configurazione.</p>
       `,
     },
 
@@ -458,9 +458,9 @@ export const Module03: Module = {
         multiOpen: true,
       },
       content: `
-        <hr class="cf2-divider" />
-        <p class="cf2-emph cf2-emph--center">Un elemento è considerato Nodo solo se soddisfa <strong>tutte e sette</strong> le condizioni.</p>
-        <p class="cf2-narrative__caption" style="text-align: center;">Se manca anche una sola, è qualcosa di diverso — un asse, un dominio, una variabile, un comportamento.</p>
+        <hr class="corso-divider" />
+        <p class="corso-emph corso-emph--center">Un elemento è considerato Nodo solo se soddisfa <strong>tutte e sette</strong> le condizioni.</p>
+        <p class="corso-narrative__caption" style="text-align: center;">Se manca anche una sola, è qualcosa di diverso — un asse, un dominio, una variabile, un comportamento.</p>
       `,
       notes:
         'Le sette proprietà si applicano anche come criteri di verifica durante la costruzione della pipeline: se il Nodo scelto non soddisfa tutte e sette, la catena di traducibilità non regge.',
@@ -480,7 +480,7 @@ export const Module03: Module = {
         </ul>
       `,
       content: `
-        <table class="cf2-table">
+        <table class="corso-table">
           <thead>
             <tr><th></th><th>Asse</th><th>Nodo</th></tr>
           </thead>
@@ -494,21 +494,21 @@ export const Module03: Module = {
           </tbody>
         </table>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <h3 class="cf2-narrative__h3">Esempio</h3>
-        <div class="cf2-two-col">
-          <div class="cf2-box cf2-box--valid">
-            <div class="cf2-box__title">Asse 2 — Affettivo-morale</div>
+        <h3 class="corso-narrative__h3">Esempio</h3>
+        <div class="corso-two-col">
+          <div class="corso-box corso-box--valid">
+            <div class="corso-box__title">Asse 2 — Affettivo-morale</div>
             <p>Sempre presente. Descrive come il bambino riconosce l'altro come portatore di esperienza propria. Non compare e scompare: orienta tutte le relazioni del bambino lungo tutto lo sviluppo.</p>
           </div>
-          <div class="cf2-box cf2-box--valid" style="border-color: #27ae60;">
-            <div class="cf2-box__title" style="color: #27ae60;">N2 — Campo relazionale / Co-regolazione</div>
+          <div class="corso-box corso-box--valid" style="border-color: #27ae60;">
+            <div class="corso-box__title" style="color: #27ae60;">N2 — Campo relazionale / Co-regolazione</div>
             <p>Appare quando Asse 1, Asse 2 e Asse 3 si co-organizzano in una configurazione specifica: la modulazione reciproca degli stati tra bambino e adulto. Non è sempre «attivato»: è una configurazione che si osserva in situazioni concrete.</p>
           </div>
         </div>
 
-        <p class="cf2-emph cf2-emph--center">Sempre presente → probabilmente è un asse.<br/>Emerge da più assi in una situazione specifica → probabilmente è un Nodo.</p>
+        <p class="corso-emph corso-emph--center">Sempre presente → probabilmente è un asse.<br/>Emerge da più assi in una situazione specifica → probabilmente è un Nodo.</p>
       `,
     },
 
@@ -519,43 +519,43 @@ export const Module03: Module = {
       title: 'Nodo → contesti → domande',
       subtitle: 'Non il contrario',
       content: `
-        <div class="cf2-section">
+        <div class="corso-section">
           <p>Il progetto segue una logica strutturale precisa, che distingue questo metodo da una raccolta di buone pratiche.</p>
         </div>
 
-        <div class="cf2-cards cf2-cards--vertical">
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #e67e22;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge">NODO</span>
-              <span class="cf2-card__title">Configurazione strutturale</span>
+        <div class="corso-cards corso-cards--vertical">
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #e67e22;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge">NODO</span>
+              <span class="corso-card__title">Configurazione strutturale</span>
             </div>
           </div>
-          <p class="cf2-emph cf2-emph--center" style="color: var(--cf2-text-muted);">↓ interroga</p>
-          <div class="cf2-chips">
-            <div class="cf2-chip"><span class="cf2-chip__icon">🩺</span><span class="cf2-chip__label">Clinico</span><span class="cf2-chip__sub">domanda specifica</span></div>
-            <div class="cf2-chip"><span class="cf2-chip__icon">📚</span><span class="cf2-chip__label">Pedagogico</span><span class="cf2-chip__sub">domanda specifica</span></div>
-            <div class="cf2-chip"><span class="cf2-chip__icon">👨‍👩‍👧</span><span class="cf2-chip__label">Genitoriale</span><span class="cf2-chip__sub">domanda specifica</span></div>
-            <div class="cf2-chip"><span class="cf2-chip__icon">🏛</span><span class="cf2-chip__label">Istituzionale</span><span class="cf2-chip__sub">domanda specifica</span></div>
+          <p class="corso-emph corso-emph--center" style="color: var(--corso-text-muted);">↓ interroga</p>
+          <div class="corso-chips">
+            <div class="corso-chip"><span class="corso-chip__icon">🩺</span><span class="corso-chip__label">Clinico</span><span class="corso-chip__sub">domanda specifica</span></div>
+            <div class="corso-chip"><span class="corso-chip__icon">📚</span><span class="corso-chip__label">Pedagogico</span><span class="corso-chip__sub">domanda specifica</span></div>
+            <div class="corso-chip"><span class="corso-chip__icon">👨‍👩‍👧</span><span class="corso-chip__label">Genitoriale</span><span class="corso-chip__sub">domanda specifica</span></div>
+            <div class="corso-chip"><span class="corso-chip__icon">🏛</span><span class="corso-chip__label">Istituzionale</span><span class="corso-chip__sub">domanda specifica</span></div>
           </div>
-          <p class="cf2-emph cf2-emph--center">I contesti non definiscono lo sviluppo: <strong>interrogano strutture già definite</strong>.</p>
+          <p class="corso-emph corso-emph--center">I contesti non definiscono lo sviluppo: <strong>interrogano strutture già definite</strong>.</p>
         </div>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <div class="cf2-two-col">
-          <div class="cf2-box cf2-box--valid">
-            <div class="cf2-box__title">✓ Logica del metodo</div>
+        <div class="corso-two-col">
+          <div class="corso-box corso-box--valid">
+            <div class="corso-box__title">✓ Logica del metodo</div>
             <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; margin: 8px 0;">NODO → contesti → domande</p>
             <p>I Nodi vengono definiti <em>prima</em> delle contestualizzazioni applicative: chi guarda lo sviluppo da discipline diverse legge la stessa configurazione con linguaggi diversi, senza che ogni disciplina si inventi il proprio modello.</p>
           </div>
-          <div class="cf2-box cf2-box--invalid">
-            <div class="cf2-box__title">✗ Logica da evitare</div>
+          <div class="corso-box corso-box--invalid">
+            <div class="corso-box__title">✗ Logica da evitare</div>
             <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; margin: 8px 0;">contesti → nodi diversi</p>
-            <p>Se ogni contesto produce i propri Nodi, si ottiene frammentazione e colonizzazione disciplinare. La pediatria osserva «regolazione», la pedagogia osserva «cura», il counseling osserva «attaccamento» — e non si parlano più.</p>
+            <p>Se ogni contesto produce un proprio insieme di Nodi, viene meno l'integrazione fra registri: la pediatria parla di «regolazione», la pedagogia di «cura», il counseling di «attaccamento» — sguardi tutti pertinenti, ma che senza un livello comune faticano a riconoscersi sulla stessa configurazione.</p>
           </div>
         </div>
 
-        <p class="cf2-narrative__caption">I sette Nodi non sono stati ricavati dai casi clinici, dai contesti educativi o dalle pratiche genitoriali. Sono stati definiti a partire dalla struttura del modello — poi applicati ai diversi contesti. Questo li rende <strong>trasversali</strong>: lo stesso N3 genera domande diverse in ambulatorio, al nido, a casa e nei servizi, ma la struttura del Nodo resta identica.</p>
+        <p class="corso-narrative__caption">I sette Nodi non sono stati ricavati dai casi clinici, dai contesti educativi o dalle pratiche genitoriali. Sono stati definiti a partire dalla struttura del modello — poi applicati ai diversi contesti. Questo li rende <strong>trasversali</strong>: lo stesso N3 genera domande diverse in ambulatorio, al nido, a casa e nei servizi, ma la struttura del Nodo resta identica.</p>
       `,
     },
 
@@ -587,18 +587,18 @@ export const Module03: Module = {
         multiOpen: true,
       },
       content: `
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
         <details>
-          <summary style="cursor: pointer; font-weight: 600; color: var(--cf2-module-accent); padding: 10px; border: 1px dashed var(--cf2-border); border-radius: var(--cf2-radius-sm);">
+          <summary style="cursor: pointer; font-weight: 600; color: var(--corso-module-accent); padding: 10px; border: 1px dashed var(--corso-border); border-radius: var(--corso-radius-sm);">
             Mostra la sintesi comparativa dei 7 Nodi
           </summary>
-          <table class="cf2-table" style="margin-top: 12px;">
+          <table class="corso-table" style="margin-top: 12px;">
             <thead>
               <tr><th>Nodo</th><th>Situazione esemplare</th><th>Domanda guida</th><th>Errore tipico</th></tr>
             </thead>
             <tbody>
               <tr><td><strong>N1</strong> Regolazione</td><td>Bambino alla visita pediatrica</td><td>L'esperienza si mantiene o collassa?</td><td>«È poco collaborativo»</td></tr>
-              <tr><td><strong>N2</strong> Co-regolazione</td><td>Bambino al gioco con l'educatrice</td><td>Il campo sostiene o amplifica?</td><td>«L'educatrice è brava/sbagliata»</td></tr>
+              <tr><td><strong>N2</strong> Co-regolazione</td><td>Bambino al gioco con l'educatrice</td><td>Il campo sostiene o amplifica?</td><td>Lettura giudicante sull'adulto («brava/sbagliata»)</td></tr>
               <tr><td><strong>N3</strong> Mondo condiviso</td><td>Bambino col libro e il genitore</td><td>L'oggetto diventa comune?</td><td>«Sa indicare»</td></tr>
               <tr><td><strong>N4</strong> Apertura</td><td>Bambino che entra al nido</td><td>Il mondo è esplorabile?</td><td>«È timido»</td></tr>
               <tr><td><strong>N5</strong> Limite reale</td><td>Bambino davanti a un «no»</td><td>Il limite organizza o collassa?</td><td>«Fa i capricci»</td></tr>
@@ -617,11 +617,11 @@ export const Module03: Module = {
       title: "I sette Nodi nell'architettura del modello",
       subtitle: 'Invarianti strutturali e assi coinvolti',
       content: `
-        <p class="cf2-narrative__caption" style="text-align: center;">
+        <p class="corso-narrative__caption" style="text-align: center;">
           <em>Assi · dimensioni sempre attive</em> · <em>Nodi · configurazioni ricorrenti dell'intreccio</em>
         </p>
 
-        <table class="cf2-table" style="text-align: center;">
+        <table class="corso-table" style="text-align: center;">
           <thead>
             <tr>
               <th style="text-align: left;">Nodo</th>
@@ -639,11 +639,11 @@ export const Module03: Module = {
           </tbody>
         </table>
 
-        <p class="cf2-narrative__caption" style="text-align: center; font-size: 0.85rem;">
+        <p class="corso-narrative__caption" style="text-align: center; font-size: 0.85rem;">
           ● asse attivato dal Nodo &nbsp;·&nbsp; · asse non coinvolto
         </p>
 
-        <p class="cf2-emph cf2-emph--center">I sette Nodi sono <strong>invarianti strutturali</strong>: non cambiano passando tra contesti professionali. Cambia solo il tipo di domanda, il livello di osservazione, il tipo di output.</p>
+        <p class="corso-emph corso-emph--center">I sette Nodi sono <strong>invarianti strutturali</strong>: non cambiano passando tra contesti professionali. Cambia solo il tipo di domanda, il livello di osservazione, il tipo di output.</p>
       `,
     },
 
@@ -654,11 +654,11 @@ export const Module03: Module = {
       title: 'N3 nel caso della lettura condivisa',
       subtitle: 'Come il Nodo più rilevante si manifesta nella scena',
       content: `
-        <div class="cf2-scena">
+        <div class="corso-scena">
           <p><em>«Il bambino prende il libro, lo apre, guarda alcune immagini, indica una figura, vocalizza qualcosa e guarda l'adulto. Il genitore nomina l'immagine, sorride, aspetta. Il bambino torna a guardare il libro, gira pagina, poi mostra un'altra figura all'adulto.»</em></p>
         </div>
 
-        <h3 class="cf2-narrative__h3">Perché N3?</h3>
+        <h3 class="corso-narrative__h3">Perché N3?</h3>
         <p>Nella scena il bambino non sta solo guardando un libro: sta tentando di <em>trasformare l'immagine in un'occasione di scambio</em>.</p>
         <ul>
           <li>Il libro non è un oggetto da manipolare → è un <strong>mediatore di mondo</strong></li>
@@ -667,33 +667,33 @@ export const Module03: Module = {
           <li>L'alternanza di sguardo non è distrazione → è <strong>ricerca di conferma nel campo comune</strong></li>
         </ul>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <div class="cf2-two-col">
-          <div class="cf2-col">
-            <h3 class="cf2-narrative__h3">Gli assi attivati</h3>
+        <div class="corso-two-col">
+          <div class="corso-col">
+            <h3 class="corso-narrative__h3">Gli assi attivati</h3>
             <ul>
               <li><strong>Asse 1</strong> — Il corpo (postura, orientamento, gesto) organizza l'esperienza</li>
               <li><strong>Asse 2</strong> — La risposta del genitore sostiene il campo</li>
               <li><strong>Asse 5</strong> — L'interesse del bambino orienta l'iniziativa</li>
               <li><strong>Asse 6</strong> — Il libro introduce un mondo simbolico-culturale condiviso</li>
             </ul>
-            <p class="cf2-narrative__caption">Sono attivi tutti e quattro gli assi che definiscono N3. L'emergenza è riconoscibile.</p>
+            <p class="corso-narrative__caption">Sono attivi tutti e quattro gli assi che definiscono N3. L'emergenza è riconoscibile.</p>
           </div>
-          <div class="cf2-col">
-            <h3 class="cf2-narrative__h3">N2 come Nodo di sostegno</h3>
+          <div class="corso-col">
+            <h3 class="corso-narrative__h3">N2 come Nodo di sostegno</h3>
             <p>N2 (Campo relazionale / Co-regolazione) è presente in secondo piano: senza co-regolazione tra adulto e bambino, l'accesso al mondo condiviso non si produce.</p>
             <p>Il genitore che nomina, sorride e aspetta non sta solo «stimolando» — sta <strong>mantenendo il campo</strong> che rende possibile la condivisione.</p>
-            <p class="cf2-narrative__caption" style="font-family: 'JetBrains Mono', monospace; font-size: 0.82rem;">Sostegno: N2 → N3</p>
+            <p class="corso-narrative__caption" style="font-family: 'JetBrains Mono', monospace; font-size: 0.82rem;">Sostegno: N2 → N3</p>
           </div>
         </div>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <h3 class="cf2-narrative__h3">Due letture a confronto</h3>
-        <div class="cf2-two-col">
-          <div class="cf2-box cf2-box--invalid">
-            <div class="cf2-box__title">Lettura riduttiva</div>
+        <h3 class="corso-narrative__h3">Due letture a confronto</h3>
+        <div class="corso-two-col">
+          <div class="corso-box corso-box--invalid">
+            <div class="corso-box__title">Lettura mono-registro</div>
             <ul>
               <li>«Il bambino sa indicare»</li>
               <li>«Il genitore stimola bene»</li>
@@ -701,8 +701,8 @@ export const Module03: Module = {
               <li>«Il bambino presta attenzione al libro»</li>
             </ul>
           </div>
-          <div class="cf2-box cf2-box--valid">
-            <div class="cf2-box__title">Lettura N3</div>
+          <div class="corso-box corso-box--valid">
+            <div class="corso-box__title">Lettura N3 (multi-registro)</div>
             <ul>
               <li>«Il gesto apre uno scambio con l'adulto»</li>
               <li>«Il campo relazionale sostiene l'accesso al simbolico»</li>
@@ -712,7 +712,7 @@ export const Module03: Module = {
           </div>
         </div>
 
-        <p class="cf2-emph cf2-emph--center" style="margin-top: 16px;">→ Modulo 4 — La Matrice Nodo × Contesto</p>
+        <p class="corso-emph corso-emph--center" style="margin-top: 16px;">→ Modulo 4 — La Matrice Nodo × Contesto</p>
       `,
       notes:
         'Nel Modulo 4 vedremo come questo stesso Nodo — N3 — genera domande completamente diverse quando cambia il contesto professionale. Il Nodo resta invariante; la prospettiva si trasforma.',

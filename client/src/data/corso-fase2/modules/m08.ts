@@ -123,13 +123,13 @@ function miniPipelineHTML(): string {
   ];
   return steps
     .map((s, i) => {
-      const sep = i > 0 ? '<span style="color: var(--cf2-text-muted); margin: 0 4px;">→</span>' : '';
+      const sep = i > 0 ? '<span style="color: var(--corso-text-muted); margin: 0 4px;">→</span>' : '';
       const style = s.current
         ? 'background: #27ae60; color: white; font-weight: 700;'
         : s.phase
-          ? 'background: var(--cf2-bg); color: var(--cf2-text-2); border: 1px solid var(--cf2-border); font-weight: 700; opacity: 0.8;'
-          : 'background: var(--cf2-bg); color: var(--cf2-text-muted); opacity: 0.7;';
-      return `${sep}<span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: var(--cf2-radius-sm); font-size: 0.78rem; font-family: 'JetBrains Mono', monospace; ${style}"><strong>${s.code}</strong> <span style="font-family: inherit;">${s.label}</span></span>`;
+          ? 'background: var(--corso-bg); color: var(--corso-text-2); border: 1px solid var(--corso-border); font-weight: 700; opacity: 0.8;'
+          : 'background: var(--corso-bg); color: var(--corso-text-muted); opacity: 0.7;';
+      return `${sep}<span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: var(--corso-radius-sm); font-size: 0.78rem; font-family: 'JetBrains Mono', monospace; ${style}"><strong>${s.code}</strong> <span style="font-family: inherit;">${s.label}</span></span>`;
     })
     .join('');
 }
@@ -148,21 +148,21 @@ export const Module08: Module = {
       title: "L'output-tipo vuoto",
       subtitle: 'Ultimo passo di F2 — prova di completezza della traduzione',
       content: `
-        <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--cf2-text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 8px;">Pipeline F2 · Passo 7 di 7 · Guardrail C6</p>
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--corso-text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 8px;">Pipeline F2 · Passo 7 di 7 · Guardrail C6</p>
 
         <p>La traduzione interdisciplinare è completa quando è possibile costruire un template riutilizzabile — una forma che organizza la leggibilità senza ancora diventare strumento operativo. Questo è l'output-tipo vuoto: lo stampo da cui nasce l'azione di Fase 3.</p>
 
-        <blockquote class="cf2-blockquote" style="border-left-color: #27ae60; background: #eafaf1;">L'output-tipo vuoto è uno <strong>stampo riusabile</strong>. Non è ancora lo strumento contestualizzato. <strong>Non contiene criteri diagnostici, prescrizioni, soglie o punteggi.</strong></blockquote>
+        <blockquote class="corso-blockquote" style="border-left-color: #27ae60; background: #eafaf1;">L'output-tipo vuoto è uno <strong>stampo riusabile</strong>. Non è ancora lo strumento contestualizzato. <strong>Non contiene criteri diagnostici, prescrizioni, soglie o punteggi.</strong></blockquote>
 
-        <div class="cf2-chips">
-          <div class="cf2-chip" style="background: #eafaf1; border-color: #27ae60;"><span class="cf2-chip__icon">✓</span><span class="cf2-chip__label">Verifica</span><span class="cf2-chip__sub">la completezza della catena di traducibilità</span></div>
-          <div class="cf2-chip" style="background: #eafaf1; border-color: #27ae60;"><span class="cf2-chip__icon">📐</span><span class="cf2-chip__label">Organizza</span><span class="cf2-chip__sub">la leggibilità del campo osservato</span></div>
-          <div class="cf2-chip" style="background: #eafaf1; border-color: #27ae60;"><span class="cf2-chip__icon">🌉</span><span class="cf2-chip__label">Prepara</span><span class="cf2-chip__sub">la struttura per i riempimenti di F3</span></div>
+        <div class="corso-chips">
+          <div class="corso-chip" style="background: #eafaf1; border-color: #27ae60;"><span class="corso-chip__icon">✓</span><span class="corso-chip__label">Verifica</span><span class="corso-chip__sub">la completezza della catena di traducibilità</span></div>
+          <div class="corso-chip" style="background: #eafaf1; border-color: #27ae60;"><span class="corso-chip__icon">📐</span><span class="corso-chip__label">Organizza</span><span class="corso-chip__sub">la leggibilità del campo osservato</span></div>
+          <div class="corso-chip" style="background: #eafaf1; border-color: #27ae60;"><span class="corso-chip__icon">🌉</span><span class="corso-chip__label">Prepara</span><span class="corso-chip__sub">la struttura per i riempimenti di F3</span></div>
         </div>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <h3 class="cf2-narrative__h3">Posizione nella pipeline</h3>
+        <h3 class="corso-narrative__h3">Posizione nella pipeline</h3>
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px; line-height: 2;">
           ${miniPipelineHTML()}
         </div>
@@ -190,8 +190,8 @@ export const Module08: Module = {
         multiOpen: true,
       },
       content: `
-        <hr class="cf2-divider" />
-        <div class="cf2-box cf2-box--valid" style="border-color: #27ae60; background: #eafaf1;">
+        <hr class="corso-divider" />
+        <div class="corso-box corso-box--valid" style="border-color: #27ae60; background: #eafaf1;">
           <p style="margin: 0; text-align: center; font-size: 1.1rem;"><strong>«Il template vuoto organizza la lettura, non decide l'intervento.»</strong></p>
         </div>
       `,
@@ -226,7 +226,7 @@ export const Module08: Module = {
       title: 'Due forme, due funzioni',
       subtitle: 'Template F2 e strumento F3 a confronto',
       content: `
-        <table class="cf2-table">
+        <table class="corso-table">
           <thead>
             <tr>
               <th>Aspetto</th>
@@ -247,45 +247,45 @@ export const Module08: Module = {
           </tbody>
         </table>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <h3 class="cf2-narrative__h3">Tre formulazioni della stessa regola</h3>
-        <div class="cf2-cards cf2-cards--vertical">
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #27ae60;">
-            <div class="cf2-card__head"><span class="cf2-card__badge">1</span><span class="cf2-card__title">Formulazione operativa</span></div>
-            <div class="cf2-card__body"><p><em>«Il template vuoto organizza la lettura, non decide l'intervento.»</em></p></div>
+        <h3 class="corso-narrative__h3">Tre formulazioni della stessa regola</h3>
+        <div class="corso-cards corso-cards--vertical">
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #27ae60;">
+            <div class="corso-card__head"><span class="corso-card__badge">1</span><span class="corso-card__title">Formulazione operativa</span></div>
+            <div class="corso-card__body"><p><em>«Il template vuoto organizza la lettura, non decide l'intervento.»</em></p></div>
           </div>
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #27ae60;">
-            <div class="cf2-card__head"><span class="cf2-card__badge">2</span><span class="cf2-card__title">Formulazione critica</span></div>
-            <div class="cf2-card__body"><p><em>«Il template vuoto non è uno strumento debole: è uno strumento <strong>trattenuto</strong>.»</em></p></div>
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #27ae60;">
+            <div class="corso-card__head"><span class="corso-card__badge">2</span><span class="corso-card__title">Formulazione critica</span></div>
+            <div class="corso-card__body"><p><em>«Il template vuoto non è uno strumento debole: è uno strumento <strong>trattenuto</strong>.»</em></p></div>
           </div>
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #27ae60;">
-            <div class="cf2-card__head"><span class="cf2-card__badge">3</span><span class="cf2-card__title">Formulazione tecnica</span></div>
-            <div class="cf2-card__body"><p><em>«L'output-tipo vuoto è la <strong>prova che la traduzione è completa</strong>, non la prova che l'intervento è già definito.»</em></p></div>
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #27ae60;">
+            <div class="corso-card__head"><span class="corso-card__badge">3</span><span class="corso-card__title">Formulazione tecnica</span></div>
+            <div class="corso-card__body"><p><em>«L'output-tipo vuoto è la <strong>prova che la traduzione è completa</strong>, non la prova che l'intervento è già definito.»</em></p></div>
           </div>
         </div>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <div class="cf2-two-col">
-          <div class="cf2-guardrail">
-            <span class="cf2-guardrail__icon" aria-hidden>🛡</span>
-            <div class="cf2-guardrail__body">
-              <div class="cf2-guardrail__head">
-                <span class="cf2-guardrail__code">C6</span>
-                <span class="cf2-guardrail__label">Completezza</span>
+        <div class="corso-two-col">
+          <div class="corso-guardrail">
+            <span class="corso-guardrail__icon" aria-hidden>🛡</span>
+            <div class="corso-guardrail__body">
+              <div class="corso-guardrail__head">
+                <span class="corso-guardrail__code">C6</span>
+                <span class="corso-guardrail__label">Completezza</span>
               </div>
-              <p class="cf2-guardrail__text">Il template è riusabile, resta vuoto, non prescrive, non valuta, non assegna punteggi.</p>
+              <p class="corso-guardrail__text">Il template è riusabile, resta vuoto, non prescrive, non valuta, non assegna punteggi.</p>
             </div>
           </div>
-          <div class="cf2-guardrail">
-            <span class="cf2-guardrail__icon" aria-hidden>🛡</span>
-            <div class="cf2-guardrail__body">
-              <div class="cf2-guardrail__head">
-                <span class="cf2-guardrail__code">C7</span>
-                <span class="cf2-guardrail__label">Responsabilità</span>
+          <div class="corso-guardrail">
+            <span class="corso-guardrail__icon" aria-hidden>🛡</span>
+            <div class="corso-guardrail__body">
+              <div class="corso-guardrail__head">
+                <span class="corso-guardrail__code">C7</span>
+                <span class="corso-guardrail__label">Responsabilità</span>
               </div>
-              <p class="cf2-guardrail__text">La decisione operativa appartiene a F3 e alle responsabilità disciplinari specifiche. F2 produce solo la grammatica di traducibilità.</p>
+              <p class="corso-guardrail__text">La decisione operativa appartiene a F3 e alle responsabilità disciplinari specifiche. F2 produce solo la grammatica di traducibilità.</p>
             </div>
           </div>
         </div>
@@ -301,8 +301,8 @@ export const Module08: Module = {
       content: `
         <p>Il template vuoto mostra che la traduzione è riuscita. Ora è possibile costruire. Ogni famiglia di output è una <strong>classe di prodotti possibili</strong> — non ancora uno strumento definitivo, ma la direzione che lo strumento prenderà in Fase 3.</p>
 
-        <h3 class="cf2-narrative__h3">Sette famiglie di output</h3>
-        <table class="cf2-table">
+        <h3 class="corso-narrative__h3">Sette famiglie di output</h3>
+        <table class="corso-table">
           <thead><tr><th>Famiglia</th><th>Possibile forma</th></tr></thead>
           <tbody>
             <tr><td><span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #2980b9; margin-right: 8px;"></span><strong>Osservativa</strong></td><td>Scheda di osservazione della lettura condivisa</td></tr>
@@ -315,11 +315,11 @@ export const Module08: Module = {
           </tbody>
         </table>
 
-        <hr class="cf2-divider" />
-        <p class="cf2-emph cf2-emph--center" style="color: var(--cf2-text-muted); letter-spacing: 0.1em;">— Soglia F3 —</p>
+        <hr class="corso-divider" />
+        <p class="corso-emph corso-emph--center" style="color: var(--corso-text-muted); letter-spacing: 0.1em;">— Soglia F3 —</p>
 
-        <h3 class="cf2-narrative__h3">Strumenti possibili in F3 — caso-guida</h3>
-        <table class="cf2-table">
+        <h3 class="corso-narrative__h3">Strumenti possibili in F3 — caso-guida</h3>
+        <table class="corso-table">
           <thead><tr><th>Contesto</th><th>Strumento possibile</th></tr></thead>
           <tbody>
             <tr><td><strong>Clinico</strong></td><td>Scheda breve per osservare la lettura condivisa nei bilanci di salute</td></tr>
@@ -331,11 +331,11 @@ export const Module08: Module = {
           </tbody>
         </table>
 
-        <p class="cf2-narrative__caption">F2 si ferma qui. La costruzione degli strumenti, la definizione dei protocolli, la validazione: tutto questo appartiene alla responsabilità disciplinare di F3.</p>
+        <p class="corso-narrative__caption">F2 si ferma qui. La costruzione degli strumenti, la definizione dei protocolli, la validazione: tutto questo appartiene alla responsabilità disciplinare di F3.</p>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <div class="cf2-box cf2-box--valid" style="border-color: #27ae60; background: #eafaf1;">
+        <div class="corso-box corso-box--valid" style="border-color: #27ae60; background: #eafaf1;">
           <p style="margin: 0; text-align: center; line-height: 2; font-size: 1.05rem;">
             La <strong>Fase 2</strong> ha prodotto <strong>leggibilità</strong>.<br/>
             La <strong>Fase 3</strong> produce <strong>azione</strong>.<br/>

@@ -23,8 +23,8 @@ export const Module02: Module = {
         dimmedIds: ALL_OPS,
       },
       content: `
-        <div class="cf2-section">
-          <h3 class="cf2-narrative__h3">Principio della pipeline</h3>
+        <div class="corso-section">
+          <h3 class="corso-narrative__h3">Principio della pipeline</h3>
           <p>La traduzione interdisciplinare non è libera: avviene attraverso una <strong>sequenza stabile di sette operatori</strong>, ognuno con un vincolo di coerenza che ne protegge l'integrità.</p>
           <ul>
             <li>Ogni operatore ha una <strong>funzione precisa</strong></li>
@@ -44,18 +44,18 @@ export const Module02: Module = {
       title: 'Ogni passaggio ha un vincolo',
       subtitle: 'I controlli di coerenza C0–C7',
       content: `
-        <div class="cf2-section">
+        <div class="corso-section">
           <p>La pipeline non è un elenco di suggerimenti. È una struttura vincolata: ogni passaggio tra un operatore e il successivo è protetto da un <strong>controllo di coerenza</strong> che previene un errore specifico.</p>
-          <blockquote class="cf2-blockquote">«Se il controllo non passa, la catena non avanza. Non si salta un operatore per arrivare prima al risultato.»</blockquote>
+          <blockquote class="corso-blockquote">«Se il controllo non passa, la catena non avanza. Non si salta un operatore per arrivare prima al risultato.»</blockquote>
         </div>
 
-        <table class="cf2-table">
+        <table class="corso-table">
           <thead>
             <tr><th>Passo</th><th>Controllo</th><th>Errore prevenuto</th></tr>
           </thead>
           <tbody>
             <tr><td>Campo di lavoro</td><td><strong>C0</strong> — Vincolo di contesto</td><td>Osservazioni vaghe o non delimitabili</td></tr>
-            <tr><td>Concetto-ponte</td><td><strong>C1</strong> — Non-riduzionismo</td><td>Concetti appiattiti a variabili disciplinari</td></tr>
+            <tr><td>Concetto-ponte</td><td><strong>C1</strong> — Non-riduzionismo</td><td>Concetti che, nel passaggio fra discipline, si stringono fino a diventare una singola variabile</td></tr>
             <tr><td>Nodo trasversale</td><td><strong>C2</strong> — Attraversamento</td><td>Nodi mono-asse, senza emergenza</td></tr>
             <tr><td>Domande professionali</td><td><strong>C3</strong> — Non-diagnostico</td><td>Domande classificatorie o prescrittive</td></tr>
             <tr><td>Operatore di lettura</td><td><strong>C4</strong> — Separazione</td><td>Lettura che impone decisioni operative</td></tr>
@@ -75,8 +75,8 @@ export const Module02: Module = {
       subtitle: 'Cosa osserviamo, dove, con chi, per quanto tempo',
       pipelineSide: { highlightId: 'op1' },
       content: `
-        <div class="cf2-two-col">
-          <div class="cf2-col">
+        <div class="corso-two-col">
+          <div class="corso-col">
             <p><strong>Funzione</strong> · il campo di lavoro delimita il contesto concreto entro cui il concetto fondativo viene osservato e reso interrogabile.</p>
             <p>Risponde a quattro domande:</p>
             <ul>
@@ -87,10 +87,10 @@ export const Module02: Module = {
             </ul>
             <p><strong>Regola fondamentale</strong>: il campo deve essere delimitato. «Sviluppo simbolico del bambino» non è un campo di lavoro — è un tema.</p>
           </div>
-          <div class="cf2-col">
-            <div class="cf2-scena">
+          <div class="corso-col">
+            <div class="corso-scena">
               <p><strong>Caso: Lettura condivisa</strong></p>
-              <table class="cf2-table">
+              <table class="corso-table">
                 <tbody>
                   <tr><td><strong>Contesto</strong></td><td>Ambulatorio pediatrico / casa / nido</td></tr>
                   <tr><td><strong>Età</strong></td><td>18-24 mesi</td></tr>
@@ -117,10 +117,11 @@ export const Module02: Module = {
       id: 'm02-s04',
       type: 'comparison',
       title: '② Concetto-ponte',
-      subtitle: 'Tradurre senza appiattire',
+      subtitle: 'Tradurre conservando ampiezza',
       pipelineSide: { highlightId: 'op2', completedIds: ['op1'] },
       intro: `
-        <p>Il concetto-ponte rende compatibili linguaggi disciplinari senza ridurre il concetto originario a una categoria tecnica troppo stretta. Non è una semplificazione: è una traduzione che <strong>conserva la funzione strutturale</strong> del concetto.</p>
+        <p>Il concetto-ponte rende compatibili linguaggi disciplinari mantenendo aperta l'ampiezza del concetto originario. Non è una semplificazione: è una traduzione che <strong>conserva la funzione strutturale</strong> del concetto.</p>
+        <p class="corso-narrative__caption"><strong>Nota terminologica</strong> · Il controllo associato si chiama <em>«Non-riduzionismo»</em>. È un tecnicismo metodologico — indica la condizione per cui il concetto, attraversando un linguaggio disciplinare, non si stringe fino a coincidere con una singola variabile di quella disciplina. Non è un giudizio sulle discipline: ognuna opera legittimamente la propria focalizzazione. Il controllo serve al concetto-ponte, che per sua funzione deve restare attraversabile da più sguardi.</p>
       `,
       comparison: {
         valid: {
@@ -137,20 +138,20 @@ export const Module02: Module = {
           `,
         },
         invalid: {
-          title: 'Formulazioni riduttive',
+          title: 'Formulazioni mono-registro',
           items: [
-            { text: '«Il bambino presta attenzione al libro»', problem: 'Neuropsicologia · riduce a funzione attentiva' },
-            { text: '«Il bambino sa indicare»', problem: 'Sviluppo · riduce a comportamento isolato' },
-            { text: '«Il bambino conosce le figure»', problem: 'Cognitiva · riduce a riconoscimento' },
-            { text: '«Il genitore stimola adeguatamente»', problem: "Educativa · sposta su giudizio dell'adulto" },
-            { text: '«Sviluppo simbolico nella norma»', problem: 'Clinica · anticipa classificazione' },
+            { text: '«Il bambino presta attenzione al libro»', problem: 'Registro neuropsicologico · resta sulla funzione attentiva' },
+            { text: '«Il bambino sa indicare»', problem: 'Registro evolutivo · isola un comportamento' },
+            { text: '«Il bambino conosce le figure»', problem: 'Registro cognitivo · resta sul riconoscimento' },
+            { text: '«Il genitore stimola adeguatamente»', problem: "Registro educativo · sposta lo sguardo sul giudizio dell'adulto" },
+            { text: '«Sviluppo simbolico nella norma»', problem: 'Registro clinico · anticipa la classificazione' },
           ],
         },
       },
       guardrail: {
         code: 'C1',
         label: 'Non-riduzionismo',
-        text: 'Il concetto-ponte è valido se mantiene insieme corpo, relazione, oggetto, gesto, parola e significato. Non deve diventare una singola variabile.',
+        text: 'Il concetto-ponte è valido se mantiene insieme corpo, relazione, oggetto, gesto, parola e significato. Non deve coincidere con una singola variabile disciplinare.',
       },
     },
 
@@ -162,23 +163,23 @@ export const Module02: Module = {
       subtitle: 'Il motore strutturale della traduzione',
       pipelineSide: { highlightId: 'op3', completedIds: ['op1', 'op2'] },
       content: `
-        <div class="cf2-section">
+        <div class="corso-section">
           <p>Il Nodo Trasversale è la <strong>configurazione teorica</strong> che rende intelligibili le dinamiche trasformative generate dalla co-attivazione di più assi strutturali.</p>
           <p>Non è un nuovo asse. Non è un meccanismo causale. È il <strong>punto di trasformazione</strong> nella pipeline: dove si passa da coerenza teorica a interrogabilità professionale.</p>
-          <p class="cf2-narrative__caption">Il Modulo 3 è dedicato interamente ai Nodi. Qui ne vediamo la funzione nella pipeline.</p>
+          <p class="corso-narrative__caption">Il Modulo 3 è dedicato interamente ai Nodi. Qui ne vediamo la funzione nella pipeline.</p>
         </div>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <div class="cf2-cards cf2-cards--vertical">
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #2d6a4f;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge">N3</span>
-              <span class="cf2-card__title">Accesso al mondo condiviso simbolico <em style="font-weight: 400; color: var(--cf2-text-muted);">— nodo principale</em></span>
+        <div class="corso-cards corso-cards--vertical">
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #2d6a4f;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge">N3</span>
+              <span class="corso-card__title">Accesso al mondo condiviso simbolico <em style="font-weight: 400; color: var(--corso-text-muted);">— nodo principale</em></span>
             </div>
-            <div class="cf2-card__body">
+            <div class="corso-card__body">
               <p><strong>Struttura</strong>: transizione da azione individuale a significato condiviso.</p>
-              <p><strong>Assi coinvolti</strong>: <span class="cf2-guardrail__code">A1</span> · <span class="cf2-guardrail__code">A2</span> · <span class="cf2-guardrail__code">A5</span> · <span class="cf2-guardrail__code">A6</span></p>
+              <p><strong>Assi coinvolti</strong>: <span class="corso-guardrail__code">A1</span> · <span class="corso-guardrail__code">A2</span> · <span class="corso-guardrail__code">A5</span> · <span class="corso-guardrail__code">A6</span></p>
               <ul>
                 <li>Il libro non è solo un oggetto: è un <strong>mediatore di mondo</strong></li>
                 <li>Il bambino non «presta attenzione»: <em>entra in un campo condiviso</em></li>
@@ -187,12 +188,12 @@ export const Module02: Module = {
             </div>
           </div>
 
-          <div class="cf2-card" style="--cf2-card-accent: #718096;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge" style="background: #718096;">N2</span>
-              <span class="cf2-card__title">Campo relazionale / Co-regolazione <em style="font-weight: 400; color: var(--cf2-text-muted);">— nodo di supporto</em></span>
+          <div class="corso-card" style="--corso-card-accent: #718096;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge" style="background: #718096;">N2</span>
+              <span class="corso-card__title">Campo relazionale / Co-regolazione <em style="font-weight: 400; color: var(--corso-text-muted);">— nodo di supporto</em></span>
             </div>
-            <div class="cf2-card__body">
+            <div class="corso-card__body">
               <p>Il N3 non si attiva senza un campo relazionale funzionante. N2 lo sostiene: senza co-regolazione tra adulto e bambino, l'accesso al mondo condiviso non è possibile.</p>
             </div>
           </div>
@@ -213,7 +214,7 @@ export const Module02: Module = {
       subtitle: 'Rendere il Nodo interrogabile nei contesti reali',
       pipelineSide: { highlightId: 'op4', completedIds: ['op1', 'op2', 'op3'] },
       content: `
-        <div class="cf2-section">
+        <div class="corso-section">
           <p>Le domande professionali trasformano il Nodo in interrogazioni <strong>usabili da qualsiasi professionista</strong> nel proprio contesto, senza che diventi uno strumento diagnostico. Devono essere:</p>
           <ul>
             <li><strong>osservabili</strong> — si risponde guardando, non testando</li>
@@ -223,9 +224,9 @@ export const Module02: Module = {
           </ul>
         </div>
 
-        <div class="cf2-two-col">
-          <div class="cf2-box cf2-box--valid">
-            <div class="cf2-box__title">✓ Domande valide</div>
+        <div class="corso-two-col">
+          <div class="corso-box corso-box--valid">
+            <div class="corso-box__title">✓ Domande valide</div>
             <ul>
               <li>Il bambino usa il libro come <strong>occasione di scambio</strong> con l'adulto?</li>
               <li>C'è <strong>alternanza di sguardo</strong> tra libro e adulto?</li>
@@ -234,14 +235,14 @@ export const Module02: Module = {
               <li>Il bambino <strong>riprende il contatto</strong> dopo una breve interruzione?</li>
             </ul>
           </div>
-          <div class="cf2-box cf2-box--invalid">
-            <div class="cf2-box__title">✗ Formulazioni da evitare</div>
+          <div class="corso-box corso-box--invalid">
+            <div class="corso-box__title">✗ Formulazioni da evitare</div>
             <ul>
-              <li>«Il bambino ha deficit di attenzione?» <em style="color: var(--cf2-text-muted)">— classificatorio</em></li>
-              <li>«Il genitore stimola adeguatamente?» <em style="color: var(--cf2-text-muted)">— giudicante</em></li>
-              <li>«Il bambino è nella norma per questa età?» <em style="color: var(--cf2-text-muted)">— normativo</em></li>
-              <li>«Serve una valutazione neuropsichiatrica?» <em style="color: var(--cf2-text-muted)">— anticipa F3</em></li>
-              <li>«Il bambino capisce quello che diciamo?» <em style="color: var(--cf2-text-muted)">— non osservabile</em></li>
+              <li>«Il bambino ha deficit di attenzione?» <em style="color: var(--corso-text-muted)">— già classificatorio: appartiene a F3</em></li>
+              <li>«Il genitore stimola adeguatamente?» <em style="color: var(--corso-text-muted)">— giudicante</em></li>
+              <li>«Il bambino è nella norma per questa età?» <em style="color: var(--corso-text-muted)">— normativo</em></li>
+              <li>«Serve una valutazione neuropsichiatrica?» <em style="color: var(--corso-text-muted)">— anticipa F3</em></li>
+              <li>«Il bambino capisce quello che diciamo?» <em style="color: var(--corso-text-muted)">— non osservabile</em></li>
             </ul>
           </div>
         </div>
@@ -264,48 +265,48 @@ export const Module02: Module = {
         completedIds: ['op1', 'op2', 'op3', 'op4'],
       },
       content: `
-        <div class="cf2-section">
+        <div class="corso-section">
           <p>L'operatore di lettura non è una griglia, non è un modulo, non è una checklist. È la <strong>forma applicativa del Nodo</strong> nella mente del professionista che osserva: come organizza ciò che vede prima ancora di scrivere qualcosa.</p>
           <p>La forma più stabile è l'<strong>Operatore Triadico</strong>: ogni situazione viene letta attraverso tre domande strutturali simultanee.</p>
         </div>
 
-        <div class="cf2-cards cf2-cards--grid">
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #2d6a4f;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge">1</span>
-              <span class="cf2-card__title">Campo condiviso</span>
-              <span class="cf2-card__chevron">·</span>
+        <div class="corso-cards corso-cards--grid">
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #2d6a4f;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge">1</span>
+              <span class="corso-card__title">Campo condiviso</span>
+              <span class="corso-card__chevron">·</span>
             </div>
-            <div class="cf2-card__body">
+            <div class="corso-card__body">
               <p><em>Qui si sta costruendo un mondo comune o solo esecuzione parallela?</em></p>
-              <p class="cf2-card__hint">Il bambino e l'adulto si orientano insieme verso il libro — c'è un «noi» che guarda qualcosa di comune.</p>
+              <p class="corso-card__hint">Il bambino e l'adulto si orientano insieme verso il libro — c'è un «noi» che guarda qualcosa di comune.</p>
             </div>
           </div>
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #2d6a4f;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge">2</span>
-              <span class="cf2-card__title">Posizione soggettiva</span>
-              <span class="cf2-card__chevron">·</span>
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #2d6a4f;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge">2</span>
+              <span class="corso-card__title">Posizione soggettiva</span>
+              <span class="corso-card__chevron">·</span>
             </div>
-            <div class="cf2-card__body">
+            <div class="corso-card__body">
               <p><em>C'è emergenza di posizione nel valore o solo reazione/adattamento?</em></p>
-              <p class="cf2-card__hint">Il bambino indica, mostra, vocalizza — c'è iniziativa e non solo risposta agli stimoli dell'adulto.</p>
+              <p class="corso-card__hint">Il bambino indica, mostra, vocalizza — c'è iniziativa e non solo risposta agli stimoli dell'adulto.</p>
             </div>
           </div>
-          <div class="cf2-card cf2-card--open" style="--cf2-card-accent: #2d6a4f;">
-            <div class="cf2-card__head">
-              <span class="cf2-card__badge">3</span>
-              <span class="cf2-card__title">Rapporto con il limite</span>
-              <span class="cf2-card__chevron">·</span>
+          <div class="corso-card corso-card--open" style="--corso-card-accent: #2d6a4f;">
+            <div class="corso-card__head">
+              <span class="corso-card__badge">3</span>
+              <span class="corso-card__title">Rapporto con il limite</span>
+              <span class="corso-card__chevron">·</span>
             </div>
-            <div class="cf2-card__body">
+            <div class="corso-card__body">
               <p><em>Il limite è abitabile o distrugge il campo?</em></p>
-              <p class="cf2-card__hint">Il bambino accetta di condividere il controllo del libro; la sequenza si interrompe e riprende senza disorganizzazione.</p>
+              <p class="corso-card__hint">Il bambino accetta di condividere il controllo del libro; la sequenza si interrompe e riprende senza disorganizzazione.</p>
             </div>
           </div>
         </div>
 
-        <blockquote class="cf2-blockquote">«Il campo si organizza: c'è orientamento comune verso un oggetto mediatore, iniziativa del bambino nel mostrare, e capacità di riprendere dopo brevi interruzioni. La configurazione è fragile (uso discontinuo) ma evolutivamente aperta.»</blockquote>
+        <blockquote class="corso-blockquote">«Il campo si organizza: c'è orientamento comune verso un oggetto mediatore, iniziativa del bambino nel mostrare, e capacità di riprendere dopo brevi interruzioni. La configurazione è fragile (uso discontinuo) ma evolutivamente aperta.»</blockquote>
       `,
       guardrail: {
         code: 'C4',
@@ -325,12 +326,12 @@ export const Module02: Module = {
         completedIds: ['op1', 'op2', 'op3', 'op4', 'op5'],
       },
       content: `
-        <div class="cf2-section">
+        <div class="corso-section">
           <p>Le famiglie di output sono <strong>classi di prodotti possibili</strong> — non ancora strumenti. La stessa configurazione evolutiva può generare output diversi per destinatari diversi, ma con <strong>la stessa grammatica</strong>.</p>
           <p>Ogni famiglia ha destinatari, funzione e forma diversi — ma tutte derivano dalla stessa configurazione evolutiva prodotta dall'Operatore di lettura.</p>
         </div>
 
-        <table class="cf2-table">
+        <table class="corso-table">
           <thead>
             <tr><th>Famiglia</th><th>Destinatario</th><th>Funzione</th></tr>
           </thead>
@@ -342,7 +343,7 @@ export const Module02: Module = {
           </tbody>
         </table>
 
-        <p class="cf2-emph cf2-emph--center">Stessa struttura. Quattro usi. Zero prescrizioni.</p>
+        <p class="corso-emph corso-emph--center">Stessa struttura. Quattro usi. Zero prescrizioni.</p>
       `,
       guardrail: {
         code: 'C5',
@@ -362,12 +363,12 @@ export const Module02: Module = {
         completedIds: ['op1', 'op2', 'op3', 'op4', 'op5', 'op6'],
       },
       content: `
-        <div class="cf2-section">
+        <div class="corso-section">
           <p>L'output-tipo vuoto è la <strong>struttura compilabile</strong> che deriva dall'operatore di lettura ma <strong>non è ancora uno strumento</strong>. Non contiene indicatori prefissati, criteri valutativi, prescrizioni.</p>
           <p>Serve a <strong>verificare che la catena regge</strong> prima di costruire lo strumento reale: se un campo non si riesce a compilare in modo neutro, la pipeline ha un problema a monte.</p>
         </div>
 
-        <pre style="background: var(--cf2-bg); border: 1px solid var(--cf2-border); border-radius: var(--cf2-radius-md); padding: 16px; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 0.82rem; line-height: 1.5; overflow-x: auto;">
+        <pre style="background: var(--corso-bg); border: 1px solid var(--corso-border); border-radius: var(--corso-radius-md); padding: 16px; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 0.82rem; line-height: 1.5; overflow-x: auto;">
 Titolo del template:  Lettura di una situazione di mondo condiviso
 Scopo:                Descrivere come si organizza il campo di esperienza
                       condivisa senza classificare né prescrivere.
@@ -382,7 +383,7 @@ Sezione 6 — Note per F3            [solo annotazioni, no prescrizioni]
 Non compilare: età standard · soglie · diagnosi · indicazioni terapeutiche
         </pre>
 
-        <p class="cf2-narrative__caption">Il template è la <strong>prova che la traduzione è riuscita</strong>: se ogni sezione si lascia compilare in linguaggio neutro e osservativo, la pipeline ha tenuto.</p>
+        <p class="corso-narrative__caption">Il template è la <strong>prova che la traduzione è riuscita</strong>: se ogni sezione si lascia compilare in linguaggio neutro e osservativo, la pipeline ha tenuto.</p>
       `,
       guardrail: {
         code: 'C6',
@@ -401,11 +402,11 @@ Non compilare: età standard · soglie · diagnosi · indicazioni terapeutiche
         completedIds: ['f1', ...ALL_OPS, 'f3'],
       },
       content: `
-        <div class="cf2-section">
+        <div class="corso-section">
           <p>La catena è completa. Il professionista dispone di una <strong>Configurazione Evolutiva</strong> e di un template pronto. La F2 ha fatto il suo lavoro.</p>
         </div>
 
-        <table class="cf2-table">
+        <table class="corso-table">
           <thead>
             <tr><th>Livello</th><th>Chi</th><th>Funzione</th></tr>
           </thead>
@@ -416,11 +417,11 @@ Non compilare: età standard · soglie · diagnosi · indicazioni terapeutiche
           </tbody>
         </table>
 
-        <p class="cf2-emph cf2-emph--center"><strong>Il metodo orienta. Non decide.</strong></p>
+        <p class="corso-emph corso-emph--center"><strong>Il metodo orienta. Non decide.</strong></p>
 
-        <hr class="cf2-divider" />
+        <hr class="corso-divider" />
 
-        <div class="cf2-scena">
+        <div class="corso-scena">
           <p><strong>Dal caso «lettura condivisa», in F3 potrebbero nascere:</strong></p>
           <ul>
             <li>Protocollo osservativo per il bilancio dei 18 mesi</li>
@@ -428,10 +429,10 @@ Non compilare: età standard · soglie · diagnosi · indicazioni terapeutiche
             <li>Scheda narrativa per i genitori (restituzione accessibile)</li>
             <li>Protocollo di ricerca longitudinale</li>
           </ul>
-          <p class="cf2-card__hint">Nessuno di questi strumenti è ancora la F2. La F2 ha reso possibile costruirli in modo coerente.</p>
+          <p class="corso-card__hint">Nessuno di questi strumenti è ancora la F2. La F2 ha reso possibile costruirli in modo coerente.</p>
         </div>
 
-        <p class="cf2-narrative__caption" style="text-align: center;">Nel Modulo 3 approfondiremo i Nodi Trasversali — il cuore della pipeline.</p>
+        <p class="corso-narrative__caption" style="text-align: center;">Nel Modulo 3 approfondiremo i Nodi Trasversali — il cuore della pipeline.</p>
       `,
       guardrail: {
         code: 'C7',

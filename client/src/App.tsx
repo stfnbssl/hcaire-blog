@@ -52,6 +52,9 @@ import SviluppoBambinoPipelineRicercaOverview from './pages/sviluppo-bambino/Svi
 import SviluppoBambinoPipelineNuovaRicerca from './pages/sviluppo-bambino/SviluppoBambinoPipelineNuovaRicerca';
 
 const CorsoFase2Page = lazy(() => import('./pages/sviluppo-bambino/corso-fase2/CorsoFase2Page'));
+const CorsoFase1Page = lazy(() => import('./pages/sviluppo-bambino/corso-fase1/CorsoFase1Page'));
+const CorsoFase3Page = lazy(() => import('./pages/sviluppo-bambino/corso-fase3/CorsoFase3Page'));
+const PresentazioneCorsi = lazy(() => import('./pages/sviluppo-bambino/PresentazioneCorsi'));
 
 const KnowledgeBase    = lazy(() => import('./pages/bartleby/KnowledgeBase'));
 const AdminSiteConfig  = lazy(() => import('./pages/AdminSiteConfig'));
@@ -177,10 +180,20 @@ function AppLayout() {
           <Route path="/sviluppo-bambino/produzioni/pipeline/temi/:temaId/stress-test"         element={<SviluppoBambinoPipelineStressTest />} />
           <Route path="/sviluppo-bambino/modello"                               element={<SviluppoBambinoModello />} />
           <Route path="/sviluppo-bambino/modello/:asseSlug"                     element={<SviluppoBambinoAsseOverview />} />
-          {/* Corso "Traduzione interdisciplinare" — slide app */}
+          {/* Presentazione dei corsi (F1, F2, F3) */}
+          <Route path="/sviluppo-bambino/presentazione"                                                 element={<AdminSuspense><PresentazioneCorsi /></AdminSuspense>} />
+          {/* Corso F2 — Traduzione interdisciplinare */}
           <Route path="/sviluppo-bambino/traduzione-interdisciplinare"                                  element={<AdminSuspense><CorsoFase2Page /></AdminSuspense>} />
           <Route path="/sviluppo-bambino/traduzione-interdisciplinare/:moduleId"                        element={<AdminSuspense><CorsoFase2Page /></AdminSuspense>} />
           <Route path="/sviluppo-bambino/traduzione-interdisciplinare/:moduleId/:slideId"               element={<AdminSuspense><CorsoFase2Page /></AdminSuspense>} />
+          {/* Corso F1 — Fondazione ontologica */}
+          <Route path="/sviluppo-bambino/fondazione-ontologica"                                         element={<AdminSuspense><CorsoFase1Page /></AdminSuspense>} />
+          <Route path="/sviluppo-bambino/fondazione-ontologica/:moduleId"                               element={<AdminSuspense><CorsoFase1Page /></AdminSuspense>} />
+          <Route path="/sviluppo-bambino/fondazione-ontologica/:moduleId/:slideId"                      element={<AdminSuspense><CorsoFase1Page /></AdminSuspense>} />
+          {/* Corso F3 — Strumenti operativi contestualizzati */}
+          <Route path="/sviluppo-bambino/strumenti-operativi-contestualizzati"                          element={<AdminSuspense><CorsoFase3Page /></AdminSuspense>} />
+          <Route path="/sviluppo-bambino/strumenti-operativi-contestualizzati/:moduleId"                element={<AdminSuspense><CorsoFase3Page /></AdminSuspense>} />
+          <Route path="/sviluppo-bambino/strumenti-operativi-contestualizzati/:moduleId/:slideId"       element={<AdminSuspense><CorsoFase3Page /></AdminSuspense>} />
           {/* Assi Strutturali — sezione top-level */}
           <Route path="/assi-strutturali"                                       element={<SviluppoBambinoAssiLanding />} />
           <Route path="/assi-strutturali/capitoli"                              element={<SviluppoBambinoAssi />} />

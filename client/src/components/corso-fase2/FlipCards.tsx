@@ -34,47 +34,47 @@ export default function FlipCards({ config }: Props) {
     }
   };
 
-  const gridStyle = { ['--cf2-flip-cols' as never]: String(cols) } as React.CSSProperties;
+  const gridStyle = { ['--corso-flip-cols' as never]: String(cols) } as React.CSSProperties;
 
   return (
-    <div className="cf2-flip">
-      <div className="cf2-flip__controls">
-        <button type="button" className="cf2-flip__action" onClick={flipAll}>
+    <div className="corso-flip">
+      <div className="corso-flip__controls">
+        <button type="button" className="corso-flip__action" onClick={flipAll}>
           {allFlipped ? 'Torna al fronte' : 'Gira tutte'}
         </button>
       </div>
 
-      <div className="cf2-flip__grid" style={gridStyle}>
+      <div className="corso-flip__grid" style={gridStyle}>
         {cards.map((card) => {
           const isFlipped = flipped.has(card.id);
           return (
             <button
               key={card.id}
               type="button"
-              className={`cf2-flip__card ${isFlipped ? 'cf2-flip__card--flipped' : ''}`}
+              className={`corso-flip__card ${isFlipped ? 'corso-flip__card--flipped' : ''}`}
               onClick={() => toggleCard(card.id)}
               aria-pressed={isFlipped}
             >
-              <div className="cf2-flip__inner">
-                <div className="cf2-flip__face cf2-flip__face--front">
-                  {card.number && <span className="cf2-flip__num">{card.number}</span>}
-                  <span className="cf2-flip__title">{card.title}</span>
-                  {card.question && <em className="cf2-flip__q">{card.question}</em>}
-                  <span className="cf2-flip__hint" aria-hidden>↩ gira</span>
+              <div className="corso-flip__inner">
+                <div className="corso-flip__face corso-flip__face--front">
+                  {card.number && <span className="corso-flip__num">{card.number}</span>}
+                  <span className="corso-flip__title">{card.title}</span>
+                  {card.question && <em className="corso-flip__q">{card.question}</em>}
+                  <span className="corso-flip__hint" aria-hidden>â†© gira</span>
                 </div>
-                <div className="cf2-flip__face cf2-flip__face--back">
-                  <div className="cf2-flip__back-section cf2-flip__back-section--valid">
-                    <span className="cf2-flip__back-label">✓ Valido</span>
-                    <p className="cf2-flip__back-text">{card.valid.text}</p>
+                <div className="corso-flip__face corso-flip__face--back">
+                  <div className="corso-flip__back-section corso-flip__back-section--valid">
+                    <span className="corso-flip__back-label">âœ“ Valido</span>
+                    <p className="corso-flip__back-text">{card.valid.text}</p>
                     {card.valid.perche && (
-                      <em className="cf2-flip__back-perche">{card.valid.perche}</em>
+                      <em className="corso-flip__back-perche">{card.valid.perche}</em>
                     )}
                   </div>
-                  <div className="cf2-flip__back-section cf2-flip__back-section--invalid">
-                    <span className="cf2-flip__back-label">✗ Non valido</span>
-                    <p className="cf2-flip__back-text">{card.invalid.text}</p>
+                  <div className="corso-flip__back-section corso-flip__back-section--invalid">
+                    <span className="corso-flip__back-label">âœ— Non valido</span>
+                    <p className="corso-flip__back-text">{card.invalid.text}</p>
                     {card.invalid.perche && (
-                      <em className="cf2-flip__back-perche">{card.invalid.perche}</em>
+                      <em className="corso-flip__back-perche">{card.invalid.perche}</em>
                     )}
                   </div>
                 </div>
@@ -85,17 +85,17 @@ export default function FlipCards({ config }: Props) {
       </div>
 
       {reformulationTable && (
-        <div className="cf2-flip__table">
+        <div className="corso-flip__table">
           <button
             type="button"
-            className="cf2-flip__table-toggle"
+            className="corso-flip__table-toggle"
             onClick={() => setTableOpen((v) => !v)}
             aria-expanded={tableOpen}
           >
-            <span aria-hidden>{tableOpen ? '−' : '+'}</span> {reformulationTable.title}
+            <span aria-hidden>{tableOpen ? 'âˆ’' : '+'}</span> {reformulationTable.title}
           </button>
           {tableOpen && (
-            <table className="cf2-table">
+            <table className="corso-table">
               <thead>
                 <tr>
                   <th>{reformulationTable.headers[0]}</th>
