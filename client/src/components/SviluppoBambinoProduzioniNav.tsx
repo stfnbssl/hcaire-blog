@@ -1,12 +1,18 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useIsAdmin } from '../hooks/useIsAdmin';
 
 const PAGE_LINKS = [
   { to: '/sviluppo-bambino/produzioni/temi', label: 'Temi' },
   { to: '/sviluppo-bambino/produzioni/pipeline', label: 'Pipeline' },
 ];
 
+const ADMIN_LINKS = [
+  { to: '/archivio/temi', label: 'Archivio temi' },
+];
+
 export default function SviluppoBambinoProduzioniNav() {
   const location = useLocation();
+  const isAdmin = useIsAdmin();
   const onRoot = location.pathname === '/sviluppo-bambino/produzioni';
 
   return (
@@ -48,6 +54,26 @@ export default function SviluppoBambinoProduzioniNav() {
               {link.label}
             </Link>
           ))}
+
+          {isAdmin && ADMIN_LINKS.length > 0 && (
+            <>
+              <span className="self-center text-amber-300 mx-1">·</span>
+              {ADMIN_LINKS.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`flex-shrink-0 text-xs px-3 py-1 rounded-md transition-colors whitespace-nowrap ${
+                    location.pathname.startsWith(link.to)
+                      ? 'bg-amber-200 text-amber-900 font-medium'
+                      : 'text-amber-700 hover:text-amber-900 hover:bg-amber-100'
+                  }`}
+                  title="Solo admin"
+                >
+                  ⚗ {link.label}
+                </Link>
+              ))}
+            </>
+          )}
         </nav>
       </div>
     </div>

@@ -70,6 +70,9 @@ const AdminLetture        = lazy(() => import('./pages/AdminLetture'));
 const AdminLetturaNuova   = lazy(() => import('./pages/AdminLetturaNuova'));
 const AdminLetturaDetail  = lazy(() => import('./pages/AdminLetturaDetail'));
 
+const ArchivioTemiIndexPage = lazy(() => import('./pages/archivio/ArchivioTemiIndexPage'));
+const ArchivioTemaFormPage  = lazy(() => import('./pages/archivio/ArchivioTemaFormPage'));
+
 const clerkPublishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string;
 
 function RedirectAsseChapters() {
@@ -212,6 +215,10 @@ function AppLayout() {
           <Route path="/admin/letture/:slug"    element={<AdminRoute><AdminLetturaDetail /></AdminRoute>} />
           <Route path="/admin/site-config"  element={<AdminRoute><AdminSiteConfig /></AdminRoute>} />
           <Route path="/admin/testi"        element={<AdminRoute><AdminSiteContent /></AdminRoute>} />
+          {/* Archivio temi (admin) — vedi docs/90-todo/laboratorio-d5b-backend.md §12 */}
+          <Route path="/archivio/temi"          element={<AdminRoute><ArchivioTemiIndexPage /></AdminRoute>} />
+          <Route path="/archivio/temi/nuovo"    element={<AdminRoute><ArchivioTemaFormPage /></AdminRoute>} />
+          <Route path="/archivio/temi/:temaId"  element={<AdminRoute><ArchivioTemaFormPage /></AdminRoute>} />
           <Route path="*"               element={<NotFound />} />
         </Routes>
       </div>
