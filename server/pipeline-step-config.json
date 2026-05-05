@@ -1,6 +1,6 @@
 {
-  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. Aggiornato con i tre nuovi step metodologici: f2_step_2a, f2_step_4b, f2_step_6. f2_step_1 rimosso: la discovery dei temi avviene ora nell'Archivio temi (vedi docs/90-todo/laboratorio-d5b-backend.md §12), non più come step di pipeline. v2.2: rimosso `scelta_tema` da inputs_esterni di f2_step_2 (auto-popolato dal bridge Archivio→Laboratorio al momento della promozione, quindi non va più chiesto in UI). v2.3: rese `required: true` le dipendenze precedentemente facoltative su f2_step_2a (in step 3 e 4b) e su f2_step_4b (in step 6), per forzare la sequenza lineare 2 → 2a → 3 → 4 → 4b → 5 → 6. Per saltare uno step va usata l'azione esplicita di skip.",
-  "_version": "2.3",
+  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. Aggiornato con i tre nuovi step metodologici: f2_step_2a, f2_step_4b, f2_step_6. f2_step_1 rimosso: la discovery dei temi avviene ora nell'Archivio temi (vedi docs/90-todo/laboratorio-d5b-backend.md §12), non più come step di pipeline. v2.2: rimosso `scelta_tema` da inputs_esterni di f2_step_2 (auto-popolato dal bridge Archivio→Laboratorio al momento della promozione, quindi non va più chiesto in UI). v2.3: rese `required: true` le dipendenze precedentemente facoltative su f2_step_2a (in step 3 e 4b) e su f2_step_4b (in step 6), per forzare la sequenza lineare 2 → 2a → 3 → 4 → 4b → 5 → 6. Per saltare uno step va usata l'azione esplicita di skip. v2.4: f2_step_2a e f2_step_4b ora skippabili (`can_skip: true`) con motivazione obbligatoria — necessario per dare valvola di sfogo alla sequenza lineare introdotta da v2.3.",
+  "_version": "2.4",
   "steps": [
     {
       "id": "f2_step_2",
@@ -20,7 +20,7 @@
       "id": "f2_step_2a",
       "label": "Verifica Nodi Trasversali",
       "phase": "F2",
-      "_note": "Nuovo step metodologico. Mappa i nodi candidati di STEP 2 sui Nodi Trasversali canonici N1-N7. Nessun input esterno richiesto.",
+      "_note": "Nuovo step metodologico. Mappa i nodi candidati di STEP 2 sui Nodi Trasversali canonici N1-N7. Nessun input esterno richiesto. v2.4: skippabile (richiede motivazione).",
       "output_prefix": "node-verification",
       "output_path_template": "ricerche/{ricerca_id}/node-verification-v{N}.json",
       "inputs_pipeline": [
@@ -29,7 +29,8 @@
       "inputs_strutturali": ["f2-step-2a-verifica-nodi-trasversali/node-verification-schema.json"],
       "inputs_esterni": [],
       "verifica": false,
-      "can_skip": false,
+      "can_skip": true,
+      "skip_condition": "Nodi candidati di f2_step_2 già evidenti, mapping su N1-N7 ridondante",
       "blocks": ["f2_step_3", "f2_step_4b"]
     },
     {
@@ -67,7 +68,7 @@
       "id": "f2_step_4b",
       "label": "CE Prototipica",
       "phase": "F2",
-      "_note": "Nuovo step metodologico. Traduce la micro-matrice nella Grammatica delle Configurazioni (CE con dimensioni S, R, D, T, A). Nessun input esterno richiesto.",
+      "_note": "Nuovo step metodologico. Traduce la micro-matrice nella Grammatica delle Configurazioni (CE con dimensioni S, R, D, T, A). Nessun input esterno richiesto. v2.4: skippabile (richiede motivazione).",
       "output_prefix": "ce-prototipica",
       "output_path_template": "ricerche/{ricerca_id}/ce-prototipica-v{N}.json",
       "inputs_pipeline": [
@@ -77,7 +78,8 @@
       "inputs_strutturali": ["f2-step-4b-ce-prototipica/ce-prototipica-schema.json"],
       "inputs_esterni": [],
       "verifica": false,
-      "can_skip": false,
+      "can_skip": true,
+      "skip_condition": "Micro-matrice già strutturata in modo formalizzabile direttamente, CE prototipica ridondante",
       "blocks": ["f2_step_5", "f2_step_6"]
     },
     {

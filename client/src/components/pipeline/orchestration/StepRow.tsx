@@ -55,6 +55,14 @@ export default function StepRow(props: StepRowProps) {
   const btn = ACTION_BUTTONS[state.action];
   const isDisabled = state.action === 'awaiting_deps';
 
+  // Skip è proposto come bottone secondario inline accanto al primario per gli step
+  // skippabili in stato "lavorabile" (non_avviato | attende_input). Per gli stati
+  // lanciabili o bloccati da deps, dare comunque la via di skip è coerente con la
+  // sequenza lineare forzata della pipeline v2.3+.
+  const showSkipButton = state.can_skip && (
+    state.status === 'non_avviato' || state.status === 'attende_input'
+  );
+
   function handlePrimary() {
     switch (state.action) {
       case 'launch':         return props.onLaunch();
@@ -69,7 +77,8 @@ export default function StepRow(props: StepRowProps) {
   }
 
   const showHistoryItem = state.status === 'completato' || state.status === 'verificato' || state.status === 'fallito' || state.status === 'richiede_correzione' || state.status === 'saltato';
-  const showSkipItem = state.can_skip && (state.status === 'non_avviato' || state.status === 'attende_input');
+  // Skip è esposto come bottone primario secondario (vedi `showSkipButton` sopra),
+  // non più nel menu ▾, per renderlo immediatamente individuabile.
   const isInTerminal = state.status === 'completato' || state.status === 'verificato' || state.status === 'saltato' || state.status === 'richiede_correzione' || state.status === 'fallito' || state.status === 'in_verifica';
   const showRollbackItem = isInTerminal;
   // Vedi output: solo per step che hanno prodotto un risultato e per cui esiste un'execution.
@@ -112,6 +121,15 @@ export default function StepRow(props: StepRowProps) {
             {btn.label}
           </button>
         )}
+        {showSkipButton && (
+          <button
+            onClick={props.onSkip}
+            className="text-sm px-3 py-1.5 rounded-md border border-slate-400 text-slate-700 hover:bg-slate-50 transition-colors"
+            title="Salta questo step (richiede motivazione)"
+          >
+            Salta
+          </button>
+        )}
         {/* Cancel mentre in esecuzione: il primario è "Vedi log", aggiungo un secondario per
             terminare la run di Cowork. Backend e local server già supportano (SIGTERM al
             processo claude via CoworkRunner.cancel). */}
@@ -124,7 +142,7 @@ export default function StepRow(props: StepRowProps) {
             Annulla
           </button>
         )}
-        {(showHistoryItem || showSkipItem || showRollbackItem || showViewOutputItem || showViewLogsItem) && (
+        {(showHistoryItem || showRollbackItem || showViewOutputItem || showViewLogsItem) && (
           <div className="relative" ref={menuContainerRef}>
             <button
               onClick={() => setMenuOpen((v) => !v)}
@@ -144,12 +162,6 @@ export default function StepRow(props: StepRowProps) {
                     onClick={() => { setMenuOpen(false); props.onViewLogs(); }}
                     className="block w-full text-left px-3 py-2 hover:bg-slate-50"
                   >Vedi log</button>
-                )}
-                {showSkipItem && (
-                  <button
-                    onClick={() => { setMenuOpen(false); props.onSkip(); }}
-                    className="block w-full text-left px-3 py-2 hover:bg-slate-50"
-                  >Salta step</button>
                 )}
                 {showHistoryItem && (
                   <button
