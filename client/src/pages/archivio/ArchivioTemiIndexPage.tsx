@@ -9,6 +9,7 @@ import {
 import {
   Edit as EditIcon, Delete as DeleteIcon,
   PlayArrow as PromuoviIcon,
+  Science as LaboratorioIcon,
 } from '@mui/icons-material';
 import {
   TEMA_STATI, TEMA_STATO_LABEL, TEMA_ASSE_LABEL,
@@ -108,6 +109,10 @@ export default function ArchivioTemiIndexPage() {
 
   const isEditable  = (t: Tema) => (TEMA_STATI_EDITABILI_ARCHIVIO as string[]).includes(t.stato);
   const isPromuovibile = (t: Tema) => (TEMA_STATI_PROMUOVIBILI as string[]).includes(t.stato);
+  // Stati in cui esiste (bridge) un PipelineContext linkabile al laboratorio.
+  // Per ora il flusso è solo: maturo → promuovi → promosso (con bridge attivato).
+  const hasLaboratorio = (t: Tema): boolean =>
+    !(['bozza', 'maturo', 'abbandonato'] as string[]).includes(t.stato);
 
   return (
     <>
@@ -210,6 +215,17 @@ export default function ArchivioTemiIndexPage() {
                       {new Date(t.updatedAt).toLocaleDateString('it-IT')}
                     </TableCell>
                     <TableCell align="right" sx={{ whiteSpace: 'nowrap' }}>
+                      {hasLaboratorio(t) && (
+                        <Tooltip title="Apri laboratorio (pipeline F2)">
+                          <IconButton
+                            size="small"
+                            color="primary"
+                            onClick={() => navigate(`/sviluppo-bambino/produzioni/pipeline/ricerche/${t.tema_id}`)}
+                          >
+                            <LaboratorioIcon fontSize="small" />
+                          </IconButton>
+                        </Tooltip>
+                      )}
                       {isPromuovibile(t) && (
                         <Tooltip title="Promuovi a Ricerca F2">
                           <IconButton

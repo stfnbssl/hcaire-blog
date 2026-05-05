@@ -8,6 +8,7 @@ import Tema, {
   TemaAsse,
   TemaStato,
 } from '../models/Tema';
+import PipelineContext from '../models/PipelineContext';
 
 // ---------- envelope ----------
 
@@ -220,6 +221,43 @@ export async function promuoveTema(req: Request, res: Response) {
       { $set: { stato: 'promosso', promosso_at: now } },
       { new: true },
     ).lean();
+
+    // BRIDGE TRANSITORIO: oltre al flip di stato sul `temi`, creiamo un
+    // `PipelineContext` con `context_type: 'ricerca'` e `context_id = tema_id`
+    // per riusare la pipeline F2 esistente (UI: SviluppoBambinoPipelineRicercaOverview,
+    // backend: pipelineController.runStep / verifyExecution / ...).
+    //
+    // Questo introduce due collection con record sovrapposti per la durata del
+    // refactor Laboratorio (vedi docs/90-todo/laboratorio-d5b-backend.md). Il
+    // refactor D5b consoliderà tutto su `temi`.
+    //
+    // Idempotente: se il PipelineContext esiste già (ad esempio per re-promozione
+    // futura, oggi non possibile), non lo duplica.
+    const existingContext = await PipelineContext.findOne({ context_id: temaId });
+    if (!existingContext) {
+      try {
+        await PipelineContext.create({
+          context_type: 'ricerca',
+          context_id: temaId,
+          label: current.label,
+          theme_id: null,
+          ricerca_origine: null,
+          dispositivo_sorgente: null,
+          step_states: {},
+          pending_decision: null,
+          steps_completed: [],
+          steps_in_progress: [],
+          steps_failed: [],
+          robustezza: null,
+          correzioni_residue: 0,
+          has_revisioni: false,
+        });
+        console.log(`[archivio] bridge: creato PipelineContext "${temaId}" (context_type: ricerca)`);
+      } catch (bridgeErr) {
+        // Il flip di stato è già avvenuto. Loggiamo il problema ma non rolling back.
+        console.error(`[archivio] bridge fallito per "${temaId}":`, bridgeErr);
+      }
+    }
 
     console.log(`[archivio] tema "${temaId}" promosso da ${userId} a stato 'promosso'`);
     return ok(res, 200, { tema: updated });
