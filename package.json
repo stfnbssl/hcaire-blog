@@ -8,6 +8,7 @@
     "build": "npm run build --workspace=server && npm run build --workspace=client && npm run build --workspace=local",
     "sync-pipeline": "node scripts/sync-pipeline.mjs",
     "seed:archivio": "node --env-file=server/.env scripts/seed-archivio.mjs",
+    "heal:archivio-bridge": "node --env-file=server/.env scripts/heal-archivio-bridge.mjs",
     "test:pipeline-config": "node --test scripts/test-pipeline-step-config.mjs",
     "test:pipeline-mapper": "node --no-warnings --test --experimental-strip-types server/src/services/__tests__/pipelineMappers.test.ts",
     "test:pipeline-enablement": "node --no-warnings --test --experimental-strip-types server/src/services/__tests__/stepEnablement.test.ts",
