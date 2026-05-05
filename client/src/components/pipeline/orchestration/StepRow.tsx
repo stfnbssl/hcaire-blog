@@ -56,12 +56,14 @@ export default function StepRow(props: StepRowProps) {
   const isDisabled = state.action === 'awaiting_deps';
 
   // Skip è proposto come bottone secondario inline accanto al primario per gli step
-  // skippabili in stato "lavorabile" (non_avviato | attende_input). Per gli stati
-  // lanciabili o bloccati da deps, dare comunque la via di skip è coerente con la
-  // sequenza lineare forzata della pipeline v2.3+.
+  // skippabili in stato "lavorabile" (non_avviato | attende_input). È disabilitato
+  // quando lo step non è ancora il "fronte attivo" della pipeline (dipendenze a
+  // monte non soddisfatte): non si può scegliere di saltare uno step che non è
+  // ancora il proprio turno.
   const showSkipButton = state.can_skip && (
     state.status === 'non_avviato' || state.status === 'attende_input'
   );
+  const skipDisabled = isDisabled;
 
   function handlePrimary() {
     switch (state.action) {
@@ -124,8 +126,17 @@ export default function StepRow(props: StepRowProps) {
         {showSkipButton && (
           <button
             onClick={props.onSkip}
-            className="text-sm px-3 py-1.5 rounded-md border border-slate-400 text-slate-700 hover:bg-slate-50 transition-colors"
-            title="Salta questo step (richiede motivazione)"
+            disabled={skipDisabled}
+            className={`text-sm px-3 py-1.5 rounded-md transition-colors ${
+              skipDisabled
+                ? 'border border-slate-200 text-slate-400 cursor-not-allowed'
+                : 'border border-slate-400 text-slate-700 hover:bg-slate-50'
+            }`}
+            title={
+              skipDisabled
+                ? 'Disponibile quando lo step diventa lanciabile (dipendenze a monte da completare)'
+                : 'Salta questo step (richiede motivazione)'
+            }
           >
             Salta
           </button>
