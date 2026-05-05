@@ -1,6 +1,6 @@
 {
-  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. Aggiornato con i tre nuovi step metodologici: f2_step_2a, f2_step_4b, f2_step_6. f2_step_1 rimosso: la discovery dei temi avviene ora nell'Archivio temi (vedi docs/90-todo/laboratorio-d5b-backend.md §12), non più come step di pipeline. v2.2: rimosso `scelta_tema` da inputs_esterni di f2_step_2 (auto-popolato dal bridge Archivio→Laboratorio al momento della promozione, quindi non va più chiesto in UI).",
-  "_version": "2.2",
+  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. Aggiornato con i tre nuovi step metodologici: f2_step_2a, f2_step_4b, f2_step_6. f2_step_1 rimosso: la discovery dei temi avviene ora nell'Archivio temi (vedi docs/90-todo/laboratorio-d5b-backend.md §12), non più come step di pipeline. v2.2: rimosso `scelta_tema` da inputs_esterni di f2_step_2 (auto-popolato dal bridge Archivio→Laboratorio al momento della promozione, quindi non va più chiesto in UI). v2.3: rese `required: true` le dipendenze precedentemente facoltative su f2_step_2a (in step 3 e 4b) e su f2_step_4b (in step 6), per forzare la sequenza lineare 2 → 2a → 3 → 4 → 4b → 5 → 6. Per saltare uno step va usata l'azione esplicita di skip.",
+  "_version": "2.3",
   "steps": [
     {
       "id": "f2_step_2",
@@ -40,7 +40,7 @@
       "output_path_template": "ricerche/{ricerca_id}/theme-verification-v{N}.json",
       "inputs_pipeline": [
         { "step": "f2_step_2", "role": "theme-relevance", "required": true, "requires_verifica": true },
-        { "step": "f2_step_2a", "role": "node-verification", "required": false, "_note": "Facoltativo ma raccomandato: migliora la discriminazione dei nodi" }
+        { "step": "f2_step_2a", "role": "node-verification", "required": true, "_note": "Sequenza lineare v2.3: f2_step_2a obbligatorio prima di f2_step_3" }
       ],
       "inputs_strutturali": ["assi-strutturali.json"],
       "inputs_esterni": [],
@@ -72,7 +72,7 @@
       "output_path_template": "ricerche/{ricerca_id}/ce-prototipica-v{N}.json",
       "inputs_pipeline": [
         { "step": "f2_step_4", "role": "theme-matrix", "required": true },
-        { "step": "f2_step_2a", "role": "node-verification", "required": false, "_note": "Raccomandato: fornisce i nodi canonici già mappati" }
+        { "step": "f2_step_2a", "role": "node-verification", "required": true, "_note": "Sequenza lineare v2.3: f2_step_2a obbligatorio prima di f2_step_4b" }
       ],
       "inputs_strutturali": ["f2-step-4b-ce-prototipica/ce-prototipica-schema.json"],
       "inputs_esterni": [],
@@ -105,7 +105,7 @@
       "output_path_template": "ricerche/{ricerca_id}/output-tipo-vuoto-v{N}.json",
       "inputs_pipeline": [
         { "step": "f2_step_5", "role": "output-family", "required": true, "requires_verifica": true },
-        { "step": "f2_step_4b", "role": "ce-prototipica", "required": false, "_note": "Raccomandato: fornisce la CE Prototipica già formalizzata" },
+        { "step": "f2_step_4b", "role": "ce-prototipica", "required": true, "_note": "Sequenza lineare v2.3: f2_step_4b obbligatorio prima di f2_step_6" },
         { "step": "f2_step_4", "role": "theme-matrix", "required": true },
         { "step": "f2_step_3", "role": "theme-verification", "required": true }
       ],
