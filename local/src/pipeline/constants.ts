@@ -37,8 +37,8 @@ export const MOCK_MODE = (process.env.PIPELINE_MOCK_MODE ?? 'true').toLowerCase(
 export const SERVER_VERSION = '1.0.0';
 
 // step_id → cartella sotto STEPS_ROOT (D6 §2)
+// f2_step_1 rimosso: la discovery temi è ora gestita dall'Archivio temi.
 export const STEP_FOLDER_MAP: Record<string, string> = {
-  'f2_step_1':  'f2-step-1-ricerca-temi',
   'f2_step_2':  'f2-step-2-rilevanza-strutturale',
   'f2_step_2a': 'f2-step-2a-verifica-nodi-trasversali',
   'f2_step_3':  'f2-step-3-verifica-strutturale',

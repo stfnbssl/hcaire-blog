@@ -1,31 +1,14 @@
 {
-  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. Aggiornato con i tre nuovi step metodologici: f2_step_2a, f2_step_4b, f2_step_6.",
-  "_version": "2.0",
+  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. Aggiornato con i tre nuovi step metodologici: f2_step_2a, f2_step_4b, f2_step_6. f2_step_1 rimosso: la discovery dei temi avviene ora nell'Archivio temi (vedi docs/90-todo/laboratorio-d5b-backend.md §12), non più come step di pipeline.",
+  "_version": "2.1",
   "steps": [
-    {
-      "id": "f2_step_1",
-      "label": "Discovery",
-      "phase": "F2",
-      "output_prefix": "theme-discovery",
-      "output_path_template": "ricerche/{ricerca_id}/theme-discovery-v{N}.json",
-      "inputs_pipeline": [],
-      "inputs_strutturali": ["assi-strutturali.json"],
-      "inputs_esterni": [
-        { "id": "fonti_web", "label": "Fonti di ricerca esterne", "type": "esterno_facoltativo", "schema": null }
-      ],
-      "verifica": false,
-      "can_skip": false,
-      "blocks": ["f2_step_2", "f2_step_3", "f2_step_4", "f2_step_5"]
-    },
     {
       "id": "f2_step_2",
       "label": "Rilevanza strutturale",
       "phase": "F2",
       "output_prefix": "theme-relevance",
       "output_path_template": "ricerche/{ricerca_id}/theme-relevance-v{N}.json",
-      "inputs_pipeline": [
-        { "step": "f2_step_1", "role": "theme-discovery", "required": true }
-      ],
+      "inputs_pipeline": [],
       "inputs_strutturali": ["assi-strutturali.json"],
       "inputs_esterni": [
         { "id": "scelta_tema", "label": "Scelta del tema (atto/fenomeno)", "type": "esterno_obbligatorio", "schema": "external-input-schemas/f2-step-2-scelta-tema.json" }
@@ -57,7 +40,6 @@
       "output_prefix": "theme-verification",
       "output_path_template": "ricerche/{ricerca_id}/theme-verification-v{N}.json",
       "inputs_pipeline": [
-        { "step": "f2_step_1", "role": "theme-discovery", "required": true },
         { "step": "f2_step_2", "role": "theme-relevance", "required": true, "requires_verifica": true },
         { "step": "f2_step_2a", "role": "node-verification", "required": false, "_note": "Facoltativo ma raccomandato: migliora la discriminazione dei nodi" }
       ],
@@ -74,7 +56,6 @@
       "output_prefix": "theme-matrix",
       "output_path_template": "ricerche/{ricerca_id}/theme-matrix-v{N}.json",
       "inputs_pipeline": [
-        { "step": "f2_step_1", "role": "theme-discovery", "required": true },
         { "step": "f2_step_3", "role": "theme-verification", "required": true }
       ],
       "inputs_strutturali": ["assi-strutturali.json"],
@@ -107,7 +88,6 @@
       "output_prefix": "output-family",
       "output_path_template": "ricerche/{ricerca_id}/output-family-v{N}.json",
       "inputs_pipeline": [
-        { "step": "f2_step_1", "role": "theme-discovery", "required": true },
         { "step": "f2_step_3", "role": "theme-verification", "required": true },
         { "step": "f2_step_4", "role": "theme-matrix", "required": true }
       ],

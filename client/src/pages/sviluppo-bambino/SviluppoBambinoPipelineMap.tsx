@@ -13,7 +13,6 @@ const F3_STEPS: PipelineStepId[] = [
 ];
 
 const STEP_LABEL: Record<PipelineStepId, string> = {
-  f2_step_1: 'Discovery',
   f2_step_2: 'Rilevanza',
   f2_step_2a: 'Verifica nodi',
   f2_step_3: 'Verifica',

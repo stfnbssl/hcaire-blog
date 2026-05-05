@@ -1,7 +1,8 @@
 // ---------- index ----------
 
+// f2_step_1 rimosso: la discovery temi è ora gestita dall'Archivio temi.
 export type PipelineStepId =
-  | 'f2_step_1' | 'f2_step_2' | 'f2_step_2a' | 'f2_step_3' | 'f2_step_4' | 'f2_step_4b' | 'f2_step_5' | 'f2_step_6'
+  | 'f2_step_2' | 'f2_step_2a' | 'f2_step_3' | 'f2_step_4' | 'f2_step_4b' | 'f2_step_5' | 'f2_step_6'
   | 'f3_step_1' | 'f3_step_2' | 'f3_step_3' | 'f3_step_4' | 'f3_step_5'
   | 'f3_step_6' | 'f3_step_6b' | 'f3_step_7' | 'f3_step_8' | 'f3_step_9' | 'f3_step_10';
 

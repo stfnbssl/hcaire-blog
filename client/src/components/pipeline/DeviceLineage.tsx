@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import type { PipelineStepId, TemaIndexEntry, ExternalInput } from '../../types/pipeline';
 
 const STEP_NAME: Record<PipelineStepId, string> = {
-  f2_step_1: 'Discovery',
   f2_step_2: 'Rilevanza',
   f2_step_2a: 'Verifica nodi trasversali',
   f2_step_3: 'Verifica',
