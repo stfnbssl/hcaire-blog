@@ -9,6 +9,7 @@ import Tema, {
   TemaStato,
 } from '../models/Tema';
 import PipelineContext from '../models/PipelineContext';
+import PipelineExternalInput from '../models/PipelineExternalInput';
 
 // ---------- envelope ----------
 
@@ -256,6 +257,47 @@ export async function promuoveTema(req: Request, res: Response) {
       } catch (bridgeErr) {
         // Il flip di stato è già avvenuto. Loggiamo il problema ma non rolling back.
         console.error(`[archivio] bridge fallito per "${temaId}":`, bridgeErr);
+      }
+    }
+
+    // BRIDGE: auto-popolamento dell'external input `scelta_tema` di f2_step_2.
+    // Nel modello v2.1 il tema è già scelto (l'utente l'ha promosso dall'Archivio),
+    // quindi `scelta_tema` non va richiesto al ricercatore. Lo creiamo qui dai
+    // metadati del Tema, in modo che f2_step_2 sia immediatamente lanciabile.
+    //
+    // Cowork legge `scelta_tema.{tema_label, descrizione, motivazione}` dal suo
+    // CLAUDE.md di step 2, quindi mappiamo i campi del Tema a questi.
+    const existingSceltaTema = await PipelineExternalInput.findOne({
+      context_id: temaId,
+      step_id: 'f2_step_2',
+      input_id: 'scelta_tema',
+      is_superseded: false,
+    });
+    if (!existingSceltaTema) {
+      try {
+        await PipelineExternalInput.create({
+          context_type: 'ricerca',
+          context_id: temaId,
+          step_id: 'f2_step_2',
+          input_id: 'scelta_tema',
+          label: 'Scelta del tema (atto/fenomeno) — auto da Archivio',
+          provided_by: `archivio:${userId}`,
+          provided_at: now,
+          data: {
+            tema_id: current.tema_id,
+            tema_label: current.label,
+            descrizione: current.descrizione || '',
+            asse_dominante_presunto: current.asse_dominante,
+            fonti: current.fonti || [],
+            motivazione: current.note_ricercatore || '',
+          },
+          file_path: null,
+          is_superseded: false,
+          superseded_by: null,
+        });
+        console.log(`[archivio] bridge: creato PipelineExternalInput "scelta_tema" per f2_step_2 di "${temaId}"`);
+      } catch (extInputErr) {
+        console.error(`[archivio] bridge external_input fallito per "${temaId}":`, extInputErr);
       }
     }
 

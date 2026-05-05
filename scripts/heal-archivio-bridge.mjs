@@ -18,10 +18,27 @@ const STATI_LABORATORIO = ['promosso', 'f2_in_corso', 'f2_verificata', 'parchegg
 // ─── Schema (locali, non importiamo i .ts) ────────────────────────────────
 
 const TemaSchema = new mongoose.Schema(
-  { tema_id: String, label: String, stato: String },
+  {
+    tema_id: String, label: String, stato: String,
+    descrizione: String, fonti: [String], asse_dominante: String, note_ricercatore: String,
+  },
   { collection: 'temi', strict: false },
 );
 const Tema = mongoose.models['Tema'] ?? mongoose.model('Tema', TemaSchema);
+
+const PipelineExternalInputSchema = new mongoose.Schema(
+  {
+    context_type: String, context_id: String, step_id: String, input_id: String, label: String,
+    provided_by: String, provided_at: Date,
+    data: mongoose.Schema.Types.Mixed,
+    file_path: { type: String, default: null },
+    is_superseded: { type: Boolean, default: false },
+    superseded_by: { type: mongoose.Schema.Types.ObjectId, default: null },
+  },
+  { collection: 'pipeline_external_inputs', timestamps: false },
+);
+const PipelineExternalInput = mongoose.models['PipelineExternalInput']
+  ?? mongoose.model('PipelineExternalInput', PipelineExternalInputSchema);
 
 const PipelineContextSchema = new mongoose.Schema(
   {
@@ -60,41 +77,72 @@ async function main() {
   const temi = await Tema.find({ stato: { $in: STATI_LABORATORIO } }).lean();
   console.log(`  Temi in stato laboratorio: ${temi.length}`);
 
-  let healed = 0;
-  let alreadyOk = 0;
+  let healedContext = 0;
+  let healedSceltaTema = 0;
   for (const t of temi) {
+    // 1. PipelineContext
     const ctx = await PipelineContext.findOne({ context_id: t.tema_id });
-    if (ctx) {
-      alreadyOk++;
-      continue;
+    if (!ctx) {
+      try {
+        await PipelineContext.create({
+          context_type: 'ricerca',
+          context_id: t.tema_id,
+          label: t.label,
+          theme_id: null,
+          ricerca_origine: null,
+          dispositivo_sorgente: null,
+          step_states: {},
+          pending_decision: null,
+          steps_completed: [],
+          steps_in_progress: [],
+          steps_failed: [],
+          robustezza: null,
+          correzioni_residue: 0,
+          has_revisioni: false,
+        });
+        healedContext++;
+        console.log(`  ✓ "${t.tema_id}" → PipelineContext creato`);
+      } catch (e) {
+        console.error(`  ✗ errore PipelineContext "${t.tema_id}":`, e.message);
+      }
     }
 
-    try {
-      await PipelineContext.create({
-        context_type: 'ricerca',
-        context_id: t.tema_id,
-        label: t.label,
-        theme_id: null,
-        ricerca_origine: null,
-        dispositivo_sorgente: null,
-        step_states: {},
-        pending_decision: null,
-        steps_completed: [],
-        steps_in_progress: [],
-        steps_failed: [],
-        robustezza: null,
-        correzioni_residue: 0,
-        has_revisioni: false,
-      });
-      healed++;
-      console.log(`  ✓ heal "${t.tema_id}" (stato: ${t.stato}) → PipelineContext creato`);
-    } catch (e) {
-      console.error(`  ✗ errore heal "${t.tema_id}":`, e.message);
+    // 2. PipelineExternalInput scelta_tema per f2_step_2
+    const sceltaTema = await PipelineExternalInput.findOne({
+      context_id: t.tema_id, step_id: 'f2_step_2', input_id: 'scelta_tema', is_superseded: false,
+    });
+    if (!sceltaTema) {
+      try {
+        await PipelineExternalInput.create({
+          context_type: 'ricerca',
+          context_id: t.tema_id,
+          step_id: 'f2_step_2',
+          input_id: 'scelta_tema',
+          label: 'Scelta del tema (atto/fenomeno) — auto da Archivio (heal)',
+          provided_by: 'archivio:heal',
+          provided_at: new Date(),
+          data: {
+            tema_id: t.tema_id,
+            tema_label: t.label,
+            descrizione: t.descrizione || '',
+            asse_dominante_presunto: t.asse_dominante || null,
+            fonti: t.fonti || [],
+            motivazione: t.note_ricercatore || '',
+          },
+          file_path: null,
+          is_superseded: false,
+          superseded_by: null,
+        });
+        healedSceltaTema++;
+        console.log(`  ✓ "${t.tema_id}" → scelta_tema auto-popolato`);
+      } catch (e) {
+        console.error(`  ✗ errore scelta_tema "${t.tema_id}":`, e.message);
+      }
     }
   }
 
   console.log('');
-  console.log(`  Riepilogo: ${healed} riparati · ${alreadyOk} già ok · ${temi.length - healed - alreadyOk} errori`);
+  console.log(`  Riepilogo: ${healedContext} PipelineContext riparati · ${healedSceltaTema} scelta_tema auto-popolati · su ${temi.length} temi totali`);
 
   await mongoose.disconnect();
   console.log('  ✓ MongoDB disconnesso');
