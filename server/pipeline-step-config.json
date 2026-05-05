@@ -1,18 +1,17 @@
 {
-  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. Aggiornato con i tre nuovi step metodologici: f2_step_2a, f2_step_4b, f2_step_6. f2_step_1 rimosso: la discovery dei temi avviene ora nell'Archivio temi (vedi docs/90-todo/laboratorio-d5b-backend.md §12), non più come step di pipeline.",
-  "_version": "2.1",
+  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. Aggiornato con i tre nuovi step metodologici: f2_step_2a, f2_step_4b, f2_step_6. f2_step_1 rimosso: la discovery dei temi avviene ora nell'Archivio temi (vedi docs/90-todo/laboratorio-d5b-backend.md §12), non più come step di pipeline. v2.2: rimosso `scelta_tema` da inputs_esterni di f2_step_2 (auto-popolato dal bridge Archivio→Laboratorio al momento della promozione, quindi non va più chiesto in UI).",
+  "_version": "2.2",
   "steps": [
     {
       "id": "f2_step_2",
       "label": "Rilevanza strutturale",
       "phase": "F2",
+      "_note": "Primo step F2 della pipeline (post v2.1). Lo `scelta_tema` viene auto-popolato dal bridge Archivio→Laboratorio al momento della promozione (vedi server/src/controllers/archivioTemiController.ts). Niente input richiesto all'utente: il PipelineExternalInput è già nel DB e il worker lo include nel comando Cowork.",
       "output_prefix": "theme-relevance",
       "output_path_template": "ricerche/{ricerca_id}/theme-relevance-v{N}.json",
       "inputs_pipeline": [],
       "inputs_strutturali": ["assi-strutturali.json"],
-      "inputs_esterni": [
-        { "id": "scelta_tema", "label": "Scelta del tema (atto/fenomeno)", "type": "esterno_obbligatorio", "schema": "external-input-schemas/f2-step-2-scelta-tema.json" }
-      ],
+      "inputs_esterni": [],
       "verifica": true,
       "can_skip": false,
       "blocks": ["f2_step_2a", "f2_step_3"]
