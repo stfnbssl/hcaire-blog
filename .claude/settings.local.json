@@ -54,7 +54,13 @@
       "PowerShell(Rename-Item *)",
       "Bash(xxd)",
       "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\(\"C:\\\\my\\\\projects\\\\hcaire-blog\\\\client\\\\src\\\\styles\\\\corso.css\"\\); $bomIndices = @\\(\\); for \\($i = 0; $i -lt $bytes.Length - 2; $i++\\) { if \\($bytes[$i] -eq 0xEF -and $bytes[$i+1] -eq 0xBB -and $bytes[$i+2] -eq 0xBF\\) { $bomIndices += $i } }; \"BOM occurrences: $\\($bomIndices.Count\\) at: $\\($bomIndices -join ', '\\); Total bytes: $\\($bytes.Length\\)\")",
-      "Bash(npx vite *)"
+      "Bash(npx vite *)",
+      "Bash(pandoc --version)",
+      "Bash(python3 *)",
+      "Bash(python *)",
+      "Bash(sed -E '/^[[:space:]]*$/d')",
+      "Read(//tmp/docx_extract/**)",
+      "Bash(npm --version)"
     ]
   }
 }

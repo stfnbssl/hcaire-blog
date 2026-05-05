@@ -7,6 +7,8 @@ import ExpandableCards from '../corso-fase2/ExpandableCards';
 import GuardrailBadge from '../corso-fase2/GuardrailBadge';
 import PipelineAnimator from '../corso-fase2/PipelineAnimator';
 import ProgressiveReveal from '../corso-fase2/ProgressiveReveal';
+import F3Builder from './F3Builder';
+import DecisionCycle from './DecisionCycle';
 
 interface Props {
   slide: Slide;
@@ -35,8 +37,9 @@ export default function SlideRenderer({ slide }: Props) {
         {i?.kind === 'pipeline-animator' && <PipelineAnimator config={i} />}
         {i?.kind === 'progressive-reveal' && <ProgressiveReveal config={i} />}
         {i?.kind === 'chip-accordion' && <ChipAccordion config={i} />}
-        {/* I componenti specifici di F3 (ce-display, f3-builder, decision-cycle)
-            saranno aggiunti quando i moduli M2+ li richiederanno. */}
+        {i?.kind === 'f3-builder' && <F3Builder />}
+        {i?.kind === 'decision-cycle' && <DecisionCycle />}
+        {/* Il componente ce-display sarà aggiunto se un modulo lo richiederà. */}
 
         {slide.comparison && (
           <ComparisonPanel

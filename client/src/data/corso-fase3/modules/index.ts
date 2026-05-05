@@ -1,6 +1,13 @@
 import { Module } from '../types';
 import { Module00 } from './m00';
 import { Module01 } from './m01';
+import { Module02 } from './m02';
+import { Module03 } from './m03';
+import { Module04 } from './m04';
+import { Module05 } from './m05';
+import { Module06 } from './m06';
+import { Module07 } from './m07';
+import { Module08 } from './m08';
 
 // Placeholder per i moduli M1–M8 ancora da costruire. Vengono mostrati
 // nella sidebar come "in arrivo" finché non vengono implementati.
@@ -35,13 +42,13 @@ const placeholder = (
 export const MODULES: Module[] = [
   Module00,
   Module01,
-  placeholder('m02', 2, "Dalla CE allo strumento", 'CE → strumento', '#0e8f7f'),
-  placeholder('m03', 3, 'Il nodo dominante', 'Nodo dominante', '#e67e22'),
-  placeholder('m04', 4, 'Le quattro funzioni', 'Quattro funzioni', '#3498db'),
-  placeholder('m05', 5, 'Il micro-dispositivo', 'Micro-dispositivo', '#2d6a4f'),
-  placeholder('m06', 6, 'La tipologia U1–U6', 'Tipologia U1–U6', '#16a085'),
-  placeholder('m07', 7, 'Logica decisionale', 'Logica decisionale', '#c0392b'),
-  placeholder('m08', 8, 'Pipeline F3 completa', 'Pipeline completa', '#1a6b8a'),
+  Module02,
+  Module03,
+  Module04,
+  Module05,
+  Module06,
+  Module07,
+  Module08,
 ];
 
 export const MODULES_BY_ID: Record<string, Module> = MODULES.reduce(
