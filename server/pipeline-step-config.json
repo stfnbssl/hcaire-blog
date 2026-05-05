@@ -1,6 +1,6 @@
 {
-  "$schema_version": "1.0",
-  "description": "Grafo dichiarativo degli step della pipeline F2/F3. Sostituisce l'euristica inferPipelineInputs e alimenta sia il frontend (DeviceLineage) sia il motore di esecuzione backend. Sorgente di verità: D1-pipeline-step-graph.md.",
+  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. Aggiornato con i tre nuovi step metodologici: f2_step_2a, f2_step_4b, f2_step_6.",
+  "_version": "2.0",
   "steps": [
     {
       "id": "f2_step_1",
@@ -11,13 +11,7 @@
       "inputs_pipeline": [],
       "inputs_strutturali": ["assi-strutturali.json"],
       "inputs_esterni": [
-        {
-          "id": "research_scope",
-          "label": "Note di indirizzo",
-          "type": "esterno_facoltativo",
-          "schema": null,
-          "note": "Testo libero del ricercatore per orientare il fuoco della ricerca. Inviato come { notes: string } e mostrato all'agente come research_scope: { \"notes\": \"...\" } nella sezione INPUT FORNITI DAL RICERCATORE."
-        }
+        { "id": "fonti_web", "label": "Fonti di ricerca esterne", "type": "esterno_facoltativo", "schema": null }
       ],
       "verifica": false,
       "can_skip": false,
@@ -34,16 +28,27 @@
       ],
       "inputs_strutturali": ["assi-strutturali.json"],
       "inputs_esterni": [
-        {
-          "id": "scelta_tema",
-          "label": "Scelta del tema (atto/fenomeno)",
-          "type": "esterno_obbligatorio",
-          "schema": "external-input-schemas/f2-step-2-scelta-tema.json"
-        }
+        { "id": "scelta_tema", "label": "Scelta del tema (atto/fenomeno)", "type": "esterno_obbligatorio", "schema": "external-input-schemas/f2-step-2-scelta-tema.json" }
       ],
       "verifica": true,
       "can_skip": false,
-      "blocks": ["f2_step_3"]
+      "blocks": ["f2_step_2a", "f2_step_3"]
+    },
+    {
+      "id": "f2_step_2a",
+      "label": "Verifica Nodi Trasversali",
+      "phase": "F2",
+      "_note": "Nuovo step metodologico. Mappa i nodi candidati di STEP 2 sui Nodi Trasversali canonici N1-N7. Nessun input esterno richiesto.",
+      "output_prefix": "node-verification",
+      "output_path_template": "ricerche/{ricerca_id}/node-verification-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f2_step_2", "role": "theme-relevance", "required": true, "requires_verifica": false }
+      ],
+      "inputs_strutturali": ["f2-step-2a-verifica-nodi-trasversali/node-verification-schema.json"],
+      "inputs_esterni": [],
+      "verifica": false,
+      "can_skip": false,
+      "blocks": ["f2_step_3", "f2_step_4b"]
     },
     {
       "id": "f2_step_3",
@@ -53,7 +58,8 @@
       "output_path_template": "ricerche/{ricerca_id}/theme-verification-v{N}.json",
       "inputs_pipeline": [
         { "step": "f2_step_1", "role": "theme-discovery", "required": true },
-        { "step": "f2_step_2", "role": "theme-relevance", "required": true, "requires_verifica": true }
+        { "step": "f2_step_2", "role": "theme-relevance", "required": true, "requires_verifica": true },
+        { "step": "f2_step_2a", "role": "node-verification", "required": false, "_note": "Facoltativo ma raccomandato: migliora la discriminazione dei nodi" }
       ],
       "inputs_strutturali": ["assi-strutturali.json"],
       "inputs_esterni": [],
@@ -75,7 +81,24 @@
       "inputs_esterni": [],
       "verifica": false,
       "can_skip": false,
-      "blocks": ["f2_step_5"]
+      "blocks": ["f2_step_4b", "f2_step_5"]
+    },
+    {
+      "id": "f2_step_4b",
+      "label": "CE Prototipica",
+      "phase": "F2",
+      "_note": "Nuovo step metodologico. Traduce la micro-matrice nella Grammatica delle Configurazioni (CE con dimensioni S, R, D, T, A). Nessun input esterno richiesto.",
+      "output_prefix": "ce-prototipica",
+      "output_path_template": "ricerche/{ricerca_id}/ce-prototipica-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f2_step_4", "role": "theme-matrix", "required": true },
+        { "step": "f2_step_2a", "role": "node-verification", "required": false, "_note": "Raccomandato: fornisce i nodi canonici già mappati" }
+      ],
+      "inputs_strutturali": ["f2-step-4b-ce-prototipica/ce-prototipica-schema.json"],
+      "inputs_esterni": [],
+      "verifica": false,
+      "can_skip": false,
+      "blocks": ["f2_step_5", "f2_step_6"]
     },
     {
       "id": "f2_step_5",
@@ -92,6 +115,25 @@
       "inputs_esterni": [],
       "verifica": true,
       "can_skip": false,
+      "blocks": ["f2_step_6"]
+    },
+    {
+      "id": "f2_step_6",
+      "label": "Output-Tipo Vuoto (Passaporto del tema)",
+      "phase": "F2",
+      "_note": "Nuovo step metodologico. Produce la struttura triadica di transizione F2→F3. L'output diventa l'input primario di f3_step_1. Nessun input esterno richiesto.",
+      "output_prefix": "output-tipo-vuoto",
+      "output_path_template": "ricerche/{ricerca_id}/output-tipo-vuoto-v{N}.json",
+      "inputs_pipeline": [
+        { "step": "f2_step_5", "role": "output-family", "required": true, "requires_verifica": true },
+        { "step": "f2_step_4b", "role": "ce-prototipica", "required": false, "_note": "Raccomandato: fornisce la CE Prototipica già formalizzata" },
+        { "step": "f2_step_4", "role": "theme-matrix", "required": true },
+        { "step": "f2_step_3", "role": "theme-verification", "required": true }
+      ],
+      "inputs_strutturali": ["f2-step-6-output-tipo-vuoto/output-tipo-vuoto-schema.json"],
+      "inputs_esterni": [],
+      "verifica": false,
+      "can_skip": false,
       "blocks": ["[human_decision] → f3_step_1"]
     },
     {
@@ -101,16 +143,12 @@
       "output_prefix": "lettura-configurazionale",
       "output_path_template": "temi/{tema_id}/lettura-configurazionale-v{N}.json",
       "inputs_pipeline": [
-        { "step": "f2_step_5", "role": "output-family", "required": true, "requires_verifica": true }
+        { "step": "f2_step_6", "role": "output-tipo-vuoto", "required": true, "_note": "Input primario — passaporto del tema. Sostituisce l'input diretto da f2_step_5." },
+        { "step": "f2_step_5", "role": "output-family", "required": true, "requires_verifica": true, "_note": "Fornisce le famiglie di output per il dominio selezionato" }
       ],
       "inputs_strutturali": ["f3-step-1/reading-device-schema.json"],
       "inputs_esterni": [
-        {
-          "id": "tema_selezionato",
-          "label": "Tema selezionato da F2",
-          "type": "esterno_obbligatorio",
-          "schema": "external-input-schemas/f3-step-1-tema.json"
-        }
+        { "id": "tema_selezionato", "label": "Tema selezionato da F2", "type": "esterno_obbligatorio", "schema": "external-input-schemas/f3-step-1-tema.json" }
       ],
       "verifica": true,
       "can_skip": false,
@@ -191,13 +229,7 @@
       ],
       "inputs_strutturali": [],
       "inputs_esterni": [
-        {
-          "id": "severita_test",
-          "label": "Severità test non-reversibilità",
-          "type": "esterno_facoltativo",
-          "values": ["standard", "forte"],
-          "default": "standard"
-        }
+        { "id": "severita_test", "label": "Severità test non-reversibilità", "type": "esterno_facoltativo", "values": ["standard", "forte"], "default": "standard" }
       ],
       "verifica": false,
       "can_skip": false,
@@ -245,23 +277,12 @@
       "output_prefix": "trasferibilità",
       "output_path_template": "temi/{tema_id}/trasferibilità-v{N}.json",
       "inputs_pipeline": [
-        {
-          "step": "f3_step_3_or_6c",
-          "role": "correzione-strutturale",
-          "required": true,
-          "note": "f3_step_6c se presente, altrimenti f3_step_3"
-        },
+        { "step": "f3_step_3_or_6c", "role": "correzione-strutturale", "required": true, "note": "f3_step_6c se presente, altrimenti f3_step_3" },
         { "step": "f3_step_6b", "role": "stabilizzazione-proxy-b", "required": true, "requires_verifica": true }
       ],
       "inputs_strutturali": [],
       "inputs_esterni": [
-        {
-          "id": "contesto_ambito",
-          "label": "Contesto/ambito target",
-          "type": "esterno_obbligatorio",
-          "schema": "external-input-schemas/f3-step-7-contesto.json",
-          "file_template": "inputs/temi/{tema_id}/f3-step-7-contesto-{label}.json"
-        }
+        { "id": "contesto_ambito", "label": "Contesto/ambito target", "type": "esterno_obbligatorio", "schema": "external-input-schemas/f3-step-7-contesto.json", "file_template": "inputs/temi/{tema_id}/f3-step-7-contesto-{label}.json" }
       ],
       "verifica": false,
       "can_skip": false,
@@ -283,13 +304,7 @@
       },
       "inputs_strutturali": [],
       "inputs_esterni": [
-        {
-          "id": "specificita_dispositivo",
-          "label": "Livello di specificità del dispositivo finale",
-          "type": "esterno_facoltativo",
-          "values": ["standard", "alta"],
-          "default": "standard"
-        }
+        { "id": "specificita_dispositivo", "label": "Livello di specificità del dispositivo finale", "type": "esterno_facoltativo", "values": ["standard", "alta"], "default": "standard" }
       ],
       "verifica": true,
       "can_skip": true,
@@ -332,14 +347,7 @@
       ],
       "inputs_strutturali": [],
       "inputs_esterni": [
-        {
-          "id": "casi_stress_test",
-          "label": "5 casi critici per lo stress test",
-          "type": "esterno_obbligatorio",
-          "schema": "external-input-schemas/f3-step-10-casi.json",
-          "file_template": "inputs/temi/{tema_id}/f3-step-10-casi-{label}.json",
-          "note": "Deve coprire i 5 tipi: assente, parziale, chiudente, apparente_scripted, quasi_indistinguibile"
-        }
+        { "id": "casi_stress_test", "label": "5 casi critici per lo stress test", "type": "esterno_obbligatorio", "schema": "external-input-schemas/f3-step-10-casi.json", "file_template": "inputs/temi/{tema_id}/f3-step-10-casi-{label}.json", "note": "Deve coprire i 5 tipi: assente, parziale, chiudente, apparente_scripted, quasi_indistinguibile" }
       ],
       "verifica": false,
       "can_skip": false,

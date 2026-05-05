@@ -5,9 +5,12 @@ import type { PipelineStepId, TemaIndexEntry, ExternalInput } from '../../types/
 const STEP_NAME: Record<PipelineStepId, string> = {
   f2_step_1: 'Discovery',
   f2_step_2: 'Rilevanza',
+  f2_step_2a: 'Verifica nodi trasversali',
   f2_step_3: 'Verifica',
   f2_step_4: 'Matrice',
+  f2_step_4b: 'CE prototipica',
   f2_step_5: 'Output family',
+  f2_step_6: 'Output-tipo vuoto',
   f3_step_1: 'Lettura configurazionale',
   f3_step_2: 'Stress test',
   f3_step_3: 'Correzione strutturale',

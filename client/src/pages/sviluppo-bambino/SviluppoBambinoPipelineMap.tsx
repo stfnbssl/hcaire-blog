@@ -15,9 +15,12 @@ const F3_STEPS: PipelineStepId[] = [
 const STEP_LABEL: Record<PipelineStepId, string> = {
   f2_step_1: 'Discovery',
   f2_step_2: 'Rilevanza',
+  f2_step_2a: 'Verifica nodi',
   f2_step_3: 'Verifica',
   f2_step_4: 'Matrice',
+  f2_step_4b: 'CE prototipica',
   f2_step_5: 'Output family',
+  f2_step_6: 'Output-tipo vuoto',
   f3_step_1: 'Lettura',
   f3_step_2: 'Stress test',
   f3_step_3: 'Correzione',

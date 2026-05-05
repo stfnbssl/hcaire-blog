@@ -40,9 +40,12 @@ export const SERVER_VERSION = '1.0.0';
 export const STEP_FOLDER_MAP: Record<string, string> = {
   'f2_step_1':  'f2-step-1-ricerca-temi',
   'f2_step_2':  'f2-step-2-rilevanza-strutturale',
+  'f2_step_2a': 'f2-step-2a-verifica-nodi-trasversali',
   'f2_step_3':  'f2-step-3-verifica-strutturale',
   'f2_step_4':  'f2-step-4-micro-matrice',
+  'f2_step_4b': 'f2-step-4b-ce-prototipica',
   'f2_step_5':  'f2-step-5-output-family',
+  'f2_step_6':  'f2-step-6-output-tipo-vuoto',
   'f3_step_1':  'f3-step-1-dispositivo-lettura',
   'f3_step_2':  'f3-step-2-stress-test',
   'f3_step_3':  'f3-step-3-correzione-strutturale',
