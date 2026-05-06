@@ -1,0 +1,144 @@
+{
+  "step": "step_3",
+  "results": [
+    {
+      "theme_id": "gioco-libero-come-incontro-del-bambino-con-il-possibile",
+      "confirmed_axes": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "role": "Asse identitario del fenomeno: definisce cosa è il gioco libero — esercizio del desiderio come struttura di orientamento nel campo del possibile, prima e indipendentemente da finalità preassegnate.",
+          "reason": "Il tema non è pensabile senza l'asse 5: la differenza tra gioco libero e gioco guidato coincide esattamente con la differenza tra desiderio come orientamento pre-riflessivo (campo desiderabile aperto) e motivazione attivata da stimoli o ricompense esterne. La definizione stessa del tema è la definizione strutturale dell'asse applicata a un contesto specifico. Tre nodi candidati provengono da questo asse e due superano i tre test di necessità, specificità e non ridondanza."
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "role": "Asse della specificità strutturante del fenomeno: chiarisce perché il gioco libero è strutturante e non solo piacevole — l'incontro non mediato con eccedenza e limite reale è ciò che lo distingue dal gioco guidato e dall'apprendimento mediato.",
+          "reason": "Il tema non è pensabile senza l'asse 4: la clausola 'sperimentazione del limite senza mediazione adulta sistematica' è costitutiva della definizione del fenomeno. Senza l'incontro con ciò che resiste indipendentemente dall'intenzione, il gioco libero collassa in attività piacevole o in apprendimento. Tre nodi candidati provengono da questo asse e tutti e tre superano i test, ciascuno con una funzione strutturale distinta (sproporzione, irreversibilità, trasformazione del campo)."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "role": "Asse della deformazione storica che rende il tema critico oggi: la scomparsa del gioco libero nei contesti educativi contemporanei è una configurazione strutturale del mondo storico (prestazionalizzazione, colonizzazione del tempo), non somma di scelte locali.",
+          "reason": "Il tema, nella formulazione data dal ricercatore, è intrinsecamente critico-storico: emerge dalla tensione tra promozione del gioco libero nella ricerca e progressiva scomparsa di spazi non strutturati. Senza l'asse 6 questa tensione si riduce a errore educativo individuale, perdendo la lettura strutturale della deformazione. Il nodo 'prestazionalizzazione del valore' identifica la forza storica precisa che erode il fenomeno e fonda il concetto-ponte di erosione storica del campo desiderabile."
+        }
+      ],
+      "rejected_axes": [
+        {
+          "axis_id": "asse_1",
+          "axis_name": "Ontologico–fenomenologico",
+          "rejection_reason": "Secondario. L'asse 1 fornisce il piano fenomenologico-corporeo su cui ogni fenomeno di sviluppo si dispiega (campo intenzionale, corporeità vissuta, temporalità non cronologica), ma non discrimina strutturalmente il gioco libero da altri fenomeni evolutivi. La sua funzione fondativa è già presupposta dal funzionamento di asse 4 e asse 5 nel tema. Confermarlo come asse co-dominante satura la selezione (3 assi) senza aggiungere specificità."
+        },
+        {
+          "axis_id": "asse_3",
+          "axis_name": "Normativo–educativo",
+          "rejection_reason": "La sospensione della mediazione normativa è strutturale al fenomeno, ma il contrasto gioco libero / gioco guidato è preso in carico più produttivamente dall'asse 6 sul piano della deformazione storica (prestazionalizzazione del valore, colonizzazione del tempo). L'asse 3 aggiungerebbe il piano normativo-educativo come bordo delimitativo, ma la stessa funzione delimitativa è già svolta dall'analisi storico-strutturale dell'asse 6, che la inquadra come configurazione del mondo e non come scelta pedagogica locale. Mantenerlo introdurrebbe ridondanza con asse 6."
+        },
+        {
+          "axis_id": "asse_2",
+          "axis_name": "Affettivo–morale",
+          "rejection_reason": "Non necessario. Il fenomeno del gioco libero non richiede strutturalmente l'interiorizzazione dell'altro come istanza affettiva vincolante né si distingue da altri fenomeni per il rapporto colpa/riparazione. L'asse 2 potrebbe rientrare solo nell'estensione del tema al gioco simbolico in compagnia di pari o adulti, ma in quel caso si tratterebbe di un tema diverso."
+        }
+      ],
+      "confirmed_nodes": [
+        {
+          "node_id": "desiderio-come-struttura",
+          "node_label": "Desiderio come struttura di orientamento",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "reason": "Supera i tre test. Necessità: il gioco libero è discriminato dal gioco guidato proprio dal fatto di essere contesto in cui il desiderio opera come struttura di orientamento pre-riflessivo, non come motivazione esterna. Specificità: distingue questo tema da qualsiasi attività ludica orientata a obiettivi e da qualsiasi 'esercizio motivazionale'. Non ridondanza: è il nodo identitario del fenomeno, distinto da campo-desiderabile (che è l'orizzonte) e da soggettivazione (che è il processo di assunzione)."
+        },
+        {
+          "node_id": "campo-desiderabile",
+          "node_label": "Campo desiderabile",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "reason": "Supera i tre test. Necessità: il gioco libero è esattamente l'esercizio del campo desiderabile come orizzonte aperto, non strutturato dall'esterno. Specificità: senza un campo desiderabile non strutturato il gioco perde la sua specificità diventando esecuzione di compiti. Non ridondanza: distinto da desiderio-come-struttura (campo è l'orizzonte di possibilità in cui il desiderio si orienta; il desiderio è la forma dell'orientamento) e funzionale al concetto-ponte di erosione storica."
+        },
+        {
+          "node_id": "eccedenza",
+          "node_label": "Eccedenza",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "reason": "Supera i tre test. Necessità: il gioco libero è costitutivamente attraversato dall'eccedenza (il mondo non risponde completamente all'intenzione, il corpo ha limiti, il materiale resiste); senza eccedenza il gioco diventa esecuzione prevedibile. Specificità: il gioco guidato neutralizza l'eccedenza orientando il compito sul prevedibile. Non ridondanza: distinto da limite-reale (eccedenza è sproporzione che decentra senza ferire; il limite reale è l'irreversibilità di ciò che accade) e da condizione-del-desiderio (esito strutturale, non condizione iniziale)."
+        },
+        {
+          "node_id": "limite-reale",
+          "node_label": "Limite reale",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "reason": "Supera i tre test. Necessità: la definizione del tema afferma esplicitamente che il bambino sperimenta il limite senza mediazione adulta sistematica (limite reale, distinto dal limite normativo e dalla frustrazione regolata). Specificità: qualifica strutturalmente la qualità dell'incontro con il limite nel gioco libero rispetto a quello mediato dal compito educativo. Non ridondanza: distinto dall'eccedenza (l'eccedenza decentra; il limite reale chiude possibilità) e dalla condizione-del-desiderio (il limite reale è l'evento; la condizione-del-desiderio è la sua trasformazione nel campo)."
+        },
+        {
+          "node_id": "condizione-del-desiderio",
+          "node_label": "Limite come condizione del desiderio",
+          "source_axis": "asse_4",
+          "source_axis_name": "Separazione e Limite",
+          "reason": "Supera i tre test. Necessità: il gioco libero è il contesto in cui il limite reale non distrugge il possibile ma lo trasforma; senza questa trasformazione il limite produce ritrazione invece che orientamento. Specificità: distingue il gioco libero dal gioco terapeutico o riparativo, in cui il desiderio resta agganciato alla perdita invece di riorganizzarsi nel campo. Non ridondanza: nodo di articolazione strutturale tra asse 4 e asse 5 — descrive l'esito (riorganizzazione del campo del possibile) che né limite-reale né campo-desiderabile catturano da soli."
+        },
+        {
+          "node_id": "prestazionalizzazione-del-valore",
+          "node_label": "Prestazionalizzazione del valore",
+          "source_axis": "asse_6",
+          "source_axis_name": "Storico–culturale",
+          "reason": "Supera i tre test. Necessità: la formulazione critica del tema (gioco libero come fenomeno in scomparsa nei contesti educativi contemporanei) richiede l'identificazione della forza storica strutturale che lo erode; senza questo nodo la riduzione del fenomeno è leggibile solo come somma di scelte locali. Specificità: identifica la forma storica precisa (ciò che non è misurabile diventa invisibile) che colpisce specificamente il gioco libero in quanto attività non finalizzata. Non ridondanza: unico nodo dell'asse 6 e funzionalmente distinto dai nodi di asse 4 e asse 5; ancora il concetto-ponte di erosione storica."
+        }
+      ],
+      "secondary_nodes": [
+        {
+          "node_id": "soggettivazione-del-desiderio",
+          "node_label": "Soggettivazione del desiderio",
+          "source_axis": "asse_5",
+          "source_axis_name": "Desiderio",
+          "reason": "Utile ma non strutturalmente necessario. Il fenomeno è già strutturalmente leggibile attraverso desiderio-come-struttura e campo-desiderabile: la soggettivazione (continuità vissuta come direzione implicita) descrive un esito processuale del gioco libero più che la sua struttura costitutiva. Se rimosso, il tema resta leggibile, anche se perde la dimensione del processo per cui le direzioni del campo diventano riconoscibili come proprie. Conservato come nodo secondario perché la distinzione tra insistenza autonoma del bambino e aderenza al compito è una soglia osservativa rilevante in step successivi."
+        }
+      ],
+      "rejected_nodes": [
+        {
+          "node_id": "campo-intenzionale",
+          "node_label": "Campo intenzionale",
+          "source_axis": "asse_1",
+          "rejection_reason": "TEST 1 (necessità) e TEST 2 (specificità) falliti. Il campo intenzionale è la struttura globale pre-riflessiva di ogni esperienza vissuta: è presupposto dal funzionamento di campo-desiderabile (asse 5) e dell'incontro con il reale (asse 4) ma non discrimina il gioco libero da altri fenomeni di sviluppo. La sua presenza foundazionale non costituisce specificità strutturale del tema. Coerente con l'esclusione dell'asse 1 come asse co-dominante."
+        }
+      ],
+      "confirmed_bridge_concepts": [
+        {
+          "concept_label": "Trasformazione del limite reale in orientamento del desiderio",
+          "linked_axes": ["asse_4", "asse_5"],
+          "linked_nodes": [
+            "limite-reale",
+            "condizione-del-desiderio",
+            "desiderio-come-struttura",
+            "campo-desiderabile"
+          ],
+          "reason": "Supera i tre test. Connessione reale: collega asse 4 e asse 5 attraverso quattro nodi confermati. Valore aggiunto: descrive il movimento strutturale specifico del gioco libero (l'incontro non mediato con il limite reale si trasforma — quando la relazione tiene senza spiegare prematuramente — in riorganizzazione del campo del possibile e quindi in desiderio come orientamento), che i singoli nodi catturano solo parzialmente. Non ridondanza: descrive una trasformazione direzionale (limite → desiderio) che né i nodi di asse 4 né quelli di asse 5 esprimono da soli."
+        },
+        {
+          "concept_label": "Erosione storica del campo desiderabile non strutturato",
+          "linked_axes": ["asse_5", "asse_6"],
+          "linked_nodes": ["campo-desiderabile", "prestazionalizzazione-del-valore"],
+          "reason": "Supera i tre test. Connessione reale: collega asse 5 e asse 6 attraverso i due nodi confermati. Valore aggiunto: descrive il movimento opposto e simmetrico al ponte precedente — il mondo storico-culturale contemporaneo, attraverso prestazionalizzazione, riduce strutturalmente lo spazio in cui il campo desiderabile può esercitarsi come orientamento autonomo, convertendolo in campo prestazionale. Non ridondanza: aggiunge la dimensione storico-strutturale della scomparsa che né i singoli nodi né l'altro concetto-ponte esprimono."
+        }
+      ],
+      "rejected_bridge_concepts": [
+        {
+          "concept_label": "Campo intenzionale incarnato come piano di emergenza del campo desiderabile",
+          "rejection_reason": "TEST 1 (connessione reale) fallito. Il concetto-ponte collega asse 1 e asse 5, ma asse 1 non è confermato e il nodo campo-intenzionale è eliminato (troppo generale per discriminare il fenomeno). La trasformazione descritta (campo intenzionale ampio come condizione del campo desiderabile) è una relazione fondativa generale di ogni esperienza, non una connessione specifica del gioco libero. Inoltre era classificato come 'plausibile' già in STEP 2."
+        }
+      ],
+      "structural_configuration": {
+        "type": "multi_assiale",
+        "description": "Configurazione triadica con tre assi confermati a funzioni strutturali distinte e non sostituibili. Asse 5 (Desiderio) → asse identitario: definisce cosa è il gioco libero come esercizio del desiderio come struttura di orientamento nel campo del possibile. Asse 4 (Separazione e Limite) → asse della specificità strutturante: chiarisce perché il gioco libero è strutturante attraverso l'incontro non mediato con eccedenza e limite reale. Asse 6 (Storico–culturale) → asse della deformazione storica: chiarisce perché il fenomeno è un tema critico oggi attraverso la prestazionalizzazione del valore che erode lo spazio del non strutturato. La configurazione è densa ma non saturata: ogni asse risponde a una domanda strutturale diversa (cosa è / perché è strutturante / perché è critico oggi)."
+      },
+      "synthetic_formulation": "Configurazione triadica del gioco libero come esercizio del desiderio nel campo del possibile, sostenuto strutturalmente dall'incontro non mediato con il limite reale e oggi eroso dalla prestazionalizzazione storica del valore.",
+      "selection_rationale": "La selezione segue la struttura interna del tema così come formulata dal ricercatore: definizione (esercizio del desiderio come orientamento nel campo del possibile → asse 5), funzione strutturante (incontro con il limite senza mediazione adulta sistematica → asse 4), criticità storica (scomparsa nei contesti educativi contemporanei → asse 6). Asse 1 è stato declassato a non confermato perché il piano fenomenologico-corporeo è presupposto da ogni fenomeno di sviluppo e non discrimina il gioco libero: confermarlo avrebbe saturato la selezione (3 assi) senza aggiungere specificità. Asse 3 è stato escluso perché la sua funzione delimitativa rispetto alla mediazione normativa è già assorbita dall'asse 6 sul piano storico-strutturale, evitando ridondanza. Asse 2 confermato escluso. Sui nodi: due dei tre nodi di asse 5 sono stati confermati (desiderio-come-struttura, campo-desiderabile), il terzo (soggettivazione-del-desiderio) classificato come secondario perché descrive un esito processuale e non la struttura costitutiva; tutti e tre i nodi di asse 4 confermati per la loro funzione strutturale distinta (sproporzione, irreversibilità, trasformazione); l'unico nodo di asse 6 confermato per la sua funzione di ancoraggio storico; campo-intenzionale eliminato coerentemente con l'esclusione di asse 1. Sui ponti: i due ponti che descrivono trasformazioni direzionali tra assi confermati sono stati mantenuti (limite → desiderio; storia → erosione del campo); il terzo ponte (asse 1–asse 5) eliminato per coerenza con l'esclusione di asse 1 e per genericità della connessione.",
+      "critical_notes": [
+        "L'esclusione dell'asse 1 è una scelta strutturale forte: il piano fenomenologico-corporeo del gioco libero (corporeità vissuta, temporalità con spessore) viene assunto come implicito nel funzionamento degli altri assi piuttosto che esplicitato. Da verificare in STEP 4 se la micro-matrice richiede di reintrodurre il campo intenzionale come livello fondativo per articolare la trasformazione descritta dal primo concetto-ponte.",
+        "L'esclusione dell'asse 3 lascia non formalizzata la distinzione strutturale gioco libero / gioco guidato come distinzione normativo-pedagogica autonoma. La distinzione viene catturata sul piano storico-strutturale (asse 6: prestazionalizzazione → motivazione come sostituto del desiderio) ma non sul piano del rapporto educativo diretto. Da verificare in STEP 4 se questo livello deve essere recuperato come bordo delimitativo.",
+        "Il nodo soggettivazione-del-desiderio è stato classificato come secondario ma è strutturalmente prossimo al confine della conferma: la sua funzione discriminante (insistenza autonoma del bambino vs aderenza al compito) potrebbe diventare osservativamente centrale in STEP 4 nella micro-matrice, soprattutto se il tema viene tradotto in indicatori per i professionisti.",
+        "La distinzione tra eccedenza e limite-reale è strutturalmente fondamentale (sproporzione che decentra vs irreversibilità di ciò che accade) ma operativamente sottile: in STEP 4 va verificata la sua tenuta nelle griglie osservative, dove il rischio è il collasso in un'unica categoria di 'frustrazione'.",
+        "La configurazione triadica è coerente ma densa: tre assi attivi con concetto-ponte ciascuno richiede attenzione in STEP 4 perché la micro-matrice non si frammenti. La densità è giustificata dalla natura del fenomeno (sviluppo che attraversa più piani) ma richiede una formulazione sintetica unitaria, fornita in synthetic_formulation."
+      ]
+    }
+  ]
+}

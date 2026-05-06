@@ -2,13 +2,14 @@ import path from 'path';
 import { Request, Response } from 'express';
 import { getAuth } from '@clerk/express';
 import mongoose from 'mongoose';
-import PipelineContext from '../models/PipelineContext';
+import PipelineContext, { ITemaAmbito } from '../models/PipelineContext';
 import PipelineStepExecution from '../models/PipelineStepExecution';
 import PipelineExternalInput from '../models/PipelineExternalInput';
 import { getPipelineIndex } from '../services/pipelineService';
 import { loadStepConfig, getStepConfigById } from '../services/stepConfigService';
 import { evaluateStepEnablement } from '../services/stepEnablement';
 import { getPipelineMessageBus } from '../services/messageBus';
+import { buildF2ToF3Decision } from '../services/pipelineEventSubscriber';
 
 const PIPELINE_PUBLIC_DIR = process.env.PIPELINE_PUBLIC_DIR
   ?? path.resolve(__dirname, '..', '..', '..', 'client', 'public', 'pipeline');
@@ -574,32 +575,10 @@ export async function verifyExecution(req: Request, res: Response) {
       );
     }
 
-    // Trigger F2 → F3: quando f2_step_5 è verificato, popola la decisione di selezione tema
-    // dai theme_id presenti nell'output della run.
-    if (execDoc.step_id === 'f2_step_5' && newStatus === 'verificato') {
-      const out = execDoc.output_data as { results?: { theme_id?: string }[] } | null;
-      const options = (out?.results ?? [])
-        .filter((r) => typeof r?.theme_id === 'string' && r.theme_id)
-        .map((r) => ({ theme_id: r.theme_id as string, label: r.theme_id as string }));
-      await PipelineContext.updateOne(
-        { context_id: execDoc.context_id },
-        {
-          $set: {
-            pending_decision: {
-              type: 'f2_to_f3_tema_selection',
-              step_from: 'f2_step_5',
-              step_to: 'f3_step_1',
-              description: 'Seleziona il tema della output family da portare in F3 per costruire il dispositivo configurazionale.',
-              options,
-              created_at: now,
-              decided_at: null,
-              decided_by: null,
-              decision: null,
-            },
-          },
-        },
-      );
-    }
+    // Trigger F2 → F3 spostato in pipelineEventSubscriber.ts:populateF2ToF3Decision —
+    // ora si attiva al completamento di f2_step_6 (ultimo step della sequenza lineare
+    // v2.3+ 2 → 2a → 3 → 4 → 4b → 5 → 6), non più a f2_step_5 verificato. Garanzia: a
+    // quel punto tutti e sette gli step F2 sono in stato terminale (eseguiti o saltati).
 
     const unlocked = newStatus === 'verificato' ? await computeUnlockedSteps(execDoc.context_id) : [];
 
@@ -866,6 +845,287 @@ export async function postRicercaDecision(req: Request, res: Response) {
   } catch (e) {
     console.error('[pipeline] postRicercaDecision error:', e);
     return err(res, 500, 'INTERNAL_ERROR', 'Errore nella registrazione decisione');
+  }
+}
+
+// ---- Tema-Ambiti (bridge F2 → F3 con relazione 1→n) ------------------------
+// Una ricerca F2 produce un tema (output-tipo-vuoto, passaporto). Il tema può
+// essere applicato a più ambiti operativi (clinico/educativo/...). Ogni ambito
+// genera una pipeline F3 indipendente. Gli ambiti sono embedded sul context
+// `ricerca`, sotto la chiave del theme_id.
+
+const SLUG_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+
+function isValidAmbitoData(d: unknown): d is { target_domain: string; target_subdomain: string; age_range: string; setting: string; observer_profile: string; notes?: string } {
+  if (!d || typeof d !== 'object') return false;
+  const o = d as Record<string, unknown>;
+  const validDomains = ['clinico', 'educativo', 'formazione', 'politiche'];
+  return (
+    typeof o.target_domain === 'string' && validDomains.includes(o.target_domain) &&
+    typeof o.target_subdomain === 'string' && o.target_subdomain.trim().length > 0 &&
+    typeof o.age_range === 'string' && o.age_range.trim().length > 0 &&
+    typeof o.setting === 'string' && o.setting.trim().length > 0 &&
+    typeof o.observer_profile === 'string' && o.observer_profile.trim().length > 0 &&
+    (o.notes === undefined || typeof o.notes === 'string')
+  );
+}
+
+async function loadRicercaForAmbiti(ricercaId: string) {
+  const ctx = await PipelineContext.findOne({ context_id: ricercaId, context_type: 'ricerca' });
+  return ctx;
+}
+
+// GET /api/pipeline/ricerche/:ricercaId/temi/:themeId/ambiti
+export async function listTemaAmbiti(req: Request, res: Response) {
+  const { ricercaId, themeId } = req.params;
+  try {
+    const ctx = await loadRicercaForAmbiti(ricercaId);
+    if (!ctx) return err(res, 404, 'CONTEXT_NOT_FOUND', `Ricerca "${ricercaId}" non trovata`);
+    const ambiti = ((ctx.tema_ambiti ?? {}) as Record<string, unknown[]>)[themeId] ?? [];
+    return ok(res, 200, { ricerca_id: ricercaId, theme_id: themeId, ambiti });
+  } catch (e) {
+    console.error('[pipeline] listTemaAmbiti error:', e);
+    return err(res, 500, 'INTERNAL_ERROR', 'Errore lettura ambiti');
+  }
+}
+
+// POST /api/pipeline/ricerche/:ricercaId/temi/:themeId/ambiti
+export async function createTemaAmbito(req: Request, res: Response) {
+  const { ricercaId, themeId } = req.params;
+  const auth = getAuth(req);
+  const userId = auth.userId ?? 'unknown';
+  const body = (req.body ?? {}) as { ambito_id?: string; label?: string; data?: unknown };
+  try {
+    if (!body.ambito_id || !SLUG_RE.test(body.ambito_id)) {
+      return err(res, 400, 'INVALID_AMBITO_ID', 'ambito_id obbligatorio in formato kebab-case');
+    }
+    if (!body.label || body.label.trim().length === 0) {
+      return err(res, 400, 'INVALID_LABEL', 'label obbligatoria');
+    }
+    if (!isValidAmbitoData(body.data)) {
+      return err(res, 400, 'INVALID_DATA', 'data deve contenere target_domain, target_subdomain, age_range, setting, observer_profile');
+    }
+    const ctx = await loadRicercaForAmbiti(ricercaId);
+    if (!ctx) return err(res, 404, 'CONTEXT_NOT_FOUND', `Ricerca "${ricercaId}" non trovata`);
+
+    const ambitiAll = (ctx.tema_ambiti ?? {}) as Record<string, Array<{ ambito_id: string }>>;
+    const existing = ambitiAll[themeId] ?? [];
+    if (existing.some((a) => a.ambito_id === body.ambito_id)) {
+      return err(res, 409, 'AMBITO_ALREADY_EXISTS', `ambito_id "${body.ambito_id}" già presente per il tema`);
+    }
+
+    const newAmbito = {
+      ambito_id: body.ambito_id,
+      label: body.label.trim(),
+      data: body.data,
+      created_at: new Date(),
+      created_by: userId,
+      promoted_to_f3: false,
+      promoted_tema_id: null,
+    };
+    const updated = { ...ambitiAll, [themeId]: [...existing, newAmbito] };
+    await PipelineContext.updateOne({ context_id: ricercaId }, { $set: { tema_ambiti: updated } });
+    return ok(res, 201, { ambito: newAmbito });
+  } catch (e) {
+    console.error('[pipeline] createTemaAmbito error:', e);
+    return err(res, 500, 'INTERNAL_ERROR', 'Errore creazione ambito');
+  }
+}
+
+// PUT /api/pipeline/ricerche/:ricercaId/temi/:themeId/ambiti/:ambitoId
+export async function updateTemaAmbito(req: Request, res: Response) {
+  const { ricercaId, themeId, ambitoId } = req.params;
+  const body = (req.body ?? {}) as { label?: string; data?: unknown };
+  try {
+    const ctx = await loadRicercaForAmbiti(ricercaId);
+    if (!ctx) return err(res, 404, 'CONTEXT_NOT_FOUND', `Ricerca "${ricercaId}" non trovata`);
+    const ambitiAll = (ctx.tema_ambiti ?? {}) as Record<string, ITemaAmbito[]>;
+    const list = ambitiAll[themeId] ?? [];
+    const idx = list.findIndex((a) => a.ambito_id === ambitoId);
+    if (idx < 0) return err(res, 404, 'AMBITO_NOT_FOUND', `ambito "${ambitoId}" non trovato`);
+    if (list[idx].promoted_to_f3) {
+      return err(res, 409, 'AMBITO_ALREADY_PROMOTED', 'ambito già promosso a F3, non modificabile');
+    }
+    const updatedAmbito: ITemaAmbito = { ...list[idx] };
+    if (typeof body.label === 'string' && body.label.trim().length > 0) updatedAmbito.label = body.label.trim();
+    if (body.data !== undefined) {
+      if (!isValidAmbitoData(body.data)) return err(res, 400, 'INVALID_DATA', 'data non valida');
+      updatedAmbito.data = body.data as ITemaAmbito['data'];
+    }
+    const newList = [...list]; newList[idx] = updatedAmbito;
+    await PipelineContext.updateOne(
+      { context_id: ricercaId },
+      { $set: { tema_ambiti: { ...ambitiAll, [themeId]: newList } } },
+    );
+    return ok(res, 200, { ambito: updatedAmbito });
+  } catch (e) {
+    console.error('[pipeline] updateTemaAmbito error:', e);
+    return err(res, 500, 'INTERNAL_ERROR', 'Errore aggiornamento ambito');
+  }
+}
+
+// DELETE /api/pipeline/ricerche/:ricercaId/temi/:themeId/ambiti/:ambitoId
+export async function deleteTemaAmbito(req: Request, res: Response) {
+  const { ricercaId, themeId, ambitoId } = req.params;
+  try {
+    const ctx = await loadRicercaForAmbiti(ricercaId);
+    if (!ctx) return err(res, 404, 'CONTEXT_NOT_FOUND', `Ricerca "${ricercaId}" non trovata`);
+    const ambitiAll = (ctx.tema_ambiti ?? {}) as Record<string, Array<{ ambito_id: string; promoted_to_f3: boolean }>>;
+    const list = ambitiAll[themeId] ?? [];
+    const target = list.find((a) => a.ambito_id === ambitoId);
+    if (!target) return err(res, 404, 'AMBITO_NOT_FOUND', `ambito "${ambitoId}" non trovato`);
+    if (target.promoted_to_f3) {
+      return err(res, 409, 'AMBITO_ALREADY_PROMOTED', 'ambito già promosso a F3, non eliminabile');
+    }
+    const newList = list.filter((a) => a.ambito_id !== ambitoId);
+    await PipelineContext.updateOne(
+      { context_id: ricercaId },
+      { $set: { tema_ambiti: { ...ambitiAll, [themeId]: newList } } },
+    );
+    return ok(res, 200, { deleted: ambitoId });
+  } catch (e) {
+    console.error('[pipeline] deleteTemaAmbito error:', e);
+    return err(res, 500, 'INTERNAL_ERROR', 'Errore eliminazione ambito');
+  }
+}
+
+// POST /api/pipeline/ricerche/:ricercaId/temi/:themeId/ambiti/:ambitoId/promote
+// Crea il tema F3 (tema_id = `${theme}--${ambito}`), eredita gli step_states F2
+// dalla ricerca, e pre-popola PipelineExternalInput di f3_step_7 con i dati
+// dell'ambito (così il form di step 7 sarà già compilato). NON azzera il
+// pending_decision: l'utente può tornare per promuovere altri ambiti.
+export async function promoteTemaAmbito(req: Request, res: Response) {
+  const { ricercaId, themeId, ambitoId } = req.params;
+  const auth = getAuth(req);
+  const userId = auth.userId ?? 'unknown';
+  try {
+    const ctx = await loadRicercaForAmbiti(ricercaId);
+    if (!ctx) return err(res, 404, 'CONTEXT_NOT_FOUND', `Ricerca "${ricercaId}" non trovata`);
+    const ambitiAll = (ctx.tema_ambiti ?? {}) as Record<string, ITemaAmbito[]>;
+    const list = ambitiAll[themeId] ?? [];
+    const idx = list.findIndex((a) => a.ambito_id === ambitoId);
+    if (idx < 0) return err(res, 404, 'AMBITO_NOT_FOUND', `ambito "${ambitoId}" non trovato`);
+    const ambito = list[idx];
+    if (ambito.promoted_to_f3 && ambito.promoted_tema_id) {
+      return ok(res, 200, { already_promoted: true, tema_id: ambito.promoted_tema_id });
+    }
+
+    // Slug del theme: il themeId ricevuto è già in kebab-case (proviene dall'output
+    // di f2_step_5/6); lo manteniamo verbatim. Composizione: `theme--ambito`.
+    if (!SLUG_RE.test(themeId)) {
+      return err(res, 400, 'INVALID_THEME_ID', `theme_id "${themeId}" non in formato kebab-case`);
+    }
+    const newTemaId = `${themeId}--${ambitoId}`;
+    const exists = await PipelineContext.findOne({ context_id: newTemaId });
+    if (exists) {
+      return err(res, 409, 'CONTEXT_ALREADY_EXISTS', `Context "${newTemaId}" già esistente`);
+    }
+
+    // Eredita step_states F2 (vedi postRicercaDecision per la motivazione: l'enablement
+    // di f3_step_1 richiede f2_step_5 verificato e buildExecutionPlan legge gli output_file
+    // F2 dagli step_states del tema).
+    const ricercaStepStates = (ctx.step_states ?? {}) as Record<string, unknown>;
+    const inheritedF2States: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(ricercaStepStates)) {
+      if (k.startsWith('f2_')) inheritedF2States[k] = v;
+    }
+    const ricercaStepsCompleted = (ctx.steps_completed ?? []).filter((s) => s.startsWith('f2_'));
+
+    const newTema = await PipelineContext.create({
+      context_type: 'tema',
+      context_id: newTemaId,
+      label: `${(ctx.label ?? themeId)} — ${ambito.label}`,
+      theme_id: themeId,
+      ricerca_origine: ricercaId,
+      dispositivo_sorgente: null,
+      step_states: inheritedF2States,
+      pending_decision: null,
+      tema_ambiti: {},
+      steps_completed: ricercaStepsCompleted,
+      steps_in_progress: [],
+      steps_failed: [],
+      robustezza: null,
+      correzioni_residue: 0,
+      has_revisioni: false,
+    });
+
+    // Pre-popola PipelineExternalInput per f3_step_7 con i dati dell'ambito.
+    // Salviamo anche il file su disco per coerenza con postStepInput.
+    const folderRel = `inputs/temi/${newTemaId}`;
+    const fileName = `f3-step-7-contesto-ambito.json`;
+    const folderAbs = resolveAbsPath(folderRel);
+    const fileAbs = path.join(folderAbs, fileName);
+    let filePath: string | null = null;
+    try {
+      const fs = await import('fs/promises');
+      await fs.mkdir(folderAbs, { recursive: true });
+      await fs.writeFile(fileAbs, JSON.stringify(ambito.data, null, 2), 'utf8');
+      filePath = `${folderRel}/${fileName}`;
+    } catch (writeErr) {
+      console.warn('[pipeline] write ambito file fallita:', writeErr);
+    }
+
+    await PipelineExternalInput.create({
+      context_type: 'tema',
+      context_id: newTemaId,
+      step_id: 'f3_step_7',
+      input_id: 'contesto_ambito',
+      label: 'Contesto/ambito target',
+      provided_by: userId,
+      provided_at: new Date(),
+      data: ambito.data,
+      file_path: filePath,
+      is_superseded: false,
+      superseded_by: null,
+    });
+
+    // Marca l'ambito come promosso (mutazione della lista embedded sulla ricerca).
+    const updatedAmbito = { ...ambito, promoted_to_f3: true, promoted_tema_id: newTemaId };
+    const newList = [...list]; newList[idx] = updatedAmbito;
+    await PipelineContext.updateOne(
+      { context_id: ricercaId },
+      { $set: { tema_ambiti: { ...ambitiAll, [themeId]: newList } } },
+    );
+
+    return ok(res, 201, { created_tema_id: newTemaId, tema_context: newTema, ambito: updatedAmbito });
+  } catch (e) {
+    console.error('[pipeline] promoteTemaAmbito error:', e);
+    return err(res, 500, 'INTERNAL_ERROR', 'Errore promozione ambito');
+  }
+}
+
+// POST /api/pipeline/ricerche/:ricercaId/decisions/dismiss — chiude esplicitamente
+// il pending_decision F2→F3. Da chiamare quando il ricercatore considera concluse
+// le promozioni di ambiti per la ricerca.
+export async function dismissRicercaDecision(req: Request, res: Response) {
+  const { ricercaId } = req.params;
+  const auth = getAuth(req);
+  const userId = auth.userId ?? 'unknown';
+  try {
+    const ctx = await loadRicercaForAmbiti(ricercaId);
+    if (!ctx) return err(res, 404, 'CONTEXT_NOT_FOUND', `Ricerca "${ricercaId}" non trovata`);
+    if (!ctx.pending_decision) {
+      return ok(res, 200, { already_dismissed: true });
+    }
+    const now = new Date();
+    await PipelineContext.updateOne(
+      { context_id: ricercaId },
+      {
+        $set: {
+          pending_decision: null,
+          'pending_decision_history': {
+            type: ctx.pending_decision.type,
+            decided_at: now,
+            decided_by: userId,
+            decision: { dismissed: true },
+          },
+        },
+      },
+    );
+    return ok(res, 200, { dismissed: true });
+  } catch (e) {
+    console.error('[pipeline] dismissRicercaDecision error:', e);
+    return err(res, 500, 'INTERNAL_ERROR', 'Errore chiusura decisione');
   }
 }
 
@@ -1233,15 +1493,25 @@ export async function skipStep(req: Request, res: Response) {
       skip_reason: reason,
     });
 
+    const setUpdate: Record<string, unknown> = {
+      [`step_states.${stepId}.status`]: 'saltato',
+      [`step_states.${stepId}.current_run`]: runNumber,
+      [`step_states.${stepId}.last_execution_id`]: execDoc._id,
+      [`step_states.${stepId}.updated_at`]: now,
+    };
+
+    // Se in futuro l'ultimo step F2 (f2_step_6) dovesse diventare skippabile,
+    // il banner di decisione F2 → F3 deve apparire atomicamente con la
+    // transizione a 'saltato' — stessa garanzia anti-race del completamento
+    // (vedi pipelineEventSubscriber.ts:handleCompleted).
+    if (stepId === 'f2_step_6') {
+      setUpdate.pending_decision = await buildF2ToF3Decision(temaId, 'f2_step_6', now);
+    }
+
     await PipelineContext.updateOne(
       { context_id: temaId },
       {
-        $set: {
-          [`step_states.${stepId}.status`]: 'saltato',
-          [`step_states.${stepId}.current_run`]: runNumber,
-          [`step_states.${stepId}.last_execution_id`]: execDoc._id,
-          [`step_states.${stepId}.updated_at`]: now,
-        },
+        $set: setUpdate,
         $addToSet: { steps_completed: stepId },
         $pull: { steps_in_progress: stepId, steps_failed: stepId },
       },

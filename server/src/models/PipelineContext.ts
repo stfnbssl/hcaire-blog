@@ -44,6 +44,29 @@ export interface IHumanDecision {
   decision: Record<string, unknown> | null;
 }
 
+// Ambito = contesto operativo in cui un tema F2 viene contestualizzato in F3.
+// La struttura di `data` riflette esattamente i campi raccolti da `f3_step_7`
+// (esterno_obbligatorio: contesto_ambito): al momento del promote diventa il
+// PipelineExternalInput pre-popolato dello step 7, evitando ricompilazione.
+export interface ITemaAmbitoData {
+  target_domain: 'clinico' | 'educativo' | 'formazione' | 'politiche';
+  target_subdomain: string;
+  age_range: string;
+  setting: string;
+  observer_profile: string;
+  notes?: string;
+}
+
+export interface ITemaAmbito {
+  ambito_id: string;
+  label: string;
+  data: ITemaAmbitoData;
+  created_at: Date;
+  created_by: string;
+  promoted_to_f3: boolean;
+  promoted_tema_id: string | null;
+}
+
 export interface IPipelineContext extends Document {
   context_type: 'ricerca' | 'tema';
   context_id: string;
@@ -56,6 +79,11 @@ export interface IPipelineContext extends Document {
   step_states: Record<string, IStepState>;
 
   pending_decision: IHumanDecision | null;
+
+  // Mappa theme_id -> elenco di ambiti definiti per quel tema. Popolata sui
+  // contesti `ricerca` durante il bridge F2 → F3. Ogni ambito può essere
+  // promosso a una pipeline F3 indipendente (1 tema → N ambiti → N temi F3).
+  tema_ambiti: Record<string, ITemaAmbito[]>;
 
   steps_completed: string[];
   steps_in_progress: string[];
@@ -107,6 +135,10 @@ const PipelineContextSchema = new Schema<IPipelineContext>(
     step_states: { type: Schema.Types.Mixed, default: () => ({}) },
 
     pending_decision: { type: HumanDecisionSchema, default: null },
+
+    // Embedded come Mixed: la chiave esterna è dinamica (theme_id) e il
+    // numero di ambiti per tema è basso (manciata di unità).
+    tema_ambiti: { type: Schema.Types.Mixed, default: () => ({}) },
 
     steps_completed:    { type: [String], default: [] },
     steps_in_progress:  { type: [String], default: [] },

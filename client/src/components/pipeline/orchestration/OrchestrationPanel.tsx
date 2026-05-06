@@ -239,7 +239,7 @@ export default function OrchestrationPanel({ temaId, orchestration }: Orchestrat
         <HumanDecisionDialog
           decision={ctx.pending_decision}
           context={ctx}
-          onSubmitTemaSelection={(ricercaId, payload) => orchestration.submitRicercaDecision(ricercaId, payload)}
+          orchestration={orchestration}
           onSubmitContextDecision={(confirmed, notes) => orchestration.submitTemaDecision(confirmed, notes)}
           onClose={() => setModal((m) => ({ ...m, decisionDialog: false }))}
         />

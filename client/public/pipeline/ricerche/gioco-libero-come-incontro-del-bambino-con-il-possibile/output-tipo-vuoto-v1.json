@@ -1,0 +1,92 @@
+{
+  "step": "f2_step_6",
+  "results": [
+    {
+      "theme_id": "gioco-libero-come-incontro-del-bambino-con-il-possibile",
+      "structural_reference": {
+        "confirmed_nodes": [
+          "desiderio-come-struttura",
+          "campo-desiderabile",
+          "eccedenza",
+          "limite-reale",
+          "condizione-del-desiderio",
+          "prestazionalizzazione-del-valore"
+        ],
+        "canonical_nodes_active": ["N4", "N6", "N7"],
+        "ce_reference": "CE = S: N4[~] N6[~] N7[↑] | R: N4→N7 (CPL), N7→N6 (CPL), N4→N6 (CPL) | D: ↗ | T: T3 | A: A±"
+      },
+      "campo_condiviso": {
+        "forma_prevalente": "parallelo",
+        "elementi_sostenenti": [
+          "campo-desiderabile come orizzonte non strutturato che apre l'esplorabilità senza orientarla a un esito",
+          "qualità di una presenza adulta che 'tiene' la relazione senza intervenire, anticipare o spiegare prematuramente",
+          "tempo non scandito da finalità preassegnate, in cui l'insistenza autonoma del bambino può manifestarsi come continuità diacronica",
+          "ponte fondativo limite-reale → condizione-del-desiderio → riorganizzazione del campo che rende il mondo abitabile dopo l'incontro con ciò che resiste"
+        ],
+        "elementi_ostacolanti": [
+          "prestazionalizzazione-del-valore: attese implicite di rendimento e proposte sempre orientate a un esito riconoscibile, anche dentro contesti nominalmente di gioco libero",
+          "iper-regolazione e spiegazionismo dell'adulto come strategie con cui non si tollera il reale, che neutralizzano il limite anticipandolo o riparandolo forzatamente",
+          "saturazione dello spazio con materiali e proposte strutturate che riempiono il tempo non finalizzato",
+          "tensione 'campo desiderabile non strutturato vs. prestazionalizzazione storica': la deformazione opera anche dentro proposte nominalmente libere"
+        ],
+        "segnali_accesso": [
+          "il bambino torna ricorsivamente verso un materiale, un gesto o un'esperienza senza sollecitazione esterna e senza che la ripetizione produca un esito riconoscibile dall'esterno",
+          "il bambino incontra una resistenza nel materiale o nel proprio corpo (sproporzione, irreversibilità) e l'adulto resta presente senza intervenire, spiegare o riparare",
+          "lo spazio contiene tempi e materiali la cui organizzazione non è leggibile come predisposizione a un esito atteso, e l'attività del bambino non è descrivibile come compito assegnato"
+        ]
+      },
+      "posizione_soggettiva": {
+        "modalita_prototipica": "emergenza_di_posizione",
+        "funzione_adulto": "L'adulto sostiene la posizione senza sostituirla: tiene la relazione senza guidare l'esperienza, è presenza che non anticipa il limite né spiega prematuramente l'evento. La sua funzione è strutturalmente di non-mediazione sistematica nell'incontro con il reale, e contemporaneamente di tenuta relazionale che rende elaborabile la perdita prima che possa essere nominata; tensione che non si risolve in tecnica ma richiede l'elaborazione del rapporto del professionista con il proprio non-poter-fare.",
+        "permanenza_nel_legame": "Richiede continuità relazionale stabile e non episodica. La qualità della relazione che 'tiene' è condizione interna (non sostituto) della non-mediazione, e la sua continuità diacronica è ciò che rende possibile l'insistenza autonoma del bambino e il suo ritorno ricorsivo verso le esperienze: senza una relazione che resta, l'orientamento non si soggettiva nella continuità del Sé nascente (N6).",
+        "forme_degradate": [
+          "desiderio onnipotente: il limite reale è stato neutralizzato dalla mediazione adulta sistematica (anticipazione, spiegazione preventiva, riparazione forzata) — l'esplorabilità diventa illimitata e il desiderio non si soggettiva come orientamento ma resta impulso indifferenziato",
+          "desiderio ritratto: per saturazione dello stimolo o assenza di campo non strutturato, il bambino smette di esercitare il desiderio come orientamento, aderendo passivamente o evitando l'investimento",
+          "desiderio sostituito da motivazione esterna: il bambino manifesta aderenza efficace al compito (attenzione, ripetizione, esito riconoscibile) ma l'orientamento interno è scomparso, sostituito da stimolazione che produce comportamento senza direzione propria",
+          "oscillazione episodica: il desiderio emerge ma non si stabilizza nella continuità diacronica perché la qualità della relazione adulta non tiene (oscilla tra ritrazione e intervento), e l'insistenza non si configura come ritorno"
+        ]
+      },
+      "rapporto_con_limite": {
+        "presenza": "sì",
+        "forma_del_limite": "Limite reale di natura corporeo-materiale: sproporzione del corpo del bambino rispetto al mondo (eccedenza che decentra senza ferire) e irreversibilità di ciò che accade nello spazio dei materiali e degli eventi (chiusura di una possibilità). Strutturalmente distinto dal limite normativo (regola) e dal limite simbolico mediato dalla spiegazione: è l'incontro con ciò che resiste indipendentemente dall'intenzione del bambino e dalla mediazione adulta sistematica.",
+        "reazione_strutturale": "A±",
+        "nominazione": "La nominazione del limite è possibile e auspicabile, ma solo come elaborazione successiva all'incontro non mediato, dentro la continuità di una relazione che ha 'tenuto' l'evento senza guidarlo. L'anticipazione spiegativa neutralizza strutturalmente il limite trasformandolo in regola o in motivazione esterna; la simbolizzazione emerge dalla qualità della relazione che ha sostenuto la perdita, non dalla sua descrizione preventiva. Il rischio strutturale è che la nominazione si trasformi in spiegazionismo, riproducendo in forma raffinata la mediazione adulta sistematica che il tema richiede di sospendere."
+      },
+      "configurazione_complessiva": "In questa situazione il campo appare strutturato prevalentemente come orizzonte non finalizzato in cui il bambino si orienta attivamente verso ciò che lo chiama: l'esplorabilità del mondo, riorganizzata dall'incontro non mediato con il limite reale, sostiene il dispiegarsi del desiderio come direzione interna, e il desiderio si soggettiva nella continuità diacronica del ritorno e dell'insistenza autonoma. La configurazione è caratterizzata da una direzione di apertura sostenuta dalla qualità non strutturata dello spazio e dalla tenuta di una presenza adulta che non interviene, con un'abitabilità strutturalmente fragile (A±) dipendente da condizioni di campo non garantite ed esposte all'erosione storica della prestazionalizzazione del valore. Il nodo dominante è N7 (Desiderio/Direzione) in relazione a N4 (Esplorabilità del mondo) attraverso una relazione di completamento (CPL) che riorganizza il campo dopo l'incontro con il limite invece di restringerlo, sostenuta in continuità diacronica da N6 (Continuità del Sé nascente).",
+      "ipotesi_sostegno": [
+        {
+          "direzione": "campo_condiviso",
+          "descrizione_strutturale": "Preservare la qualità non strutturata dello spazio e del tempo come condizione strutturale del dispiegarsi del desiderio come orientamento, sottraendo il campo educativo alla saturazione di proposte orientate a un esito riconoscibile. Non si tratta di allestire 'spazi di gioco libero' come setting da progettare, ma di tenere aperto un orizzonte in cui ciò che non è misurabile non diventi invisibile e l'attività del bambino non sia leggibile come compito.",
+          "nodo_principale": "N4"
+        },
+        {
+          "direzione": "posizione_soggettiva",
+          "descrizione_strutturale": "Sostenere l'emergenza dell'orientamento del bambino come direzione interna, riconoscendo l'insistenza autonoma e il ritorno ricorsivo come segnali di soggettivazione del desiderio strutturalmente distinti dall'aderenza efficace al compito esterno. La direzione di sostegno è di non sostituire l'orientamento con motivazione esterna, anche quando questa produrrebbe esiti più rapidamente leggibili, e di proteggere la continuità diacronica in cui l'insistenza prende forma di soggetto.",
+          "nodo_principale": "N7"
+        },
+        {
+          "direzione": "limite_nominabile",
+          "descrizione_strutturale": "Preservare l'incontro non mediato con il limite reale come evento — rinunciando all'anticipazione spiegativa, alla riparazione forzata e alla regolazione preventiva che ne neutralizzano la portata strutturale — e permettere che la nominazione del limite emerga solo dopo l'incontro, dentro la continuità di una relazione che ha 'tenuto' senza guidare. La direzione non è introdurre il limite come regola ma sostenerne la qualità di reale, perché la sua trasformazione in condizione del desiderio richiede che non sia stato anticipato.",
+          "nodo_principale": "N5"
+        }
+      ],
+      "tipologia_universale": [
+        {
+          "id": "U3",
+          "label": "Apertura",
+          "pertinenza": "Il tema richiede strutturalmente la preservazione del campo desiderabile non strutturato come orizzonte di esplorabilità in cui il desiderio si orienta come direzione autonoma, e l'apertura del campo è la forma stessa del fenomeno quando si dà."
+        },
+        {
+          "id": "U5",
+          "label": "Limite Generativo",
+          "pertinenza": "Il tema è costitutivamente attraversato dall'incontro non mediato con il limite reale (eccedenza e irreversibilità) come condizione interna della trasformazione del campo del possibile in orientamento del desiderio, anche se nella CE prototipica il limite opera attraverso la riorganizzazione di N4 più che come nodo canonico autonomo."
+        },
+        {
+          "id": "U6",
+          "label": "Riattivazione del Desiderio",
+          "pertinenza": "Il desiderio come struttura di orientamento è l'asse identitario del tema (N7 ↑) e ogni configurazione di sostegno deve preservarne il carattere di direzione interna distinta dalla motivazione esterna, senza convertirlo per costruzione in aderenza efficace al compito."
+        }
+      ]
+    }
+  ]
+}

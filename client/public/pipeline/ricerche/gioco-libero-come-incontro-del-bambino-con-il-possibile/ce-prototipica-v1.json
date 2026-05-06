@@ -1,0 +1,73 @@
+{
+  "step": "f2_step_4b",
+  "results": [
+    {
+      "theme_id": "gioco-libero-come-incontro-del-bambino-con-il-possibile",
+      "ce_prototipica": {
+        "S": [
+          {
+            "node_id": "N4",
+            "state": "~",
+            "rationale": "L'Apertura/Esplorabilità del mondo è attivata pienamente via condizione-del-desiderio: il campo del possibile non è espansivo in senso illimitato ma riorganizzato dall'incontro non mediato con il limite reale (eccedenza e irreversibilità). Lo stato è stabile (~) e non espansivo (↑) perché la specificità del tema è proprio che il limite reale non distrugge ma stabilizza l'esplorabilità rendendola abitabile: l'apertura prototipica del gioco libero è un'apertura condizionata, non un'esplorazione onnipotente."
+          },
+          {
+            "node_id": "N6",
+            "state": "~",
+            "rationale": "La Continuità temporale del Sé nascente è attivata in modo parziale via soggettivazione-del-desiderio (ritorno, insistenza, mantenimento degli investimenti). Lo stato è stabile (~) perché nella forma prototipica del gioco libero la continuità diacronica è la condizione che sostiene la soggettivazione del desiderio senza essere essa stessa il fuoco espansivo del tema: regge l'insistenza autonoma che distingue l'orientamento dalla motivazione esterna."
+          },
+          {
+            "node_id": "N7",
+            "state": "↑",
+            "rationale": "Il Desiderio/Direzione dell'esperienza è il nodo identitario del tema, attivato in modo pieno e duplice (desiderio-come-struttura, campo-desiderabile). Lo stato è espansivo (↑) perché la CE prototipica descrive la forma tipica del gioco libero quando si dà: il desiderio si esercita attivamente come struttura di orientamento pre-riflessivo nel campo del possibile. È l'asse identitario dell'intera configurazione triadica direzionale."
+          }
+        ],
+        "R": [
+          {
+            "from_node": "N4",
+            "to_node": "N7",
+            "relation_type": "CPL",
+            "rationale": "Coerente con il ponte fondativo di STEP 4 (trasformazione del limite reale in orientamento del desiderio): l'esplorabilità del mondo, riorganizzata dall'incontro non mediato con il limite reale, sostiene il desiderio come orientamento. Senza questo sostegno il desiderio collassa in onnipotenza o compensazione reattiva."
+          },
+          {
+            "from_node": "N7",
+            "to_node": "N6",
+            "relation_type": "CPL",
+            "rationale": "Il desiderio come struttura di orientamento si soggettiva nella continuità temporale del Sé: l'insistenza, il ritorno e il mantenimento degli investimenti sono la dimensione diacronica in cui l'orientamento prende forma di soggetto, distinguendosi così dall'aderenza efficace ma fragile della motivazione esterna."
+          },
+          {
+            "from_node": "N4",
+            "to_node": "N6",
+            "relation_type": "CPL",
+            "rationale": "L'esplorabilità condizionata dal limite reale sostiene la continuità del Sé nascente perché il campo riorganizzato (e non collassato) è ciò che rende possibile il ritorno: solo un campo abitabile dopo l'incontro con il limite consente l'insistenza diacronica del desiderio."
+          }
+        ],
+        "D": "↗",
+        "T": "T3",
+        "A": "A±"
+      },
+      "ce_notation": "CE = S: N4[~] N6[~] N7[↑] | R: N4→N7 (CPL), N7→N6 (CPL), N4→N6 (CPL) | D: ↗ | T: T3 | A: A±",
+      "ce_natural_language": "La forma tipica del gioco libero è un campo in cui il bambino si orienta attivamente verso ciò che lo chiama, mentre il mondo intorno si apre come spazio esplorabile non illimitato ma reso abitabile dall'incontro con ciò che resiste senza essere spiegato. Questa apertura sostiene il dispiegarsi del desiderio come direzione, e il desiderio a sua volta prende corpo nel tempo attraverso il ritornare del bambino verso le esperienze che lo interessano. La direzione complessiva del campo è di apertura, ma è una configurazione fragile: dipende dalla qualità non strutturata dello spazio in cui si dà e dalla tenuta di una presenza adulta che non anticipa né spiega prematuramente. È una struttura ricorrente dello sviluppo, non un episodio, ma è oggi sotto pressione di forze storiche che la erodono.",
+      "ce_variants": [
+        {
+          "variant_name": "CE chiudente (prestazionalizzata)",
+          "modified_dimension": "S",
+          "modification_description": "N7 passa da ↑ a ↓; D passa da ↗ a ↘; A passa da A± a A−. N4 può restare ~ ma diventa funzionalmente inerte rispetto al desiderio.",
+          "structural_description": "Variante in cui la prestazionalizzazione storica del valore (asse 6) ha eroso il campo desiderabile non strutturato convertendolo in campo prestazionale. Il desiderio si ritrae perché lo spazio in cui esercitarsi come orientamento autonomo è stato sostituito da motivazione esterna. Il bambino può apparire 'aderente' al compito ma l'orientamento è scomparso: ciò che resta è efficacia senza direzione interna. È la configurazione di lettura strutturale dell'assenza di gioco libero nei contesti educativi prestazionalizzati."
+        },
+        {
+          "variant_name": "CE onnipotente (limite assente)",
+          "modified_dimension": "S",
+          "modification_description": "N7 passa da ↑ a ! (disorganizzato); N4 passa da ~ a ↑ (espansività non condizionata); A passa da A± a A−.",
+          "structural_description": "Variante in cui il limite reale è stato neutralizzato dalla mediazione adulta sistematica (anticipazione, spiegazione preventiva, riparazione forzata). Il desiderio non incontra ciò che resiste e si configura come impulso indifferenziato: l'esplorabilità diventa illimitata e il campo del possibile non si riorganizza. Senza l'incontro con l'eccedenza e l'irreversibilità il desiderio non si soggettiva come orientamento, manca della trasformazione che lo costituisce strutturalmente. È la configurazione che rende leggibile l'iper-regolazione adulta come deformazione del tema."
+        },
+        {
+          "variant_name": "CE in attesa (relazione che non tiene)",
+          "modified_dimension": "T",
+          "modification_description": "T passa da T3 a T1 o T2; D passa da ↗ a →; N6 passa da ~ a ↓.",
+          "structural_description": "Variante in cui la qualità della relazione adulta non tiene l'incontro con il limite (la relazione si ritrae oppure interviene): il bambino non può elaborare la perdita perché manca la presenza che sostiene senza guidare. Il desiderio emerge episodicamente ma non si stabilizza nella continuità diacronica: l'insistenza viene meno, il ritorno si interrompe. La configurazione esiste, ma in attesa di una condizione relazionale che non si realizza: il fenomeno resta possibile ma non strutturato."
+        }
+      ],
+      "derivation_notes": "La dimensione S è derivata dalla mappatura canonica di STEP 2a (N4, N6, N7 attivati; N1, N2, N3, N5 strutturalmente assenti e quindi esclusi). Gli stati riflettono la funzione di ciascun nodo nella configurazione triadica direzionale di STEP 4: N7 ↑ come asse identitario espansivo (esercizio del desiderio come orientamento), N4 ~ come esplorabilità riorganizzata e stabilizzata dal limite reale (non espansiva in senso illimitato), N6 ~ come continuità diacronica che sostiene la soggettivazione senza essere il fuoco espansivo del tema. La dimensione R deriva dai due ponti organizzativi di STEP 4: il ponte fondativo (limite reale → orientamento del desiderio) si traduce in N4→N7 (CPL); la dimensione diacronica della soggettivazione del desiderio (coperta da N6 in modo parziale) si traduce in N7→N6 (CPL); il sostegno indiretto dell'esplorabilità alla continuità si traduce in N4→N6 (CPL). Il ponte deformativo (erosione storica via prestazionalizzazione) non genera relazione canonica perché asse 6 non ha nodo canonico attivato — entra invece nella variante 'CE chiudente' come modificazione di stato. La direzione D ↗ riflette la configurazione prototipica del fenomeno quando si dà (apertura del campo e dispiegamento del desiderio), non la pressione deformativa che è invece codificata nelle varianti. La stabilità T3 deriva dal translation_potential di STEP 4 (il tema è leggibile in contesti educativi, formativi, politici, clinici come struttura dello sviluppo, non come episodio). L'abitabilità A± deriva dalle tensioni strutturali marcate di STEP 4 (incontro con il limite vs orientamento, non-strutturazione vs prestazionalizzazione, non-mediazione vs tenuta della relazione): la configurazione è strutturalmente sostenibile ma fragile, dipendente da condizioni di campo (spazio non strutturato, qualità della relazione che tiene) che non sono garantite ma richiedono di essere preservate."
+    }
+  ]
+}

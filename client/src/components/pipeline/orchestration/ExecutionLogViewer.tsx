@@ -28,6 +28,15 @@ export default function ExecutionLogViewer(props: ExecutionLogViewerProps) {
     }
   }, [logs, autoScroll]);
 
+  // Chiusura con ESC come fallback al bottone.
+  useEffect(() => {
+    function handleEsc(e: KeyboardEvent) {
+      if (e.key === 'Escape') props.onClose();
+    }
+    document.addEventListener('keydown', handleEsc);
+    return () => document.removeEventListener('keydown', handleEsc);
+  }, [props]);
+
   function handleScroll() {
     const el = scrollRef.current;
     if (!el) return;
@@ -45,7 +54,7 @@ export default function ExecutionLogViewer(props: ExecutionLogViewerProps) {
   const isFailed = status === 'fallito';
 
   return (
-    <div className="fixed inset-y-0 right-0 z-40 w-full sm:max-w-2xl bg-slate-900 text-slate-100 shadow-2xl flex flex-col">
+    <div className="fixed top-16 bottom-0 right-0 z-[60] w-full sm:max-w-2xl bg-slate-900 text-slate-100 shadow-2xl flex flex-col">
       {/* Header */}
       <div className="flex items-center justify-between p-4 border-b border-slate-700">
         <div>
@@ -59,7 +68,15 @@ export default function ExecutionLogViewer(props: ExecutionLogViewerProps) {
             {status && <span className="ml-2">stato: {status}</span>}
           </p>
         </div>
-        <button onClick={props.onClose} className="text-slate-400 hover:text-slate-200 text-xl" aria-label="Chiudi">✕</button>
+        <button
+          onClick={props.onClose}
+          className="flex-shrink-0 flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-md border border-slate-600 bg-slate-800 text-slate-200 hover:bg-slate-700 hover:border-slate-500 transition-colors"
+          aria-label="Chiudi pannello log"
+          title="Chiudi (ESC)"
+        >
+          <span className="text-base leading-none">✕</span>
+          <span>Chiudi</span>
+        </button>
       </div>
 
       {/* Banner errore se la run è fallita */}

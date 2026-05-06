@@ -1,0 +1,103 @@
+{
+  "step": "step_4",
+  "results": [
+    {
+      "theme_id": "gioco-libero-come-incontro-del-bambino-con-il-possibile",
+      "core_configuration": {
+        "description": "La configurazione è organizzata da una struttura triadica direzionale. Al centro il desiderio come struttura di orientamento (asse 5) — non contenuto né motivazione, ma forma del rapporto del soggetto con il possibile — che si esercita in un campo desiderabile non strutturato. Questo orientamento non è autosufficiente: dipende strutturalmente dall'incontro non mediato con il limite reale (asse 4), che attraverso l'eccedenza (sproporzione che decentra) e l'irreversibilità (chiusura di una possibilità) riorganizza il campo invece di distruggerlo. La condizione-del-desiderio è esattamente questa trasformazione: il limite reale non collassa il possibile ma lo rende abitabile, e in questa riorganizzazione il desiderio si configura come direzione invece che come impulso o compensazione. Su questo doppio movimento agisce, in senso opposto, la mediazione storico-culturale (asse 6): la prestazionalizzazione del valore erode strutturalmente lo spazio del campo desiderabile non strutturato, convertendolo in campo prestazionale in cui la motivazione esterna sostituisce l'orientamento. La configurazione non è quindi un sistema in equilibrio ma un campo di forze: il limite reale sostiene il desiderio dall'interno della sua trasformazione; la prestazionalizzazione lo erode dall'esterno della sua mediazione storica. Il gioco libero è il fenomeno in cui questa dinamica diventa visibile.",
+        "structure_logic": "Configurazione triadica direzionale: il desiderio come orientamento nel campo del possibile (centro) è strutturato dall'incontro non mediato con il limite reale (forza fondativa) ed eroso dalla prestazionalizzazione storica del valore (forza deformativa); la sua identità coincide con la trasformazione del limite in riorganizzazione del campo, contro l'erosione storica dello spazio non strutturato in cui questa trasformazione è possibile."
+      },
+      "axes_articulation": [
+        {
+          "axis_id": "asse_5",
+          "axis_name": "Desiderio",
+          "function_in_theme": "Asse identitario della configurazione: definisce cosa è il gioco libero — esercizio del desiderio come struttura di orientamento pre-riflessivo nel campo del possibile, attraverso continuità vissuta e direzione implicita dell'azione, prima e indipendentemente da finalità preassegnate. Presidia il livello strutturale dell'orientamento: senza questo asse il gioco libero non è discriminabile dal gioco motivato dall'esterno né dall'attività piacevole non orientata.",
+          "specific_contribution": "Introduce nella configurazione la differenza strutturale tra orientamento (forma del rapporto con il possibile, pre-riflessiva e incarnata) e motivazione (stimolazione esterna che produce comportamento efficace senza orientamento interno). Questa differenza non è prodotta né dall'asse 4 (che descrive l'incontro con il reale ma non la forma dell'orientamento) né dall'asse 6 (che descrive la deformazione storica ma non la struttura del desiderabile): è il contributo irriducibile dell'asse 5 alla micro-matrice."
+        },
+        {
+          "axis_id": "asse_4",
+          "axis_name": "Separazione e Limite",
+          "function_in_theme": "Asse della specificità strutturante: chiarisce perché il gioco libero è strutturante e non solo piacevole — l'incontro non mediato con eccedenza (sproporzione che decentra) e limite reale (irreversibilità che chiude possibilità) è ciò che lo distingue dal gioco guidato e dall'apprendimento mediato. Presidia il livello dell'incontro con ciò che resiste indipendentemente dall'intenzione del bambino e dalla mediazione adulta sistematica.",
+          "specific_contribution": "Introduce nella configurazione la condizione strutturale per cui il desiderio dell'asse 5 può funzionare come orientamento e non come impulso onnipotente o compensazione reattiva: il limite reale, quando non viene anticipato dalla mediazione adulta né neutralizzato dalla spiegazione, riorganizza il campo del possibile rendendolo abitabile. Senza questo asse la configurazione perderebbe la specificità strutturante del fenomeno e collasserebbe in una descrizione generica di attività libera."
+        },
+        {
+          "axis_id": "asse_6",
+          "axis_name": "Storico–culturale",
+          "function_in_theme": "Asse della deformazione storica: chiarisce perché il gioco libero è un tema critico oggi e non sempre. La prestazionalizzazione del valore (ciò che non è misurabile diventa invisibile) e la colonizzazione del tempo non produttivo sono configurazioni storiche del mondo contemporaneo che erodono strutturalmente lo spazio del campo desiderabile non strutturato. Presidia il livello della mediazione storico-culturale che non è sfondo ma forza attiva.",
+          "specific_contribution": "Introduce nella configurazione la lettura sistemica della scomparsa del gioco libero nei contesti educativi: la sua riduzione non è somma di scelte locali ma esito di una configurazione storica precisa che colpisce specificamente le attività non finalizzate. Senza questo asse la criticità del tema collasserebbe in errore pedagogico individuale, perdendo la dimensione strutturale della deformazione e quindi la possibilità di leggerla come tale."
+        }
+      ],
+      "bridge_integration": [
+        {
+          "concept_label": "Trasformazione del limite reale in orientamento del desiderio",
+          "linked_axes": ["asse_4", "asse_5"],
+          "linked_nodes": [
+            "limite-reale",
+            "eccedenza",
+            "condizione-del-desiderio",
+            "desiderio-come-struttura",
+            "campo-desiderabile"
+          ],
+          "function": "Il ponte descrive il movimento direzionale fondativo della configurazione: l'incontro non mediato con il limite reale, quando la relazione tiene senza spiegare prematuramente, si trasforma in riorganizzazione del campo del possibile e quindi in desiderio come orientamento. Non è una sequenza temporale ma una struttura: il limite reale non precede e non segue il desiderio, ne è la condizione interna di trasformazione. Questa trasformazione è ciò che distingue il desiderio strutturale (orientamento che si riorganizza dopo l'incontro con il limite) dal desiderio compensatorio (reattivo, agganciato alla perdita) e dal desiderio onnipotente (impulso indifferenziato che non incontra il reale).",
+          "type": "organizzativo"
+        },
+        {
+          "concept_label": "Erosione storica del campo desiderabile non strutturato",
+          "linked_axes": ["asse_5", "asse_6"],
+          "linked_nodes": [
+            "campo-desiderabile",
+            "prestazionalizzazione-del-valore"
+          ],
+          "function": "Il ponte descrive il movimento opposto e simmetrico al ponte fondativo: il mondo storico-culturale contemporaneo, attraverso la prestazionalizzazione, riduce strutturalmente lo spazio in cui il campo desiderabile può esercitarsi come orientamento autonomo, convertendolo in campo prestazionale in cui la motivazione esterna sostituisce l'orientamento interno. Non descrive un'influenza contestuale sul fenomeno ma una deformazione strutturale: il campo desiderabile non viene perso per disuso ma riconfigurato dall'interno della sua mediazione storica.",
+          "type": "organizzativo"
+        }
+      ],
+      "structural_tensions": [
+        {
+          "tension": "incontro con il limite vs. orientamento del desiderio",
+          "description": "Il limite reale chiude possibilità (irreversibilità) e decentra il soggetto (eccedenza); il desiderio come orientamento apre il campo del possibile e fornisce direzione. I due poli non si annullano perché non operano sullo stesso piano: il limite è ciò che il desiderio incontra come reale, il desiderio è ciò che riorganizza il campo dopo l'incontro. La configurazione del gioco libero esiste solo nella loro coesistenza tensionale: senza limite il desiderio resta onnipotente o reattivo; senza desiderio il limite produce ritrazione invece che orientamento."
+        },
+        {
+          "tension": "campo desiderabile non strutturato vs. prestazionalizzazione storica",
+          "description": "Il gioco libero richiede strutturalmente uno spazio non strutturato in cui il desiderio possa esercitarsi come orientamento autonomo, libero da finalità preassegnate. Il mondo storico-culturale contemporaneo struttura attivamente il tempo e il valore secondo la prestazione, rendendo invisibile ciò che non è misurabile. La tensione è strutturale e non risolvibile: nessuna delle due polarità si annulla — la prima è condizione del fenomeno, la seconda è la sua mediazione storica reale. La configurazione non offre una via d'uscita dalla tensione, ma rende leggibile la sua presenza come deformazione."
+        },
+        {
+          "tension": "non-mediazione adulta sistematica vs. tenuta della relazione",
+          "description": "Il gioco libero è strutturalmente definito dall'assenza di mediazione adulta sistematica nell'incontro con il limite reale: l'adulto non anticipa, non spiega prematuramente, non ripara forzatamente. Tuttavia il limite reale non è elaborabile senza una relazione che 'tiene' senza intervenire — la relazione che sostiene la perdita prima di poterla nominare. La tensione è che la relazione deve esserci senza prendere la forma della mediazione: presenza che non guida, sostegno che non struttura. Coesistono senza sintesi perché operano a livelli diversi (qualità della relazione vs. forma dell'intervento)."
+        },
+        {
+          "tension": "insistenza autonoma vs. aderenza al compito",
+          "description": "Il desiderio soggettivato si manifesta osservativamente come continuità vissuta — il bambino torna verso certe esperienze, insiste su certi gesti, mantiene certi investimenti. La motivazione esterna produce un'aderenza efficace ma fragile, dipendente dallo stimolo. I due poli sono strutturalmente distinti ma osservativamente sottili: entrambi possono produrre comportamenti ripetuti, attenzione sostenuta, esiti riconoscibili. La tensione interna alla configurazione è che la differenza tra orientamento e motivazione non è leggibile sul piano del comportamento isolato, ma solo sulla qualità della continuità e sulla sua tenuta in assenza di stimolo esterno."
+        }
+      ],
+      "structural_questions": [
+        "In quali condizioni l'incontro non mediato con il limite reale si trasforma in riorganizzazione del campo desiderabile invece che in ritrazione difensiva del desiderio — e quale qualità della relazione che 'tiene' rende possibile questa differenza senza prendere la forma della mediazione sistematica?",
+        "Come si distingue strutturalmente un campo desiderabile non strutturato (condizione del gioco libero come orientamento autonomo) da un campo non orientato (dispersione, sospensione indifferente di tutte le direzioni) — e quali soglie permettono di riconoscere questa differenza?",
+        "In che senso l'assenza di gioco libero in un contesto educativo è leggibile come deformazione strutturale prodotta dalla prestazionalizzazione del valore, e non come scelta pedagogica locale o errore organizzativo? Quali indicatori distinguono i due livelli?",
+        "Qual è la relazione strutturale tra eccedenza (sproporzione che decentra senza ferire) e limite reale (irreversibilità che chiude una possibilità) nell'esperienza del bambino che gioca — sono forme distinte di incontro con il reale o gradazioni dello stesso evento, e cosa cambia se collassano in un'unica categoria di 'frustrazione'?",
+        "In quali configurazioni storico-istituzionali la prestazionalizzazione del valore non riesce a colonizzare integralmente lo spazio del gioco libero — e cosa rende strutturalmente possibile questa resistenza, oltre alla volontà degli adulti coinvolti?",
+        "Come si manifesta osservativamente la differenza tra desiderio come struttura di orientamento (continuità vissuta, insistenza autonoma) e motivazione esterna (aderenza efficace al compito) quando entrambe possono produrre comportamenti riconoscibili come 'gioco'?",
+        "In quale misura il desiderio ritratto del bambino in contesti fortemente prestazionalizzati è leggibile come segnale strutturale (deformazione del campo desiderabile) e non come deficit motivazionale o disinteresse individuale?"
+      ],
+      "translation_potential": [
+        {
+          "domain": "educativo (servizi 0-6, scuola dell'infanzia, contesti di cura)",
+          "reason": "La configurazione interroga la qualità dello spazio non strutturato come condizione dello sviluppo, non come pausa o intervallo. Porta nei servizi la domanda strutturale: in che misura l'organizzazione del tempo, dello spazio e delle attività preserva il campo desiderabile non strutturato in cui il desiderio può esercitarsi come orientamento, e in che misura lo erode attraverso una prestazionalizzazione anche sottile (proposte sempre orientate a un esito, attese implicite di rendimento, neutralizzazione anticipata del limite)?"
+        },
+        {
+          "domain": "formazione dei professionisti dei servizi educativi e di cura",
+          "reason": "La configurazione interroga la differenza strutturale tra accompagnamento e mediazione: come si forma un adulto a una presenza che 'tiene' senza intervenire, che sostiene l'incontro con il limite senza anticiparlo né spiegarlo prematuramente? La micro-matrice porta nella formazione la domanda strutturale sull'iper-regolazione e sullo spiegazionismo come strategie con cui l'adulto non tollera il reale, e sulla qualità della relazione come condizione (non sostituto) della non-mediazione."
+        },
+        {
+          "domain": "politiche per l'infanzia e progettazione dei servizi",
+          "reason": "La configurazione interroga la prestazionalizzazione dei contesti educativi come deformazione strutturale e non come problema di efficacia. Porta nella progettazione delle politiche la domanda strutturale: i criteri di valutazione, i sistemi di rendicontazione, le aspettative di esito che organizzano i servizi sono compatibili con l'esistenza di uno spazio non strutturato, o lo erodono per costruzione? La domanda non è 'come introdurre il gioco libero' ma 'quali condizioni sistemiche lo rendono o non lo rendono strutturalmente possibile'."
+        },
+        {
+          "domain": "clinico-evolutivo (lettura dello sviluppo, consulenza ai genitori)",
+          "reason": "La configurazione interroga la lettura del desiderio ritratto come segnale strutturale e non come deficit motivazionale o disinteresse individuale. Porta nell'ambito clinico-evolutivo la domanda sulla differenza tra un bambino che ha smesso di esercitare il desiderio come orientamento (per protezione, per saturazione di stimoli, per assenza di campo non strutturato) e un bambino con difficoltà evolutive specifiche: una differenza che non è leggibile sul piano sintomatico ma solo sulla qualità del campo in cui il bambino è collocato."
+        }
+      ],
+      "configuration_summary": "Il gioco libero è descritto come configurazione triadica direzionale in cui il desiderio come struttura di orientamento (asse 5) è strutturato dall'incontro non mediato con il limite reale — eccedenza e irreversibilità che riorganizzano il campo del possibile (asse 4) — ed è eroso dalla prestazionalizzazione storica del valore che converte il campo desiderabile non strutturato in campo prestazionale (asse 6). La logica della micro-matrice si gioca in due movimenti direzionali e organizzativi: uno fondativo (limite reale → riorganizzazione del campo → desiderio come orientamento) e uno deformativo (mediazione storica → erosione del campo desiderabile non strutturato), sostenuti da tensioni irrisolvibili tra incontro con il limite e orientamento del desiderio, tra non-strutturazione del campo e prestazionalizzazione storica, tra non-mediazione adulta e tenuta della relazione. La micro-matrice rende leggibile non un problema educativo locale ma una struttura dello sviluppo oggi sotto pressione storica strutturale."
+    }
+  ]
+}

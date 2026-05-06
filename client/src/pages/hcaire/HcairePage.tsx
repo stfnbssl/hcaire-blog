@@ -18,22 +18,46 @@ const SECTION_LABELS: Record<string, string> = {
   'agentic-shift':          "HCAIRE adotta l'Agentic Shift",
 };
 
+type ManifestoTab = 'teorico' | 'ai';
+
 export default function HcairePage() {
   const { section = '' } = useParams<{ section: string }>();
   const [data, setData] = useState<HcaireSection | null>(null);
+  const [teoricoData, setTeoricoData] = useState<HcaireSection | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [activeTab, setActiveTab] = useState<ManifestoTab>('teorico');
+
+  const isManifesto = section === 'manifesto';
 
   useEffect(() => {
     setLoading(true);
     setError(false);
-    hcaireApi.getSection(section)
-      .then(setData)
-      .catch(() => setError(true))
-      .finally(() => setLoading(false));
-  }, [section]);
+    setActiveTab('teorico');
+
+    if (isManifesto) {
+      Promise.all([
+        hcaireApi.getSection('manifesto'),
+        hcaireApi.getSection('manifesto-teorico'),
+      ])
+        .then(([ai, teorico]) => {
+          setData(ai);
+          setTeoricoData(teorico);
+        })
+        .catch(() => setError(true))
+        .finally(() => setLoading(false));
+    } else {
+      setTeoricoData(null);
+      hcaireApi.getSection(section)
+        .then(setData)
+        .catch(() => setError(true))
+        .finally(() => setLoading(false));
+    }
+  }, [section, isManifesto]);
 
   const label = SECTION_LABELS[section] ?? data?.title ?? section;
+
+  const currentManifesto = activeTab === 'teorico' ? teoricoData : data;
 
   return (
     <>
@@ -52,7 +76,39 @@ export default function HcairePage() {
           {loading && <div className="h-48 bg-gray-50 animate-pulse rounded-lg" />}
           {error && <p className="text-red-500">Errore nel caricamento del contenuto.</p>}
 
-          {data && !loading && (
+          {isManifesto && !loading && !error && (
+            <>
+              <div className="flex gap-1 border-b border-gray-200 mb-6">
+                {([
+                  { id: 'teorico', label: 'Teorico' },
+                  { id: 'ai',      label: 'AI' },
+                ] as const).map((t) => (
+                  <button
+                    key={t.id}
+                    onClick={() => setActiveTab(t.id)}
+                    className={`text-sm font-medium px-4 py-2 -mb-px border-b-2 transition-colors ${
+                      activeTab === t.id
+                        ? 'border-primary-600 text-primary-700'
+                        : 'border-transparent text-gray-500 hover:text-gray-800'
+                    }`}
+                  >
+                    {t.label}
+                  </button>
+                ))}
+              </div>
+
+              {currentManifesto && (
+                currentManifesto.isEmpty
+                  ? <StubNotice parentTo="/hcaire" parentLabel="HCAIRE" />
+                  : <>
+                      <MarkdownRenderer content={currentManifesto.content} />
+                      <AgenticLabel />
+                    </>
+              )}
+            </>
+          )}
+
+          {!isManifesto && data && !loading && (
             data.isEmpty
               ? <StubNotice parentTo="/hcaire" parentLabel="HCAIRE" />
               : <>

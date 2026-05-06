@@ -14,6 +14,8 @@ import type {
   MissingDependency,
   MissingExternalInput,
   TemaSelectionPayload,
+  TemaAmbito,
+  TemaAmbitoData,
 } from '../types/pipeline';
 
 const ACTIVE_STATUSES: ExecutionStatus[] = ['in_coda', 'in_esecuzione'];
@@ -43,6 +45,14 @@ interface UsePipelineOrchestrationResult {
   submitExternalInput: (stepId: string, inputId: string, data: Record<string, unknown>) => Promise<void>;
   submitTemaDecision: (confirmed: boolean, notes?: string) => Promise<void>;
   submitRicercaDecision: (ricercaId: string, payload: TemaSelectionPayload) => Promise<void>;
+
+  // Bridge F2 → F3 ambiti (1→n)
+  listTemaAmbiti: (themeId: string) => Promise<TemaAmbito[]>;
+  createTemaAmbito: (themeId: string, payload: { ambito_id: string; label: string; data: TemaAmbitoData }) => Promise<TemaAmbito>;
+  updateTemaAmbito: (themeId: string, ambitoId: string, payload: { label?: string; data?: TemaAmbitoData }) => Promise<TemaAmbito>;
+  deleteTemaAmbito: (themeId: string, ambitoId: string) => Promise<void>;
+  promoteTemaAmbito: (themeId: string, ambitoId: string) => Promise<{ tema_id: string; already_promoted: boolean }>;
+  dismissRicercaDecision: () => Promise<void>;
 }
 
 // Replica della logica evaluateStepEnablement del backend (D4 §9), sufficientemente
@@ -348,6 +358,42 @@ export function usePipelineOrchestration(opts: UsePipelineOrchestrationOptions):
     await fetchTema();
   }, [getToken, fetchTema]);
 
+  const listTemaAmbiti = useCallback(async (themeId: string) => {
+    const r = await pipelineOrchestratorService.listTemaAmbiti(contextId, themeId);
+    return r.ambiti;
+  }, [contextId]);
+
+  const createTemaAmbito = useCallback(async (themeId: string, payload: { ambito_id: string; label: string; data: TemaAmbitoData }) => {
+    const r = await pipelineOrchestratorService.createTemaAmbito(contextId, themeId, payload, getToken);
+    await fetchTema();
+    return r.ambito;
+  }, [contextId, getToken, fetchTema]);
+
+  const updateTemaAmbito = useCallback(async (themeId: string, ambitoId: string, payload: { label?: string; data?: TemaAmbitoData }) => {
+    const r = await pipelineOrchestratorService.updateTemaAmbito(contextId, themeId, ambitoId, payload, getToken);
+    await fetchTema();
+    return r.ambito;
+  }, [contextId, getToken, fetchTema]);
+
+  const deleteTemaAmbito = useCallback(async (themeId: string, ambitoId: string) => {
+    await pipelineOrchestratorService.deleteTemaAmbito(contextId, themeId, ambitoId, getToken);
+    await fetchTema();
+  }, [contextId, getToken, fetchTema]);
+
+  const promoteTemaAmbito = useCallback(async (themeId: string, ambitoId: string) => {
+    const r = await pipelineOrchestratorService.promoteTemaAmbito(contextId, themeId, ambitoId, getToken);
+    await fetchTema();
+    return {
+      tema_id: r.created_tema_id ?? r.tema_id ?? '',
+      already_promoted: !!r.already_promoted,
+    };
+  }, [contextId, getToken, fetchTema]);
+
+  const dismissRicercaDecision = useCallback(async () => {
+    await pipelineOrchestratorService.dismissRicercaDecision(contextId, getToken);
+    await fetchTema();
+  }, [contextId, getToken, fetchTema]);
+
   const refresh = useCallback(async () => { await fetchTema(); }, [fetchTema]);
 
   return {
@@ -366,5 +412,11 @@ export function usePipelineOrchestration(opts: UsePipelineOrchestrationOptions):
     submitExternalInput,
     submitTemaDecision,
     submitRicercaDecision,
+    listTemaAmbiti,
+    createTemaAmbito,
+    updateTemaAmbito,
+    deleteTemaAmbito,
+    promoteTemaAmbito,
+    dismissRicercaDecision,
   };
 }

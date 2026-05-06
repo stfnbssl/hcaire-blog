@@ -146,6 +146,17 @@ async function handleCompleted(msg: PipelineMessage) {
     [`step_states.${msg.step_id}.updated_at`]: now,
   };
 
+  // Trigger F2 → F3: quando f2_step_6 (ultimo step della sequenza lineare v2.3+:
+  // 2 → 2a → 3 → 4 → 4b → 5 → 6) raggiunge terminal, tutti i sette step F2 sono
+  // per costruzione in stato terminale. Il pending_decision viene incluso nello
+  // stesso $set della transizione di status: questo garantisce che il polling
+  // del frontend, alla prima fetch dopo il completamento, veda atomicamente sia
+  // lo step `completato` sia il banner di decisione — senza la finestra di race
+  // che richiedeva un reload manuale.
+  if (msg.step_id === 'f2_step_6' && newStatus === 'completato') {
+    ctxUpdate.pending_decision = await buildF2ToF3Decision(msg.context_id, 'f2_step_6', now);
+  }
+
   await PipelineContext.updateOne(
     { context_id: msg.context_id },
     {
@@ -159,6 +170,39 @@ async function handleCompleted(msg: PipelineMessage) {
   if (msg.step_id === 'f3_step_6b' && newStatus === 'completato') {
     await applyOverrideStep6b(msg.context_id);
   }
+}
+
+// Costruisce il payload pending_decision per la transizione F2 → F3 leggendo i
+// theme_id dall'ultima run verificata di f2_step_5 (è lì che vivono le output
+// families con i candidati). Esposta come funzione pura affinché chiamanti
+// distinti (handleCompleted in questo file, skipStep in pipelineController)
+// possano includerla nella stessa $set Mongo che porta lo step a terminal,
+// evitando race window di lettura tra i due update.
+export async function buildF2ToF3Decision(
+  contextId: string,
+  stepFrom: string,
+  now: Date,
+): Promise<Record<string, unknown>> {
+  const step5Exec = await PipelineStepExecution.findOne({
+    context_id: contextId,
+    step_id: 'f2_step_5',
+    status: 'verificato',
+  }).sort({ run_number: -1 });
+  const out = step5Exec?.output_data as { results?: { theme_id?: string }[] } | null | undefined;
+  const options = (out?.results ?? [])
+    .filter((r) => typeof r?.theme_id === 'string' && r.theme_id)
+    .map((r) => ({ theme_id: r.theme_id as string, label: r.theme_id as string }));
+  return {
+    type: 'f2_to_f3_tema_selection',
+    step_from: stepFrom,
+    step_to: 'f3_step_1',
+    description: 'Seleziona il tema della output family da portare in F3 per costruire il dispositivo configurazionale.',
+    options,
+    created_at: now,
+    decided_at: null,
+    decided_by: null,
+    decision: null,
+  };
 }
 
 async function handleFailed(msg: PipelineMessage) {

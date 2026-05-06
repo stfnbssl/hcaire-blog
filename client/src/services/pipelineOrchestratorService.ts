@@ -9,6 +9,8 @@ import type {
   VerificaOutcome,
   SystemStatus,
   TemaSelectionPayload,
+  TemaAmbito,
+  TemaAmbitoData,
   PipelineIndex,
 } from '../types/pipeline';
 
@@ -20,7 +22,7 @@ interface ApiErr { ok: false; error: { code: string; message: string; detail: un
 type ApiResponse<T> = ApiOk<T> | ApiErr;
 
 async function request<T>(
-  method: 'GET' | 'POST' | 'DELETE',
+  method: 'GET' | 'POST' | 'PUT' | 'DELETE',
   path: string,
   body?: unknown,
   getToken?: TokenGetter,
@@ -126,6 +128,53 @@ export const pipelineOrchestratorService = {
     request<{ decision_resolved: boolean; step_now_launchable: boolean }>(
       'POST', `/pipeline/temi/${encodeURIComponent(temaId)}/decisions`,
       { decision_type: 'step7_context_selection', confirmed, notes }, getToken,
+    ),
+  dismissRicercaDecision: (ricercaId: string, getToken?: TokenGetter) =>
+    request<{ dismissed?: boolean; already_dismissed?: boolean }>(
+      'POST', `/pipeline/ricerche/${encodeURIComponent(ricercaId)}/decisions/dismiss`, {}, getToken,
+    ),
+
+  // ---- Bridge F2 → F3 ambiti (admin) ----
+  listTemaAmbiti: (ricercaId: string, themeId: string) =>
+    request<{ ricerca_id: string; theme_id: string; ambiti: TemaAmbito[] }>(
+      'GET',
+      `/pipeline/ricerche/${encodeURIComponent(ricercaId)}/temi/${encodeURIComponent(themeId)}/ambiti`,
+    ),
+  createTemaAmbito: (
+    ricercaId: string, themeId: string,
+    payload: { ambito_id: string; label: string; data: TemaAmbitoData },
+    getToken?: TokenGetter,
+  ) => request<{ ambito: TemaAmbito }>(
+    'POST',
+    `/pipeline/ricerche/${encodeURIComponent(ricercaId)}/temi/${encodeURIComponent(themeId)}/ambiti`,
+    payload, getToken,
+  ),
+  updateTemaAmbito: (
+    ricercaId: string, themeId: string, ambitoId: string,
+    payload: { label?: string; data?: TemaAmbitoData },
+    getToken?: TokenGetter,
+  ) => request<{ ambito: TemaAmbito }>(
+    'PUT',
+    `/pipeline/ricerche/${encodeURIComponent(ricercaId)}/temi/${encodeURIComponent(themeId)}/ambiti/${encodeURIComponent(ambitoId)}`,
+    payload, getToken,
+  ),
+  deleteTemaAmbito: (ricercaId: string, themeId: string, ambitoId: string, getToken?: TokenGetter) =>
+    request<{ deleted: string }>(
+      'DELETE',
+      `/pipeline/ricerche/${encodeURIComponent(ricercaId)}/temi/${encodeURIComponent(themeId)}/ambiti/${encodeURIComponent(ambitoId)}`,
+      undefined, getToken,
+    ),
+  promoteTemaAmbito: (ricercaId: string, themeId: string, ambitoId: string, getToken?: TokenGetter) =>
+    request<{
+      created_tema_id?: string;
+      tema_context?: PipelineContextDoc;
+      ambito?: TemaAmbito;
+      already_promoted?: boolean;
+      tema_id?: string;
+    }>(
+      'POST',
+      `/pipeline/ricerche/${encodeURIComponent(ricercaId)}/temi/${encodeURIComponent(themeId)}/ambiti/${encodeURIComponent(ambitoId)}/promote`,
+      {}, getToken,
     ),
 
   // ---- System ----

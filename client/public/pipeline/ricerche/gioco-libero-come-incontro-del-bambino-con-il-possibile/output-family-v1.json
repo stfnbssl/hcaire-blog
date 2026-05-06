@@ -1,0 +1,102 @@
+{
+  "step": "step_5",
+  "results": [
+    {
+      "theme_id": "gioco-libero-come-incontro-del-bambino-con-il-possibile",
+      "output_families": [
+        {
+          "domain": "educativo (servizi 0-6, scuola dell'infanzia, contesti di cura)",
+          "output_type": "lettura configurazionale della qualità del campo desiderabile non strutturato nei setting educativi",
+          "description": "Permette ai professionisti dei servizi educativi di leggere l'organizzazione dello spazio, del tempo e delle attività non come somma di proposte e materiali, ma come campo di possibilità in cui il desiderio del bambino può esercitarsi come orientamento autonomo o esserne invece eroso. Apre l'interrogazione strutturale: quali condizioni di campo sostengono il dispiegarsi del desiderio come direzione (non come motivazione esterna), quali condizioni lo neutralizzano anticipando il limite o saturando lo spazio con proposte sempre orientate a un esito? Orienta lo sguardo dei professionisti dalla qualità delle attività singole alla qualità dell'orizzonte non strutturato in cui le attività si collocano.",
+          "structural_basis": {
+            "axes": ["asse_4", "asse_5", "asse_6"],
+            "nodes": [
+              "campo-desiderabile",
+              "desiderio-come-struttura",
+              "eccedenza",
+              "limite-reale",
+              "condizione-del-desiderio",
+              "prestazionalizzazione-del-valore"
+            ],
+            "node_interpretation": "Nel setting educativo: campo-desiderabile come orizzonte di possibilità che lo spazio educativo apre o restringe; desiderio-come-struttura come forma dell'orientamento del bambino visibile nella continuità degli investimenti; eccedenza e limite-reale come qualità dell'incontro con il mondo che il setting preserva o anticipa; condizione-del-desiderio come trasformazione del campo che il setting permette o impedisce; prestazionalizzazione-del-valore come forza che opera anche nei servizi attraverso attese implicite di rendimento.",
+            "tensions": [
+              "campo desiderabile non strutturato vs. prestazionalizzazione storica",
+              "incontro con il limite vs. orientamento del desiderio",
+              "insistenza autonoma vs. aderenza al compito"
+            ]
+          },
+          "value_added": "Rende visibile la differenza strutturale tra un setting educativo che propone gioco libero come attività e un setting che preserva un campo desiderabile non strutturato come condizione del dispiegarsi del desiderio. La prima lettura giudica la presenza/assenza di proposte di gioco libero; la seconda riconosce che la prestazionalizzazione opera anche dentro proposte nominalmente libere, attraverso attese implicite di esito, neutralizzazione preventiva del limite, riempimento del tempo non strutturato. Permette di leggere la fragilità del campo come questione strutturale e non come problema di scelta o organizzazione di attività.",
+          "reduction_risk": "Scivolamento verso una checklist di 'condizioni del gioco libero' (spazio aperto, materiali destrutturati, tempo non scandito) che riproduce in forma più sottile la prestazionalizzazione del valore: il campo desiderabile non strutturato viene trasformato in setting da progettare correttamente, perdendo la dimensione strutturale dell'orizzonte non garantito. Forma più ricorrente di scivolamento: 'come allestire spazi di gioco libero' al posto di 'a quali condizioni lo spazio tiene aperto un orizzonte non finalizzato'."
+        },
+        {
+          "domain": "formazione dei professionisti dei servizi educativi e di cura",
+          "output_type": "interrogazione strutturale sulla qualità della presenza adulta nell'incontro non mediato del bambino con il limite reale",
+          "description": "Permette nei percorsi formativi di portare i professionisti a interrogarsi sulla differenza strutturale tra accompagnamento e mediazione: come si forma una presenza che 'tiene' senza intervenire, che sostiene l'incontro del bambino con il limite reale senza anticiparlo, spiegarlo prematuramente o ripararlo forzatamente. Apre il piano formativo non sul cosa fare ma sul rapporto del professionista con il proprio non-poter-fare: l'iper-regolazione e lo spiegazionismo come strategie con cui l'adulto non tollera il reale, e la qualità della relazione come condizione (non sostituto) della non-mediazione. Orienta la formazione dalla trasmissione di tecniche all'elaborazione di una postura.",
+          "structural_basis": {
+            "axes": ["asse_4", "asse_5"],
+            "nodes": [
+              "limite-reale",
+              "eccedenza",
+              "condizione-del-desiderio",
+              "desiderio-come-struttura"
+            ],
+            "node_interpretation": "Nel contesto formativo: limite-reale come ciò che il professionista è chiamato a non anticipare; eccedenza come sproporzione che il professionista deve sostenere senza compensarla; condizione-del-desiderio come trasformazione che la qualità della relazione del professionista rende possibile; desiderio-come-struttura come orientamento che il professionista riconosce e protegge senza produrre.",
+            "tensions": [
+              "non-mediazione adulta sistematica vs. tenuta della relazione",
+              "incontro con il limite vs. orientamento del desiderio"
+            ]
+          },
+          "value_added": "Rende leggibile la postura professionale richiesta dal gioco libero come tensione irrisolvibile tra non-intervento e presenza, tensione che non si scioglie in tecnica ma richiede una elaborazione del rapporto del professionista con la propria impotenza. Distingue strutturalmente la non-mediazione (assenza di anticipazione e spiegazione) dall'abbandono educativo (assenza di relazione): differenza che la formazione operativa tende a perdere oscillando tra 'lasciare libero il bambino' e 'guidare l'esperienza'. Permette di nominare l'iper-regolazione e lo spiegazionismo non come errori formativi ma come reazioni strutturali dell'adulto al reale.",
+          "reduction_risk": "Trasformazione della postura non-mediativa in tecnica relazionale codificata ('come stare senza intervenire'), che produce la stessa anticipazione che intende evitare in forma più raffinata. Scivolamento più ricorrente: l'osservazione non partecipante come protocollo che neutralizza l'incontro con il limite trasformandolo in oggetto di registrazione. La differenza tra 'tenere' e 'osservare' rischia di collassare se la formazione non lavora esplicitamente sulla qualità della relazione come condizione interna della non-mediazione."
+        },
+        {
+          "domain": "politiche per l'infanzia e progettazione dei servizi",
+          "output_type": "analisi della struttura della prestazionalizzazione del valore nei dispositivi di valutazione e progettazione dei servizi 0-6",
+          "description": "Permette a chi progetta politiche e sistemi di valutazione dei servizi educativi di leggere i criteri di esito, gli indicatori di qualità e le aspettative di rendicontazione non come dispositivi neutri ma come forze strutturali che organizzano lo spazio del campo desiderabile non strutturato — preservandolo o erodendolo per costruzione. Apre l'interrogazione: i sistemi di valutazione attualmente in uso sono compatibili con l'esistenza strutturale di uno spazio non finalizzato, o lo convertono per progettazione in campo prestazionale anche quando promuovono nominalmente il gioco libero? Orienta la progettazione dei servizi dal piano dell'efficacia educativa al piano delle condizioni sistemiche di possibilità del fenomeno.",
+          "structural_basis": {
+            "axes": ["asse_5", "asse_6"],
+            "nodes": [
+              "campo-desiderabile",
+              "prestazionalizzazione-del-valore",
+              "desiderio-come-struttura"
+            ],
+            "node_interpretation": "Nel piano delle politiche: campo-desiderabile come spazio sistemico che le politiche preservano o convertono; prestazionalizzazione-del-valore come logica strutturale dei dispositivi di valutazione e rendicontazione che colonizza anche i servizi nominalmente orientati al gioco libero; desiderio-come-struttura come finalità sostantiva del servizio educativo che la sua valutazione formale rischia di sostituire con la motivazione esterna come obiettivo misurabile.",
+            "tensions": [
+              "campo desiderabile non strutturato vs. prestazionalizzazione storica"
+            ]
+          },
+          "value_added": "Rende visibile la prestazionalizzazione come deformazione strutturale dei sistemi di valutazione e non come problema di equilibrio tra obiettivi educativi diversi. La domanda 'come introdurre il gioco libero nei servizi' presuppone che il problema sia di scelta pedagogica; la lettura strutturale dell'asse 6 mostra che la prestazionalizzazione opera dentro la grammatica stessa dei dispositivi di valutazione, indipendentemente dalle scelte locali dei singoli servizi. Permette di interrogare la compatibilità sistemica tra le condizioni del fenomeno e le forme di rendicontazione che organizzano il finanziamento e la valutazione dei servizi.",
+          "reduction_risk": "Trasformazione della lettura strutturale in proposta di nuovi indicatori 'qualitativi' o 'narrativi' che misurino il gioco libero, riproducendo la prestazionalizzazione del valore in forma più sottile (ciò che non è misurabile diventa invisibile, anche quando la misurazione si presenta come narrativa). Scivolamento più ricorrente: dalla critica dei dispositivi di valutazione alla costruzione di dispositivi di valutazione 'migliori' del gioco libero, che ne neutralizzano per costruzione il carattere non finalizzato."
+        },
+        {
+          "domain": "clinico-evolutivo (lettura dello sviluppo, consulenza ai genitori)",
+          "output_type": "lettura configurazionale del desiderio ritratto come segnale strutturale del campo, distinto dal deficit motivazionale individuale",
+          "description": "Permette in ambito clinico-evolutivo di interrogare la ritrazione del desiderio del bambino — il bambino che non gioca, non insiste, non torna verso le esperienze, aderisce passivamente o rifiuta — come segnale che richiede una lettura del campo prima di una lettura del soggetto. Apre la differenza diagnostica tra un bambino che ha smesso di esercitare il desiderio come orientamento (per saturazione di stimoli, per assenza di campo non strutturato, per anticipazione sistematica del limite) e un bambino con difficoltà evolutive specifiche: differenza che non è leggibile sul piano sintomatico isolato ma solo sulla qualità del campo in cui il bambino è collocato. Orienta la consulenza ai genitori dalla domanda 'cosa ha il mio bambino' alla domanda 'in quale campo il desiderio del mio bambino può esercitarsi'.",
+          "structural_basis": {
+            "axes": ["asse_4", "asse_5", "asse_6"],
+            "nodes": [
+              "desiderio-come-struttura",
+              "campo-desiderabile",
+              "condizione-del-desiderio",
+              "limite-reale",
+              "prestazionalizzazione-del-valore"
+            ],
+            "node_interpretation": "In ambito clinico: desiderio-come-struttura come dimensione che si manifesta nella continuità vissuta (insistenza, ritorno, mantenimento degli investimenti) e la cui ritrazione è leggibile come segnale strutturale; campo-desiderabile come orizzonte di possibilità del bambino che la lettura clinica non può presupporre dato; condizione-del-desiderio come riorganizzazione che, mancata, produce ritrazione invece che orientamento; limite-reale come qualità dell'incontro che la mediazione adulta sistematica può aver neutralizzato producendo desiderio onnipotente o ritratto; prestazionalizzazione-del-valore come dimensione del campo familiare e sociale che entra strutturalmente nella lettura del bambino.",
+            "tensions": [
+              "insistenza autonoma vs. aderenza al compito",
+              "incontro con il limite vs. orientamento del desiderio",
+              "campo desiderabile non strutturato vs. prestazionalizzazione storica"
+            ]
+          },
+          "value_added": "Rende leggibile la ritrazione del desiderio come configurazione del campo e non come deficit individuale, prima di qualsiasi diagnosi differenziale. Distingue strutturalmente quattro configurazioni che la lettura sintomatica tende a confondere: il desiderio onnipotente (limite anticipato dalla mediazione adulta sistematica), il desiderio ritratto (eccesso o saturazione dello stimolo), il desiderio sostituito da motivazione esterna (aderenza efficace al compito senza orientamento interno), e la difficoltà evolutiva specifica. Permette al professionista clinico di sospendere la lettura individuale del bambino e interrogare prima la configurazione del campo familiare ed educativo come livello in cui il segnale prende forma.",
+          "reduction_risk": "Sostituzione della diagnosi individuale con una diagnosi del contesto familiare ('genitori troppo prestazionalizzati') che produce nuova attribuzione di colpa al posto di una lettura strutturale del campo. Scivolamento più ricorrente: la lettura configurazionale del desiderio ritratto diventa indicazione operativa ai genitori ('lasciate giocare libero il bambino'), perdendo la dimensione strutturale dell'incontro non mediato con il limite reale come condizione che non si produce per scelta. Rischio collaterale: l'uso del modello come strumento di rassicurazione ('non è un problema del bambino, è il contesto') che ritarda l'attivazione clinica quando una difficoltà evolutiva specifica è invece presente."
+        }
+      ],
+      "meta_notes": {
+        "coherence_with_structure": "La famiglia di output mantiene la configurazione triadica direzionale della micro-matrice senza scivolare nel prescrittivo: ciascuno dei quattro output corrisponde a un dominio già motivato strutturalmente in STEP 4 e attiva esplicitamente assi, nodi e tensioni del tema. La distribuzione delle tensioni copre tutte le quattro tensioni strutturali identificate in STEP 4, con la tensione 'incontro con il limite vs. orientamento del desiderio' presente in tre output (educativo, formativo, clinico) come tensione fondativa della configurazione, e la tensione 'campo desiderabile non strutturato vs. prestazionalizzazione storica' che attraversa tre output (educativo, politiche, clinico) come tensione deformativa simmetrica. La tensione 'non-mediazione adulta sistematica vs. tenuta della relazione' è il fuoco specifico dell'output formativo, coerentemente con il fatto che è la tensione che riguarda direttamente la postura professionale. La tensione 'insistenza autonoma vs. aderenza al compito' è centrale negli output educativo e clinico in quanto soglia osservativa del fenomeno. Nessun output scivola in formulazioni del tipo 'come fare X': la forma è sempre interrogativa o configurazionale.",
+        "limitations": "Non è stato prodotto un output inter-dominio perché la configurazione triadica è già densa e la natura dei quattro domini di translation_potential è strutturalmente differenziata (cosa è / come si forma chi accompagna / quali condizioni sistemiche / come leggere segnali clinici): forzare un output inter-dominio rischierebbe di saturare la famiglia senza produrre valore aggiunto specifico. Il nodo secondario 'soggettivazione-del-desiderio' (classificato come secondario in STEP 3) non è stato attivato esplicitamente in nessun output: la sua centralità osservativa nel piano clinico (insistenza autonoma vs aderenza al compito) è coperta funzionalmente dalla tensione corrispondente, ma una sua attivazione esplicita richiederebbe il passaggio per STEP 4 con riconfermazione. Il piano fenomenologico-corporeo (asse 1, escluso in STEP 3) resta non tradotto: la qualità incarnata e temporalmente densa dell'esperienza del bambino che gioca è presupposta dagli output ma non esplicitata come livello autonomo, scelta coerente con la decisione strutturale di STEP 3 di assumere asse 1 come implicito. Il piano normativo-educativo della distinzione gioco libero/gioco guidato come distinzione pedagogica diretta (asse 3, escluso in STEP 3) resta catturato indirettamente attraverso la prestazionalizzazione del valore.",
+        "next_step_orientation": "Tre output families presentano alta maturità per lo sviluppo di strumenti operativi in Fase 3. L'output educativo è il più maturo: la lettura configurazionale del campo desiderabile non strutturato si presta a uno strumento di lettura situata che professionisti dei servizi 0-6 possano usare ricorsivamente sul proprio setting. L'output formativo è altrettanto maturo per dispositivi di formazione di secondo livello (supervisione, gruppi di lavoro su casi, scrittura riflessiva) ma meno per strumenti di prima formazione: la postura non-mediativa non è codificabile in tecnica. L'output politiche è il più esposto al rischio di trasformazione in checklist valutativa e richiede una elaborazione preliminare del registro dello strumento (analisi sistemica, non valutazione di servizi); è strutturalmente il più importante per l'orizzonte critico del progetto ma il più delicato in fase di traduzione operativa. L'output clinico-evolutivo è strutturalmente robusto ma richiede una elaborazione specifica del confine con la diagnosi differenziale per non produrre confusione tra lettura strutturale e lettura clinica: questo confine è tematizzato come reduction_risk ma diventerà un vincolo strutturale in Fase 3. La sequenza suggerita per Fase 3, in ordine di maturità: educativo → formativo → clinico → politiche."
+      }
+    }
+  ]
+}

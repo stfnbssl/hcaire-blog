@@ -20,6 +20,12 @@ import {
   getRicercaPendingDecision,
   postRicercaDecision,
   postTemaDecision,
+  listTemaAmbiti,
+  createTemaAmbito,
+  updateTemaAmbito,
+  deleteTemaAmbito,
+  promoteTemaAmbito,
+  dismissRicercaDecision,
   streamExecutionLogs,
   createRicerca,
   getSystemStatus,
@@ -52,7 +58,15 @@ router.delete('/external-inputs/:inputDocId', requireAdmin, deleteExternalInput)
 router.get('/temi/:temaId/pending-decision', getTemaPendingDecision);
 router.get('/ricerche/:ricercaId/pending-decision', getRicercaPendingDecision);
 router.post('/ricerche/:ricercaId/decisions', requireAdmin, postRicercaDecision);
+router.post('/ricerche/:ricercaId/decisions/dismiss', requireAdmin, dismissRicercaDecision);
 router.post('/temi/:temaId/decisions', requireAdmin, postTemaDecision);
+
+// ---- Bridge F2 → F3: ambiti per tema (1→n) — D4 §5b ----
+router.get(   '/ricerche/:ricercaId/temi/:themeId/ambiti',                           listTemaAmbiti);
+router.post(  '/ricerche/:ricercaId/temi/:themeId/ambiti',           requireAdmin,   createTemaAmbito);
+router.put(   '/ricerche/:ricercaId/temi/:themeId/ambiti/:ambitoId', requireAdmin,   updateTemaAmbito);
+router.delete('/ricerche/:ricercaId/temi/:themeId/ambiti/:ambitoId', requireAdmin,   deleteTemaAmbito);
+router.post(  '/ricerche/:ricercaId/temi/:themeId/ambiti/:ambitoId/promote', requireAdmin, promoteTemaAmbito);
 
 // ---- SSE log streaming — D4 §6 ----
 router.get('/executions/:executionId/logs', streamExecutionLogs);

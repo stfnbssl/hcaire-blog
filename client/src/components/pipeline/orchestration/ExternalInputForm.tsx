@@ -273,42 +273,7 @@ export default function ExternalInputForm({ stepId, contextId, inputConfig, exis
           onClose={onClose}
         />
       )}
-      {stepId === 'f3_step_1' && (
-        <GenericObjectForm
-          fields={[
-            {
-              id: 'theme_id',
-              label: 'Theme id',
-              required: true,
-              description: 'Identificatore del tema (= context_id del tema corrente). Pre-compilato automaticamente.',
-              defaultValue: contextId,
-            },
-            {
-              id: 'label',
-              label: 'Label',
-              required: true,
-              description: 'Etichetta umana del tema, mostrata nelle viste di pipeline.',
-              placeholder: 'es. Pointing precoce',
-            },
-            {
-              id: 'provenienza_ricerca',
-              label: 'Provenienza ricerca',
-              description: 'Quale ricerca F2 ha generato questo tema (opzionale, se proviene da F2).',
-              placeholder: 'es. ricerca-01-comunicazione-precoce',
-            },
-            {
-              id: 'provenienza_step',
-              label: 'Provenienza step',
-              description: 'In quale step della ricerca F2 è stato selezionato questo tema (opzionale).',
-              placeholder: 'es. f2_step_5',
-            },
-          ]}
-          initial={initial}
-          onSubmit={handleSubmit}
-          onClose={onClose}
-        />
-      )}
-      {!['f3_step_7', 'f3_step_10', 'f2_step_2', 'f3_step_1'].includes(stepId) && (
+      {!['f3_step_7', 'f3_step_10', 'f2_step_2'].includes(stepId) && (
         <FallbackJsonForm initial={initial} onSubmit={handleSubmit} onClose={onClose} />
       )}
     </Modal>

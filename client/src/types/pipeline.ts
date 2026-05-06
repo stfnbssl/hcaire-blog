@@ -345,6 +345,25 @@ export interface HumanDecision {
   decision: Record<string, unknown> | null;
 }
 
+export interface TemaAmbitoData {
+  target_domain: 'clinico' | 'educativo' | 'formazione' | 'politiche';
+  target_subdomain: string;
+  age_range: string;
+  setting: string;
+  observer_profile: string;
+  notes?: string;
+}
+
+export interface TemaAmbito {
+  ambito_id: string;
+  label: string;
+  data: TemaAmbitoData;
+  created_at: string;
+  created_by: string;
+  promoted_to_f3: boolean;
+  promoted_tema_id: string | null;
+}
+
 export interface PipelineContextDoc {
   _id: string;
   context_type: 'ricerca' | 'tema';
@@ -355,6 +374,9 @@ export interface PipelineContextDoc {
   dispositivo_sorgente: DispositivoSorgente | null;
   step_states: Record<string, StepStateDoc>;
   pending_decision: HumanDecision | null;
+  // Mappa theme_id → lista ambiti definiti per quel tema (popolata sui contesti
+  // ricerca durante il bridge F2 → F3). Vuota o assente sui temi.
+  tema_ambiti?: Record<string, TemaAmbito[]>;
   steps_completed: string[];
   steps_in_progress: string[];
   steps_failed: string[];

@@ -60,7 +60,16 @@
       "Bash(python *)",
       "Bash(sed -E '/^[[:space:]]*$/d')",
       "Read(//tmp/docx_extract/**)",
-      "Bash(npm --version)"
+      "Bash(npm --version)",
+      "Bash(git -C C:/My/projects/hcaire-docs status --short)",
+      "Bash(git -C C:/My/projects/hcaire-docs log --oneline -5)",
+      "Bash(git -C C:/My/projects/hcaire-docs log --stat --oneline -2)",
+      "Bash(git *)",
+      "Bash(npm --prefix C:/My/projects/hcaire-docs run build)",
+      "Bash(npm --prefix C:/My/projects/hcaire-docs install --save-dev typedoc)",
+      "Bash(npx typedoc *)",
+      "Bash(npm --prefix C:/My/projects/hcaire-docs install --save redocusaurus)",
+      "Bash(npm --prefix C:/My/projects/hcaire-docs run sync-docs)"
     ]
   }
 }

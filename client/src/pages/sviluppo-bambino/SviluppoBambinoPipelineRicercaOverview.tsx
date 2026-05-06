@@ -23,6 +23,7 @@ export default function SviluppoBambinoPipelineRicercaOverview() {
   const [derivedTemi, setDerivedTemi] = useState<TemaIndexEntry[]>([]);
 
   const ctx = orchestration.context;
+  const totalF2Steps = orchestration.stepConfig.filter((s) => s.phase === 'F2').length;
 
   // Fetch dei temi figli (quelli con ricerca_origine = ricercaId)
   useEffect(() => {
@@ -60,7 +61,7 @@ export default function SviluppoBambinoPipelineRicercaOverview() {
           {ctx && (
             <div className="flex flex-wrap gap-2">
               <span className="text-xs font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-700">
-                {ctx.steps_completed.length}/5 step F2 eseguiti
+                {ctx.steps_completed.length}/{totalF2Steps} step F2 eseguiti
               </span>
               {ctx.pending_decision && (
                 <span className="text-xs font-medium px-2 py-0.5 rounded bg-amber-100 text-amber-800">

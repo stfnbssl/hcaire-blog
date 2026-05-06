@@ -1,6 +1,6 @@
 {
-  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. Aggiornato con i tre nuovi step metodologici: f2_step_2a, f2_step_4b, f2_step_6. f2_step_1 rimosso: la discovery dei temi avviene ora nell'Archivio temi (vedi docs/90-todo/laboratorio-d5b-backend.md §12), non più come step di pipeline. v2.2: rimosso `scelta_tema` da inputs_esterni di f2_step_2 (auto-popolato dal bridge Archivio→Laboratorio al momento della promozione, quindi non va più chiesto in UI). v2.3: rese `required: true` le dipendenze precedentemente facoltative su f2_step_2a (in step 3 e 4b) e su f2_step_4b (in step 6), per forzare la sequenza lineare 2 → 2a → 3 → 4 → 4b → 5 → 6. Per saltare uno step va usata l'azione esplicita di skip. v2.4: f2_step_2a e f2_step_4b ora skippabili (`can_skip: true`) con motivazione obbligatoria — necessario per dare valvola di sfogo alla sequenza lineare introdotta da v2.3.",
-  "_version": "2.4",
+  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. Aggiornato con i tre nuovi step metodologici: f2_step_2a, f2_step_4b, f2_step_6. f2_step_1 rimosso: la discovery dei temi avviene ora nell'Archivio temi (vedi docs/90-todo/laboratorio-d5b-backend.md §12), non più come step di pipeline. v2.2: rimosso `scelta_tema` da inputs_esterni di f2_step_2 (auto-popolato dal bridge Archivio→Laboratorio al momento della promozione, quindi non va più chiesto in UI). v2.3: rese `required: true` le dipendenze precedentemente facoltative su f2_step_2a (in step 3 e 4b) e su f2_step_4b (in step 6), per forzare la sequenza lineare 2 → 2a → 3 → 4 → 4b → 5 → 6. Per saltare uno step va usata l'azione esplicita di skip. v2.4: f2_step_2a e f2_step_4b ora skippabili (`can_skip: true`) con motivazione obbligatoria — necessario per dare valvola di sfogo alla sequenza lineare introdotta da v2.3. v2.5: aggiunta f2_step_4b come dipendenza required di f2_step_5 (precedentemente assente: la sequenza lineare v2.3 era infranta perché f2_step_5 dipendeva solo da step 3 e 4 e diventava lanciabile prima che lo step opzionale 4b fosse eseguito o saltato). Regola generale: ogni step che segue uno step opzionale deve attendere che il predecessore sia in stato `completato` o `saltato`. v2.6: rimosso `tema_selezionato` da inputs_esterni di f3_step_1: dopo l'introduzione del bridge F2→F3 ad ambiti (1→n), tema_id, label e ricerca_origine sono già disponibili sul context tema e derivabili dall'input pipeline f2_step_6 (passaporto del tema). Lo step parte ora senza richiesta input al ricercatore.",
+  "_version": "2.6",
   "steps": [
     {
       "id": "f2_step_2",
@@ -90,7 +90,8 @@
       "output_path_template": "ricerche/{ricerca_id}/output-family-v{N}.json",
       "inputs_pipeline": [
         { "step": "f2_step_3", "role": "theme-verification", "required": true },
-        { "step": "f2_step_4", "role": "theme-matrix", "required": true }
+        { "step": "f2_step_4", "role": "theme-matrix", "required": true },
+        { "step": "f2_step_4b", "role": "ce-prototipica", "required": true, "_note": "Sequenza lineare v2.3/v2.5: f2_step_4b obbligatorio prima di f2_step_5 (skippabile con motivazione)" }
       ],
       "inputs_strutturali": ["assi-strutturali.json"],
       "inputs_esterni": [],
@@ -128,9 +129,7 @@
         { "step": "f2_step_5", "role": "output-family", "required": true, "requires_verifica": true, "_note": "Fornisce le famiglie di output per il dominio selezionato" }
       ],
       "inputs_strutturali": ["f3-step-1/reading-device-schema.json"],
-      "inputs_esterni": [
-        { "id": "tema_selezionato", "label": "Tema selezionato da F2", "type": "esterno_obbligatorio", "schema": "external-input-schemas/f3-step-1-tema.json" }
-      ],
+      "inputs_esterni": [],
       "verifica": true,
       "can_skip": false,
       "blocks": ["f3_step_2"]

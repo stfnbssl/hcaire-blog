@@ -1,0 +1,133 @@
+{
+  "step": "f2_step_2a",
+  "results": [
+    {
+      "theme_id": "gioco-libero-come-incontro-del-bambino-con-il-possibile",
+      "node_mappings": [
+        {
+          "node_id": "desiderio-come-struttura",
+          "node_label": "Desiderio come struttura di orientamento",
+          "axes": [1, 5],
+          "canonical_mapping": {
+            "canonical_node_id": "N7",
+            "type": "identico",
+            "rationale": "Il nodo coincide con la definizione canonica di N7 (Desiderio / Direzione dell'esperienza): orientamento attivo verso possibilità significative operante a livello pre-riflessivo. Condivisione piena su assi 1 e 5 e identità di funzione strutturale (il desiderio come struttura di orientamento, non come motivazione attivata da stimolo)."
+          }
+        },
+        {
+          "node_id": "campo-desiderabile",
+          "node_label": "Campo desiderabile",
+          "axes": [1, 5],
+          "canonical_mapping": {
+            "canonical_node_id": "N7",
+            "type": "istanza",
+            "rationale": "Il campo desiderabile è la specifica manifestazione di N7 nel gioco libero: l'orientamento del desiderio si dà come orizzonte aperto in cui certe direzioni appaiono già cariche di valore prima della scelta deliberata. Condivisione su assi 1 e 5; funzione affine (direzione dell'esperienza), con specificazione tematica del campo come piano di emergenza dell'orientamento."
+          }
+        },
+        {
+          "node_id": "soggettivazione-del-desiderio",
+          "node_label": "Soggettivazione del desiderio",
+          "axes": [1, 5],
+          "canonical_mapping": {
+            "canonical_node_id": "N6",
+            "type": "parziale",
+            "rationale": "La continuità vissuta del ritorno, dell'insistenza e del mantenimento degli investimenti è la dimensione diacronica che N6 (Continuità temporale del Sé nascente) nomina canonicamente; condivisione su assi 1 e 5. La copertura è parziale perché il nodo specifica la continuità come modo in cui il desiderio si soggettiva, dimensione che N6 da solo non porta integralmente."
+          }
+        },
+        {
+          "node_id": "eccedenza",
+          "node_label": "Eccedenza",
+          "axes": [1, 4],
+          "canonical_mapping": null
+        },
+        {
+          "node_id": "limite-reale",
+          "node_label": "Limite reale",
+          "axes": [1, 4],
+          "canonical_mapping": null
+        },
+        {
+          "node_id": "condizione-del-desiderio",
+          "node_label": "Limite come condizione del desiderio",
+          "axes": [4, 5],
+          "canonical_mapping": {
+            "canonical_node_id": "N4",
+            "type": "istanza",
+            "rationale": "La trasformazione del campo del possibile attraverso l'incontro con il limite (alcune possibilità si chiudono, altre diventano accessibili) è una specifica manifestazione di N4 (Apertura / Esplorabilità del mondo): l'esplorabilità è qui condizionata e riorganizzata dal limite reale. Condivisione piena su assi 4 e 5 e funzione affine (disponibilità all'esplorazione come rapporto con ciò che è accessibile)."
+          }
+        },
+        {
+          "node_id": "campo-intenzionale",
+          "node_label": "Campo intenzionale",
+          "axes": [1],
+          "canonical_mapping": null
+        },
+        {
+          "node_id": "prestazionalizzazione-del-valore",
+          "node_label": "Prestazionalizzazione del valore",
+          "axes": [6],
+          "canonical_mapping": null
+        }
+      ],
+      "activated_canonical_nodes": [
+        {
+          "canonical_node_id": "N4",
+          "coverage_type": "piena",
+          "covered_by": ["condizione-del-desiderio"]
+        },
+        {
+          "canonical_node_id": "N6",
+          "coverage_type": "parziale",
+          "covered_by": ["soggettivazione-del-desiderio"]
+        },
+        {
+          "canonical_node_id": "N7",
+          "coverage_type": "piena",
+          "covered_by": ["desiderio-come-struttura", "campo-desiderabile"]
+        }
+      ],
+      "absent_canonical_nodes": [
+        {
+          "canonical_node_id": "N1",
+          "structural_reason": "Il tema non mobilita strutturalmente la regolazione/integrazione dell'esperienza come capacità del sistema di mantenere coerenza interna durante l'azione. Il piano fenomenologico-corporeo è invocato (campo intenzionale) come orizzonte di emergenza, non come dispositivo regolatorio: l'eccedenza e il limite reale operano come incontri con il dato, non come momenti che chiamano in causa la funzione integrativa."
+        },
+        {
+          "canonical_node_id": "N2",
+          "structural_reason": "Il gioco libero, nella definizione qui mobilitata, si esercita anche in solitudine relativa e non si distingue per la qualità della reciprocità affettiva e corporea diadica. Asse 2 (Affetto-relazione) è stato esplicitamente escluso in STEP 2: il fenomeno non richiede strutturalmente l'interiorizzazione dell'altro come istanza vincolante."
+        },
+        {
+          "canonical_node_id": "N3",
+          "structural_reason": "L'accesso al mondo condiviso simbolico non è dimensione strutturale del tema così definito: il gioco libero qui esplora il campo del possibile prima e accanto alla mediazione simbolica. La sospensione della mediazione normativa esplicita (asse 3) è preso in carico dall'asse 6 (deformazione storica della prestazionalizzazione) e non genera un nodo candidato autonomo orientato all'intersoggettività simbolica."
+        },
+        {
+          "canonical_node_id": "N5",
+          "structural_reason": "Assenza strutturalmente significativa: il tema mobilita fortemente la dimensione del limite, ma sotto la forma dell'incontro non mediato con ciò che resiste (asse 4), mentre N5 (Separazione / Limite reale) è composto su assi 2-5-6 (relazionale-desiderio-storico). Non c'è quindi corrispondenza assiale possibile tra i nodi candidati centrati su asse 4 (eccedenza, limite reale) e N5: la copertura del limite avviene attraverso nodi derivati puri specifici al fenomeno, non attraverso N5."
+        }
+      ],
+      "pure_derived_nodes": [
+        {
+          "node_id": "eccedenza",
+          "derivation_justification": "L'eccedenza nomina la sproporzione strutturale tra desiderio e mondo, tra corpo e compito, come fatto dato e non come ostacolo da rimuovere. Nessun canonico la cattura: N5 (Separazione/Limite reale, assi 2-5-6) ha funzione affine ma assi non sovrapponibili (l'eccedenza è su 1-4, fuori da 2-5-6); N1 cattura la regolazione, non la disproporzione come fatto strutturale; N4 cattura l'apertura, non lo sbilanciamento. La specificità sta nel qualificare il dato di sproporzione come condizione costitutiva del gioco non finalizzato."
+        },
+        {
+          "node_id": "limite-reale",
+          "derivation_justification": "Il limite reale, distinto dal limite normativo (asse 3) e dalla frustrazione regolata (asse 2), non è catturabile da N5: N5 (assi 2-5-6) è il limite mobilitato attraverso la relazione, il desiderio e la storia, mentre il limite reale qui è il dato non posto che il bambino incontra senza mediazione adulta sistematica (asse 4 più piano vissuto). La sua specificità sta in questa qualità di confine non posto e non mediato, che il modello canonico non isola in N1-N7."
+        },
+        {
+          "node_id": "campo-intenzionale",
+          "derivation_justification": "Il campo intenzionale è la struttura globale pre-riflessiva (sintesi di temporalità, corporeità, regolazione, relazione) che fa da sfondo a ogni nodo. Funzionalmente prossimo a N1 (regolazione/integrazione), ma N1 nomina la capacità integrativa nell'azione mentre il campo intenzionale nomina l'orizzonte fenomenologico stesso che rende possibili tutti i nodi. La condivisione assiale con i canonici è insufficiente (solo asse 1) e la sua funzione è di piano fondativo, non di nodo specifico."
+        },
+        {
+          "node_id": "prestazionalizzazione-del-valore",
+          "derivation_justification": "La prestazionalizzazione del valore nomina una deformazione storico-culturale specifica: ciò che non è misurabile in termini di obiettivi di apprendimento diventa invisibile o secondario. I Nodi Trasversali N1-N7 sono invarianti strutturali del modello, non diagnosi della loro erosione. Nessun canonico cattura la dimensione di forza storica che riduce strutturalmente lo spazio in cui il gioco libero può esercitarsi: questa specificità appartiene ad asse 6 e resta nodo derivato puro."
+        }
+      ],
+      "canonical_configuration_assessment": {
+        "plausibility": "sì",
+        "plausibility_notes": "La configurazione attivata {N4, N6, N7} è strutturalmente plausibile e coerente con la definizione del tema. N7 (Desiderio / Direzione dell'esperienza) è coperto in modo pieno e duplice (identico via desiderio-come-struttura, istanza via campo-desiderabile) e cattura il nucleo del tema (esercizio del desiderio come orientamento). N4 (Apertura / Esplorabilità) è attivato in modo pieno via condizione-del-desiderio e nomina la dimensione strutturale per cui il campo del possibile si riorganizza attraverso il limite. N6 (Continuità temporale del Sé nascente) è attivato in modo parziale e copre la dimensione diacronica della soggettivazione del desiderio (insistenza, ritorno). La combinazione N4-N6-N7 disegna una configurazione tematica densa attorno alla relazione desiderio / esplorabilità / continuità diacronica del soggetto.",
+        "missing_relations_notes": "L'assenza di N5 (Separazione / Limite reale) è il punto strutturalmente più rilevante: il tema mobilita fortemente la dimensione del limite (eccedenza, limite reale, condizione del desiderio) ma N5 è composto su assi 2-5-6 mentre i nodi candidati centrati sul limite sono su asse 4. Si tratta di specificità tematica e non di lacuna: la qualità del limite nel gioco libero (incontro non mediato con ciò che resiste) chiede una copertura via nodi derivati puri, non via N5. Va segnalato per STEP 3 come tensione strutturale interna al modello: la coppia attesa N7-N5 (desiderio-limite) è qui realizzata come N7 attivato e N5 coperto da derivati puri. Inoltre, l'assenza di N3 è coerente con la marcatura 'da_verificare' di asse 3 in STEP 2: la sospensione della mediazione normativa è preso in carico dalla deformazione storica (asse 6 / prestazionalizzazione-del-valore) piuttosto che generare un nodo orientato all'intersoggettività simbolica.",
+        "coverage_adequacy": "La copertura è adeguata. I tre canonici attivati (N4, N6, N7) catturano le dimensioni invarianti del tema (desiderio, esplorabilità condizionata dal limite, continuità diacronica). I quattro nodi derivati puri (eccedenza, limite-reale, campo-intenzionale, prestazionalizzazione-del-valore) coprono le dimensioni specifiche non riducibili ai canonici: la qualità asse-4 dell'incontro con il limite (eccedenza, limite reale), il piano fenomenologico fondativo (campo intenzionale), la deformazione storica del fenomeno (prestazionalizzazione del valore). La configurazione complessiva sostiene la trasformazione strutturale descritta dai concetti-ponte di STEP 2 (limite reale → orientamento del desiderio; erosione storica del campo desiderabile; campo intenzionale come piano di emergenza del campo desiderabile) e fornisce a STEP 3 la base canonica e derivata per la verifica strutturale."
+      }
+    }
+  ]
+}
