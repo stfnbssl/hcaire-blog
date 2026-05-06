@@ -46,7 +46,7 @@ export interface ComparisonPanelConfig {
   label?: string;
   valid: {
     title: string;
-    content: string;       // HTML
+    content?: string;      // HTML — opzionale: alcune slide hanno solo `items`
     items?: string[];
   };
   invalid: {
