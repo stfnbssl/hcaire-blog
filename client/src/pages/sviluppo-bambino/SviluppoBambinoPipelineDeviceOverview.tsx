@@ -41,7 +41,8 @@ function Chip({ children, color = 'slate' }: { children: React.ReactNode; color?
 
 function StepQuickLinks({ tema }: { tema: TemaIndexEntry }) {
   const canonical = tema.canonical_device !== null;
-  const hasStressTest = !!tema.files.f3_step_10;
+  // v3.0 (D7): lo stress test è prodotto da f3_step_3 (vecchio f3_step_10 rimosso).
+  const hasStressTest = !!tema.files.f3_step_3;
   return (
     <div className="grid sm:grid-cols-2 gap-3">
       <Link

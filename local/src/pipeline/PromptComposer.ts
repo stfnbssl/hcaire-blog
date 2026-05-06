@@ -193,13 +193,10 @@ export class PromptComposer {
       '[path gestito automaticamente dal sistema]',
     );
 
-    // Caso speciale step 10: sostituisce il template MICRO CASI con riferimento ai casi nel Blocco 1
-    if (stepId === 'f3_step_10') {
-      cleaned = cleaned.replace(
-        /```json\s*[\r\n]+\s*"cases":\s*\[[\s\S]*?\]\s*```/g,
-        '> I casi reali per lo stress test sono nel blocco "INPUT FORNITI DAL RICERCATORE" sopra (campo `cases`).',
-      );
-    }
+    // v3.0 (D7): rimossa la gestione speciale di `MICRO CASI` per vecchio f3_step_10.
+    // I casi del nuovo f3_step_3 viaggiano come input esterno facoltativo standard
+    // (`casi_dominio`) e vengono mostrati nel blocco "INPUT FORNITI DAL RICERCATORE"
+    // come tutti gli altri input strutturati — nessuna sostituzione speciale.
 
     const header = [
       '---',

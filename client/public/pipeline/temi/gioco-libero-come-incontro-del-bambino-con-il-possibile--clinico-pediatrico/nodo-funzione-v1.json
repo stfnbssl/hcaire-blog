@@ -1,0 +1,69 @@
+{
+  "step": "f3_step_1",
+  "tema_id": "gioco-libero-come-incontro-del-bambino-con-il-possibile",
+  "domain_selected": "clinico",
+  "context_label": "Ambulatorio pediatrico, bambini 3-5 anni, osservazione del pediatra",
+  "researcher_notes": null,
+  "results": [
+    {
+      "dominant_node": {
+        "node_id": "campo-desiderabile",
+        "node_label": "Campo desiderabile (orizzonte non strutturato)",
+        "dominance_motivation": "Nel contesto ambulatoriale pediatrico la fragilità che condiziona maggiormente l'abitabilità del campo è quella del campo-desiderabile come orizzonte non strutturato. Il setting clinico è strutturalmente saturo di finalità (visita, valutazione, milestones evolutive, prestazionalizzazione del valore di sviluppo): qualunque possibilità che il pediatra possa leggere il desiderio-orientamento del bambino dipende dal tenere aperto, dentro la visita, un intervallo in cui il campo non sia leggibile come compito o come prestazione attesa. Senza questa apertura, gli altri nodi (limite-reale, condizione-del-desiderio, desiderio-come-struttura) restano osservativamente inaccessibili: il bambino aderisce al protocollo o lo evita, e l'orientamento interno scompare dietro la motivazione esterna del setting clinico. La scelta è netta rispetto a desiderio-come-struttura (co-fragile ma derivato): è la qualità non strutturata del campo a rendere possibile o impossibile la manifestazione del desiderio, non viceversa.",
+        "other_nodes_status": [
+          {
+            "node_id": "desiderio-come-struttura",
+            "status": "co-fragile",
+            "note": "Asse identitario del tema (N7 ↑) ma osservativamente derivato dalla qualità del campo: nel setting ambulatoriale rischia di collassare in aderenza efficace al protocollo clinico, indistinguibile dall'orientamento interno se il campo non è preservato come non-finalizzato."
+          },
+          {
+            "node_id": "eccedenza",
+            "status": "neutro",
+            "note": "Nel breve intervallo della visita ambulatoriale l'eccedenza corporeo-materiale opera meno come variabile attiva: il pediatra non lavora primariamente sulla sproporzione del bambino nello spazio dei materiali, tipica di setting con tempi lunghi e ambienti predisposti."
+          },
+          {
+            "node_id": "limite-reale",
+            "status": "sostenuto",
+            "note": "Nel setting ambulatoriale il limite reale è già dato strutturalmente (corpo del bambino, manovre cliniche, oggetti dello studio): non richiede di essere costruito o introdotto, è presente nell'incontro clinico stesso."
+          },
+          {
+            "node_id": "condizione-del-desiderio",
+            "status": "co-fragile",
+            "note": "La trasformazione del limite in condizione del desiderio richiede una relazione che 'tiene' senza guidare; nel setting ambulatoriale questa qualità è fragile per brevità del tempo, finalità clinica e tendenza spiegazionista, ma è subordinata strutturalmente al campo-desiderabile."
+          },
+          {
+            "node_id": "prestazionalizzazione-del-valore",
+            "status": "co-fragile",
+            "note": "Operatore strutturale di erosione: nel setting ambulatoriale agisce in forma intensa attraverso la lettura del bambino come portatore di tappe evolutive da verificare; co-fragile perché deforma dall'interno il nodo dominante, ma non è il nodo su cui agisce direttamente il dispositivo — è la pressione contro cui il dispositivo deve proteggere."
+          }
+        ]
+      },
+      "function": {
+        "function_type": "proteggere",
+        "function_motivation": "La funzione coerente nel setting ambulatoriale pediatrico è proteggere — evitare sovraccarico — perché il campo-desiderabile non è qui un nodo da costruire o da aprire, ma una qualità strutturalmente esposta alla saturazione clinica e prestazionale. La visita è già densa di finalità (anamnesi, esame obiettivo, valutazione delle tappe evolutive 3-5 anni); ampliare presupporrebbe un controllo sul setting che il pediatra non ha; stabilizzare è improprio perché il nodo non collassa per disorganizzazione interna ma è eroso dall'esterno; mediare è inadatto in assenza di scollegamento tra nodi (le relazioni N4→N7, N7→N6, N4→N6 sono CPL, non disconnesse). Proteggere significa tenere un piccolo intervallo non finalizzato dentro un setting che spinge strutturalmente al rendimento, perché in quell'intervallo possa darsi l'osservazione del desiderio-orientamento del bambino senza che venga immediatamente convertito in indice di prestazione evolutiva o in motivazione esterna."
+      },
+      "target_field": {
+        "field_label": "Tempo non finalizzato dell'osservazione clinica",
+        "field_motivation": "Il campo bersaglio è la qualità non finalizzata di un piccolo intervallo temporale dentro la visita: non lo spazio (che resta clinico), non la relazione complessiva (che resta professionale), non il limite (che è già dato dal corpo e dalle manovre), ma la specifica dimensione temporale in cui il pediatra sospende la lettura prestazionale del bambino e lascia che il suo orientamento si manifesti senza essere immediatamente codificato come comportamento atteso o tappa raggiunta. Questa dimensione è specifica all'incrocio tra nodo dominante (campo-desiderabile come orizzonte non strutturato), funzione (proteggere da sovraccarico finalistico) e dominio (ambulatorio pediatrico 3-5 anni, dove l'asimmetria di setting e la pressione valutativa delle milestones sono massime). Non coincide con nessun confirmed_node ed è strutturalmente distinta da un comportamento osservabile: è la qualità di campo del tempo, condizione perché ciò che il bambino fa nell'intervallo possa essere letto come orientamento e non come performance."
+      },
+      "coherence_check": {
+        "node_in_confirmed": {
+          "value": "sì",
+          "motivation": "campo-desiderabile è esplicitamente presente nei confirmed_nodes dell'output-tipo vuoto F2."
+        },
+        "function_in_closed_set": {
+          "value": "sì",
+          "motivation": "proteggere è una delle quattro funzioni dell'elenco chiuso della metodologia (sez. 2.3)."
+        },
+        "function_coherent_with_node": {
+          "value": "sì",
+          "motivation": "Il campo-desiderabile nel setting ambulatoriale pediatrico è strutturalmente esposto a sovraccarico finalistico (prestazionalizzazione del valore evolutivo, saturazione clinica del tempo). Proteggere è la funzione coerente con un nodo fragile non per collasso interno né per chiusura, ma per pressione di erosione esterna che ne compromette la qualità non strutturata."
+        },
+        "target_field_specific": {
+          "value": "sì",
+          "motivation": "Il tempo non finalizzato dell'osservazione clinica è una dimensione di campo specifica all'incrocio nodo × funzione × dominio: non coincide con alcun confirmed_node, non è un comportamento osservabile, ed è qualitativamente distinto dalle dimensioni spaziale, relazionale e simbolica del setting clinico."
+        }
+      }
+    }
+  ]
+}

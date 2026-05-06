@@ -75,17 +75,21 @@ export function filesFromStepStates(
 export function pickCanonicalDevice(
   files: Record<string, string>,
 ): { file: string; shape: CanonicalDeviceShape } | null {
-  // Priorità identica allo script di sync (D1 §7): 9 → 3 → 1
-  if (files.f3_step_9) return { file: files.f3_step_9, shape: 'device' };
+  // v3.0 (D7): pipeline F3 ridotta. Priorità: f3_step_4 (verdetto coerenza,
+  // dispositivo finalizzato) → f3_step_3 (stress test/correzione, dispositivo
+  // post-correzione se presente) → f3_step_2 (micro-dispositivo iniziale).
+  if (files.f3_step_4) return { file: files.f3_step_4, shape: 'device' };
   if (files.f3_step_3) return { file: files.f3_step_3, shape: 'corrected_device' };
-  if (files.f3_step_1) return { file: files.f3_step_1, shape: 'result_0' };
+  if (files.f3_step_2) return { file: files.f3_step_2, shape: 'result_0' };
   return null;
 }
 
 export function sortF3Steps(stepIds: string[]): string[] {
-  // Ordine: prima F2, poi F3, numerico crescente. 6b → 6.5, 6c → 6.6.
+  // Ordine: prima F2, poi F3, numerico crescente. 2a → 2.5, 4b → 4.5 (suffissi
+  // F2 ancora in uso). I suffissi b/c di F3 sono stati eliminati in v3.0 (D7)
+  // ma il pattern resta tollerante.
   return [...stepIds].sort((a, b) => {
-    const re = /^(f2|f3)_step_(\d+)(b|c)?$/;
+    const re = /^(f2|f3)_step_(\d+)(a|b|c)?$/;
     const ma = a.match(re);
     const mb = b.match(re);
     if (!ma || !mb) return a.localeCompare(b);
@@ -93,8 +97,9 @@ export function sortF3Steps(stepIds: string[]): string[] {
     const pa = phaseRank(ma[1]);
     const pb = phaseRank(mb[1]);
     if (pa !== pb) return pa - pb;
-    const na = parseInt(ma[2], 10) + (ma[3] === 'b' ? 0.5 : ma[3] === 'c' ? 0.6 : 0);
-    const nb = parseInt(mb[2], 10) + (mb[3] === 'b' ? 0.5 : mb[3] === 'c' ? 0.6 : 0);
+    const suffOffset = (s?: string) => (s === 'a' ? 0.5 : s === 'b' ? 0.5 : s === 'c' ? 0.6 : 0);
+    const na = parseInt(ma[2], 10) + suffOffset(ma[3]);
+    const nb = parseInt(mb[2], 10) + suffOffset(mb[3]);
     return na - nb;
   });
 }

@@ -21,7 +21,6 @@ const F2_STEPS: PipelineStepId[] = [
 
 const F3_STEPS: PipelineStepId[] = [
   'f3_step_1', 'f3_step_2', 'f3_step_3', 'f3_step_4', 'f3_step_5',
-  'f3_step_6', 'f3_step_6b', 'f3_step_7', 'f3_step_8', 'f3_step_9', 'f3_step_10',
 ];
 
 const STEP_LABEL: Record<PipelineStepId, string> = {
@@ -32,17 +31,11 @@ const STEP_LABEL: Record<PipelineStepId, string> = {
   f2_step_4b: 'CE prototipica',
   f2_step_5: 'Output family',
   f2_step_6: 'Output-tipo vuoto',
-  f3_step_1: 'Lettura',
-  f3_step_2: 'Stress test',
-  f3_step_3: 'Correzione',
-  f3_step_4: 'Indistinguibility',
-  f3_step_5: 'Audit',
-  f3_step_6: 'Proxy',
-  f3_step_6b: 'Proxy stabilizzato',
-  f3_step_7: 'Trasferibilità',
-  f3_step_8: 'Adattamento',
-  f3_step_9: 'Dispositivo',
-  f3_step_10: 'Stress test dispositivo',
+  f3_step_1: 'Nodo + funzione',
+  f3_step_2: 'Micro-dispositivo',
+  f3_step_3: 'Stress test e correzione',
+  f3_step_4: 'Coerenza F3',
+  f3_step_5: 'Audit metodologico',
 };
 
 function ProgressBar({ steps, completed, color }: { steps: PipelineStepId[]; completed: Set<string>; color: 'sky' | 'emerald' | 'slate' }) {

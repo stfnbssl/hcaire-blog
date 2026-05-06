@@ -10,17 +10,11 @@ const STEP_NAME: Record<PipelineStepId, string> = {
   f2_step_4b: 'CE prototipica',
   f2_step_5: 'Output family',
   f2_step_6: 'Output-tipo vuoto',
-  f3_step_1: 'Lettura configurazionale',
-  f3_step_2: 'Stress test',
-  f3_step_3: 'Correzione strutturale',
-  f3_step_4: 'Indistinguibility test',
-  f3_step_5: 'Audit',
-  f3_step_6: 'Proxy (rimozione)',
-  f3_step_6b: 'Proxy stabilizzato',
-  f3_step_7: 'Trasferibilità',
-  f3_step_8: 'Adattamento strutturale',
-  f3_step_9: 'Dispositivo completo',
-  f3_step_10: 'Stress test dispositivo',
+  f3_step_1: 'Nodo dominante e funzione',
+  f3_step_2: 'Micro-dispositivo di campo',
+  f3_step_3: 'Stress test e correzione',
+  f3_step_4: 'Verifica di coerenza F3',
+  f3_step_5: 'Audit metodologico',
 };
 
 const INPUT_TYPE_COLOR: Record<string, string> = {
@@ -39,24 +33,17 @@ const INPUT_TYPE_LABEL: Record<string, string> = {
 
 const F3_STEP_ORDER: PipelineStepId[] = [
   'f3_step_1', 'f3_step_2', 'f3_step_3', 'f3_step_4', 'f3_step_5',
-  'f3_step_6', 'f3_step_6b', 'f3_step_7', 'f3_step_8', 'f3_step_9', 'f3_step_10',
 ];
 
-// Heuristic mapping of pipeline inputs for each step.
+// v3.0 (D7): pipeline F3 lineare semplice — ogni step dipende solo dal precedente.
 function inferPipelineInputs(step: PipelineStepId, files: Partial<Record<PipelineStepId, string>>): PipelineStepId[] {
   const has = (s: PipelineStepId) => !!files[s];
   switch (step) {
-    case 'f3_step_1':  return [];
-    case 'f3_step_2':  return has('f3_step_1') ? ['f3_step_1'] : [];
-    case 'f3_step_3':  return [has('f3_step_1') && 'f3_step_1', has('f3_step_2') && 'f3_step_2'].filter(Boolean) as PipelineStepId[];
-    case 'f3_step_4':  return has('f3_step_3') ? ['f3_step_3'] : [];
-    case 'f3_step_5':  return has('f3_step_3') ? ['f3_step_3'] : [];
-    case 'f3_step_6':  return [has('f3_step_4') && 'f3_step_4', has('f3_step_5') && 'f3_step_5'].filter(Boolean) as PipelineStepId[];
-    case 'f3_step_6b': return has('f3_step_6') ? ['f3_step_6'] : [];
-    case 'f3_step_7':  return [has('f3_step_3') && 'f3_step_3', has('f3_step_6b') && 'f3_step_6b'].filter(Boolean) as PipelineStepId[];
-    case 'f3_step_8':  return has('f3_step_7') ? ['f3_step_7'] : [];
-    case 'f3_step_9':  return [has('f3_step_3') && 'f3_step_3', has('f3_step_6b') && 'f3_step_6b', has('f3_step_7') && 'f3_step_7', has('f3_step_8') && 'f3_step_8'].filter(Boolean) as PipelineStepId[];
-    case 'f3_step_10': return has('f3_step_9') ? ['f3_step_9'] : has('f3_step_3') ? ['f3_step_3'] : [];
+    case 'f3_step_1': return [];
+    case 'f3_step_2': return has('f3_step_1') ? ['f3_step_1'] : [];
+    case 'f3_step_3': return has('f3_step_2') ? ['f3_step_2'] : [];
+    case 'f3_step_4': return [has('f3_step_2') && 'f3_step_2', has('f3_step_3') && 'f3_step_3'].filter(Boolean) as PipelineStepId[];
+    case 'f3_step_5': return has('f3_step_4') ? ['f3_step_4'] : [];
     default: return [];
   }
 }
@@ -140,7 +127,10 @@ export default function DeviceLineage({ tema }: { tema: TemaIndexEntry }) {
         const skipReason = skippedMap.get(step);
         const pipelineInputs = file ? inferPipelineInputs(step, tema.files) : [];
         const externalInputs = externalByStep.get(step) ?? [];
-        const isSourceDeviceInput = step === 'f3_step_7' && tema.dispositivo_sorgente;
+        // v3.0 (D7): rimosso vecchio f3_step_7 → niente più contestualizzazione
+        // del dispositivo_sorgente come "input di trasferibilità". Il transfer device
+        // è ora una scelta di promozione legacy, non un input pipeline F3.
+        const isSourceDeviceInput = false;
         const isExpanded = expanded.has(step);
         const hasDetails = pipelineInputs.length > 0 || externalInputs.length > 0 || isSourceDeviceInput;
 

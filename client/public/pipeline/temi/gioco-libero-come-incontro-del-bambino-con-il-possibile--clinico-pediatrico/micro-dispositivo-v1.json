@@ -1,0 +1,84 @@
+{
+  "step": "f3_step_2",
+  "tema_id": "gioco-libero-come-incontro-del-bambino-con-il-possibile",
+  "domain_selected": "clinico",
+  "results": [
+    {
+      "ce_origin": "Campo-desiderabile fragile per saturazione finalistica del setting / desiderio-come-struttura e condizione-del-desiderio co-fragili / limite-reale sostenuto strutturalmente / prestazionalizzazione del valore evolutivo attiva come pressione di erosione esterna / polarità di campo A−.",
+      "dominant_node_ref": {
+        "node_id": "campo-desiderabile",
+        "node_label": "Campo desiderabile (orizzonte non strutturato)"
+      },
+      "function_ref": {
+        "function_type": "proteggere"
+      },
+      "target_field_ref": {
+        "field_label": "Tempo non finalizzato dell'osservazione clinica"
+      },
+      "micro_actions": [
+        {
+          "id": "ma1",
+          "description": "Il pediatra dichiara apertamente, dentro la visita, l'apertura di un piccolo intervallo non finalizzato — con una formula esplicita rivolta a bambino e caregiver del tipo \"adesso abbiamo qualche minuto libero, niente da fare\" — senza proporre compiti, domande o prove di tappa.",
+          "observable_effect": "L'intervallo si distingue dal resto della visita per assenza di richieste verbali, di prove standardizzate e di consegne; la struttura temporale della visita mostra un segmento percepibilmente diverso dal flusso anamnesi/esame.",
+          "reversibility_note": "L'intervallo si chiude semplicemente riprendendo la visita ordinaria; non lascia tracce procedurali né impegni successivi."
+        },
+        {
+          "id": "ma2",
+          "description": "Il pediatra rende disponibili a portata del bambino due o tre oggetti generici e neutri rispetto allo scopo clinico (un foglio, una matita, un piccolo oggetto comune dello studio), senza indicare uso atteso e senza proporre compiti su di essi.",
+          "observable_effect": "Gli oggetti restano nel campo del bambino come opzioni non prescritte: il bambino può ignorarli, prenderli, modificarne l'uso; non sono materiali di test né strumenti graduati per età.",
+          "reversibility_note": "Gli oggetti vengono semplicemente ritirati alla fine dell'intervallo; nessuna catalogazione né riconsegna formale."
+        },
+        {
+          "id": "ma3",
+          "description": "Il pediatra sospende la guida verbale durante l'intervallo — non riempie il silenzio con domande cliniche, suggerimenti sul gioco o riformulazioni motivanti — mantenendo una presenza osservativa discreta a distanza fisica non frontale.",
+          "observable_effect": "Si forma nel campo un silenzio non valutativo: l'adulto è presente ma non sta orientando attivamente l'azione del bambino; cade temporaneamente la pressione del turno comunicativo professionista→bambino.",
+          "reversibility_note": "La guida verbale ritorna alla chiusura dell'intervallo con la ripresa dell'esame; il silenzio non è imposto come regola, è solo non interrotto da richiami clinici."
+        },
+        {
+          "id": "ma4",
+          "description": "Il pediatra comunica brevemente al caregiver, prima dell'intervallo, che in quel piccolo segmento non si stanno valutando tappe né prestazioni e che non occorre stimolare il bambino — neutralizzando esplicitamente l'attesa prestazionale del genitore che altrimenti tende a comprimere l'intervallo.",
+          "observable_effect": "Il caregiver smette di sollecitare il bambino a \"mostrare\" e si dispone in posizione di compresenza non direttiva; cala la doppia pressione valutativa pediatra+genitore sull'azione del bambino.",
+          "reversibility_note": "Alla chiusura dell'intervallo il registro torna ordinario; il caregiver non riceve istruzioni vincolanti, solo un segnale di sospensione momentanea."
+        },
+        {
+          "id": "ma5",
+          "description": "Il pediatra differisce ogni annotazione, codifica o lettura per tappe di ciò che accade nell'intervallo — non scrive, non spunta scale, non commenta in tempo reale — e riserva l'eventuale nota descrittiva al dopo, fuori dal campo del bambino.",
+          "observable_effect": "Durante l'intervallo non sono visibili al bambino e al caregiver gesti di scoring (scrittura su scheda, segni di valutazione); ciò che il bambino fa non è immediatamente convertito in indice osservativo davanti a lui.",
+          "reversibility_note": "L'annotazione differita può essere prodotta o omessa a discrezione clinica successiva, senza che la sua assenza comprometta la visita."
+        }
+      ],
+      "real_time": {
+        "duration_label": "5-10 minuti",
+        "time_motivation": null
+      },
+      "resonance_indicator": "Dentro la visita si forma un breve segmento in cui il pediatra, il caregiver e il bambino smettono di orientarsi verso un compito atteso, e l'agire del bambino cessa di essere immediatamente leggibile come tappa raggiunta o prestazione mancata.",
+      "universal_form": {
+        "forms": ["U3", "U6"],
+        "combination_motivation": "U3 (apertura) è la forma primaria: il dispositivo amplia localmente il campo delle possibilità sottraendo finalità a un intervallo strutturalmente saturo. U6 (riattivazione del desiderio) è la forma derivata, abilitata da U3: solo la sottrazione di finalità rende osservabile l'orientamento interno del bambino, ripristinandolo come dimensione leggibile dentro un setting che strutturalmente lo converte in motivazione esterna. La combinazione è coerente con la funzione proteggere: si protegge un'apertura affinché il desiderio-orientamento possa manifestarsi."
+      },
+      "non_applicability": [
+        {
+          "trigger": "La visita ha obiettivi clinici acuti o prioritari (sintomatologia in corso, valutazione diagnostica urgente, decisione terapeutica immediata) che saturano legittimamente il tempo clinico.",
+          "required_outcome": "sospendere",
+          "rationale": "In presenza di una finalità clinica acuta il tempo della visita appartiene strutturalmente alla cura; aprire un intervallo non finalizzato sarebbe improprio rispetto alla domanda reale del paziente e del caregiver, e il dispositivo non deve sovrapporsi alla priorità clinica."
+        },
+        {
+          "trigger": "Mancano i dati osservabili minimi: il bambino è in stato di angoscia clinica, rifiuto totale del setting o regolazione fisiologica così compromessa da assorbire l'intero campo (pianto continuativo, freezing, dolore in atto).",
+          "required_outcome": "non_classificabile",
+          "rationale": "Il dispositivo richiede che il bambino disponga di un minimo di accessibilità al campo per poter orientare la propria azione; se l'intero campo è occupato dalla risposta di stress al setting clinico, non c'è materiale osservativo su cui il dispositivo possa lavorare e va dichiarato non classificabile, non forzato."
+        },
+        {
+          "trigger": "Il caregiver richiede una lettura valutativa continuativa e il differimento dell'annotazione produrrebbe insicurezza genitoriale che riempirebbe l'intervallo di sollecitazioni e richieste di feedback.",
+          "required_outcome": "ambiguo",
+          "rationale": "In questa condizione il dispositivo può essere parzialmente attivo ma il campo non è effettivamente protetto: l'attesa prestazionale rientra dal lato del caregiver e l'intervallo non è più non finalizzato. L'esito è ambiguo perché il dispositivo è formalmente in atto ma sostanzialmente eroso, e va riconosciuto come tale invece di essere letto come funzionante."
+        },
+        {
+          "trigger": "Il setting non consente fisicamente i 5-10 minuti dedicati (visita di pochi minuti per turnazione, ambulatorio in saturazione, contesto di emergenza territoriale).",
+          "required_outcome": "sospendere",
+          "rationale": "Il dispositivo non è comprimibile sotto la sua durata minima senza degenerare in una formula performativa: meglio sospenderlo che simularlo in due minuti, dove la sottrazione di finalità non riesce a stabilirsi come qualità di campo."
+        }
+      ],
+      "synthesis": "Il dispositivo apre dentro la visita ambulatoriale un piccolo intervallo non finalizzato in cui il campo cessa di leggere il bambino come portatore di tappe da verificare e l'orientamento può manifestarsi senza diventare prestazione."
+    }
+  ]
+}

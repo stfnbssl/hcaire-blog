@@ -13,7 +13,7 @@ const PIPELINE_PUBLIC_DIR = process.env.PIPELINE_PUBLIC_DIR
   ?? path.resolve(__dirname, '..', '..', '..', 'client', 'public', 'pipeline');
 
 const WATCHDOG_INTERVAL_MS = parseInt(process.env.PIPELINE_WATCHDOG_INTERVAL_MS ?? String(5 * 60 * 1000), 10);
-const DEFAULT_TIMEOUT_MS = parseInt(process.env.PIPELINE_DEFAULT_TIMEOUT_MS ?? '300000', 10);
+const DEFAULT_TIMEOUT_MS = parseInt(process.env.PIPELINE_DEFAULT_TIMEOUT_MS ?? '600000', 10);
 const GRACE_MS = parseInt(process.env.PIPELINE_WATCHDOG_GRACE_MS ?? '60000', 10);
 const MAX_EXECUTION_MS = DEFAULT_TIMEOUT_MS + GRACE_MS;
 
@@ -74,15 +74,11 @@ async function copyOutputToPublic(absSourceFile: string, outputFileRel: string):
   }
 }
 
-async function applyOverrideStep6b(contextId: string): Promise<void> {
-  // Punto critico README: dopo step 6b verificato il dispositivo riferito da step 9
-  // espone i campi sovrascritti. Qui ci limitiamo a tracciare l'avvenuto override
-  // (no manipolazione del contenuto JSON: il frontend già applica l'override a runtime).
-  await PipelineContext.updateOne(
-    { context_id: contextId },
-    { $set: { 'overrides_applied.step_6b_proxy': true } },
-  );
-}
+// v3.0 (D7): rimossa `applyOverrideStep6b`. Nel modello F3 ridotto non esiste
+// più f3_step_6b né la nozione di "override del dispositivo dopo verifica 6b":
+// il dispositivo è prodotto e corretto entro f3_step_3 (Stress test e correzione)
+// e non subisce più sostituzioni ex post. La nozione di canonical_device del context,
+// se servirà, viene aggiornata con un'unica scrittura alla verifica di f3_step_4.
 
 // ---------- handler eventi ----------
 
@@ -167,9 +163,7 @@ async function handleCompleted(msg: PipelineMessage) {
     },
   );
 
-  if (msg.step_id === 'f3_step_6b' && newStatus === 'completato') {
-    await applyOverrideStep6b(msg.context_id);
-  }
+  // v3.0 (D7): rimosso il branch su f3_step_6b → applyOverrideStep6b.
 }
 
 // Costruisce il payload pending_decision per la transizione F2 → F3 leggendo i

@@ -69,7 +69,9 @@
       "Bash(npm --prefix C:/My/projects/hcaire-docs install --save-dev typedoc)",
       "Bash(npx typedoc *)",
       "Bash(npm --prefix C:/My/projects/hcaire-docs install --save redocusaurus)",
-      "Bash(npm --prefix C:/My/projects/hcaire-docs run sync-docs)"
+      "Bash(npm --prefix C:/My/projects/hcaire-docs run sync-docs)",
+      "Read(//c/My/projects/hcaire-docs/**)",
+      "Bash(grep -c \"^---$\\\\|^# \" docs/20-modules/sviluppo-bambino/produzioni.md docs/00-overview/glossario.md docs/10-architecture/backend.md docs/10-architecture/local-cowork-bridge.md docs/90-todo/laboratorio-d5b-backend.md)"
     ]
   }
 }

@@ -192,8 +192,9 @@ export async function getStepHistory(req: Request, res: Response) {
 // ============================================================================
 
 // Slug kebab-case dal label del context: lowercase, diacritici rimossi (NFD), non-alfanumerici
-// collassati in `-`, trim ai bordi. Serve per i template che includono `{label}` (f3_step_9/10),
-// in modo che il filename arrivi a Cowork già completamente risolto e identico ad ogni run.
+// collassati in `-`, trim ai bordi. Storicamente serviva per i template con `{label}`
+// (vecchi f3_step_9/10, rimossi in v3.0); resta come supporto generico per future
+// composizioni di filename.
 function slugifyLabel(label: string): string {
   return label
     .normalize('NFD')
@@ -239,24 +240,17 @@ async function buildExecutionPlan(
 ): Promise<ExecPlan> {
   const stepStates = (contextDoc.step_states ?? {}) as Record<string, { status: string; output_file: string | null }>;
 
-  let pipelineInputs = stepConfig.inputs_pipeline ?? [];
-  if (stepConfig.id === 'f3_step_9') {
-    const step8Status = stepStates.f3_step_8?.status;
-    pipelineInputs = step8Status === 'saltato'
-      ? (stepConfig.inputs_pipeline_skip_8 ?? [])
-      : (stepConfig.inputs_pipeline_standard ?? []);
-  }
+  // v3.0 (D7): pipeline F3 lineare semplice. Rimossi i casi speciali per
+  // f3_step_9 (varianti standard/skip-8) e f3_step_3_or_6c (virtual ref): non
+  // esistono più nella pipeline ridotta a 5 step.
+  const pipelineInputs = stepConfig.inputs_pipeline ?? [];
 
   // Path RELATIVI: il backend non conosce il filesystem del server locale (Railway ↔ macchina utente).
   // Il server locale risolve questi path rispetto a COWORK_PIPELINE_DIR / COWORK_PIPELINE_INPUTS_DIR.
   const inputFiles: { role: string; path: string }[] = [];
   for (const dep of pipelineInputs) {
     if (!dep.required) continue;
-    let resolvedStepId = dep.step;
-    if (dep.step === 'f3_step_3_or_6c') {
-      resolvedStepId = stepStates.f3_step_6c?.output_file ? 'f3_step_6c' : 'f3_step_3';
-    }
-    const file = stepStates[resolvedStepId]?.output_file;
+    const file = stepStates[dep.step]?.output_file;
     if (file) inputFiles.push({ role: dep.role, path: file });
   }
 
@@ -554,31 +548,10 @@ export async function verifyExecution(req: Request, res: Response) {
       },
     );
 
-    if (outcome === 'richiede_6c') {
-      await PipelineContext.updateOne(
-        { context_id: execDoc.context_id },
-        {
-          $set: {
-            pending_decision: {
-              type: 'step7_context_selection',
-              step_from: execDoc.step_id,
-              step_to: 'f3_step_6c',
-              description: 'La verifica di step 6b richiede integrazione strutturale. Confermare esecuzione di step 6c.',
-              options: null,
-              created_at: now,
-              decided_at: null,
-              decided_by: null,
-              decision: null,
-            },
-          },
-        },
-      );
-    }
-
-    // Trigger F2 → F3 spostato in pipelineEventSubscriber.ts:populateF2ToF3Decision —
-    // ora si attiva al completamento di f2_step_6 (ultimo step della sequenza lineare
-    // v2.3+ 2 → 2a → 3 → 4 → 4b → 5 → 6), non più a f2_step_5 verificato. Garanzia: a
-    // quel punto tutti e sette gli step F2 sono in stato terminale (eseguiti o saltati).
+    // v3.0 (D7): rimossa la generazione di pending_decision `step7_context_selection`
+    // su outcome `richiede_6c`. Il vecchio flusso 6b → 6c → 7 non esiste più.
+    // Il bridge F2 → F3 ambiti vive su pipelineEventSubscriber.ts (nessuna decisione
+    // umana modale dopo f2_step_6: il dialogo ambiti è la sostituzione).
 
     const unlocked = newStatus === 'verificato' ? await computeUnlockedSteps(execDoc.context_id) : [];
 
@@ -991,9 +964,9 @@ export async function deleteTemaAmbito(req: Request, res: Response) {
 
 // POST /api/pipeline/ricerche/:ricercaId/temi/:themeId/ambiti/:ambitoId/promote
 // Crea il tema F3 (tema_id = `${theme}--${ambito}`), eredita gli step_states F2
-// dalla ricerca, e pre-popola PipelineExternalInput di f3_step_7 con i dati
-// dell'ambito (così il form di step 7 sarà già compilato). NON azzera il
-// pending_decision: l'utente può tornare per promuovere altri ambiti.
+// dalla ricerca, e pre-popola PipelineExternalInput di f3_step_1 con i dati
+// dell'ambito (così il form contesto/ambito di step 1 sarà già compilato). NON
+// azzera il pending_decision: l'utente può tornare per promuovere altri ambiti.
 export async function promoteTemaAmbito(req: Request, res: Response) {
   const { ricercaId, themeId, ambitoId } = req.params;
   const auth = getAuth(req);
@@ -1049,10 +1022,12 @@ export async function promoteTemaAmbito(req: Request, res: Response) {
       has_revisioni: false,
     });
 
-    // Pre-popola PipelineExternalInput per f3_step_7 con i dati dell'ambito.
-    // Salviamo anche il file su disco per coerenza con postStepInput.
+    // Pre-popola PipelineExternalInput per f3_step_1 con i dati dell'ambito.
+    // v3.0 (D7): nel modello F3 ridotto, l'ambito è raccolto al primo step (vecchio
+    // f3_step_7 — Trasferibilità — è stato rimosso). Salviamo anche il file su disco
+    // per coerenza con postStepInput.
     const folderRel = `inputs/temi/${newTemaId}`;
-    const fileName = `f3-step-7-contesto-ambito.json`;
+    const fileName = `f3-step-1-contesto-ambito.json`;
     const folderAbs = resolveAbsPath(folderRel);
     const fileAbs = path.join(folderAbs, fileName);
     let filePath: string | null = null;
@@ -1068,7 +1043,7 @@ export async function promoteTemaAmbito(req: Request, res: Response) {
     await PipelineExternalInput.create({
       context_type: 'tema',
       context_id: newTemaId,
-      step_id: 'f3_step_7',
+      step_id: 'f3_step_1',
       input_id: 'contesto_ambito',
       label: 'Contesto/ambito target',
       provided_by: userId,
@@ -1129,72 +1104,15 @@ export async function dismissRicercaDecision(req: Request, res: Response) {
   }
 }
 
-// POST /api/pipeline/temi/:temaId/decisions — conferma decisione su tema
-export async function postTemaDecision(req: Request, res: Response) {
-  const { temaId } = req.params;
-  const auth = getAuth(req);
-  const userId = auth.userId ?? 'unknown';
-  const body = (req.body ?? {}) as {
-    decision_type?: 'step7_context_selection';
-    confirmed?: boolean;
-    notes?: string;
-  };
-
-  try {
-    if (body.decision_type !== 'step7_context_selection') {
-      return err(res, 400, 'INVALID_DECISION_TYPE', 'decision_type deve essere step7_context_selection');
-    }
-    if (body.confirmed !== true) {
-      return err(res, 400, 'NOT_CONFIRMED', 'confirmed deve essere true');
-    }
-
-    const ctx = await PipelineContext.findOne({ context_id: temaId, context_type: 'tema' });
-    if (!ctx) return err(res, 404, 'CONTEXT_NOT_FOUND', `Tema "${temaId}" non trovato`);
-
-    if (!ctx.pending_decision) {
-      return err(res, 409, 'DECISION_NOT_PENDING', 'Nessuna decisione pendente');
-    }
-
-    const now = new Date();
-    await PipelineContext.updateOne(
-      { context_id: temaId },
-      {
-        $set: {
-          pending_decision: null,
-          'pending_decision_history': {
-            type: ctx.pending_decision.type,
-            decided_at: now,
-            decided_by: userId,
-            decision: { confirmed: true, notes: body.notes ?? null },
-          },
-        },
-      },
-    );
-
-    // Verifica se lo step7 è ora lanciabile
-    let stepNowLaunchable = false;
-    const stepCfg = await getStepConfigById('f3_step_7');
-    if (stepCfg) {
-      const reloaded = await PipelineContext.findOne({ context_id: temaId });
-      if (reloaded) {
-        const provided = await PipelineExternalInput.find(
-          { context_id: temaId, step_id: 'f3_step_7', is_superseded: false },
-          { input_id: 1 },
-        ).lean();
-        const r = evaluateStepEnablement(
-          reloaded as unknown as Parameters<typeof evaluateStepEnablement>[0],
-          stepCfg,
-          new Set(provided.map((p) => p.input_id)),
-        );
-        stepNowLaunchable = r.enabled;
-      }
-    }
-
-    return ok(res, 200, { decision_resolved: true, step_now_launchable: stepNowLaunchable });
-  } catch (e) {
-    console.error('[pipeline] postTemaDecision error:', e);
-    return err(res, 500, 'INTERNAL_ERROR', 'Errore nella registrazione decisione');
-  }
+// POST /api/pipeline/temi/:temaId/decisions — DEPRECATO (v3.0 / D7).
+// Nel modello F3 ridotto non esistono più decisioni umane modali su tema:
+// - `step7_context_selection` → vecchio f3_step_7 rimosso, ambito raccolto come
+//   input esterno di f3_step_1 (auto-popolato dal bridge ambiti).
+// La rotta resta come placeholder per future decisioni umane non ancora previste.
+export async function postTemaDecision(_req: Request, res: Response) {
+  return err(res, 410, 'DECISION_TYPE_RETIRED',
+    'Nessuna decisione umana modale prevista sul tema nel modello v3.0. ' +
+    "L'ambito è raccolto come input esterno di f3_step_1 via PipelineExternalInput.");
 }
 
 // ============================================================================
@@ -1388,25 +1306,14 @@ export async function resetStep(req: Request, res: Response) {
       );
     }
 
-    // Trova step a valle che dipendono da stepId (replica della logica di pickPipelineInputs +
-    // resolveVirtualStepRef di stepEnablement.ts) e blocca se uno di loro non è in stato neutro.
+    // Trova step a valle che dipendono da stepId e blocca se uno di loro non è in
+    // stato neutro. v3.0 (D7): pipeline F3 lineare semplice — niente più virtual ref
+    // f3_step_3_or_6c né varianti inputs_pipeline_skip_8 di f3_step_9.
     const blockingDownstream: { step_id: string; status: string }[] = [];
     for (const other of cfgDoc.steps) {
       if (other.id === stepId) continue;
-      let deps = other.inputs_pipeline ?? [];
-      if (other.id === 'f3_step_9') {
-        const step8Status = stepStates['f3_step_8']?.status;
-        deps = step8Status === 'saltato' ? (other.inputs_pipeline_skip_8 ?? []) : (other.inputs_pipeline_standard ?? []);
-      }
-      const dependsOnTarget = deps.some((d) => {
-        if (d.step === stepId) return true;
-        if (d.step === 'f3_step_3_or_6c') {
-          const s6c = stepStates['f3_step_6c']?.status;
-          const resolved = (s6c === 'completato' || s6c === 'verificato') ? 'f3_step_6c' : 'f3_step_3';
-          return resolved === stepId;
-        }
-        return false;
-      });
+      const deps = other.inputs_pipeline ?? [];
+      const dependsOnTarget = deps.some((d) => d.step === stepId);
       if (!dependsOnTarget) continue;
       const otherStatus = stepStates[other.id]?.status ?? 'non_avviato';
       if (!NEUTRAL_DOWNSTREAM.includes(otherStatus)) {

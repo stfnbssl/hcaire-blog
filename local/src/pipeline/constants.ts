@@ -38,6 +38,11 @@ export const SERVER_VERSION = '1.0.0';
 
 // step_id → cartella sotto STEPS_ROOT (D6 §2)
 // f2_step_1 rimosso: la discovery temi è ora gestita dall'Archivio temi.
+// v3.0 (D7): pipeline F3 ridotta da 11 a 5 step. Le vecchie cartelle
+// f3-step-{1-dispositivo-lettura, 2-stress-test, 3-correzione-strutturale,
+// 4-indistinguibilità, 5-audit, 6-stabilizzazione-proxy, 7-trasferibilità-dispositivo,
+// 8-adattamento-strutturale, 9-dispositivo-completo, 10-stress-test-dispositivo}
+// vanno rimosse manualmente dal filesystem Cowork (vedi D7 §3.1).
 export const STEP_FOLDER_MAP: Record<string, string> = {
   'f2_step_2':  'f2-step-2-rilevanza-strutturale',
   'f2_step_2a': 'f2-step-2a-verifica-nodi-trasversali',
@@ -46,23 +51,13 @@ export const STEP_FOLDER_MAP: Record<string, string> = {
   'f2_step_4b': 'f2-step-4b-ce-prototipica',
   'f2_step_5':  'f2-step-5-output-family',
   'f2_step_6':  'f2-step-6-output-tipo-vuoto',
-  'f3_step_1':  'f3-step-1-dispositivo-lettura',
-  'f3_step_2':  'f3-step-2-stress-test',
-  'f3_step_3':  'f3-step-3-correzione-strutturale',
-  'f3_step_4':  'f3-step-4-indistinguibilità',
-  'f3_step_5':  'f3-step-5-audit',
-  'f3_step_6':  'f3-step-6-stabilizzazione-proxy',
-  'f3_step_6b': 'f3-step-6-stabilizzazione-proxy',
-  'f3_step_6c': 'f3-step-6-stabilizzazione-proxy',
-  'f3_step_7':  'f3-step-7-trasferibilità-dispositivo',
-  'f3_step_8':  'f3-step-8-adattamento-strutturale',
-  'f3_step_9':  'f3-step-9-dispositivo-completo',
-  'f3_step_10': 'f3-step-10-stress-test-dispositivo',
+  'f3_step_1':  'f3-step-1-nodo-funzione',
+  'f3_step_2':  'f3-step-2-micro-dispositivo',
+  'f3_step_3':  'f3-step-3-stress-test',
+  'f3_step_4':  'f3-step-4-coerenza',
+  'f3_step_5':  'f3-step-5-audit-metodologico',
 };
 
-// Per varianti del CLAUDE.md nelle stessa cartella (es. step 6/6b/6c)
-export const STEP_CLAUDE_FILE_MAP: Record<string, string> = {
-  'f3_step_6':  'CLAUDE.md',
-  'f3_step_6b': 'CLAUDE-B.md',
-  'f3_step_6c': 'CLAUDE-C.md',
-};
+// v3.0 (D7): rimosse le varianti CLAUDE-B.md / CLAUDE-C.md di vecchio f3_step_6.
+// Tutti gli step ora usano il CLAUDE.md di default (resolver fallback in PromptComposer).
+export const STEP_CLAUDE_FILE_MAP: Record<string, string> = {};

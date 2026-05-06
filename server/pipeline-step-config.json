@@ -1,6 +1,6 @@
 {
-  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. Aggiornato con i tre nuovi step metodologici: f2_step_2a, f2_step_4b, f2_step_6. f2_step_1 rimosso: la discovery dei temi avviene ora nell'Archivio temi (vedi docs/90-todo/laboratorio-d5b-backend.md §12), non più come step di pipeline. v2.2: rimosso `scelta_tema` da inputs_esterni di f2_step_2 (auto-popolato dal bridge Archivio→Laboratorio al momento della promozione, quindi non va più chiesto in UI). v2.3: rese `required: true` le dipendenze precedentemente facoltative su f2_step_2a (in step 3 e 4b) e su f2_step_4b (in step 6), per forzare la sequenza lineare 2 → 2a → 3 → 4 → 4b → 5 → 6. Per saltare uno step va usata l'azione esplicita di skip. v2.4: f2_step_2a e f2_step_4b ora skippabili (`can_skip: true`) con motivazione obbligatoria — necessario per dare valvola di sfogo alla sequenza lineare introdotta da v2.3. v2.5: aggiunta f2_step_4b come dipendenza required di f2_step_5 (precedentemente assente: la sequenza lineare v2.3 era infranta perché f2_step_5 dipendeva solo da step 3 e 4 e diventava lanciabile prima che lo step opzionale 4b fosse eseguito o saltato). Regola generale: ogni step che segue uno step opzionale deve attendere che il predecessore sia in stato `completato` o `saltato`. v2.6: rimosso `tema_selezionato` da inputs_esterni di f3_step_1: dopo l'introduzione del bridge F2→F3 ad ambiti (1→n), tema_id, label e ricerca_origine sono già disponibili sul context tema e derivabili dall'input pipeline f2_step_6 (passaporto del tema). Lo step parte ora senza richiesta input al ricercatore.",
-  "_version": "2.6",
+  "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. v2.x: progressive raffinazioni della pipeline F2 — sequenza lineare 2 → 2a → 3 → 4 → 4b → 5 → 6 con skippabilità di 2a/4b. v3.0 (D7-pipeline-f3-redesign): refactoring completo della pipeline F3 da 11 step (1, 2, 3, 4, 5, 6, 6b, 6c, 7, 8, 9, 10) a 5 step (Nodo+Funzione, Micro-dispositivo, Stress test e correzione, Coerenza F3, Audit metodologico). Allineamento alla metodologia (HCAIRE Slides/context/metodo/f3-strumenti-operativi.md): nodo dominante e quattro funzioni esplicite, dispositivo prodotto in un unico step, stress test e correzione integrati, ultima verifica come checklist normativa. Step di trasferimento (vecchi 7-9) abbandonati: nuovo tema = nuova pipeline F2+F3. f3_step_5 (audit) opzionale. Ambito raccolto come input esterno obbligatorio di f3_step_1 (auto-popolato dal bridge F2→F3 ambiti, sostituisce il vecchio f3_step_7 contesto_ambito). f2_step_6.blocks ora punta direttamente a f3_step_1 senza decisione umana modale: la scelta del tema è già fatta lato archivio temi e l'ambito è raccolto inline al primo step F3.",
+  "_version": "3.0",
   "steps": [
     {
       "id": "f2_step_2",
@@ -116,221 +116,92 @@
       "inputs_esterni": [],
       "verifica": false,
       "can_skip": false,
-      "blocks": ["[human_decision] → f3_step_1"]
+      "blocks": ["f3_step_1"]
     },
     {
       "id": "f3_step_1",
-      "label": "Lettura configurazionale",
+      "label": "Nodo dominante e funzione",
       "phase": "F3",
-      "output_prefix": "lettura-configurazionale",
-      "output_path_template": "temi/{tema_id}/lettura-configurazionale-v{N}.json",
+      "_note": "Primo step F3 (modello v3.0). Identifica il nodo dominante della CE per il dominio scelto e la funzione dell'intervento (1 di 4: stabilizzare/ampliare/mediare/proteggere). L'input esterno `contesto_ambito` viene auto-popolato dal bridge F2→F3 ambiti (vedi promoteTemaAmbito) — sostituisce il vecchio uso che ne faceva f3_step_7. Il ricercatore può rivedere/modificare prima del lancio.",
+      "output_prefix": "nodo-funzione",
+      "output_path_template": "temi/{tema_id}/nodo-funzione-v{N}.json",
       "inputs_pipeline": [
-        { "step": "f2_step_6", "role": "output-tipo-vuoto", "required": true, "_note": "Input primario — passaporto del tema. Sostituisce l'input diretto da f2_step_5." },
-        { "step": "f2_step_5", "role": "output-family", "required": true, "requires_verifica": true, "_note": "Fornisce le famiglie di output per il dominio selezionato" }
+        { "step": "f2_step_6", "role": "output-tipo-vuoto", "required": true, "_note": "Passaporto del tema, ereditato dalla ricerca F2 di origine al momento del bridge ambiti." }
       ],
-      "inputs_strutturali": ["f3-step-1/reading-device-schema.json"],
-      "inputs_esterni": [],
+      "inputs_strutturali": ["f3-step-1-nodo-funzione/nodo-funzione-schema.json"],
+      "inputs_esterni": [
+        { "id": "contesto_ambito", "label": "Contesto/ambito target", "type": "esterno_obbligatorio", "schema": "external-input-schemas/f3-step-1-contesto.json", "file_template": "inputs/temi/{tema_id}/f3-step-1-contesto-ambito.json" }
+      ],
       "verifica": true,
       "can_skip": false,
       "blocks": ["f3_step_2"]
     },
     {
       "id": "f3_step_2",
-      "label": "Stress test",
+      "label": "Micro-dispositivo di campo",
       "phase": "F3",
-      "output_prefix": "stress-test",
-      "output_path_template": "temi/{tema_id}/stress-test-v{N}.json",
+      "_note": "Costruisce il dispositivo nel template a 7 campi della metodologia (Configurazione di origine, Nodo dominante, Funzione, Campo bersaglio, Micro-azioni, Tempo reale, Indicatore di risonanza) + classificazione U1-U6 + condizioni di non-applicabilità.",
+      "output_prefix": "micro-dispositivo",
+      "output_path_template": "temi/{tema_id}/micro-dispositivo-v{N}.json",
       "inputs_pipeline": [
-        { "step": "f3_step_1", "role": "lettura-configurazionale", "required": true, "requires_verifica": true }
+        { "step": "f3_step_1", "role": "nodo-funzione", "required": true, "requires_verifica": true }
       ],
-      "inputs_strutturali": ["f3-step-2/stress-test-schema.json"],
+      "inputs_strutturali": ["f3-step-2-micro-dispositivo/micro-dispositivo-schema.json"],
       "inputs_esterni": [],
-      "verifica": false,
+      "verifica": true,
       "can_skip": false,
       "blocks": ["f3_step_3"]
     },
     {
       "id": "f3_step_3",
-      "label": "Correzione strutturale",
+      "label": "Stress test e correzione",
       "phase": "F3",
-      "output_prefix": "correzione-strutturale",
-      "output_path_template": "temi/{tema_id}/correzione-strutturale-v{N}.json",
+      "_note": "5 casi tipologici integrati (assenza_configurazione, configurazione_parziale, configurazione_distorta_chiudente, configurazione_oscillante, configurazione_apparente_indistinguibile) + correzione condizionale del dispositivo se i breaking point sono strutturali. Sostituisce vecchi step 2/3/4/10.",
+      "output_prefix": "stress-test",
+      "output_path_template": "temi/{tema_id}/stress-test-v{N}.json",
       "inputs_pipeline": [
-        { "step": "f3_step_1", "role": "lettura-configurazionale", "required": true },
-        { "step": "f3_step_2", "role": "stress-test", "required": true }
+        { "step": "f3_step_2", "role": "micro-dispositivo", "required": true, "requires_verifica": true }
       ],
-      "inputs_strutturali": ["f3-step-3/structural-correction-schema.json"],
-      "inputs_esterni": [],
-      "verifica": false,
+      "inputs_strutturali": ["f3-step-3-stress-test/stress-test-schema.json"],
+      "inputs_esterni": [
+        { "id": "casi_dominio", "label": "Casi reali del dominio (5 case_type)", "type": "esterno_facoltativo", "schema": "external-input-schemas/f3-step-3-casi-dominio.json", "file_template": "inputs/temi/{tema_id}/f3-step-3-casi-dominio.json", "_note": "Quando presenti, i casi reali vengono passati al prompt; sezioni mancanti integrate dall'agente in autonomia (1-5 casi forniti)." }
+      ],
+      "verifica": true,
       "can_skip": false,
-      "blocks": ["f3_step_4", "f3_step_5", "f3_step_6", "f3_step_7", "f3_step_9"]
+      "blocks": ["f3_step_4"]
     },
     {
       "id": "f3_step_4",
-      "label": "Test di indistinguibilità",
+      "label": "Verifica di coerenza F3",
       "phase": "F3",
-      "output_prefix": "indistinguibility-test",
-      "output_path_template": "temi/{tema_id}/indistinguibility-test-v{N}.json",
+      "_note": "Checklist 10 controlli normativi del metodo (5 di sez. 2.7 + 4 di sez. 5.4 + 1 di sez. 5.6) — verdetto: valido / richiede_revisione / fuori_modello. Lo step *è* la verifica: non ha quindi un ulteriore layer di verifica umana.",
+      "output_prefix": "coerenza",
+      "output_path_template": "temi/{tema_id}/coerenza-v{N}.json",
       "inputs_pipeline": [
-        { "step": "f3_step_3", "role": "correzione-strutturale", "required": true }
+        { "step": "f3_step_2", "role": "micro-dispositivo", "required": true, "requires_verifica": true },
+        { "step": "f3_step_3", "role": "stress-test", "required": true, "requires_verifica": true }
       ],
-      "inputs_strutturali": ["f3-step-4/indistinguibility-test-schema.json"],
+      "inputs_strutturali": ["f3-step-4-coerenza/coerenza-schema.json"],
       "inputs_esterni": [],
-      "verifica": true,
+      "verifica": false,
       "can_skip": false,
-      "blocks": ["f3_step_5", "f3_step_6"]
+      "blocks": ["f3_step_5"]
     },
     {
       "id": "f3_step_5",
-      "label": "Audit",
+      "label": "Audit metodologico (opzionale)",
       "phase": "F3",
-      "output_prefix": "audit",
-      "output_path_template": "temi/{tema_id}/audit-v{N}.json",
+      "_note": "8 controlli (A1-A8) sulla qualità di esecuzione della pipeline F3 da parte degli agenti AI. Opzionale: il dispositivo è considerato finalizzato dopo lo step 4 verificato. Versione generalizzata e snellita del vecchio step 5.",
+      "output_prefix": "audit-metodologico",
+      "output_path_template": "temi/{tema_id}/audit-metodologico-v{N}.json",
       "inputs_pipeline": [
-        { "step": "f3_step_3", "role": "correzione-strutturale", "required": true },
-        { "step": "f3_step_4", "role": "indistinguibility-test", "required": true, "requires_verifica": true }
+        { "step": "f3_step_4", "role": "coerenza", "required": true }
       ],
-      "inputs_strutturali": ["f3-step-5/audit-schema.json"],
-      "inputs_esterni": [],
-      "verifica": true,
-      "can_skip": false,
-      "blocks": ["f3_step_6"]
-    },
-    {
-      "id": "f3_step_6",
-      "label": "Stabilizzazione proxy",
-      "phase": "F3",
-      "output_prefix": "stabilizzazione-proxy",
-      "output_path_template": "temi/{tema_id}/stabilizzazione-proxy-v{N}.json",
-      "inputs_pipeline": [
-        { "step": "f3_step_3", "role": "correzione-strutturale", "required": true },
-        { "step": "f3_step_4", "role": "indistinguibility-test", "required": true, "requires_verifica": true },
-        { "step": "f3_step_5", "role": "audit", "required": true, "requires_verifica": true }
-      ],
-      "inputs_strutturali": [],
-      "inputs_esterni": [
-        { "id": "severita_test", "label": "Severità test non-reversibilità", "type": "esterno_facoltativo", "values": ["standard", "forte"], "default": "standard" }
-      ],
-      "verifica": false,
-      "can_skip": false,
-      "blocks": ["f3_step_6b"]
-    },
-    {
-      "id": "f3_step_6b",
-      "label": "Proxy forma operativa",
-      "phase": "F3",
-      "output_prefix": "stabilizzazione-proxy",
-      "output_suffix": "b",
-      "output_path_template": "temi/{tema_id}/stabilizzazione-proxy-v{N}b.json",
-      "inputs_pipeline": [
-        { "step": "f3_step_6", "role": "stabilizzazione-proxy", "required": true }
-      ],
-      "inputs_strutturali": [],
-      "inputs_esterni": [],
-      "verifica": true,
-      "overrides": ["operative_proxies", "observability_requirements", "non_classifiability_rules"],
-      "can_skip": false,
-      "blocks": ["f3_step_6c", "f3_step_7", "f3_step_9"]
-    },
-    {
-      "id": "f3_step_6c",
-      "label": "Integrazione proxy stabilizzato",
-      "phase": "F3",
-      "output_prefix": "correzione-strutturale",
-      "output_path_template": "temi/{tema_id}/correzione-strutturale-v{N+1}.json",
-      "note": "Nuova versione del dispositivo corretto. Diventa il canonical_device per gli step successivi.",
-      "inputs_pipeline": [
-        { "step": "f3_step_3", "role": "correzione-strutturale", "required": true },
-        { "step": "f3_step_6b", "role": "stabilizzazione-proxy-b", "required": true, "requires_verifica": true }
-      ],
-      "inputs_strutturali": [],
+      "inputs_strutturali": ["f3-step-5-audit-metodologico/audit-schema.json"],
       "inputs_esterni": [],
       "verifica": false,
       "can_skip": true,
-      "skip_condition": "La verifica di f3_step_6b non richiede integrazione strutturale",
-      "blocks": ["f3_step_7", "f3_step_9"]
-    },
-    {
-      "id": "f3_step_7",
-      "label": "Trasferibilità",
-      "phase": "F3",
-      "output_prefix": "trasferibilità",
-      "output_path_template": "temi/{tema_id}/trasferibilità-v{N}.json",
-      "inputs_pipeline": [
-        { "step": "f3_step_3_or_6c", "role": "correzione-strutturale", "required": true, "note": "f3_step_6c se presente, altrimenti f3_step_3" },
-        { "step": "f3_step_6b", "role": "stabilizzazione-proxy-b", "required": true, "requires_verifica": true }
-      ],
-      "inputs_strutturali": [],
-      "inputs_esterni": [
-        { "id": "contesto_ambito", "label": "Contesto/ambito target", "type": "esterno_obbligatorio", "schema": "external-input-schemas/f3-step-7-contesto.json", "file_template": "inputs/temi/{tema_id}/f3-step-7-contesto-{label}.json" }
-      ],
-      "verifica": false,
-      "can_skip": false,
-      "blocks": ["f3_step_8", "f3_step_9"]
-    },
-    {
-      "id": "f3_step_8",
-      "label": "Adattamento strutturale",
-      "phase": "F3",
-      "output_prefix": "adattamento-strutturale",
-      "output_path_template": "temi/{tema_id}/adattamento-strutturale-v{N}.json",
-      "inputs_pipeline": [
-        { "step": "f3_step_7", "role": "trasferibilità", "required": true }
-      ],
-      "inputs_dispositivo_sorgente": {
-        "required": true,
-        "description": "Dispositivo corretto del tema di origine",
-        "path_template": "temi/{tema_sorgente_id}/correzione-strutturale-v{N}.json"
-      },
-      "inputs_strutturali": [],
-      "inputs_esterni": [
-        { "id": "specificita_dispositivo", "label": "Livello di specificità del dispositivo finale", "type": "esterno_facoltativo", "values": ["standard", "alta"], "default": "standard" }
-      ],
-      "verifica": true,
-      "can_skip": true,
-      "skip_condition": "Specializzazione di dominio (non nuovo tema) — step 8 non necessario",
-      "blocks": ["f3_step_9"]
-    },
-    {
-      "id": "f3_step_9",
-      "label": "Dispositivo completo",
-      "phase": "F3",
-      "output_prefix": "dispositivo",
-      "output_path_template": "temi/{tema_id}/dispositivo-{label}-v{N}.json",
-      "inputs_pipeline_standard": [
-        { "step": "f3_step_6b", "role": "stabilizzazione-proxy-b", "required": true },
-        { "step": "f3_step_8", "role": "adattamento-strutturale", "required": true, "requires_verifica": true }
-      ],
-      "inputs_pipeline_skip_8": [
-        { "step": "f3_step_3_or_6c", "role": "correzione-strutturale", "required": true },
-        { "step": "f3_step_6b", "role": "stabilizzazione-proxy-b", "required": true },
-        { "step": "f3_step_7", "role": "trasferibilità", "required": true }
-      ],
-      "inputs_dispositivo_sorgente": {
-        "required": "se step 8 eseguito",
-        "description": "Dispositivo corretto del tema di origine",
-        "path_template": "temi/{tema_sorgente_id}/correzione-strutturale-v{N}.json"
-      },
-      "inputs_esterni": [],
-      "verifica": false,
-      "can_skip": false,
-      "blocks": ["f3_step_10"]
-    },
-    {
-      "id": "f3_step_10",
-      "label": "Stress test dispositivo",
-      "phase": "F3",
-      "output_prefix": "stress-test-dispositivo",
-      "output_path_template": "temi/{tema_id}/stress-test-dispositivo-{label}-v{N}.json",
-      "inputs_pipeline": [
-        { "step": "f3_step_9", "role": "dispositivo", "required": true }
-      ],
-      "inputs_strutturali": [],
-      "inputs_esterni": [
-        { "id": "casi_stress_test", "label": "5 casi critici per lo stress test", "type": "esterno_obbligatorio", "schema": "external-input-schemas/f3-step-10-casi.json", "file_template": "inputs/temi/{tema_id}/f3-step-10-casi-{label}.json", "note": "Deve coprire i 5 tipi: assente, parziale, chiudente, apparente_scripted, quasi_indistinguibile" }
-      ],
-      "verifica": false,
-      "can_skip": false,
+      "skip_condition": "Pipeline eseguita con sufficiente confidenza, audit metodologico ridondante",
       "blocks": []
     }
   ]

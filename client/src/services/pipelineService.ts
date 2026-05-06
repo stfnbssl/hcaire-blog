@@ -92,48 +92,33 @@ function normalizeDevice(d: DeviceSnapshot): DeviceSnapshot {
   };
 }
 
-// Step 6-B produces a stabilized operative_proxy that replaces the one in the device.
-// The file uses `required_observations` at the top level instead of `observability_requirements`.
-type F3Step6bRaw = {
-  step: 'f3_step_6b';
-  operative_proxy?: OperativeProxy;
-  required_observations?: ObservabilityRequirement[];
-  observability_requirements?: ObservabilityRequirement[];
-  non_classifiability_rules?: NonClassifiabilityRule[];
-};
-
-function applyStep6bOverride(device: DeviceSnapshot, step6b: F3Step6bRaw): DeviceSnapshot {
-  const next = { ...device };
-  if (step6b.operative_proxy) {
-    next.operative_proxies = [step6b.operative_proxy];
-  }
-  const obs = step6b.observability_requirements ?? step6b.required_observations;
-  if (obs?.length) {
-    next.observability_requirements = obs;
-  }
-  if (step6b.non_classifiability_rules?.length) {
-    next.non_classifiability_rules = step6b.non_classifiability_rules;
-  }
-  return next;
-}
+// v3.0 (D7): rimosse F3Step6bRaw e applyStep6bOverride — vecchio f3_step_6b non
+// esiste più, il dispositivo è prodotto in un unico passaggio (f3_step_2) con
+// eventuale correzione in f3_step_3. Tipi importati `OperativeProxy`,
+// `ObservabilityRequirement`, `NonClassifiabilityRule` restano disponibili per
+// i viewer di temi storici.
 
 export async function fetchStressTest(tema: TemaIndexEntry): Promise<F3Step10Raw | null> {
-  if (!tema.files.f3_step_10) return null;
-  return fetchStepOutput<F3Step10Raw>(tema.id, 'f3_step_10');
+  // v3.0 (D7): lo stress test è ora prodotto da f3_step_3 (Stress test e correzione).
+  // Il vecchio f3_step_10 è stato rimosso. Lo schema del nuovo output non coincide
+  // con F3Step10Raw — il consumer (viewer pagine) potrebbe necessitare aggiornamento;
+  // restituiamo unknown-as-F3Step10Raw per non rompere TypeScript senza un nuovo tipo.
+  if (!tema.files.f3_step_3) return null;
+  return fetchStepOutput<F3Step10Raw>(tema.id, 'f3_step_3');
 }
 
 export async function fetchCorrectionsLog(tema: TemaIndexEntry): Promise<Array<{ step: string; entries: CorrectionEntry[] }>> {
+  // v3.0 (D7): l'unico step che produce correzioni è ora f3_step_3 (correzione
+  // condizionale del dispositivo se i breaking point sono strutturali).
   const out: Array<{ step: string; entries: CorrectionEntry[] }> = [];
-  for (const step of ['f3_step_3', 'f3_step_6', 'f3_step_8'] as const) {
-    if (!tema.files[step]) continue;
-    try {
-      const raw = await fetchStepOutput<{ corrections_log?: CorrectionEntry[] }>(tema.id, step);
-      if (raw?.corrections_log && raw.corrections_log.length > 0) {
-        out.push({ step, entries: raw.corrections_log });
-      }
-    } catch {
-      // skip missing/malformed
+  if (!tema.files.f3_step_3) return out;
+  try {
+    const raw = await fetchStepOutput<{ corrections_log?: CorrectionEntry[] }>(tema.id, 'f3_step_3');
+    if (raw?.corrections_log && raw.corrections_log.length > 0) {
+      out.push({ step: 'f3_step_3', entries: raw.corrections_log });
     }
+  } catch {
+    // skip missing/malformed
   }
   return out;
 }
@@ -147,25 +132,19 @@ export async function fetchRevisioni(tema: TemaIndexEntry): Promise<string | nul
   return res.text();
 }
 
-// Mappa shape → step_id (priorità identica a pickCanonicalDevice lato server).
+// Mappa shape → step_id (v3.0 / D7: allineata con pickCanonicalDevice lato server,
+// che ora privilegia f3_step_4 → f3_step_3 → f3_step_2).
 function shapeToStepId(shape: CanonicalDeviceShape): PipelineStepId {
-  if (shape === 'device') return 'f3_step_9';
+  if (shape === 'device') return 'f3_step_4';
   if (shape === 'corrected_device') return 'f3_step_3';
-  return 'f3_step_1';
+  return 'f3_step_2';
 }
 
 export async function fetchDevice(tema: TemaIndexEntry): Promise<DeviceSnapshot | null> {
   if (!tema.canonical_device) return null;
   const raw = await fetchStepOutput<unknown>(tema.id, shapeToStepId(tema.canonical_device.shape));
   if (!raw) return null;
-  let device = extractDevice(raw, tema.canonical_device.shape);
-  if (tema.files.f3_step_6b) {
-    try {
-      const s6b = await fetchStepOutput<F3Step6bRaw>(tema.id, 'f3_step_6b');
-      if (s6b) device = applyStep6bOverride(device, s6b);
-    } catch {
-      // step 6-B optional override; ignore if missing
-    }
-  }
+  const device = extractDevice(raw, tema.canonical_device.shape);
+  // v3.0 (D7): rimosso il branch di override f3_step_6b — non esiste più.
   return device;
 }
