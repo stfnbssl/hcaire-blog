@@ -14,7 +14,7 @@ const STEP_NAME: Record<PipelineStepId, string> = {
   f3_step_2: 'Micro-dispositivo di campo',
   f3_step_3: 'Stress test e correzione',
   f3_step_4: 'Verifica di coerenza F3',
-  f3_step_5: 'Audit metodologico',
+  f3_step_5: 'Output-tipo contestualizzato',
 };
 
 const INPUT_TYPE_COLOR: Record<string, string> = {

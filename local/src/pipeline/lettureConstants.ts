@@ -37,7 +37,7 @@ export const LETTURE_COWORK_PROJECT_PATH = process.env.COWORK_LETTURE_PATH
   ?? LETTURE_SPECS_ROOT;
 
 // Riuso le stesse soglie generali della pipeline Sviluppo Bambino.
-export const DEFAULT_TIMEOUT_MS = parseInt(process.env.PIPELINE_DEFAULT_TIMEOUT_MS ?? '300000', 10);
+export const DEFAULT_TIMEOUT_MS = parseInt(process.env.PIPELINE_DEFAULT_TIMEOUT_MS ?? '600000', 10);
 export const INLINE_FILE_THRESHOLD_BYTES = 50 * 1024;
 export const MOCK_MODE = (process.env.PIPELINE_MOCK_MODE ?? 'true').toLowerCase() === 'true';
 

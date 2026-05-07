@@ -57,38 +57,79 @@ export default function OrchestrationPanel({ temaId, orchestration }: Orchestrat
   }
   if (!ctx) return null;
 
+  const contextTypeLabel = ctx.context_type === 'ricerca' ? 'Ricerca' : 'Tema';
+  const ricercaHref = ctx.ricerca_origine
+    ? `/sviluppo-bambino/produzioni/pipeline/ricerche/${encodeURIComponent(ctx.ricerca_origine)}`
+    : null;
+  const sorgenteHref = ctx.dispositivo_sorgente
+    ? `/sviluppo-bambino/produzioni/pipeline/temi/${encodeURIComponent(ctx.dispositivo_sorgente.tema_id)}`
+    : null;
+
   return (
     <div className="space-y-6">
       {/* Header generale */}
-      <div className="flex flex-wrap items-center gap-3 text-sm">
-        <span className="text-slate-500">Tema:</span>
-        <span className="font-semibold text-slate-900">{ctx.label}</span>
-        <span className="text-slate-300">·</span>
-        <span className="text-slate-500">{ctx.steps_completed.length} step completati</span>
-        {ctx.robustezza && (
-          <>
-            <span className="text-slate-300">·</span>
-            <span className="text-slate-500">Robustezza: <span className="font-semibold text-slate-800">{ctx.robustezza}</span></span>
-          </>
-        )}
-        {(ctx.correzioni_residue ?? 0) > 0 && (
-          <>
-            <span className="text-slate-300">·</span>
-            <span className="text-orange-700">{ctx.correzioni_residue} correzioni residue</span>
-          </>
-        )}
-        <div className="flex-1" />
-        {coworkActive === null && <span className="text-xs text-slate-400">Cowork: verifica…</span>}
-        {coworkActive === true && (
-          <span className="text-xs bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded-full">
-            Cowork attivo {coworkInfo ? `· ${coworkInfo.active_executions} run` : ''}
+      <div className="space-y-2">
+        <div className="flex flex-wrap items-center gap-3 text-sm">
+          <span className="text-xs uppercase tracking-wide font-semibold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-slate-200">
+            {contextTypeLabel}
           </span>
-        )}
-        {coworkActive === false && (
-          <span className="text-xs bg-red-50 text-red-700 border border-red-200 px-2 py-0.5 rounded-full">
-            Cowork non raggiungibile
+          <span className="font-semibold text-slate-900">{ctx.label}</span>
+          <span className="text-slate-300">·</span>
+          <span className="text-slate-500">{ctx.steps_completed.length} step completati</span>
+          {ctx.robustezza && (
+            <>
+              <span className="text-slate-300">·</span>
+              <span className="text-slate-500">Robustezza: <span className="font-semibold text-slate-800">{ctx.robustezza}</span></span>
+            </>
+          )}
+          {(ctx.correzioni_residue ?? 0) > 0 && (
+            <>
+              <span className="text-slate-300">·</span>
+              <span className="text-orange-700">{ctx.correzioni_residue} correzioni residue</span>
+            </>
+          )}
+          <div className="flex-1" />
+          {coworkActive === null && <span className="text-xs text-slate-400">Cowork: verifica…</span>}
+          {coworkActive === true && (
+            <span className="text-xs bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded-full">
+              Cowork attivo {coworkInfo ? `· ${coworkInfo.active_executions} run` : ''}
+            </span>
+          )}
+          {coworkActive === false && (
+            <span className="text-xs bg-red-50 text-red-700 border border-red-200 px-2 py-0.5 rounded-full">
+              Cowork non raggiungibile
+            </span>
+          )}
+        </div>
+
+        {/* Identificatori — aiuta a non perdere il contesto durante l'esecuzione */}
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs font-mono">
+          <span className="text-slate-400">
+            {ctx.context_type === 'ricerca' ? 'ricerca_id' : 'tema_id'}:
+            <span className="ml-1 text-slate-700 select-all">{ctx.context_id}</span>
           </span>
-        )}
+          {ctx.theme_id && (
+            <span className="text-slate-400">
+              theme_id: <span className="ml-1 text-slate-700 select-all">{ctx.theme_id}</span>
+            </span>
+          )}
+          {ctx.ricerca_origine && (
+            <span className="text-slate-400">
+              ricerca origine:{' '}
+              {ricercaHref
+                ? <a href={ricercaHref} className="ml-1 text-slate-700 underline hover:text-slate-900 select-all">{ctx.ricerca_origine}</a>
+                : <span className="ml-1 text-slate-700 select-all">{ctx.ricerca_origine}</span>}
+            </span>
+          )}
+          {ctx.dispositivo_sorgente && (
+            <span className="text-slate-400">
+              dispositivo sorgente:{' '}
+              {sorgenteHref
+                ? <a href={sorgenteHref} className="ml-1 text-slate-700 underline hover:text-slate-900 select-all">{ctx.dispositivo_sorgente.tema_id}</a>
+                : <span className="ml-1 text-slate-700 select-all">{ctx.dispositivo_sorgente.tema_id}</span>}
+            </span>
+          )}
+        </div>
       </div>
 
       {/* Pending decision banner */}

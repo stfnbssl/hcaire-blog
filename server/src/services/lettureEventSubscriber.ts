@@ -23,7 +23,7 @@ import { validateStepOutput } from './lettureSchemaValidator';
 void _unusedIsEditorial; // soppresso
 
 const WATCHDOG_INTERVAL_MS = parseInt(process.env.PIPELINE_WATCHDOG_INTERVAL_MS ?? String(5 * 60 * 1000), 10);
-const DEFAULT_TIMEOUT_MS   = parseInt(process.env.PIPELINE_DEFAULT_TIMEOUT_MS ?? '300000', 10);
+const DEFAULT_TIMEOUT_MS   = parseInt(process.env.PIPELINE_DEFAULT_TIMEOUT_MS ?? '600000', 10);
 const GRACE_MS             = parseInt(process.env.PIPELINE_WATCHDOG_GRACE_MS ?? '60000', 10);
 const MAX_EXECUTION_MS     = DEFAULT_TIMEOUT_MS + GRACE_MS;
 

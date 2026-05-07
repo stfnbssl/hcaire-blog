@@ -1,0 +1,35 @@
+{
+  "step": "f3_step_1",
+  "tema_id": "tema-pointing-precoce",
+  "domain_selected": "clinico",
+  "context_label": "Ambulatorio di neuropsichiatria infantile, fascia 12-24 mesi",
+  "researcher_notes": "Il dominio clinico è prioritario per la valenza diagnostica del pointing.",
+  "results": [
+    {
+      "dominant_node": {
+        "node_id": "n_intenzionalita_condivisa",
+        "node_label": "Intenzionalità condivisa",
+        "dominance_motivation": "Nel contesto clinico precoce il pointing emerge come segnale primario di condivisione dell'attenzione: senza questa funzione il quadro diagnostico perde leggibilità.",
+        "other_nodes_status": [
+          { "node_id": "n_regolazione_motoria", "status": "sostenuto", "note": "presente ma subordinato" },
+          { "node_id": "n_legame_caregiver", "status": "co-fragile", "note": "dipende dalla risposta dell'adulto" },
+          { "node_id": "n_simbolizzazione", "status": "neutro", "note": null }
+        ]
+      },
+      "function": {
+        "function_type": "ampliare",
+        "function_motivation": "La funzione richiesta è ampliare lo spazio di condivisione attenzionale, non stabilizzare un dato esistente."
+      },
+      "target_field": {
+        "field_label": "Triangolazione attenzionale bambino-oggetto-adulto",
+        "field_motivation": "Il campo bersaglio è la struttura triadica dell'attenzione condivisa, dove il pointing fa da pivot tra i tre poli."
+      },
+      "coherence_check": {
+        "node_in_confirmed":           { "value": "sì", "motivation": "Il nodo è tra i confermati di f2_step_3." },
+        "function_in_closed_set":      { "value": "sì", "motivation": null },
+        "function_coherent_with_node": { "value": "sì", "motivation": "Ampliare è coerente con un nodo emergente." },
+        "target_field_specific":       { "value": "ambiguo", "motivation": "Il campo è chiaro ma il confine con la regolazione motoria è poroso." }
+      }
+    }
+  ]
+}

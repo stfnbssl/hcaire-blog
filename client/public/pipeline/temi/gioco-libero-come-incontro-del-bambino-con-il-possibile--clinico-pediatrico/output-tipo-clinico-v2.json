@@ -1,0 +1,93 @@
+{
+  "step": "f3_step_5",
+  "tema_id": "gioco-libero-come-incontro-del-bambino-con-il-possibile",
+  "domain_selected": "clinico",
+  "context_label": "Ambulatorio pediatrico, bambini 3-5 anni, osservazione del pediatra",
+  "results": [
+    {
+      "sections": [
+        {
+          "section_id": "A",
+          "section_label": "Campo condiviso",
+          "domain_examples": [
+            "Durante una visita di controllo, il pediatra apre un breve intervallo dentro la visita in cui non chiede al bambino di mostrare una competenza, e gli oggetti già presenti nello studio (un foglio, una matita, un piccolo oggetto comune) restano a portata senza che venga indicato un uso atteso.",
+            "Nel segmento non finalizzato della visita, il caregiver smette di sollecitare il bambino a esibirsi e si dispone in una compresenza non direttiva, mentre il pediatra non riempie il silenzio con domande cliniche o riformulazioni motivanti.",
+            "La struttura temporale della visita mostra un segmento percepibilmente diverso dal flusso anamnesi/esame, in cui ciò che il bambino fa non viene immediatamente convertito in indice di tappa raggiunta o prestazione mancata."
+          ],
+          "linguistic_frame": "Il campo qui è la qualità dell'ambiente clinico nel suo insieme — tempo, oggetti, posture del professionista e del genitore — quando, dentro una visita ordinaria, non tutto è orientato a verificare lo sviluppo. È un piccolo spazio della visita in cui si può guardare il bambino senza doverlo misurare.",
+          "decisional_nodes": [
+            "Il pediatra valuta se, in questa specifica visita, esiste un margine clinico per aprire un intervallo non finalizzato senza compromettere obiettivi diagnostici o terapeutici prioritari.",
+            "Il pediatra considera se le condizioni reali del setting (durata della visita, accessibilità del bambino, disponibilità del caregiver alla sospensione dell'attesa prestazionale) consentono che la qualità non finalizzata si stabilisca, o se è preferibile non aprire l'intervallo in questa occasione."
+          ]
+        },
+        {
+          "section_id": "B",
+          "section_label": "Posizione soggettiva",
+          "domain_examples": [
+            "Il bambino di quattro anni, nell'intervallo non finalizzato, torna ricorsivamente verso un foglio e una matita lasciati sul tavolo della visita, modificando spontaneamente l'uso degli oggetti senza che il pediatra abbia indicato un compito o commentato il prodotto.",
+            "Il bambino di tre anni smette di cercare il volto dell'adulto come riferimento per sapere se sta facendo bene, e si orienta autonomamente verso un oggetto che lo richiama, senza che l'orientamento si configuri come risposta a un'aspettativa esplicita.",
+            "Il pediatra riconosce nel comportamento osservato una qualità di insistenza autonoma e di ritorno ricorsivo distinta dalla compliance al protocollo o dall'aderenza alle aspettative del caregiver, anche quando le due cose darebbero esiti esternamente simili.",
+            "In una variante degradata della stessa scena, il bambino aderisce efficacemente a ciò che intuisce essere atteso ma il suo agire non mostra un proprio ritorno: l'orientamento è sostituito da motivazione esterna anche se il comportamento appare adeguato."
+          ],
+          "linguistic_frame": "Si parla qui di come il bambino, dentro un piccolo intervallo non valutativo della visita, mostra (o non mostra) un proprio orientamento: non una performance per l'adulto, ma una direzione interna che si manifesta nel modo in cui sta nel campo, ritorna verso ciò che lo richiama e insiste in modo proprio.",
+          "decisional_nodes": [
+            "Il pediatra valuta se ciò che osserva nell'intervallo merita di essere ripreso in un colloquio successivo con il caregiver, o se può restare come elemento di contesto della visita senza ulteriore elaborazione esplicita.",
+            "Il pediatra considera se l'eventuale assenza di orientamento osservabile, ricorrente nel tempo, apre un'attenzione clinica specifica da approfondire in altri momenti o setting, distinti dalla visita ordinaria."
+          ]
+        },
+        {
+          "section_id": "C",
+          "section_label": "Rapporto con il limite",
+          "domain_examples": [
+            "Durante l'intervallo il bambino incontra una piccola sproporzione tra la propria mano e l'oggetto, o l'irreversibilità di un segno tracciato che non si cancella, e il pediatra non interviene per correggere, riparare o spiegare via la difficoltà incontrata.",
+            "Una manovra clinica ordinaria (palpazione, auscultazione, ispezione del cavo orale) introduce un limite reale al corpo del bambino senza che l'adulto la anticipi preventivamente con spiegazioni motivanti o la trasformi in gioco premiale che ne neutralizza la qualità di reale.",
+            "Il caregiver tende ad anticipare verbalmente al bambino ciò che sta per accadere e a riparare ogni piccola difficoltà; nell'intervallo non finalizzato questa anticipazione viene momentaneamente sospesa, e l'incontro con il limite resta non mediato."
+          ],
+          "linguistic_frame": "Si tratta del modo in cui il bambino incontra ciò che resiste — il proprio corpo, gli oggetti dello studio, le manovre cliniche — e di come l'adulto sta in questo incontro: se lo anticipa via con spiegazioni, se lo accompagna senza guidarlo, se lo nomina solo dopo che è già accaduto.",
+          "decisional_nodes": [
+            "Il pediatra valuta se la modalità con cui il caregiver anticipa o ripara i limiti del bambino merita di essere ripresa in un counseling pediatrico dedicato, distinto dalla visita ordinaria e dai suoi tempi.",
+            "Il pediatra considera quando e in quale registro restituire al caregiver un'osservazione sulla qualità della sua presenza nei momenti di limite, evitando che la restituzione si trasformi in prescrizione comportamentale o in indicazione protocollare."
+          ]
+        },
+        {
+          "section_id": "D",
+          "section_label": "Configurazione complessiva",
+          "domain_examples": [
+            "La visita nel suo complesso mostra un piccolo segmento in cui le tre cose — la qualità non finalizzata del tempo, la presenza non direttiva di pediatra e caregiver, l'incontro non anticipato con i piccoli limiti del corpo e degli oggetti — si sostengono a vicenda, e il bambino mostra un orientamento proprio.",
+            "La visita mostra un intervallo formalmente aperto ma sostanzialmente eroso: la richiesta di lettura valutativa del caregiver, o la pressione del tempo ambulatoriale, riempie l'apertura e l'orientamento del bambino non si manifesta come dimensione leggibile.",
+            "La configurazione tiene per pochi minuti e poi si chiude naturalmente con la ripresa della visita ordinaria: il pediatra registra eventualmente ciò che ha visto come informazione di contesto, non come dato di scoring né come elemento di una scala graduata."
+          ],
+          "linguistic_frame": "La configurazione è il quadro d'insieme di quel particolare momento clinico: come la qualità del tempo, la presenza degli adulti e l'incontro con i piccoli limiti reali si tengono insieme (o non si tengono), e cosa di questo diventa effettivamente leggibile per il pediatra dentro la visita.",
+          "decisional_nodes": [
+            "Il pediatra valuta se la configurazione osservata è sufficientemente chiara da essere annotata nella documentazione clinica come elemento di contesto, o se resta nell'esperienza professionale del singolo incontro senza traduzione formale.",
+            "Il pediatra considera se ciò che ha visto si ripete in visite successive, costituendo un orientamento longitudinale, o se è episodico e legato a condizioni contingenti del setting in quella specifica giornata."
+          ]
+        },
+        {
+          "section_id": "E",
+          "section_label": "Ipotesi di sostegno configurativo",
+          "domain_examples": [
+            "Il pediatra protegge la qualità non finalizzata dell'intervallo non strutturandolo come spazio di gioco libero da progettare, ma sospendendo localmente la lettura prestazionale del bambino dentro il tempo della visita ordinaria.",
+            "Il pediatra riconosce l'insistenza autonoma e il ritorno ricorsivo del bambino come segnali clinici distinti dalla compliance al protocollo, e non li converte automaticamente in indici di milestone raggiunta o mancata.",
+            "Il pediatra preserva la qualità di reale del limite (corporeo, materiale, della manovra clinica) senza anticiparla via con spiegazioni motivanti che la trasformerebbero in regola o in motivazione esterna alla relazione."
+          ],
+          "linguistic_frame": "Si tratta di tre direzioni di cura del campo durante la visita: tenere aperto un tempo non valutativo, lasciare emergere l'orientamento del bambino senza sostituirlo con motivazione esterna, non anticipare via i piccoli limiti reali con spiegazioni o riparazioni preventive.",
+          "decisional_nodes": [
+            "Sul rafforzamento del campo condiviso: il pediatra valuta come articolare, dentro la propria pratica ambulatoriale, un margine ricorrente di tempo non finalizzato che non venga letto da colleghi e caregiver come tempo perso o non clinico.",
+            "Sull'emergenza di posizione: il pediatra considera in quali contesti formativi (audit clinici, gruppi di supervisione pediatrica, percorsi di counseling) può essere ripreso il riconoscimento dell'orientamento autonomo del bambino come dato osservativo distinto dalla compliance.",
+            "Sul limite nominabile: il pediatra valuta se e quando proporre al caregiver un counseling specifico sull'anticipazione spiegativa, in distinzione dal tempo della visita e senza trasformarlo in prescrizione comportamentale."
+          ]
+        }
+      ],
+      "narrative_synthesis": "Nella visita ambulatoriale, dentro una struttura naturalmente densa di obiettivi (anamnesi, esame, verifica delle tappe evolutive), può aprirsi un piccolo intervallo in cui il bambino non è chiamato a mostrare una competenza e l'adulto non sta misurando uno sviluppo. In quell'intervallo, se la qualità non finalizzata del tempo, la posizione non direttiva di pediatra e caregiver e l'incontro non anticipato con i piccoli limiti del corpo e degli oggetti si tengono insieme, può manifestarsi un orientamento proprio del bambino — un modo di stare e di tornare verso ciò che lo richiama — diverso dalla risposta al protocollo clinico. Questa qualità di campo è strutturalmente esposta: la pressione delle tappe evolutive e l'attesa prestazionale del caregiver tendono a richiuderla rapidamente. Il pediatra può accorgersene e tenerla aperta per pochi minuti, sapendo che ciò che vede non è un dato di scoring ma un'informazione di contesto sulla qualità con cui quel bambino abita la relazione, gli oggetti e il proprio corpo.",
+      "orientative_direction": "Il dispositivo, se sostenuto, può rendere la visita ambulatoriale un luogo in cui per pochi minuti diventa visibile un orientamento del bambino non riducibile alla risposta alle tappe — non come dato da misurare, ma come qualità di campo che il pediatra può riconoscere e custodire dentro il suo sguardo professionale.",
+      "dispositivo_ref": {
+        "device_synthesis": "Il dispositivo apre dentro la visita ambulatoriale un piccolo intervallo non finalizzato in cui il campo cessa di leggere il bambino come portatore di tappe da verificare e l'orientamento può manifestarsi senza diventare prestazione.",
+        "function_type": "proteggere",
+        "real_time": "5-10 minuti",
+        "resonance_indicator": "Dentro la visita si forma un breve segmento in cui il pediatra, il caregiver e il bambino smettono di orientarsi verso un compito atteso, e l'agire del bambino cessa di essere immediatamente leggibile come tappa raggiunta o prestazione mancata."
+      },
+      "operator_note": null
+    }
+  ]
+}

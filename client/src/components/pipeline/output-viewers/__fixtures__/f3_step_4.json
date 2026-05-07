@@ -1,0 +1,30 @@
+{
+  "step": "f3_step_4",
+  "tema_id": "tema-pointing-precoce",
+  "domain_selected": "clinico",
+  "results": [
+    {
+      "checks": [
+        { "id": "C1",  "label": "Nodo dominante in elenco confermato",        "outcome": "passa",              "motivation": "Il nodo intenzionalità condivisa è tra i confermati di f2_step_3." },
+        { "id": "C2",  "label": "Funzione nell'insieme chiuso (4 funzioni)",  "outcome": "passa",              "motivation": "La funzione 'ampliare' è una delle quattro previste dal modello." },
+        { "id": "C3",  "label": "Funzione coerente con il nodo",              "outcome": "passa",              "motivation": "Ampliare è coerente con un nodo emergente nella fascia 12-24 mesi." },
+        { "id": "C4",  "label": "Campo bersaglio specifico",                  "outcome": "passa_con_riserve",  "motivation": "Il campo è chiaro ma il confine con la regolazione motoria resta poroso." },
+        { "id": "C5",  "label": "Micro-azioni reversibili",                   "outcome": "passa",              "motivation": "Tutte le 4 micro-azioni dichiarano reversibilità esplicita." },
+        { "id": "C6",  "label": "Tempo reale dichiarato",                     "outcome": "passa",              "motivation": "30-90 secondi per ciclo, finestra coerente con l'età." },
+        { "id": "C7",  "label": "Indicatore di risonanza osservabile",        "outcome": "passa_con_riserve",  "motivation": "Sguardo riferito + qualità: la qualità è osservabile ma richiede operatore esperto." },
+        { "id": "C8",  "label": "Forma universale dichiarata",                "outcome": "passa",              "motivation": "U2+U3 con motivazione esplicita." },
+        { "id": "C9",  "label": "Condizioni di non-applicabilità presenti",   "outcome": "passa",              "motivation": "3 trigger dichiarati, ognuno con outcome e razionale." },
+        { "id": "C10", "label": "Stress test superato (verdict ≠ non_valido)", "outcome": "passa",             "motivation": "Verdict accettabile, 3/5 casi passati con correzione applicata." }
+      ],
+      "final_verdict": {
+        "total_checks": 10,
+        "passed": 8,
+        "passed_with_reserves": 2,
+        "failed": 0,
+        "verdict": "valido",
+        "critical_failures": [],
+        "recommended_restart_step": null
+      }
+    }
+  ]
+}

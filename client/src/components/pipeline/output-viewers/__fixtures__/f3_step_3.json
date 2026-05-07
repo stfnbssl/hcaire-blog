@@ -1,0 +1,157 @@
+{
+  "step": "f3_step_3",
+  "tema_id": "tema-pointing-precoce",
+  "domain_selected": "clinico",
+  "results": [
+    {
+      "researcher_provided_cases": false,
+      "cases": [
+        {
+          "case_type": "assenza_configurazione",
+          "case_description": "Bambino di 14 mesi che non orienta lo sguardo verso l'oggetto nuovo né verso l'adulto, attenzione fluttuante senza pivot.",
+          "device_application": {
+            "observed_configuration": "Nessuna triangolazione. Lo sguardo si muove ma non si fissa né su oggetto né su volto.",
+            "device_behavior": {
+              "readability": "Il dispositivo registra correttamente l'assenza: latenza > 7s, nessun sguardo riferito.",
+              "ambiguity_level": "basso",
+              "what_becomes_unclear": null
+            },
+            "breaking_point": { "present": false, "where": null, "why": null, "is_structural": null },
+            "non_applicability_triggered": null,
+            "mislettura_risk": {
+              "without_device": "Si potrebbe leggere l'assenza come timidezza o mancata familiarità con l'oggetto.",
+              "with_device_misused": "Se applicato in stato di sonnolenza il dispositivo potrebbe falsamente classificare assenza."
+            }
+          }
+        },
+        {
+          "case_type": "configurazione_parziale",
+          "case_description": "Bambino di 18 mesi che fissa l'oggetto ma non guarda l'adulto, sguardo monodirezionale.",
+          "device_application": {
+            "observed_configuration": "Sguardo all'oggetto presente, sguardo al volto assente entro la finestra dei 7 secondi.",
+            "device_behavior": {
+              "readability": "Il dispositivo registra la triangolazione interrotta sul polo adulto.",
+              "ambiguity_level": "medio",
+              "what_becomes_unclear": "Se sia inibizione transitoria o pattern stabile."
+            },
+            "breaking_point": { "present": false, "where": null, "why": null, "is_structural": null },
+            "non_applicability_triggered": null,
+            "mislettura_risk": {
+              "without_device": "Si potrebbe interpretare come interesse normale per l'oggetto.",
+              "with_device_misused": "Senza la seconda finestra (ma3) si perderebbe l'occasione di rilevare oscillazione."
+            }
+          }
+        },
+        {
+          "case_type": "configurazione_distorta_chiudente",
+          "case_description": "Bambino di 20 mesi che orienta sguardo all'adulto come richiesta di rassicurazione, non come condivisione.",
+          "device_application": {
+            "observed_configuration": "Sguardo all'adulto presente ma con qualità affiliativa, non triangolante: l'oggetto resta sullo sfondo.",
+            "device_behavior": {
+              "readability": "Il dispositivo registra un falso positivo se conta solo lo sguardo riferito.",
+              "ambiguity_level": "alto",
+              "what_becomes_unclear": "La qualità (richiesta vs condivisione) dello sguardo riferito."
+            },
+            "breaking_point": { "present": true, "where": "ma2 — attesa", "why": "L'attesa amplifica l'ansia da separazione invece di favorire la triangolazione.", "is_structural": true },
+            "non_applicability_triggered": null,
+            "mislettura_risk": {
+              "without_device": "Triangolazione apparente che maschera bisogno regolativo.",
+              "with_device_misused": "Il dispositivo classifica come presente una funzione che non c'è."
+            }
+          }
+        },
+        {
+          "case_type": "configurazione_oscillante",
+          "case_description": "Bambino di 16 mesi che alterna momenti di triangolazione e ritiro nell'arco della stessa sessione.",
+          "device_application": {
+            "observed_configuration": "Su 4 cicli: 2 con sguardo riferito netto, 2 senza.",
+            "device_behavior": {
+              "readability": "Il dispositivo registra l'oscillazione se applicato per più cicli; un singolo ciclo lo perderebbe.",
+              "ambiguity_level": "medio",
+              "what_becomes_unclear": null
+            },
+            "breaking_point": { "present": false, "where": null, "why": null, "is_structural": null },
+            "non_applicability_triggered": null,
+            "mislettura_risk": {
+              "without_device": "Si fisserebbe sull'episodio più recente.",
+              "with_device_misused": "Un solo ciclo darebbe verdetto bianco/nero su pattern oscillante."
+            }
+          }
+        },
+        {
+          "case_type": "configurazione_apparente_indistinguibile",
+          "case_description": "Bambino di 22 mesi che esegue sguardo riferito ma per imitazione di prassi clinica recente.",
+          "device_application": {
+            "observed_configuration": "Comportamento isomorfo alla triangolazione, ma il pivot è la richiesta dell'operatore non l'oggetto.",
+            "device_behavior": {
+              "readability": "Il dispositivo da solo non discrimina: serve la lettura della qualità dello sguardo.",
+              "ambiguity_level": "alto",
+              "what_becomes_unclear": "L'origine intenzionale del comportamento."
+            },
+            "breaking_point": { "present": true, "where": "resonance_indicator", "why": "Lo sguardo riferito non garantisce intenzionalità condivisa.", "is_structural": true },
+            "non_applicability_triggered": { "trigger_id": "trigger_imitazione", "outcome": "ambiguo" },
+            "mislettura_risk": {
+              "without_device": "Falso positivo di triangolazione.",
+              "with_device_misused": "Lo stesso falso positivo, amplificato dalla credibilità del setup."
+            }
+          }
+        }
+      ],
+      "stress_test_verdict": {
+        "cases_passed": 3,
+        "breaking_points_count": 2,
+        "apparente_indistinguibile_outcome": "discriminazione_dipendente_dall_osservatore",
+        "verdict": "accettabile"
+      },
+      "device_correction": {
+        "triggered_by_breaking_points": ["ma2 — attesa", "resonance_indicator"],
+        "corrected_micro_actions": [
+          {
+            "id": "ma1",
+            "description": "L'operatore introduce un oggetto nuovo nel campo visivo a 30-50 cm dal bambino.",
+            "observable_effect": "Il bambino orienta lo sguardo all'oggetto, poi al volto dell'operatore.",
+            "reversibility_note": "Ritirare l'oggetto interrompe il setup."
+          },
+          {
+            "id": "ma2",
+            "description": "L'operatore mantiene presenza affiliativa di base (sguardo morbido) durante l'attesa di 5-7 secondi.",
+            "observable_effect": "L'attesa non amplifica ansia; lo sguardo riferito che emerge è meno contaminato da bisogno regolativo.",
+            "reversibility_note": "Reversibile."
+          },
+          {
+            "id": "ma3",
+            "description": "Se non emerge sguardo riferito, l'operatore nomina l'oggetto.",
+            "observable_effect": "Seconda finestra di triangolazione.",
+            "reversibility_note": "Sospendibile."
+          },
+          {
+            "id": "ma4",
+            "description": "L'operatore valuta la qualità dello sguardo riferito (condivisione vs richiesta) attraverso direzione del volto e durata.",
+            "observable_effect": "Discriminazione del falso positivo nel caso indistinguibile.",
+            "reversibility_note": "Lettura, nessuna azione."
+          }
+        ],
+        "corrected_non_applicability": [
+          {
+            "trigger": "Bambino in stato di iper-arousal motorio o pianto persistente.",
+            "required_outcome": "sospendere",
+            "rationale": "La condizione affettiva preclude la triangolazione."
+          },
+          {
+            "trigger": "Adulto di riferimento assente o non collaborativo.",
+            "required_outcome": "non_classificabile",
+            "rationale": "Senza polo adulto, struttura triadica non osservabile."
+          },
+          {
+            "trigger": "Bambino con esposizione recente a setup clinico simile.",
+            "required_outcome": "ambiguo",
+            "rationale": "Rischio di imitazione che simula triangolazione."
+          }
+        ],
+        "corrected_universal_form": null,
+        "corrected_resonance_indicator": "Sguardo riferito entro 7 secondi + qualità di condivisione (volto orientato all'oggetto, non solo all'adulto).",
+        "correction_blocked_reason": null
+      }
+    }
+  ]
+}

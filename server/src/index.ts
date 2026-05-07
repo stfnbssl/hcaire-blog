@@ -32,8 +32,8 @@ requiredVars.forEach((v) => {
   console.log(`[Env] ${v}: ${process.env[v] ? 'SET' : 'MISSING'}`);
 });
 // Pipeline env (valori visibili — utile per diagnosticare problemi di caricamento)
-console.log(`[Env] PIPELINE_DEFAULT_TIMEOUT_MS: ${process.env.PIPELINE_DEFAULT_TIMEOUT_MS ?? '(non impostato → default 300000)'}`);
-console.log(`[Env] PIPELINE_WATCHDOG_INTERVAL_MS: ${process.env.PIPELINE_WATCHDOG_INTERVAL_MS ?? '(non impostato → default 300000)'}`);
+console.log(`[Env] PIPELINE_DEFAULT_TIMEOUT_MS: ${process.env.PIPELINE_DEFAULT_TIMEOUT_MS ?? '(non impostato → default 600000)'}`);
+console.log(`[Env] PIPELINE_WATCHDOG_INTERVAL_MS: ${process.env.PIPELINE_WATCHDOG_INTERVAL_MS ?? '(non impostato → default 600000)'}`);
 
 const app  = express();
 const PORT = process.env.PORT || 3018;

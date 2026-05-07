@@ -10,7 +10,7 @@ import { getRedisClient } from '../config/redis';
 
 const COMMANDS_KEY  = process.env.REDIS_LETTURE_COMMANDS_KEY  ?? 'hcaire:letture:commands';
 const EVENTS_CHANNEL = process.env.REDIS_LETTURE_EVENTS_CHANNEL ?? 'hcaire:letture:events';
-const DEFAULT_TIMEOUT_MS = parseInt(process.env.PIPELINE_DEFAULT_TIMEOUT_MS ?? '300000', 10);
+const DEFAULT_TIMEOUT_MS = parseInt(process.env.PIPELINE_DEFAULT_TIMEOUT_MS ?? '600000', 10);
 const PING_TIMEOUT_MS = 5000;
 
 export type LettureCommandType =

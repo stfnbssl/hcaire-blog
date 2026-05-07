@@ -27,7 +27,7 @@ export const COWORK_PROJECT_PATH = process.env.COWORK_SVILUPPO_BAMBINO_PATH
   ?? process.env.COWORK_PROJECT_PATH
   ?? STEPS_ROOT;
 
-export const DEFAULT_TIMEOUT_MS = parseInt(process.env.PIPELINE_DEFAULT_TIMEOUT_MS ?? '300000', 10);
+export const DEFAULT_TIMEOUT_MS = parseInt(process.env.PIPELINE_DEFAULT_TIMEOUT_MS ?? '600000', 10);
 export const INLINE_FILE_THRESHOLD_BYTES = 50 * 1024;
 
 // Modalità mock: salta lo spawn di Cowork e scrive un file segnaposto.
@@ -55,7 +55,7 @@ export const STEP_FOLDER_MAP: Record<string, string> = {
   'f3_step_2':  'f3-step-2-micro-dispositivo',
   'f3_step_3':  'f3-step-3-stress-test',
   'f3_step_4':  'f3-step-4-coerenza',
-  'f3_step_5':  'f3-step-5-audit-metodologico',
+  'f3_step_5':  'f3-step-5-output-tipo-contestualizzato',
 };
 
 // v3.0 (D7): rimosse le varianti CLAUDE-B.md / CLAUDE-C.md di vecchio f3_step_6.

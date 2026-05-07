@@ -1,0 +1,161 @@
+{
+  "step": "f3_step_3",
+  "tema_id": "gioco-libero-come-incontro-del-bambino-con-il-possibile",
+  "domain_selected": "clinico",
+  "results": [
+    {
+      "researcher_provided_cases": false,
+      "cases": [
+        {
+          "case_type": "assenza_configurazione",
+          "case_description": "Visita pediatrica non programmata, accesso ambulatoriale per un bambino di 18 mesi con febbre alta da circa 12 ore, irritabilità marcata e sospetto di otite media acuta in atto. Il caregiver è in stato di forte preoccupazione e chiede una decisione rapida sull'avvio o meno della terapia antibiotica. La visita è interamente assorbita dalla domanda clinica acuta: anamnesi sintomatologica, otoscopia, valutazione dello stato generale, decisione terapeutica. La cornice è strutturalmente quella della cura del sintomo; nessun bilancio di salute è in programma, nessuno sguardo sulle tappe è atteso, e il tempo della visita appartiene per intero alla risposta sintomatica.",
+          "device_application": {
+            "observed_configuration": "Il nodo dominante 'campo-desiderabile' non è attivo: il setting non sta producendo né proteggendo un campo non-finalizzato, perché la cornice è interamente clinico-sintomatologica. La pressione di prestazionalizzazione del valore evolutivo, descritta nel dispositivo come fattore di erosione esterna, è qui assente perché lo sguardo non è rivolto al valore evolutivo. La polarità di campo non è A−: è semplicemente non-pertinente al dispositivo. Non c'è materiale strutturale su cui il dispositivo possa lavorare.",
+            "device_behavior": {
+              "readability": "Il dispositivo riconosce immediatamente che il caso non gli appartiene: la prima delle sue condizioni di non-applicabilità descrive esattamente questa situazione. Il dispositivo si auto-sospende in modo trasparente: dichiara che qui non c'è un campo da proteggere, perché non c'è campo evolutivo in gioco. Le micro-azioni non vengono nemmeno tentate; il caregiver e il bambino sono correttamente trattati dentro la cornice della cura.",
+              "ambiguity_level": "basso",
+              "what_becomes_unclear": null
+            },
+            "breaking_point": {
+              "present": false,
+              "where": null,
+              "why": "Caso correttamente intercettato dalla condizione di non-applicabilità sulla visita acuta; la zona di fragilità più prossima sarebbe l'eccesso di zelo evolutivo che approfittasse della visita acuta, ma il dispositivo lo esclude esplicitamente.",
+              "is_structural": false
+            },
+            "non_applicability_triggered": {
+              "trigger_id": "trigger-clinico-acuto",
+              "outcome": "sospendere"
+            },
+            "mislettura_risk": {
+              "without_device": "Sovrapporre osservazioni evolutive a una visita acuta, distogliendo attenzione dalla sintomatologia o aggiungendo un'aspettativa indebita ('ne approfittiamo per vedere come gioca') che ruba tempo alla cura del sintomo.",
+              "with_device_misused": "Forzare l'apertura dell'intervallo non finalizzato anche dentro la visita acuta, leggendo l'irrequietezza febbrile del bambino come 'orientamento' e producendo annotazioni evolutive su un campo strutturalmente compromesso da malattia in atto."
+            }
+          }
+        },
+        {
+          "case_type": "configurazione_parziale",
+          "case_description": "Bilancio di salute programmato a 24 mesi, in ambulatorio ordinato, senza urgenze, con la finestra dei 10 minuti effettivamente disponibile. Il bambino è in buone condizioni cliniche generali. Il caregiver presente in stanza è la nonna materna, che accompagna sporadicamente il bambino: ben disposta ma non informata sulla cornice del bilancio, poco familiare con il bambino nella quotidianità domestica e poco abituata a modulare la propria presenza in modo non direttivo. La madre è in sala d'attesa con un altro figlio neonato e non può entrare. L'ambiente fisico-temporale è pronto, la finestra clinica c'è, ma la mediazione adulta diretta sul campo del bambino è solo parziale.",
+          "device_application": {
+            "observed_configuration": "Il nodo dominante 'campo-desiderabile' è attivabile come spazio fisico-temporale (oggetti disponibili, durata coperta, silenzio dell'esaminatore praticabile), ma il livello della mediazione caregiver è zoppo: la nonna non possiede la presa relazionale immediata su questo bambino sufficiente per disinnescare un'eventuale sollecitazione prestazionale familiare, né per sostenere coerentemente una presenza non direttiva. La condizione-del-desiderio dal lato del setting clinico è in atto, ma manca dal lato dell'ancoraggio caregiveriale che il dispositivo presuppone implicitamente.",
+            "device_behavior": {
+              "readability": "Il dispositivo è leggibile e in parte praticabile: le micro-azioni 1, 2, 3 e 5 (formula esplicita, oggetti, sospensione della guida verbale, differimento dell'annotazione) sono eseguibili dal pediatra. La micro-azione 4 (comunicazione al caregiver per neutralizzare l'attesa prestazionale) è eseguibile formalmente — la nonna riceve l'informazione — ma poco efficace nel produrre l'effetto strutturale: la nonna non ha la cornice familiare immediata per modulare la propria presenza in coerenza con la sospensione richiesta. Il dispositivo lavora su una struttura zoppa che riconosce parzialmente.",
+              "ambiguity_level": "medio",
+              "what_becomes_unclear": "Cosa esattamente l'agire (o il non-agire) del bambino sta esprimendo: orientamento autonomo dentro un campo aperto, oppure esitazione e cautela determinate dalla presenza di un caregiver meno familiare. Il significato dell'eventuale silenzio o non-azione del bambino diventa difficilmente leggibile dentro l'indicatore di risonanza così com'è."
+            },
+            "breaking_point": {
+              "present": false,
+              "where": null,
+              "why": "Zona di fragilità più che breaking point strutturale: la micro-azione 4 perde efficacia quando il caregiver presente è sostitutivo e non immerso nella cornice familiare quotidiana, ma il dispositivo nel suo insieme non si rompe. Il pediatra può comunque attivare l'intervallo e dichiarare l'esito come parzialmente leggibile.",
+              "is_structural": false
+            },
+            "non_applicability_triggered": null,
+            "mislettura_risk": {
+              "without_device": "Leggere la non-azione del bambino come 'ritardo evolutivo' o, viceversa, come 'buona regolazione', senza tener conto che la cornice familiare immediata in stanza è alterata e che ciò modula l'iniziativa del bambino in modo non strutturalmente legato allo sviluppo.",
+              "with_device_misused": "Considerare l'intervallo 'ben condotto' perché formalmente eseguito in tutte e cinque le micro-azioni, e produrre indicatori osservativi sul comportamento del bambino senza riconoscere che la mediazione caregiver era solo formalmente in atto e che l'effetto del dispositivo era zoppo dal lato familiare."
+            }
+          }
+        },
+        {
+          "case_type": "configurazione_distorta_chiudente",
+          "case_description": "Pediatra esperta in screening dello sviluppo, particolarmente attenta alle tappe motorie e linguistiche, con una pratica consolidata di rilevamento precoce. Durante la visita di un bambino di 30 mesi apre un intervallo che presenta come 'tempo libero per giocare' — esegue formalmente le 5 micro-azioni del dispositivo: formula esplicita rivolta a bambino e caregiver, oggetti messi a disposizione, sospensione della guida verbale, comunicazione al caregiver, niente scoring visibile. Tuttavia, sin dall'inizio dell'intervallo, orienta la propria osservazione interna verso una checklist mentale costruita su item M-CHAT e su indicatori motori che intende verificare. Comunica al genitore con tono rassicurante 'non lo stiamo valutando' mentre simultaneamente assume un'attenzione clinicamente focalizzata. Gli 'oggetti neutri' resi disponibili sono in realtà selezionati per elicitare specifiche prove (matita a impugnatura graduata, foglio per disegno spontaneo, piccola palla per rotolamento).",
+          "device_application": {
+            "observed_configuration": "Il nodo 'campo-desiderabile' si attiva in superficie (intervallo dichiarato aperto, oggetti presenti, silenzio del professionista mantenuto), ma la regolazione interna del setting è chiudente: lo sguardo dell'osservatore continua a leggere ogni mossa del bambino come item di scala, e gli oggetti — formalmente neutri — sono selettivamente predisposti come stimoli di elicitazione. La mediazione caregiver è formalmente sospesa ma la pressione prestazionale rientra dal lato del pediatra in forma cognitiva. Polarità di campo: A− mascherata da apertura. Il limite-reale che il dispositivo doveva proteggere (assenza di finalità) è eroso dall'interno dello sguardo professionale.",
+            "device_behavior": {
+              "readability": "Il dispositivo è leggibile a livello formale (le 5 micro-azioni risultano eseguite), ma l'indicatore di risonanza non è verificabile dall'esterno in modo discriminante: dichiara che 'l'agire del bambino cessa di essere immediatamente leggibile come tappa', ma in questo caso l'agire del bambino è internamente convertito in tappa dall'osservatore senza che il dispositivo possa rilevarlo. Le micro-azioni sono praticabili, ma la loro esecuzione formale non garantisce la sostanza che il dispositivo descrive: il differimento dell'annotazione è solo grafico, lo scoring cognitivo è in atto.",
+              "ambiguity_level": "alto",
+              "what_becomes_unclear": "Se il dispositivo stia funzionando o stia coprendo l'esatta operazione che dovrebbe sospendere. Il dispositivo non distingue tra esecuzione formale e sostanziale dell'apertura, perché tutte le sue micro-azioni e il suo indicatore di risonanza sono formulati come comportamenti esterni mentre la distorsione chiudente avviene nello sguardo interno."
+            },
+            "breaking_point": {
+              "present": true,
+              "where": "Indicatore di risonanza e micro-azione 5 (differimento dell'annotazione). L'indicatore non offre criteri osservabili che permettano di distinguere l'orientamento valutativo interno dell'osservatore dalla reale sospensione del campo prestazionale. La micro-azione 5 differisce l'annotazione *visibile* ma non intercetta lo scoring cognitivo, che è il livello a cui la distorsione chiudente opera.",
+              "why": "Limite strutturale: tutte le micro-azioni del dispositivo sono formulate come comportamenti dell'osservatore visibili dall'esterno, mentre la distorsione chiudente avviene a livello dello sguardo interno e della selezione cognitiva degli oggetti. Non esiste, dentro il dispositivo come è formulato, un criterio di discriminazione tra apertura formale e apertura sostanziale. Anche la lista delle condizioni di non-applicabilità è costruita su trigger esterni-comportamentali e non intercetta questa configurazione.",
+              "is_structural": true
+            },
+            "non_applicability_triggered": null,
+            "mislettura_risk": {
+              "without_device": "Eseguire una valutazione M-CHAT-like dichiarandola apertamente come tale: errore di trasparenza minimo, perché il caregiver e in parte il bambino sanno cosa sta accadendo e la cornice è coerente con lo scopo dichiarato.",
+              "with_device_misused": "Eseguire la stessa valutazione *credendo in buona fede* di avere protetto un campo non-finalizzato. Il dispositivo aggrava la mislettura perché copre l'operazione valutativa con una cornice di 'sospensione' che il dispositivo stesso convalida formalmente. Il pediatra produce poi indicatori che riferiscono al sistema un campo che non c'era, peggiorando la qualità del dato rispetto a una valutazione esplicita."
+            }
+          }
+        },
+        {
+          "case_type": "configurazione_oscillante",
+          "case_description": "Visita di follow-up di 30 minuti per un bambino di 26 mesi nato pretermine, programmata in modo da includere uno spazio di osservazione non finalizzata. Apertura del dispositivo regolare: formula esplicita, oggetti disponibili, caregiver (la madre) informato e disposto. Dopo circa 3 minuti dall'inizio dell'intervallo, chiamata urgente da parte di un'infermiera per un altro bambino in sala d'attesa con accesso convulsivo. Il pediatra esce, gestisce l'emergenza per circa 4 minuti, rientra. Riprende l'intervallo, ma adesso il caregiver e il bambino sono in uno stato di allerta residua. Il pediatra apre nuovamente l'intervallo e cerca di 'riprenderlo'. Dopo 2 minuti il caregiver chiede 'ma allora come va con il linguaggio?' e l'intervallo si rompe internamente sul versante della mediazione, anche se formalmente il segmento sarebbe ancora in corso.",
+          "device_application": {
+            "observed_configuration": "Il nodo 'campo-desiderabile' si costituisce e si dissolve in modo intermittente. Nel primo segmento (3 minuti) la configurazione è sostanzialmente in atto ma sotto la durata minima del dispositivo. Nel secondo tentativo, post-interruzione, la configurazione è formalmente ripresa ma il campo del bambino è ricaricato di vigilanza ed è il caregiver a non sostenere più la sospensione. Polarità di campo che oscilla: A− → assenza di campo → A− mascherata che si rompe sul versante caregiver.",
+              "device_behavior": {
+              "readability": "Il dispositivo riconosce parzialmente l'oscillazione: la condizione di non-applicabilità sulla durata minima ('il setting non consente fisicamente i 5-10 minuti dedicati') è quasi attivabile a posteriori — il primo segmento è sotto la durata minima e il secondo è eroso prima di costituirsi. Il dispositivo legge che la durata effettiva di apertura sostanziale non si è raggiunta in nessuno dei due segmenti. Le micro-azioni sono praticabili episodicamente ma non si compongono in un campo continuo.",
+              "ambiguity_level": "medio",
+              "what_becomes_unclear": "Se il dispositivo, nel suo complesso, abbia avuto luogo una volta (con interruzione e ripresa) o non abbia avuto luogo affatto. La cornice temporale del dispositivo non chiarisce esplicitamente se sia tollerata una ripresa dopo interruzione o se l'interruzione richieda di azzerare il segmento e ricominciare un ciclo intero."
+            },
+            "breaking_point": {
+              "present": false,
+              "where": null,
+              "why": "Zona di fragilità: il dispositivo non specifica come si comporta sotto interruzione e ripresa. Si può estendere implicitamente la condizione di non-applicabilità sulla durata minima per coprire questo caso, ma non c'è rottura strutturale. L'esito ragionevole è 'sospendere' e annotare l'intervallo come non costituito, che è esattamente ciò che il dispositivo prevede per il setting che non consente i 5-10 minuti continui.",
+              "is_structural": false
+            },
+            "non_applicability_triggered": {
+              "trigger_id": "trigger-durata-minima",
+              "outcome": "sospendere"
+            },
+            "mislettura_risk": {
+              "without_device": "Riprendere l'osservazione standard come se l'interruzione non fosse rilevante e leggere il comportamento post-interruzione del bambino come baseline neutra, ignorando lo stato di allerta residua introdotto dall'emergenza.",
+              "with_device_misused": "Considerare il dispositivo 'comunque attivato' perché formula e oggetti erano in atto, e dichiarare l'esito sull'osservazione del secondo segmento, ignorando che la qualità di campo non si è ricostituita dopo l'interruzione."
+            }
+          }
+        },
+        {
+          "case_type": "configurazione_apparente_indistinguibile",
+          "case_description": "Pediatra che ha frequentato un corso di formazione sul dispositivo 'tempo non finalizzato' e lo ha integrato come tecnica nel proprio protocollo standard di bilancio di salute a 28 mesi. Esegue le 5 micro-azioni con cura procedurale: formula esplicita ben padroneggiata, set fisso di tre oggetti standardizzati per età ma presentati come 'neutri', silenzio cronometrato di 7 minuti, comunicazione al caregiver eseguita con la stessa frase di sempre, nessuna annotazione visibile. Internamente, il pediatra non sta valutando per item di scala — non c'è la distorsione chiudente del caso 3 — ma sta applicando il dispositivo come *script*: ha appreso che 'questo è il dispositivo' e lo esegue senza che la sottrazione di finalità sia prodotta come qualità interna. Il bambino è ben disposto, gioca tranquillamente. Il caregiver è presente e silenzioso. Tutto si svolge in modo formalmente identico a un'esecuzione sostanziale del dispositivo.",
+          "device_application": {
+            "observed_configuration": "A osservazione esterna, tutti i livelli sono attivi: il nodo 'campo-desiderabile' è formalmente costituito (tempo coperto, oggetti presenti, silenzio mantenuto, mediazione caregiver disinnescata, niente scoring visibile). L'indicatore di risonanza descritto dal dispositivo *sembra* verificarsi: il pediatra, il caregiver e il bambino non si stanno orientando verso un compito atteso esplicito; l'agire del bambino non è leggibile come tappa raggiunta. Eppure, strutturalmente, il campo è una riproduzione di script: la sottrazione di finalità non è prodotta da una sospensione interna dell'orientamento, ma è prodotta come *forma* del dispositivo. La differenza non è osservabile dalle 5 micro-azioni né dall'indicatore di risonanza così come formulato.",
+            "device_behavior": {
+              "readability": "Il dispositivo legge questo caso come pienamente conforme a sé stesso: formula eseguita, oggetti presenti, silenzio mantenuto, caregiver informato, annotazione differita. L'indicatore di risonanza, formulato come 'smettono di orientarsi verso un compito atteso, l'agire del bambino cessa di essere immediatamente leggibile come tappa', è verificabile in superficie. Niente dentro il dispositivo permette di discriminare la riproduzione di script dall'apertura sostanziale: la differenza si gioca a un livello — la qualità interna dell'attenzione dell'osservatore, la genesi della sottrazione di finalità, la possibilità di un'azione non anticipata del bambino — che le micro-azioni non descrivono e l'indicatore di risonanza non interroga.",
+              "ambiguity_level": "alto",
+              "what_becomes_unclear": "Se il dispositivo, applicato come tecnica appresa, stia ancora producendo l'effetto strutturale che descrive o stia producendo soltanto la propria forma esteriore. Il dispositivo non offre criteri interni per riconoscere questa discriminazione: un osservatore esperto potrebbe sentirla, uno meno no, ma il dispositivo non guida questa sensibilità."
+            },
+            "breaking_point": {
+              "present": true,
+              "where": "Indicatore di risonanza. La formulazione attuale ('smettono di orientarsi verso un compito atteso') è verificabile solo come assenza di sollecitazione esplicita; non discrimina tra una sottrazione di finalità prodotta come qualità di campo e una sottrazione di finalità prodotta come esecuzione formale di un protocollo appreso. Anche le condizioni di non-applicabilità sono costruite per riconoscere campi non protetti per ragioni esterne (urgenza, durata, caregiver), non campi formalmente protetti ma sostanzialmente vuoti.",
+              "why": "Limite strutturale: l'indicatore di risonanza non possiede un criterio di discriminazione per la versione 'script' del dispositivo. Tutti gli osservabili che dichiara sono compatibili con lo script. La discriminazione richiede una sensibilità interpretativa dell'osservatore non garantita dal dispositivo come è formulato — il dispositivo è in questo punto dipendente dall'osservatore in modo non dichiarato.",
+              "is_structural": true
+            },
+            "non_applicability_triggered": null,
+            "mislettura_risk": {
+              "without_device": "Eseguire osservazioni di sviluppo standard a item, senza pretesa di apertura non finalizzata: chiarezza di cornice, niente illusioni sulla natura del campo, e nessun rischio di confondere protocollo con qualità di campo.",
+              "with_device_misused": "Trasformare il dispositivo in tecnica replicabile su tutti i bilanci di salute e produrre osservazioni etichettate come provenienti da un 'campo non-finalizzato' che sono in realtà output di script eseguito. Riportare al sistema indicazioni che non corrispondono a ciò che il dispositivo intendeva proteggere, con erosione progressiva del concetto stesso che fonda il dispositivo."
+            }
+          }
+        }
+      ],
+      "stress_test_verdict": {
+        "cases_passed": 3,
+        "breaking_points_count": 2,
+        "apparente_indistinguibile_outcome": "discriminazione_dipendente_dall_osservatore",
+        "verdict": "fragile"
+      },
+      "device_correction": {
+        "triggered_by_breaking_points": [
+          "caso 3 (configurazione_distorta_chiudente): l'indicatore di risonanza e le micro-azioni non intercettano la persistenza interna dello sguardo valutativo dell'osservatore quando le 5 micro-azioni sono formalmente in atto",
+          "caso 5 (configurazione_apparente_indistinguibile): l'indicatore di risonanza non discrimina tra sottrazione di finalità prodotta come qualità di campo e sottrazione di finalità prodotta come esecuzione di protocollo appreso"
+        ],
+        "corrected_micro_actions": null,
+        "corrected_non_applicability": [
+          {
+            "trigger": "L'osservatore mantiene internamente, durante l'intervallo, una griglia valutativa attiva (item di scala, indicatori di tappe, checklist mentale di prove da elicitare) anche se nessuna sua azione esterna lo manifesta. La sospensione è solo comportamentale, non epistemica: lo sguardo continua a leggere per item.",
+            "required_outcome": "ambiguo",
+            "rationale": "Le 5 micro-azioni del dispositivo sono comportamentali e non intercettano la persistenza interna dello sguardo valutativo; quando questo persiste, il campo è formalmente protetto ma sostanzialmente colonizzato dalla finalità prestazionale. L'esito va dichiarato ambiguo invece di essere letto come dispositivo riuscito, e l'osservatore è invitato a una verifica interna prima di trattare l'osservazione come dato di campo non finalizzato."
+          },
+          {
+            "trigger": "Il dispositivo è eseguito come tecnica appresa o come protocollo standard di bilancio di salute: oggetti standardizzati ricorrenti, formula ripetuta in modo invariato, durata cronometrata, e l'osservatore non è in grado di indicare almeno un'azione del bambino non anticipata da sé (un uso degli oggetti non previsto, un'iniziativa imprevista, una sospensione attiva non sollecitata). La forma è piena ma il campo è riproduzione di script.",
+            "required_outcome": "ambiguo",
+            "rationale": "Quando il dispositivo è applicato come procedura esecutiva, le sue micro-azioni sono formalmente in atto ma la sottrazione di finalità non è prodotta come qualità di campo. Il segno strutturale di un campo realmente non finalizzato è che vi compaia almeno un'azione del bambino non anticipata dall'osservatore, perché l'imprevedibilità minima non è riproducibile come forma esecutiva. La sua assenza fa decadere l'esito a ambiguo: il dispositivo è formalmente attivato ma sostanzialmente eroso, e va dichiarato tale invece di essere letto come funzionante."
+          }
+        ],
+        "corrected_universal_form": null,
+        "corrected_resonance_indicator": "Dentro la visita si forma un breve segmento in cui il pediatra, il caregiver e il bambino smettono di orientarsi verso un compito atteso, e l'agire del bambino cessa di essere immediatamente leggibile come tappa raggiunta o prestazione mancata. Il segno di campo distintivo — non riproducibile come forma esecutiva — è che il bambino produce almeno un'azione non anticipata dall'osservatore (un uso non previsto degli oggetti, un'iniziativa motoria o di sospensione attiva non sollecitata) che lo sguardo del professionista accoglie senza convertirla immediatamente in indice valutativo, e che l'osservatore stesso riconosce come non prevista dal proprio repertorio di item. L'assenza di ogni traccia di imprevedibilità minima, in presenza di tutte e cinque le micro-azioni eseguite, è il segno che il campo è formalmente attivato ma sostanzialmente vuoto.",
+        "correction_blocked_reason": null
+      }
+    }
+  ]
+}

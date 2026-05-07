@@ -1,14 +1,18 @@
-// Viewer strutturato per gli output della Fase 2 (f2_step_1 … f2_step_5).
+// Viewer strutturato per gli output della Fase 2 — pipeline v2.x.
 // Riceve il JSON parsato + lo step_id e dispatcha al sub-componente giusto.
 // Per output non riconosciuti ritorna null (chi chiama mostra JSON di fallback).
+//
+// Step coperti: f2_step_2, 2a, 3, 4, 4b, 5, 6.
+// f2_step_1 (theme-discovery) è stato rimosso dalla pipeline (sostituito
+// dall'Archivio temi); Step1Viewer è LEGACY e non più dispatchato.
 
 import { useState } from 'react';
 import {
   Chip, SectionTitle, Subtle, Prose, Card, KeyValue, BulletList, ThemeTabs,
-  ConfirmedRejectedColumns,
+  ConfirmedRejectedColumns, CalloutBox,
 } from './viewerPrimitives';
 
-// ───── step 1: theme-discovery ─────
+// ───── step 1: theme-discovery (LEGACY, non più dispatchato) ─────
 
 interface Step1Theme {
   theme_label_provisional?: string;
@@ -615,6 +619,486 @@ function Step5Viewer({ data }: { data: { results?: Step5Result[] } }) {
   );
 }
 
+// ───── step 2a: node-verification (verifica nodi trasversali) ─────
+
+interface Step2aCanonicalMapping {
+  canonical_node_id: 'N1' | 'N2' | 'N3' | 'N4' | 'N5' | 'N6' | 'N7';
+  type: 'identico' | 'istanza' | 'parziale';
+  rationale: string;
+}
+
+interface Step2aNodeMapping {
+  node_id: string;
+  node_label: string;
+  axes: number[];
+  canonical_mapping: Step2aCanonicalMapping | null;
+}
+
+interface Step2aActivatedCanonical {
+  canonical_node_id: string;
+  coverage_type: 'piena' | 'parziale';
+  covered_by: string[];
+}
+
+interface Step2aAbsentCanonical {
+  canonical_node_id: string;
+  structural_reason: string;
+}
+
+interface Step2aPureDerived {
+  node_id: string;
+  derivation_justification: string;
+}
+
+interface Step2aResult {
+  theme_id: string;
+  node_mappings: Step2aNodeMapping[];
+  activated_canonical_nodes: Step2aActivatedCanonical[];
+  absent_canonical_nodes: Step2aAbsentCanonical[];
+  pure_derived_nodes: Step2aPureDerived[];
+  canonical_configuration_assessment: {
+    plausibility: 'sì' | 'no' | 'parzialmente';
+    plausibility_notes: string;
+    missing_relations_notes: string;
+    coverage_adequacy: string;
+  };
+}
+
+const MAPPING_TYPE_COLOR: Record<string, string> = {
+  identico: 'forte',
+  istanza:  'plausibile',
+  parziale: 'ambiguo',
+};
+
+const PLAUSIBILITY_COLOR: Record<string, string> = {
+  'sì':           'forte',
+  'no':           'distorta',
+  'parzialmente': 'ambiguo',
+};
+
+const COVERAGE_COLOR: Record<string, string> = {
+  piena:    'forte',
+  parziale: 'ambiguo',
+};
+
+function Step2aViewer({ data }: { data: { results?: Step2aResult[] } }) {
+  const results = data.results ?? [];
+  const [active, setActive] = useState(0);
+  const r = results[active];
+  if (!r) return <Subtle>Nessun risultato disponibile</Subtle>;
+
+  return (
+    <div className="space-y-4">
+      <ThemeTabs themes={results.map((t) => ({ theme_id: t.theme_id }))} activeIdx={active} onChange={setActive} />
+
+      <CalloutBox
+        title="Plausibilità configurazionale"
+        tone={r.canonical_configuration_assessment.plausibility === 'sì' ? 'emerald' : r.canonical_configuration_assessment.plausibility === 'no' ? 'rose' : 'amber'}
+      >
+        <div className="flex items-center gap-2 mb-2 flex-wrap">
+          <Chip color={PLAUSIBILITY_COLOR[r.canonical_configuration_assessment.plausibility] ?? 'slate'}>
+            {r.canonical_configuration_assessment.plausibility}
+          </Chip>
+        </div>
+        <KeyValue label="Plausibilità" value={<Prose>{r.canonical_configuration_assessment.plausibility_notes}</Prose>} />
+        <KeyValue label="Relazioni mancanti" value={<Prose>{r.canonical_configuration_assessment.missing_relations_notes}</Prose>} />
+        <KeyValue label="Adeguatezza copertura" value={<Prose>{r.canonical_configuration_assessment.coverage_adequacy}</Prose>} />
+      </CalloutBox>
+
+      <Card>
+        <SectionTitle>Mappatura dei nodi candidati ({r.node_mappings.length})</SectionTitle>
+        <div className="space-y-2">
+          {r.node_mappings.map((m, i) => (
+            <div key={i} className="border-l-2 border-slate-300 pl-3 py-1">
+              <div className="flex items-baseline gap-2 flex-wrap">
+                <span className="text-xs font-mono text-slate-400">{m.node_id}</span>
+                <span className="text-sm font-medium text-slate-900">{m.node_label}</span>
+                <span className="text-xs text-slate-500">assi: {m.axes.join(', ')}</span>
+              </div>
+              {m.canonical_mapping ? (
+                <div className="mt-1 flex items-baseline gap-2 flex-wrap">
+                  <span className="text-xs text-slate-500">→</span>
+                  <span className="text-xs font-mono text-slate-700">{m.canonical_mapping.canonical_node_id}</span>
+                  <Chip color={MAPPING_TYPE_COLOR[m.canonical_mapping.type] ?? 'slate'}>{m.canonical_mapping.type}</Chip>
+                  <span className="text-xs text-slate-600 italic">{m.canonical_mapping.rationale}</span>
+                </div>
+              ) : (
+                <div className="mt-1 text-xs text-slate-500 italic">→ derivato puro (nessun canonico)</div>
+              )}
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      <div className="grid sm:grid-cols-2 gap-3">
+        <Card>
+          <SectionTitle>Canonici attivati ({r.activated_canonical_nodes.length})</SectionTitle>
+          <div className="space-y-1.5">
+            {r.activated_canonical_nodes.length === 0 && <Subtle>nessuno</Subtle>}
+            {r.activated_canonical_nodes.map((a, i) => (
+              <div key={i} className="text-sm flex items-baseline gap-2 flex-wrap">
+                <span className="font-mono text-slate-700">{a.canonical_node_id}</span>
+                <Chip color={COVERAGE_COLOR[a.coverage_type] ?? 'slate'}>{a.coverage_type}</Chip>
+                <span className="text-xs text-slate-500">via {a.covered_by.join(', ')}</span>
+              </div>
+            ))}
+          </div>
+        </Card>
+
+        <Card>
+          <SectionTitle>Canonici assenti ({r.absent_canonical_nodes.length})</SectionTitle>
+          <div className="space-y-1.5">
+            {r.absent_canonical_nodes.length === 0 && <Subtle>nessuno</Subtle>}
+            {r.absent_canonical_nodes.map((a, i) => (
+              <div key={i} className="text-sm">
+                <span className="font-mono text-slate-700 mr-2">{a.canonical_node_id}</span>
+                <span className="text-xs text-slate-600 italic">{a.structural_reason}</span>
+              </div>
+            ))}
+          </div>
+        </Card>
+      </div>
+
+      {r.pure_derived_nodes.length > 0 && (
+        <Card>
+          <SectionTitle>Nodi derivati puri ({r.pure_derived_nodes.length})</SectionTitle>
+          <div className="space-y-1.5">
+            {r.pure_derived_nodes.map((p, i) => (
+              <div key={i} className="text-sm">
+                <span className="font-mono text-slate-700 mr-2">{p.node_id}</span>
+                <span className="text-xs text-slate-600 italic">{p.derivation_justification}</span>
+              </div>
+            ))}
+          </div>
+        </Card>
+      )}
+    </div>
+  );
+}
+
+// ───── step 4b: ce-prototipica ─────
+
+interface Step4bNodeState {
+  node_id: 'N1' | 'N2' | 'N3' | 'N4' | 'N5' | 'N6' | 'N7';
+  state: '↑' | '~' | '↓' | '!' | '?';
+  rationale: string;
+}
+
+interface Step4bNodeRelation {
+  from_node: string;
+  to_node: string;
+  relation_type: 'CPL' | 'VIN' | 'MED' | 'CMP';
+  rationale: string;
+}
+
+interface Step4bCE {
+  S: Step4bNodeState[];
+  R: Step4bNodeRelation[];
+  D: '↗' | '→' | '↘';
+  T: 'T1' | 'T2' | 'T3';
+  A: 'A+' | 'A±' | 'A-';
+}
+
+interface Step4bVariant {
+  variant_name: string;
+  modified_dimension: 'S' | 'R' | 'D' | 'T' | 'A';
+  modification_description: string;
+  structural_description: string;
+}
+
+interface Step4bResult {
+  theme_id: string;
+  ce_prototipica: Step4bCE;
+  ce_notation: string;
+  ce_natural_language: string;
+  ce_variants: Step4bVariant[];
+  derivation_notes: string;
+}
+
+const RELATION_LABEL: Record<string, string> = {
+  CPL: 'sostegno',
+  VIN: 'vincolo',
+  MED: 'mediazione',
+  CMP: 'compensazione',
+};
+
+const STATE_COLOR: Record<string, string> = {
+  '↑': 'forte',
+  '~': 'plausibile',
+  '↓': 'ambiguo',
+  '!': 'distorta',
+  '?': 'rejected',
+};
+
+function Step4bViewer({ data }: { data: { results?: Step4bResult[] } }) {
+  const results = data.results ?? [];
+  const [active, setActive] = useState(0);
+  const r = results[active];
+  if (!r) return <Subtle>Nessun risultato disponibile</Subtle>;
+  const ce = r.ce_prototipica;
+
+  return (
+    <div className="space-y-4">
+      <ThemeTabs themes={results.map((t) => ({ theme_id: t.theme_id }))} activeIdx={active} onChange={setActive} />
+
+      <CalloutBox title="Notazione CE" tone="slate">
+        <code className="text-sm font-mono text-slate-800 whitespace-pre-wrap break-words">{r.ce_notation}</code>
+      </CalloutBox>
+
+      <Card>
+        <SectionTitle>Linguaggio naturale</SectionTitle>
+        <Prose>{r.ce_natural_language}</Prose>
+      </Card>
+
+      <Card>
+        <SectionTitle>Stato dei nodi (S)</SectionTitle>
+        <div className="space-y-1.5">
+          {ce.S.map((s, i) => (
+            <div key={i} className="flex items-baseline gap-2 text-sm flex-wrap">
+              <span className="font-mono text-slate-700">{s.node_id}</span>
+              <Chip color={STATE_COLOR[s.state] ?? 'slate'}>{s.state}</Chip>
+              <span className="text-xs text-slate-600 italic">{s.rationale}</span>
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      <Card>
+        <SectionTitle>Relazioni dominanti (R)</SectionTitle>
+        <div className="space-y-1.5">
+          {ce.R.map((rel, i) => (
+            <div key={i} className="text-sm">
+              <div className="flex items-baseline gap-2 flex-wrap">
+                <span className="font-mono text-slate-700">{rel.from_node} → {rel.to_node}</span>
+                <Chip color="derived">{rel.relation_type} · {RELATION_LABEL[rel.relation_type] ?? ''}</Chip>
+              </div>
+              <p className="text-xs text-slate-600 italic mt-0.5 ml-1">{rel.rationale}</p>
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      <Card>
+        <SectionTitle>Dimensioni</SectionTitle>
+        <div className="grid sm:grid-cols-3 gap-2">
+          <KeyValue label="Direzione (D)" value={<span className="text-2xl">{ce.D}</span>} />
+          <KeyValue label="Stabilità (T)" value={<Chip>{ce.T}</Chip>} />
+          <KeyValue label="Abitabilità (A)" value={<Chip color={ce.A === 'A+' ? 'forte' : ce.A === 'A-' ? 'distorta' : 'ambiguo'}>{ce.A}</Chip>} />
+        </div>
+      </Card>
+
+      <Card>
+        <SectionTitle>Varianti ({r.ce_variants.length})</SectionTitle>
+        <div className="space-y-2">
+          {r.ce_variants.map((v, i) => (
+            <div key={i} className="border-l-2 border-purple-300 pl-3 py-1">
+              <div className="flex items-baseline gap-2 flex-wrap">
+                <span className="text-sm font-medium text-slate-900">{v.variant_name}</span>
+                <Chip color="derived">modifica: {v.modified_dimension}</Chip>
+              </div>
+              <KeyValue label="Modifica" value={<Prose>{v.modification_description}</Prose>} />
+              <KeyValue label="Descrizione strutturale" value={<Prose>{v.structural_description}</Prose>} />
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      {r.derivation_notes && (
+        <CalloutBox title="Note di derivazione" tone="sky"><Prose>{r.derivation_notes}</Prose></CalloutBox>
+      )}
+    </div>
+  );
+}
+
+// ───── step 6: output-tipo-vuoto (passaporto del tema) ─────
+
+interface Step6StructuralReference {
+  confirmed_nodes: string[];
+  canonical_nodes_active: string[];
+  ce_reference: string;
+}
+
+interface Step6CampoCondiviso {
+  forma_prevalente: 'condiviso' | 'parallelo' | 'frammentato';
+  elementi_sostenenti: string[];
+  elementi_ostacolanti: string[];
+  segnali_accesso: string[];
+}
+
+interface Step6PosizioneSoggettiva {
+  modalita_prototipica: 'emergenza_di_posizione' | 'reattività' | 'evitamento' | 'oscillazione';
+  funzione_adulto: string;
+  permanenza_nel_legame: string;
+  forme_degradate: string[];
+}
+
+interface Step6RapportoConLimite {
+  presenza: 'sì' | 'no' | 'condizionalmente';
+  forma_del_limite: string;
+  reazione_strutturale: 'A+' | 'A±' | 'A-';
+  nominazione: string;
+}
+
+interface Step6IpotesiSostegno {
+  direzione: 'campo_condiviso' | 'posizione_soggettiva' | 'limite_nominabile';
+  descrizione_strutturale: string;
+  nodo_principale: string;
+}
+
+interface Step6TipologiaUniversale {
+  id: 'U1' | 'U2' | 'U3' | 'U4' | 'U5' | 'U6';
+  label: string;
+  pertinenza: string;
+}
+
+interface Step6Result {
+  theme_id: string;
+  structural_reference: Step6StructuralReference;
+  campo_condiviso: Step6CampoCondiviso;
+  posizione_soggettiva: Step6PosizioneSoggettiva;
+  rapporto_con_limite: Step6RapportoConLimite;
+  configurazione_complessiva: string;
+  ipotesi_sostegno: Step6IpotesiSostegno[];
+  tipologia_universale: Step6TipologiaUniversale[];
+}
+
+const FORMA_CAMPO_COLOR: Record<string, string> = {
+  condiviso:   'forte',
+  parallelo:   'ambiguo',
+  frammentato: 'distorta',
+};
+
+const PRESENZA_LIMITE_COLOR: Record<string, string> = {
+  'sì':              'forte',
+  'no':              'distorta',
+  condizionalmente:  'ambiguo',
+};
+
+function Step6Viewer({ data }: { data: { results?: Step6Result[] } }) {
+  const results = data.results ?? [];
+  const [active, setActive] = useState(0);
+  const r = results[active];
+  if (!r) return <Subtle>Nessun risultato disponibile</Subtle>;
+
+  return (
+    <div className="space-y-4">
+      <ThemeTabs themes={results.map((t) => ({ theme_id: t.theme_id }))} activeIdx={active} onChange={setActive} />
+
+      <CalloutBox title="Configurazione complessiva" tone="emerald">
+        <Prose>{r.configurazione_complessiva}</Prose>
+      </CalloutBox>
+
+      <details className="rounded-md border border-slate-200 bg-slate-50">
+        <summary className="cursor-pointer px-3 py-2 text-sm font-medium text-slate-800 hover:bg-slate-100">
+          Riferimento strutturale
+        </summary>
+        <div className="px-3 pb-3 pt-1">
+          <KeyValue
+            label="Nodi confermati"
+            value={<div className="flex flex-wrap gap-1">{r.structural_reference.confirmed_nodes.map((n) => <Chip key={n}>{n}</Chip>)}</div>}
+          />
+          <KeyValue
+            label="Canonici attivi"
+            value={<div className="flex flex-wrap gap-1">{r.structural_reference.canonical_nodes_active.map((n) => <Chip key={n} color="derived">{n}</Chip>)}</div>}
+          />
+          <KeyValue label="CE di riferimento" value={<code className="text-xs font-mono text-slate-700">{r.structural_reference.ce_reference}</code>} />
+        </div>
+      </details>
+
+      <Card>
+        <div className="flex items-baseline gap-2 mb-2">
+          <span className="text-base font-bold text-slate-900">A</span>
+          <SectionTitle>Campo condiviso</SectionTitle>
+        </div>
+        <KeyValue
+          label="Forma prevalente"
+          value={<Chip color={FORMA_CAMPO_COLOR[r.campo_condiviso.forma_prevalente] ?? 'slate'}>{r.campo_condiviso.forma_prevalente}</Chip>}
+        />
+        <div className="grid sm:grid-cols-2 gap-3 mt-2">
+          <div>
+            <p className="text-xs font-semibold text-emerald-700 uppercase tracking-wide mb-1">Sostenenti</p>
+            <BulletList items={r.campo_condiviso.elementi_sostenenti} empty="nessuno" />
+          </div>
+          <div>
+            <p className="text-xs font-semibold text-rose-700 uppercase tracking-wide mb-1">Ostacolanti</p>
+            <BulletList items={r.campo_condiviso.elementi_ostacolanti} empty="nessuno" />
+          </div>
+        </div>
+        <div className="mt-3">
+          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">Segnali di accesso</p>
+          <BulletList items={r.campo_condiviso.segnali_accesso} empty="nessuno" />
+        </div>
+      </Card>
+
+      <Card>
+        <div className="flex items-baseline gap-2 mb-2">
+          <span className="text-base font-bold text-slate-900">B</span>
+          <SectionTitle>Posizione soggettiva</SectionTitle>
+        </div>
+        <KeyValue label="Modalità prototipica" value={<Chip>{r.posizione_soggettiva.modalita_prototipica.replace(/_/g, ' ')}</Chip>} />
+        <KeyValue label="Funzione dell'adulto" value={<Prose>{r.posizione_soggettiva.funzione_adulto}</Prose>} />
+        <KeyValue label="Permanenza nel legame" value={<Prose>{r.posizione_soggettiva.permanenza_nel_legame}</Prose>} />
+        <div className="mt-2">
+          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">Forme degradate</p>
+          <BulletList items={r.posizione_soggettiva.forme_degradate} empty="nessuna" />
+        </div>
+      </Card>
+
+      <Card>
+        <div className="flex items-baseline gap-2 mb-2">
+          <span className="text-base font-bold text-slate-900">C</span>
+          <SectionTitle>Rapporto con il limite</SectionTitle>
+        </div>
+        <KeyValue
+          label="Presenza"
+          value={<Chip color={PRESENZA_LIMITE_COLOR[r.rapporto_con_limite.presenza] ?? 'slate'}>{r.rapporto_con_limite.presenza}</Chip>}
+        />
+        <KeyValue label="Forma del limite" value={<Prose>{r.rapporto_con_limite.forma_del_limite}</Prose>} />
+        <KeyValue
+          label="Reazione strutturale"
+          value={<Chip color={r.rapporto_con_limite.reazione_strutturale === 'A+' ? 'forte' : r.rapporto_con_limite.reazione_strutturale === 'A-' ? 'distorta' : 'ambiguo'}>{r.rapporto_con_limite.reazione_strutturale}</Chip>}
+        />
+        <KeyValue label="Nominazione" value={<Prose>{r.rapporto_con_limite.nominazione}</Prose>} />
+      </Card>
+
+      <Card>
+        <div className="flex items-baseline gap-2 mb-2">
+          <span className="text-base font-bold text-slate-900">E</span>
+          <SectionTitle>Ipotesi di sostegno ({r.ipotesi_sostegno.length})</SectionTitle>
+        </div>
+        <div className="space-y-2">
+          {r.ipotesi_sostegno.map((ip, i) => (
+            <div key={i} className="border-l-2 border-blue-300 pl-3 py-1">
+              <div className="flex items-baseline gap-2 flex-wrap mb-0.5">
+                <Chip color="secondary">{ip.direzione.replace(/_/g, ' ')}</Chip>
+                <span className="text-xs font-mono text-slate-600">nodo: {ip.nodo_principale}</span>
+              </div>
+              <Prose>{ip.descrizione_strutturale}</Prose>
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      {r.tipologia_universale.length > 0 && (
+        <Card>
+          <SectionTitle>Tipologia universale ({r.tipologia_universale.length})</SectionTitle>
+          <div className="space-y-2">
+            {r.tipologia_universale.map((u) => (
+              <div key={u.id} className="text-sm">
+                <div className="flex items-baseline gap-2 mb-0.5">
+                  <Chip color="derived">{u.id}</Chip>
+                  <span className="font-medium text-slate-900">{u.label}</span>
+                </div>
+                <p className="text-xs text-slate-600 italic ml-1">{u.pertinenza}</p>
+              </div>
+            ))}
+          </div>
+        </Card>
+      )}
+    </div>
+  );
+}
+
 // ───── dispatcher ─────
 
 export interface F2OutputViewerProps {
@@ -627,21 +1111,26 @@ export default function F2OutputViewer({ stepId, data }: F2OutputViewerProps) {
   const d = data as Record<string, unknown>;
 
   switch (stepId) {
-    case 'f2_step_1':
-      return <Step1Viewer data={d as Step1Data} />;
     case 'f2_step_2':
       return <Step2Viewer data={d as { results?: Step2Result[] }} />;
+    case 'f2_step_2a':
+      return <Step2aViewer data={d as { results?: Step2aResult[] }} />;
     case 'f2_step_3':
       return <Step3Viewer data={d as { results?: Step3Result[] }} />;
     case 'f2_step_4':
       return <Step4Viewer data={d as { results?: Step4Result[] }} />;
+    case 'f2_step_4b':
+      return <Step4bViewer data={d as { results?: Step4bResult[] }} />;
     case 'f2_step_5':
       return <Step5Viewer data={d as { results?: Step5Result[] }} />;
+    case 'f2_step_6':
+      return <Step6Viewer data={d as { results?: Step6Result[] }} />;
     default:
       return null;
   }
 }
 
 export function hasF2Viewer(stepId: string): boolean {
-  return stepId.startsWith('f2_step_') && ['1', '2', '3', '4', '5'].includes(stepId.slice('f2_step_'.length));
+  return stepId.startsWith('f2_step_')
+    && ['2', '2a', '3', '4', '4b', '5', '6'].includes(stepId.slice('f2_step_'.length));
 }

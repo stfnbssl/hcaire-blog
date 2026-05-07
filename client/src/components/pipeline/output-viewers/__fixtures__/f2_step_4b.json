@@ -1,0 +1,39 @@
+{
+  "step": "f2_step_4b",
+  "results": [
+    {
+      "theme_id": "tema-pointing-precoce",
+      "ce_prototipica": {
+        "S": [
+          { "node_id": "N3", "state": "↑", "rationale": "Nodo dominante in stato espansivo: l'intenzionalità condivisa emerge attivamente." },
+          { "node_id": "N1", "state": "~", "rationale": "Regolazione motoria stabile a sostegno del gesto." },
+          { "node_id": "N4", "state": "↓", "rationale": "Il legame con caregiver è ristretto: nel pointing emergente la triangolazione apre lo spazio diadico." }
+        ],
+        "R": [
+          { "from_node": "N3", "to_node": "N4", "relation_type": "MED", "rationale": "L'intenzionalità condivisa media la riconfigurazione del legame da diadico a triadico." },
+          { "from_node": "N1", "to_node": "N3", "relation_type": "CPL", "rationale": "La regolazione motoria sostiene la stabilità del gesto deittico." }
+        ],
+        "D": "↗",
+        "T": "T2",
+        "A": "A±"
+      },
+      "ce_notation": "CE = S:↑N3 ~N1 ↓N4  R:MED(N3→N4) CPL(N1→N3)  D:↗  T:T2  A:A±",
+      "ce_natural_language": "Il tema mostra una struttura emergente in cui l'intenzionalità condivisa cresce e ridefinisce il legame con il caregiver, sostenuta da una regolazione motoria stabile. La direzione è espansiva ma la configurazione è ricorrente, non ancora consolidata, con una abitabilità fragile.",
+      "ce_variants": [
+        {
+          "variant_name": "CE in attesa",
+          "modified_dimension": "T",
+          "modification_description": "T passa da T2 a T1: la configurazione diventa situazionale anziché ricorrente.",
+          "structural_description": "Il pointing emerge solo in setup specifici e non si stabilizza nel quotidiano: variante tipica nei casi di ambiente poco rispondente."
+        },
+        {
+          "variant_name": "CE chiudente",
+          "modified_dimension": "A",
+          "modification_description": "A passa da A± a A-: l'abitabilità collassa sotto carico affettivo.",
+          "structural_description": "La triangolazione collassa nella richiesta affiliativa: variante di rischio in cui il dispositivo dà falsi positivi."
+        }
+      ],
+      "derivation_notes": "S, R e A derivano dalla micro-matrice di STEP 4 (riga 'attivazione triadica'). D è coerente con il pattern emergente confermato nei segnali grezzi della discovery."
+    }
+  ]
+}

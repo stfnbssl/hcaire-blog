@@ -19,9 +19,9 @@ const SEZIONI: SezioneLab[] = [
   {
     slug: 'manifesto',
     label: 'Manifesto',
-    tagline: 'Prima della risposta viene il contesto',
-    body: 'Per usare l\'AI nelle scienze umane bisogna governare la memoria di contesto: scopo, lessico, riferimenti, vincoli. È il fondamento del laboratorio HCAIRE — la qualità di ciò che il modello restituisce dipende dalla qualità del contesto che gli viene affidato.',
-    cta: 'Leggi il manifesto →',
+    tagline: 'Esplicitare i quadri della ricerca, governare il contesto dell\'AI',
+    body: 'Lo studio scientifico dello sviluppo umano interagisce sempre con quadri antropologici, filosofici e normativi che orientano la lettura dei dati empirici. Il manifesto teorico di HCAIRE chiede di esplicitare questi quadri come condizione del rigore della ricerca, non come aggiunta esterna ad essa. È a partire da qui che si pone il problema specifico dell\'AI nelle scienze umane.\n\nPer usare l\'AI nelle scienze umane bisogna governare la memoria di contesto: scopo, lessico, riferimenti, vincoli. È il fondamento del laboratorio HCAIRE — la qualità di ciò che il modello restituisce dipende dalla qualità del contesto che gli viene affidato.',
+    cta: 'Leggi i manifesti →',
     headerBg: 'bg-amber-900',
     borderAccent: 'border-l-amber-400',
     subtitleColor: 'text-amber-300',

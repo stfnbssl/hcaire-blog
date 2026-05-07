@@ -5,7 +5,7 @@ import type { AssiIndex } from '../../types/staticContent';
 import Breadcrumb from '../../components/Breadcrumb';
 import AssiStrutturaliNav from '../../components/AssiStrutturaliNav';
 
-export default function SviluppoBambinoAssi() {
+export default function AssiStrutturaliCapitoli() {
   const [data, setData] = useState<AssiIndex | null>(null);
   const [loading, setLoading] = useState(true);
 

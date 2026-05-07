@@ -1,0 +1,85 @@
+{
+  "step": "f3_step_5",
+  "tema_id": "gioco-libero-come-incontro-del-bambino-con-il-possibile",
+  "domain_selected": "clinico",
+  "results": [
+    {
+      "controls": [
+        {
+          "id": "A1",
+          "area": "coerenza_tra_step",
+          "label": "Coerenza nodo → funzione → dispositivo",
+          "outcome": "coerente",
+          "rationale": "Step 1 fissa nodo dominante 'campo-desiderabile', funzione 'proteggere' e target_field 'Tempo non finalizzato dell'osservazione clinica'. Step 2 li riprende esplicitamente in dominant_node_ref, function_ref, target_field_ref e nella ce_origin ('Campo-desiderabile fragile per saturazione finalistica del setting'). Le 5 micro-azioni operano per sottrazione (apertura di intervallo non finalizzato, oggetti non prescritti, sospensione della guida verbale, neutralizzazione dell'attesa caregiveriale, differimento dell'annotazione): tutte modalità di 'proteggere' un orizzonte non strutturato, nessuna ampliativa o stabilizzante. L'indicatore di risonanza è formulato esattamente sul target_field (orientamento del bambino non convertito in tappa o prestazione). Nessuna delle micro-azioni agisce su nodi diversi (eccedenza, limite-reale, condizione-del-desiderio); la pressione di prestazionalizzazione resta correttamente trattata come pressione esterna da sottrarre, non come nodo del dispositivo.",
+          "is_critical": false
+        },
+        {
+          "id": "A2",
+          "area": "coerenza_tra_step",
+          "label": "Coerenza tra correzioni di step 3 e dispositivo finale",
+          "outcome": "corretta",
+          "rationale": "Step 3 ha dichiarato due breaking point strutturali (caso 3 distorta-chiudente, caso 5 apparente-indistinguibile) e ha prodotto: (a) due nuove condizioni di non-applicabilità con required_outcome 'ambiguo' (sguardo valutativo interno persistente; esecuzione come script appreso); (b) revisione del resonance_indicator con introduzione del segno strutturale 'azione non anticipata dall'osservatore'; (c) corrected_micro_actions e corrected_universal_form lasciate a null. Le correzioni restano entro i vincoli metodologici: nessun nuovo nodo, stessa funzione 'proteggere', nessuna espansione delle micro-azioni, nessuna deriva ampliativa. Rispondono direttamente ai breaking point: la prima nuova trigger intercetta la persistenza dello sguardo valutativo (caso 3), la seconda intercetta la riproduzione di script (caso 5), il segno aggiunto al resonance_indicator fornisce un criterio strutturale per il caso 5. Step 4 riflette le correzioni: C4 e C7 citano esplicitamente 'la correzione introdotta dopo lo stress test'; C10 motiva l'auto-limitazione su 'sei condizioni esplicite di non-applicabilità (quattro originarie più due aggiunte dalla correzione post-stress test)'.",
+          "is_critical": false
+        },
+        {
+          "id": "A3",
+          "area": "validità_ancoraggi",
+          "label": "Ancoraggio del nodo dominante",
+          "outcome": "ancorato",
+          "rationale": "Il node_id 'campo-desiderabile' è esplicitamente presente nei confirmed_nodes dell'output-tipo vuoto F2 step 6 (lista: desiderio-come-struttura, campo-desiderabile, eccedenza, limite-reale, condizione-del-desiderio, prestazionalizzazione-del-valore). La dominance_motivation di step 1 è ancorata in modo specifico al dominio clinico-pediatrico — riferimenti circoscritti a 'visita, valutazione, milestones evolutive, prestazionalizzazione del valore di sviluppo', 'bilanci di salute 3-5 anni', asimmetria del setting ambulatoriale — e non è trattata genericamente come argomento metodologico. La motivazione discrimina inoltre il nodo scelto rispetto a 'desiderio-come-struttura' (co-fragile ma derivato), giustificando in chiave di campo (la qualità non strutturata rende possibile la manifestazione del desiderio, non viceversa) la scelta del dominante: ancoraggio strutturalmente argomentato, non meramente etichettato.",
+          "is_critical": false
+        },
+        {
+          "id": "A4",
+          "area": "validità_ancoraggi",
+          "label": "Osservabilità delle micro-azioni",
+          "outcome": "osservabili",
+          "rationale": "Tutti e cinque gli observable_effect sono modifiche di campo direttamente osservabili senza inferenze su stati mentali: ma1 ('assenza di richieste verbali, di prove standardizzate e di consegne'); ma2 ('oggetti restano nel campo... non sono materiali di test né strumenti graduati'); ma3 ('cade temporaneamente la pressione del turno comunicativo professionista→bambino'); ma4 ('il caregiver smette di sollecitare il bambino a mostrare'); ma5 ('non sono visibili al bambino e al caregiver gesti di scoring'). Nessun riferimento a 'il bambino capisce/vuole/intuisce' o ad altri stati mentali del bambino o del caregiver: gli effetti sono descritti come variazioni del setting comunicativo-comportamentale, coerenti con la formulazione del nodo come qualità di campo.",
+          "is_critical": false
+        },
+        {
+          "id": "A5",
+          "area": "validità_ancoraggi",
+          "label": "Non-circolarità dell'indicatore di risonanza",
+          "outcome": "indipendente",
+          "rationale": "L'indicatore di risonanza nella versione corretta descrive un cambiamento di campo distinto dalla mera esecuzione delle micro-azioni: 'il pediatra, il caregiver e il bambino smettono di orientarsi verso un compito atteso, e l'agire del bambino cessa di essere immediatamente leggibile come tappa raggiunta o prestazione mancata'. Il segno strutturale aggiunto dalla correzione — 'azione del bambino non anticipata dall'osservatore (un uso non previsto degli oggetti, un'iniziativa non sollecitata) che lo sguardo del professionista accoglie senza convertirla immediatamente in indice valutativo' — è esplicitamente non riproducibile come forma esecutiva, ed è quindi indipendente dalle 5 micro-azioni del professionista (apertura, oggetti, silenzio, comunicazione, differimento). La correzione introdotta dopo lo stress test irrobustisce proprio l'indipendenza, fornendo un criterio (imprevedibilità minima del bambino) che le micro-azioni non possono per costruzione produrre. Nessuna tautologia.",
+          "is_critical": false
+        },
+        {
+          "id": "A6",
+          "area": "gestione_ambiguità",
+          "label": "Ambiguità dichiarata, non forzata (stress test)",
+          "outcome": "corretta",
+          "rationale": "Distribuzione differenziata di ambiguity_level sui 5 casi: basso (caso 1, motivato dal fatto che il dispositivo riconosce immediatamente la non-pertinenza e si auto-sospende — non è compiacenza ma chiusura strutturale del trigger di non-applicabilità clinico-acuto), medio (caso 2 e caso 4), alto (caso 3 e caso 5). I due alti sono accompagnati da breaking_point.is_structural = true e da motivazioni di rottura ben articolate ('tutte le micro-azioni sono formulate come comportamenti dell'osservatore visibili dall'esterno, mentre la distorsione chiudente avviene a livello dello sguardo interno'; 'l'indicatore di risonanza non possiede un criterio di discriminazione per la versione script del dispositivo'). Nei casi 1 e 4 sono attivati i non_applicability_triggered (trigger-clinico-acuto, trigger-durata-minima) con outcome 'sospendere'. Nessun appiattimento su 'basso' generalizzato, nessun 'breaking point evidenti classificati come zone di fragilità da segnalare': la fragilità del caso 2 è dichiarata come 'zona di fragilità non strutturale' con argomentazione coerente, mentre i breaking strutturali sono dichiarati come tali e producono il verdetto 'fragile' dello stress test e la successiva correzione. La distribuzione delle ambiguità è plausibile e ancorata alle differenze fra i casi.",
+          "is_critical": true
+        },
+        {
+          "id": "A7",
+          "area": "gestione_ambiguità",
+          "label": "Auto-limitazione effettivamente verificata (step 4)",
+          "outcome": "verificata",
+          "rationale": "C10 di step 4 verifica esplicitamente che le sei condizioni di non-applicabilità (quattro originarie + due introdotte dalla correzione) sono realmente bloccanti, citando i required_outcome normativi 'sospendere', 'non_classificabile', 'ambiguo' e qualificandole come 'non semplici raccomandazioni'. La motivazione distingue: (a) trigger su contesti che escludono il dispositivo (clinica acuta, durata minima → sospendere); (b) trigger su assenza di dato osservativo minimo (angoscia, freezing, dolore in atto → non_classificabile); (c) trigger su falsi positivi strutturali (caregiver che richiede valutazione continua, sguardo valutativo interno persistente, esecuzione come script → ambiguo). Le due condizioni aggiunte dalla correzione coprono i due breaking point strutturali identificati in step 3 (caso 3 e caso 5). La verifica non è procedurale ma sostanziale: il controllo articola perché le condizioni bloccano e in quale direzione bloccano, evitando l'esito 'dispositivo applicato comunque'.",
+          "is_critical": true
+        },
+        {
+          "id": "A8",
+          "area": "gestione_ambiguità",
+          "label": "Discriminazione nel caso quasi indistinguibile",
+          "outcome": "dipendente_da_osservatore_dichiarata",
+          "rationale": "Lo stress test dichiara esplicitamente apparente_indistinguibile_outcome = 'discriminazione_dipendente_dall_osservatore' e indica come breaking strutturale che 'la discriminazione richiede una sensibilità interpretativa dell'osservatore non garantita dal dispositivo come è formulato — il dispositivo è in questo punto dipendente dall'osservatore in modo non dichiarato'. La dipendenza è quindi dichiarata, non passata sotto silenzio. La correzione la gestisce con due strumenti: (a) un nuovo trigger di non-applicabilità che declassa l'esito a 'ambiguo' quando l'osservatore non sa indicare almeno un'azione del bambino non anticipata; (b) l'integrazione nel resonance_indicator del segno strutturale 'imprevedibilità minima del bambino non riproducibile come forma esecutiva'. Tuttavia, la discriminazione resta in parte appoggiata al riconoscimento dello stesso osservatore ('l'osservatore stesso riconosce come non prevista dal proprio repertorio di item'): la dipendenza è esplicitata e mitigata da un vincolo strutturale, ma non integralmente sostituita da un criterio osservabile da terzi. Per questa ragione l'esito è il secondo valore della scala — gestione dichiarata e operativamente attiva, non robustezza piena indipendente dall'osservatore.",
+          "is_critical": true
+        }
+      ],
+      "final_assessment": {
+        "criticals_passed": 3,
+        "assessment": "accettabile",
+        "recommendations": [
+          "Documentare nel materiale di accompagnamento del dispositivo (note d'uso, eventuale formazione) la dipendenza residua dall'osservatore nella discriminazione 'apertura sostanziale vs riproduzione di script', anche dopo l'integrazione del segno di imprevedibilità — perché la mitigazione non è una eliminazione.",
+          "Includere nelle linee operative del dispositivo una guida sintetica all'auto-verifica dell'osservatore prima di trattare l'osservazione come 'campo non finalizzato' (per esempio: una breve checklist epistemica privata sullo sguardo interno, separata dalle 5 micro-azioni comportamentali, da consultare a chiusura dell'intervallo).",
+          "Quando il dispositivo entra in uso pratico, prevedere periodicamente una rilettura a coppie (un secondo professionista o un supervisore) di almeno una traccia descrittiva degli intervalli, per verificare in maniera intersoggettiva che l'imprevedibilità minima sia effettivamente un dato di campo e non una sua attribuzione difensiva.",
+          "Mantenere stabile il vincolo che il dispositivo non sia compreso o pubblicato come 'tecnica replicabile uniforme': esplicitare che l'iterazione cronometrata e standardizzata (caso 5 dello stress test) è proprio una delle configurazioni che il dispositivo ha imparato a non sostenere."
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "step": "f2_step_6",
+  "results": [
+    {
+      "theme_id": "tema-pointing-precoce",
+      "structural_reference": {
+        "confirmed_nodes": ["n_intenzionalita_condivisa", "n_regolazione_motoria", "n_legame_caregiver"],
+        "canonical_nodes_active": ["N1", "N3", "N4"],
+        "ce_reference": "CE = S:↑N3 ~N1 ↓N4  R:MED(N3→N4) CPL(N1→N3)  D:↗  T:T2  A:A±"
+      },
+      "campo_condiviso": {
+        "forma_prevalente": "condiviso",
+        "elementi_sostenenti": [
+          "Disponibilità del caregiver a entrare nello spazio triadico",
+          "Setting con oggetti attrattivi accessibili",
+          "Regolazione motoria di base del bambino"
+        ],
+        "elementi_ostacolanti": [
+          "Iper-arousal motorio del bambino",
+          "Caregiver in posizione direttiva o sostitutiva"
+        ],
+        "segnali_accesso": [
+          "Sguardo del bambino che alterna oggetto e volto dell'adulto",
+          "Caregiver che modula la propria voce in risposta allo sguardo del bambino",
+          "Pause condivise di silenzio attentivo nella sessione"
+        ]
+      },
+      "posizione_soggettiva": {
+        "modalita_prototipica": "emergenza_di_posizione",
+        "funzione_adulto": "L'adulto sostiene la posizione del bambino senza sostituirla: introduce oggetti e attende che il bambino orienti lo sguardo, partecipando come secondo polo del campo triadico.",
+        "permanenza_nel_legame": "Il tema richiede continuità con il caregiver primario: la triangolazione si sostiene su un legame stabile, non episodico.",
+        "forme_degradate": [
+          "Sguardo monodirezionale all'oggetto senza riferimento all'adulto (configurazione parziale)",
+          "Sguardo all'adulto come richiesta affiliativa, oggetto sullo sfondo (configurazione distorta-chiudente)",
+          "Alternanza tra cicli con e senza triangolazione (configurazione oscillante)"
+        ]
+      },
+      "rapporto_con_limite": {
+        "presenza": "condizionalmente",
+        "forma_del_limite": "Limite temporale di osservazione (finestra dei 7 secondi) e limite di setting (durata della sessione). Non un limite simbolico ma un limite di scansione.",
+        "reazione_strutturale": "A±",
+        "nominazione": "Il limite è nominabile come 'tempo di osservazione' o 'cornice della visita': è cornice non barriera, e questo lo rende riconoscibile sia all'operatore che al caregiver."
+      },
+      "configurazione_complessiva": "In questa situazione il campo appare strutturato prevalentemente come spazio triadico emergente, in cui l'intenzionalità condivisa cresce sostenuta da una regolazione motoria stabile e ridefinisce un legame in transizione. La configurazione è ricorrente ma non consolidata, con abitabilità fragile.",
+      "ipotesi_sostegno": [
+        {
+          "direzione": "campo_condiviso",
+          "descrizione_strutturale": "Sostenere il setting triadico introducendo oggetti che invitano alla condivisione e mantenendo presenza affiliativa di base durante l'attesa.",
+          "nodo_principale": "N3"
+        },
+        {
+          "direzione": "posizione_soggettiva",
+          "descrizione_strutturale": "Affiancare il caregiver come co-osservatore della finestra triadica, riducendo le posizioni direttive o sostitutive.",
+          "nodo_principale": "N4"
+        },
+        {
+          "direzione": "limite_nominabile",
+          "descrizione_strutturale": "Nominare il limite temporale dell'osservazione come cornice condivisa, non come prova di prestazione del bambino.",
+          "nodo_principale": "N1"
+        }
+      ],
+      "tipologia_universale": [
+        { "id": "U2", "label": "Sintonizzazione", "pertinenza": "Sostiene la finestra attentiva e la qualità dell'attesa nella triangolazione." },
+        { "id": "U3", "label": "Apertura",        "pertinenza": "È il vettore principale dell'ampliamento del campo triadico." },
+        { "id": "U5", "label": "Limite Generativo", "pertinenza": "La cornice temporale e di setting funziona come limite che genera leggibilità anziché chiudere." }
+      ]
+    }
+  ]
+}

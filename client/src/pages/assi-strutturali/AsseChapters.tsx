@@ -5,7 +5,7 @@ import type { AsseChapters } from '../../types/staticContent';
 import Breadcrumb from '../../components/Breadcrumb';
 import AssiStrutturaliNav from '../../components/AssiStrutturaliNav';
 
-export default function SviluppoBambinoAsseChapters() {
+export default function AsseChaptersPage() {
   const { asseSlug = '' } = useParams<{ asseSlug: string }>();
   const [data, setData] = useState<AsseChapters | null>(null);
   const [loading, setLoading] = useState(true);

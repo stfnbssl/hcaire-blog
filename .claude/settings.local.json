@@ -71,7 +71,15 @@
       "Bash(npm --prefix C:/My/projects/hcaire-docs install --save redocusaurus)",
       "Bash(npm --prefix C:/My/projects/hcaire-docs run sync-docs)",
       "Read(//c/My/projects/hcaire-docs/**)",
-      "Bash(grep -c \"^---$\\\\|^# \" docs/20-modules/sviluppo-bambino/produzioni.md docs/00-overview/glossario.md docs/10-architecture/backend.md docs/10-architecture/local-cowork-bridge.md docs/90-todo/laboratorio-d5b-backend.md)"
+      "Bash(grep -c \"^---$\\\\|^# \" docs/20-modules/sviluppo-bambino/produzioni.md docs/00-overview/glossario.md docs/10-architecture/backend.md docs/10-architecture/local-cowork-bridge.md docs/90-todo/laboratorio-d5b-backend.md)",
+      "Bash(dir C:Myprojectshcaire-blogserversrcservices *)",
+      "PowerShell(Get-ChildItem -Path C:\\\\My\\\\projects\\\\hcaire-blog\\\\local -Recurse -File | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\My\\\\projects\\\\claude-cowork\\\\Sviluppo Bambino\\\\input\\\\produzioni\" -Directory | ForEach-Object { $_.Name })",
+      "PowerShell(Join-Path *)",
+      "PowerShell(Get-ChildItem -Path C:\\\\My\\\\projects\\\\hcaire-blog\\\\scripts -File | ForEach-Object { $_.Name })",
+      "Bash(awk NR>=2620 && NR<=2660 *)",
+      "PowerShell(Get-ChildItem -Path C:\\\\My\\\\projects\\\\hcaire-blog\\\\client\\\\src\\\\components\\\\pipeline\\\\output-viewers -Recurse -File | ForEach-Object { '{0}  {1} bytes' -f $_.FullName, $_.Length })",
+      "Bash(sort -t: -k2 -n)"
     ]
   }
 }

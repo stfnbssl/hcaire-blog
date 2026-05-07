@@ -35,7 +35,7 @@ async function loadRilevanzaMap(): Promise<RilevanzaMap> {
   return map;
 }
 
-export default function SviluppoBambinoChapter() {
+export default function ChapterPage() {
   const { asseSlug = '', chapterSlug = '' } = useParams<{ asseSlug: string; chapterSlug: string }>();
   const [data, setData] = useState<Chapter | null>(null);
   const [loading, setLoading] = useState(true);

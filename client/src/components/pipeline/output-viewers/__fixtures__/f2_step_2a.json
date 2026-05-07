@@ -1,0 +1,69 @@
+{
+  "step": "f2_step_2a",
+  "results": [
+    {
+      "theme_id": "tema-pointing-precoce",
+      "node_mappings": [
+        {
+          "node_id": "n_intenzionalita_condivisa",
+          "node_label": "Intenzionalità condivisa",
+          "axes": [3, 5],
+          "canonical_mapping": {
+            "canonical_node_id": "N3",
+            "type": "identico",
+            "rationale": "Il nodo coincide con il canonico Intenzionalità condivisa già confermato come N3 nella revisione metodologica."
+          }
+        },
+        {
+          "node_id": "n_regolazione_motoria",
+          "node_label": "Regolazione motoria",
+          "axes": [1, 2],
+          "canonical_mapping": {
+            "canonical_node_id": "N1",
+            "type": "istanza",
+            "rationale": "Istanza specifica del canonico N1 Regolazione, ristretta al dominio motorio."
+          }
+        },
+        {
+          "node_id": "n_legame_caregiver",
+          "node_label": "Legame con caregiver",
+          "axes": [4, 5],
+          "canonical_mapping": {
+            "canonical_node_id": "N4",
+            "type": "parziale",
+            "rationale": "Sovrapposizione parziale con N4 Legame: il nodo del tema enfatizza la specificità del caregiver primario."
+          }
+        },
+        {
+          "node_id": "n_specificita_pointing",
+          "node_label": "Specificità gestuale del pointing",
+          "axes": [3, 6],
+          "canonical_mapping": null
+        }
+      ],
+      "activated_canonical_nodes": [
+        { "canonical_node_id": "N1", "coverage_type": "piena",    "covered_by": ["n_regolazione_motoria"] },
+        { "canonical_node_id": "N3", "coverage_type": "piena",    "covered_by": ["n_intenzionalita_condivisa"] },
+        { "canonical_node_id": "N4", "coverage_type": "parziale", "covered_by": ["n_legame_caregiver"] }
+      ],
+      "absent_canonical_nodes": [
+        { "canonical_node_id": "N2", "structural_reason": "Il tema non implica direttamente la dimensione del desiderio nella fascia 12-24 mesi." },
+        { "canonical_node_id": "N5", "structural_reason": "Il limite simbolico non è ancora struttura portante a quest'età." },
+        { "canonical_node_id": "N6", "structural_reason": "Mediazione simbolica non centrale nel pointing precoce." },
+        { "canonical_node_id": "N7", "structural_reason": "Riattivazione del desiderio non pertinente a questa configurazione tematica." }
+      ],
+      "pure_derived_nodes": [
+        {
+          "node_id": "n_specificita_pointing",
+          "derivation_justification": "La specificità del gesto deittico nella fascia 12-24 mesi non è catturabile dai canonici: è un elemento configurazionale specifico del tema."
+        }
+      ],
+      "canonical_configuration_assessment": {
+        "plausibility": "sì",
+        "plausibility_notes": "I tre canonici attivati formano una configurazione coerente: N3 dominante, N1 a sostegno, N4 come polo affettivo.",
+        "missing_relations_notes": "L'assenza di N5 e N6 è specificità d'età, non lacuna del tema.",
+        "coverage_adequacy": "I canonici attivati più il derivato puro coprono adeguatamente la struttura del tema."
+      }
+    }
+  ]
+}

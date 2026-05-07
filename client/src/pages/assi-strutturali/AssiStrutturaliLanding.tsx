@@ -21,8 +21,8 @@ const ASSI: Asse[] = [
     title: 'Ontologico–fenomenologico',
     subtitle: 'Il soggetto prima di ogni funzione',
     body: [
-      'Il primo asse pone la domanda più radicale: che tipo di soggetto è il bambino? Non ancora che cosa sa fare, né che cosa deve diventare — ma che cosa è, strutturalmente, prima di ogni descrizione psicologica o educativa.',
-      'La risposta non è astratta. Seguendo la tradizione fenomenologica — da Husserl a Merleau-Ponty, da Heidegger a Gadamer — l\'asse mostra che il bambino è un soggetto in costituzione permanente: non un insieme di capacità da sviluppare, non un individuo da modellare secondo uno standard, ma un\'esperienza vissuta che si organizza attraverso la corporeità, la temporalità, la relazione e l\'intenzionalità.',
+      'Il primo asse pone la domanda più radicale: che tipo di soggetto è l\'essere umano in sviluppo? Non ancora che cosa sa fare, né che cosa deve diventare — ma che cosa è, strutturalmente, prima di ogni descrizione psicologica o educativa.',
+      'La risposta non è astratta. Seguendo la tradizione fenomenologica — da Husserl a Merleau-Ponty, da Heidegger a Gadamer — l\'asse mostra che il soggetto in sviluppo è in costituzione permanente: non un insieme di capacità da sviluppare, non un individuo da modellare secondo uno standard, ma un\'esperienza vissuta che si organizza attraverso la corporeità, la temporalità, la relazione e l\'intenzionalità.',
       'Questo asse ha una funzione fondativa per l\'intero modello: ogni errore di concezione qui si propaga in tutte le fasi educative e cliniche successive.',
     ],
     chapters: '8 capitoli — dalla corporeità al campo intenzionale, dalla temporalità vissuta alla regolazione come principio ontologico.',
@@ -37,7 +37,7 @@ const ASSI: Asse[] = [
     title: 'Affettivo–morale',
     subtitle: 'Come l\'altro diventa interiormente vincolante',
     body: [
-      'Il secondo asse affronta una domanda che la psicologia dello sviluppo incontra spesso senza risolverla veramente: come fa l\'altro — un genitore, un educatore, un pari — a diventare qualcosa che conta interiormente per il bambino, anche quando non è presente fisicamente?',
+      'Il secondo asse affronta una domanda che la psicologia dello sviluppo incontra spesso senza risolverla veramente: come fa l\'altro — un genitore, un educatore, un pari — a diventare qualcosa che conta interiormente per il soggetto in sviluppo, anche quando non è presente fisicamente?',
       'Non si tratta di spiegare l\'attaccamento, né la socializzazione, né l\'acquisizione di regole morali. Si tratta di comprendere la struttura più originaria: il momento in cui l\'altro cessa di essere semplicemente un oggetto dell\'esperienza e diventa una presenza interna che vincola, orienta, pesa.',
       'Su questa struttura si edifica tutto ciò che viene dopo: la capacità di sentire colpa, di riparare, di portare responsabilità. L\'asse mostra come queste dimensioni non siano aggiunte esterne allo sviluppo, ma la sua condizione affettiva fondamentale.',
     ],
@@ -55,7 +55,7 @@ const ASSI: Asse[] = [
     body: [
       'Il terzo asse entra nel cuore della pratica educativa: come si trasmette un orientamento normativo senza ridurlo né a comando indiscutibile né a opinione soggettiva?',
       'Prima di rispondere, l\'asse compie un lavoro concettuale necessario: distingue norma, normatività e giudizio — tre termini che l\'uso educativo corrente tende a confondere, producendo derive opposte: il moralismo che impone senza motivare, e il relativismo che rinuncia a orientare.',
-      'Il risultato è una teoria dell\'autorità educativa fondata non sul potere né sull\'accordo, ma sulla verità educativa: la capacità dell\'adulto di indicare ciò che vale, in modo che il bambino possa appropriarsene liberamente, non subire una conformità.',
+      'Il risultato è una teoria dell\'autorità educativa fondata non sul potere né sull\'accordo, ma sulla verità educativa: la capacità dell\'adulto di indicare ciò che vale, in modo che il soggetto in sviluppo possa appropriarsene liberamente, non subire una conformità.',
     ],
     chapters: '6 capitoli — dalla distinzione concettuale all\'autorità come responsabilità, dai fallimenti della normatività al limite del giudizio.',
     headerBg: 'bg-violet-950',
@@ -102,7 +102,7 @@ const ASSI: Asse[] = [
     subtitle: 'Il mondo come mediazione strutturale',
     body: [
       'Il sesto asse conclude l\'architettura mostrando come tutto ciò che la precede non esiste in astratto, ma sempre all\'interno di un mondo storico e culturale concreto che non è uno sfondo, ma una mediazione strutturale.',
-      'Il bambino che nasce e cresce non incontra "l\'altro in generale": incontra un padre o una madre in una cultura specifica, con un linguaggio che porta certe distinzioni e ne oscura altre, dentro istituzioni che organizzano il tempo, lo spazio, il valore. Questo mondo non influenza lo sviluppo dall\'esterno: lo costituisce dall\'interno.',
+      'Il soggetto che nasce e cresce non incontra "l\'altro in generale": incontra un padre o una madre in una cultura specifica, con un linguaggio che porta certe distinzioni e ne oscura altre, dentro istituzioni che organizzano il tempo, lo spazio, il valore. Questo mondo non influenza lo sviluppo dall\'esterno: lo costituisce dall\'interno.',
       'L\'asse affronta le implicazioni più urgenti per il presente: come la tecnica digitale, la cultura della performance e le nuove forme di temporalità contemporanea alterano le condizioni stesse in cui i cinque assi precedenti possono dispiegarsi — e come questo richieda risposte educative e istituzionali radicalmente diverse da quelle del passato.',
     ],
     chapters: '7 capitoli — dalla mediazione simbolica alle istituzioni come dispositivi di esperienza, dalla tecnica contemporanea ai rischi strutturali dello sviluppo nel presente.',
@@ -113,7 +113,7 @@ const ASSI: Asse[] = [
   },
 ];
 
-export default function SviluppoBambinoAssiLanding() {
+export default function AssiStrutturaliLanding() {
   return (
     <div>
       <AssiStrutturaliNav />
@@ -125,7 +125,7 @@ export default function SviluppoBambinoAssiLanding() {
             Gli <span className="text-indigo-300">assi strutturali</span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-200 max-w-2xl leading-relaxed mb-10">
-            Le sei dimensioni costitutive dell'esperienza del bambino: non tappe evolutive, ma strutture dell'esperienza che ne rendono possibile la forma.
+            Le sei dimensioni costitutive dell'esperienza umana in sviluppo: non tappe evolutive, ma strutture dell'esperienza che ne rendono possibile la forma.
           </p>
           <Link
             to="/assi-strutturali/capitoli"
@@ -140,13 +140,13 @@ export default function SviluppoBambinoAssiLanding() {
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
           <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-6">
-            Ogni bambino cresce. Ma in che senso, esattamente, "cresce"?
+            Ogni essere umano cresce. Ma in che senso, esattamente, "cresce"?
           </p>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 max-w-3xl">
-            Non basta rispondere con le tappe dello sviluppo psicomotorio, né con i traguardi cognitivi, né con l'acquisizione progressiva di competenze sociali. Tutte queste risposte, per quanto utili, presuppongono qualcosa che non spiegano: che tipo di soggetto è il bambino, e in virtù di quali strutture fondamentali la sua esperienza prende forma.
+            Non basta rispondere con le tappe dello sviluppo psicomotorio, né con i traguardi cognitivi, né con l'acquisizione progressiva di competenze sociali. Tutte queste risposte, per quanto utili, presuppongono qualcosa che non spiegano: che tipo di soggetto si sviluppa, e in virtù di quali strutture fondamentali la sua esperienza prende forma.
           </p>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-3xl">
-            Il progetto Sviluppo Bambino ha elaborato una risposta sistematica a questa domanda. Il cuore di questa risposta è un'architettura concettuale articolata in <strong>sei assi strutturali di sviluppo</strong>: dimensioni costitutive dell'esperienza del bambino che non si sostituiscono alle teorie psicologiche esistenti, ma le precedono e le fondano.
+            Il laboratorio HCAIRE ha elaborato una risposta sistematica a questa domanda. Il cuore di questa risposta è un'architettura concettuale articolata in <strong>sei assi strutturali di sviluppo</strong>: dimensioni costitutive dell'esperienza umana che non si sostituiscono alle teorie psicologiche esistenti, ma le precedono e le fondano. Lo sviluppo del bambino è il dominio in cui questi assi sono stati per primi messi a punto, e resta il caso d'uso più articolato; ma la loro portata riguarda l'intero sviluppo umano.
           </p>
         </div>
       </div>
@@ -225,7 +225,7 @@ export default function SviluppoBambinoAssiLanding() {
             Il lavoro di elaborazione degli assi strutturali non è una raccolta di saggi teorici. È il tentativo di costruire un <strong>linguaggio condiviso</strong> tra discipline — filosofia, psicologia, pedagogia, clinica.
           </p>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-5 max-w-3xl">
-            Ciascun capitolo nasce da una domanda precisa, risponde con rigore concettuale, e si chiude aprendo verso il successivo. Il risultato è una mappa dell'esperienza infantile che può orientare educatori, clinici, ricercatori e progettisti di servizi, come strumento per vedere con più chiarezza.
+            Ciascun capitolo nasce da una domanda precisa, risponde con rigore concettuale, e si chiude aprendo verso il successivo. Il risultato è una mappa dell'esperienza umana in sviluppo che può orientare educatori, clinici, ricercatori e progettisti di servizi, come strumento per vedere con più chiarezza.
           </p>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-3xl">
             I capitoli sono accompagnati da riferimenti alle figure dei pensatori che hanno contribuito a elaborare ciascuna dimensione — da Merleau-Ponty a Winnicott, da Vygotskij a Gadamer, da Arendt a Freud — con i loro testi fondamentali, perché la teoria non sia ornamento ma radice visibile del pensiero.

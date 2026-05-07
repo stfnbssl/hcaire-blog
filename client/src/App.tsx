@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import { ClerkProvider, useUser } from '@clerk/clerk-react';
 import { SubscriptionProvider } from './context/SubscriptionContext';
@@ -28,16 +28,16 @@ import HcaireProtocolPage       from './pages/hcaire/HcaireProtocolPage';
 import SviluppoBambinoLanding     from './pages/sviluppo-bambino/SviluppoBambinoLanding';
 import SviluppoBambinoModello     from './pages/sviluppo-bambino/SviluppoBambinoModello';
 import SviluppoBambinoAsseOverview from './pages/sviluppo-bambino/SviluppoBambinoAsseOverview';
-import SviluppoBambinoAssi        from './pages/sviluppo-bambino/SviluppoBambinoAssi';
-import SviluppoBambinoAsseChapters from './pages/sviluppo-bambino/SviluppoBambinoAsseChapters';
-import SviluppoBambinoChapter     from './pages/sviluppo-bambino/SviluppoBambinoChapter';
+import AssiStrutturaliCapitoli   from './pages/assi-strutturali/AssiStrutturaliCapitoli';
+import AsseChaptersPage          from './pages/assi-strutturali/AsseChapters';
+import ChapterPage               from './pages/assi-strutturali/Chapter';
 
 import SviluppoBambinoPage                from './pages/sviluppo-bambino/SviluppoBambinoPage';
 import SviluppoBambinoMetodoLanding       from './pages/sviluppo-bambino/SviluppoBambinoMetodoLanding';
 import SviluppoBambinoMetodoPage          from './pages/sviluppo-bambino/SviluppoBambinoMetodoPage';
 import SviluppoBambinoMetodoFasiIndex     from './pages/sviluppo-bambino/SviluppoBambinoMetodoFasiIndex';
 import SviluppoBambinoMetodoFasePage      from './pages/sviluppo-bambino/SviluppoBambinoMetodoFasePage';
-import SviluppoBambinoAssiLanding              from './pages/sviluppo-bambino/SviluppoBambinoAssiLanding';
+import AssiStrutturaliLanding                  from './pages/assi-strutturali/AssiStrutturaliLanding';
 import SviluppoBambinoFinalitaLanding         from './pages/sviluppo-bambino/SviluppoBambinoFinalitaLanding';
 import SviluppoBambinoInterlocuzioniLanding    from './pages/sviluppo-bambino/SviluppoBambinoInterlocuzioniLanding';
 import SviluppoBambinoInterlocuzioniDisciplineIndex from './pages/sviluppo-bambino/SviluppoBambinoInterlocuzioniDisciplineIndex';
@@ -74,16 +74,6 @@ const ArchivioTemiIndexPage = lazy(() => import('./pages/archivio/ArchivioTemiIn
 const ArchivioTemaFormPage  = lazy(() => import('./pages/archivio/ArchivioTemaFormPage'));
 
 const clerkPublishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string;
-
-function RedirectAsseChapters() {
-  const { asseSlug } = useParams();
-  return <Navigate to={`/assi-strutturali/${asseSlug}`} replace />;
-}
-
-function RedirectAsseChapter() {
-  const { asseSlug, chapterSlug } = useParams();
-  return <Navigate to={`/assi-strutturali/${asseSlug}/${chapterSlug}`} replace />;
-}
 
 const muiTheme = createTheme({
   typography: { fontFamily: 'Inter, system-ui, sans-serif' },
@@ -198,15 +188,10 @@ function AppLayout() {
           <Route path="/sviluppo-bambino/strumenti-operativi-contestualizzati/:moduleId"                element={<AdminSuspense><CorsoFase3Page /></AdminSuspense>} />
           <Route path="/sviluppo-bambino/strumenti-operativi-contestualizzati/:moduleId/:slideId"       element={<AdminSuspense><CorsoFase3Page /></AdminSuspense>} />
           {/* Assi Strutturali — sezione top-level */}
-          <Route path="/assi-strutturali"                                       element={<SviluppoBambinoAssiLanding />} />
-          <Route path="/assi-strutturali/capitoli"                              element={<SviluppoBambinoAssi />} />
-          <Route path="/assi-strutturali/:asseSlug"                             element={<SviluppoBambinoAsseChapters />} />
-          <Route path="/assi-strutturali/:asseSlug/:chapterSlug"                element={<SviluppoBambinoChapter />} />
-          {/* Redirect dalle vecchie URL /sviluppo-bambino/assi/* */}
-          <Route path="/sviluppo-bambino/assi"                                  element={<Navigate to="/assi-strutturali" replace />} />
-          <Route path="/sviluppo-bambino/assi/capitoli"                         element={<Navigate to="/assi-strutturali/capitoli" replace />} />
-          <Route path="/sviluppo-bambino/assi/:asseSlug"                        element={<RedirectAsseChapters />} />
-          <Route path="/sviluppo-bambino/assi/:asseSlug/:chapterSlug"           element={<RedirectAsseChapter />} />
+          <Route path="/assi-strutturali"                                       element={<AssiStrutturaliLanding />} />
+          <Route path="/assi-strutturali/capitoli"                              element={<AssiStrutturaliCapitoli />} />
+          <Route path="/assi-strutturali/:asseSlug"                             element={<AsseChaptersPage />} />
+          <Route path="/assi-strutturali/:asseSlug/:chapterSlug"                element={<ChapterPage />} />
           <Route path="/admin"           element={<AdminRoute><AdminDashboard /></AdminRoute>} />
           <Route path="/admin/workflow"  element={<AdminRoute><WorkflowLog /></AdminRoute>} />
           <Route path="/admin/requests"    element={<AdminRoute><AdminRequests /></AdminRoute>} />

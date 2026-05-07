@@ -1,0 +1,85 @@
+{
+  "step": "f3_step_5",
+  "tema_id": "tema-pointing-precoce",
+  "domain_selected": "clinico",
+  "context_label": "Ambulatorio di neuropsichiatria infantile, fascia 12-24 mesi",
+  "results": [
+    {
+      "sections": [
+        {
+          "section_id": "A",
+          "section_label": "Campo condiviso",
+          "domain_examples": [
+            "Setting di osservazione clinica con bambino e caregiver presenti, oggetto attrattivo a portata.",
+            "Visita ambulatoriale di valutazione, durata 15-20 minuti, con materiali standardizzati."
+          ],
+          "linguistic_frame": "Il campo condiviso si nomina come 'spazio di triangolazione attenzionale': struttura a tre poli (bambino, oggetto, adulto) in cui circola lo sguardo.",
+          "decisional_nodes": [
+            "Decidere se il caregiver è presente o solo l'operatore: cambia il polo adulto.",
+            "Decidere se lo spazio di osservazione è strutturato o semistrutturato."
+          ]
+        },
+        {
+          "section_id": "B",
+          "section_label": "Posizione soggettiva",
+          "domain_examples": [
+            "Bambino seduto autonomamente o in braccio al caregiver, libero di orientare lo sguardo.",
+            "Bambino in stato di vigilanza calma, non in fase di iper-arousal o sonnolenza."
+          ],
+          "linguistic_frame": "La posizione soggettiva si descrive come 'apertura attentiva' o 'ritiro': si osservano latenza dello sguardo e qualità del riferimento.",
+          "decisional_nodes": [
+            "Distinguere lo sguardo riferito di condivisione da quello di richiesta affiliativa.",
+            "Riconoscere oscillazione su più cicli prima di classificare il pattern."
+          ]
+        },
+        {
+          "section_id": "C",
+          "section_label": "Rapporto con il limite",
+          "domain_examples": [
+            "Limite del setting (durata, oggetti disponibili) come cornice non come contenimento.",
+            "Limite della finestra dei 7 secondi come scansione, non come fallimento se superata."
+          ],
+          "linguistic_frame": "Il limite è strumento di scansione, non barriera: nominabile come 'tempo di osservazione' senza connotazione di prestazione.",
+          "decisional_nodes": [
+            "Decidere quante ripetizioni del ciclo prima del verdetto."
+          ]
+        },
+        {
+          "section_id": "D",
+          "section_label": "Configurazione complessiva",
+          "domain_examples": [
+            "Triangolazione presente, parziale, oscillante o assente — quattro configurazioni leggibili dal dispositivo.",
+            "Configurazione apparentemente indistinguibile: triangolazione che maschera richiesta affiliativa."
+          ],
+          "linguistic_frame": "Si parla di 'configurazione del campo triadico' e non di 'capacità del bambino': la struttura osservata è del campo, non del soggetto.",
+          "decisional_nodes": [
+            "Quando archiviare come pattern stabile vs richiedere seconda osservazione.",
+            "Soglia di breaking point per attivare correzione del dispositivo."
+          ]
+        },
+        {
+          "section_id": "E",
+          "section_label": "Ipotesi di sostegno",
+          "domain_examples": [
+            "Affiancare al caregiver indicazioni operative su attesa attiva e qualità dello sguardo morbido.",
+            "Programmare seconda osservazione a 4-6 settimane se configurazione oscillante."
+          ],
+          "linguistic_frame": "Le ipotesi sono direzioni di sostegno configurativo: non protocolli rigidi ma orientamenti rispetto al nodo dominante.",
+          "decisional_nodes": [
+            "Coinvolgere il caregiver come co-osservatore della seconda finestra.",
+            "Calibrare il tempo di attesa in base allo stato di arousal del bambino."
+          ]
+        }
+      ],
+      "narrative_synthesis": "Il pointing precoce nel contesto clinico ambulatoriale è leggibile come triangolazione attenzionale a tre poli: bambino, oggetto e adulto. Il dispositivo rende osservabile la qualità di questo campo triadico attraverso quattro micro-azioni che introducono un oggetto, sostengono l'attesa, attivano una seconda finestra verbale e qualificano lo sguardo riferito. La configurazione del campo, non la capacità del bambino, è ciò che si nomina e si segue nel tempo.",
+      "orientative_direction": "Sostenere il caregiver come secondo osservatore del campo triadico, e calibrare il tempo dell'osservazione sull'arousal del bambino senza forzare prestazione.",
+      "dispositivo_ref": {
+        "device_synthesis": "Quattro micro-azioni: introduzione oggetto, attesa di 5-7 secondi, eventuale verbalizzazione, lettura della qualità dello sguardo riferito.",
+        "function_type": "ampliare",
+        "real_time": "30-90 secondi per ciclo, ripetibile 3-4 volte",
+        "resonance_indicator": "Sguardo riferito al volto entro 7 secondi con qualità di condivisione (volto orientato all'oggetto)."
+      },
+      "operator_note": null
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "step": "f3_step_4",
+  "tema_id": "gioco-libero-come-incontro-del-bambino-con-il-possibile",
+  "domain_selected": "clinico",
+  "results": [
+    {
+      "checks": [
+        {
+          "id": "C1",
+          "label": "Non etichetta il bambino",
+          "outcome": "passa",
+          "motivation": "Né la descrizione del dispositivo, né le 5 micro-azioni, né l'indicatore di risonanza (anche nella versione corretta) classificano, definiscono o etichettano il bambino. Il bambino è sempre nominato come soggetto generico dell'azione; le categorie 'tappa', 'prestazione', 'item di scala' compaiono solo come pressioni culturali da sospendere, non come etichette applicate al bambino. Anche le condizioni di non-applicabilità descrivono stati transitori di campo (angoscia, freezing, dolore in atto) e non tipizzano il bambino."
+        },
+        {
+          "id": "C2",
+          "label": "Non richiede diagnosi",
+          "outcome": "passa",
+          "motivation": "Il dispositivo è applicabile dentro la visita pediatrica ordinaria (in particolare bilanci di salute, follow-up, controlli) senza presupporre alcuna informazione diagnostica preliminare sul bambino. Le condizioni di non-applicabilità — al contrario — escludono esplicitamente il dispositivo proprio nei contesti di domanda clinica acuta o diagnostica urgente, ribadendo che il dispositivo non opera dentro la cornice diagnostica e non la presuppone."
+        },
+        {
+          "id": "C3",
+          "label": "Modifica interazioni osservabili",
+          "outcome": "passa",
+          "motivation": "Tutte e cinque le micro-azioni descrivono interventi osservabili sul campo: apertura dichiarata di un intervallo (formula verbale esplicita), disponibilità di oggetti generici, sospensione della guida verbale del professionista, comunicazione preventiva al caregiver, differimento dell'annotazione visibile. I rispettivi 'observable_effect' descrivono modificazioni di campo (assenza di richieste verbali, doppia pressione valutativa che cala, gesti di scoring non visibili) e non stati interni del bambino."
+        },
+        {
+          "id": "C4",
+          "label": "Produce nuova leggibilità",
+          "outcome": "passa",
+          "motivation": "Il dispositivo rende osservabile una dinamica che il dominio clinico-pediatrico, dominato dallo screening per tappe, fatica strutturalmente a vedere: l'orientamento interno del bambino quando non è convertito immediatamente in motivazione esterna o in indice di tappa. La correzione introdotta dopo lo stress test rinforza questa nuova leggibilità con il segno strutturale dell''azione non anticipata dall'osservatore', che il dominio non possiede come categoria autonoma."
+        },
+        {
+          "id": "C5",
+          "label": "Permette rivalutazione della CE",
+          "outcome": "passa",
+          "motivation": "L'indicatore di risonanza, in particolare nella versione corretta, restituisce al ricercatore informazione utilizzabile per rivedere la lettura configurazionale: la presenza/assenza di imprevedibilità minima discrimina tra campo realmente protetto e campo formalmente protetto ma sostanzialmente saturato — informazione direttamente pertinente alla CE di partenza (saturazione finalistica del setting, polarità A−). Il dispositivo apre l'osservazione invece di chiuderla, perché il suo esito può tornare in F2/F3 come correzione della lettura."
+        },
+        {
+          "id": "C6",
+          "label": "Mantiene apertura futura",
+          "outcome": "passa",
+          "motivation": "Per costruzione il dispositivo è una sottrazione di finalità: non fissa il bambino in alcuna traiettoria, identità o previsione. Le 'reversibility_note' di ogni micro-azione sono esplicite: l'intervallo si chiude riprendendo la visita ordinaria, oggetti ritirati senza catalogazione, niente impegni successivi, annotazione differibile o omettibile. Nessuna conseguenza vincolante è prodotta sul percorso del bambino."
+        },
+        {
+          "id": "C7",
+          "label": "Non sostituisce il bambino",
+          "outcome": "passa",
+          "motivation": "Le micro-azioni sono integralmente costruite sulla sospensione della pressione adulta: niente compiti, niente domande, niente proposte di gioco, niente riformulazioni motivanti, sospensione della guida verbale, sospensione della sollecitazione del caregiver. Il dispositivo rende possibile l'emergere della posizione soggettiva del bambino senza riempirla, anticiparla o sostituirla; la correzione dell'indicatore di risonanza rafforza ulteriormente questo punto richiedendo come segno di campo l'azione 'non anticipata' del bambino."
+        },
+        {
+          "id": "C8",
+          "label": "Non aumenta dipendenza",
+          "outcome": "passa",
+          "motivation": "Il dispositivo è strutturalmente reversibile e leggero: ogni micro-azione prevede esplicitamente la propria chiusura naturale con la ripresa della visita ordinaria, senza che il setting clinico, il bambino o il caregiver dipendano dal dispositivo per funzionare. Il campo che il dispositivo apre è autonomo dall'apertura: una volta chiuso l'intervallo, nessuna struttura residua deve essere mantenuta dall'operatore."
+        },
+        {
+          "id": "C9",
+          "label": "Genera nuova osservabilità",
+          "outcome": "passa",
+          "motivation": "Quando il dispositivo è effettivamente in atto, diventano osservabili la struttura del campo (saturo/non saturo di finalità), la qualità dello scambio (turno comunicativo professionista→bambino sospeso) e la soglia di passaggio fra orientamento interno e prestazione. Non aumenta la quantità di osservazione (anzi, riduce le rilevazioni codificate): aumenta la direzione strutturale dello sguardo professionale verso ciò che la finalizzazione strutturalmente nasconde."
+        },
+        {
+          "id": "C10",
+          "label": "Si auto-limita",
+          "outcome": "passa",
+          "motivation": "Il dispositivo dichiara sei condizioni esplicite di non-applicabilità (quattro originarie più due aggiunte dalla correzione post-stress test). Le condizioni sono realmente bloccanti — producono esiti normativi 'sospendere', 'non_classificabile' o 'ambiguo' — non semplici raccomandazioni. È coperto in modo esplicito il caso 'dato osservativo minimo assente' (trigger su angoscia clinica, freezing, dolore in atto, esito non_classificabile). Le due condizioni aggiunte dalla correzione coprono inoltre due rischi di falso positivo strutturali (sguardo valutativo interno persistente; esecuzione come script appreso), rafforzando l'auto-limitazione del dispositivo."
+        }
+      ],
+      "final_verdict": {
+        "total_checks": 10,
+        "passed": 10,
+        "passed_with_reserves": 0,
+        "failed": 0,
+        "verdict": "valido",
+        "critical_failures": [],
+        "recommended_restart_step": null
+      }
+    }
+  ]
+}

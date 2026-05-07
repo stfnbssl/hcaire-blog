@@ -1,6 +1,6 @@
 {
   "_comment": "Source of truth per il motore di esecuzione della pipeline HCAIRE. v2.x: progressive raffinazioni della pipeline F2 — sequenza lineare 2 → 2a → 3 → 4 → 4b → 5 → 6 con skippabilità di 2a/4b. v3.0 (D7-pipeline-f3-redesign): refactoring completo della pipeline F3 da 11 step (1, 2, 3, 4, 5, 6, 6b, 6c, 7, 8, 9, 10) a 5 step (Nodo+Funzione, Micro-dispositivo, Stress test e correzione, Coerenza F3, Audit metodologico). Allineamento alla metodologia (HCAIRE Slides/context/metodo/f3-strumenti-operativi.md): nodo dominante e quattro funzioni esplicite, dispositivo prodotto in un unico step, stress test e correzione integrati, ultima verifica come checklist normativa. Step di trasferimento (vecchi 7-9) abbandonati: nuovo tema = nuova pipeline F2+F3. f3_step_5 (audit) opzionale. Ambito raccolto come input esterno obbligatorio di f3_step_1 (auto-popolato dal bridge F2→F3 ambiti, sostituisce il vecchio f3_step_7 contesto_ambito). f2_step_6.blocks ora punta direttamente a f3_step_1 senza decisione umana modale: la scelta del tema è già fatta lato archivio temi e l'ambito è raccolto inline al primo step F3.",
-  "_version": "3.0",
+  "_version": "3.1",
   "steps": [
     {
       "id": "f2_step_2",
@@ -189,19 +189,22 @@
     },
     {
       "id": "f3_step_5",
-      "label": "Audit metodologico (opzionale)",
+      "label": "Output-tipo contestualizzato",
       "phase": "F3",
-      "_note": "8 controlli (A1-A8) sulla qualità di esecuzione della pipeline F3 da parte degli agenti AI. Opzionale: il dispositivo è considerato finalizzato dopo lo step 4 verificato. Versione generalizzata e snellita del vecchio step 5.",
-      "output_prefix": "audit-metodologico",
-      "output_path_template": "temi/{tema_id}/audit-metodologico-v{N}.json",
+      "_note": "r3+D8: ultimo step obbligatorio della pipeline F3. Produce la versione del modulo triadico A–E contestualizzata per il dominio scelto (§3.3 della metodologia). È l'artefatto che il sito HCAIRE presenta come strumento operativo. Non è un audit della pipeline: produce un output sostantivo.",
+      "output_prefix": "output-tipo",
+      "output_path_template": "temi/{tema_id}/output-tipo-{dominio}-v{N}.json",
       "inputs_pipeline": [
-        { "step": "f3_step_4", "role": "coerenza", "required": true }
+        { "step": "f3_step_4", "role": "coerenza", "required": true, "_note": "Verifica che il dispositivo abbia verdict valido prima di contestualizzare" },
+        { "step": "f3_step_3", "role": "stress-test", "required": true, "_note": "Per accedere al dispositivo corretto se step 3 ha prodotto device_correction" },
+        { "step": "f3_step_2", "role": "micro-dispositivo", "required": true, "_note": "Dispositivo base; sostituito dalla versione corretta di step 3 se presente" },
+        { "step": "f2_step_6", "role": "output-tipo-vuoto", "required": true, "_note": "Struttura triadica astratta A–E da contestualizzare" },
+        { "step": "f3_step_1", "role": "nodo-funzione", "required": true, "_note": "Fornisce domain_selected e context_label" }
       ],
-      "inputs_strutturali": ["f3-step-5-audit-metodologico/audit-schema.json"],
+      "inputs_strutturali": ["f3-step-5-output-tipo-contestualizzato/output-tipo-schema.json"],
       "inputs_esterni": [],
       "verifica": false,
-      "can_skip": true,
-      "skip_condition": "Pipeline eseguita con sufficiente confidenza, audit metodologico ridondante",
+      "can_skip": false,
       "blocks": []
     }
   ]

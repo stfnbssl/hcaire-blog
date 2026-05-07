@@ -35,7 +35,7 @@ const STEP_LABEL: Record<PipelineStepId, string> = {
   f3_step_2: 'Micro-dispositivo',
   f3_step_3: 'Stress test e correzione',
   f3_step_4: 'Coerenza F3',
-  f3_step_5: 'Audit metodologico',
+  f3_step_5: 'Output-tipo contestualizzato',
 };
 
 function ProgressBar({ steps, completed, color }: { steps: PipelineStepId[]; completed: Set<string>; color: 'sky' | 'emerald' | 'slate' }) {
