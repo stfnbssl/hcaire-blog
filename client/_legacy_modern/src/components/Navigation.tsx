@@ -3,10 +3,10 @@ import { useState } from 'react';
 import { useAuth, useUser, SignInButton } from '@clerk/clerk-react';
 import { useFetchNavigation } from '../hooks/useFetchNavigation';
 import { NavigationItem } from '../types/navigation';
+import { APP_NAME } from '../utils/constants';
 import UserNav from './UserNav';
 import { useSubscription } from '../hooks/useSubscription';
 import { useSiteConfig } from '../context/SiteConfigContext';
-import logo from '../assets/logo.svg';
 
 function navPath(item: NavigationItem): string {
   return item.isSpecial ? `/${item.slug}` : `/blog/${item.slug}`;
@@ -23,54 +23,39 @@ export default function Navigation() {
   const isAdmin = user?.publicMetadata?.role === 'admin';
 
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/85 backdrop-blur">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="flex items-center justify-between h-16">
-          <Link to="/" className="group flex items-center shrink-0">
-            <img
-              src={logo}
-              alt="HCAIRE logo"
-              className="h-10 w-auto transition group-hover:opacity-90"
-            />
+    <nav className="bg-white shadow-sm sticky top-0 z-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <Link to="/" className="text-xl font-bold text-primary-700">
+            {APP_NAME}
           </Link>
 
-          {/* Desktop: nav links + agentic badge tucked below in the same 64px row */}
-          <div className="hidden md:flex flex-col items-end justify-center gap-0.5">
-            <nav className="flex items-center gap-5 text-sm text-neutral-600">
-              <NavLink to="/hcaire"           active={location.pathname.startsWith('/hcaire')}>Laboratorio</NavLink>
-              <NavLink to="/assi-strutturali" active={location.pathname.startsWith('/assi-strutturali')}>Assi Strutturali</NavLink>
-              <NavLink to="/progetti"         active={location.pathname.startsWith('/progetti') || location.pathname.startsWith('/sviluppo-bambino')}>Progetti</NavLink>
-              {items.map((item) => (
-                <NavLink key={item._id} to={navPath(item)} active={location.pathname === navPath(item)}>
-                  {item.titolo}
-                </NavLink>
-              ))}
-              {(isBartleby || isAdmin) && (
-                <NavLink to="/bartleby" active={location.pathname.startsWith('/bartleby')}>
-                  Bartleby
-                </NavLink>
-              )}
-              <NavLink to="/letture" active={location.pathname.startsWith('/letture')}>Letture critiche</NavLink>
-              {isAdmin && (
-                <NavLink to="/admin" active={location.pathname.startsWith('/admin')}>
-                  Admin
-                </NavLink>
-              )}
-              <UserNav />
-            </nav>
-            <span className="text-[10px] leading-none text-neutral-400">
-              Contenuti generati da Agenti AI{' '}
-              <Link to="/hcaire/agentic-shift" className="underline hover:text-neutral-700 transition-colors">
-                Scopri di più →
-              </Link>
-            </span>
+          {/* Desktop */}
+          <div className="hidden md:flex items-center space-x-6">
+            <NavLink to="/hcaire" active={location.pathname.startsWith('/hcaire')}>Laboratorio</NavLink>
+            <NavLink to="/assi-strutturali" active={location.pathname.startsWith('/assi-strutturali')}>Assi Strutturali</NavLink>
+            <NavLink to="/progetti" active={location.pathname.startsWith('/progetti') || location.pathname.startsWith('/sviluppo-bambino')}>Progetti</NavLink>
+            {items.map((item) => (
+              <NavLink key={item._id} to={navPath(item)} active={location.pathname === navPath(item)}>
+                {item.titolo}
+              </NavLink>
+            ))}
+            {(isBartleby || isAdmin) && (
+              <NavLink to="/bartleby" active={location.pathname.startsWith('/bartleby')}>
+                Bartleby
+              </NavLink>
+            )}
+            <NavLink to="/letture" active={location.pathname.startsWith('/letture')}>Letture critiche</NavLink>
+            {isAdmin && (
+              <NavLink to="/admin" active={location.pathname.startsWith('/admin')}>
+                Admin
+              </NavLink>
+            )}
+            <UserNav />
           </div>
 
           {/* Hamburger */}
-          <button
-            className="md:hidden p-2 rounded-md text-neutral-600 hover:text-neutral-900"
-            onClick={() => setOpen(!open)}
-          >
+          <button className="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900" onClick={() => setOpen(!open)}>
             <span className="sr-only">Apri menu</span>
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {open
@@ -81,12 +66,22 @@ export default function Navigation() {
           </button>
         </div>
 
+        {/* Badge agentico — desktop only, mobile handled by footer */}
+        <div className="hidden md:flex justify-end pb-1">
+          <span className="agentic-badge text-xs text-gray-400">
+            Contenuti generati da Agenti AI{' '}
+            <Link to="/hcaire/agentic-shift" className="underline hover:text-gray-600 transition-colors">
+              Scopri di più →
+            </Link>
+          </span>
+        </div>
+
         {/* Mobile menu */}
         {open && (
-          <div className="md:hidden pb-4 space-y-1 border-t border-neutral-200 pt-2">
-            <MobileNavLink to="/hcaire"           onClick={() => setOpen(false)}>Laboratorio</MobileNavLink>
+          <div className="md:hidden pb-4 space-y-1 border-t border-gray-100 pt-2">
+            <MobileNavLink to="/hcaire" onClick={() => setOpen(false)}>Laboratorio</MobileNavLink>
             <MobileNavLink to="/assi-strutturali" onClick={() => setOpen(false)}>Assi Strutturali</MobileNavLink>
-            <MobileNavLink to="/progetti"         onClick={() => setOpen(false)}>Progetti</MobileNavLink>
+            <MobileNavLink to="/progetti" onClick={() => setOpen(false)}>Progetti</MobileNavLink>
             {items.map((item) => (
               <MobileNavLink key={item._id} to={navPath(item)} onClick={() => setOpen(false)}>
                 {item.titolo}
@@ -99,7 +94,8 @@ export default function Navigation() {
             {isAdmin && (
               <MobileNavLink to="/admin" onClick={() => setOpen(false)}>Admin</MobileNavLink>
             )}
-            <div className="border-t border-neutral-200 pt-2 mt-2">
+            {/* Separatore e voci utente */}
+            <div className="border-t border-gray-100 pt-2 mt-2">
               {isSignedIn ? (
                 <>
                   <MobileNavLink to="/account" onClick={() => setOpen(false)}>Il mio account</MobileNavLink>
@@ -114,7 +110,7 @@ export default function Navigation() {
                     <SignInButton mode="modal">
                       <button
                         onClick={() => setOpen(false)}
-                        className="w-full text-sm font-medium bg-neutral-900 text-white px-3 py-2 rounded-xl hover:bg-black transition-colors"
+                        className="w-full text-sm font-medium bg-primary-600 text-white px-3 py-1.5 rounded-md hover:bg-primary-700 transition-colors"
                       >
                         Accedi
                       </button>
@@ -126,7 +122,7 @@ export default function Navigation() {
           </div>
         )}
       </div>
-    </header>
+    </nav>
   );
 }
 
@@ -134,8 +130,8 @@ function NavLink({ to, active, children }: { to: string; active: boolean; childr
   return (
     <Link
       to={to}
-      className={`text-sm transition-colors hover:text-neutral-900 ${
-        active ? 'text-neutral-900 font-medium' : 'text-neutral-600'
+      className={`text-sm font-medium transition-colors ${
+        active ? 'text-primary-600' : 'text-gray-600 hover:text-gray-900'
       }`}
     >
       {children}
@@ -148,7 +144,7 @@ function MobileNavLink({ to, onClick, children }: { to: string; onClick: () => v
     <Link
       to={to}
       onClick={onClick}
-      className="block px-2 py-2 text-sm text-neutral-700 hover:text-neutral-900 hover:bg-neutral-50 rounded-md"
+      className="block px-2 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-md"
     >
       {children}
     </Link>

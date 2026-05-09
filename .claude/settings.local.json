@@ -79,7 +79,13 @@
       "PowerShell(Get-ChildItem -Path C:\\\\My\\\\projects\\\\hcaire-blog\\\\scripts -File | ForEach-Object { $_.Name })",
       "Bash(awk NR>=2620 && NR<=2660 *)",
       "PowerShell(Get-ChildItem -Path C:\\\\My\\\\projects\\\\hcaire-blog\\\\client\\\\src\\\\components\\\\pipeline\\\\output-viewers -Recurse -File | ForEach-Object { '{0}  {1} bytes' -f $_.FullName, $_.Length })",
-      "Bash(sort -t: -k2 -n)"
+      "Bash(sort -t: -k2 -n)",
+      "Bash(npx ts-node *)",
+      "Bash(grep -cE '\\\\\\\\\\\\*' \"C:/my/projects/hcaire-blog/server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 2 - Genealogia filosofica del desiderio - merged.md\")",
+      "Bash(grep -oE '\\\\\\\\\\\\*' 'C:/my/projects/hcaire-blog/server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 2 - Genealogia filosofica del desiderio - merged.md')",
+      "Bash(grep -oE '\\\\\\\\[*_.\\(\\)\\\\-<>\\\\[\\\\]!]' 'C:/my/projects/hcaire-blog/server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 2 - Genealogia filosofica del desiderio - merged.md')",
+      "Bash(cp /tmp/App.tsx.full client/src/App.tsx)",
+      "Bash(rm /tmp/App.tsx.full)"
     ]
   }
 }

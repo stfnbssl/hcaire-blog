@@ -11,49 +11,42 @@ export default function Home() {
   const totalPages = result?.pagination.totalPages ?? 1;
 
   return (
-    <div className="bg-white">
+    <div>
       <Header title={APP_NAME_LABEL} subtitle="Articoli, guide e pensieri" />
-      <main className="mx-auto max-w-6xl px-6 py-16 md:py-20">
+      <main className="max-w-6xl mx-auto px-4 py-12">
         {loading && <Spinner />}
         {error && <ErrorMessage message={error} />}
         {result && result.data.length === 0 && (
-          <p className="text-center text-neutral-500 py-16">Nessun articolo pubblicato.</p>
+          <p className="text-center text-gray-500 py-16">Nessun articolo pubblicato.</p>
         )}
         {result && result.data.length > 0 && (
           <>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {result.data.map((post) => (
-                <Link key={post._id} to={`/blog/${post.slug}`} className="group">
-                  <article className="h-full flex flex-col rounded-2xl border border-neutral-200 bg-neutral-50 p-6 transition hover:border-neutral-300 hover:bg-white">
-                    <div className="flex items-center gap-2 mb-3">
+                <Link key={post._id} to={`/blog/${post.slug}`}>
+                  <article className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow h-full flex flex-col">
+                    <div className="flex items-center gap-2 mb-2">
                       {post.isPinned && (
-                        <span className="text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
+                        <span className="text-xs font-semibold text-primary-600 uppercase tracking-wide">
                           In evidenza
                         </span>
                       )}
                       {post.accessType === 'plus' && (
-                        <span className="text-xs font-medium uppercase tracking-[0.14em] text-amber-700">
+                        <span className="text-xs font-semibold text-amber-600 uppercase tracking-wide">
                           Per abbonati
                         </span>
                       )}
                     </div>
-                    <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-3 leading-snug">
-                      {post.titolo}
-                    </h2>
-                    <p className="text-sm leading-7 text-neutral-700 mb-5 flex-grow">
-                      {post.descrizione}
-                    </p>
-                    <div className="flex items-center justify-between text-xs text-neutral-500 border-t border-neutral-200 pt-3">
+                    <h2 className="text-xl font-semibold text-gray-900 mb-2">{post.titolo}</h2>
+                    <p className="text-gray-600 text-sm mb-4 flex-grow">{post.descrizione}</p>
+                    <div className="flex items-center justify-between text-xs text-gray-400">
                       <span className="capitalize">{post.categoria}</span>
                       <span>{new Date(post.createdAt).toLocaleDateString('it-IT')}</span>
                     </div>
                     {post.tags.length > 0 && (
                       <div className="flex flex-wrap gap-1 mt-3">
                         {post.tags.slice(0, 3).map((tag) => (
-                          <span
-                            key={tag}
-                            className="text-xs bg-white border border-neutral-200 text-neutral-600 px-2 py-0.5 rounded-full"
-                          >
+                          <span key={tag} className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">
                             {tag}
                           </span>
                         ))}
@@ -83,6 +76,7 @@ function Pagination({
   totalPages: number;
   onChange: (p: number) => void;
 }) {
+  // Mostra al massimo 5 pagine centrate sulla corrente
   const range = (from: number, to: number) =>
     Array.from({ length: to - from + 1 }, (_, i) => from + i);
 
@@ -92,13 +86,13 @@ function Pagination({
   const pages   = range(left, right);
 
   return (
-    <div className="flex items-center justify-center gap-1 mt-12">
+    <div className="flex items-center justify-center gap-1 mt-10">
       <PageBtn disabled={page <= 1} onClick={() => onChange(page - 1)} label="←" />
 
       {left > 1 && (
         <>
           <PageBtn onClick={() => onChange(1)} label="1" />
-          {left > 2 && <span className="px-1 text-neutral-400 text-sm">…</span>}
+          {left > 2 && <span className="px-1 text-gray-400 text-sm">…</span>}
         </>
       )}
 
@@ -113,7 +107,7 @@ function Pagination({
 
       {right < totalPages && (
         <>
-          {right < totalPages - 1 && <span className="px-1 text-neutral-400 text-sm">…</span>}
+          {right < totalPages - 1 && <span className="px-1 text-gray-400 text-sm">…</span>}
           <PageBtn onClick={() => onChange(totalPages)} label={String(totalPages)} />
         </>
       )}
@@ -140,10 +134,10 @@ function PageBtn({
       disabled={disabled}
       className={`min-w-[2rem] h-8 px-2 rounded text-sm font-medium transition-colors
         ${active
-          ? 'bg-neutral-900 text-white'
+          ? 'bg-primary-600 text-white'
           : disabled
-          ? 'text-neutral-300 cursor-not-allowed'
-          : 'text-neutral-600 hover:bg-neutral-100'
+          ? 'text-gray-300 cursor-not-allowed'
+          : 'text-gray-600 hover:bg-gray-100'
         }`}
     >
       {label}
@@ -154,7 +148,7 @@ function PageBtn({
 function Spinner() {
   return (
     <div className="flex justify-center py-16">
-      <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-neutral-900" />
+      <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary-600" />
     </div>
   );
 }

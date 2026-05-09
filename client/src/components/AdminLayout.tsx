@@ -8,6 +8,11 @@ const ADMIN_LINKS = [
   { to: '/admin/letture',       label: 'Letture',      end: false },
   { to: '/admin/site-config',   label: 'Stato sito',   end: false },
   { to: '/admin/testi',         label: 'Testi',        end: false },
+  { to: '/admin/servizi',       label: 'Servizi',      end: false },
+  { to: '/admin/skills',          label: 'Skills',          end: false },
+  { to: '/admin/plugins',         label: 'Plugins',         end: false },
+  { to: '/admin/job-definitions', label: 'Job Definitions', end: false },
+  { to: '/admin/jobs',            label: 'Jobs',            end: false },
 ];
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {

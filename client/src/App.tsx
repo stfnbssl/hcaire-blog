@@ -60,6 +60,11 @@ const PresentazioneCorsi = lazy(() => import('./pages/sviluppo-bambino/Presentaz
 const KnowledgeBase    = lazy(() => import('./pages/bartleby/KnowledgeBase'));
 const AdminSiteConfig  = lazy(() => import('./pages/AdminSiteConfig'));
 const AdminSiteContent = lazy(() => import('./pages/AdminSiteContent'));
+const AdminServices    = lazy(() => import('./pages/AdminServices'));
+const AdminSkills          = lazy(() => import('./pages/AdminSkills'));
+const AdminPlugins         = lazy(() => import('./pages/AdminPlugins'));
+const AdminJobDefinitions  = lazy(() => import('./pages/AdminJobDefinitions'));
+const AdminJobs            = lazy(() => import('./pages/AdminJobs'));
 const LettureCriticheLanding = lazy(() => import('./pages/letture/LettureCriticheLanding'));
 const LettureLanding  = lazy(() => import('./pages/letture/LettureLanding'));
 const LetturaDetail   = lazy(() => import('./pages/letture/LetturaDetail'));
@@ -202,6 +207,11 @@ function AppLayout() {
           <Route path="/admin/letture/:slug"    element={<AdminRoute><AdminLetturaDetail /></AdminRoute>} />
           <Route path="/admin/site-config"  element={<AdminRoute><AdminSiteConfig /></AdminRoute>} />
           <Route path="/admin/testi"        element={<AdminRoute><AdminSiteContent /></AdminRoute>} />
+          <Route path="/admin/servizi"      element={<AdminRoute><AdminServices /></AdminRoute>} />
+          <Route path="/admin/skills"           element={<AdminRoute><AdminSkills /></AdminRoute>} />
+          <Route path="/admin/plugins"          element={<AdminRoute><AdminPlugins /></AdminRoute>} />
+          <Route path="/admin/job-definitions"  element={<AdminRoute><AdminJobDefinitions /></AdminRoute>} />
+          <Route path="/admin/jobs"             element={<AdminRoute><AdminJobs /></AdminRoute>} />
           {/* Archivio temi (admin) — vedi docs/90-todo/laboratorio-d5b-backend.md §12 */}
           <Route path="/archivio/temi"          element={<AdminRoute><ArchivioTemiIndexPage /></AdminRoute>} />
           <Route path="/archivio/temi/nuovo"    element={<AdminRoute><ArchivioTemaFormPage /></AdminRoute>} />

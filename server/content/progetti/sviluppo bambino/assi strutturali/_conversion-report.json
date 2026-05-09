@@ -1,0 +1,641 @@
+{
+  "generatedAt": "2026-05-09T15:08:49.857Z",
+  "mode": "written",
+  "args": {
+    "write": true,
+    "force": false,
+    "verbose": false
+  },
+  "totals": {
+    "markers": 178,
+    "refs": 178,
+    "refsWithImgs": 107,
+    "refsWithoutImgs": 71,
+    "footnotes": 178,
+    "portraits": 95,
+    "covers": 65
+  },
+  "counts": {
+    "chapters": 44,
+    "errors": 0,
+    "warnings": 0
+  },
+  "rows": [
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 1 - Statuto dell’Asse ontologico – fenomenologico.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 1 - Ontologico - fenomenologico/Capitolo 1 - Statuto dell’Asse ontologico – fenomenologico.json",
+      "stats": {
+        "markersReplaced": 6,
+        "footnotes": 6,
+        "references": 6,
+        "refsWithImgs": 4,
+        "refsWithoutImgs": 2,
+        "portraits": 4,
+        "covers": 1
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 2 - Il soggetto come processo di costituzione.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 1 - Ontologico - fenomenologico/Capitolo 2 - Il soggetto come processo di costituzione.json",
+      "stats": {
+        "markersReplaced": 6,
+        "footnotes": 6,
+        "references": 6,
+        "refsWithImgs": 2,
+        "refsWithoutImgs": 4,
+        "portraits": 3,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 3 - Temporalità vissuta come struttura della soggettività.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 1 - Ontologico - fenomenologico/Capitolo 3 - Temporalità vissuta come struttura della soggettività.json",
+      "stats": {
+        "markersReplaced": 3,
+        "footnotes": 3,
+        "references": 3,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 2,
+        "portraits": 1,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 4 - La corporeità come luogo originario di senso.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 1 - Ontologico - fenomenologico/Capitolo 4 - La corporeità come luogo originario di senso.json",
+      "stats": {
+        "markersReplaced": 4,
+        "footnotes": 4,
+        "references": 4,
+        "refsWithImgs": 2,
+        "refsWithoutImgs": 2,
+        "portraits": 3,
+        "covers": 2
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 5 - La regolazione come principio ontologico.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 1 - Ontologico - fenomenologico/Capitolo 5 - La regolazione come principio ontologico.json",
+      "stats": {
+        "markersReplaced": 9,
+        "footnotes": 9,
+        "references": 9,
+        "refsWithImgs": 8,
+        "refsWithoutImgs": 1,
+        "portraits": 7,
+        "covers": 7
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 6 - La relazione come condizione strutturale della soggettività.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 1 - Ontologico - fenomenologico/Capitolo 6 - La relazione come condizione strutturale della soggettività.json",
+      "stats": {
+        "markersReplaced": 2,
+        "footnotes": 2,
+        "references": 2,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 1,
+        "portraits": 1,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 7 - Il campo intenzionale come struttura dell’esperienza.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 1 - Ontologico - fenomenologico/Capitolo 7 - Il campo intenzionale come struttura dell’esperienza.json",
+      "stats": {
+        "markersReplaced": 2,
+        "footnotes": 2,
+        "references": 2,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 1,
+        "portraits": 1,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 8 - Soglia tra ontologia e genesi morale.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 1 - Ontologico - fenomenologico/Capitolo 8 - Soglia tra ontologia e genesi morale.json",
+      "stats": {
+        "markersReplaced": 3,
+        "footnotes": 3,
+        "references": 3,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 2,
+        "portraits": 1,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 1 – Statuto dell’asse affettivo–morale.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 2 - Affettivo -morale/Capitolo 1 – Statuto dell’asse affettivo–morale.json",
+      "stats": {
+        "markersReplaced": 4,
+        "footnotes": 4,
+        "references": 4,
+        "refsWithImgs": 3,
+        "refsWithoutImgs": 1,
+        "portraits": 2,
+        "covers": 3
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 2 – L’altro come istanza interna.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 2 - Affettivo -morale/Capitolo 2 – L’altro come istanza interna.json",
+      "stats": {
+        "markersReplaced": 3,
+        "footnotes": 3,
+        "references": 3,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 2,
+        "portraits": 0,
+        "covers": 1
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 3 – La colpa come esperienza affettiva strutturante.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 2 - Affettivo -morale/Capitolo 3 – La colpa come esperienza affettiva strutturante.json",
+      "stats": {
+        "markersReplaced": 6,
+        "footnotes": 6,
+        "references": 6,
+        "refsWithImgs": 3,
+        "refsWithoutImgs": 3,
+        "portraits": 2,
+        "covers": 2
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 4 – Riparazione e responsabilità.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 2 - Affettivo -morale/Capitolo 4 – Riparazione e responsabilità.json",
+      "stats": {
+        "markersReplaced": 7,
+        "footnotes": 7,
+        "references": 7,
+        "refsWithImgs": 4,
+        "refsWithoutImgs": 3,
+        "portraits": 2,
+        "covers": 2
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 5 – Confronto psicoanalitico strutturale.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 2 - Affettivo -morale/Capitolo 5 – Confronto psicoanalitico strutturale.json",
+      "stats": {
+        "markersReplaced": 2,
+        "footnotes": 2,
+        "references": 2,
+        "refsWithImgs": 2,
+        "refsWithoutImgs": 0,
+        "portraits": 2,
+        "covers": 1
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 6 – Temporalità dello sviluppo morale.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 2 - Affettivo -morale/Capitolo 6 – Temporalità dello sviluppo morale.json",
+      "stats": {
+        "markersReplaced": 4,
+        "footnotes": 4,
+        "references": 4,
+        "refsWithImgs": 2,
+        "refsWithoutImgs": 2,
+        "portraits": 1,
+        "covers": 2
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 7 – Dove l’Asse affettivo–morale può fallire.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 2 - Affettivo -morale/Capitolo 7 – Dove l’Asse affettivo–morale può fallire.json",
+      "stats": {
+        "markersReplaced": 0,
+        "footnotes": 0,
+        "references": 0,
+        "refsWithImgs": 0,
+        "refsWithoutImgs": 0,
+        "portraits": 0,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 8 – Raccordo con l’Asse normativo–educativo.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 2 - Affettivo -morale/Capitolo 8 – Raccordo con l’Asse normativo–educativo.json",
+      "stats": {
+        "markersReplaced": 0,
+        "footnotes": 0,
+        "references": 0,
+        "refsWithImgs": 0,
+        "refsWithoutImgs": 0,
+        "portraits": 0,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 3 - Normativo - educativo/Capitolo 1 - Norma, normatività, giudizio_ distinzione concettuale.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 3 - Normativo - educativo/Capitolo 1 - Norma, normatività, giudizio_ distinzione concettuale.json",
+      "stats": {
+        "markersReplaced": 2,
+        "footnotes": 2,
+        "references": 2,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 1,
+        "portraits": 0,
+        "covers": 1
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 3 - Normativo - educativo/Capitolo 2 - Dalla colpa (Asse 2) al giudizio.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 3 - Normativo - educativo/Capitolo 2 - Dalla colpa (Asse 2) al giudizio.json",
+      "stats": {
+        "markersReplaced": 2,
+        "footnotes": 2,
+        "references": 2,
+        "refsWithImgs": 2,
+        "refsWithoutImgs": 0,
+        "portraits": 2,
+        "covers": 2
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 3 - Normativo - educativo/Capitolo 3 - Verità educativa_ orientamento senza arbitrarietà.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 3 - Normativo - educativo/Capitolo 3 - Verità educativa_ orientamento senza arbitrarietà.json",
+      "stats": {
+        "markersReplaced": 3,
+        "footnotes": 3,
+        "references": 3,
+        "refsWithImgs": 3,
+        "refsWithoutImgs": 0,
+        "portraits": 3,
+        "covers": 3
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 3 - Normativo - educativo/Capitolo 4 - Educare senza manipolare_ autorità e responsabilità.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 3 - Normativo - educativo/Capitolo 4 - Educare senza manipolare_ autorità e responsabilità.json",
+      "stats": {
+        "markersReplaced": 3,
+        "footnotes": 3,
+        "references": 3,
+        "refsWithImgs": 3,
+        "refsWithoutImgs": 0,
+        "portraits": 2,
+        "covers": 3
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 3 - Normativo - educativo/Capitolo 5 - I fallimenti della normatività_ relativismo, moralismo e prestazione.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 3 - Normativo - educativo/Capitolo 5 - I fallimenti della normatività_ relativismo, moralismo e prestazione.json",
+      "stats": {
+        "markersReplaced": 3,
+        "footnotes": 3,
+        "references": 3,
+        "refsWithImgs": 2,
+        "refsWithoutImgs": 1,
+        "portraits": 2,
+        "covers": 2
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 3 - Normativo - educativo/Capitolo 6 - Il limite del giudizio_ quando la norma non è sovrana.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 3 - Normativo - educativo/Capitolo 6 - Il limite del giudizio_ quando la norma non è sovrana.json",
+      "stats": {
+        "markersReplaced": 2,
+        "footnotes": 2,
+        "references": 2,
+        "refsWithImgs": 2,
+        "refsWithoutImgs": 0,
+        "portraits": 2,
+        "covers": 1
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 1 - Lo statuto del limite reale.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 4 - Separazione e Limite/Capitolo 1 - Lo statuto del limite reale.json",
+      "stats": {
+        "markersReplaced": 2,
+        "footnotes": 2,
+        "references": 2,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 1,
+        "portraits": 1,
+        "covers": 2
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 2 - L’eccedenza.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 4 - Separazione e Limite/Capitolo 2 - L’eccedenza.json",
+      "stats": {
+        "markersReplaced": 3,
+        "footnotes": 3,
+        "references": 3,
+        "refsWithImgs": 3,
+        "refsWithoutImgs": 0,
+        "portraits": 3,
+        "covers": 2
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 3 - La perdita.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 4 - Separazione e Limite/Capitolo 3 - La perdita.json",
+      "stats": {
+        "markersReplaced": 3,
+        "footnotes": 3,
+        "references": 3,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 2,
+        "portraits": 1,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 4 - La separazione.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 4 - Separazione e Limite/Capitolo 4 - La separazione.json",
+      "stats": {
+        "markersReplaced": 2,
+        "footnotes": 2,
+        "references": 2,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 1,
+        "portraits": 1,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 5 - Il rischio educativo.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 4 - Separazione e Limite/Capitolo 5 - Il rischio educativo.json",
+      "stats": {
+        "markersReplaced": 7,
+        "footnotes": 7,
+        "references": 7,
+        "refsWithImgs": 0,
+        "refsWithoutImgs": 7,
+        "portraits": 0,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 6 - Temporalità del limite.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 4 - Separazione e Limite/Capitolo 6 - Temporalità del limite.json",
+      "stats": {
+        "markersReplaced": 6,
+        "footnotes": 6,
+        "references": 6,
+        "refsWithImgs": 3,
+        "refsWithoutImgs": 3,
+        "portraits": 3,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 7 - Statuto simbolico della perdita.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 4 - Separazione e Limite/Capitolo 7 - Statuto simbolico della perdita.json",
+      "stats": {
+        "markersReplaced": 6,
+        "footnotes": 6,
+        "references": 6,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 5,
+        "portraits": 2,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 8 - Raccordo con l’asse del desiderio.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 4 - Separazione e Limite/Capitolo 8 - Raccordo con l’asse del desiderio.json",
+      "stats": {
+        "markersReplaced": 6,
+        "footnotes": 6,
+        "references": 6,
+        "refsWithImgs": 2,
+        "refsWithoutImgs": 4,
+        "portraits": 2,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 1 - Statuto filosofico del desiderio.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 5 - Desiderio/Capitolo 1 - Statuto filosofico del desiderio.json",
+      "stats": {
+        "markersReplaced": 7,
+        "footnotes": 7,
+        "references": 7,
+        "refsWithImgs": 6,
+        "refsWithoutImgs": 1,
+        "portraits": 5,
+        "covers": 5
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 2 - Genealogia filosofica del desiderio.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 5 - Desiderio/Capitolo 2 - Genealogia filosofica del desiderio.json",
+      "stats": {
+        "markersReplaced": 7,
+        "footnotes": 7,
+        "references": 7,
+        "refsWithImgs": 6,
+        "refsWithoutImgs": 1,
+        "portraits": 4,
+        "covers": 6
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 3 - Fenomenologia del desiderio incarnato.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 5 - Desiderio/Capitolo 3 - Fenomenologia del desiderio incarnato.json",
+      "stats": {
+        "markersReplaced": 4,
+        "footnotes": 4,
+        "references": 4,
+        "refsWithImgs": 2,
+        "refsWithoutImgs": 2,
+        "portraits": 3,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 4 - Dal campo desiderabile alla soggettivazione del desiderio.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 5 - Desiderio/Capitolo 4 - Dal campo desiderabile alla soggettivazione del desiderio.json",
+      "stats": {
+        "markersReplaced": 6,
+        "footnotes": 6,
+        "references": 6,
+        "refsWithImgs": 4,
+        "refsWithoutImgs": 2,
+        "portraits": 4,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 5 - Desiderio, norma e giudizio.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 5 - Desiderio/Capitolo 5 - Desiderio, norma e giudizio.json",
+      "stats": {
+        "markersReplaced": 7,
+        "footnotes": 7,
+        "references": 7,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 6,
+        "portraits": 0,
+        "covers": 1
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 6 - Patologie strutturali del desiderio.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 5 - Desiderio/Capitolo 6 - Patologie strutturali del desiderio.json",
+      "stats": {
+        "markersReplaced": 4,
+        "footnotes": 4,
+        "references": 4,
+        "refsWithImgs": 0,
+        "refsWithoutImgs": 4,
+        "portraits": 0,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 7 - Raccordo con l’Asse 6.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 5 - Desiderio/Capitolo 7 - Raccordo con l’Asse 6.json",
+      "stats": {
+        "markersReplaced": 4,
+        "footnotes": 4,
+        "references": 4,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 3,
+        "portraits": 1,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 1 – Il mondo storico-culturale come mediazione, non come sfondo.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 6 - Storico - culturale/Capitolo 1 – Il mondo storico-culturale come mediazione, non come sfondo.json",
+      "stats": {
+        "markersReplaced": 6,
+        "footnotes": 6,
+        "references": 6,
+        "refsWithImgs": 6,
+        "refsWithoutImgs": 0,
+        "portraits": 5,
+        "covers": 3
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 2 – Costituzione storica del soggetto senza relativismo.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 6 - Storico - culturale/Capitolo 2 – Costituzione storica del soggetto senza relativismo.json",
+      "stats": {
+        "markersReplaced": 4,
+        "footnotes": 4,
+        "references": 4,
+        "refsWithImgs": 4,
+        "refsWithoutImgs": 0,
+        "portraits": 4,
+        "covers": 4
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 3 – Mediazione simbolica e sviluppo.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 6 - Storico - culturale/Capitolo 3 – Mediazione simbolica e sviluppo.json",
+      "stats": {
+        "markersReplaced": 5,
+        "footnotes": 5,
+        "references": 5,
+        "refsWithImgs": 5,
+        "refsWithoutImgs": 0,
+        "portraits": 4,
+        "covers": 4
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 4 – Istituzioni come dispositivi di esperienza.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 6 - Storico - culturale/Capitolo 4 – Istituzioni come dispositivi di esperienza.json",
+      "stats": {
+        "markersReplaced": 8,
+        "footnotes": 8,
+        "references": 8,
+        "refsWithImgs": 7,
+        "refsWithoutImgs": 1,
+        "portraits": 6,
+        "covers": 3
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 5 – Tecnica, performance e temporalità contemporanea.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 6 - Storico - culturale/Capitolo 5 – Tecnica, performance e temporalità contemporanea.json",
+      "stats": {
+        "markersReplaced": 4,
+        "footnotes": 4,
+        "references": 4,
+        "refsWithImgs": 4,
+        "refsWithoutImgs": 0,
+        "portraits": 4,
+        "covers": 2
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 6 – Rischi strutturali e deformazioni dello sviluppo.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 6 - Storico - culturale/Capitolo 6 – Rischi strutturali e deformazioni dello sviluppo.json",
+      "stats": {
+        "markersReplaced": 1,
+        "footnotes": 1,
+        "references": 1,
+        "refsWithImgs": 1,
+        "refsWithoutImgs": 0,
+        "portraits": 1,
+        "covers": 0
+      },
+      "issues": []
+    },
+    {
+      "source": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 7 – Raccordo con l’intero modello e funzione dell’Asse 6.md",
+      "out": "server/content/progetti/sviluppo bambino/assi strutturali/json/Asse 6 - Storico - culturale/Capitolo 7 – Raccordo con l’intero modello e funzione dell’Asse 6.json",
+      "stats": {
+        "markersReplaced": 0,
+        "footnotes": 0,
+        "references": 0,
+        "refsWithImgs": 0,
+        "refsWithoutImgs": 0,
+        "portraits": 0,
+        "covers": 0
+      },
+      "issues": []
+    }
+  ]
+}

@@ -5,10 +5,18 @@ interface HeaderProps {
 
 export default function Header({ title, subtitle }: HeaderProps) {
   return (
-    <header className="bg-gradient-to-r from-primary-700 to-primary-500 text-white py-16 px-4">
-      <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">{title}</h1>
-        {subtitle && <p className="text-lg text-blue-100">{subtitle}</p>}
+    <header className="border-b border-neutral-200 bg-gradient-to-b from-white to-neutral-50">
+      <div className="mx-auto max-w-6xl px-6 py-20 md:py-24">
+        <div className="max-w-4xl">
+          {subtitle && (
+            <p className="text-sm uppercase tracking-[0.18em] text-neutral-500 font-serif">
+              {subtitle}
+            </p>
+          )}
+          <h1 className="mt-4 font-serif font-semibold tracking-tight text-neutral-900 text-5xl md:text-6xl">
+            {title}
+          </h1>
+        </div>
       </div>
     </header>
   );

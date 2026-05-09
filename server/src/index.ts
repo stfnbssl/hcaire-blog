@@ -20,6 +20,10 @@ import pipelineRoutes from './routes/pipeline';
 import lettureRoutes, { lettureAdminRouter } from './routes/letture';
 import { siteContentPublicRouter, siteContentAdminRouter } from './routes/siteContent';
 import archivioTemiRoutes from './routes/archivioTemi';
+import skillsRoutes from './routes/skills';
+import pluginsRoutes from './routes/plugins';
+import jobDefinitionsRoutes from './routes/jobDefinitions';
+import jobRequestsRoutes from './routes/jobRequests';
 import { startTelegramBot } from './services/telegramBot';
 import { startPipelineEventSubscriber, startPipelineWatchdog } from './services/pipelineEventSubscriber';
 import { startLettureEventSubscriber, startLettureWatchdog } from './services/lettureEventSubscriber';
@@ -68,6 +72,10 @@ app.use('/api/admin/letture',        lettureAdminRouter);
 app.use('/api/site-content',         siteContentPublicRouter);
 app.use('/api/admin/site-content',   siteContentAdminRouter);
 app.use('/api/archivio/temi',        archivioTemiRoutes);
+app.use('/api/admin/skills',           skillsRoutes);
+app.use('/api/admin/plugins',          pluginsRoutes);
+app.use('/api/admin/job-definitions',  jobDefinitionsRoutes);
+app.use('/api/admin/job-requests',     jobRequestsRoutes);
 app.use('/api',                      authRoutes);
 
 app.listen(PORT, () => {

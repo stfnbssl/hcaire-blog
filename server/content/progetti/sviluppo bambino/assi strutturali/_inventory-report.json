@@ -1,0 +1,4283 @@
+{
+  "generatedAt": "2026-05-09T09:06:03.223Z",
+  "chapters": [
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 1 - Statuto dell’Asse ontologico – fenomenologico.md",
+      "asseDir": "Asse 1 - Ontologico - fenomenologico",
+      "fmAsseSlug": "asse-1-ontologico-fenomenologico",
+      "fmChapter": 1,
+      "fmSlug": "capitolo-1-statuto-dell-asse-ontologico-fenomenologico",
+      "fmTitle": "Statuto dell’Asse ontologico – fenomenologico",
+      "bodyChars": 7505,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 736,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 2232,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 2829,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 4118,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 4584,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 5972,
+          "refId": "r6"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "La necessità di uno statuto esplicito del soggetto prima di ogni descrizione funzionale è un tema classico della fenomenologia (Husserl; Merleau-Ponty)."
+        },
+        {
+          "num": "2",
+          "text": "Cfr. Merleau-Ponty, *Fenomenologia della percezione, per il concetto che* «L’ontologia non è dietro l’esperienza, ma nel suo stesso apparire.» e Martin Heidegger, Essere e tempo, per l’idea di ontologia come analitica dell’esistenza"
+        },
+        {
+          "num": "3",
+          "text": "Per Husserl la fenomenologia non descrive fatti, ma le condizioni che rendono possibile il loro apparire."
+        },
+        {
+          "num": "4",
+          "text": "Per Merleau-Ponty «Il soggetto non è dietro i suoi atti, ma si profila attraverso di essi.»"
+        },
+        {
+          "num": "5",
+          "text": "La distinzione tra descrizione strutturale, spiegazione causale e prescrizione normativa è centrale nella riflessione epistemologica contemporanea (Canguilhem)."
+        },
+        {
+          "num": "6",
+          "text": "Vedi Hans-Georg Gadamer per l’idea di posizionamento del lettore."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Merleau-Ponty",
+          "title": "Merleau-Ponty",
+          "offset": 741,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "edmund-husserl",
+          "ext": "jpg",
+          "src": "/assets/autori/edmund-husserl.jpg",
+          "alt": "Husserl",
+          "title": "Husserl",
+          "offset": 973,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "merleau-ponty-fenomenologia-della-percezione",
+          "ext": "jpg",
+          "src": "/assets/libri/merleau-ponty-fenomenologia-della-percezione.jpg",
+          "alt": "Fenomenologia della percezione",
+          "title": "Fenomenologia della percezione",
+          "offset": 2237,
+          "attachedTo": 1
+        },
+        {
+          "kind": "portrait",
+          "id": "georges-canguilhem",
+          "ext": "jpg",
+          "src": "/assets/autori/georges-canguilhem.jpg",
+          "alt": "Canguilhem",
+          "title": "Canguilhem",
+          "offset": 4589,
+          "attachedTo": 4
+        },
+        {
+          "kind": "portrait",
+          "id": "hans-georg-gadamer",
+          "ext": "jpg",
+          "src": "/assets/autori/hans-georg-gadamer.jpg",
+          "alt": "Hans-Georg Gadamer",
+          "title": "Hans-Georg Gadamer",
+          "offset": 5977,
+          "attachedTo": 5
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 4,
+        "cover": 1,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 2,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 2 - Il soggetto come processo di costituzione.md",
+      "asseDir": "Asse 1 - Ontologico - fenomenologico",
+      "fmAsseSlug": "asse-1-ontologico-fenomenologico",
+      "fmChapter": 2,
+      "fmSlug": "capitolo-2-il-soggetto-come-processo-di-costituzione",
+      "fmTitle": "Il soggetto come processo di costituzione",
+      "bodyChars": 9169,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 920,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 2348,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 3517,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 4351,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 6380,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 6987,
+          "refId": "r6"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "L’idea che il soggetto non possa essere assunto come presupposto, ma debba essere interrogato nel suo costituirsi, attraversa la fenomenologia da Husserl a Merleau-Ponty. Si veda **Maurice Merleau-Ponty** per l’idea di soggetto come questione, non come dato ed **Edmund Husserl** per il concetto di costituzione (*Konstitution*) come problema, non come esito."
+        },
+        {
+          "num": "2",
+          "text": "Per Merleau-Ponty (parafrasi fedele) il soggetto non è un principio nascosto che lo sviluppo si limita a rivelare."
+        },
+        {
+          "num": "3",
+          "text": "La riduzione della soggettività a esito funzionale rende conto dei processi, ma fatica a spiegare l’unità e la continuità dell’esperienza (Canguilhem; Merleau-Ponty)."
+        },
+        {
+          "num": "4",
+          "text": "Per Merleau-Ponty «La soggettività non è un Io che pensa, ma un modo di essere-al-mondo.»"
+        },
+        {
+          "num": "5",
+          "text": "La vulnerabilità come dimensione originaria della soggettività è tematizzata in modo convergente, seppur su piani diversi, dalla fenomenologia e dalla psicoanalisi dello sviluppo, si veda Donald Winnicott a questo proposito."
+        },
+        {
+          "num": "6",
+          "text": "Per Merleau-Ponty il soggetto resta se stesso non malgrado il cambiamento, ma attraverso di esso."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 925,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "edmund-husserl",
+          "ext": "jpg",
+          "src": "/assets/autori/edmund-husserl.jpg",
+          "alt": "Edmund Husserl",
+          "title": "Edmund Husserl",
+          "offset": 1173,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "georges-canguilhem",
+          "ext": "jpg",
+          "src": "/assets/autori/georges-canguilhem.jpg",
+          "alt": "Canguilhem",
+          "title": "Canguilhem",
+          "offset": 3522,
+          "attachedTo": 2
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 3,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 4,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 3 - Temporalità vissuta come struttura della soggettività.md",
+      "asseDir": "Asse 1 - Ontologico - fenomenologico",
+      "fmAsseSlug": "asse-1-ontologico-fenomenologico",
+      "fmChapter": 3,
+      "fmSlug": "capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita",
+      "fmTitle": "Temporalità vissuta come struttura della soggettività",
+      "bodyChars": 7005,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 770,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1559,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 2478,
+          "refId": "r3"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Per Merleau-Ponty «Il soggetto non è nel tempo come una cosa, ma è il tempo stesso che si realizza.»"
+        },
+        {
+          "num": "2",
+          "text": "«La coscienza non è un essere che passa nel tempo, ma il movimento stesso di temporalizzazione.»"
+        },
+        {
+          "num": "3",
+          "text": "«Ogni presente porta con sé il suo passato immediato e il suo avvenire imminente.»"
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Merleau-Ponty",
+          "title": "Merleau-Ponty",
+          "offset": 775,
+          "attachedTo": 0
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 1,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 2,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 4 - La corporeità come luogo originario di senso.md",
+      "asseDir": "Asse 1 - Ontologico - fenomenologico",
+      "fmAsseSlug": "asse-1-ontologico-fenomenologico",
+      "fmChapter": 4,
+      "fmSlug": "capitolo-4-la-corporeita-come-luogo-originario-di-senso",
+      "fmTitle": "La corporeità come luogo originario di senso",
+      "bodyChars": 7108,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1583,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 3476,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 4294,
+          "refId": "r3"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "«Il corpo è il nostro mezzo generale per avere un mondo.»"
+        },
+        {
+          "num": "2",
+          "text": "Per Merleau-Ponty «Il passato non è dietro di noi, ma pesa nel nostro presente come stile del corpo.»"
+        },
+        {
+          "num": "3",
+          "text": "La regolazione corporea come organizzazione primaria del senso è descritta in modo convergente dalla fenomenologia e dalle neuroscienze non riduzioniste."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Merleau-Ponty",
+          "title": "Merleau-Ponty",
+          "offset": 3481,
+          "attachedTo": 1
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 1,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 2,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 5 - La regolazione come principio ontologico.md",
+      "asseDir": "Asse 1 - Ontologico - fenomenologico",
+      "fmAsseSlug": "asse-1-ontologico-fenomenologico",
+      "fmChapter": 5,
+      "fmSlug": "capitolo-5-la-regolazione-come-principio-ontologico",
+      "fmTitle": "La regolazione come principio ontologico",
+      "bodyChars": 8871,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 746,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 2039,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 3355,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 4531,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 4985,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 6225,
+          "refId": "r6"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda Canguilhem, ***Il normale e il patologico***, per una regolazione intesa come principio strutturale dell’esperienza e non come funzione psicologica isolabile."
+        },
+        {
+          "num": "2",
+          "text": "Per Merleau-Ponty «L’unità dell’esperienza non è una somma, ma una coesione nel tempo.». Si veda anche Edmund Husserl, ***Lezioni sulla coscienza interna del tempo***."
+        },
+        {
+          "num": "3",
+          "text": "Si veda Michel Foucault, ***Sorvegliare e punire***, per la distinzione tra regolazione e controllo normativo."
+        },
+        {
+          "num": "4",
+          "text": "Per Merleau-Ponty «Il tempo non scorre fuori di noi: si fa nel nostro modo di essere.»"
+        },
+        {
+          "num": "5",
+          "text": "La regolazione efficace non riduce l’apertura al mondo, ma ne sostiene la possibilità senza disorganizzazione, si veda Kurt Goldstein, ***La struttura dell’organismo***."
+        },
+        {
+          "num": "6",
+          "text": "La co-regolazione non è tecnica educativa ma condizione ontologica originaria; si vedano Winnicott, ***Gioco e realtà*** e Bowlby, ***Attaccamento e perdita**.*"
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "georges-canguilhem",
+          "ext": "jpg",
+          "src": "/assets/autori/georges-canguilhem.jpg",
+          "alt": "Canguilhem",
+          "title": "Canguilhem",
+          "offset": 751,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "canguilhem-normale-e-patologico",
+          "ext": "jpg",
+          "src": "/assets/libri/canguilhem-normale-e-patologico.jpg",
+          "alt": "Il normale e il patologico",
+          "title": "Il normale e il patologico",
+          "offset": 974,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Merleau-Ponty",
+          "title": "Merleau-Ponty",
+          "offset": 2044,
+          "attachedTo": 1
+        },
+        {
+          "kind": "cover",
+          "id": "husserl-lezioni-sulla-coscienza-interna-del-tempo",
+          "ext": "jpg",
+          "src": "/assets/libri/husserl-lezioni-sulla-coscienza-interna-del-tempo.jpg",
+          "alt": "Lezioni sulla coscienza interna del tempo",
+          "title": "Lezioni sulla coscienza interna del tempo",
+          "offset": 2276,
+          "attachedTo": 1
+        },
+        {
+          "kind": "portrait",
+          "id": "michel-foucault",
+          "ext": "jpg",
+          "src": "/assets/autori/michel-foucault.jpg",
+          "alt": "Michel Foucault",
+          "title": "Michel Foucault",
+          "offset": 3360,
+          "attachedTo": 2
+        },
+        {
+          "kind": "cover",
+          "id": "foucault-sorvegliare-e-punire",
+          "ext": "jpg",
+          "src": "/assets/libri/foucault-sorvegliare-e-punire.jpg",
+          "alt": "Sorvegliare e punire",
+          "title": "Sorvegliare e punire",
+          "offset": 3590,
+          "attachedTo": 2
+        },
+        {
+          "kind": "portrait",
+          "id": "kurt-goldstein",
+          "ext": "jpg",
+          "src": "/assets/autori/kurt-goldstein.jpg",
+          "alt": "Kurt Goldstein",
+          "title": "Kurt Goldstein",
+          "offset": 4990,
+          "attachedTo": 4
+        },
+        {
+          "kind": "cover",
+          "id": "winnicott-gioco-e-realta",
+          "ext": "jpg",
+          "src": "/assets/libri/winnicott-gioco-e-realta.jpg",
+          "alt": "Gioco e realtà",
+          "title": "Gioco e realtà",
+          "offset": 6230,
+          "attachedTo": 5
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 4,
+        "cover": 4,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 1,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 6 - La relazione come condizione strutturale della soggettività.md",
+      "asseDir": "Asse 1 - Ontologico - fenomenologico",
+      "fmAsseSlug": "asse-1-ontologico-fenomenologico",
+      "fmChapter": 6,
+      "fmSlug": "capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita",
+      "fmTitle": "La relazione come condizione strutturale della soggettività",
+      "bodyChars": 6301,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 792,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1650,
+          "refId": "r2"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Per Merleau-Ponty «Non esiste un Io che prima sia solo e poi entri in relazione.»"
+        },
+        {
+          "num": "2",
+          "text": "E*ssere-con* non è una proprietà aggiuntiva, ma **la forma originaria dell’esistenza**."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Merleau-Ponty",
+          "title": "Merleau-Ponty",
+          "offset": 797,
+          "attachedTo": 0
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 1,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 1,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 7 - Il campo intenzionale come struttura dell’esperienza.md",
+      "asseDir": "Asse 1 - Ontologico - fenomenologico",
+      "fmAsseSlug": "asse-1-ontologico-fenomenologico",
+      "fmChapter": 7,
+      "fmSlug": "capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza",
+      "fmTitle": "Il campo intenzionale come struttura dell’esperienza",
+      "bodyChars": 6829,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 730,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1375,
+          "refId": "r2"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Il concetto di campo intenzionale riprende la nozione fenomenologica di orizzonte, senza ridurla a una facoltà mentale o a una competenza funzionale."
+        },
+        {
+          "num": "2",
+          "text": "Per Merleau-Ponty «La coscienza è già fuori di sé, nel mondo.»."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Merleau-Ponty",
+          "title": "Merleau-Ponty",
+          "offset": 1380,
+          "attachedTo": 1
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 1,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 1,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 1 - Ontologico - fenomenologico/Capitolo 8 - Soglia tra ontologia e genesi morale.md",
+      "asseDir": "Asse 1 - Ontologico - fenomenologico",
+      "fmAsseSlug": "asse-1-ontologico-fenomenologico",
+      "fmChapter": 8,
+      "fmSlug": "capitolo-8-soglia-tra-ontologia-e-genesi-morale",
+      "fmTitle": "Soglia tra ontologia e genesi morale",
+      "bodyChars": 6236,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1163,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 3433,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 4036,
+          "refId": "r3"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Per Paul Ricoeur «Non ogni identità è già imputabile.»."
+        },
+        {
+          "num": "2",
+          "text": "Il passaggio dall’essere al dover-essere non è logicamente deducibile, ma implica un mutamento di statuto dell’esperienza."
+        },
+        {
+          "num": "3",
+          "text": "Per Levinas «L’altro non è un contenuto dell’esperienza, ma ciò che la interrompe e la obbliga.»"
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "emmanuel-levinas",
+          "ext": "jpg",
+          "src": "/assets/autori/emmanuel-levinas.jpg",
+          "alt": "Levinas",
+          "title": "Levinas",
+          "offset": 4041,
+          "attachedTo": 2
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 1,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 2,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 1 – Statuto dell’asse affettivo–morale.md",
+      "asseDir": "Asse 2 - Affettivo -morale",
+      "fmAsseSlug": "asse-2-affettivo-morale",
+      "fmChapter": 1,
+      "fmSlug": "capitolo-1-statuto-dell-asse-affettivo-morale",
+      "fmTitle": "Statuto dell’asse affettivo–morale",
+      "bodyChars": 8995,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 765,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 2803,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 3565,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 5285,
+          "refId": "r4"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Il riferimento è alla tradizione psicoanalitica delle relazioni oggettuali (Klein, Winnicott), qui assunta in senso genetico e non normativo. Si veda **Donald Winnicott,** *The Maturational Processes and the Facilitating Environment, per i c*oncetti di *capacity for concern*, sopravvivenza dell’oggetto, responsabilità pre-normativa e **Melanie Klein,** *Envy and Gratitude, per il concetto di* colpa come segnale di integrazione dell’oggetto."
+        },
+        {
+          "num": "2",
+          "text": "Si veda **Maurice Merleau-Ponty,** *Il visibile e l’invisibile,* per il tema della presenza che continua ad operare in assenza: «L’assenza non è un nulla, ma una modalità della presenza.»."
+        },
+        {
+          "num": "3",
+          "text": "Per Winnicott «La responsabilità emerge quando il bambino sente di poter danneggiare l’oggetto e desidera ripararlo»."
+        },
+        {
+          "num": "4",
+          "text": "Per **Winnicott**, *The Capacity for Concern,* «Il senso di colpa implica interesse e preoccupazione per l’oggetto» e per **Klein**, Posizione depressiva, la colpa segnala l’integrazione dell’oggetto amato e odiato."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "melanie-klein",
+          "ext": "jpg",
+          "src": "/assets/autori/melanie-klein.jpg",
+          "alt": "Melanie Klein",
+          "title": "Melanie Klein",
+          "offset": 770,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "winnicott-maturational-processes",
+          "ext": "jpg",
+          "src": "/assets/libri/winnicott-maturational-processes.jpg",
+          "alt": "The Maturational Processes and the Facilitating Environment",
+          "title": "The Maturational Processes and the Facilitating Environment",
+          "offset": 994,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "klein-envy-and-gratitude",
+          "ext": "jpg",
+          "src": "/assets/libri/klein-envy-and-gratitude.jpg",
+          "alt": "Envy and Gratitude",
+          "title": "Envy and Gratitude",
+          "offset": 1307,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 2808,
+          "attachedTo": 1
+        },
+        {
+          "kind": "cover",
+          "id": "winnicott-capacity-for-concern",
+          "ext": "jpg",
+          "src": "/assets/libri/winnicott-capacity-for-concern.jpg",
+          "alt": "The Capacity for Concern",
+          "title": "The Capacity for Concern",
+          "offset": 5290,
+          "attachedTo": 3
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 2,
+        "cover": 3,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 1,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 2 – L’altro come istanza interna.md",
+      "asseDir": "Asse 2 - Affettivo -morale",
+      "fmAsseSlug": "asse-2-affettivo-morale",
+      "fmChapter": 2,
+      "fmSlug": "capitolo-2-l-altro-come-istanza-interna",
+      "fmTitle": "L’altro come istanza interna",
+      "bodyChars": 7382,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 370,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 989,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 1643,
+          "refId": "r3"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Traducendo Winnicott in linguaggio **fenomenologico-genetico**, non clinico, possiamo dire che la relazione diventa interiormente operante senza diventare rappresentazione."
+        },
+        {
+          "num": "2",
+          "text": "**Donald Winnicott,** *The Maturational Processes and the Facilitating Environment, par*la di continuità dell’oggetto oltre la presenza, non come immagine ma come “realtà sopravvissuta”: «The object survives the subject’s destructiveness». Stiamo parlando di **vincolo affettivo interiorizzato**, non di regolazione dell’ansia; non siamo ancora a Bowlby e alle nozioni di attaccamento e memoria di base sicura."
+        },
+        {
+          "num": "3",
+          "text": "Diversamente dal Super-io freudiano, l’istanza qui descritta non formula giudizi né comandi."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "cover",
+          "id": "winnicott-maturational-processes",
+          "ext": "jpg",
+          "src": "/assets/libri/winnicott-maturational-processes.jpg",
+          "alt": "The Maturational Processes and the Facilitating Environment",
+          "title": "The Maturational Processes and the Facilitating Environment",
+          "offset": 994,
+          "attachedTo": 1
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 0,
+        "cover": 1,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 2,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 3 – La colpa come esperienza affettiva strutturante.md",
+      "asseDir": "Asse 2 - Affettivo -morale",
+      "fmAsseSlug": "asse-2-affettivo-morale",
+      "fmChapter": 3,
+      "fmSlug": "capitolo-3-la-colpa-come-esperienza-affettiva-strutturante",
+      "fmTitle": "La colpa come esperienza affettiva strutturante",
+      "bodyChars": 8806,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 478,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 2193,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 2817,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 3310,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 5424,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 7405,
+          "refId": "r6"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda **Donald Winnicott,** *The Capacity for Concern, per*  la colpa come segnale che l’oggetto conta interiormente: «Concern implies guilt and a sense of responsibility»."
+        },
+        {
+          "num": "2",
+          "text": "Per **Donald Winnicott** “sentirsi causa” implica “possibilità di restare in relazione”."
+        },
+        {
+          "num": "3",
+          "text": "Per Merleau-Ponty «Prima del giudizio c’è un modo di essere toccati dal mondo»; l’esperienza affettiva pre-riflessiva viene prima."
+        },
+        {
+          "num": "4",
+          "text": "Si veda **Melanie Klein,** *Envy and Gratitude, per la* colpa come esito dell’integrazione amore/odio; La colpa nasce quando l’aggressività riguarda un oggetto che è anche amato."
+        },
+        {
+          "num": "5",
+          "text": "Per Winnicott «Solo se l’oggetto sopravvive la colpa diventa tollerabile», **non è una questione di intensità**, ma di *struttura*."
+        },
+        {
+          "num": "6",
+          "text": "Si veda **Merleau-Ponty** per i momenti di passaggio, trasformazione, cambiamento di statuto dell’esperienza."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "cover",
+          "id": "winnicott-capacity-for-concern",
+          "ext": "jpg",
+          "src": "/assets/libri/winnicott-capacity-for-concern.jpg",
+          "alt": "The Capacity for Concern",
+          "title": "The Capacity for Concern",
+          "offset": 483,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Merleau-Ponty",
+          "title": "Merleau-Ponty",
+          "offset": 2822,
+          "attachedTo": 2
+        },
+        {
+          "kind": "portrait",
+          "id": "melanie-klein",
+          "ext": "jpg",
+          "src": "/assets/autori/melanie-klein.jpg",
+          "alt": "Melanie Klein",
+          "title": "Melanie Klein",
+          "offset": 3315,
+          "attachedTo": 3
+        },
+        {
+          "kind": "cover",
+          "id": "klein-envy-and-gratitude",
+          "ext": "jpg",
+          "src": "/assets/libri/klein-envy-and-gratitude.jpg",
+          "alt": "Envy and Gratitude",
+          "title": "Envy and Gratitude",
+          "offset": 3539,
+          "attachedTo": 3
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 2,
+        "cover": 2,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 3,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 4 – Riparazione e responsabilità.md",
+      "asseDir": "Asse 2 - Affettivo -morale",
+      "fmAsseSlug": "asse-2-affettivo-morale",
+      "fmChapter": 4,
+      "fmSlug": "capitolo-4-riparazione-e-responsabilita",
+      "fmTitle": "Riparazione e responsabilità",
+      "bodyChars": 8567,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 474,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1596,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 2411,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 3334,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 4535,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 5058,
+          "refId": "r6"
+        },
+        {
+          "num": "7",
+          "offset": 6631,
+          "refId": "r7"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Per **Donald Winnicott,** *The Capacity for Concern,* la colpa diventa feconda solo se può trasformarsi in gesto di riparazione: «Guilt becomes useful only when reparation is possible»."
+        },
+        {
+          "num": "2",
+          "text": "Si veda **Winnicott** per la riparazione come evento relazionale, spesso pre-verbale e corporeo: «Reparation is not a moral act, but a sign of concern»."
+        },
+        {
+          "num": "3",
+          "text": "Per **Donald Winnicott,** *The Use of an Object,* «The object survives the subject’s destructiveness»."
+        },
+        {
+          "num": "4",
+          "text": "Cfr. Winnicott: «Reparation does not undo the damage, but changes its meaning»."
+        },
+        {
+          "num": "5",
+          "text": "La responsabilità è qui intesa come risposta a un altro concreto, non come obbedienza a una legge. Si veda **Emmanuel Levinas** per la responsabilità come risposta all’altro, *prima* della norma»."
+        },
+        {
+          "num": "6",
+          "text": "Il modello qui proposto si discosta radicalmente dalla fondazione normativa della responsabilità."
+        },
+        {
+          "num": "7",
+          "text": "Si veda **Maurice Merleau-Ponty** per una temporalità vissuta, non narrativa né storica: «Il tempo è ciò che rende possibile la trasformazione senza azzeramento»."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "cover",
+          "id": "winnicott-capacity-for-concern",
+          "ext": "jpg",
+          "src": "/assets/libri/winnicott-capacity-for-concern.jpg",
+          "alt": "The Capacity for Concern",
+          "title": "The Capacity for Concern",
+          "offset": 479,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "winnicott-use-of-an-object",
+          "ext": "jpg",
+          "src": "/assets/libri/winnicott-use-of-an-object.jpg",
+          "alt": "The Use of an Object",
+          "title": "The Use of an Object",
+          "offset": 2416,
+          "attachedTo": 2
+        },
+        {
+          "kind": "portrait",
+          "id": "emmanuel-levinas",
+          "ext": "jpg",
+          "src": "/assets/autori/emmanuel-levinas.jpg",
+          "alt": "Emmanuel Levinas",
+          "title": "Emmanuel Levinas",
+          "offset": 4540,
+          "attachedTo": 4
+        },
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 6636,
+          "attachedTo": 6
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 2,
+        "cover": 2,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 3,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 5 – Confronto psicoanalitico strutturale.md",
+      "asseDir": "Asse 2 - Affettivo -morale",
+      "fmAsseSlug": "asse-2-affettivo-morale",
+      "fmChapter": 5,
+      "fmSlug": "capitolo-5-confronto-psicoanalitico-strutturale",
+      "fmTitle": "Confronto psicoanalitico strutturale",
+      "bodyChars": 8269,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1284,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 3209,
+          "refId": "r2"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda **Sigmund Freud,** *L’Io e l’Es* (1923), «Il Super-io può diventare tanto più severo quanto più il soggetto è virtuoso»."
+        },
+        {
+          "num": "2",
+          "text": "Per **Melanie Klein,** *Envy and Gratitude,* la colpa depressiva nasce quando l’oggetto è riconosciuto come uno e continuo."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "sigmund-freud",
+          "ext": "jpg",
+          "src": "/assets/autori/sigmund-freud.jpg",
+          "alt": "Sigmund Freud",
+          "title": "Sigmund Freud",
+          "offset": 1289,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "melanie-klein",
+          "ext": "jpg",
+          "src": "/assets/autori/melanie-klein.jpg",
+          "alt": "Melanie Klein",
+          "title": "Melanie Klein",
+          "offset": 3214,
+          "attachedTo": 1
+        },
+        {
+          "kind": "cover",
+          "id": "klein-envy-and-gratitude",
+          "ext": "jpg",
+          "src": "/assets/libri/klein-envy-and-gratitude.jpg",
+          "alt": "Envy and Gratitude",
+          "title": "Envy and Gratitude",
+          "offset": 3438,
+          "attachedTo": 1
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 2,
+        "cover": 1,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 6 – Temporalità dello sviluppo morale.md",
+      "asseDir": "Asse 2 - Affettivo -morale",
+      "fmAsseSlug": "asse-2-affettivo-morale",
+      "fmChapter": 6,
+      "fmSlug": "capitolo-6-temporalita-dello-sviluppo-morale",
+      "fmTitle": "Temporalità dello sviluppo morale",
+      "bodyChars": 8125,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 646,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1365,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 2362,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 3902,
+          "refId": "r4"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda **Maurice Merleau-Ponty** per una temporalità come struttura dell’esperienza, non come cronologia: «Il tempo non è una successione di istanti, ma il modo stesso in cui l’esperienza si articola»."
+        },
+        {
+          "num": "2",
+          "text": "Qui ci si distanzia da modelli stadiali quali quelli di Piaget o Kohlberg."
+        },
+        {
+          "num": "3",
+          "text": "Per **Donald Winnicott** regolazione e dipendenza primaria non sono ancora moralità, ma presupposti necessari: «Before concern, there must be sufficient ego organization»."
+        },
+        {
+          "num": "4",
+          "text": "Per **Winnicott,** *The Capacity for Concern*, *The Use of an Object*, «Only where reparation is possible can guilt become constructive»."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 651,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "winnicott-capacity-for-concern",
+          "ext": "jpg",
+          "src": "/assets/libri/winnicott-capacity-for-concern.jpg",
+          "alt": "The Capacity for Concern",
+          "title": "The Capacity for Concern",
+          "offset": 3907,
+          "attachedTo": 3
+        },
+        {
+          "kind": "cover",
+          "id": "winnicott-use-of-an-object",
+          "ext": "jpg",
+          "src": "/assets/libri/winnicott-use-of-an-object.jpg",
+          "alt": "The Use of an Object",
+          "title": "The Use of an Object",
+          "offset": 4148,
+          "attachedTo": 3
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 1,
+        "cover": 2,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 2,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 7 – Dove l’Asse affettivo–morale può fallire.md",
+      "asseDir": "Asse 2 - Affettivo -morale",
+      "fmAsseSlug": "asse-2-affettivo-morale",
+      "fmChapter": 7,
+      "fmSlug": "capitolo-7-dove-l-asse-affettivo-morale-puo-fallire",
+      "fmTitle": "Dove l’Asse affettivo–morale può fallire",
+      "bodyChars": 6138,
+      "markers": [],
+      "defs": [],
+      "imgs": [],
+      "imgsByKind": {
+        "portrait": 0,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 2 - Affettivo -morale/Capitolo 8 – Raccordo con l’Asse normativo–educativo.md",
+      "asseDir": "Asse 2 - Affettivo -morale",
+      "fmAsseSlug": "asse-2-affettivo-morale",
+      "fmChapter": 8,
+      "fmSlug": "capitolo-8-raccordo-con-l-asse-normativo-educativo",
+      "fmTitle": "Raccordo con l’Asse normativo–educativo",
+      "bodyChars": 5962,
+      "markers": [],
+      "defs": [],
+      "imgs": [],
+      "imgsByKind": {
+        "portrait": 0,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 3 - Normativo - educativo/Capitolo 1 - Norma, normatività, giudizio_ distinzione concettuale.md",
+      "asseDir": "Asse 3 - Normativo - educativo",
+      "fmAsseSlug": "asse-3-normativo-educativo",
+      "fmChapter": 1,
+      "fmSlug": "capitolo-1-norma-normativita-giudizio-distinzione-concettuale",
+      "fmTitle": "Norma, normatività, giudizio: distinzione concettuale",
+      "bodyChars": 8262,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 2296,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 5095,
+          "refId": "r2"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Cfr. **Tommaso d'Aquino**, *Summa Theologiae*, I-II, q. 90, a. 1; *De veritate*, q. 14."
+        },
+        {
+          "num": "2",
+          "text": "Il riferimento a Kant è qui funzionale come contro-modello concettuale, non come oggetto di discussione esegetica."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "cover",
+          "id": "tommaso-summa-theologiae",
+          "ext": "jpg",
+          "src": "/assets/libri/tommaso-summa-theologiae.jpg",
+          "alt": "Summa Theologiae",
+          "title": "Summa Theologiae",
+          "offset": 2301,
+          "attachedTo": 0
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 0,
+        "cover": 1,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 1,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 3 - Normativo - educativo/Capitolo 2 - Dalla colpa (Asse 2) al giudizio.md",
+      "asseDir": "Asse 3 - Normativo - educativo",
+      "fmAsseSlug": "asse-3-normativo-educativo",
+      "fmChapter": 2,
+      "fmSlug": "capitolo-2-dalla-colpa-asse-2-al-giudizio",
+      "fmTitle": "Dalla colpa (Asse 2) al giudizio",
+      "bodyChars": 7497,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 3642,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 4687,
+          "refId": "r2"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Cfr. **Jean Piaget**, *Il giudizio morale nel bambino*. Il riferimento è qui utilizzato in funzione delimitativa, non come fondamento teorico dell’asse normativo–educativo; comprendere o negoziare una regola non equivale all’esercizio del giudizio normativo."
+        },
+        {
+          "num": "2",
+          "text": "Cfr. **Maurice Merleau-Ponty**, *Fenomenologia della percezione*, in particolare i capitoli su giudizio e significato."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "jean-piaget",
+          "ext": "png",
+          "src": "/assets/autori/jean-piaget.png",
+          "alt": "Jean Piaget",
+          "title": "Jean Piaget",
+          "offset": 3647,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "piaget-giudizio-morale-nel-bambino",
+          "ext": "jpg",
+          "src": "/assets/libri/piaget-giudizio-morale-nel-bambino.jpg",
+          "alt": "Il giudizio morale nel bambino",
+          "title": "Il giudizio morale nel bambino",
+          "offset": 3865,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 4692,
+          "attachedTo": 1
+        },
+        {
+          "kind": "cover",
+          "id": "merleau-ponty-fenomenologia-della-percezione",
+          "ext": "jpg",
+          "src": "/assets/libri/merleau-ponty-fenomenologia-della-percezione.jpg",
+          "alt": "Fenomenologia della percezione",
+          "title": "Fenomenologia della percezione",
+          "offset": 4940,
+          "attachedTo": 1
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 2,
+        "cover": 2,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 3 - Normativo - educativo/Capitolo 3 - Verità educativa_ orientamento senza arbitrarietà.md",
+      "asseDir": "Asse 3 - Normativo - educativo",
+      "fmAsseSlug": "asse-3-normativo-educativo",
+      "fmChapter": 3,
+      "fmSlug": "capitolo-3-verita-educativa-orientamento-senza-arbitrarieta",
+      "fmTitle": "Verità educativa: orientamento senza arbitrarietà",
+      "bodyChars": 8227,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1009,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 3342,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 5571,
+          "refId": "r3"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Cfr. **Agostino d'Ippona**, *De magistro*: la verità non viene trasmessa dall’esterno, ma riconosciuta interiormente nel giudizio del soggetto."
+        },
+        {
+          "num": "2",
+          "text": "Cfr. **Maurice Merleau-Ponty**, *Fenomenologia della percezione*: il giudizio come presa di posizione incarnata nel mondo, non come deduzione astratta."
+        },
+        {
+          "num": "3",
+          "text": "Sul concetto di “orizzonti di senso” come condizione della valutazione, cfr. **Charles Taylor**, *Le fonti del sé*."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "agostino-d-ippona",
+          "ext": "jpg",
+          "src": "/assets/autori/agostino-d-ippona.jpg",
+          "alt": "Agostino d'Ippona",
+          "title": "Agostino d'Ippona",
+          "offset": 1014,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "agostino-de-magistro",
+          "ext": "jpg",
+          "src": "/assets/libri/agostino-de-magistro.jpg",
+          "alt": "De magistro",
+          "title": "De magistro",
+          "offset": 1250,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 3347,
+          "attachedTo": 1
+        },
+        {
+          "kind": "cover",
+          "id": "merleau-ponty-fenomenologia-della-percezione",
+          "ext": "jpg",
+          "src": "/assets/libri/merleau-ponty-fenomenologia-della-percezione.jpg",
+          "alt": "Fenomenologia della percezione",
+          "title": "Fenomenologia della percezione",
+          "offset": 3595,
+          "attachedTo": 1
+        },
+        {
+          "kind": "portrait",
+          "id": "charles-taylor",
+          "ext": "jpg",
+          "src": "/assets/autori/charles-taylor.jpg",
+          "alt": "Charles Taylor",
+          "title": "Charles Taylor",
+          "offset": 5576,
+          "attachedTo": 2
+        },
+        {
+          "kind": "cover",
+          "id": "taylor-fonti-del-se",
+          "ext": "jpg",
+          "src": "/assets/libri/taylor-fonti-del-se.jpg",
+          "alt": "Le fonti del sé",
+          "title": "Le fonti del sé",
+          "offset": 5803,
+          "attachedTo": 2
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 3,
+        "cover": 3,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 3 - Normativo - educativo/Capitolo 4 - Educare senza manipolare_ autorità e responsabilità.md",
+      "asseDir": "Asse 3 - Normativo - educativo",
+      "fmAsseSlug": "asse-3-normativo-educativo",
+      "fmChapter": 4,
+      "fmSlug": "capitolo-4-educare-senza-manipolare-autorita-e-responsabilita",
+      "fmTitle": "Educare senza manipolare: autorità e responsabilità",
+      "bodyChars": 7819,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1051,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 3823,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 5660,
+          "refId": "r3"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Cfr. **Hannah Arendt**, *La crisi dell’educazione*; *Sulla violenza*."
+        },
+        {
+          "num": "2",
+          "text": "Cfr. **Paul Ricoeur**, *Sé come un altro*, in particolare i capitoli sull’imputazione a sé e sulla responsabilità. La “responsabilità” non deve essere intesa come auto-controllo morale."
+        },
+        {
+          "num": "3",
+          "text": "Cfr. **Michel Foucault**, *Sorvegliare e punire*. Il riferimento è utilizzato come contro-campo critico, non come fondamento dell’autorità educativa."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "hannah-arendt",
+          "ext": "jpg",
+          "src": "/assets/autori/hannah-arendt.jpg",
+          "alt": "Hannah Arendt",
+          "title": "Hannah Arendt",
+          "offset": 1056,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "arendt-sulla-violenza",
+          "ext": "jpg",
+          "src": "/assets/libri/arendt-sulla-violenza.jpg",
+          "alt": "Sulla violenza",
+          "title": "Sulla violenza",
+          "offset": 1280,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "ricoeur-se-come-un-altro",
+          "ext": "jpg",
+          "src": "/assets/libri/ricoeur-se-come-un-altro.jpg",
+          "alt": "Sé come un altro",
+          "title": "Sé come un altro",
+          "offset": 3828,
+          "attachedTo": 1
+        },
+        {
+          "kind": "portrait",
+          "id": "michel-foucault",
+          "ext": "jpg",
+          "src": "/assets/autori/michel-foucault.jpg",
+          "alt": "Michel Foucault",
+          "title": "Michel Foucault",
+          "offset": 5665,
+          "attachedTo": 2
+        },
+        {
+          "kind": "cover",
+          "id": "foucault-sorvegliare-e-punire",
+          "ext": "jpg",
+          "src": "/assets/libri/foucault-sorvegliare-e-punire.jpg",
+          "alt": "Sorvegliare e punire",
+          "title": "Sorvegliare e punire",
+          "offset": 5895,
+          "attachedTo": 2
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 2,
+        "cover": 3,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 3 - Normativo - educativo/Capitolo 5 - I fallimenti della normatività_ relativismo, moralismo e prestazione.md",
+      "asseDir": "Asse 3 - Normativo - educativo",
+      "fmAsseSlug": "asse-3-normativo-educativo",
+      "fmChapter": 5,
+      "fmSlug": "capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione",
+      "fmTitle": "I fallimenti della normatività: relativismo, moralismo e prestazione",
+      "bodyChars": 7976,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1064,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 3330,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 5329,
+          "refId": "r3"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Cfr. **Alasdair MacIntyre**, *Dopo la virtù*. Il riferimento è utilizzato come diagnosi del collasso del linguaggio normativo, non come proposta comunitarista."
+        },
+        {
+          "num": "2",
+          "text": "Cfr. **Bernard Stiegler**, *Prendersi cura. Della gioventù e delle generazioni*. La prestazione è qui intesa come sostituto funzionale della normatività, non come semplice criterio di efficienza."
+        },
+        {
+          "num": "3",
+          "text": "Cfr. **Lawrence Kohlberg**, *Essays on Moral Development*. Il riferimento è utilizzato per mostrare una riduzione del giudizio a schema cognitivo, non per negare il valore descrittivo del modello."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "alasdair-macintyre",
+          "ext": "jpg",
+          "src": "/assets/autori/alasdair-macintyre.jpg",
+          "alt": "Alasdair MacIntyre",
+          "title": "Alasdair MacIntyre",
+          "offset": 1069,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "macintyre-dopo-la-virtu",
+          "ext": "jpg",
+          "src": "/assets/libri/macintyre-dopo-la-virtu.jpg",
+          "alt": "Dopo la virtù",
+          "title": "Dopo la virtù",
+          "offset": 1308,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "bernard-stiegler",
+          "ext": "jpg",
+          "src": "/assets/autori/bernard-stiegler.jpg",
+          "alt": "Bernard Stiegler",
+          "title": "Bernard Stiegler",
+          "offset": 3335,
+          "attachedTo": 1
+        },
+        {
+          "kind": "cover",
+          "id": "stiegler-prendersi-cura",
+          "ext": "jpg",
+          "src": "/assets/libri/stiegler-prendersi-cura.jpg",
+          "alt": "Prendersi cura. Della gioventù e delle generazioni",
+          "title": "Prendersi cura. Della gioventù e delle generazioni",
+          "offset": 3568,
+          "attachedTo": 1
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 2,
+        "cover": 2,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 1,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 3 - Normativo - educativo/Capitolo 6 - Il limite del giudizio_ quando la norma non è sovrana.md",
+      "asseDir": "Asse 3 - Normativo - educativo",
+      "fmAsseSlug": "asse-3-normativo-educativo",
+      "fmChapter": 6,
+      "fmSlug": "capitolo-6-il-limite-del-giudizio-quando-la-norma-non-e-sovrana",
+      "fmTitle": "Il limite del giudizio: quando la norma non è sovrana",
+      "bodyChars": 6152,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 923,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 3240,
+          "refId": "r2"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Cfr. **Maurice Merleau-Ponty**, *Il visibile e l’invisibile*: il reale eccede ogni tematizzazione compiuta del senso."
+        },
+        {
+          "num": "2",
+          "text": "Cfr. **Hannah Arendt**, *Responsabilità e giudizio*. Il riferimento è utilizzato per pensare il giudizio in condizioni di irresolubilità, non come applicazione normativa."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 928,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "hannah-arendt",
+          "ext": "jpg",
+          "src": "/assets/autori/hannah-arendt.jpg",
+          "alt": "Hannah Arendt",
+          "title": "Hannah Arendt",
+          "offset": 3245,
+          "attachedTo": 1
+        },
+        {
+          "kind": "cover",
+          "id": "arendt-responsabilita-e-giudizio",
+          "ext": "jpg",
+          "src": "/assets/libri/arendt-responsabilita-e-giudizio.jpg",
+          "alt": "Responsabilità e giudizio",
+          "title": "Responsabilità e giudizio",
+          "offset": 3469,
+          "attachedTo": 1
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 2,
+        "cover": 1,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 1 - Lo statuto del limite reale.md",
+      "asseDir": "Asse 4 - Separazione e Limite",
+      "fmAsseSlug": "asse-4-separazione-e-limite",
+      "fmChapter": 1,
+      "fmSlug": "capitolo-1-lo-statuto-del-limite-reale",
+      "fmTitle": "Lo statuto del limite reale",
+      "bodyChars": 7226,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 2881,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 5050,
+          "refId": "r2"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda Sigmund Freud, *Lutto e melanconia,* per l’esistenza di un incontro con il reale **non riducibile a dinamica regolativa e** Wilfred Bion, *Learning from Experience,* per l’idea di esperienze non immediatamente trasformabili in pensiero."
+        },
+        {
+          "num": "2",
+          "text": "Il reale non è patologico in sé."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "sigmund-freud",
+          "ext": "jpg",
+          "src": "/assets/autori/sigmund-freud.jpg",
+          "alt": "Sigmund Freud",
+          "title": "Sigmund Freud",
+          "offset": 2886,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "bion-learning-from-experience",
+          "ext": "jpg",
+          "src": "/assets/libri/bion-learning-from-experience.jpg",
+          "alt": "Learning from Experience",
+          "title": "Learning from Experience",
+          "offset": 3110,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "freud-lutto-e-melanconia",
+          "ext": "jpg",
+          "src": "/assets/libri/freud-lutto-e-melanconia.jpg",
+          "alt": "Lutto e melanconia",
+          "title": "Lutto e melanconia",
+          "offset": 3350,
+          "attachedTo": 0
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 1,
+        "cover": 2,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 1,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 2 - L’eccedenza.md",
+      "asseDir": "Asse 4 - Separazione e Limite",
+      "fmAsseSlug": "asse-4-separazione-e-limite",
+      "fmChapter": 2,
+      "fmSlug": "capitolo-2-l-eccedenza",
+      "fmTitle": "L’eccedenza",
+      "bodyChars": 7527,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1068,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 2545,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 4251,
+          "refId": "r3"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Per Martin Heidegger, *Essere e tempo, un* mondo non è mai completamente “a disposizione” e in Hans-Georg Gadamer, *Verità e metodo,* l’esperienza autentica è quella che **smentisce** l’aspettativa."
+        },
+        {
+          "num": "2",
+          "text": "Per Maurice Merleau-Ponty “il soggetto non è origine sovrana del senso”."
+        },
+        {
+          "num": "3",
+          "text": "Si veda Helmuth Plessner, *I gradi dell’organico e l’uomo*."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "martin-heidegger",
+          "ext": "jpg",
+          "src": "/assets/autori/martin-heidegger.jpg",
+          "alt": "Martin Heidegger",
+          "title": "Martin Heidegger",
+          "offset": 1073,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "gadamer-verita-e-metodo",
+          "ext": "jpg",
+          "src": "/assets/libri/gadamer-verita-e-metodo.jpg",
+          "alt": "Verità e metodo",
+          "title": "Verità e metodo",
+          "offset": 1306,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "heidegger-essere-e-tempo",
+          "ext": "jpg",
+          "src": "/assets/libri/heidegger-essere-e-tempo.jpg",
+          "alt": "Essere e tempo",
+          "title": "Essere e tempo",
+          "offset": 1522,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 2550,
+          "attachedTo": 1
+        },
+        {
+          "kind": "portrait",
+          "id": "helmuth-plessner",
+          "ext": "jpg",
+          "src": "/assets/autori/helmuth-plessner.jpg",
+          "alt": "Helmuth Plessner",
+          "title": "Helmuth Plessner",
+          "offset": 4256,
+          "attachedTo": 2
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 3,
+        "cover": 2,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 3 - La perdita.md",
+      "asseDir": "Asse 4 - Separazione e Limite",
+      "fmAsseSlug": "asse-4-separazione-e-limite",
+      "fmChapter": 3,
+      "fmSlug": "capitolo-3-la-perdita",
+      "fmTitle": "La perdita",
+      "bodyChars": 6295,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1811,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 2106,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 4144,
+          "refId": "r3"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda Wilfred Bion per il concetto di esperienze che non possono essere “risolte” ma solo attraversate."
+        },
+        {
+          "num": "2",
+          "text": "Si veda Franco Basaglia per una critica alla patologizzazione dell’esperienza umana."
+        },
+        {
+          "num": "3",
+          "text": "Si veda Daniel Stern per il concetto di rottura delle aspettative di coerenza e Colwyn Trevarthen per quello di interruzione delle sintonie."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "franco-basaglia",
+          "ext": "jpg",
+          "src": "/assets/autori/franco-basaglia.jpg",
+          "alt": "Franco Basaglia",
+          "title": "Franco Basaglia",
+          "offset": 2111,
+          "attachedTo": 1
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 1,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 2,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 4 - La separazione.md",
+      "asseDir": "Asse 4 - Separazione e Limite",
+      "fmAsseSlug": "asse-4-separazione-e-limite",
+      "fmChapter": 4,
+      "fmSlug": "capitolo-4-la-separazione",
+      "fmTitle": "La separazione",
+      "bodyChars": 6138,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 2053,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 4589,
+          "refId": "r2"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda Sigmund Freud per il concetto di onnipotenza infantile come struttura, non patologia ed Wilfred Bion per quello di tolleranza della frustrazione vs onnipotenza difensiva."
+        },
+        {
+          "num": "2",
+          "text": "Si veda in Donald Winnicott il concetto di holding senza riparazione e in Emmanuel Levinas quello di  presenza dell’altro senza appropriazione."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "sigmund-freud",
+          "ext": "jpg",
+          "src": "/assets/autori/sigmund-freud.jpg",
+          "alt": "Sigmund Freud",
+          "title": "Sigmund Freud",
+          "offset": 2058,
+          "attachedTo": 0
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 1,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 1,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 5 - Il rischio educativo.md",
+      "asseDir": "Asse 4 - Separazione e Limite",
+      "fmAsseSlug": "asse-4-separazione-e-limite",
+      "fmChapter": 5,
+      "fmSlug": "capitolo-5-il-rischio-educativo",
+      "fmTitle": "Il rischio educativo",
+      "bodyChars": 5859,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1058,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1486,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 2265,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 3075,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 3705,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 4209,
+          "refId": "r6"
+        },
+        {
+          "num": "7",
+          "offset": 4667,
+          "refId": "r7"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda Wilfred Bion sulle difficoltà dell’adulto a tollerare stati di non-sapere."
+        },
+        {
+          "num": "2",
+          "text": "Si veda Donald Winnicott su un “ambiente che non lascia mai cadere”."
+        },
+        {
+          "num": "3",
+          "text": "Si veda in Wilfred Bion il tema dell’esperienza prima del pensiero."
+        },
+        {
+          "num": "4",
+          "text": "Si veda in Sigmund Freud il lavoro del lutto e in Melanie Klein la necessità di distinguere la riparazione dalla riparazione forzata."
+        },
+        {
+          "num": "5",
+          "text": "Si vedano in proposito Michel Foucault, Dispositivi di valutazione e Byung-Chul Han, “Società della prestazione”."
+        },
+        {
+          "num": "6",
+          "text": "Si veda in Donald Winnicott il concetto di adattamento falso."
+        },
+        {
+          "num": "7",
+          "text": "Naturalmente questo non è un invito all’esposizione inutile al dolore."
+        }
+      ],
+      "imgs": [],
+      "imgsByKind": {
+        "portrait": 0,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 7,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 6 - Temporalità del limite.md",
+      "asseDir": "Asse 4 - Separazione e Limite",
+      "fmAsseSlug": "asse-4-separazione-e-limite",
+      "fmChapter": 6,
+      "fmSlug": "capitolo-6-temporalita-del-limite",
+      "fmTitle": "Temporalità del limite",
+      "bodyChars": 6987,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1586,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 2043,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 2905,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 3543,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 4441,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 4992,
+          "refId": "r6"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Questo asse non autorizza interventi anticipatori ‘per preparare’ il bambino”."
+        },
+        {
+          "num": "2",
+          "text": "Si veda Jerome Bruner per un concetto di sviluppo come trasformazione di forme, non tappe rigide."
+        },
+        {
+          "num": "3",
+          "text": "Si veda Maurice Merleau-Ponty sul corpo come primo luogo del senso."
+        },
+        {
+          "num": "4",
+          "text": "Si veda Paul Ricoeur su irreversibilità e narrazione."
+        },
+        {
+          "num": "5",
+          "text": "Si veda Wilfred Bion sulle oscillazioni della stabilizzazione temporale tra tolleranza e difesa."
+        },
+        {
+          "num": "6",
+          "text": "Si veda George Herbert Mead per le trasformazioni del sé nei contesti sociali."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "jerome-bruner",
+          "ext": "png",
+          "src": "/assets/autori/jerome-bruner.png",
+          "alt": "Jerome Bruner",
+          "title": "Jerome Bruner",
+          "offset": 2048,
+          "attachedTo": 1
+        },
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 2910,
+          "attachedTo": 2
+        },
+        {
+          "kind": "portrait",
+          "id": "george-herbert-mead",
+          "ext": "jpg",
+          "src": "/assets/autori/george-herbert-mead.jpg",
+          "alt": "George Herbert Mead",
+          "title": "George Herbert Mead",
+          "offset": 4997,
+          "attachedTo": 5
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 3,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 3,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 7 - Statuto simbolico della perdita.md",
+      "asseDir": "Asse 4 - Separazione e Limite",
+      "fmAsseSlug": "asse-4-separazione-e-limite",
+      "fmChapter": 7,
+      "fmSlug": "capitolo-7-statuto-simbolico-della-perdita",
+      "fmTitle": "Statuto simbolico della perdita",
+      "bodyChars": 5652,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1245,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1499,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 1876,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 2271,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 2829,
+          "refId": "r5"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda in Sigmund Freud il lutto come lavoro non immediato e in Donald Winnicott l’holding prima della simbolizzazione."
+        },
+        {
+          "num": "2",
+          "text": "Si veda in Wilfred Bion gli elementi non pensabili che restano come angoscia."
+        },
+        {
+          "num": "3",
+          "text": "Si veda in Franco Basaglia la critica alla medicalizzazione del non simbolizzato."
+        },
+        {
+          "num": "4",
+          "text": "Si veda in Paul Ricoeur l’abuso della narrazione teleologica e in Byung-Chul Han la positività forzata del senso."
+        },
+        {
+          "num": "5",
+          "text": "Si veda Paul Ricoeur su simbolo, narrazione, sofferenza e Hans-Georg Gadamer su comprensione come apertura."
+        }
+      ],
+      "imgs": [],
+      "imgsByKind": {
+        "portrait": 0,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 5,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 4 - Separazione e Limite/Capitolo 8 - Raccordo con l’asse del desiderio.md",
+      "asseDir": "Asse 4 - Separazione e Limite",
+      "fmAsseSlug": "asse-4-separazione-e-limite",
+      "fmChapter": 8,
+      "fmSlug": "capitolo-8-raccordo-con-l-asse-del-desiderio",
+      "fmTitle": "Raccordo con l’asse del desiderio",
+      "bodyChars": 5402,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1082,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1908,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 2088,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 2386,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 3350,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 4328,
+          "refId": "r6"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda Maurice Merleau-Ponty sul desiderio come orientamento incarnato."
+        },
+        {
+          "num": "2",
+          "text": "Si veda Donald Winnicott per una creatività non compensatoria."
+        },
+        {
+          "num": "3",
+          "text": "Si veda Paul Ricoeur su scelta, orientamento, finitudine."
+        },
+        {
+          "num": "4",
+          "text": "Si veda Charles Taylor sugli orizzonti di senso."
+        },
+        {
+          "num": "5",
+          "text": "Si veda Paul Ricoeur su responsabilità come risposta ed Emmanuel Levinas su responsabilità non fondata su sovranità."
+        },
+        {
+          "num": "6",
+          "text": "Si veda Wilfred Bion su difese rispetto al limite e Byung-Chul Han su desiderio senza negatività."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 1087,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "charles-taylor",
+          "ext": "jpg",
+          "src": "/assets/autori/charles-taylor.jpg",
+          "alt": "Charles Taylor",
+          "title": "Charles Taylor",
+          "offset": 2391,
+          "attachedTo": 3
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 2,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 4,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 1 - Statuto filosofico del desiderio.md",
+      "asseDir": "Asse 5 - Desiderio",
+      "fmAsseSlug": "asse-5-desiderio",
+      "fmChapter": 1,
+      "fmSlug": "capitolo-1-statuto-filosofico-del-desiderio",
+      "fmTitle": "Statuto filosofico del desiderio",
+      "bodyChars": 8904,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 703,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1789,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 2898,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 3566,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 3936,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 4379,
+          "refId": "r6"
+        },
+        {
+          "num": "7",
+          "offset": 6035,
+          "refId": "r7"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Cfr. **Platone,** *Simposio*, *Repubblica.* Platone è il primo a pensare il desiderio (érōs) come ciò che **muove dopo la perdita dell’onnipotenza**: l’uomo desidera perché non è autosufficiente."
+        },
+        {
+          "num": "2",
+          "text": "Cfr. Agostino, *Confessiones* I,1: *“Fecisti nos ad te et inquietum est cor nostrum donec requiescat in te.”, n*on per il riferimento teologico, ma per la struttura: inquietudine come motore, non come patologia."
+        },
+        {
+          "num": "3",
+          "text": "Per Merleau-Ponty, *Fenomenologia della percezione*, *“La coscienza è originariamente non un ‘io penso’, ma un ‘io posso’”.*"
+        },
+        {
+          "num": "4",
+          "text": "Si veda **Agostino d'Ippona** per il desiderio come non-coincidenza."
+        },
+        {
+          "num": "5",
+          "text": "Si veda **Platone**, Simposio, su érōs come mancanza strutturale: *“Eros è desiderio di ciò che non si possiede.”*"
+        },
+        {
+          "num": "6",
+          "text": "Si veda **Hans Jonas** sull’apertura dell’organismo al futuro."
+        },
+        {
+          "num": "7",
+          "text": "Si veda **Charles Taylor,** *Sources of the Self,* “To know who you are is to be oriented in moral space.”"
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "platone",
+          "ext": "jpg",
+          "src": "/assets/autori/platone.jpg",
+          "alt": "Platone",
+          "title": "Platone",
+          "offset": 708,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "platone-repubblica",
+          "ext": "jpg",
+          "src": "/assets/libri/platone-repubblica.jpg",
+          "alt": "Repubblica",
+          "title": "Repubblica",
+          "offset": 914,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "platone-simposio",
+          "ext": "jpg",
+          "src": "/assets/libri/platone-simposio.jpg",
+          "alt": "Simposio",
+          "title": "Simposio",
+          "offset": 1115,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "agostino-confessiones",
+          "ext": "jpg",
+          "src": "/assets/libri/agostino-confessiones.jpg",
+          "alt": "Confessiones",
+          "title": "Confessiones",
+          "offset": 1794,
+          "attachedTo": 1
+        },
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Merleau-Ponty",
+          "title": "Merleau-Ponty",
+          "offset": 2903,
+          "attachedTo": 2
+        },
+        {
+          "kind": "cover",
+          "id": "merleau-ponty-fenomenologia-della-percezione",
+          "ext": "jpg",
+          "src": "/assets/libri/merleau-ponty-fenomenologia-della-percezione.jpg",
+          "alt": "Fenomenologia della percezione",
+          "title": "Fenomenologia della percezione",
+          "offset": 3135,
+          "attachedTo": 2
+        },
+        {
+          "kind": "portrait",
+          "id": "agostino-d-ippona",
+          "ext": "jpg",
+          "src": "/assets/autori/agostino-d-ippona.jpg",
+          "alt": "Agostino d'Ippona",
+          "title": "Agostino d'Ippona",
+          "offset": 3571,
+          "attachedTo": 3
+        },
+        {
+          "kind": "portrait",
+          "id": "hans-jonas",
+          "ext": "jpg",
+          "src": "/assets/autori/hans-jonas.jpg",
+          "alt": "Hans Jonas",
+          "title": "Hans Jonas",
+          "offset": 4384,
+          "attachedTo": 5
+        },
+        {
+          "kind": "portrait",
+          "id": "charles-taylor",
+          "ext": "jpg",
+          "src": "/assets/autori/charles-taylor.jpg",
+          "alt": "Charles Taylor",
+          "title": "Charles Taylor",
+          "offset": 6040,
+          "attachedTo": 6
+        },
+        {
+          "kind": "cover",
+          "id": "taylor-fonti-del-se",
+          "ext": "jpg",
+          "src": "/assets/libri/taylor-fonti-del-se.jpg",
+          "alt": "Sources of the Self",
+          "title": "Sources of the Self",
+          "offset": 6267,
+          "attachedTo": 6
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 5,
+        "cover": 5,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 1,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 2 - Genealogia filosofica del desiderio.md",
+      "asseDir": "Asse 5 - Desiderio",
+      "fmAsseSlug": "asse-5-desiderio",
+      "fmChapter": 2,
+      "fmSlug": "capitolo-2-genealogia-filosofica-del-desiderio",
+      "fmTitle": "Genealogia filosofica del desiderio",
+      "bodyChars": 7044,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 716,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1498,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 3236,
+          "refId": "r3"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Cfr. **Alasdair MacIntyre,** *After Virtue,* Per l’idea che la frammentazione moderna dei concetti morali (e del desiderio) è un esito storico, non una necessità."
+        },
+        {
+          "num": "2",
+          "text": "Si veda *Simposio* 202d–203a: “Eros non è né bello né buono, ma desiderio del bello e del buono”."
+        },
+        {
+          "num": "3",
+          "text": "Si veda Agostino, *Confessiones* XIII,9, “Pondus meum amor meus; eo feror quocumque feror”.  \n“Il mio peso è il mio amore: è ciò che mi porta” è una formula per “desiderio come orientamento”."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "alasdair-macintyre",
+          "ext": "jpg",
+          "src": "/assets/autori/alasdair-macintyre.jpg",
+          "alt": "Alasdair MacIntyre",
+          "title": "Alasdair MacIntyre",
+          "offset": 721,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "macintyre-dopo-la-virtu",
+          "ext": "jpg",
+          "src": "/assets/libri/macintyre-dopo-la-virtu.jpg",
+          "alt": "After Virtue",
+          "title": "After Virtue",
+          "offset": 960,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "platone-simposio",
+          "ext": "jpg",
+          "src": "/assets/libri/platone-simposio.jpg",
+          "alt": "Simposio",
+          "title": "Simposio",
+          "offset": 1503,
+          "attachedTo": 1
+        },
+        {
+          "kind": "cover",
+          "id": "agostino-confessiones",
+          "ext": "jpg",
+          "src": "/assets/libri/agostino-confessiones.jpg",
+          "alt": "Confessiones",
+          "title": "Confessiones",
+          "offset": 3241,
+          "attachedTo": 2
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 1,
+        "cover": 3,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 3 - Fenomenologia del desiderio incarnato.md",
+      "asseDir": "Asse 5 - Desiderio",
+      "fmAsseSlug": "asse-5-desiderio",
+      "fmChapter": 3,
+      "fmSlug": "capitolo-3-fenomenologia-del-desiderio-incarnato",
+      "fmTitle": "Fenomenologia del desiderio incarnato",
+      "bodyChars": 7034,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 417,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1757,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 3580,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 5207,
+          "refId": "r4"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "I riferimenti qui sono **Edmund Husserl** e **Maurice Merleau-Ponty**. Si può leggere il principio della fenomenologia husserliana “Zurück zu den Sachen selbst” (Tornare alle cose stesse) come guida a questo “tornare al modo in cui il desiderio si dà”."
+        },
+        {
+          "num": "2",
+          "text": "Per Husserl, Ideen II, Husserl (Ideen II), “Ogni coscienza è sempre coscienza di qualcosa”."
+        },
+        {
+          "num": "3",
+          "text": "Si veda in **Martin Heidegger** il concetto di *Stimmung* (tonalità emotiva fondamentale)."
+        },
+        {
+          "num": "4",
+          "text": "Un dialogo interdisciplinare con la psicologia dello sviluppo qui potrebbe coinvolgere **Daniel Stern** ed **Edward Tronick.**"
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 422,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "edmund-husserl",
+          "ext": "jpg",
+          "src": "/assets/autori/edmund-husserl.jpg",
+          "alt": "Edmund Husserl",
+          "title": "Edmund Husserl",
+          "offset": 670,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "martin-heidegger",
+          "ext": "jpg",
+          "src": "/assets/autori/martin-heidegger.jpg",
+          "alt": "Martin Heidegger",
+          "title": "Martin Heidegger",
+          "offset": 3585,
+          "attachedTo": 2
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 3,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 2,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 4 - Dal campo desiderabile alla soggettivazione del desiderio.md",
+      "asseDir": "Asse 5 - Desiderio",
+      "fmAsseSlug": "asse-5-desiderio",
+      "fmChapter": 4,
+      "fmSlug": "capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio",
+      "fmTitle": "Dal campo desiderabile alla soggettivazione del desiderio",
+      "bodyChars": 7645,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1052,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1632,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 2790,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 3357,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 4301,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 5018,
+          "refId": "r6"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Qui i riferimenti saranno **Maurice Merleau-Ponty** per un soggetto come nodo di relazioni incarnate e **Paul Ricoeur** per una identità narrativa come assunzione nel tempo (utile per il passaggio verso una narrabilità del desiderio)."
+        },
+        {
+          "num": "2",
+          "text": "Si veda in **Charles Taylor** il concetto di “orientamento in uno spazio di significato” per l’idea che l’identità non è sostanza ma **posizione in un campo di senso**."
+        },
+        {
+          "num": "3",
+          "text": "Si veda in **Edmund Husserl** il concetto di sintesi passiva e di continuità dell’esperienza e in"
+        },
+        {
+          "num": "4",
+          "text": "Qui i riferimenti sono **Lev Vygotskij** per un dialogo con l’asse 6 e **Paul Ricoeur** su narrazione e identità."
+        },
+        {
+          "num": "5",
+          "text": "Si veda in **Agostino d'Ippona** il concetto di ordine degli amori e in **Paul Ricoeur** la capacità di promettere e mantenere."
+        },
+        {
+          "num": "6",
+          "text": "Si vedano **Charles Taylor** e **Paul Ricoeur** per l’evoluzione della nozione di identità come “coerenza narrativa emergente”."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 1057,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "charles-taylor",
+          "ext": "jpg",
+          "src": "/assets/autori/charles-taylor.jpg",
+          "alt": "Charles Taylor",
+          "title": "Charles Taylor",
+          "offset": 1637,
+          "attachedTo": 1
+        },
+        {
+          "kind": "portrait",
+          "id": "edmund-husserl",
+          "ext": "jpg",
+          "src": "/assets/autori/edmund-husserl.jpg",
+          "alt": "Edmund Husserl",
+          "title": "Edmund Husserl",
+          "offset": 2795,
+          "attachedTo": 2
+        },
+        {
+          "kind": "portrait",
+          "id": "agostino-d-ippona",
+          "ext": "jpg",
+          "src": "/assets/autori/agostino-d-ippona.jpg",
+          "alt": "Agostino d'Ippona",
+          "title": "Agostino d'Ippona",
+          "offset": 4306,
+          "attachedTo": 4
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 4,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 2,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 5 - Desiderio, norma e giudizio.md",
+      "asseDir": "Asse 5 - Desiderio",
+      "fmAsseSlug": "asse-5-desiderio",
+      "fmChapter": 5,
+      "fmSlug": "capitolo-5-desiderio-norma-e-giudizio",
+      "fmTitle": "Desiderio, norma e giudizio",
+      "bodyChars": 6488,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 738,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1584,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 2168,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 2652,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 2802,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 3748,
+          "refId": "r6"
+        },
+        {
+          "num": "7",
+          "offset": 3814,
+          "refId": "r7"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si vedano Aristotele, *Etica Nicomachea, sulla* deliberazione che nasce dal desiderio razionale (orexis logiké) e Charles Taylor per il concetto di “strong evaluation”. Come controcanto si veda in Immanuel Kant una normatività che nasce dall’autonomia della ragione, non dal desiderio: non è la direzione presa nel modello dei 6 assi."
+        },
+        {
+          "num": "2",
+          "text": "Si vada in Tommaso d'Aquino la differenza tra atto materiale e atto formale della volontà e in Hannah Arendt la distinzione tra obbedienza e giudizio (pensare senza ringhiera)."
+        },
+        {
+          "num": "3",
+          "text": "Si veda in Agostino d'Ippona l’ordine degli amori come condizione di consistenza e in Aristotele  \nla virtù come forma stabile dell’orientamento."
+        },
+        {
+          "num": "4",
+          "text": "Si veda in Aristotele il concetto di *Phronesis* come deliberazione orientata dal fine desiderato."
+        },
+        {
+          "num": "5",
+          "text": "Si veda Paul Ricoeur per la responsabilità narrativa e situata e in Charles Taylor il concetto di Strong evaluation come presupposto del giudicare."
+        },
+        {
+          "num": "6",
+          "text": "Si veda in Sigmund Freud il  Super-io come istanza di colpa."
+        },
+        {
+          "num": "7",
+          "text": "Si veda in Hannah Arendt la distinzione tra senso di colpa e giudizio responsabile."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "cover",
+          "id": "aristotele-etica-nicomachea",
+          "ext": "jpg",
+          "src": "/assets/libri/aristotele-etica-nicomachea.jpg",
+          "alt": "Etica Nicomachea",
+          "title": "Etica Nicomachea",
+          "offset": 743,
+          "attachedTo": 0
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 0,
+        "cover": 1,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 6,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 6 - Patologie strutturali del desiderio.md",
+      "asseDir": "Asse 5 - Desiderio",
+      "fmAsseSlug": "asse-5-desiderio",
+      "fmChapter": 6,
+      "fmSlug": "capitolo-6-patologie-strutturali-del-desiderio",
+      "fmTitle": "Patologie strutturali del desiderio",
+      "bodyChars": 5769,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 456,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1025,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 1719,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 3683,
+          "refId": "r4"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda Paul Ricoeur per la nozione di “fragilità” dell’identità, non ridotta a diagnosi e Donald Winnicott per il concetto di ambiente sufficientemente buono."
+        },
+        {
+          "num": "2",
+          "text": "Si veda Donald Winnicott sul ritiro come difesa del vero sé ed Edward Tronick sulle rotture non riparate nella co-regolazione."
+        },
+        {
+          "num": "3",
+          "text": "Si vedano Charles Taylor sulla perdita di orientamento forte, Hannah Arendt sulla distinzione tra comportamento e giudizio e Byung-Chul Han sulla società della prestazione."
+        },
+        {
+          "num": "4",
+          "text": "Si veda Donald Winnicott su adattamento precoce e Hannah Arendt su perdita della spontaneità."
+        }
+      ],
+      "imgs": [],
+      "imgsByKind": {
+        "portrait": 0,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 4,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 7 - Raccordo con l’Asse 6.md",
+      "asseDir": "Asse 5 - Desiderio",
+      "fmAsseSlug": "asse-5-desiderio",
+      "fmChapter": 7,
+      "fmSlug": "capitolo-7-raccordo-con-l-asse-6",
+      "fmTitle": "Raccordo con l’Asse 6",
+      "bodyChars": 6096,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 500,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 1258,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 2077,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 2371,
+          "refId": "r4"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Qui i riferimenti sono Maurice Merleau-Ponty per un mondo come campo incarnato e Lev Vygotskij per una mediazione culturale dell’esperienza senza riduzionismi."
+        },
+        {
+          "num": "2",
+          "text": "Si veda Charles Taylor sugli orizzonti di significato e Hans-Georg Gadamer sull’orizzonte storico come condizione di comprensione."
+        },
+        {
+          "num": "3",
+          "text": "Si vedano in Pierre Bourdieu i concetti di habitus e campo e in Amartya Sen il concetto di capabilities."
+        },
+        {
+          "num": "4",
+          "text": "Si veda in Hannah Arendt la distinzione tra lavoro, opera e azione."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "charles-taylor",
+          "ext": "jpg",
+          "src": "/assets/autori/charles-taylor.jpg",
+          "alt": "Charles Taylor",
+          "title": "Charles Taylor",
+          "offset": 1263,
+          "attachedTo": 1
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 1,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 3,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 1 – Il mondo storico-culturale come mediazione, non come sfondo.md",
+      "asseDir": "Asse 6 - Storico - culturale",
+      "fmAsseSlug": "asse-6-storico-culturale",
+      "fmChapter": 1,
+      "fmSlug": "capitolo-1-il-mondo-storico-culturale-come-mediazione-non-come-sfondo",
+      "fmTitle": "Il mondo storico-culturale come mediazione, non come sfondo",
+      "bodyChars": 9703,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1672,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 2663,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 3395,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 5094,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 5549,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 6821,
+          "refId": "r6"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda **Maurice Merleau-Ponty**, *Phénoménologie de la perception, per l’i*dea chiave che il mondo non è un oggetto davanti a noi, ma l’orizzonte implicito di ogni esperienza:  “Il mondo è ciò che noi percepiamo”. Non significa soggettivismo, ma che il mondo è sempre già strutturato come campo e il bambino è in questo campo già strutturato di salienze e rilevanze."
+        },
+        {
+          "num": "2",
+          "text": "Si veda **Alfred Schutz**, *Der sinnhafte Aufbau der sozialen Welt* (Il problema della realtà sociale), per l’idea chiave che le tipizzazioni precedono la riflessione: “Il mondo della vita quotidiana è dato come già strutturato prima di ogni atto teorico”."
+        },
+        {
+          "num": "3",
+          "text": "Per Husserl il mondo della vita è il terreno sempre già dato di ogni validità scientifica. Va tenuto conto che Husserl non sviluppa una vera teoria delle istituzioni concrete. Nei capitoli successivi dovranno essere considerati Vygotskij (mediazione), Arendt (istituzione), Taylor (orizzonti di valore)."
+        },
+        {
+          "num": "4",
+          "text": "Si veda Hans-Georg Gadamer, Verità e metodo, per l’idea chiave che la comprensione è sempre situata e il pregiudizio (Vorurteil) è condizione della comprensione: “Non possiamo porci fuori dalla tradizione”."
+        },
+        {
+          "num": "5",
+          "text": "Si veda **Hannah Arendt,** *Between Past and Future* (La crisi dell’educazione), per l’idea chiave che educare significa assumersi la responsabilità del mondo davanti ai nuovi nati."
+        },
+        {
+          "num": "6",
+          "text": "Si veda **Charles Taylor**, *Sources of the Self, per l’idea chiave che* l’identità si forma in orizzonti di valore, ma non è riducibile ad essi: “La nostra identità è definita dagli orizzonti di significato che non abbiamo scelto”."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 1677,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "merleau-ponty-fenomenologia-della-percezione",
+          "ext": "jpg",
+          "src": "/assets/libri/merleau-ponty-fenomenologia-della-percezione.jpg",
+          "alt": "Phénoménologie de la perception",
+          "title": "Phénoménologie de la perception",
+          "offset": 1925,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "schutz-sinnhafte-aufbau",
+          "ext": "jpg",
+          "src": "/assets/libri/schutz-sinnhafte-aufbau.jpg",
+          "alt": "Der sinnhafte Aufbau der sozialen Welt",
+          "title": "Der sinnhafte Aufbau der sozialen Welt",
+          "offset": 2668,
+          "attachedTo": 1
+        },
+        {
+          "kind": "portrait",
+          "id": "edmund-husserl",
+          "ext": "jpg",
+          "src": "/assets/autori/edmund-husserl.jpg",
+          "alt": "Husserl",
+          "title": "Husserl",
+          "offset": 3400,
+          "attachedTo": 2
+        },
+        {
+          "kind": "portrait",
+          "id": "hans-georg-gadamer",
+          "ext": "jpg",
+          "src": "/assets/autori/hans-georg-gadamer.jpg",
+          "alt": "Hans-Georg Gadamer",
+          "title": "Hans-Georg Gadamer",
+          "offset": 5099,
+          "attachedTo": 3
+        },
+        {
+          "kind": "portrait",
+          "id": "hannah-arendt",
+          "ext": "jpg",
+          "src": "/assets/autori/hannah-arendt.jpg",
+          "alt": "Hannah Arendt",
+          "title": "Hannah Arendt",
+          "offset": 5554,
+          "attachedTo": 4
+        },
+        {
+          "kind": "portrait",
+          "id": "charles-taylor",
+          "ext": "jpg",
+          "src": "/assets/autori/charles-taylor.jpg",
+          "alt": "Charles Taylor",
+          "title": "Charles Taylor",
+          "offset": 6826,
+          "attachedTo": 5
+        },
+        {
+          "kind": "cover",
+          "id": "taylor-fonti-del-se",
+          "ext": "jpg",
+          "src": "/assets/libri/taylor-fonti-del-se.jpg",
+          "alt": "Sources of the Self",
+          "title": "Sources of the Self",
+          "offset": 7053,
+          "attachedTo": 5
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 5,
+        "cover": 3,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 2 – Costituzione storica del soggetto senza relativismo.md",
+      "asseDir": "Asse 6 - Storico - culturale",
+      "fmAsseSlug": "asse-6-storico-culturale",
+      "fmChapter": 2,
+      "fmSlug": "capitolo-2-costituzione-storica-del-soggetto-senza-relativismo",
+      "fmTitle": "Costituzione storica del soggetto, senza relativismo",
+      "bodyChars": 9557,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 2039,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 4677,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 6040,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 7039,
+          "refId": "r4"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda in **Wilhelm Dilthey,** *Introduzione alle scienze dello spirito e La costruzione del mondo storico,  nelle scienze dello spirito, l’i*dea chiave che “la vita si comprende solo a partire dalla vita”. Dilthey però non fonda una struttura del soggetto che preceda la storia. Il modello degli assi ha questa ambizione."
+        },
+        {
+          "num": "2",
+          "text": "Per **Hans-Georg Gadamer,** *Verità e metodo, l*a comprensione è sempre fusione di orizzonti (Horizontverschmelzung). Gadamer però non tematizza in modo forte il conflitto sociale e il potere, per questo si dovrà ricorrere ad altri autori."
+        },
+        {
+          "num": "3",
+          "text": "Si veda **Paul Ricoeur,** *Soi-même comme un autre*, per l’idea che il soggetto è narrativamente costituito, ma non dissolto nella narrazione."
+        },
+        {
+          "num": "4",
+          "text": "Si vedano **Axel Honneth**, *Lotta per il riconoscimento*, per l’ì*d*ea che iI conflitto non è deviazione, ma dinamica strutturale del riconoscimento e in modo ancor più radicale **Hannah Arendt** per l’idea che l’azione introduce novità nel mondo: “Ogni nascita è un nuovo inizio”."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "wilhelm-dilthey",
+          "ext": "jpg",
+          "src": "/assets/autori/wilhelm-dilthey.jpg",
+          "alt": "Wilhelm Dilthey",
+          "title": "Wilhelm Dilthey",
+          "offset": 2044,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "dilthey-introduzione-scienze-spirito",
+          "ext": "jpg",
+          "src": "/assets/libri/dilthey-introduzione-scienze-spirito.jpg",
+          "alt": "Introduzione alle scienze dello spirito",
+          "title": "Introduzione alle scienze dello spirito",
+          "offset": 2274,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "hans-georg-gadamer",
+          "ext": "jpg",
+          "src": "/assets/autori/hans-georg-gadamer.jpg",
+          "alt": "Hans-Georg Gadamer",
+          "title": "Hans-Georg Gadamer",
+          "offset": 4682,
+          "attachedTo": 1
+        },
+        {
+          "kind": "cover",
+          "id": "gadamer-verita-e-metodo",
+          "ext": "jpg",
+          "src": "/assets/libri/gadamer-verita-e-metodo.jpg",
+          "alt": "Verità e metodo",
+          "title": "Verità e metodo",
+          "offset": 4921,
+          "attachedTo": 1
+        },
+        {
+          "kind": "cover",
+          "id": "ricoeur-se-come-un-altro",
+          "ext": "jpg",
+          "src": "/assets/libri/ricoeur-se-come-un-altro.jpg",
+          "alt": "Soi-même comme un autre",
+          "title": "Soi-même comme un autre",
+          "offset": 6045,
+          "attachedTo": 2
+        },
+        {
+          "kind": "portrait",
+          "id": "hannah-arendt",
+          "ext": "jpg",
+          "src": "/assets/autori/hannah-arendt.jpg",
+          "alt": "Hannah Arendt",
+          "title": "Hannah Arendt",
+          "offset": 7044,
+          "attachedTo": 3
+        },
+        {
+          "kind": "portrait",
+          "id": "axel-honneth",
+          "ext": "jpg",
+          "src": "/assets/autori/axel-honneth.jpg",
+          "alt": "Axel Honneth",
+          "title": "Axel Honneth",
+          "offset": 7268,
+          "attachedTo": 3
+        },
+        {
+          "kind": "cover",
+          "id": "honneth-lotta-per-il-riconoscimento",
+          "ext": "jpg",
+          "src": "/assets/libri/honneth-lotta-per-il-riconoscimento.jpg",
+          "alt": "Lotta per il riconoscimento",
+          "title": "Lotta per il riconoscimento",
+          "offset": 7489,
+          "attachedTo": 3
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 4,
+        "cover": 4,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 3 – Mediazione simbolica e sviluppo.md",
+      "asseDir": "Asse 6 - Storico - culturale",
+      "fmAsseSlug": "asse-6-storico-culturale",
+      "fmChapter": 3,
+      "fmSlug": "capitolo-3-mediazione-simbolica-e-sviluppo",
+      "fmTitle": "Mediazione simbolica e sviluppo",
+      "bodyChars": 9545,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1548,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 3320,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 4377,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 5592,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 6422,
+          "refId": "r5"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda **Lev Vygotskij**, *Pensiero e linguaggio, Lo sviluppo delle funzioni psichiche superiori, per l’idea* centrale che tra stimolo e risposta si interpone un terzo elemento: il segno. L’uomo introduce uno stimolo artificiale tra sé e il mondo, la mediazione non facilita soltanto: riconfigura il campo dell’esperienza. La mediazione è una **struttura antropologica**, non una tecnica educativa."
+        },
+        {
+          "num": "2",
+          "text": "Per Vygotskij ogni funzione psichica superiore appare due volte: prima tra le persone, poi dentro la persona."
+        },
+        {
+          "num": "3",
+          "text": "Per **Wilhelm von Humboldt** il linguaggio “non è uno strumento, ma un’attività formativa del pensiero” e per **Maurice Merleau-Ponty,** *La prosa del mondo,* il linguaggio non traduce il pensiero: lo realizza."
+        },
+        {
+          "num": "4",
+          "text": "Si veda **Jerome Bruner,** *Acts of Meaning, La cultura dell’educazione,* per l’idea chiave che la mente è culturalmente modellata attraverso narrazioni: “Viviamo in un mondo interpretato narrativamente”."
+        },
+        {
+          "num": "5",
+          "text": "Si veda **Paul Ricoeur**, *Tempo e racconto,* sul legame tra narrazione, temporalità e identità."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "cover",
+          "id": "vygotskij-pensiero-e-linguaggio",
+          "ext": "jpg",
+          "src": "/assets/libri/vygotskij-pensiero-e-linguaggio.jpg",
+          "alt": "Pensiero e linguaggio",
+          "title": "Pensiero e linguaggio",
+          "offset": 1553,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "lev-vygotskij",
+          "ext": "jpg",
+          "src": "/assets/autori/lev-vygotskij.jpg",
+          "alt": "Vygotskij",
+          "title": "Vygotskij",
+          "offset": 3325,
+          "attachedTo": 1
+        },
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 4382,
+          "attachedTo": 2
+        },
+        {
+          "kind": "portrait",
+          "id": "wilhelm-von-humboldt",
+          "ext": "jpg",
+          "src": "/assets/autori/wilhelm-von-humboldt.jpg",
+          "alt": "Wilhelm von Humboldt",
+          "title": "Wilhelm von Humboldt",
+          "offset": 4630,
+          "attachedTo": 2
+        },
+        {
+          "kind": "cover",
+          "id": "merleau-ponty-la-prosa-del-mondo",
+          "ext": "jpg",
+          "src": "/assets/libri/merleau-ponty-la-prosa-del-mondo.jpg",
+          "alt": "La prosa del mondo",
+          "title": "La prosa del mondo",
+          "offset": 4875,
+          "attachedTo": 2
+        },
+        {
+          "kind": "portrait",
+          "id": "jerome-bruner",
+          "ext": "png",
+          "src": "/assets/autori/jerome-bruner.png",
+          "alt": "Jerome Bruner",
+          "title": "Jerome Bruner",
+          "offset": 5597,
+          "attachedTo": 3
+        },
+        {
+          "kind": "cover",
+          "id": "bruner-acts-of-meaning",
+          "ext": "jpg",
+          "src": "/assets/libri/bruner-acts-of-meaning.jpg",
+          "alt": "Acts of Meaning",
+          "title": "Acts of Meaning",
+          "offset": 5821,
+          "attachedTo": 3
+        },
+        {
+          "kind": "cover",
+          "id": "ricoeur-tempo-e-racconto",
+          "ext": "jpg",
+          "src": "/assets/libri/ricoeur-tempo-e-racconto.jpg",
+          "alt": "Tempo e racconto",
+          "title": "Tempo e racconto",
+          "offset": 6427,
+          "attachedTo": 4
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 4,
+        "cover": 4,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 4 – Istituzioni come dispositivi di esperienza.md",
+      "asseDir": "Asse 6 - Storico - culturale",
+      "fmAsseSlug": "asse-6-storico-culturale",
+      "fmChapter": 4,
+      "fmSlug": "capitolo-4-istituzioni-come-dispositivi-di-esperienza",
+      "fmTitle": "Istituzioni come dispositivi di esperienza",
+      "bodyChars": 9832,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1086,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 2069,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 3608,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 4495,
+          "refId": "r4"
+        },
+        {
+          "num": "5",
+          "offset": 5637,
+          "refId": "r5"
+        },
+        {
+          "num": "6",
+          "offset": 6451,
+          "refId": "r6"
+        },
+        {
+          "num": "7",
+          "offset": 7016,
+          "refId": "r7"
+        },
+        {
+          "num": "8",
+          "offset": 7195,
+          "refId": "r8"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda **Maurice Merleau-Ponty**, *Institution et passivité* (corso al Collège de France), per l’idea chiave che l’istituzione non è un apparato, ma un evento che stabilizza senso nel tempo: “Un’istituzione è ciò che inaugura una dimensione di senso destinata a durare.”"
+        },
+        {
+          "num": "2",
+          "text": "##  Si **veda Arnold Gehlen per** l’idea che le istituzioni stabilizzano l’esistenza umana, riducendo l’eccesso di possibilità."
+        },
+        {
+          "num": "3",
+          "text": "Si veda **Hannah Arendt**, *The Crisis in Education, per l’affermazione che “*L’educazione è il punto in cui decidiamo se amiamo abbastanza il mondo da assumerne la responsabilità.”"
+        },
+        {
+          "num": "4",
+          "text": "Si veda **Michel Foucault**, *Sorvegliare e punire*, per l’idea che le istituzioni disciplinari organizzano il tempo e il corpo. Foucault tende a leggere le istituzioni principalmente come dispositivi di potere, il modello degli assi vede l’istituzione \\= vincolo \\+ possibilità."
+        },
+        {
+          "num": "5",
+          "text": "Si veda **Hartmut Rosa** per l’idea che le società moderne accelerano il tempo e trasformano il rapporto con il futuro, rischiando la saturazione del desiderio."
+        },
+        {
+          "num": "6",
+          "text": "Si veda **Ivan Illich**, *Deschooling Society.*"
+        },
+        {
+          "num": "7",
+          "text": "Si veda **Paul Ricoeur** sull’idea che le istituzioni sono mediazioni tra etica e giustizia."
+        },
+        {
+          "num": "8",
+          "text": "Si veda **Charles Taylor** sull’idea che le istituzioni incarnano orizzonti di valore."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "maurice-merleau-ponty",
+          "ext": "jpg",
+          "src": "/assets/autori/maurice-merleau-ponty.jpg",
+          "alt": "Maurice Merleau-Ponty",
+          "title": "Maurice Merleau-Ponty",
+          "offset": 1091,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "merleau-ponty-institution-et-passivite",
+          "ext": "jpg",
+          "src": "/assets/libri/merleau-ponty-institution-et-passivite.jpg",
+          "alt": "Institution et passivité",
+          "title": "Institution et passivité",
+          "offset": 1339,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "arnold-gehlen",
+          "ext": "svg",
+          "src": "/assets/autori/arnold-gehlen.svg",
+          "alt": "Arnold Gehlen",
+          "title": "Arnold Gehlen",
+          "offset": 2074,
+          "attachedTo": 1
+        },
+        {
+          "kind": "portrait",
+          "id": "hannah-arendt",
+          "ext": "jpg",
+          "src": "/assets/autori/hannah-arendt.jpg",
+          "alt": "Hannah Arendt",
+          "title": "Hannah Arendt",
+          "offset": 3613,
+          "attachedTo": 2
+        },
+        {
+          "kind": "portrait",
+          "id": "michel-foucault",
+          "ext": "jpg",
+          "src": "/assets/autori/michel-foucault.jpg",
+          "alt": "Michel Foucault",
+          "title": "Michel Foucault",
+          "offset": 4500,
+          "attachedTo": 3
+        },
+        {
+          "kind": "cover",
+          "id": "foucault-sorvegliare-e-punire",
+          "ext": "jpg",
+          "src": "/assets/libri/foucault-sorvegliare-e-punire.jpg",
+          "alt": "Sorvegliare e punire",
+          "title": "Sorvegliare e punire",
+          "offset": 4730,
+          "attachedTo": 3
+        },
+        {
+          "kind": "portrait",
+          "id": "hartmut-rosa",
+          "ext": "jpg",
+          "src": "/assets/autori/hartmut-rosa.jpg",
+          "alt": "Hartmut Rosa",
+          "title": "Hartmut Rosa",
+          "offset": 5642,
+          "attachedTo": 4
+        },
+        {
+          "kind": "cover",
+          "id": "illich-deschooling-society",
+          "ext": "jpg",
+          "src": "/assets/libri/illich-deschooling-society.jpg",
+          "alt": "Deschooling Society",
+          "title": "Deschooling Society",
+          "offset": 6456,
+          "attachedTo": 5
+        },
+        {
+          "kind": "portrait",
+          "id": "charles-taylor",
+          "ext": "jpg",
+          "src": "/assets/autori/charles-taylor.jpg",
+          "alt": "Charles Taylor",
+          "title": "Charles Taylor",
+          "offset": 7200,
+          "attachedTo": 7
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 6,
+        "cover": 3,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 1,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 5 – Tecnica, performance e temporalità contemporanea.md",
+      "asseDir": "Asse 6 - Storico - culturale",
+      "fmAsseSlug": "asse-6-storico-culturale",
+      "fmChapter": 5,
+      "fmSlug": "capitolo-5-tecnica-performance-e-temporalita-contemporanea",
+      "fmTitle": "Tecnica, performance e temporalità contemporanea",
+      "bodyChars": 8065,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 1120,
+          "refId": "r1"
+        },
+        {
+          "num": "2",
+          "offset": 2992,
+          "refId": "r2"
+        },
+        {
+          "num": "3",
+          "offset": 3988,
+          "refId": "r3"
+        },
+        {
+          "num": "4",
+          "offset": 4356,
+          "refId": "r4"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda **Hartmut Rosa**, *Accelerazione e alienazione, per come* l’accelerazione ristruttura l’esperienza del tempo."
+        },
+        {
+          "num": "2",
+          "text": "Per **Bernard Stiegler** la tecnica è una memoria esternalizzata che forma l’attenzione e il desiderio."
+        },
+        {
+          "num": "3",
+          "text": "Si veda **Michel Foucault** sul come la misurazione produce soggettività disciplinate."
+        },
+        {
+          "num": "4",
+          "text": "Si veda **Byung-Chul Han**, *La società della stanchezza,* per come la società della performance sostituisce il dovere con l’auto-ottimizzazione."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "hartmut-rosa",
+          "ext": "jpg",
+          "src": "/assets/autori/hartmut-rosa.jpg",
+          "alt": "Hartmut Rosa",
+          "title": "Hartmut Rosa",
+          "offset": 1125,
+          "attachedTo": 0
+        },
+        {
+          "kind": "cover",
+          "id": "rosa-accelerazione-e-alienazione",
+          "ext": "jpg",
+          "src": "/assets/libri/rosa-accelerazione-e-alienazione.jpg",
+          "alt": "Accelerazione e alienazione",
+          "title": "Accelerazione e alienazione",
+          "offset": 1346,
+          "attachedTo": 0
+        },
+        {
+          "kind": "portrait",
+          "id": "bernard-stiegler",
+          "ext": "jpg",
+          "src": "/assets/autori/bernard-stiegler.jpg",
+          "alt": "Bernard Stiegler",
+          "title": "Bernard Stiegler",
+          "offset": 2997,
+          "attachedTo": 1
+        },
+        {
+          "kind": "portrait",
+          "id": "michel-foucault",
+          "ext": "jpg",
+          "src": "/assets/autori/michel-foucault.jpg",
+          "alt": "Michel Foucault",
+          "title": "Michel Foucault",
+          "offset": 3993,
+          "attachedTo": 2
+        },
+        {
+          "kind": "portrait",
+          "id": "byung-chul-han",
+          "ext": "jpg",
+          "src": "/assets/autori/byung-chul-han.jpg",
+          "alt": "Byung-Chul Han",
+          "title": "Byung-Chul Han",
+          "offset": 4361,
+          "attachedTo": 3
+        },
+        {
+          "kind": "cover",
+          "id": "han-societa-della-stanchezza",
+          "ext": "jpg",
+          "src": "/assets/libri/han-societa-della-stanchezza.jpg",
+          "alt": "La società della stanchezza",
+          "title": "La società della stanchezza",
+          "offset": 4588,
+          "attachedTo": 3
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 4,
+        "cover": 2,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 6 – Rischi strutturali e deformazioni dello sviluppo.md",
+      "asseDir": "Asse 6 - Storico - culturale",
+      "fmAsseSlug": "asse-6-storico-culturale",
+      "fmChapter": 6,
+      "fmSlug": "capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo",
+      "fmTitle": "Rischi strutturali e deformazioni dello sviluppo",
+      "bodyChars": 7189,
+      "markers": [
+        {
+          "num": "1",
+          "offset": 4201,
+          "refId": "r1"
+        }
+      ],
+      "defs": [
+        {
+          "num": "1",
+          "text": "Si veda **Hans Jonas** per l’idea che la tecnica promette dominio ma genera vulnerabilità."
+        }
+      ],
+      "imgs": [
+        {
+          "kind": "portrait",
+          "id": "hans-jonas",
+          "ext": "jpg",
+          "src": "/assets/autori/hans-jonas.jpg",
+          "alt": "Hans Jonas",
+          "title": "Hans Jonas",
+          "offset": 4206,
+          "attachedTo": 0
+        }
+      ],
+      "imgsByKind": {
+        "portrait": 1,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    },
+    {
+      "file": "server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 6 - Storico - culturale/Capitolo 7 – Raccordo con l’intero modello e funzione dell’Asse 6.md",
+      "asseDir": "Asse 6 - Storico - culturale",
+      "fmAsseSlug": "asse-6-storico-culturale",
+      "fmChapter": 7,
+      "fmSlug": "capitolo-7-raccordo-con-l-intero-modello-e-funzione-dell-asse-6",
+      "fmTitle": "Raccordo con l’intero modello e funzione dell’Asse 6",
+      "bodyChars": 5770,
+      "markers": [],
+      "defs": [],
+      "imgs": [],
+      "imgsByKind": {
+        "portrait": 0,
+        "cover": 0,
+        "unknown": 0
+      },
+      "markersWithoutDef": [],
+      "defsWithoutMarker": [],
+      "duplicateMarkers": [],
+      "orphanImgs": 0,
+      "markersWithoutImg": 0,
+      "missingAssets": [],
+      "missingRilevanza": []
+    }
+  ],
+  "totals": {
+    "chapters": 44,
+    "bodyChars": 326928,
+    "markers": 169,
+    "defs": 169,
+    "imgs": 142,
+    "portraits": 85,
+    "covers": 57,
+    "unknown": 0,
+    "orphanImgs": 0,
+    "markersWithoutImg": 70
+  },
+  "catalog": {
+    "distinctAuthors": [
+      "agostino-d-ippona",
+      "alasdair-macintyre",
+      "arnold-gehlen",
+      "axel-honneth",
+      "bernard-stiegler",
+      "byung-chul-han",
+      "charles-taylor",
+      "edmund-husserl",
+      "emmanuel-levinas",
+      "franco-basaglia",
+      "george-herbert-mead",
+      "georges-canguilhem",
+      "hannah-arendt",
+      "hans-georg-gadamer",
+      "hans-jonas",
+      "hartmut-rosa",
+      "helmuth-plessner",
+      "jean-piaget",
+      "jerome-bruner",
+      "kurt-goldstein",
+      "lev-vygotskij",
+      "martin-heidegger",
+      "maurice-merleau-ponty",
+      "melanie-klein",
+      "michel-foucault",
+      "platone",
+      "sigmund-freud",
+      "wilhelm-dilthey",
+      "wilhelm-von-humboldt"
+    ],
+    "distinctBooks": [
+      "agostino-confessiones",
+      "agostino-de-magistro",
+      "arendt-responsabilita-e-giudizio",
+      "arendt-sulla-violenza",
+      "aristotele-etica-nicomachea",
+      "bion-learning-from-experience",
+      "bruner-acts-of-meaning",
+      "canguilhem-normale-e-patologico",
+      "dilthey-introduzione-scienze-spirito",
+      "foucault-sorvegliare-e-punire",
+      "freud-lutto-e-melanconia",
+      "gadamer-verita-e-metodo",
+      "han-societa-della-stanchezza",
+      "heidegger-essere-e-tempo",
+      "honneth-lotta-per-il-riconoscimento",
+      "husserl-lezioni-sulla-coscienza-interna-del-tempo",
+      "illich-deschooling-society",
+      "klein-envy-and-gratitude",
+      "macintyre-dopo-la-virtu",
+      "merleau-ponty-fenomenologia-della-percezione",
+      "merleau-ponty-institution-et-passivite",
+      "merleau-ponty-la-prosa-del-mondo",
+      "piaget-giudizio-morale-nel-bambino",
+      "platone-repubblica",
+      "platone-simposio",
+      "ricoeur-se-come-un-altro",
+      "ricoeur-tempo-e-racconto",
+      "rosa-accelerazione-e-alienazione",
+      "schutz-sinnhafte-aufbau",
+      "stiegler-prendersi-cura",
+      "taylor-fonti-del-se",
+      "tommaso-summa-theologiae",
+      "vygotskij-pensiero-e-linguaggio",
+      "winnicott-capacity-for-concern",
+      "winnicott-gioco-e-realta",
+      "winnicott-maturational-processes",
+      "winnicott-use-of-an-object"
+    ],
+    "authorChapterFrequency": {
+      "maurice-merleau-ponty": 23,
+      "edmund-husserl": 5,
+      "georges-canguilhem": 3,
+      "hans-georg-gadamer": 3,
+      "michel-foucault": 4,
+      "kurt-goldstein": 1,
+      "emmanuel-levinas": 2,
+      "melanie-klein": 3,
+      "sigmund-freud": 3,
+      "jean-piaget": 1,
+      "agostino-d-ippona": 3,
+      "charles-taylor": 7,
+      "hannah-arendt": 5,
+      "alasdair-macintyre": 2,
+      "bernard-stiegler": 2,
+      "martin-heidegger": 2,
+      "helmuth-plessner": 1,
+      "franco-basaglia": 1,
+      "jerome-bruner": 2,
+      "george-herbert-mead": 1,
+      "platone": 1,
+      "hans-jonas": 2,
+      "wilhelm-dilthey": 1,
+      "axel-honneth": 1,
+      "lev-vygotskij": 1,
+      "wilhelm-von-humboldt": 1,
+      "arnold-gehlen": 1,
+      "hartmut-rosa": 2,
+      "byung-chul-han": 1
+    },
+    "bookChapterFrequency": {
+      "merleau-ponty-fenomenologia-della-percezione": 5,
+      "canguilhem-normale-e-patologico": 1,
+      "husserl-lezioni-sulla-coscienza-interna-del-tempo": 1,
+      "foucault-sorvegliare-e-punire": 3,
+      "winnicott-gioco-e-realta": 1,
+      "winnicott-maturational-processes": 2,
+      "klein-envy-and-gratitude": 3,
+      "winnicott-capacity-for-concern": 4,
+      "winnicott-use-of-an-object": 2,
+      "tommaso-summa-theologiae": 1,
+      "piaget-giudizio-morale-nel-bambino": 1,
+      "agostino-de-magistro": 1,
+      "taylor-fonti-del-se": 3,
+      "arendt-sulla-violenza": 1,
+      "ricoeur-se-come-un-altro": 2,
+      "macintyre-dopo-la-virtu": 2,
+      "stiegler-prendersi-cura": 1,
+      "arendt-responsabilita-e-giudizio": 1,
+      "bion-learning-from-experience": 1,
+      "freud-lutto-e-melanconia": 1,
+      "gadamer-verita-e-metodo": 2,
+      "heidegger-essere-e-tempo": 1,
+      "platone-repubblica": 1,
+      "platone-simposio": 2,
+      "agostino-confessiones": 2,
+      "aristotele-etica-nicomachea": 1,
+      "schutz-sinnhafte-aufbau": 1,
+      "dilthey-introduzione-scienze-spirito": 1,
+      "honneth-lotta-per-il-riconoscimento": 1,
+      "vygotskij-pensiero-e-linguaggio": 1,
+      "merleau-ponty-la-prosa-del-mondo": 1,
+      "bruner-acts-of-meaning": 1,
+      "ricoeur-tempo-e-racconto": 1,
+      "merleau-ponty-institution-et-passivite": 1,
+      "illich-deschooling-society": 1,
+      "rosa-accelerazione-e-alienazione": 1,
+      "han-societa-della-stanchezza": 1
+    }
+  },
+  "validation": {
+    "missingAssetsAuthors": [],
+    "missingAssetsBooks": [],
+    "missingRilevanzaAuthors": [],
+    "missingRilevanzaBooks": [],
+    "chaptersWithMarkerDefMismatch": []
+  }
+}
