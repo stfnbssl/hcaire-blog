@@ -9,7 +9,6 @@ slug: "capitolo-5-la-regolazione-come-principio-ontologico"
 prev: "capitolo-4-la-corporeita-come-luogo-originario-di-senso"
 next: "capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita"
 ---
-
 # Capitolo 5 - La regolazione come principio ontologico
 
 ## 1. Perché parlare di regolazione sul piano ontologico
@@ -72,7 +71,21 @@ Questa co-regolazione non è un intervento esterno che si aggiunge a un soggetto
 
 La relazione non “insegna” la regolazione come una tecnica, ma rende possibile che l’esperienza non si interrompa definitivamente di fronte alla perturbazione. In questo senso, la regolazione è originariamente intersoggettiva, prima di diventare progressivamente interiorizzata.
 
-## 7. Regolazione come principio pre-affettivo e pre-normativo
+## 7. La traiettoria della tenuta: dall'holding all'autoregolazione simbolica
+
+La regolazione come principio ontologico non si manifesta soltanto come struttura stabile: ha anche una **traiettoria evolutiva**. Questa traiettoria non è sequenziale in senso meccanico, ma descrive forme progressivamente più elaborate di tenuta dell'esperienza — dal corporeo-esterno al simbolicamente mediato.
+
+Nei primissimi mesi, la tenuta è quasi interamente esterna: è l'adulto che raccoglie e modula l'esperienza del bambino attraverso contatto, ritmo, voce e postura. Questa funzione non è semplicemente consolatoria; è — come ha mostrato con precisione Winnicott — una **condizione ontologica** dell'esperienza stessa[^7] <img src="/assets/autori/donald-winnicott" alt="Donald W. Winnicott" title="Donald W. Winnicott" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)"> <img src="/assets/libri/winnicott-dalla-pediatria-alla-psicoanalisi.jpg" alt="Dalla pediatria alla psicoanalisi" title="Dalla pediatria alla psicoanalisi" class="ref-cover" style="height:208px;vertical-align:middle;margin:0 4px 0 2px;box-shadow:0 1px 4px rgba(0,0,0,.3)">: senza di essa, il soggetto non dispone ancora di un campo abbastanza organizzato da cui partire.
+
+Progressivamente, la tenuta si fa **co-regolazione**: il bambino non subisce più la modulazione adulta, ma vi partecipa attivamente, alternando iniziative e attese, provocazioni e risposte. La regolazione smette di essere unilaterale per diventare scambio temporalmente strutturato.
+
+Una soglia ulteriore si apre quando oggetti, routine e rituali assumono funzione di tenuta. Il bambino non ha ancora la parola, ma può usare la coperta, la sequenza del pasto, il gioco ripetuto come **dispositivi di contenimento** che rendono l'assenza tollerabile e la frustrazione attraversabile. Sono forme di simbolizzazione ancora radicate nel corporeo, ma già orientate verso la mediazione[^8] <img src="/assets/autori/donald-winnicott" alt="Donald W. Winnicott" title="Donald W. Winnicott" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)"> <img src="/assets/libri/winnicott-gioco-e-realta.jpg" alt="Gioco e realtà" title="Gioco e realtà" class="ref-cover" style="height:208px;vertical-align:middle;margin:0 4px 0 2px;box-shadow:0 1px 4px rgba(0,0,0,.3)">.
+
+L'ultima soglia — che questa traiettoria prepara ma non garantisce — è quella in cui la parola e il racconto assumono funzione di autoregolazione. Il soggetto può nominare il proprio stato, raccontare l'esperienza, differire la tensione attraverso la narrazione. Il corpo non scompare da questa forma di tenuta: la porta, la sostiene, le conferisce il peso dell'incarnazione[^9] <img src="/assets/autori/daniel-stern" alt="Daniel Stern" title="Daniel Stern" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)"> <img src="/assets/libri/stern-momento-presente.jpg" alt="Il momento presente in psicoterapia e nella vita quotidiana" title="Il momento presente in psicoterapia e nella vita quotidiana" class="ref-cover" style="height:208px;vertical-align:middle;margin:0 4px 0 2px;box-shadow:0 1px 4px rgba(0,0,0,.3)">.
+
+Questa traiettoria ha un'implicazione metodologica precisa: la difficoltà nella regolazione di un bambino non può essere compresa soltanto al livello in cui si manifesta. Le difficoltà nel contenimento simbolico rimandano spesso a forme di tenuta meno elaborate che non si sono consolidate; le difficoltà nella co-regolazione rimandano spesso alla qualità della tenuta corporea originaria. Il lavoro con la regolazione deve pertanto rispettare questa stratificazione, senza accelerare né scavalcare le fasi.
+
+## 8. Regolazione come principio pre-affettivo e pre-normativo
 
 Un punto decisivo dell’Asse ontologico–fenomenologico è che la regolazione precede logicamente sia l’affettività strutturata sia la normatività. Prima che l’esperienza venga organizzata in termini di emozioni riconoscibili o di giudizi di valore, essa deve potersi **tenere nel tempo**.
 
@@ -84,7 +97,7 @@ Questo significa che:
 
 Questa priorità consente di evitare letture moralistiche delle difficoltà regolative e di comprendere come molte forme di sofferenza non derivino da “errori” del soggetto, ma da una fatica originaria nel sostenere l’esperienza.
 
-## 8. Chiusura: funzione della regolazione nell’Asse 1
+## 9. Chiusura: funzione della regolazione nell’Asse 1
 
 Questo capitolo ha mostrato che la regolazione non è una funzione accessoria, ma un **principio ontologico** che attraversa l’intera esperienza soggettiva. Essa rende possibile:
 
@@ -93,16 +106,23 @@ Questo capitolo ha mostrato che la regolazione non è una funzione accessoria, m
 * l’apertura al mondo,  
 * la relazione con l’altro.
 
-Intesa in questo modo, la regolazione costituisce il ponte tra corporeità, temporalità e relazione, senza ridursi a nessuna di esse.
+Intesa in questo modo, la regolazione costituisce il ponte tra corporeità, temporalità e relazione, senza ridursi a nessuna di esse.  
 
-[^1]:  Si veda Canguilhem, ***Il normale e il patologico***, per una regolazione intesa come principio strutturale dell’esperienza e non come funzione psicologica isolabile.
 
-[^2]:  Per Merleau-Ponty «L’unità dell’esperienza non è una somma, ma una coesione nel tempo.». Si veda anche Edmund Husserl, ***Lezioni sulla coscienza interna del tempo***.
+[^1]: Si veda Canguilhem, ***Il normale e il patologico***, per una regolazione intesa come principio strutturale dell’esperienza e non come funzione psicologica isolabile.
 
-[^3]:  Si veda Michel Foucault, ***Sorvegliare e punire***, per la distinzione tra regolazione e controllo normativo.
+[^2]: Per Merleau-Ponty «L’unità dell’esperienza non è una somma, ma una coesione nel tempo.». Si veda anche Edmund Husserl, ***Lezioni sulla coscienza interna del tempo***.
 
-[^4]:  Per Merleau-Ponty «Il tempo non scorre fuori di noi: si fa nel nostro modo di essere.»
+[^3]: Si veda Michel Foucault, ***Sorvegliare e punire***, per la distinzione tra regolazione e controllo normativo.
 
-[^5]:  La regolazione efficace non riduce l’apertura al mondo, ma ne sostiene la possibilità senza disorganizzazione, si veda Kurt Goldstein, ***La struttura dell’organismo***.
+[^4]: Per Merleau-Ponty «Il tempo non scorre fuori di noi: si fa nel nostro modo di essere.»
 
-[^6]:  La co-regolazione non è tecnica educativa ma condizione ontologica originaria; si vedano Winnicott, ***Gioco e realtà*** e Bowlby, ***Attaccamento e perdita**.*
+[^5]: La regolazione efficace non riduce l’apertura al mondo, ma ne sostiene la possibilità senza disorganizzazione, si veda Kurt Goldstein, ***La struttura dell’organismo***.
+
+[^6]: La co-regolazione non è tecnica educativa ma condizione ontologica originaria; si vedano Winnicott, ***Gioco e realtà*** e Bowlby, ***Attaccamento e perdita**.*
+
+[^7]: Si veda **Donald Winnicott**, *Dalla pediatria alla psicoanalisi*, per il concetto di *holding* come condizione strutturale, non tecnica educativa.
+
+[^8]: Si veda **Donald Winnicott**, *Gioco e realtà*, per gli oggetti transizionali come forme di tenuta che mediano tra il corporeo e il simbolico.
+
+[^9]: Si veda **Daniel Stern**, *Il momento presente in psicoterapia e nella vita quotidiana*, per il corpo come portatore della forma narrativa dell'esperienza.

@@ -1,8 +1,9 @@
 import { Link, useLocation } from 'react-router-dom';
 
 const PAGE_LINKS = [
-  { to: '/assi-strutturali',          label: 'Panoramica', exact: true },
-  { to: '/assi-strutturali/capitoli', label: 'Capitoli',   exact: false },
+  { to: '/assi-strutturali',              label: 'Panoramica',   exact: true },
+  { to: '/assi-strutturali/capitoli',     label: 'Capitoli',     exact: false },
+  { to: '/assi-strutturali/bibliografia', label: 'Bibliografia', exact: false },
 ];
 
 export default function AssiStrutturaliNav() {

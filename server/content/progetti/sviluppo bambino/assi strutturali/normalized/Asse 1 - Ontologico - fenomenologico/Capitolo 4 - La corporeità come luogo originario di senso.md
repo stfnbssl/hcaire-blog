@@ -9,7 +9,6 @@ slug: "capitolo-4-la-corporeita-come-luogo-originario-di-senso"
 prev: "capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita"
 next: "capitolo-5-la-regolazione-come-principio-ontologico"
 ---
-
 # Capitolo 4 - La corporeità come luogo originario di senso
 
 ## 1. Perché il corpo è un problema ontologico
@@ -65,7 +64,27 @@ Questa organizzazione non è il risultato di un controllo cosciente, ma un equil
 
 In questo senso, la regolazione corporea è già una forma di significazione pre-riflessiva.
 
-## 6. Corporeità e relazione: il corpo come luogo dell’intersoggettività
+## 6. Il corpo come matrice del proto-simbolico
+
+La corporeità non è soltanto luogo di senso pre-riflessivo: è anche il luogo in cui le prime **forme proto-simboliche** prendono corpo.
+
+Prima che il bambino disponga di segni, parole o gesti intenzionalmente comunicativi, le esperienze corporee assumono già una struttura che prepara e anticipa la funzione simbolica:
+
+* il ritmo dello scambio interattivo organizza il tempo in sequenze riconoscibili,  
+* la voce e il contatto modulano l'intensità affettiva in forme ripetibili,  
+* la postura e il movimento incarnano aspettative implicite sul mondo.
+
+Queste forme non sono ancora simboli nel senso pieno del termine: non rimandano esplicitamente a qualcosa d'altro, non hanno referente separato. Eppure non sono nemmeno puri riflessi biologici: sono **configurazioni corporee che organizzano il campo** dell'esperienza in modo anticipatorio e pregnante[^4] <img src="/assets/autori/daniel-stern" alt="Daniel Stern" title="Daniel Stern" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)"> <img src="/assets/autori/maurice-merleau-ponty.jpg" alt="Maurice Merleau-Ponty" title="Maurice Merleau-Ponty" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)"> <img src="/assets/libri/stern-mondo-interpersonale-del-bambino.jpg" alt="Il mondo interpersonale del bambino" title="Il mondo interpersonale del bambino" class="ref-cover" style="height:208px;vertical-align:middle;margin:0 4px 0 2px;box-shadow:0 1px 4px rgba(0,0,0,.3)"> <img src="/assets/libri/merleau-ponty-fenomenologia-della-percezione.jpg" alt="Fenomenologia della percezione" title="Fenomenologia della percezione" class="ref-cover" style="height:208px;vertical-align:middle;margin:0 4px 0 2px;box-shadow:0 1px 4px rgba(0,0,0,.3)">.
+
+Questo livello proto-simbolico è decisivo per due ragioni.
+
+La prima riguarda il rapporto tra corpo e segno. Se il simbolico non nasce nel vuoto ma si radica nel corporeo, allora le prime esperienze di regolazione e di relazione non sono semplicemente "premesse" dello sviluppo simbolico, bensì le sue **condizioni di possibilità incarnate**. Il corpo non viene "lasciato alle spalle" quando il bambino accede alla parola; viene **trasportato dentro di essa**.
+
+La seconda riguarda la comprensione delle difficoltà simboliche. Quando lo sviluppo della funzione simbolica incontra ostacoli, spesso la radice non è cognitiva né linguistica, ma corporeo-regolativa: la simbolizzazione non è decollata perché il campo corporeo non era sufficientemente organizzato per sostenerne l'emergenza.
+
+In questa prospettiva, la corporeità non si esaurisce nell'apertura sensoriale al mondo: è già, nella sua struttura regolativa e relazionale, una forma primaria di **significazione pre-verbale** che dischiude lo spazio dal quale il simbolico potrà svilupparsi.
+
+## 7. Corporeità e relazione: il corpo come luogo dell’intersoggettività
 
 La corporeità non è mai puramente individuale. Il corpo del bambino è fin dall’inizio un corpo-in-relazione. Contatto, sguardo, voce, olfatto e ritmo dell’interazione non sono semplici canali di comunicazione, ma **modalità attraverso cui il senso si costituisce**.
 
@@ -80,7 +99,7 @@ Queste esperienze non vengono inizialmente rappresentate, ma vissute corporalmen
 
 In questo senso, la corporeità è il primo luogo dell’intersoggettività, prima di ogni riconoscimento esplicito dell’altro come persona o istanza.
 
-## 7. Vulnerabilità corporea e possibilità di sviluppo
+## 8. Vulnerabilità corporea e possibilità di sviluppo
 
 Concepire la corporeità come luogo originario di senso implica una rivalutazione della vulnerabilità. Il corpo del bambino è fragile, dipendente, esposto: ma questa esposizione non è un difetto da correggere, bensì la **condizione stessa dello sviluppo**.
 
@@ -91,12 +110,15 @@ Questo consente di evitare due derive opposte:
 * la patologizzazione precoce delle difficoltà corporee,  
 * e la loro normalizzazione riduttiva come semplici “fasi”.
 
-## 8. Chiusura: la corporeità nell’architettura dell’Asse 1
+## 9. Chiusura: la corporeità nell’architettura dell’Asse 1
 
-Questo capitolo ha mostrato che la corporeità non è un supporto dello sviluppo, ma **il luogo originario in cui il soggetto incontra il mondo e in cui il senso prende forma**. La temporalità vissuta è sempre temporalità incarnata; la soggettività è sempre corporeamente situata.
+Questo capitolo ha mostrato che la corporeità non è un supporto dello sviluppo, ma **il luogo originario in cui il soggetto incontra il mondo e in cui il senso prende forma**. La temporalità vissuta è sempre temporalità incarnata; la soggettività è sempre corporeamente situata.  
 
-[^1]:  «Il corpo è il nostro mezzo generale per avere un mondo.»
 
-[^2]:  Per Merleau-Ponty «Il passato non è dietro di noi, ma pesa nel nostro presente come stile del corpo.»
+[^1]: «Il corpo è il nostro mezzo generale per avere un mondo.»
 
-[^3]:  La regolazione corporea come organizzazione primaria del senso è descritta in modo convergente dalla fenomenologia e dalle neuroscienze non riduzioniste.
+[^2]: Per Merleau-Ponty «Il passato non è dietro di noi, ma pesa nel nostro presente come stile del corpo.»
+
+[^3]: La regolazione corporea come organizzazione primaria del senso è descritta in modo convergente dalla fenomenologia e dalle neuroscienze non riduzioniste.
+
+[^4]: Si veda **Daniel Stern**, *Il mondo interpersonale del bambino*, per le forme di vitalità affettiva come proto-narrazioni incarnate; e **Maurice Merleau-Ponty**, *Fenomenologia della percezione*, per lo schema corporeo come struttura di anticipazione del senso.

@@ -9,7 +9,6 @@ slug: "capitolo-8-soglia-tra-ontologia-e-genesi-morale"
 prev: "capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza"
 next: null
 ---
-
 # Capitolo 8 - Soglia tra ontologia e genesi morale
 
 *(Che cosa l’Asse ontologico–fenomenologico rende possibile, e dove si arresta)*
@@ -27,6 +26,10 @@ L’Asse 1 ha descritto le condizioni di possibilità dell’essere-soggetto in 
 * nella relazione originaria,  
 * in un campo intenzionale aperto al possibile,  
 * e in una prima stabilizzazione simbolica.
+
+Nella lista di ciò che l'Asse 1 ha mostrato, la **stabilizzazione simbolica** merita una precisazione. Essa non indica l'accesso alla funzione simbolica in senso pieno — ai segni, alla parola, al gioco simbolico. Indica qualcosa di più elementare: il modo in cui l'esperienza corporeo-relazionale assume già forme riconoscibili, ripetibili e anticipabili, che pre-formano il campo dal quale il simbolico potrà emergere. È una proto-simbolizzazione incarnata, non ancora riflessiva: il suo luogo è il corpo, il ritmo, la sequenza interattiva — così come descritta nel capitolo 4.
+
+Ciò distingue nettamente il contributo dell'Asse 1 da quello degli assi successivi: la simbolizzazione della perdita (Asse 4) e la mediazione simbolica storico-culturale (Asse 6) presuppongono questa stabilizzazione corporea e la elaborano in forme qualitativamente diverse. Non si tratta di stadi sequenziali, ma di livelli strutturali che si compongono nell'architettura complessiva del soggetto in sviluppo.
 
 Tutto ciò è necessario perché un soggetto umano possa esistere come tale.  
 Ma **non è ancora sufficiente** perché emerga una dimensione propriamente morale.
@@ -114,7 +117,7 @@ Chiudendo l’Asse 1 con questo chiarimento, il modello conserva una gerarchia c
 
 Questo consente agli assi successivi di svilupparsi senza ambiguità:
 
-* l’Asse 2 potrà interrogare la genesi dell’istanza morale senza ridurla a relazione, a semplice "rispecchiamento" dei genitori (o dell'ambiente),
+* l’Asse 2 potrà interrogare la genesi dell’istanza morale senza ridurla a relazione, a semplice "rispecchiamento" dei genitori (o dell'ambiente),  
 * l’Asse 3 potrà affrontare la normatività del giudizio senza moralismo,  
 * l’Asse 4 potrà introdurre il limite reale senza psicologizzarlo, mantenendo il baricentro dell'educazione sul piano della realtà oggettiva e non delle negoziazioni emotive.
 
@@ -136,10 +139,11 @@ Il soggetto che emerge dall’Asse 1:
 
 ma **non è ancora un soggetto morale**.
 
-L’Asse 2 prenderà avvio da questa soglia, interrogando come e a quali condizioni l’altro diventi interiormente vincolante, e come da questa trasformazione nascano colpa, responsabilità e limite morale.
+L’Asse 2 prenderà avvio da questa soglia, interrogando come e a quali condizioni l’altro diventi interiormente vincolante, e come da questa trasformazione nascano colpa, responsabilità e limite morale.  
 
-[^1]:  Per Paul Ricoeur «Non ogni identità è già imputabile.».
 
-[^2]:  Il passaggio dall’essere al dover-essere non è logicamente deducibile, ma implica un mutamento di statuto dell’esperienza.
+[^1]: Per Paul Ricoeur «Non ogni identità è già imputabile.».
 
-[^3]:  Per Levinas «L’altro non è un contenuto dell’esperienza, ma ciò che la interrompe e la obbliga.»
+[^2]: Il passaggio dall’essere al dover-essere non è logicamente deducibile, ma implica un mutamento di statuto dell’esperienza.
+
+[^3]: Per Levinas «L’altro non è un contenuto dell’esperienza, ma ciò che la interrompe e la obbliga.»

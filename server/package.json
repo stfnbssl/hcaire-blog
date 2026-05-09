@@ -6,7 +6,12 @@
     "dev": "nodemon --watch src --ext ts --exec ts-node src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "seed:bartleby": "ts-node src/scripts/seedBartleby.ts"
+    "seed:bartleby": "ts-node src/scripts/seedBartleby.ts",
+    "assi:inventory": "ts-node src/scripts/assiStrutturaliInventory.ts",
+    "catalogo:build": "ts-node src/scripts/buildAssiCatalogo.ts",
+    "assi:convert": "ts-node src/scripts/convertAssiToJson.ts",
+    "assi:merge-revision": "ts-node src/scripts/mergeRevisions.ts",
+    "assi:fix-img-ext": "ts-node src/scripts/fixImgExtensions.ts"
   },
   "dependencies": {
     "@clerk/backend": "^3.2.9",

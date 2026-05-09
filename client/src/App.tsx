@@ -29,6 +29,7 @@ import SviluppoBambinoLanding     from './pages/sviluppo-bambino/SviluppoBambino
 import SviluppoBambinoModello     from './pages/sviluppo-bambino/SviluppoBambinoModello';
 import SviluppoBambinoAsseOverview from './pages/sviluppo-bambino/SviluppoBambinoAsseOverview';
 import AssiStrutturaliCapitoli   from './pages/assi-strutturali/AssiStrutturaliCapitoli';
+import BibliografiaPage          from './pages/assi-strutturali/Bibliografia';
 import AsseChaptersPage          from './pages/assi-strutturali/AsseChapters';
 import ChapterPage               from './pages/assi-strutturali/Chapter';
 
@@ -190,6 +191,7 @@ function AppLayout() {
           {/* Assi Strutturali — sezione top-level */}
           <Route path="/assi-strutturali"                                       element={<AssiStrutturaliLanding />} />
           <Route path="/assi-strutturali/capitoli"                              element={<AssiStrutturaliCapitoli />} />
+          <Route path="/assi-strutturali/bibliografia"                          element={<BibliografiaPage />} />
           <Route path="/assi-strutturali/:asseSlug"                             element={<AsseChaptersPage />} />
           <Route path="/assi-strutturali/:asseSlug/:chapterSlug"                element={<ChapterPage />} />
           <Route path="/admin"           element={<AdminRoute><AdminDashboard /></AdminRoute>} />

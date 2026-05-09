@@ -13,6 +13,8 @@ import {
 const MODELLO_PATH = "progetti/sviluppo bambino/metodo/riflessioni/01 Modello assi strutturali di sviluppo del bambino (0-13 anni) .md";
 const FINALITA_PATH = "progetti/sviluppo bambino/finalità/01 - Natura e finalità del progetto \u201cSviluppo del bambino\u201d.md";
 const NORMALIZED_BASE = "progetti/sviluppo bambino/assi strutturali/normalized";
+const ASSI_JSON_BASE = "progetti/sviluppo bambino/assi strutturali/json";
+const CATALOGO_BASE = "progetti/sviluppo bambino/catalogo";
 const RIFLESSIONI_BASE = "progetti/sviluppo bambino/metodo/riflessioni";
 const INTERLOCUZIONI_BASE = "progetti/sviluppo bambino/interlocuzioni disciplinari";
 
@@ -384,23 +386,170 @@ export function getAsseChapters(req: Request, res: Response) {
 }
 
 // GET /api/sviluppo-bambino/assi/:asseSlug/:chapterSlug
+//
+// Serve il capitolo nella forma JSON ibrida (`body` markdown a token,
+// `references` strutturate, `footnotes` liftate). Fonte: server/content/.../json/
+// generato dallo script `npm run assi:convert -- --write`.
 export function getChapter(req: Request, res: Response) {
   try {
     const { asseSlug, chapterSlug } = req.params;
     const folderName = ASSE_SLUG_TO_FOLDER[asseSlug];
     if (!folderName) return res.status(404).json({ error: 'Asse non trovato' });
 
-    const chapters = readChaptersInDir(path.join(NORMALIZED_BASE, folderName));
-    const chapter = chapters.find((c) => c.frontmatter.slug === chapterSlug);
-    if (!chapter) return res.status(404).json({ error: 'Capitolo non trovato' });
+    const dir = path.join(getContentBase(), ASSI_JSON_BASE, folderName);
+    if (!fs.existsSync(dir)) {
+      return res.status(404).json({
+        error: 'Capitoli JSON non disponibili per questo asse. Lancia `npm run assi:convert -- --write`.',
+      });
+    }
 
-    res.json({
-      frontmatter: chapter.frontmatter,
-      content: chapter.content,
-      isEmpty: chapter.isEmpty,
-    });
+    // I file JSON non sono nominati per slug (mantengono il nome del .md sorgente),
+    // quindi devo leggerli per trovare quello con frontmatter.slug giusto.
+    const files = fs.readdirSync(dir).filter((f) => f.toLowerCase().endsWith('.json'));
+    for (const f of files) {
+      const raw = fs.readFileSync(path.join(dir, f), 'utf8');
+      try {
+        const doc = JSON.parse(raw);
+        if (doc?.frontmatter?.slug === chapterSlug) {
+          return res.json(doc);
+        }
+      } catch {
+        // file non valido, lo salto
+      }
+    }
+    return res.status(404).json({ error: 'Capitolo non trovato' });
   } catch {
     res.status(500).json({ error: 'Errore lettura capitolo' });
+  }
+}
+
+// GET /api/sviluppo-bambino/assi/citazioni
+//
+// Indice di citazione: per ogni id autore/libro, lista dei capitoli in cui
+// appare in almeno una `Reference`. Aggregato leggendo tutti i JSON sotto
+// assi strutturali/json/.
+export function getCitations(_req: Request, res: Response) {
+  try {
+    const root = path.join(getContentBase(), ASSI_JSON_BASE);
+    if (!fs.existsSync(root)) {
+      return res.status(404).json({
+        error: 'JSON capitoli non trovati. Lancia `npm run assi:convert -- --write`.',
+      });
+    }
+
+    const authorsMap: Record<string, Array<{
+      asseSlug: string;
+      asseTitle: string;
+      asseNumber: number;
+      chapterSlug: string;
+      chapterTitle: string;
+      chapterNumber: number;
+    }>> = {};
+    const booksMap: typeof authorsMap = {};
+
+    let totalChapters = 0;
+    const asseDirs = fs.readdirSync(root, { withFileTypes: true })
+      .filter((d) => d.isDirectory())
+      .map((d) => d.name);
+
+    for (const asseDir of asseDirs) {
+      const asseFull = path.join(root, asseDir);
+      const files = fs.readdirSync(asseFull).filter((f) => f.toLowerCase().endsWith('.json'));
+      for (const f of files) {
+        let doc: {
+          frontmatter: {
+            asse_slug: string;
+            asse: string;
+            asse_number: number;
+            slug: string;
+            title: string;
+            chapter: number;
+          };
+          references: Array<{ authorIds: string[]; bookIds: string[] }>;
+        };
+        try {
+          doc = JSON.parse(fs.readFileSync(path.join(asseFull, f), 'utf8'));
+        } catch {
+          continue;
+        }
+        totalChapters++;
+        const ref = {
+          asseSlug: doc.frontmatter.asse_slug,
+          asseTitle: doc.frontmatter.asse,
+          asseNumber: doc.frontmatter.asse_number,
+          chapterSlug: doc.frontmatter.slug,
+          chapterTitle: doc.frontmatter.title,
+          chapterNumber: doc.frontmatter.chapter,
+        };
+        // Insieme dei ref già aggiunti per questo capitolo (un capitolo conta
+        // una sola volta per ogni autore/libro, anche se citato più volte).
+        const seenAuthors = new Set<string>();
+        const seenBooks = new Set<string>();
+        for (const r of doc.references ?? []) {
+          for (const aid of r.authorIds ?? []) {
+            if (seenAuthors.has(aid)) continue;
+            seenAuthors.add(aid);
+            (authorsMap[aid] ??= []).push(ref);
+          }
+          for (const bid of r.bookIds ?? []) {
+            if (seenBooks.has(bid)) continue;
+            seenBooks.add(bid);
+            (booksMap[bid] ??= []).push(ref);
+          }
+        }
+      }
+    }
+
+    // Ordino le liste per (asseNumber, chapterNumber)
+    const sortFn = (a: typeof authorsMap[string][0], b: typeof authorsMap[string][0]) => {
+      if (a.asseNumber !== b.asseNumber) return a.asseNumber - b.asseNumber;
+      return a.chapterNumber - b.chapterNumber;
+    };
+    for (const k of Object.keys(authorsMap)) authorsMap[k].sort(sortFn);
+    for (const k of Object.keys(booksMap)) booksMap[k].sort(sortFn);
+
+    res.json({
+      authors: authorsMap,
+      books: booksMap,
+      _meta: {
+        generatedAt: new Date().toISOString(),
+        totalChapters,
+      },
+    });
+  } catch {
+    res.status(500).json({ error: 'Errore lettura indice citazioni' });
+  }
+}
+
+// GET /api/sviluppo-bambino/catalogo/authors
+export function getCatalogoAuthors(_req: Request, res: Response) {
+  try {
+    const file = path.join(getContentBase(), CATALOGO_BASE, 'authors.json');
+    if (!fs.existsSync(file)) {
+      return res.status(404).json({
+        error: 'Catalogo autori mancante. Lancia `npm run catalogo:build`.',
+      });
+    }
+    const raw = fs.readFileSync(file, 'utf8');
+    res.type('application/json').send(raw);
+  } catch {
+    res.status(500).json({ error: 'Errore lettura catalogo autori' });
+  }
+}
+
+// GET /api/sviluppo-bambino/catalogo/books
+export function getCatalogoBooks(_req: Request, res: Response) {
+  try {
+    const file = path.join(getContentBase(), CATALOGO_BASE, 'books.json');
+    if (!fs.existsSync(file)) {
+      return res.status(404).json({
+        error: 'Catalogo libri mancante. Lancia `npm run catalogo:build`.',
+      });
+    }
+    const raw = fs.readFileSync(file, 'utf8');
+    res.type('application/json').send(raw);
+  } catch {
+    res.status(500).json({ error: 'Errore lettura catalogo libri' });
   }
 }
 

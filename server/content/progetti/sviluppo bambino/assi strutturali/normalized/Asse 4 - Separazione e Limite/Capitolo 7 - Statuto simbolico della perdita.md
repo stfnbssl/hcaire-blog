@@ -9,7 +9,6 @@ slug: "capitolo-7-statuto-simbolico-della-perdita"
 prev: "capitolo-6-temporalita-del-limite"
 next: "capitolo-8-raccordo-con-l-asse-del-desiderio"
 ---
-
 # Capitolo 7 - Statuto simbolico della perdita
 
 ### Tra nominabilità e resto non simbolizzabile
@@ -43,7 +42,19 @@ La perdita mette in crisi il simbolico perché:
 
 Per questo motivo, la perdita non chiede innanzitutto di essere spiegata, ma di essere **tenuta[^1]**.
 
-## 2. Perdita non simbolizzata: il rischio del muto
+## 2. Che cosa significa "tenere" la perdita
+
+Il concetto di *tenuta* — introdotto alla fine della sezione precedente — merita un'elaborazione che vada oltre il semplice cenno.
+
+**Tenere** non significa contenere nel senso di limitare o circoscrivere: significa sostenere l'esperienza nel tempo **prima** che diventi nominabile, senza dissolverla e senza forzarne la chiusura. È ciò che consente al soggetto di restare in prossimità dell'evento senza esserne travolto, e senza doverlo immediatamente trasformare in senso.
+
+Questa funzione non è esclusivamente adulta, né esclusivamente relazionale. Ma nei momenti di perdita significativa — e più il soggetto è giovane, più questo è vero — la tenuta richiede una **presenza che accompagna senza spiegare**. L'adulto che rimane accanto senza precipitare nella consolazione o nella narrazione è già, in questo, un contenitore: non perché abbia parole adeguate, ma perché la sua presenza sostiene il campo abbastanza da impedire la disgregazione.
+
+Qui emerge un raccordo fondamentale con quanto l'Asse ontologico–fenomenologico ha descritto per la regolazione: la tenuta della perdita non è altro che l'applicazione, in condizioni di eccedenza e irreversibilità, dello stesso principio che nell'infanzia rendeva possibile l'esperienza primaria[^2]. Il soggetto che ha sperimentato forme sufficientemente buone di *holding* corporeo — che ha imparato che l'esperienza può essere sostenuta anche quando è intollerabile — è più capace di attraversare la perdita senza ricorrere alle soluzioni difensive della mutizzazione o della chiusura prematura del senso.
+
+In questo senso, la qualità della tenuta precede e determina ciò che la simbolizzazione potrà fare: ciò che un soggetto può sostenere nella perdita non dipende soltanto dalla natura dell'evento, ma dalla traccia depositata nel corpo dalla storia della tenuta.
+
+## 3. Perdita non simbolizzata: il rischio del muto
 
 Una perdita che non trova alcuna possibilità di simbolizzazione:
 
@@ -54,7 +65,7 @@ Una perdita che non trova alcuna possibilità di simbolizzazione:
 Resta come:
 
 * tensione diffusa,  
-* angoscia senza oggett[^2]o,  
+* angoscia senza oggett[^3]o,  
 * rigidità difensiva,  
 * o ritiro.
 
@@ -66,9 +77,9 @@ La perdita resta reale, ma non abitabile.
 * questo non riguarda solo eventi estremi,  
 * ma anche piccole perdite ripetute che non vengono mai riconosciute come tali.
 
-Una perdita totalmente muta non protegge il soggetto: lo **espone[^3]**.
+Una perdita totalmente muta non protegge il soggetto: lo **espone[^4]**.
 
-## 3. Perdita simbolizzata troppo in fretta: il rischio della neutralizzazione
+## 4. Perdita simbolizzata troppo in fretta: il rischio della neutralizzazione
 
 All’opposto, una perdita può essere simbolizzata **troppo presto**.
 
@@ -81,7 +92,7 @@ Questo accade quando:
 In questo caso:
 
 * il simbolico non accompagna la perdita,  
-* la **copre**[^4].
+* la **copre**[^5].
 
 Il messaggio implicito diventa: “Questa cosa non deve restare.”
 
@@ -93,7 +104,7 @@ Così la perdita viene trasformata in:
 
 Il reale, però, viene neutralizzato.
 
-## 4. Simbolizzare non è spiegare
+## 5. Simbolizzare non è spiegare
 
 Un punto concettuale decisivo di questo capitolo è la distinzione tra **simbolizzare** e **spiegare**.
 
@@ -109,7 +120,7 @@ Simbolizzare:
 * rende abitabile,  
 * non elimina il resto.
 
-Nel caso della perdita, simbolizzare significa[^5]:
+Nel caso della perdita, simbolizzare significa[^6] <img src="/assets/autori/paul-ricoeur" alt="Paul Ricoeur" title="Paul Ricoeur" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)"> <img src="/assets/autori/hans-georg-gadamer.jpg" alt="Hans-Georg Gadamer" title="Hans-Georg Gadamer" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)">:
 
 * poter nominare senza esaurire,  
 * poter raccontare senza chiudere,  
@@ -117,7 +128,7 @@ Nel caso della perdita, simbolizzare significa[^5]:
 
 Qui il riferimento a Paul Ricoeur è centrale: la simbolizzazione non è eliminazione del dolore, ma possibilità di **abitare la sofferenza nel tempo**, distinguendola dal dolore immediato senza cancellarne l’irriducibilità.
 
-## 5. Il “resto” della perdita
+## 6. Il “resto” della perdita
 
 Un punto che il modello difende con decisione è questo: **ogni perdita autentica lascia un resto non simbolizzabile**.
 
@@ -141,7 +152,7 @@ Se invece il resto viene riconosciuto:
 * la perdita può essere integrata senza essere negata,  
 * il soggetto non è costretto a chiudere prematuramente.
 
-## 6. Tempo e simbolizzazione della perdita
+## 7. Tempo e simbolizzazione della perdita
 
 La simbolizzazione della perdita non è un atto, ma un **processo temporale**.
 
@@ -159,7 +170,7 @@ Il tempo non cancella la perdita, ma può:
 
 Questo chiarisce un punto spesso frainteso: simbolizzare una perdita **non significa** che essa “non fa più male”, ma che il dolore **non occupa più tutto lo spazio**.
 
-## 7. Funzione dello statuto simbolico della perdita nell’asse 4
+## 8. Funzione dello statuto simbolico della perdita nell’asse 4
 
 All’interno dell’Asse del limite reale, questo capitolo svolge una funzione di equilibrio:
 
@@ -174,14 +185,17 @@ Senza questo equilibrio:
 * la norma viene caricata di funzioni riparative improprie.
 
 Lo statuto simbolico della perdita non promette guarigione.  
-Rende possibile **abitare ciò che non guarisce** senza esserne travolti.
+Rende possibile **abitare ciò che non guarisce** senza esserne travolti.  
 
-[^1]:  Si veda in Sigmund Freud il lutto come lavoro non immediato e in Donald Winnicott l’holding prima della simbolizzazione.
 
-[^2]:  Si veda in Wilfred Bion gli elementi non pensabili che restano come angoscia.
+[^1]: Si veda in Sigmund Freud il lutto come lavoro non immediato e in Donald Winnicott l’holding prima della simbolizzazione.
 
-[^3]:  Si veda in Franco Basaglia la critica alla medicalizzazione del non simbolizzato.
+[^2]: Per il raccordo strutturale tra l'*holding* winnicottiano e la co-regolazione come principio ontologico si veda Asse 1, capitolo 5. La tenuta della perdita non è un'applicazione clinica di quel principio, ma la sua riemergenza in condizioni di limite reale.
 
-[^4]:  Si veda in Paul Ricoeur l’abuso della narrazione teleologica e in Byung-Chul Han la positività forzata del senso.
+[^3]: Si veda in Wilfred Bion gli elementi non pensabili che restano come angoscia.
 
-[^5]:  Si veda Paul Ricoeur su simbolo, narrazione, sofferenza e Hans-Georg Gadamer su comprensione come apertura.
+[^4]: Si veda in Franco Basaglia la critica alla medicalizzazione del non simbolizzato.
+
+[^5]: Si veda in Paul Ricoeur l’abuso della narrazione teleologica e in Byung-Chul Han la positività forzata del senso.
+
+[^6]: Si veda Paul Ricoeur su simbolo, narrazione, sofferenza e Hans-Georg Gadamer su comprensione come apertura.

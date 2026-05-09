@@ -40,22 +40,6 @@ export interface AsseChapters {
   chapters: ChapterMeta[];
 }
 
-export interface Chapter {
-  frontmatter: {
-    slug: string;
-    title: string;
-    chapter: number;
-    order: number;
-    asse: string;
-    asse_number: number;
-    asse_slug: string;
-    prev: string | null;
-    next: string | null;
-  };
-  content: string;
-  isEmpty: boolean;
-}
-
 export interface AsseOverview {
   title: string;
   content: string;

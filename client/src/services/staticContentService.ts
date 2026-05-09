@@ -4,7 +4,6 @@ import type {
   HcaireSection,
   AssiIndex,
   AsseChapters,
-  Chapter,
   AsseOverview,
   ModelloIndex,
   ConcettiResponse,
@@ -21,6 +20,12 @@ import type {
   FasiIndex,
   FaseDetail,
 } from '../types/staticContent';
+import type {
+  ChapterDocument,
+  AuthorsFile,
+  BooksFile,
+  CitationsIndex,
+} from '@shared/types/assi';
 
 async function get<T>(path: string): Promise<T> {
   const res = await fetch(`${API_URL}${path}`);
@@ -51,7 +56,10 @@ export const sviluppoBambinoApi = {
   getAssiIndex: () => get<AssiIndex>('/sviluppo-bambino/assi'),
   getAsseChapters: (asseSlug: string) => get<AsseChapters>(`/sviluppo-bambino/assi/${asseSlug}`),
   getChapter: (asseSlug: string, chapterSlug: string) =>
-    get<Chapter>(`/sviluppo-bambino/assi/${asseSlug}/${chapterSlug}`),
+    get<ChapterDocument>(`/sviluppo-bambino/assi/${asseSlug}/${chapterSlug}`),
+  getCatalogoAuthors: () => get<AuthorsFile>('/sviluppo-bambino/catalogo/authors'),
+  getCatalogoBooks: () => get<BooksFile>('/sviluppo-bambino/catalogo/books'),
+  getCitations: () => get<CitationsIndex>('/sviluppo-bambino/assi/citazioni'),
   getRiflessioni: () => get<{ items: RiflessioniItem[] }>('/sviluppo-bambino/riflessioni'),
   getInterlocuzioni: () => get<{ ambiti: InterlocuzioniItem[] }>('/sviluppo-bambino/interlocuzioni'),
   getInterlocuzioniIndex: () => get<InterlocuzioniIndex>('/sviluppo-bambino/interlocuzioni'),
