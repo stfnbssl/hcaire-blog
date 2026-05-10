@@ -3,7 +3,7 @@ import { Types } from 'mongoose';
 import JobRequest from '../models/JobRequest';
 import JobDefinition from '../models/JobDefinition';
 import type { ClerkRequest } from '../middleware/clerkAuth';
-import type { JobStatus } from '../../../shared/types/jobs';
+import type { JobStatus } from '../shared/types/jobs';
 
 const VALID_STATUS: JobStatus[] = ['pending', 'processing', 'completed', 'failed'];
 

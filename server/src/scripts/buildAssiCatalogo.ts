@@ -26,7 +26,7 @@ import type {
   AuthorsFile,
   BooksFile,
   CatalogMeta,
-} from '../../../shared/types/assi';
+} from '../shared/types/assi';
 
 const REPO_ROOT = path.resolve(__dirname, '..', '..', '..');
 

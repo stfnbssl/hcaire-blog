@@ -24,7 +24,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import type { AuthorsFile, BooksFile, Author, Book } from '../../../shared/types/assi';
+import type { AuthorsFile, BooksFile, Author, Book } from '../shared/types/assi';
 
 const REPO_ROOT = path.resolve(__dirname, '..', '..', '..');
 

@@ -2,7 +2,7 @@ import mongoose, { Schema, Document } from 'mongoose';
 import type {
   SkillCategory,
   SkillParameter,
-} from '../../../shared/types/jobs';
+} from '../shared/types/jobs';
 
 export interface ISkill extends Document {
   name: string;

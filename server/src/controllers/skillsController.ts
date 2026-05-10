@@ -5,7 +5,7 @@ import type {
   SkillCategory,
   SkillParameter,
   SkillParameterType,
-} from '../../../shared/types/jobs';
+} from '../shared/types/jobs';
 
 const VALID_CATEGORIES: SkillCategory[] = ['search', 'write'];
 const VALID_PARAM_TYPES: SkillParameterType[] = ['string', 'number', 'boolean', 'array'];

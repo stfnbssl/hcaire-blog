@@ -38,7 +38,7 @@ import type {
   Footnote,
   AuthorsFile,
   BooksFile,
-} from '../../../shared/types/assi';
+} from '../shared/types/assi';
 
 const REPO_ROOT = path.resolve(__dirname, '..', '..', '..');
 const NORMALIZED_DIR = path.join(

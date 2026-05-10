@@ -1,5 +1,5 @@
 import mongoose, { Schema, Document, Types } from 'mongoose';
-import type { JobStatus } from '../../../shared/types/jobs';
+import type { JobStatus } from '../shared/types/jobs';
 
 export interface IJobRequest extends Document {
   jobDefinitionId: Types.ObjectId;

@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { Types } from 'mongoose';
 import JobDefinition from '../models/JobDefinition';
 import type { ClerkRequest } from '../middleware/clerkAuth';
-import type { JobType } from '../../../shared/types/jobs';
+import type { JobType } from '../shared/types/jobs';
 
 const VALID_TYPES: JobType[] = ['research', 'write', 'research-and-write'];
 

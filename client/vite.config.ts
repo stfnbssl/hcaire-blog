@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react(), cloudflare()],
   resolve: {
     alias: {
-      '@shared': path.resolve(__dirname, '../shared'),
+      '@shared': path.resolve(__dirname, './src/shared'),
     },
   },
   server: {
