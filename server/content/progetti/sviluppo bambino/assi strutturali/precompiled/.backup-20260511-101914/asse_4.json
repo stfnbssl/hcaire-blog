@@ -1,0 +1,159 @@
+{
+  "axis_id": "asse_4",
+  "axis_name": "Asse della separazione e del limite",
+  "version": "v1.0",
+  "status": "bozza",
+  "source_document": {
+    "title": "Asse 4 - Separazione e Limite (8 capitoli Markdown)",
+    "format": "markdown",
+    "language": "it"
+  },
+  "structural_function": "Introdurre nel modello la dimensione del reale come ciò che resiste, eccede e non si lascia integrare senza resto: descrivere strutturalmente l'incontro del soggetto con il limite non come norma né come frustrazione regolabile, ma come eccedenza, perdita e separazione irreversibile che costituisce una verifica di realtà per tutti gli assi precedenti e una condizione trasformativa — non necessariamente positiva — per lo sviluppo.",
+  "core_processes": [
+    {
+      "name": "Incontro con l'eccedenza",
+      "description": "Prima forma in cui il reale eccede il soggetto: sproporzione tra intenzione e possibilità, tra desiderio e mondo, che non ferisce l'identità ma decentra il soggetto dall'illusione di coincidenza con il proprio campo di possibilità."
+    },
+    {
+      "name": "Attraversamento della perdita",
+      "description": "Incontro con l'irreversibilità che chiude possibilità e chiede un attraversamento più radicale dell'eccedenza: non può essere regolato né compensato ma richiede di essere abitato, con rischio di disorganizzazione se non è sufficientemente sostenuto."
+    },
+    {
+      "name": "Separazione come esperienza strutturale",
+      "description": "Processo in cui il soggetto si costituisce come distinto e riconosce l'altro come irriducibilmente separato; non evento puntuale ma dimensione continua dello sviluppo che introduce la possibilità dell'autonomia senza negare la dipendenza originaria."
+    },
+    {
+      "name": "Simbolizzazione del limite",
+      "description": "Processo attraverso cui il limite reale — non superabile né eliminabile — acquisisce una forma simbolica che lo rende abitabile senza ridurlo a norma o a spiegazione; condizione per il passaggio verso l'asse del desiderio."
+    }
+  ],
+  "bridge_concepts": [
+    {
+      "concept": "Limite reale (distinto da norma e frustrazione)",
+      "definition": "Ciò che accade senza essere posto, che non orienta né argomenta, che non può essere trasgredito senza conseguenze e che resiste alla piena simbolizzazione; eccede sia la regolazione normativa (Asse 3) che la regolazione relazionale (Asse 1).",
+      "linked_nodes": ["eccedenza strutturale", "perdita irreversibile", "finitudine"]
+    },
+    {
+      "concept": "Eccedenza strutturale",
+      "definition": "La sproporzione originaria tra il soggetto e il mondo: non evento eccezionale ma struttura dell'esperienza, in cui il reale è sempre più grande di quanto il soggetto possa contenere, prevedere o governare.",
+      "linked_nodes": ["limite reale", "posizionalità eccentrica", "decentramento"]
+    },
+    {
+      "concept": "Irreversibilità",
+      "definition": "La qualità specifica della perdita che la distingue dall'eccedenza: non sproporzione superabile ma chiusura di possibilità che introduce una discontinuità non interamente recuperabile nella struttura dell'esperienza.",
+      "linked_nodes": ["perdita", "lutto", "statuto simbolico della perdita"]
+    },
+    {
+      "concept": "Rischio educativo del limite",
+      "definition": "La condizione strutturale in cui l'educazione si espone al fatto che non tutto può essere prevenuto, spiegato o trasformato in apprendimento; il limite reale non è educativo per definizione ma ineludibile per struttura.",
+      "linked_nodes": ["limite reale", "eccedenza", "apertura verso l'Asse 5"]
+    }
+  ],
+  "structural_nodes": [
+    {
+      "node": "Reale come resistenza",
+      "short_definition": "Ciò che eccede l'intenzionalità del soggetto e non si lascia integrare senza resto; non dato empirico né trauma ma struttura dell'esistenza come finitudine."
+    },
+    {
+      "node": "Decentramento",
+      "short_definition": "L'effetto dell'eccedenza sull'esperienza soggettiva: non annullamento dell'identità ma spostamento dal centro, interruzione dell'illusione di trasparenza tra soggetto e mondo."
+    },
+    {
+      "node": "Perdita irreversibile",
+      "short_definition": "La forma del limite che chiude possibilità senza compensazione possibile; richiede un attraversamento che non può essere accelerato né sostituito con spiegazione o tecnica di regolazione."
+    },
+    {
+      "node": "Separazione",
+      "short_definition": "Il processo per cui il soggetto si costituisce come distinto dall'altro e riconosce l'altro come irriducibilmente separato; non evento ma dimensione continua dello sviluppo."
+    },
+    {
+      "node": "Finitudine strutturale",
+      "short_definition": "Nessun soggetto, a nessuna età, è sovrano del proprio campo di possibilità; la finitudine non è accidente ma condizione costitutiva dell'esistenza che il limite reale rende manifesta."
+    },
+    {
+      "node": "Statuto simbolico della perdita",
+      "short_definition": "La perdita può acquisire una forma simbolica che la rende abitabile senza ridurla a norma o a spiegazione; condizione del passaggio verso l'apertura desiderante."
+    },
+    {
+      "node": "Verifica di realtà",
+      "short_definition": "La funzione dell'Asse 4 rispetto agli assi precedenti: mostrare che la regolazione può fallire, la relazione non ripara tutto, la norma non risolve ogni conflitto — il limite eccede tutti gli strumenti costituiti."
+    },
+    {
+      "node": "Posizionalità eccentrica",
+      "short_definition": "L'essere umano è il proprio corpo ma non coincide mai completamente con esso (Plessner): il soggetto non è totalmente disponibile a se stesso, e l'eccedenza si manifesta anche come distanza da sé."
+    }
+  ],
+  "internal_articulations": [
+    {
+      "section": "Capitolo 1 - Lo statuto del limite reale",
+      "function": "Funzione delimitativa e negativa: distingue il limite reale dalla norma, dalla frustrazione regolabile e dal trauma; introduce il concetto di reale come eccedenza strutturale che resiste alla simbolizzazione; chiarisce la funzione di torsione dell'asse nel modello."
+    },
+    {
+      "section": "Capitolo 2 - L'eccedenza",
+      "function": "Descrive la prima e più elementare forma di incontro con il limite: la sproporzione che decentra senza ferire; distingue eccedenza da perdita; mostra il corpo come primo luogo in cui l'eccedenza è vissuta prima di essere simbolizzata."
+    },
+    {
+      "section": "Capitolo 3 - La perdita",
+      "function": "Tematizza la forma più radicale del limite: l'irreversibilità che chiude possibilità; distingue il lutto dalla regressione e dalla disorganizzazione; argomenta perché la perdita non può essere ridotta a apprendimento."
+    },
+    {
+      "section": "Capitolo 4 - La separazione",
+      "function": "Descrive la separazione come dimensione continua dello sviluppo, non come evento puntuale; mostra come la costituzione del soggetto come distinto presupponga l'incontro con il limite dell'altro come irriducibile."
+    },
+    {
+      "section": "Capitolo 5 - Il rischio educativo",
+      "function": "Tematizza l'esposizione strutturale dell'educazione al limite: non tutto può essere prevenuto, spiegato o trasformato; il rischio educativo non è accidente ma condizione costitutiva di ogni atto di trasmissione."
+    },
+    {
+      "section": "Capitolo 6 - Temporalità del limite",
+      "function": "Mostra come il limite reale trasformi la temporalità del soggetto: introduce l'irreversibilità nel campo temporale, modifica il rapporto con il futuro come apertura del possibile, prepara la domanda del desiderio."
+    },
+    {
+      "section": "Capitolo 7 - Statuto simbolico della perdita",
+      "function": "Descrive le condizioni in cui la perdita acquisisce una forma simbolica che la rende abitabile: non rimozione né spiegazione ma elaborazione che non cancella il residuo; condizione del passaggio verso il desiderio orientato."
+    },
+    {
+      "section": "Capitolo 8 - Raccordo con l'asse del desiderio",
+      "function": "Prepara il passaggio all'Asse 5: il limite reale non elimina l'orientamento del soggetto ma lo trasforma; il desiderio maturo si riorganizza a partire dal limite anziché negarlo; senza limite il desiderio resta onnipotente o disperso."
+    }
+  ],
+  "reduction_risks": [
+    {
+      "type": "Pedagogizzazione del limite",
+      "description": "Attribuire al limite un senso necessariamente positivo o formativo, trattando ogni perdita come occasione di crescita; il limite reale non è buono in sé ma ineludibile — può disorganizzare senza trasformare produttivamente."
+    },
+    {
+      "type": "Riduzione del limite a frustrazione",
+      "description": "Trattare l'incontro con il reale come una variante più intensa della frustrazione regolabile; la perdita introduce irreversibilità che non può essere semplicemente gestita meglio con tecniche di regolazione più efficaci."
+    },
+    {
+      "type": "Trasformazione accelerata in significato",
+      "description": "Accelerare il processo di simbolizzazione, chiedendo al soggetto di dare senso a ciò che ha incontrato prima di aver attraversato davvero il limite; questa accelerazione sostituisce l'esperienza con una tecnica di significazione."
+    },
+    {
+      "type": "Riduzione a patologia",
+      "description": "Leggere ogni difficoltà nell'attraversamento del limite come sintomo clinico individuale, perdendo la dimensione strutturale: il limite reale non è patologico in sé ma costitutivo dell'esistenza."
+    }
+  ],
+  "structural_questions": [
+    "In che senso il limite reale non è né norma né frustrazione regolabile, e quali conseguenze ha questa distinzione per la comprensione delle difficoltà che il soggetto incontra nell'attraversamento?",
+    "Come si distingue strutturalmente l'eccedenza (sproporzione) dalla perdita (irreversibilità), e perché questa distinzione è decisiva per non trattare ogni incontro con il reale come lutto?",
+    "In quale modo la temporalità del soggetto viene modificata dall'incontro con il limite, e come questa modificazione prepara la possibilità di un desiderio orientato anziché onnipotente?",
+    "Che cosa significa che la perdita può acquisire un statuto simbolico senza che questo equivalga a rimuoverla o a trasformarla in apprendimento?"
+  ],
+  "methodological_constraints": [
+    "Non attribuire al limite reale un valore educativo intrinseco: l'asse descrive l'ineludibilità del limite, non la sua necessaria funzione formativa; l'esito dipende da condizioni che l'asse non può garantire.",
+    "Non tradurre l'incontro con il limite in obiettivi educativi o fasi dello sviluppo: il limite non è acquisizione ma evento strutturale che trasforma il campo dell'esperienza.",
+    "Non ridurre il processo di simbolizzazione della perdita a tecniche narrative o cognitive: il statuto simbolico si costituisce in condizioni relazionali e temporali che non sono controllabili dall'esterno.",
+    "Non confondere la funzione di verifica di realtà dell'Asse 4 con una critica agli assi precedenti: il limite eccede regolazione, relazione e norma senza invalidarle."
+  ],
+  "compilation_notes": {
+    "confidence_level": "media",
+    "needs_human_review": true,
+    "notes": "L'asse è ricco di distinzioni concettuali fondamentali ma i capitoli 3-7 sono stati letti solo parzialmente per limiti di output. La struttura generale è chiara: eccedenza → perdita → separazione → simbolizzazione → raccordo con desiderio. I concetti di Heidegger, Plessner, Freud e Bion sono utilizzati in modo delimitato come riferimenti strutturali.",
+    "open_issues": [
+      "I capitoli 3, 4, 5, 6, 7 andrebbero riletti integralmente per verificare se emergono concetti aggiuntivi non rilevati nella sintesi.",
+      "Il rapporto tra statuto simbolico della perdita (Asse 4, cap. 7) e mediazione simbolica (Asse 6, cap. 3) andrebbe precisato per evitare sovrapposizioni."
+    ]
+  }
+}

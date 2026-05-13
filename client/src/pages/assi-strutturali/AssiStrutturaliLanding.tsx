@@ -125,7 +125,7 @@ export default function AssiStrutturaliLanding() {
             Gli <span className="text-indigo-300">assi strutturali</span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-200 max-w-2xl leading-relaxed mb-10">
-            Le sei dimensioni costitutive dell'esperienza umana in sviluppo: non tappe evolutive, ma strutture dell'esperienza che ne rendono possibile la forma.
+            Sei dimensioni costitutive dell'esperienza umana: fondamento operativo del laboratorio e memoria di contesto per il lavoro dell'intelligenza artificiale.
           </p>
           <Link
             to="/assi-strutturali/capitoli"
@@ -136,35 +136,47 @@ export default function AssiStrutturaliLanding() {
         </div>
       </div>
 
-      {/* Intro — full text block */}
+      {/* Intro — Non un'elaborazione filosofica, ma una strumentazione */}
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-          <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-6">
-            Ogni essere umano cresce. Ma in che senso, esattamente, "cresce"?
-          </p>
-          <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 max-w-3xl">
-            Non basta rispondere con le tappe dello sviluppo psicomotorio, né con i traguardi cognitivi, né con l'acquisizione progressiva di competenze sociali. Tutte queste risposte, per quanto utili, presuppongono qualcosa che non spiegano: che tipo di soggetto si sviluppa, e in virtù di quali strutture fondamentali la sua esperienza prende forma.
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+            Una strumentazione, non un'elaborazione filosofica 
+          </h2>
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-5 max-w-3xl">
+            Su quale fondamento deve operare un'intelligenza artificiale che lavora su temi come lo sviluppo umano, l'educazione, la cura?
           </p>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-3xl">
-            Il laboratorio HCAIRE ha elaborato una risposta sistematica a questa domanda. Il cuore di questa risposta è un'architettura concettuale articolata in <strong>sei assi strutturali di sviluppo</strong>: dimensioni costitutive dell'esperienza umana che non si sostituiscono alle teorie psicologiche esistenti, ma le precedono e le fondano. Lo sviluppo del bambino è il dominio in cui questi assi sono stati per primi messi a punto, e resta il caso d'uso più articolato; ma la loro portata riguarda l'intero sviluppo umano.
+            Non una teoria filosofica ma un sistema di riferimento esplicito capace di orientare il lavoro in modo coerente e verificabile. La tradizione filosofica è stata convocata come risorsa: i contributi dei pensatori che hanno affrontato queste dimensioni con maggiore rigore sono stati selezionati e rielaborati per fornire il materiale più solido disponibile. <strong>Filosofia strumentalizzata</strong> al servizio di obiettivi tecnici e pratici.
           </p>
         </div>
       </div>
 
-      {/* Architecture note — full text, slightly tinted */}
+      {/* Una memoria di contesto architettata */}
       <div className="bg-slate-50 border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">
-            L'architettura degli assi: logica e funzione
+            Una memoria di contesto architettata
           </h2>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-5 max-w-3xl">
-            Gli assi strutturali non sono sei argomenti indipendenti. Formano una sequenza coerente in cui ogni asse <strong>presuppone il precedente e apre la strada al successivo</strong>.
-          </p>
-          <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-5 max-w-3xl">
-            Il percorso parte dalla domanda più fondamentale — che cosa è il soggetto prima di ogni qualificazione — e procede attraverso la genesi affettiva del legame con l'altro, la possibilità del giudizio normativo, l'incontro con i limiti reali dell'esperienza, la struttura del desiderio come orientamento al possibile, fino alla mediazione storico-culturale che dà forma concreta a tutto ciò che precede.
+            Gli assi strutturali sono il <strong>livello più profondo dell'architettura del laboratorio</strong>. Stanno prima delle traduzioni interdisciplinari e prima della produzione degli strumenti. Ogni volta che l'intelligenza artificiale viene impiegata nei progetti del laboratorio opera all'interno di un frame di riferimento che gli assi hanno definito: non per rispondere alle domande, ma per garantire che vengano poste nel modo giusto.
           </p>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-3xl">
-            Non si tratta di una sequenza cronologica, né di stadi evolutivi. È un'architettura: ogni livello è logicamente necessario agli altri. Per ciascun asse il progetto ha prodotto <strong>un corpo di capitoli tematici</strong>: in tutto <strong>44 capitoli</strong>, per un totale di oltre 300.000 caratteri di elaborazione teorica.
+            A questo fondamento si affiancano strati di memoria di contesto più specifici per ciascun dominio. Ma gli assi restano il punto a cui il lavoro torna ogni volta che si tratta di verificare la coerenza di una direzione con le premesse del laboratorio.
+          </p>
+        </div>
+      </div>
+
+      {/* L'architettura: sei assi, una struttura */}
+      <div className="bg-white border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+            Sei assi, una struttura
+          </h2>
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-5 max-w-3xl">
+            Le sei dimensioni sono <strong>strutture logicamente interdipendenti</strong> che descrivono le condizioni entro cui l'esperienza umana prende forma ed entro cui qualsiasi intervento su di essa deve muoversi con consapevolezza.
+          </p>
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-5 max-w-3xl">
+            Il percorso parte dalla domanda più radicale — che cosa è il soggetto prima di ogni qualificazione — e procede attraverso la genesi affettiva del legame con l'altro, la struttura del giudizio normativo, l'incontro con i limiti reali, il desiderio come orientamento che sopravvive all'impossibile, fino alla mediazione storico-culturale che dà forma concreta a tutto il resto. Ogni asse presuppone il precedente.
           </p>
         </div>
       </div>
@@ -220,16 +232,6 @@ export default function AssiStrutturaliLanding() {
       {/* Closing — full text */}
       <div className="bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Perché questi capitoli</h2>
-          <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-5 max-w-3xl">
-            Il lavoro di elaborazione degli assi strutturali non è una raccolta di saggi teorici. È il tentativo di costruire un <strong>linguaggio condiviso</strong> tra discipline — filosofia, psicologia, pedagogia, clinica.
-          </p>
-          <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-5 max-w-3xl">
-            Ciascun capitolo nasce da una domanda precisa, risponde con rigore concettuale, e si chiude aprendo verso il successivo. Il risultato è una mappa dell'esperienza umana in sviluppo che può orientare educatori, clinici, ricercatori e progettisti di servizi, come strumento per vedere con più chiarezza.
-          </p>
-          <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-3xl">
-            I capitoli sono accompagnati da riferimenti alle figure dei pensatori che hanno contribuito a elaborare ciascuna dimensione — da Merleau-Ponty a Winnicott, da Vygotskij a Gadamer, da Arendt a Freud — con i loro testi fondamentali, perché la teoria non sia ornamento ma radice visibile del pensiero.
-          </p>
           <div className="mt-10">
             <Link
               to="/assi-strutturali/capitoli"

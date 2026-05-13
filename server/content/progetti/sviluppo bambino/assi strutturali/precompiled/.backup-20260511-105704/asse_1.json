@@ -1,0 +1,172 @@
+{
+  "axis_id": "asse_1",
+  "axis_name": "Asse ontologico–fenomenologico",
+  "version": "v1.0",
+  "status": "bozza",
+  "source_document": {
+    "title": "Asse 1 - Ontologico - fenomenologico (8 capitoli Markdown)",
+    "format": "markdown",
+    "language": "it"
+  },
+  "structural_function": "Fondare la comprensione del soggetto in sviluppo sul piano delle condizioni di possibilità dell'essere-soggetto, prima di ogni qualificazione psicologica, educativa o clinica: descrivere strutturalmente come il soggetto si costituisce nel tempo, nel corpo e nella relazione, senza ridurlo né a sostanza preesistente né a esito di processi funzionali.",
+  "core_processes": [
+    {
+      "name": "Soggettivazione",
+      "description": "Processo immanente attraverso cui il soggetto si costituisce nel tempo, nel corpo e nella relazione, per differenziazione interna del modo di essere — non per accumulo di funzioni né per esecuzione di un piano."
+    },
+    {
+      "name": "Temporalizzazione incarnata",
+      "description": "Dinamica per cui il soggetto non è collocato nel tempo come in una cornice esterna, ma è il movimento stesso della temporalizzazione: trattiene il passato, si orienta verso il futuro, mantiene una continuità dell'esperienza attraverso il corpo."
+    },
+    {
+      "name": "Co-regolazione e regolazione progressiva",
+      "description": "Processo originariamente distribuito nella relazione con l'altro, attraverso cui l'esperienza acquisisce tenuta temporale, l'attivazione diventa modulabile e il tempo diventa abitabile — condizione previa di ogni successiva autonomia regolativa."
+    },
+    {
+      "name": "Costituzione del campo intenzionale",
+      "description": "Processo attraverso cui l'orizzonte complessivo delle possibilità vissute del soggetto si amplia, si restringe o si irrigidisce in funzione della qualità delle organizzazioni temporali, corporee, regolative e relazionali."
+    }
+  ],
+  "bridge_concepts": [
+    {
+      "concept": "Soggettività come processo di costituzione",
+      "definition": "Il soggetto non è né presupposto né prodotto: si costituisce nel tempo, nel corpo e nella relazione. Nozione traducibile in discipline che si interrogano sull'identità, sulla continuità e sulla trasformazione soggettiva senza ridurla a sostanza o a esito funzionale.",
+      "linked_nodes": ["ipseità in divenire", "temporalità vissuta", "dipendenza originaria"]
+    },
+    {
+      "concept": "Corporeità come luogo originario di senso",
+      "definition": "Il corpo non è supporto biologico dello sviluppo ma la modalità primaria dell'essere-soggetto nel mondo: apre al mondo prima di ogni riflessione, iscrive il tempo come traccia, costituisce il primo luogo dell'intersoggettività.",
+      "linked_nodes": ["corpo vissuto", "regolazione corporea", "temporalità incarnata"]
+    },
+    {
+      "concept": "Campo intenzionale",
+      "definition": "Struttura globale dell'esperienza vissuta che descrive il modo in cui il soggetto abita il mondo come insieme di possibilità; non è una funzione né una rappresentazione mentale, ma la sintesi fenomenologica di temporalità, corporeità, regolazione e relazione.",
+      "linked_nodes": ["apertura al mondo", "regolazione", "relazione strutturale"]
+    },
+    {
+      "concept": "Vulnerabilità come condizione strutturale",
+      "definition": "La vulnerabilità del soggetto in sviluppo non è un deficit da superare ma la condizione originaria che rende possibile la trasformazione, il sostegno e l'orientamento; è essa stessa condizione dello sviluppo.",
+      "linked_nodes": ["dipendenza originaria", "co-regolazione", "apertura al mondo"]
+    },
+    {
+      "concept": "Regolazione ontologica",
+      "definition": "La regolazione intesa non come tecnica di controllo degli stati interni ma come principio strutturale che consente all'esperienza di non frammentarsi nel tempo; precede logicamente l'affettività strutturata e la normatività.",
+      "linked_nodes": ["tenuta temporale", "co-regolazione", "temporalizzazione incarnata"]
+    }
+  ],
+  "structural_nodes": [
+    {
+      "node": "Ipseità in divenire",
+      "short_definition": "Continuità dinamica del soggetto attraverso il cambiamento, non fondata su un nucleo invariabile ma sulla tenuta dell'esperienza nel tempo."
+    },
+    {
+      "node": "Temporalità vissuta",
+      "short_definition": "Struttura stessa della soggettività: il soggetto è temporale nel suo costituirsi, non collocato nel tempo come in una cornice esterna."
+    },
+    {
+      "node": "Corpo vissuto",
+      "short_definition": "Il corpo non come oggetto osservabile ma come punto zero dell'orientamento, dell'azione e della percezione; luogo originario in cui il senso prende forma."
+    },
+    {
+      "node": "Co-regolazione",
+      "short_definition": "Forma originaria della regolazione dell'esperienza, distribuita nella relazione con l'altro, condizione strutturale della soggettività nei primi anni di vita."
+    },
+    {
+      "node": "Dipendenza originaria",
+      "short_definition": "La dipendenza non come fase da superare ma come forma originaria della soggettivazione: il soggetto si costituisce attraverso la relazione, non prima di essa."
+    },
+    {
+      "node": "Apertura al mondo",
+      "short_definition": "Struttura fondamentale del corpo-soggetto: non chiusura in sé ma esposizione e orientamento al mondo prima di ogni riflessione."
+    },
+    {
+      "node": "Spessore del presente",
+      "short_definition": "La temporalità vissuta non come successione di istanti ma come presente che trattiene il passato (ritenzione) e si orienta verso il futuro (protensione)."
+    },
+    {
+      "node": "Relazione strutturale",
+      "short_definition": "La relazione con l'altro non come fattore ambientale ma come condizione ontologica della soggettività: il soggetto emerge nella relazione."
+    },
+    {
+      "node": "Stabilizzazione simbolica",
+      "short_definition": "Funzione attraverso cui le esperienze acquisiscono una prima forma duratura che trascende il momento, rendendo possibile la continuità dell'orientamento."
+    },
+    {
+      "node": "Soglia ontologico-morale",
+      "short_definition": "Limite interno dell'Asse 1: il soggetto costituito non è ancora un soggetto moralmente vincolato; la moralità non è deducibile dall'ontologia."
+    }
+  ],
+  "internal_articulations": [
+    {
+      "section": "Capitolo 1 - Statuto dell'Asse ontologico–fenomenologico",
+      "function": "Posiziona l'asse come fondativo rispetto a tutto il modello: introduce la distinzione tra descrizione strutturale, spiegazione causale e prescrizione normativa; stabilisce il lessico strutturale (soggetto, corporeità, regolazione, relazione, temporalità) che circolerà negli assi successivi."
+    },
+    {
+      "section": "Capitolo 2 - Il soggetto come processo di costituzione",
+      "function": "Critica le due riduzioni simmetriche (soggetto come nucleo preformato / soggetto come prodotto funzionale) e stabilisce la tesi centrale: la soggettività è processo di costituzione, non dato né esito."
+    },
+    {
+      "section": "Capitolo 3 - Temporalità vissuta come struttura della soggettività",
+      "function": "Argomenta che la temporalità non è cornice esterna ma struttura stessa della soggettività; il soggetto è il movimento della temporalizzazione; introduce ritenzione, protensione e tenuta temporale come strutture non cognitive."
+    },
+    {
+      "section": "Capitolo 4 - La corporeità come luogo originario di senso",
+      "function": "Mostra che il corpo non è supporto biologico ma luogo originario in cui il senso prende forma; argomenta la distinzione corpo-oggetto / corpo vissuto; collega corporeità a temporalità e relazione."
+    },
+    {
+      "section": "Capitolo 5 - La regolazione come principio ontologico",
+      "function": "Distingue la regolazione come principio strutturale dell'esperienza dalla regolazione come funzione tecnica; argomenta che precede logicamente affettività e normatività; introduce la co-regolazione come matrice originaria."
+    },
+    {
+      "section": "Capitolo 6 - La relazione come condizione strutturale della soggettività",
+      "function": "Radicalizza il ruolo della relazione: non fattore ambientale ma condizione ontologica; la soggettività emerge nella relazione, non prima; l'intersoggettività è originariamente incarnata."
+    },
+    {
+      "section": "Capitolo 7 - Il campo intenzionale come struttura dell'esperienza",
+      "function": "Introduce il campo intenzionale come struttura globale che integra temporalità, corporeità, regolazione e relazione in un orizzonte unitario di possibilità vissute; descrive le modificazioni strutturali del campo in funzione della qualità regolativa."
+    },
+    {
+      "section": "Capitolo 8 - Soglia tra ontologia e genesi morale",
+      "function": "Funzione delimitativa: chiarisce che cosa l'Asse 1 ha fondato e dove si arresta; il soggetto costituito non è ancora moralmente vincolato; il passaggio all'Asse 2 non è deduttivo ma implica una trasformazione qualitativa di statuto."
+    }
+  ],
+  "reduction_risks": [
+    {
+      "type": "Riduzione funzionalistica",
+      "description": "Leggere i concetti dell'Asse 1 (regolazione, temporalità, corporeità) come competenze osservabili, misurabili o potenziabili, perdendo il loro statuto di condizioni strutturali dell'esperienza soggettiva."
+    },
+    {
+      "type": "Anticipazione normativa",
+      "description": "Dedurre dall'ontologia del soggetto criteri educativi o clinici diretti, confondendo la descrizione strutturale con la prescrizione; l'Asse 1 non produce indicazioni operative, rende le successive concettualmente fondate."
+    },
+    {
+      "type": "Riduzione biologica",
+      "description": "Interpretare corporeità, temporalità e regolazione come fenomeni esclusivamente neurobiologici o fisiologici, perdendo la dimensione fenomenologica dell'esperienza vissuta come luogo originario del senso."
+    },
+    {
+      "type": "Riduzione relazionalista",
+      "description": "Pensare che il soggetto sia interamente prodotto dalla relazione, cancellando la dimensione di costituzione immanente; la relazione è condizione strutturale, non causa sufficiente della soggettività."
+    }
+  ],
+  "structural_questions": [
+    "In che senso il soggetto si costituisce nel tempo senza essere né presupposto né prodotto, e che cosa implica questa posizione per la comprensione del cambiamento soggettivo?",
+    "Come può la temporalità essere al tempo stesso struttura della soggettività e medium dello sviluppo, senza che il tempo diventi una cornice esterna?",
+    "In quale senso la regolazione precede logicamente tanto l'affettività strutturata quanto la normatività, e che conseguenze ha questa priorità per la comprensione delle difficoltà dello sviluppo?",
+    "Dove si situa il confine tra la condizione strutturale della soggettività e l'emergere di una prima dimensione propriamente morale, e perché tale confine non è deducibile dall'ontologia?"
+  ],
+  "methodological_constraints": [
+    "Non tradurre i concetti dell'Asse 1 in indicatori osservativi, protocolli di valutazione o interventi educativi: l'asse opera esclusivamente sul piano della descrizione strutturale.",
+    "Non anticipare la moralità, la normatività o il giudizio all'interno dell'Asse 1: questi appartengono ad assi successivi e non sono deducibili dall'ontologia del soggetto.",
+    "Non ridurre la corporeità a biologia né la relazione a variabile ambientale: entrambe sono condizioni ontologiche della soggettività, non fattori causali tra altri.",
+    "Non impiegare i concetti di questo asse come se fossero concetti psicologici già consolidati: il loro significato è determinato dall'orizzonte fenomenologico in cui sono introdotti."
+  ],
+  "compilation_notes": {
+    "confidence_level": "alta",
+    "needs_human_review": true,
+    "notes": "L'asse è il meglio documentato dei sei: 8 capitoli completi, con funzioni chiaramente distinte e lessico controllato. Il confine con l'Asse 2 (soglia ontologico-morale) è esplicitamente tematizzato nel capitolo conclusivo.",
+    "open_issues": [
+      "La distinzione tra stabilizzazione simbolica (fine Asse 1) e simbolizzazione in senso pieno (Assi successivi) merita approfondimento per evitare confusioni nella traduzione interdisciplinare.",
+      "Il rapporto tra campo intenzionale (Asse 1) e campo desiderabile (Asse 5) è strutturalmente importante ma non ancora esplicitato in questo asse."
+    ]
+  }
+}

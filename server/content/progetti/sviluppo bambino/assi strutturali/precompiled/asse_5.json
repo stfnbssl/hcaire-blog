@@ -1,152 +1,116 @@
 {
   "axis_id": "asse_5",
-  "axis_name": "Asse del desiderio",
+  "axis_name": "Desiderio",
   "version": "v1.0",
   "status": "bozza",
   "source_document": {
-    "title": "Asse 5 - Desiderio (7 capitoli Markdown)",
+    "title": "Asse 5 - Desiderio (capitoli 1-7)",
     "format": "markdown",
     "language": "it"
   },
-  "structural_function": "Tematizzare il desiderio come struttura dinamica di orientamento del soggetto verso il possibile: non contenuto motivazionale né pulsione da regolare, ma forma del rapporto del soggetto con il futuro e con il bene che consente di restare orientati dopo l'incontro con il limite reale, senza ridursi né alla rinuncia né all'onnipotenza — e distinguere il desiderio orientato dalle sue patologie strutturali (saturazione, dispersione, negazione).",
+  "structural_function": "Pensare il desiderio come struttura di orientamento del soggetto verso il possibile, non come contenuto, pulsione o motivazione: descrive la sua genealogia filosofica, la sua fenomenologia incarnata, la sua soggettivazione nel tempo, il suo rapporto con norma e giudizio, e le sue deformazioni strutturali nel mondo contemporaneo.",
   "core_processes": [
     {
+      "name": "Orientamento incarnato verso il possibile",
+      "description": "Il desiderio opera prima come tonalita del campo dell'esperienza e qualita del mondo come abitabile, attraversabile o respingente, non come stato interno ne come preferenza."
+    },
+    {
       "name": "Soggettivazione del desiderio",
-      "description": "Processo per cui il desiderio cessa di essere tensione indifferenziata verso il campo desiderabile e diventa orientamento proprio del soggetto: il soggetto non solo è attirato da possibilità ma le riconosce come sue e le abita come direzione."
+      "description": "Processo graduale, non riflessivo e non istantaneo per cui una direzione del campo diventa riconoscibile come 'mia', senza che cio implichi interiorizzazione di un contenuto ne scelta volontaria."
     },
     {
-      "name": "Trasformazione del desiderio a partire dal limite",
-      "description": "Il desiderio maturo si riorganizza a partire dall'incontro con il limite reale (Asse 4): non negandolo né scomparendo sotto di esso, ma differenziando la tensione verso il possibile dalla pretesa di onnipotenza sul reale."
+      "name": "Selezione e rinuncia",
+      "description": "L'incontro con il limite rende il desiderio capace di ordinare, sacrificare e custodire: la rinuncia non e opposta al desiderio ma sua condizione di consistenza nel tempo."
     },
     {
-      "name": "Orientamento valutativo del desiderio",
-      "description": "Processo per cui il desiderio non è neutro ma è sempre già orientato verso un bene — anche quando sbaglia oggetto; implica una distinzione pre-riflessiva tra ciò che vale la pena e ciò che lascia indifferenti, fondando una normatività del desiderio non repressiva."
+      "name": "Valutazione implicita",
+      "description": "Desiderare e gia distinguere tra cio che vale la pena, cio che non vale e cio che puo essere custodito: normativita non riflessiva che precede e rende possibile il giudizio esplicito."
+    },
+    {
+      "name": "Riconoscimento intersoggettivo",
+      "description": "Il desiderio dipende strutturalmente da un altro che resiste e riconosce: senza questa dimensione collassa in possesso reiterato o si disperde in attivazioni successive."
     }
   ],
   "bridge_concepts": [
     {
-      "concept": "Desiderio come struttura di orientamento",
-      "definition": "Il desiderio non come stato interno che il soggetto possiede ma come forma del rapporto del soggetto con il possibile: risponde alla domanda 'in quale direzione il mondo mi si apre come significativo?' e descrive il modo in cui il soggetto abita il tempo, il mondo e il futuro.",
-      "linked_nodes": ["campo desiderabile", "mancanza strutturale", "orientamento valutativo"]
+      "concept": "Desiderio come struttura, non contenuto",
+      "definition": "Forma del rapporto del soggetto con il possibile, non oggetto interno ne stato mentale: non risponde a 'che cosa voglio' ma a 'in che direzione il mondo mi si apre come significativo'.",
+      "linked_nodes": ["Mancanza strutturale", "Bene come orientamento"]
     },
     {
-      "concept": "Mancanza strutturale",
-      "definition": "La non-coincidenza originaria del soggetto con se stesso: non carenza patologica ma condizione costitutiva dell'esistenza umana che rende possibile la tensione verso il possibile, l'apertura al futuro e la trasformazione.",
-      "linked_nodes": ["desiderio come struttura", "incompiutezza", "inquietudine strutturale"]
+      "concept": "Tonalita del campo",
+      "definition": "Coloritura globale dell'esperienza che rende il mondo abitabile o inospitale, aperto o chiuso: orienta l'azione prima che il soggetto possa dire perche si muove o si ritrae.",
+      "linked_nodes": ["Campo desiderabile", "Desiderio ritratto"]
     },
     {
-      "concept": "Normatività del desiderio",
-      "definition": "La dimensione valutativa implicita nel desiderio: desiderare è sempre già valutare, operare una distinzione tra ciò che vale e ciò che non vale, anche prima di qualsiasi giudizio riflessivo — condizione di un'educazione del desiderio non repressiva.",
-      "linked_nodes": ["orientamento valutativo", "ordo amoris", "desiderio e norma"]
+      "concept": "Soggettivazione (non interiorizzazione)",
+      "definition": "Trasformazione del rapporto del soggetto con il campo per cui una direzione diventa relativamente stabile e assumibile, senza che venga 'portata dentro' come contenuto.",
+      "linked_nodes": ["Bene come orientamento", "Mancanza strutturale"]
     },
     {
-      "concept": "Campo desiderabile",
-      "definition": "L'insieme delle possibilità che il soggetto vive come appetibili prima della loro tematizzazione riflessiva; struttura pre-personale che precede la soggettivazione del desiderio e costituisce il terreno su cui quest'ultima si esercita.",
-      "linked_nodes": ["desiderio come struttura", "soggettivazione", "intenzionalità incarnata"]
+      "concept": "Ordo amoris",
+      "definition": "Questione dell'orientamento interno del desiderio, non della sua intensita: il problema non e desiderare troppo ma desiderare in modo disordinato, distinguendo cio da custodire da cio da lasciare.",
+      "linked_nodes": ["Bene come orientamento", "Desiderio fissato"]
     },
     {
-      "concept": "Patologie strutturali del desiderio",
-      "definition": "Configurazioni in cui il desiderio perde la funzione di orientamento: saturazione (il desiderio viene riempito continuamente senza potersi formare), dispersione (il desiderio perde oggetto e direzione), negazione (il desiderio viene bloccato dalla norma o dal limite senza elaborazione).",
-      "linked_nodes": ["saturazione", "dispersione", "raccordo con Asse 6"]
+      "concept": "Conatus",
+      "definition": "Slancio ontologico con cui ciascuna cosa tende a perseverare nel proprio essere: radice ontologica (non psicologica) del desiderio, strutturalmente distinta dalla tenuta relazionale che ne rende possibile l'operare.",
+      "linked_nodes": ["Mancanza strutturale"]
+    },
+    {
+      "concept": "Riconoscimento (senza teleologia)",
+      "definition": "Struttura intersoggettiva per cui il desiderio si soddisfa solo nel rapporto con un altro soggetto che resiste; assunta come struttura, non come destinazione hegeliana dello Spirito.",
+      "linked_nodes": ["Bene come orientamento"]
     }
   ],
   "structural_nodes": [
-    {
-      "node": "Inquietudine strutturale",
-      "short_definition": "La condizione del soggetto che non si accontenta del finito come assoluto; non patologia ma segno della mancanza strutturale che mantiene aperto il futuro — distinta dall'ansia come stato da regolare."
-    },
-    {
-      "node": "Ordo amoris",
-      "short_definition": "Il problema morale non è desiderare troppo ma desiderare in modo disordinato: il desiderio è sempre già valutativo e la vita morale è questione di orientamento e ordine degli amori, non di repressione."
-    },
-    {
-      "node": "Desiderio incarnato",
-      "short_definition": "Il desiderio non è tensione astratta ma si dà sempre nel corpo e nel mondo: il corpo non è solo sede della pulsione ma luogo in cui il possibile si profila come attraente o repulsivo, accessibile o eccessivo."
-    },
-    {
-      "node": "Distinzione desiderio/bisogno/motivazione",
-      "short_definition": "Il bisogno si spegne con la soddisfazione; la motivazione è orientata a un risultato misurabile; il desiderio non si chiude nella soddisfazione, introduce attesa e possibilità di rinuncia."
-    },
-    {
-      "node": "Saturazione del desiderio",
-      "short_definition": "Condizione in cui il desiderio viene riempito continuamente prima di potersi formare: priva il soggetto dell'attesa, dell'inquietudine e della direzione, producendo indifferenza o eccitazione senza orientamento."
-    },
-    {
-      "node": "Desiderio e limite",
-      "short_definition": "Il desiderio maturo non ignora il limite ma si riorganizza a partire da esso; senza limite il desiderio resta onnipotente; senza desiderio il limite diventa solo perdita senza apertura."
-    },
-    {
-      "node": "Soggettivazione del desiderio",
-      "short_definition": "Il processo per cui il soggetto non solo è attirato da possibilità ma le riconosce come proprie, le abita come direzione e ne assume la responsabilità — distinzione dal campo desiderabile pre-personale."
-    }
+    { "node": "Mancanza strutturale", "short_definition": "Non-coincidenza del soggetto con cio che e gia dato." },
+    { "node": "Bene come orientamento", "short_definition": "Direzione implicita del desiderio, non comando esterno." },
+    { "node": "Campo desiderabile", "short_definition": "Insieme storicamente mediato delle possibilita che appaiono accessibili." },
+    { "node": "Desiderio ritratto", "short_definition": "Chiusura difensiva del campo come protezione dall'esperienza." },
+    { "node": "Desiderio prestazionale", "short_definition": "Sostituzione dell'orientamento con motivazione misurabile." },
+    { "node": "Desiderio disperso", "short_definition": "Iper-stimolazione senza selezione ne attesa." },
+    { "node": "Desiderio fissato", "short_definition": "Investimento esclusivo come tentativo di controllo." },
+    { "node": "Desiderio sacrificato", "short_definition": "Silenziamento per adultizzazione precoce e adeguamento." }
   ],
   "internal_articulations": [
-    {
-      "section": "Capitolo 1 - Statuto filosofico del desiderio",
-      "function": "Fonda il desiderio come struttura di orientamento e non come stato interno; distingue il desiderio da bisogno, motivazione e pulsione; introduce la mancanza strutturale come condizione non patologica; formula la definizione sintetica del desiderio nel modello."
-    },
-    {
-      "section": "Capitolo 2 - Genealogia filosofica del desiderio",
-      "function": "Ricostruisce tre snodi teorici (Platone: mancanza che educa; Agostino: ordo amoris; Tommaso: appetito del bene) per recuperare le condizioni concettuali di un desiderio orientato, valutativo e non arbitrario; il riferimento a Spinoza introduce il conatus come fondamento ontologico."
-    },
-    {
-      "section": "Capitolo 3 - Fenomenologia del desiderio incarnato",
-      "function": "Mostra come il desiderio non sia tensione astratta ma vissuto nel corpo e nel campo intenzionale; integra la tradizione filosofica con la fenomenologia merleau-pontiana; argomenta la distinzione tra campo desiderabile pre-personale e desiderio soggettivato."
-    },
-    {
-      "section": "Capitolo 4 - Dal campo desiderabile alla soggettivazione del desiderio",
-      "function": "Descrive il processo attraverso cui il soggetto si appropria del desiderio come proprio: non semplice risposta a sollecitazioni ma orientamento che il soggetto assume come direzione della propria esistenza."
-    },
-    {
-      "section": "Capitolo 5 - Desiderio, norma e giudizio",
-      "function": "Articola il rapporto tra desiderio e normatività: il desiderio è già valutativo, la norma orienta ma non crea il desiderio; il giudizio trova nel desiderio la sua radice esistenziale senza esserne determinato."
-    },
-    {
-      "section": "Capitolo 6 - Patologie strutturali del desiderio",
-      "function": "Descrive le configurazioni in cui il desiderio perde la funzione di orientamento: saturazione, dispersione, negazione; non diagnostica clinica ma identificazione di configurazioni strutturali che deformano il rapporto del soggetto con il possibile."
-    },
-    {
-      "section": "Capitolo 7 - Raccordo con l'Asse 6",
-      "function": "Prepara il passaggio all'Asse storico-culturale: il desiderio si dà sempre in un mondo storicamente configurato che può sostenerne l'orientamento o saturarlo; la cultura non produce il desiderio ma ne organizza le forme di espressione e le possibilità di orientamento."
-    }
+    { "section": "Statuto filosofico del desiderio", "function": "Distinguere il desiderio da bisogno, motivazione, preferenza e impulso." },
+    { "section": "Genealogia filosofica", "function": "Ricostruire snodi (Platone, Agostino, Tommaso, Spinoza, Hegel) come operatori concettuali, non come storia erudita." },
+    { "section": "Fenomenologia del desiderio incarnato", "function": "Pensare il desiderio come tonalita e qualita del campo, non come stato interno." },
+    { "section": "Dal campo desiderabile alla soggettivazione", "function": "Articolare il passaggio per cui una direzione del campo diventa 'mia' nel tempo." },
+    { "section": "Desiderio, norma e giudizio", "function": "Mostrare come il desiderio renda possibile una normativita non arbitraria." },
+    { "section": "Patologie strutturali", "function": "Mappare deformazioni come forme di sopravvivenza, non come fallimenti morali individuali." },
+    { "section": "Raccordo con l'Asse 6", "function": "Esporre il desiderio alla mediazione storico-culturale come sismografo del sistema." }
   ],
   "reduction_risks": [
-    {
-      "type": "Riduzione motivazionale",
-      "description": "Trattare il desiderio come motivazione all'azione, misurabile in termini di efficacia e orientabilità dall'esterno attraverso stimoli e rinforzi; il desiderio è struttura di orientamento che precede la motivazione e non si lascia gestire tecnicamente."
-    },
-    {
-      "type": "Riduzione pulsionale",
-      "description": "Identificare il desiderio con la pulsione come forza da contenere o canalizzare; il desiderio nel modello ha una dimensione valutativa originaria che la pulsione non possiede — e l'educazione del desiderio non coincide con la regolazione pulsionale."
-    },
-    {
-      "type": "Neutralizzazione repressiva",
-      "description": "Pensare l'educazione del desiderio come riduzione o contenimento della sua forza; il desiderio non può essere eliminato — viene deviato o distorto — e l'orientamento autentico presuppone che il desiderio venga riconosciuto come tale."
-    },
-    {
-      "type": "Saturazione come risposta",
-      "description": "Rispondere all'inquietudine del desiderio saturandola con stimolazione continua; questa strategia priva il soggetto della capacità di formare desiderio proprio, producendo indifferenza o eccitazione senza orientamento — esito opposto all'intento."
-    }
+    { "type": "Riduzione a bisogno", "description": "Pensare il desiderio come mancanza funzionale destinata a spegnersi con la soddisfazione, perdendone la dimensione temporale e valutativa." },
+    { "type": "Riduzione a motivazione", "description": "Tradurre il desiderio in spinta misurabile orientata al risultato, sostituendo orientamento con efficacia e producendo pedagogia della prestazione." },
+    { "type": "Riduzione a preferenza", "description": "Trattare il desiderio come scelta soggettiva intercambiabile, perdendo la sua normativita implicita e la sua radice ontologica." },
+    { "type": "Idealizzazione del desiderio libero", "description": "Confondere il rispetto del desiderio con la rinuncia all'orientamento, dimenticando che senza norma il desiderio si disperde anziche espandersi." },
+    { "type": "Anticipazione della scelta", "description": "Trasformare precocemente il desiderio in decisione, producendo adattamento o ritiro al posto della soggettivazione." },
+    { "type": "Confusione tra conatus e tenuta", "description": "Sovrapporre la radice ontologica del desiderio (Asse 5) e la co-regolazione relazionale (Asse 1), perdendo la differenza tra slancio e contenimento." }
   ],
   "structural_questions": [
-    "In quale senso il desiderio è struttura di orientamento e non stato interno, e che cosa implica questa distinzione per la comprensione dello sviluppo soggettivo dopo l'incontro con il limite?",
-    "Come si articola il rapporto tra la mancanza strutturale come condizione del desiderio e la perdita come esperienza del limite, senza che queste due dimensioni si confondano?",
-    "In quale modo il desiderio è già valutativo prima di qualsiasi giudizio riflessivo, e che cosa implica questa normatività implicita per il rapporto tra desiderio e norma?",
-    "Che cosa distingue strutturalmente le patologie del desiderio (saturazione, dispersione, negazione) da una configurazione in cui il desiderio mantiene la sua funzione di orientamento?"
+    "Come puo il desiderio diventare 'mio' senza diventare oggetto?",
+    "In che senso il desiderio e normativamente non neutro pur non essendo ancora giudizio?",
+    "Perche la rinuncia e condizione di consistenza del desiderio e non sua negazione?",
+    "Quando una deformazione del desiderio e forma di sopravvivenza e non patologia individuale?",
+    "Come il mondo storico modula l'orizzonte del desiderio senza determinarlo?"
   ],
   "methodological_constraints": [
-    "Non operazionalizzare il desiderio come variabile motivazionale misurabile o come competenza da sviluppare: l'asse descrive una struttura di orientamento che precede e fonda ogni motivazione specifica.",
-    "Non ridurre l'educazione del desiderio a tecniche di stimolazione, rinforzo o contenimento: l'asse richiede di distinguere l'orientamento del desiderio dalla sua gestione tecnica.",
-    "Non anticipare le patologie strutturali come diagnosi cliniche: le configurazioni di saturazione, dispersione e negazione sono strutturali, non individuali, e richiedono lettura a livello del campo storico-culturale (Asse 6).",
-    "Non confondere il campo desiderabile pre-personale con il desiderio soggettivato: la soggettivazione del desiderio è un processo che presuppone gli assi precedenti e non può essere ridotto a sviluppo di preferenze individuali."
+    "Non confondere desiderio, bisogno, motivazione, impulso, preferenza, volonta.",
+    "Non trattare le patologie strutturali del desiderio come diagnosi cliniche o tipologie individuali.",
+    "Non leggere il desiderio come prodotto sociale ne come istanza interiore solipsistica.",
+    "Non sostituire l'educazione del desiderio con tecniche di motivazione o gestione della prestazione.",
+    "Non anticipare la soggettivazione del desiderio attraverso scelta o decisione precoce."
   ],
   "compilation_notes": {
-    "confidence_level": "media",
+    "confidence_level": "alta",
     "needs_human_review": true,
-    "notes": "I capitoli 1 e 2 sono stati letti integralmente. I capitoli 3-7 sono stati letti parzialmente (titoli e incipit dal file persisted). La struttura è chiara e coerente con il modello. La genealogia filosofica (Platone, Agostino, Tommaso, Spinoza) è utilizzata in modo controllato per fondare concetti strutturali.",
+    "notes": "Scheda costruita dai 7 capitoli del documento. La genealogia e stata trattata come strutturale, non erudita. La distinzione tra conatus (Asse 5) e holding (Asse 1) e stata preservata come richiesto esplicitamente dal capitolo 2. Hegel e assunto senza teleologia.",
     "open_issues": [
-      "I capitoli 3-7 andrebbero riletti integralmente per verificare se emergono ulteriori nodi strutturali — in particolare sulla fenomenologia del desiderio incarnato (cap. 3) e sulle patologie strutturali (cap. 6).",
-      "Il raccordo con l'Asse 6 (cap. 7) è cruciale per comprendere come le forme storiche del mondo (tecnica, performance) incidano sulla struttura del desiderio — andrebbe approfondito nella compilazione definitiva."
+      "Nel capitolo 2 sorgente sono presenti due sezioni di sintesi parzialmente sovrapposte (paragrafi 7 e 8) che il documento di estrazione non risolve; segnalo per revisione manuale.",
+      "Il rapporto tra 'campo intenzionale' (Asse 1) e 'campo desiderabile' (Asse 5) come due strati della medesima struttura andrebbe articolato in una scheda di raccordo."
     ]
   }
 }

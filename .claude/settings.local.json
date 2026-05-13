@@ -85,7 +85,13 @@
       "Bash(grep -oE '\\\\\\\\\\\\*' 'C:/my/projects/hcaire-blog/server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 2 - Genealogia filosofica del desiderio - merged.md')",
       "Bash(grep -oE '\\\\\\\\[*_.\\(\\)\\\\-<>\\\\[\\\\]!]' 'C:/my/projects/hcaire-blog/server/content/progetti/sviluppo bambino/assi strutturali/normalized/Asse 5 - Desiderio/Capitolo 2 - Genealogia filosofica del desiderio - merged.md')",
       "Bash(cp /tmp/App.tsx.full client/src/App.tsx)",
-      "Bash(rm /tmp/App.tsx.full)"
+      "Bash(rm /tmp/App.tsx.full)",
+      "PowerShell(Test-Path *)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(Get-CimInstance *)",
+      "PowerShell(Stop-Process *)",
+      "PowerShell(Get-Item *)",
+      "PowerShell(Get-NetTCPConnection *)"
     ]
   }
 }

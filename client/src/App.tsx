@@ -65,6 +65,11 @@ const AdminSkills          = lazy(() => import('./pages/AdminSkills'));
 const AdminPlugins         = lazy(() => import('./pages/AdminPlugins'));
 const AdminJobDefinitions  = lazy(() => import('./pages/AdminJobDefinitions'));
 const AdminJobs            = lazy(() => import('./pages/AdminJobs'));
+const AdminAssi            = lazy(() => import('./pages/AdminAssi'));
+const AdminAssiRebuild     = lazy(() => import('./pages/AdminAssiRebuild'));
+const AdminAssiChapters    = lazy(() => import('./pages/AdminAssiChapters'));
+const AdminAssiChapterEdit = lazy(() => import('./pages/AdminAssiChapterEdit'));
+const AdminCatalogo        = lazy(() => import('./pages/AdminCatalogo'));
 const LettureCriticheLanding = lazy(() => import('./pages/letture/LettureCriticheLanding'));
 const LettureLanding  = lazy(() => import('./pages/letture/LettureLanding'));
 const LetturaDetail   = lazy(() => import('./pages/letture/LetturaDetail'));
@@ -212,6 +217,11 @@ function AppLayout() {
           <Route path="/admin/plugins"          element={<AdminRoute><AdminPlugins /></AdminRoute>} />
           <Route path="/admin/job-definitions"  element={<AdminRoute><AdminJobDefinitions /></AdminRoute>} />
           <Route path="/admin/jobs"             element={<AdminRoute><AdminJobs /></AdminRoute>} />
+          <Route path="/admin/assi"             element={<AdminRoute><AdminAssi /></AdminRoute>} />
+          <Route path="/admin/assi/rebuild"     element={<AdminRoute><AdminAssiRebuild /></AdminRoute>} />
+          <Route path="/admin/assi/capitoli"                              element={<AdminRoute><AdminAssiChapters /></AdminRoute>} />
+          <Route path="/admin/assi/capitoli/:axisSlug/:slug"              element={<AdminRoute><AdminAssiChapterEdit /></AdminRoute>} />
+          <Route path="/admin/catalogo"                                   element={<AdminRoute><AdminCatalogo /></AdminRoute>} />
           {/* Archivio temi (admin) — vedi docs/90-todo/laboratorio-d5b-backend.md §12 */}
           <Route path="/archivio/temi"          element={<AdminRoute><ArchivioTemiIndexPage /></AdminRoute>} />
           <Route path="/archivio/temi/nuovo"    element={<AdminRoute><ArchivioTemaFormPage /></AdminRoute>} />

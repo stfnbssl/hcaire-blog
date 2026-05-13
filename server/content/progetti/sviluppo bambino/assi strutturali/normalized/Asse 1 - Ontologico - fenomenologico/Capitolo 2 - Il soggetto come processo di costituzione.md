@@ -9,7 +9,6 @@ slug: "capitolo-2-il-soggetto-come-processo-di-costituzione"
 prev: "capitolo-1-statuto-dell-asse-ontologico-fenomenologico"
 next: "capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita"
 ---
-
 # Capitolo 2 - Il soggetto come processo di costituzione
 
 ## 1. Il problema del soggetto nello sviluppo
@@ -19,8 +18,7 @@ Ogni modello dello sviluppo presuppone, in modo esplicito o implicito, una certa
 L’Asse ontologico–fenomenologico si colloca deliberatamente fuori da questa alternativa.  
 Qui il soggetto non è né un presupposto né un esito, ma **una questione aperta**: qualcosa che deve essere pensato nel suo farsi, senza essere ridotto né a una sostanza preesistente né a un semplice effetto di cause esterne[^1] <img src="/assets/autori/maurice-merleau-ponty.jpg" alt="Maurice Merleau-Ponty" title="Maurice Merleau-Ponty" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)"> <img src="/assets/autori/edmund-husserl.jpg" alt="Edmund Husserl" title="Edmund Husserl" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)">.
 
-La domanda che orienta questo capitolo non è: *come si sviluppa un soggetto?*,  
-ma: **in che senso si può dire che un soggetto si costituisce**.
+La domanda che orienta questo capitolo non è: *come si sviluppa un soggetto?*, ma: **in che senso si può dire che un soggetto si costituisce**.
 
 ## 2. Critica del soggetto come nucleo già costituito
 
@@ -50,7 +48,7 @@ Se il soggetto è solo ciò che risulta da una concatenazione di processi, diven
 * la possibilità di senso,  
 * e la responsabilità, anche in forme embrionali.
 
-Il rischio è una dissoluzione del soggetto nel funzionamento, che rende lo sviluppo descrivibile ma non intelligibile[^3] <img src="/assets/autori/georges-canguilhem.jpg" alt="Canguilhem" title="Canguilhem" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)">.
+Il rischio è una dissoluzione del soggetto nel funzionamento, che rende lo sviluppo descrivibile ma non intelligibile[^3] <img src="/assets/autori/georges-canguilhem.jpg" alt="Georges Canguilhem" title="Georges Canguilhem" class="ref-portrait" style="height:104px;vertical-align:middle;border-radius:5%;margin:0 4px 0 2px;box-shadow:0 1px 3px rgba(0,0,0,.25)">.
 
 ## 4. La soggettività come processo di soggettivazione
 
@@ -118,6 +116,7 @@ Su questa base diventa ora possibile affrontare:
 * la relazione come matrice della soggettività.
 
 Il capitolo successivo entrerà nel cuore di questa dinamica, mostrando come **la temporalità vissuta** non sia una dimensione tra le altre, ma il modo stesso in cui il soggetto si costituisce nel suo divenire.
+
 
 [^1]:  L’idea che il soggetto non possa essere assunto come presupposto, ma debba essere interrogato nel suo costituirsi, attraversa la fenomenologia da Husserl a Merleau-Ponty. Si veda **Maurice Merleau-Ponty** per l’idea di soggetto come questione, non come dato ed **Edmund Husserl** per il concetto di costituzione (*Konstitution*) come problema, non come esito.
 

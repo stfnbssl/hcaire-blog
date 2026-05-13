@@ -18,6 +18,10 @@ import hcaireRoutes from './routes/hcaire';
 import sviluppoBambinoRoutes from './routes/sviluppoBambino';
 import pipelineRoutes from './routes/pipeline';
 import lettureRoutes, { lettureAdminRouter } from './routes/letture';
+import { assiAdminRouter } from './routes/assi';
+import { assiChaptersAdminRouter } from './routes/assiChapters';
+import { catalogAuthorsAdminRouter } from './routes/catalogAuthors';
+import { catalogBooksAdminRouter } from './routes/catalogBooks';
 import { siteContentPublicRouter, siteContentAdminRouter } from './routes/siteContent';
 import archivioTemiRoutes from './routes/archivioTemi';
 import skillsRoutes from './routes/skills';
@@ -27,6 +31,7 @@ import jobRequestsRoutes from './routes/jobRequests';
 import { startTelegramBot } from './services/telegramBot';
 import { startPipelineEventSubscriber, startPipelineWatchdog } from './services/pipelineEventSubscriber';
 import { startLettureEventSubscriber, startLettureWatchdog } from './services/lettureEventSubscriber';
+import { startAssiEventSubscriber, startAssiWatchdog } from './services/assiEventSubscriber';
 
 // dotenv.config è già stato chiamato in ./loadEnv (importato per primo)
 
@@ -69,6 +74,11 @@ app.use('/api/sviluppo-bambino',     sviluppoBambinoRoutes);
 app.use('/api/pipeline',             pipelineRoutes);
 app.use('/api/letture',              lettureRoutes);
 app.use('/api/admin/letture',        lettureAdminRouter);
+// nodemon restart marker — 2026-05-11 (forced reload after orphan ts-node kill)
+app.use('/api/admin/assi',           assiAdminRouter);
+app.use('/api/admin/assi-chapters',  assiChaptersAdminRouter);
+app.use('/api/admin/catalog/authors', catalogAuthorsAdminRouter);
+app.use('/api/admin/catalog/books',   catalogBooksAdminRouter);
 app.use('/api/site-content',         siteContentPublicRouter);
 app.use('/api/admin/site-content',   siteContentAdminRouter);
 app.use('/api/archivio/temi',        archivioTemiRoutes);
@@ -100,6 +110,12 @@ connectDB()
       startLettureWatchdog();
     } catch (err) {
       console.error('[Startup] Letture subscriber/watchdog non avviato:', err);
+    }
+    try {
+      startAssiEventSubscriber();
+      startAssiWatchdog();
+    } catch (err) {
+      console.error('[Startup] Assi subscriber/watchdog non avviato:', err);
     }
   })
   .catch((err) => {

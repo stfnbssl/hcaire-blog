@@ -9,9 +9,11 @@
     "build": "tsc",
     "seed:test-ricerca": "tsx src/scripts/seedTestRicerca.ts",
     "backfill:outputs": "tsx src/scripts/backfillExecutionOutputs.ts",
-    "inherit:f2-steps": "tsx src/scripts/inheritF2Steps.ts"
+    "inherit:f2-steps": "tsx src/scripts/inheritF2Steps.ts",
+    "test:assi-rebuild": "tsx src/scripts/triggerAssiRebuild.ts"
   },
   "dependencies": {
+    "ajv": "^8.20.0",
     "ioredis": "^5.3.2",
     "mongoose": "^8.1.1"
   },

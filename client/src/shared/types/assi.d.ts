@@ -1,35 +1,40 @@
 // Tipi condivisi per il sistema "assi strutturali" del progetto Sviluppo
 // Bambino. Modello ibrido: corpo capitolo in markdown con token {{ref:rN}},
 // riferimenti (autori/libri) e footnote estratti in array strutturati,
-// catalogo autori/libri come singoli file JSON.
+// catalogo autori/libri su MongoDB (collection `authors`/`books`).
 
 // ── catalogo: autori e libri ────────────────────────────────────────────────
+//
+// Shape "legacy" esposta dal server al client via GET /api/sviluppo-bambino/
+// catalogo/{authors,books}: il controller appiattisce il documento Mongo nei
+// campi storici (`image`/`cover`/`rilevanza`/`birthYear`/...) per non rompere
+// i consumer esistenti (Bibliografia, Chapter renderer, admin editor).
 
 export interface Author {
-  /** slug stabile, coincide col basename del file immagine in /assets/autori/ */
+  /** slug stabile, FK usata dai capitoli (Reference.authorIds[]) */
   id: string;
   /** nome in forma di citazione, es. "Maurice Merleau-Ponty" */
   nome: string;
-  /** percorso pubblico dell'immagine ritratto, es. "/assets/autori/maurice-merleau-ponty.jpg" */
+  /** URL pubblico dell'immagine ritratto (Cloudflare R2). Stringa vuota se mancante. */
   image: string;
   /** testo markdown sulla rilevanza dell'autore nel progetto */
   rilevanza: string;
-  /** anno di nascita, opzionale (può essere derivato dal testo `rilevanza` ma reso esplicito) */
+  /** anno di nascita, opzionale */
   birthYear?: number;
   /** anno di morte, opzionale */
   deathYear?: number;
 }
 
 export interface Book {
-  /** slug stabile, coincide col basename del file immagine in /assets/libri/ */
+  /** slug stabile, FK usata dai capitoli (Reference.bookIds[]) */
   id: string;
   /** titolo in lingua di citazione, es. "Fenomenologia della percezione" */
   titolo: string;
-  /** percorso pubblico della copertina, es. "/assets/libri/merleau-ponty-fenomenologia-della-percezione.jpg" */
+  /** URL pubblico della copertina (Cloudflare R2). Stringa vuota se mancante. */
   cover: string;
   /** testo markdown sulla rilevanza del libro nel progetto */
   rilevanza: string;
-  /** id degli autori (può essere vuoto finché non popolato manualmente) */
+  /** id degli autori (Author.id slug) */
   authorIds?: string[];
   /** anno di pubblicazione (originale), opzionale */
   anno?: number;
@@ -37,13 +42,11 @@ export interface Book {
   titoloOriginale?: string;
 }
 
-/** metadata di generazione del catalogo (i due file sono derivati per ora) */
+/** metadata della risposta catalogo */
 export interface CatalogMeta {
   generatedAt: string;
-  /** path relativo del file sorgente da cui il catalogo è stato derivato */
-  derivedFrom?: string;
-  /** "manual" se il file è stato editato a mano dopo la generazione */
-  source: 'generated' | 'manual';
+  /** identifica la fonte ("mongo" dal Fase 4 catalogo) */
+  source: string;
 }
 
 export interface AuthorsFile {

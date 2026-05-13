@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import ReactMarkdown, { type Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import type {
   ChapterDocument,
   ChapterRef,
@@ -314,7 +316,18 @@ export default function StructuredChapterRenderer({ doc, authors, books, citatio
     <div className="mt-6">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeRaw]}
+        rehypePlugins={[
+          rehypeRaw,
+          rehypeSlug,
+          [
+            rehypeAutolinkHeadings,
+            {
+              behavior: 'append',
+              properties: { className: 'heading-anchor', ariaLabel: 'Link a questa sezione' },
+              content: { type: 'text', value: '' },
+            },
+          ],
+        ]}
         components={components}
       >
         {processedBody}

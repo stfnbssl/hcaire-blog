@@ -1,159 +1,111 @@
 {
   "axis_id": "asse_2",
-  "axis_name": "Asse affettivo–morale",
+  "axis_name": "Affettivo-morale",
   "version": "v1.0",
   "status": "bozza",
   "source_document": {
-    "title": "Asse 2 - Affettivo -morale (8 capitoli Markdown)",
+    "title": "Asse 2 - Affettivo-morale (capitoli 1-8)",
     "format": "markdown",
     "language": "it"
   },
-  "structural_function": "Descrivere la genesi della dimensione propriamente morale del soggetto come trasformazione qualitativa della relazione: il passaggio dal momento in cui l'altro è condizione dell'esperienza (Asse 1) al momento in cui l'altro diventa istanza interiormente vincolante, rendendo possibili colpa, responsabilità e limite interiorizzato, senza ridurre tali fenomeni a norme interiorizzate né a competenze cognitive.",
+  "structural_function": "Descrivere la genesi del fatto che l'altro diventi interiormente vincolante per il soggetto, in una zona di confine tra esperienza affettiva primaria e norma: non studia il comportamento corretto ne il giudizio, ma le condizioni affettive di possibilita della responsabilita, attraverso le dinamiche dell'istanza interna, della colpa integrativa e della riparazione.",
   "core_processes": [
     {
-      "name": "Interiorizzazione dell'altro come istanza",
-      "description": "Processo per cui l'altro cessa di essere solo presenza esterna che regola e diventa struttura affettiva interna che vincola il soggetto anche in sua assenza — non introiezione di norme ma presenza persistente come riferimento affettivo."
+      "name": "Interiorizzazione affettiva dell'altro",
+      "description": "Trasformazione della relazione vissuta in presenza affettiva persistente che vincola il soggetto anche in assenza, senza diventare introiezione normativa ne voce giudicante."
     },
     {
-      "name": "Emergenza della colpa come esperienza strutturante",
-      "description": "Comparsa di un'esperienza affettiva che segnala l'interiorizzazione dell'altro: non giudizio morale né punizione interiorizzata, ma riconoscimento affettivo che l'altro può essere danneggiato e che questo danneggiamento ha un peso interno."
+      "name": "Emergenza della colpa integrativa",
+      "description": "Esperienza affettiva pre-giudiziale per cui il soggetto avverte di aver inciso negativamente su un altro che conta interiormente, in forma tollerabile e non persecutoria."
     },
     {
-      "name": "Sopravvivenza dell'altro e possibilità di riparazione",
-      "description": "Il processo per cui l'altro, non collassando sotto l'aggressività del soggetto, rende possibile che la colpa diventi tollerabile e la riparazione intraprendibile, stabilizzando l'istanza interna senza renderla persecutoria."
+      "name": "Riparazione come evento trasformativo",
+      "description": "Esperienza affettiva, spesso pre-verbale, in cui il legame con l'altro puo essere ristabilito dopo l'aggressivita senza annullare ne l'altro ne se stessi, e senza cancellare il danno."
     },
     {
-      "name": "Genesi della preoccupazione (capacity for concern)",
-      "description": "Sviluppo della capacità di sentirsi responsabili dell'altro come essere separato che può essere ferito: condizione affettiva della responsabilità pre-normativa, che precede e fonda ogni successiva assunzione di giudizio e norma."
+      "name": "Sopravvivenza dell'altro",
+      "description": "Condizione strutturale per cui l'altro segnala la rottura senza collassare, senza vendicarsi e senza ritirare il legame, rendendo possibile la tollerabilita della colpa."
+    },
+    {
+      "name": "Genesi della responsabilita pre-normativa",
+      "description": "Capacita del soggetto di riconoscersi come causa di effetti sull'altro e di rispondervi, prima della formulazione di criteri universali o di regole."
     }
   ],
   "bridge_concepts": [
     {
-      "concept": "L'altro come istanza interna",
-      "definition": "Presenza persistente dell'altro come riferimento affettivo che vincola il soggetto indipendentemente dalla sua presenza reale; non voce giudicante né norma introiettata, ma struttura affettiva di continuità che rende possibile l'esperienza del vincolo morale.",
-      "linked_nodes": ["interiorizzazione affettiva", "colpa strutturante", "continuità oltre la presenza"]
+      "concept": "Altro come istanza interna",
+      "definition": "Presenza affettiva persistente che vincola il soggetto, distinta sia dalla memoria dell'altro sia dall'autorita interiorizzata: non parla, non giudica, ma rende impossibile l'indifferenza.",
+      "linked_nodes": ["Continuita oltre la presenza", "Vincolo affettivo non normativo"]
     },
     {
-      "concept": "Colpa come segnale strutturale",
-      "definition": "L'esperienza affettiva della colpa in senso genetico: non giudizio morale né patologia, ma indicatore che l'altro è stato interiorizzato come istanza. Traducibile in discipline che si interrogano sull'emergere della responsabilità senza ridurla a conformità.",
-      "linked_nodes": ["istanza interna", "riparazione", "sopravvivenza dell'altro"]
+      "concept": "Colpa strutturante (vs persecutoria)",
+      "definition": "Esperienza affettiva pre-giudiziale che segnala il vincolo interno con l'altro e mobilita senza schiacciare; si distingue dalla colpa persecutoria, dalla colpa adattiva e dall'assenza di colpa.",
+      "linked_nodes": ["Aggressivita integrabile", "Soglia del fare male"]
     },
     {
-      "concept": "Riparazione come movimento strutturale",
-      "definition": "Non tecnica compensativa ma processo che, presupponendo che l'altro sia separato e che possa essere ferito, integra il senso di colpa nella possibilità di un legame non distruttivo; condizione dello sviluppo della responsabilità.",
-      "linked_nodes": ["colpa strutturante", "sopravvivenza dell'altro", "responsabilità pre-normativa"]
+      "concept": "Riparazione non sostitutiva",
+      "definition": "Evento affettivo che trasforma la funzione della colpa senza cancellare il danno: assume la frattura, mantiene la memoria dell'accaduto e ne modifica il significato.",
+      "linked_nodes": ["Tempo del dopo", "Concern"]
     },
     {
-      "concept": "Moralità genetica (non normativa)",
-      "definition": "La dimensione morale intesa come capacità del soggetto di essere affettivamente vincolato dall'altro come istanza interna; distinta da norma (formulabile, trasmissibile), da giudizio (riflessivo) e da conformità (comportamentale).",
-      "linked_nodes": ["istanza interna", "responsabilità pre-normativa", "soglia verso l'Asse 3"]
+      "concept": "Responsabilita affettiva",
+      "definition": "Risposta a un altro concreto prima di ogni legge generale: vincola dall'interno senza richiedere criteri universali e prepara la possibilita di assumere la norma.",
+      "linked_nodes": ["Vincolo affettivo non normativo", "Soglia morale / normativa"]
+    },
+    {
+      "concept": "Sopravvivenza dell'oggetto",
+      "definition": "Capacita relazionale dell'altro di restare presente, non collassante e non vendicativo dopo l'aggressivita del soggetto, condizione perche l'istanza interna non diventi persecutoria.",
+      "linked_nodes": ["Aggressivita integrabile", "Concern"]
     }
   ],
   "structural_nodes": [
-    {
-      "node": "Discontinuità affettivo-morale",
-      "short_definition": "Il passaggio qualitativo dall'altro come presenza funzionale (Asse 1) all'altro come istanza vincolante: non mera maturazione ma trasformazione della struttura dell'esperienza."
-    },
-    {
-      "node": "Interiorizzazione affettiva",
-      "short_definition": "Il fatto che l'altro continui a valere per il soggetto come presenza affettiva indipendentemente dalla sua presenza reale o dal controllo esercitato; distinto dall'introiezione normativa."
-    },
-    {
-      "node": "Sopravvivenza dell'altro",
-      "short_definition": "Condizione perché la soglia morale non diventi distruttiva: l'altro che non collassa, non si vendica e non ritira il legame di fronte all'aggressività del soggetto."
-    },
-    {
-      "node": "Responsabilità pre-normativa",
-      "short_definition": "Possibilità di sentirsi causa per l'altro prima di qualsiasi riferimento a regole o giudizi: condizione affettiva della responsabilità futura."
-    },
-    {
-      "node": "Continuità oltre la presenza",
-      "short_definition": "L'istanza interna opera indipendentemente dalla presenza dell'altro: il soggetto può essere vincolato anche senza testimoni, senza controllo, senza sanzione visibile."
-    },
-    {
-      "node": "Soglia morale genetica",
-      "short_definition": "Il momento in cui il soggetto scopre di poter fare male all'altro: condizione dell'emergere della colpa, della riparazione e del vincolo interno."
-    },
-    {
-      "node": "Posizione depressiva",
-      "short_definition": "Configurazione affettiva (in senso kleiniano rielaborato) in cui l'ambivalenza verso l'altro viene tollerata e il senso di colpa può diventare motore di riparazione anziché scissione."
-    },
-    {
-      "node": "Fallimento dell'Asse 2",
-      "short_definition": "Condizione in cui l'istanza morale non si costituisce o si costituisce in modo patologico: per eccesso (colpa persecutoria) o per difetto (assenza di vincolo interno)."
-    }
+    { "node": "Aggressivita integrabile", "short_definition": "Impulso che rompe l'equilibrio relazionale, condizione (non patologia) della colpa." },
+    { "node": "Continuita oltre la presenza", "short_definition": "Persistenza affettiva dell'altro che opera in assenza." },
+    { "node": "Soglia del fare male", "short_definition": "Punto in cui l'altro e riconosciuto come danneggiabile." },
+    { "node": "Concern (preoccupazione)", "short_definition": "Forma originaria del vincolo affettivo verso l'altro." },
+    { "node": "Falsi esiti morali", "short_definition": "Conformismo, iper-responsabilita o indifferenza che simulano la moralita." },
+    { "node": "Tempo del dopo", "short_definition": "Dimensione temporale che la riparazione introduce, senza azzerare il prima." },
+    { "node": "Vincolo affettivo non normativo", "short_definition": "Obbligo interno che non passa ancora per la regola." },
+    { "node": "Soglia morale / normativa", "short_definition": "Limite interno oltre il quale serve un criterio condivisibile." }
   ],
   "internal_articulations": [
-    {
-      "section": "Capitolo 1 – Statuto dell'asse affettivo–morale",
-      "function": "Definisce lo spazio concettuale dell'asse: distingue moralità genetica da norma, giudizio e conformità; introduce la colpa come indicatore strutturale; chiarisce la continuità e la discontinuità con l'Asse 1."
-    },
-    {
-      "section": "Capitolo 2 – L'altro come istanza interna",
-      "function": "Descrive la trasformazione centrale dell'asse: la relazione vissuta che diventa presenza interiormente operante; distingue interiorizzazione da introiezione; introduce la soglia morale come momento in cui il soggetto scopre di poter fare male all'altro."
-    },
-    {
-      "section": "Capitolo 3 – La colpa come esperienza affettiva strutturante",
-      "function": "Analizza la colpa come esperienza affettiva che segnala l'interiorizzazione; la distingue dalla colpa come giudizio morale o come patologia; ne mostra il ruolo strutturante come condizione della responsabilità."
-    },
-    {
-      "section": "Capitolo 4 – Riparazione e responsabilità",
-      "function": "Mostra come dalla colpa tollerabile emerga il movimento riparativo e come quest'ultimo costituisca la prima forma di responsabilità pre-normativa; argomenta la distinzione tra riparazione e compensazione."
-    },
-    {
-      "section": "Capitolo 5 – Confronto psicoanalitico strutturale",
-      "function": "Utilizza Klein e Winnicott come riferimenti strutturali per descrivere i meccanismi dell'interiorizzazione affettiva; distingue la prospettiva genetica dal modello del controllo pulsionale; delimita ciò che la psicoanalisi descrive rispetto a ciò che l'asse tematizza."
-    },
-    {
-      "section": "Capitolo 6 – Temporalità dello sviluppo morale",
-      "function": "Mostra che la genesi morale non segue una logica stadiale lineare ma una temporalità non cumulativa: l'istanza può destabilizzarsi, non si stabilizza definitivamente."
-    },
-    {
-      "section": "Capitolo 7 – Dove l'Asse affettivo–morale può fallire",
-      "function": "Descrive le configurazioni di fallimento strutturale: colpa persecutoria, assenza di vincolo interno, scissione affettiva; chiarisce che il fallimento non è patologia individuale ma configurazione strutturale dell'esperienza."
-    },
-    {
-      "section": "Capitolo 8 – Raccordo con l'Asse normativo–educativo",
-      "function": "Prepara il passaggio all'Asse 3: la colpa non è ancora giudizio; l'istanza interiorizzata non è ancora norma; il raccordo avviene attraverso la domanda su come la responsabilità pre-normativa possa diventare assunzione del giudizio."
-    }
+    { "section": "Statuto dell'asse affettivo-morale", "function": "Definire lo spazio della genesi del vincolo, distinto da norma, giudizio e conformita." },
+    { "section": "L'altro come istanza interna", "function": "Distinguere interiorizzazione affettiva e introiezione normativa." },
+    { "section": "Colpa come esperienza strutturante", "function": "Definire la colpa in senso genetico, pre-giudiziale e non patologico." },
+    { "section": "Riparazione e responsabilita", "function": "Mostrare come la riparazione trasformi la colpa in possibilita di risposta." },
+    { "section": "Confronto psicoanalitico strutturale", "function": "Tenere in tensione Freud, Klein e Winnicott senza fonderli in un modello armonizzato." },
+    { "section": "Temporalita dello sviluppo morale", "function": "Pensare soglie e fragilita senza ricorrere a stadi cronologici rigidi." },
+    { "section": "Fallimenti dell'asse", "function": "Mappare derive strutturali (assenza, persecuzione, adattamento, riparazione impossibile, anticipazione)." },
+    { "section": "Raccordo con l'asse normativo-educativo", "function": "Esplicitare il limite interno della responsabilita affettiva e il bisogno di criterio." }
   ],
   "reduction_risks": [
-    {
-      "type": "Riduzione normativistica",
-      "description": "Interpretare l'interiorizzazione dell'altro come introiezione di regole o autorità; confondere l'istanza affettiva con il Super-io come istanza di controllo; la moralità genetica precede la norma e non si riduce a essa."
-    },
-    {
-      "type": "Riduzione cognitivista",
-      "description": "Identificare l'emergere della moralità con lo sviluppo di competenze di ragionamento morale (comprensione delle regole, prospettiva dell'altro), perdendo la dimensione affettiva strutturante che precede e fonda ogni successiva riflessione."
-    },
-    {
-      "type": "Idealizzazione del processo",
-      "description": "Leggere la genesi morale come processo armonico o naturalmente orientato verso esiti positivi; l'asse è strutturalmente in tensione e può fallire senza che il fallimento sia necessariamente riparabile dall'esterno."
-    },
-    {
-      "type": "Anticipazione del giudizio",
-      "description": "Confondere la responsabilità pre-normativa con la responsabilità riflessiva; la colpa genetica non implica giudizio, né valutazione, né conformità: appartiene a un ordine di esperienza che l'Asse 3 trasforma ma non deduce."
-    }
+    { "type": "Riduzione a introiezione normativa", "description": "Confondere la presenza affettiva persistente dell'altro con un sorvegliante interno o con la voce giudicante del Super-io, anticipando la norma sul vincolo." },
+    { "type": "Moralizzazione precoce", "description": "Introdurre il linguaggio del giusto/sbagliato e la richiesta di responsabilita riflessiva prima che il processo affettivo si sia strutturato, sostituendolo con conformismo o ritiro." },
+    { "type": "Idealizzazione del processo", "description": "Trattare colpa e riparazione come esiti naturalmente positivi, ignorando l'esistenza strutturale di colpa persecutoria, colpa adattiva e riparazione impossibile." },
+    { "type": "Patologizzazione della colpa", "description": "Leggere la colpa come errore o sintomo, anziche come indicatore strutturale dell'avvenuta interiorizzazione affettiva dell'altro." },
+    { "type": "Riduzione a competenza relazionale", "description": "Trasformare la responsabilita pre-normativa in abilita sociale o tecnica educativa, perdendone lo statuto di soglia genetica." }
   ],
   "structural_questions": [
-    "In quale senso l'altro diventa interiormente vincolante senza che ciò equivalga all'interiorizzazione di una norma o di un'autorità, e come si distingue strutturalmente questo processo?",
-    "Che cosa rende la colpa un indicatore strutturale dell'interiorizzazione e non una patologia o un giudizio morale, e quali condizioni la rendono tollerabile anziché persecutoria?",
-    "In che modo la sopravvivenza dell'altro alla aggressività del soggetto costituisce una condizione strutturale della moralità genetica, e non semplicemente un evento relazionale?",
-    "Dove si situa la soglia tra la responsabilità pre-normativa (Asse 2) e la responsabilità come assunzione riflessiva del giudizio (Asse 3), e perché questo passaggio non è garantito né deducibile?"
+    "Come fa l'altro a contare interiormente per il soggetto anche in sua assenza?",
+    "Quando la colpa diventa integrativa anziche persecutoria o adattiva?",
+    "Che cosa significa che la riparazione non cancella il danno ma ne trasforma il significato?",
+    "Perche la responsabilita affettiva puo precedere ogni criterio universale?",
+    "Dove si arresta la responsabilita affettiva e perche chiede di aprirsi alla normativita?"
   ],
   "methodological_constraints": [
-    "Non ridurre la moralità genetica a interiorizzazione di norme o comandi: l'asse descrive una trasformazione della struttura affettiva dell'esperienza, non un apprendimento di contenuti normativi.",
-    "Non utilizzare il lessico dell'Asse 2 (colpa, responsabilità, istanza) con i significati che questi termini hanno nel linguaggio morale ordinario o clinico: il loro statuto è definito rigorosamente nel contesto dell'asse.",
-    "Non presentare il processo come linearmente progressivo o garantito: la temporalità dell'Asse 2 è non cumulativa e il fallimento è una possibilità strutturale, non una devianza.",
-    "Non tradurre direttamente in indicatori educativi o clinici: l'asse descrive condizioni di possibilità della moralità, non competenze da valutare o obiettivi da perseguire."
+    "Non confondere colpa, giudizio, conformita e norma.",
+    "Non leggere l'assenza di colpa come maturita ne il comportamento corretto come riuscita dell'asse.",
+    "Non fondere Freud, Klein e Winnicott in un unico modello armonizzato.",
+    "Non trattare la riparazione come tecnica o protocollo educativo.",
+    "Non dedurre dall'asse criteri normativi o contenuti morali universali."
   ],
   "compilation_notes": {
     "confidence_level": "alta",
     "needs_human_review": true,
-    "notes": "L'asse è ben strutturato con distinzioni concettuali precise e lessico controllato interno. Il raccordo con Klein e Winnicott è utilizzato in modo delimitato come riferimento strutturale, non come fondamento teorico. La distinzione tra colpa genetica e giudizio morale è il punto concettuale più rilevante per la traduzione interdisciplinare.",
+    "notes": "Scheda costruita dagli 8 capitoli del documento. E stato preservato l'uso rigoroso e non normativo del termine 'morale' (genesi del vincolo, non contenuto). Il confronto Freud/Klein/Winnicott e stato lasciato in tensione, come esplicitamente richiesto dal capitolo 5.",
     "open_issues": [
-      "Il rapporto tra temporalità dell'Asse 2 (non lineare, non garantita) e temporalità dell'Asse 1 (costituzione nel tempo) merita esplicitazione per evitare sovrapposizioni.",
-      "Il concetto di 'fallimento strutturale' andrebbe distinto con maggior precisione da configurazioni cliniche specifiche per mantenere il livello fondativo dell'asse."
+      "Rapporto tra 'istanza interna' (Asse 2) e 'altro impersonale istituzionale' (Asse 6) da elaborare nei capitoli di raccordo.",
+      "Distinzione tra 'continuita oltre la presenza' (Asse 2) e 'continuita dell'esperienza' (Asse 1) da consolidare."
     ]
   }
 }

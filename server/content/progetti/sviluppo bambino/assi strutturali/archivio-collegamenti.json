@@ -1,0 +1,2695 @@
+{
+  "_meta": {
+    "generatedAt": "2026-05-11T10:21:34.978Z",
+    "version": "1.0",
+    "baseUrl": "https://hcaire.com",
+    "purpose": "Archivio di collegamento per gli assi strutturali. Fornisce identificatori canonici e URL pubbliche per linkare a assi, capitoli e sezioni h2 dei capitoli pubblicati su hcaire.com. Da usare come riferimento autoritativo per costruire link nei documenti di approfondimento — non costruire URL a mano.",
+    "totalAssi": 6,
+    "totalChapters": 44,
+    "totalSections": 332
+  },
+  "assi": [
+    {
+      "id": "asse-1-ontologico-fenomenologico",
+      "number": 1,
+      "title": "Ontologico-fenomenologico",
+      "url": "/assi-strutturali/asse-1-ontologico-fenomenologico",
+      "structural_function": "Chiarire lo statuto del soggetto in eta evolutiva come processo di costituzione: descrive le condizioni strutturali (temporalita vissuta, corporeita, regolazione, relazione, campo intenzionale, stabilizzazione proto-simbolica) che rendono possibile l'essere-soggetto prima di ogni qualificazione psicologica, morale o educativa, senza scivolare ne nel sostanzialismo del nucleo gia dato ne nel funzionalismo dell'esito.",
+      "chapter_ids": [
+        "asse-1-ontologico-fenomenologico/capitolo-1-statuto-dell-asse-ontologico-fenomenologico",
+        "asse-1-ontologico-fenomenologico/capitolo-2-il-soggetto-come-processo-di-costituzione",
+        "asse-1-ontologico-fenomenologico/capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita",
+        "asse-1-ontologico-fenomenologico/capitolo-4-la-corporeita-come-luogo-originario-di-senso",
+        "asse-1-ontologico-fenomenologico/capitolo-5-la-regolazione-come-principio-ontologico",
+        "asse-1-ontologico-fenomenologico/capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita",
+        "asse-1-ontologico-fenomenologico/capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza",
+        "asse-1-ontologico-fenomenologico/capitolo-8-soglia-tra-ontologia-e-genesi-morale"
+      ]
+    },
+    {
+      "id": "asse-2-affettivo-morale",
+      "number": 2,
+      "title": "Affettivo-morale",
+      "url": "/assi-strutturali/asse-2-affettivo-morale",
+      "structural_function": "Descrivere la genesi del fatto che l'altro diventi interiormente vincolante per il soggetto, in una zona di confine tra esperienza affettiva primaria e norma: non studia il comportamento corretto ne il giudizio, ma le condizioni affettive di possibilita della responsabilita, attraverso le dinamiche dell'istanza interna, della colpa integrativa e della riparazione.",
+      "chapter_ids": [
+        "asse-2-affettivo-morale/capitolo-1-statuto-dell-asse-affettivo-morale",
+        "asse-2-affettivo-morale/capitolo-2-l-altro-come-istanza-interna",
+        "asse-2-affettivo-morale/capitolo-3-la-colpa-come-esperienza-affettiva-strutturante",
+        "asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita",
+        "asse-2-affettivo-morale/capitolo-5-confronto-psicoanalitico-strutturale",
+        "asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale",
+        "asse-2-affettivo-morale/capitolo-7-dove-l-asse-affettivo-morale-puo-fallire",
+        "asse-2-affettivo-morale/capitolo-8-raccordo-con-l-asse-normativo-educativo"
+      ]
+    },
+    {
+      "id": "asse-3-normativo-educativo",
+      "number": 3,
+      "title": "Normativo-educativo",
+      "url": "/assi-strutturali/asse-3-normativo-educativo",
+      "structural_function": "Chiarire le condizioni di una normativita non arbitraria capace di orientare il giudizio senza sostituirlo: distingue norma, normativita e giudizio, fonda l'autorita educativa come condizione (non sostituto) della responsabilita, e mostra il limite interno del giudizio davanti al reale che lo eccede.",
+      "chapter_ids": [
+        "asse-3-normativo-educativo/capitolo-1-norma-normativita-giudizio-distinzione-concettuale",
+        "asse-3-normativo-educativo/capitolo-2-dalla-colpa-asse-2-al-giudizio",
+        "asse-3-normativo-educativo/capitolo-3-verita-educativa-orientamento-senza-arbitrarieta",
+        "asse-3-normativo-educativo/capitolo-4-educare-senza-manipolare-autorita-e-responsabilita",
+        "asse-3-normativo-educativo/capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione",
+        "asse-3-normativo-educativo/capitolo-6-il-limite-del-giudizio-quando-la-norma-non-e-sovrana"
+      ]
+    },
+    {
+      "id": "asse-4-separazione-e-limite",
+      "number": 4,
+      "title": "Separazione e Limite",
+      "url": "/assi-strutturali/asse-4-separazione-e-limite",
+      "structural_function": "Introdurre nell'architettura degli assi una verifica di realta: descrive l'incontro del soggetto con cio che resiste, eccede e toglie, distinguendo eccedenza, perdita e separazione come forme strutturali (non stadi) dell'incontro con il reale, e ne articola lo statuto simbolico come tenuta che non spiega ne cancella.",
+      "chapter_ids": [
+        "asse-4-separazione-e-limite/capitolo-1-lo-statuto-del-limite-reale",
+        "asse-4-separazione-e-limite/capitolo-2-l-eccedenza",
+        "asse-4-separazione-e-limite/capitolo-3-la-perdita",
+        "asse-4-separazione-e-limite/capitolo-4-la-separazione",
+        "asse-4-separazione-e-limite/capitolo-5-il-rischio-educativo",
+        "asse-4-separazione-e-limite/capitolo-6-temporalita-del-limite",
+        "asse-4-separazione-e-limite/capitolo-7-statuto-simbolico-della-perdita",
+        "asse-4-separazione-e-limite/capitolo-8-raccordo-con-l-asse-del-desiderio"
+      ]
+    },
+    {
+      "id": "asse-5-desiderio",
+      "number": 5,
+      "title": "Desiderio",
+      "url": "/assi-strutturali/asse-5-desiderio",
+      "structural_function": "Pensare il desiderio come struttura di orientamento del soggetto verso il possibile, non come contenuto, pulsione o motivazione: descrive la sua genealogia filosofica, la sua fenomenologia incarnata, la sua soggettivazione nel tempo, il suo rapporto con norma e giudizio, e le sue deformazioni strutturali nel mondo contemporaneo.",
+      "chapter_ids": [
+        "asse-5-desiderio/capitolo-1-statuto-filosofico-del-desiderio",
+        "asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio",
+        "asse-5-desiderio/capitolo-3-fenomenologia-del-desiderio-incarnato",
+        "asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio",
+        "asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio",
+        "asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio",
+        "asse-5-desiderio/capitolo-7-raccordo-con-l-asse-6"
+      ]
+    },
+    {
+      "id": "asse-6-storico-culturale",
+      "number": 6,
+      "title": "Storico-culturale",
+      "url": "/assi-strutturali/asse-6-storico-culturale",
+      "structural_function": "Mostrare come le strutture costituite negli assi precedenti si incarnino nel mondo storico concreto attraverso mediazioni simboliche, istituzionali e tecniche: rende leggibile la circolazione degli altri assi nel tempo presente senza ridurre lo sviluppo a effetto del contesto ne astrarlo dalle sue forme storiche. E asse di traduzione e verifica, non di origine.",
+      "chapter_ids": [
+        "asse-6-storico-culturale/capitolo-1-il-mondo-storico-culturale-come-mediazione-non-come-sfondo",
+        "asse-6-storico-culturale/capitolo-2-costituzione-storica-del-soggetto-senza-relativismo",
+        "asse-6-storico-culturale/capitolo-3-mediazione-simbolica-e-sviluppo",
+        "asse-6-storico-culturale/capitolo-4-istituzioni-come-dispositivi-di-esperienza",
+        "asse-6-storico-culturale/capitolo-5-tecnica-performance-e-temporalita-contemporanea",
+        "asse-6-storico-culturale/capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo",
+        "asse-6-storico-culturale/capitolo-7-raccordo-con-l-intero-modello-e-funzione-dell-asse-6"
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "asse-1-ontologico-fenomenologico/capitolo-1-statuto-dell-asse-ontologico-fenomenologico",
+      "asse_id": "asse-1-ontologico-fenomenologico",
+      "asse_number": 1,
+      "number": 1,
+      "title": "Statuto dell’Asse ontologico – fenomenologico",
+      "slug": "capitolo-1-statuto-dell-asse-ontologico-fenomenologico",
+      "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-1-statuto-dell-asse-ontologico-fenomenologico",
+      "summary": null,
+      "prev_slug": null,
+      "next_slug": "capitolo-2-il-soggetto-come-processo-di-costituzione",
+      "sections": [
+        {
+          "anchor": "1-perché-uno-statuto-esplicito",
+          "title": "1. Perché uno statuto esplicito",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-1-statuto-dell-asse-ontologico-fenomenologico#1-perché-uno-statuto-esplicito"
+        },
+        {
+          "anchor": "2-ontologico-non-significa-astratto",
+          "title": "2. Ontologico non significa astratto",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-1-statuto-dell-asse-ontologico-fenomenologico#2-ontologico-non-significa-astratto"
+        },
+        {
+          "anchor": "3-fenomenologico-non-significa-descrittivo-in-senso-ingenuo",
+          "title": "3. Fenomenologico non significa descrittivo in senso ingenuo",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-1-statuto-dell-asse-ontologico-fenomenologico#3-fenomenologico-non-significa-descrittivo-in-senso-ingenuo"
+        },
+        {
+          "anchor": "4-il-soggetto-come-questione-non-come-presupposto",
+          "title": "4. Il soggetto come questione, non come presupposto",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-1-statuto-dell-asse-ontologico-fenomenologico#4-il-soggetto-come-questione-non-come-presupposto"
+        },
+        {
+          "anchor": "5-distinzione-dei-piani-descrizione-spiegazione-prescrizione",
+          "title": "5. Distinzione dei piani: descrizione, spiegazione, prescrizione",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-1-statuto-dell-asse-ontologico-fenomenologico#5-distinzione-dei-piani-descrizione-spiegazione-prescrizione"
+        },
+        {
+          "anchor": "6-lessico-strutturale-e-funzione-fondativa",
+          "title": "6. Lessico strutturale e funzione fondativa",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-1-statuto-dell-asse-ontologico-fenomenologico#6-lessico-strutturale-e-funzione-fondativa"
+        },
+        {
+          "anchor": "7-funzione-del-capitolo-nel-percorso-dellasse-1",
+          "title": "7. Funzione del capitolo nel percorso dell’Asse 1",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-1-statuto-dell-asse-ontologico-fenomenologico#7-funzione-del-capitolo-nel-percorso-dellasse-1"
+        }
+      ],
+      "cited_author_ids": [
+        "edmund-husserl",
+        "georges-canguilhem",
+        "hans-georg-gadamer",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": [
+        "merleau-ponty-fenomenologia-della-percezione"
+      ]
+    },
+    {
+      "id": "asse-1-ontologico-fenomenologico/capitolo-2-il-soggetto-come-processo-di-costituzione",
+      "asse_id": "asse-1-ontologico-fenomenologico",
+      "asse_number": 1,
+      "number": 2,
+      "title": "Il soggetto come processo di costituzione",
+      "slug": "capitolo-2-il-soggetto-come-processo-di-costituzione",
+      "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-2-il-soggetto-come-processo-di-costituzione",
+      "summary": null,
+      "prev_slug": "capitolo-1-statuto-dell-asse-ontologico-fenomenologico",
+      "next_slug": "capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita",
+      "sections": [
+        {
+          "anchor": "1-il-problema-del-soggetto-nello-sviluppo",
+          "title": "1. Il problema del soggetto nello sviluppo",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-2-il-soggetto-come-processo-di-costituzione#1-il-problema-del-soggetto-nello-sviluppo"
+        },
+        {
+          "anchor": "2-critica-del-soggetto-come-nucleo-già-costituito",
+          "title": "2. Critica del soggetto come nucleo già costituito",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-2-il-soggetto-come-processo-di-costituzione#2-critica-del-soggetto-come-nucleo-già-costituito"
+        },
+        {
+          "anchor": "3-critica-del-soggetto-come-prodotto-funzionale",
+          "title": "3. Critica del soggetto come prodotto funzionale",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-2-il-soggetto-come-processo-di-costituzione#3-critica-del-soggetto-come-prodotto-funzionale"
+        },
+        {
+          "anchor": "4-la-soggettività-come-processo-di-soggettivazione",
+          "title": "4. La soggettività come processo di soggettivazione",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-2-il-soggetto-come-processo-di-costituzione#4-la-soggettività-come-processo-di-soggettivazione"
+        },
+        {
+          "anchor": "5-costituzione-non-equivale-a-costruzione",
+          "title": "5. Costituzione non equivale a costruzione",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-2-il-soggetto-come-processo-di-costituzione#5-costituzione-non-equivale-a-costruzione"
+        },
+        {
+          "anchor": "6-dipendenza-e-vulnerabilità-come-dimensioni-costitutive",
+          "title": "6. Dipendenza e vulnerabilità come dimensioni costitutive",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-2-il-soggetto-come-processo-di-costituzione#6-dipendenza-e-vulnerabilità-come-dimensioni-costitutive"
+        },
+        {
+          "anchor": "7-continuità-senza-fissazione-lipseità-in-divenire",
+          "title": "7. Continuità senza fissazione: l’ipseità in divenire",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-2-il-soggetto-come-processo-di-costituzione#7-continuità-senza-fissazione-lipseità-in-divenire"
+        },
+        {
+          "anchor": "8-chiusura-funzione-di-questo-capitolo-nellasse-1",
+          "title": "8. Chiusura: funzione di questo capitolo nell’Asse 1",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-2-il-soggetto-come-processo-di-costituzione#8-chiusura-funzione-di-questo-capitolo-nellasse-1"
+        }
+      ],
+      "cited_author_ids": [
+        "edmund-husserl",
+        "georges-canguilhem",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-1-ontologico-fenomenologico/capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita",
+      "asse_id": "asse-1-ontologico-fenomenologico",
+      "asse_number": 1,
+      "number": 3,
+      "title": "Temporalità vissuta come struttura della soggettività",
+      "slug": "capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita",
+      "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita",
+      "summary": null,
+      "prev_slug": "capitolo-2-il-soggetto-come-processo-di-costituzione",
+      "next_slug": "capitolo-4-la-corporeita-come-luogo-originario-di-senso",
+      "sections": [
+        {
+          "anchor": "1-temporalità-non-come-cornice-ma-come-struttura",
+          "title": "1. Temporalità non come cornice, ma come struttura",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita#1-temporalità-non-come-cornice-ma-come-struttura"
+        },
+        {
+          "anchor": "2-il-soggetto-come-temporalizzazione",
+          "title": "2. Il soggetto come temporalizzazione",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita#2-il-soggetto-come-temporalizzazione"
+        },
+        {
+          "anchor": "3-il-presente-con-spessore-ritenzione-e-protensione",
+          "title": "3. Il presente con spessore: ritenzione e protensione",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita#3-il-presente-con-spessore-ritenzione-e-protensione"
+        },
+        {
+          "anchor": "4-temporalità-e-sviluppo-oltre-la-logica-delle-fasi",
+          "title": "4. Temporalità e sviluppo: oltre la logica delle fasi",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita#4-temporalità-e-sviluppo-oltre-la-logica-delle-fasi"
+        },
+        {
+          "anchor": "5-temporalità-e-regolazione-la-tenuta-dellesperienza-nel-tempo",
+          "title": "5. Temporalità e regolazione: la tenuta dell’esperienza nel tempo",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita#5-temporalità-e-regolazione-la-tenuta-dellesperienza-nel-tempo"
+        },
+        {
+          "anchor": "6-identità-memoria-e-vulnerabilità-nella-soggettività-temporale",
+          "title": "6. Identità, memoria e vulnerabilità nella soggettività temporale",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita#6-identità-memoria-e-vulnerabilità-nella-soggettività-temporale"
+        },
+        {
+          "anchor": "7-chiusura-la-funzione-della-temporalità-nellasse-1",
+          "title": "7. Chiusura: la funzione della temporalità nell’Asse 1",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita#7-chiusura-la-funzione-della-temporalità-nellasse-1"
+        }
+      ],
+      "cited_author_ids": [
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-1-ontologico-fenomenologico/capitolo-4-la-corporeita-come-luogo-originario-di-senso",
+      "asse_id": "asse-1-ontologico-fenomenologico",
+      "asse_number": 1,
+      "number": 4,
+      "title": "La corporeità come luogo originario di senso",
+      "slug": "capitolo-4-la-corporeita-come-luogo-originario-di-senso",
+      "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-4-la-corporeita-come-luogo-originario-di-senso",
+      "summary": null,
+      "prev_slug": "capitolo-3-temporalita-vissuta-come-struttura-della-soggettivita",
+      "next_slug": "capitolo-5-la-regolazione-come-principio-ontologico",
+      "sections": [
+        {
+          "anchor": "1-perché-il-corpo-è-un-problema-ontologico",
+          "title": "1. Perché il corpo è un problema ontologico",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-4-la-corporeita-come-luogo-originario-di-senso#1-perché-il-corpo-è-un-problema-ontologico"
+        },
+        {
+          "anchor": "2-corporeità-non-come-oggetto-ma-come-esperienza-vissuta",
+          "title": "2. Corporeità non come oggetto, ma come esperienza vissuta",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-4-la-corporeita-come-luogo-originario-di-senso#2-corporeità-non-come-oggetto-ma-come-esperienza-vissuta"
+        },
+        {
+          "anchor": "3-il-corpo-come-apertura-al-mondo",
+          "title": "3. Il corpo come apertura al mondo",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-4-la-corporeita-come-luogo-originario-di-senso#3-il-corpo-come-apertura-al-mondo"
+        },
+        {
+          "anchor": "4-corporeità-e-temporalità-il-tempo-incarnato",
+          "title": "4. Corporeità e temporalità: il tempo incarnato",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-4-la-corporeita-come-luogo-originario-di-senso#4-corporeità-e-temporalità-il-tempo-incarnato"
+        },
+        {
+          "anchor": "5-regolazione-corporea-come-organizzazione-primaria-del-senso",
+          "title": "5. Regolazione corporea come organizzazione primaria del senso",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-4-la-corporeita-come-luogo-originario-di-senso#5-regolazione-corporea-come-organizzazione-primaria-del-senso"
+        },
+        {
+          "anchor": "6-il-corpo-come-matrice-del-proto-simbolico",
+          "title": "6. Il corpo come matrice del proto-simbolico",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-4-la-corporeita-come-luogo-originario-di-senso#6-il-corpo-come-matrice-del-proto-simbolico"
+        },
+        {
+          "anchor": "7-corporeità-e-relazione-il-corpo-come-luogo-dellintersoggettività",
+          "title": "7. Corporeità e relazione: il corpo come luogo dell’intersoggettività",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-4-la-corporeita-come-luogo-originario-di-senso#7-corporeità-e-relazione-il-corpo-come-luogo-dellintersoggettività"
+        },
+        {
+          "anchor": "8-vulnerabilità-corporea-e-possibilità-di-sviluppo",
+          "title": "8. Vulnerabilità corporea e possibilità di sviluppo",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-4-la-corporeita-come-luogo-originario-di-senso#8-vulnerabilità-corporea-e-possibilità-di-sviluppo"
+        },
+        {
+          "anchor": "9-chiusura-la-corporeità-nellarchitettura-dellasse-1",
+          "title": "9. Chiusura: la corporeità nell’architettura dell’Asse 1",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-4-la-corporeita-come-luogo-originario-di-senso#9-chiusura-la-corporeità-nellarchitettura-dellasse-1"
+        }
+      ],
+      "cited_author_ids": [
+        "daniel-stern",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": [
+        "merleau-ponty-fenomenologia-della-percezione",
+        "stern-mondo-interpersonale-del-bambino"
+      ]
+    },
+    {
+      "id": "asse-1-ontologico-fenomenologico/capitolo-5-la-regolazione-come-principio-ontologico",
+      "asse_id": "asse-1-ontologico-fenomenologico",
+      "asse_number": 1,
+      "number": 5,
+      "title": "La regolazione come principio ontologico",
+      "slug": "capitolo-5-la-regolazione-come-principio-ontologico",
+      "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-5-la-regolazione-come-principio-ontologico",
+      "summary": null,
+      "prev_slug": "capitolo-4-la-corporeita-come-luogo-originario-di-senso",
+      "next_slug": "capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita",
+      "sections": [
+        {
+          "anchor": "1-perché-parlare-di-regolazione-sul-piano-ontologico",
+          "title": "1. Perché parlare di regolazione sul piano ontologico",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-5-la-regolazione-come-principio-ontologico#1-perché-parlare-di-regolazione-sul-piano-ontologico"
+        },
+        {
+          "anchor": "2-regolazione-e-continuità-dellesperienza",
+          "title": "2. Regolazione e continuità dell’esperienza",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-5-la-regolazione-come-principio-ontologico#2-regolazione-e-continuità-dellesperienza"
+        },
+        {
+          "anchor": "3-regolazione-non-come-controllo-ma-come-tenuta",
+          "title": "3. Regolazione non come controllo, ma come tenuta",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-5-la-regolazione-come-principio-ontologico#3-regolazione-non-come-controllo-ma-come-tenuta"
+        },
+        {
+          "anchor": "4-regolazione-e-temporalità-incarnata",
+          "title": "4. Regolazione e temporalità incarnata",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-5-la-regolazione-come-principio-ontologico#4-regolazione-e-temporalità-incarnata"
+        },
+        {
+          "anchor": "5-regolazione-e-apertura-al-mondo",
+          "title": "5. Regolazione e apertura al mondo",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-5-la-regolazione-come-principio-ontologico#5-regolazione-e-apertura-al-mondo"
+        },
+        {
+          "anchor": "6-regolazione-e-relazione-la-co-regolazione-come-matrice",
+          "title": "6. Regolazione e relazione: la co-regolazione come matrice",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-5-la-regolazione-come-principio-ontologico#6-regolazione-e-relazione-la-co-regolazione-come-matrice"
+        },
+        {
+          "anchor": "7-la-traiettoria-della-tenuta-dallholding-allautoregolazione-simbolica",
+          "title": "7. La traiettoria della tenuta: dall'holding all'autoregolazione simbolica",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-5-la-regolazione-come-principio-ontologico#7-la-traiettoria-della-tenuta-dallholding-allautoregolazione-simbolica"
+        },
+        {
+          "anchor": "8-regolazione-come-principio-pre-affettivo-e-pre-normativo",
+          "title": "8. Regolazione come principio pre-affettivo e pre-normativo",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-5-la-regolazione-come-principio-ontologico#8-regolazione-come-principio-pre-affettivo-e-pre-normativo"
+        },
+        {
+          "anchor": "9-chiusura-funzione-della-regolazione-nellasse-1",
+          "title": "9. Chiusura: funzione della regolazione nell’Asse 1",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-5-la-regolazione-come-principio-ontologico#9-chiusura-funzione-della-regolazione-nellasse-1"
+        }
+      ],
+      "cited_author_ids": [
+        "daniel-stern",
+        "donald-winnicott",
+        "georges-canguilhem",
+        "kurt-goldstein",
+        "maurice-merleau-ponty",
+        "michel-foucault"
+      ],
+      "cited_book_ids": [
+        "canguilhem-normale-e-patologico",
+        "foucault-sorvegliare-e-punire",
+        "husserl-lezioni-sulla-coscienza-interna-del-tempo",
+        "stern-momento-presente",
+        "winnicott-dalla-pediatria-alla-psicoanalisi",
+        "winnicott-gioco-e-realta"
+      ]
+    },
+    {
+      "id": "asse-1-ontologico-fenomenologico/capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita",
+      "asse_id": "asse-1-ontologico-fenomenologico",
+      "asse_number": 1,
+      "number": 6,
+      "title": "La relazione come condizione strutturale della soggettività",
+      "slug": "capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita",
+      "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita",
+      "summary": null,
+      "prev_slug": "capitolo-5-la-regolazione-come-principio-ontologico",
+      "next_slug": "capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza",
+      "sections": [
+        {
+          "anchor": "1-perché-la-relazione-non-è-unaggiunta",
+          "title": "1. Perché la relazione non è un’aggiunta",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita#1-perché-la-relazione-non-è-unaggiunta"
+        },
+        {
+          "anchor": "2-il-soggetto-come-essere-con",
+          "title": "2. Il soggetto come essere-con",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita#2-il-soggetto-come-essere-con"
+        },
+        {
+          "anchor": "3-relazione-e-costituzione-del-soggetto",
+          "title": "3. Relazione e costituzione del soggetto",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita#3-relazione-e-costituzione-del-soggetto"
+        },
+        {
+          "anchor": "4-co-regolazione-come-forma-originaria-della-soggettività",
+          "title": "4. Co-regolazione come forma originaria della soggettività",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita#4-co-regolazione-come-forma-originaria-della-soggettività"
+        },
+        {
+          "anchor": "5-relazione-e-corporeità-lintersoggettività-incarnata",
+          "title": "5. Relazione e corporeità: l’intersoggettività incarnata",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita#5-relazione-e-corporeità-lintersoggettività-incarnata"
+        },
+        {
+          "anchor": "6-relazione-e-apertura-del-campo-dellesperienza",
+          "title": "6. Relazione e apertura del campo dell’esperienza",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita#6-relazione-e-apertura-del-campo-dellesperienza"
+        },
+        {
+          "anchor": "7-dipendenza-relazionale-e-possibilità-di-soggettivazione",
+          "title": "7. Dipendenza relazionale e possibilità di soggettivazione",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita#7-dipendenza-relazionale-e-possibilità-di-soggettivazione"
+        },
+        {
+          "anchor": "8-chiusura-la-relazione-nellarchitettura-dellasse-1",
+          "title": "8. Chiusura: la relazione nell’architettura dell’Asse 1",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita#8-chiusura-la-relazione-nellarchitettura-dellasse-1"
+        }
+      ],
+      "cited_author_ids": [
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-1-ontologico-fenomenologico/capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza",
+      "asse_id": "asse-1-ontologico-fenomenologico",
+      "asse_number": 1,
+      "number": 7,
+      "title": "Il campo intenzionale come struttura dell’esperienza",
+      "slug": "capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza",
+      "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza",
+      "summary": null,
+      "prev_slug": "capitolo-6-la-relazione-come-condizione-strutturale-della-soggettivita",
+      "next_slug": "capitolo-8-soglia-tra-ontologia-e-genesi-morale",
+      "sections": [
+        {
+          "anchor": "1-perché-introdurre-il-concetto-di-campo-intenzionale",
+          "title": "1. Perché introdurre il concetto di campo intenzionale",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza#1-perché-introdurre-il-concetto-di-campo-intenzionale"
+        },
+        {
+          "anchor": "2-intenzionalità-come-apertura-al-mondo",
+          "title": "2. Intenzionalità come apertura al mondo",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza#2-intenzionalità-come-apertura-al-mondo"
+        },
+        {
+          "anchor": "3-il-campo-intenzionale-non-come-spazio-mentale",
+          "title": "3. Il campo intenzionale non come spazio mentale",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza#3-il-campo-intenzionale-non-come-spazio-mentale"
+        },
+        {
+          "anchor": "4-costituzione-del-campo-intenzionale",
+          "title": "4. Costituzione del campo intenzionale",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza#4-costituzione-del-campo-intenzionale"
+        },
+        {
+          "anchor": "5-campo-intenzionale-e-regolazione",
+          "title": "5. Campo intenzionale e regolazione",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza#5-campo-intenzionale-e-regolazione"
+        },
+        {
+          "anchor": "6-campo-intenzionale-e-relazione",
+          "title": "6. Campo intenzionale e relazione",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza#6-campo-intenzionale-e-relazione"
+        },
+        {
+          "anchor": "7-campo-intenzionale-e-sviluppo",
+          "title": "7. Campo intenzionale e sviluppo",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza#7-campo-intenzionale-e-sviluppo"
+        },
+        {
+          "anchor": "8-campo-intenzionale-come-indicatore-globale-non-diagnostico",
+          "title": "8. Campo intenzionale come indicatore globale (non diagnostico)",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza#8-campo-intenzionale-come-indicatore-globale-non-diagnostico"
+        },
+        {
+          "anchor": "9-chiusura-funzione-del-campo-intenzionale-nellasse-1",
+          "title": "9. Chiusura: funzione del campo intenzionale nell’Asse 1",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza#9-chiusura-funzione-del-campo-intenzionale-nellasse-1"
+        }
+      ],
+      "cited_author_ids": [
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-1-ontologico-fenomenologico/capitolo-8-soglia-tra-ontologia-e-genesi-morale",
+      "asse_id": "asse-1-ontologico-fenomenologico",
+      "asse_number": 1,
+      "number": 8,
+      "title": "Soglia tra ontologia e genesi morale",
+      "slug": "capitolo-8-soglia-tra-ontologia-e-genesi-morale",
+      "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-8-soglia-tra-ontologia-e-genesi-morale",
+      "summary": null,
+      "prev_slug": "capitolo-7-il-campo-intenzionale-come-struttura-dell-esperienza",
+      "next_slug": null,
+      "sections": [
+        {
+          "anchor": "1-funzione-di-questo-capitolo",
+          "title": "1. Funzione di questo capitolo",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-8-soglia-tra-ontologia-e-genesi-morale#1-funzione-di-questo-capitolo"
+        },
+        {
+          "anchor": "2-un-soggetto-costituito-non-è-ancora-un-soggetto-moralmente-vincolato",
+          "title": "2. Un soggetto costituito non è ancora un soggetto moralmente vincolato",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-8-soglia-tra-ontologia-e-genesi-morale#2-un-soggetto-costituito-non-è-ancora-un-soggetto-moralmente-vincolato"
+        },
+        {
+          "anchor": "3-il-limite-interno-dellontologia-dello-sviluppo",
+          "title": "3. Il limite interno dell’ontologia dello sviluppo",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-8-soglia-tra-ontologia-e-genesi-morale#3-il-limite-interno-dellontologia-dello-sviluppo"
+        },
+        {
+          "anchor": "4-perché-la-moralità-non-è-deducibile-dallontologia",
+          "title": "4. Perché la moralità non è deducibile dall’ontologia",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-8-soglia-tra-ontologia-e-genesi-morale#4-perché-la-moralità-non-è-deducibile-dallontologia"
+        },
+        {
+          "anchor": "5-la-soglia-quando-laltro-cambia-statuto",
+          "title": "5. La soglia: quando l’altro cambia statuto",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-8-soglia-tra-ontologia-e-genesi-morale#5-la-soglia-quando-laltro-cambia-statuto"
+        },
+        {
+          "anchor": "6-funzione-di-soglia-rispetto-agli-assi-successivi",
+          "title": "6. Funzione di soglia rispetto agli assi successivi",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-8-soglia-tra-ontologia-e-genesi-morale#6-funzione-di-soglia-rispetto-agli-assi-successivi"
+        },
+        {
+          "anchor": "7-chiusura-dellasse-ontologicofenomenologico",
+          "title": "7. Chiusura dell’Asse ontologico–fenomenologico",
+          "url": "/assi-strutturali/asse-1-ontologico-fenomenologico/capitolo-8-soglia-tra-ontologia-e-genesi-morale#7-chiusura-dellasse-ontologicofenomenologico"
+        }
+      ],
+      "cited_author_ids": [
+        "emmanuel-levinas"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-2-affettivo-morale/capitolo-1-statuto-dell-asse-affettivo-morale",
+      "asse_id": "asse-2-affettivo-morale",
+      "asse_number": 2,
+      "number": 1,
+      "title": "Statuto dell’asse affettivo–morale",
+      "slug": "capitolo-1-statuto-dell-asse-affettivo-morale",
+      "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-1-statuto-dell-asse-affettivo-morale",
+      "summary": null,
+      "prev_slug": null,
+      "next_slug": "capitolo-2-l-altro-come-istanza-interna",
+      "sections": [
+        {
+          "anchor": "11-perché-un-asse-affettivomorale",
+          "title": "1.1 Perché un asse “affettivo–morale”",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-1-statuto-dell-asse-affettivo-morale#11-perché-un-asse-affettivomorale"
+        },
+        {
+          "anchor": "12-continuità-e-discontinuità-con-lasse-1",
+          "title": "1.2 Continuità e discontinuità con l’Asse 1",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-1-statuto-dell-asse-affettivo-morale#12-continuità-e-discontinuità-con-lasse-1"
+        },
+        {
+          "anchor": "13-che-cosa-significa-morale-in-senso-genetico",
+          "title": "1.3 Che cosa significa “morale” in senso genetico",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-1-statuto-dell-asse-affettivo-morale#13-che-cosa-significa-morale-in-senso-genetico"
+        },
+        {
+          "anchor": "14-la-colpa-come-esperienza-affettiva-non-come-categoria-morale",
+          "title": "1.4 La colpa come esperienza affettiva, non come categoria morale",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-1-statuto-dell-asse-affettivo-morale#14-la-colpa-come-esperienza-affettiva-non-come-categoria-morale"
+        },
+        {
+          "anchor": "15-perché-lasse-2-è-inevitabilmente-un-asse-in-tensione",
+          "title": "1.5 Perché l’Asse 2 è inevitabilmente un asse “in tensione”",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-1-statuto-dell-asse-affettivo-morale#15-perché-lasse-2-è-inevitabilmente-un-asse-in-tensione"
+        },
+        {
+          "anchor": "16-funzione-strutturale-dellasse-2-nel-modello-complessivo",
+          "title": "1.6 Funzione strutturale dell’Asse 2 nel modello complessivo",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-1-statuto-dell-asse-affettivo-morale#16-funzione-strutturale-dellasse-2-nel-modello-complessivo"
+        },
+        {
+          "anchor": "17-controllo-lessicale-per-evitare-slittamenti",
+          "title": "1.7 Controllo lessicale (per evitare slittamenti)",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-1-statuto-dell-asse-affettivo-morale#17-controllo-lessicale-per-evitare-slittamenti"
+        }
+      ],
+      "cited_author_ids": [
+        "maurice-merleau-ponty",
+        "melanie-klein"
+      ],
+      "cited_book_ids": [
+        "klein-envy-and-gratitude",
+        "winnicott-capacity-for-concern",
+        "winnicott-maturational-processes"
+      ]
+    },
+    {
+      "id": "asse-2-affettivo-morale/capitolo-2-l-altro-come-istanza-interna",
+      "asse_id": "asse-2-affettivo-morale",
+      "asse_number": 2,
+      "number": 2,
+      "title": "L’altro come istanza interna",
+      "slug": "capitolo-2-l-altro-come-istanza-interna",
+      "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-2-l-altro-come-istanza-interna",
+      "summary": null,
+      "prev_slug": "capitolo-1-statuto-dell-asse-affettivo-morale",
+      "next_slug": "capitolo-3-la-colpa-come-esperienza-affettiva-strutturante",
+      "sections": [
+        {
+          "anchor": "21-dalla-relazione-vissuta-alla-presenza-interiorizzata",
+          "title": "2.1 Dalla relazione vissuta alla presenza interiorizzata",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-2-l-altro-come-istanza-interna#21-dalla-relazione-vissuta-alla-presenza-interiorizzata"
+        },
+        {
+          "anchor": "22-che-cosa-significa-istanza",
+          "title": "2.2 Che cosa significa “istanza”",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-2-l-altro-come-istanza-interna#22-che-cosa-significa-istanza"
+        },
+        {
+          "anchor": "23-interiorizzazione--introiezione",
+          "title": "2.3 Interiorizzazione ≠ introiezione",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-2-l-altro-come-istanza-interna#23-interiorizzazione--introiezione"
+        },
+        {
+          "anchor": "24-la-soglia-morale-poter-fare-male-allaltro",
+          "title": "2.4 La soglia morale: poter fare male all’altro",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-2-l-altro-come-istanza-interna#24-la-soglia-morale-poter-fare-male-allaltro"
+        },
+        {
+          "anchor": "25-laltro-che-sopravvive-condizione-della-moralità",
+          "title": "2.5 L’altro che sopravvive: condizione della moralità",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-2-l-altro-come-istanza-interna#25-laltro-che-sopravvive-condizione-della-moralità"
+        },
+        {
+          "anchor": "26-la-continuità-dellistanza-oltre-la-presenza",
+          "title": "2.6 La continuità dell’istanza oltre la presenza",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-2-l-altro-come-istanza-interna#26-la-continuità-dellistanza-oltre-la-presenza"
+        },
+        {
+          "anchor": "27-listanza-come-condizione-non-come-garante",
+          "title": "2.7 L’istanza come condizione, non come garante",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-2-l-altro-come-istanza-interna#27-listanza-come-condizione-non-come-garante"
+        },
+        {
+          "anchor": "28-posizionamento-dellasse-2-rispetto-ai-successivi",
+          "title": "2.8 Posizionamento dell’Asse 2 rispetto ai successivi",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-2-l-altro-come-istanza-interna#28-posizionamento-dellasse-2-rispetto-ai-successivi"
+        }
+      ],
+      "cited_author_ids": [],
+      "cited_book_ids": [
+        "winnicott-maturational-processes"
+      ]
+    },
+    {
+      "id": "asse-2-affettivo-morale/capitolo-3-la-colpa-come-esperienza-affettiva-strutturante",
+      "asse_id": "asse-2-affettivo-morale",
+      "asse_number": 2,
+      "number": 3,
+      "title": "La colpa come esperienza affettiva strutturante",
+      "slug": "capitolo-3-la-colpa-come-esperienza-affettiva-strutturante",
+      "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-3-la-colpa-come-esperienza-affettiva-strutturante",
+      "summary": null,
+      "prev_slug": "capitolo-2-l-altro-come-istanza-interna",
+      "next_slug": "capitolo-4-riparazione-e-responsabilita",
+      "sections": [
+        {
+          "anchor": "31-perché-la-colpa-è-un-passaggio-inevitabile",
+          "title": "3.1 Perché la colpa è un passaggio inevitabile",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-3-la-colpa-come-esperienza-affettiva-strutturante#31-perché-la-colpa-è-un-passaggio-inevitabile"
+        },
+        {
+          "anchor": "32-che-cosa-non-è-la-colpa-controllo-concettuale-preliminare",
+          "title": "3.2 Che cosa non è la colpa (controllo concettuale preliminare)",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-3-la-colpa-come-esperienza-affettiva-strutturante#32-che-cosa-non-è-la-colpa-controllo-concettuale-preliminare"
+        },
+        {
+          "anchor": "33-definizione-genetica-della-colpa",
+          "title": "3.3 Definizione genetica della colpa",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-3-la-colpa-come-esperienza-affettiva-strutturante#33-definizione-genetica-della-colpa"
+        },
+        {
+          "anchor": "34-colpa-e-aggressività-un-legame-strutturale",
+          "title": "3.4 Colpa e aggressività: un legame strutturale",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-3-la-colpa-come-esperienza-affettiva-strutturante#34-colpa-e-aggressività-un-legame-strutturale"
+        },
+        {
+          "anchor": "35-colpa-persecutoria-e-colpa-integrativa",
+          "title": "3.5 Colpa persecutoria e colpa integrativa",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-3-la-colpa-come-esperienza-affettiva-strutturante#35-colpa-persecutoria-e-colpa-integrativa"
+        },
+        {
+          "anchor": "36-la-funzione-strutturante-della-colpa-integrativa",
+          "title": "3.6 La funzione strutturante della colpa integrativa",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-3-la-colpa-come-esperienza-affettiva-strutturante#36-la-funzione-strutturante-della-colpa-integrativa"
+        },
+        {
+          "anchor": "37-quando-la-colpa-non-emerge-o-emerge-male",
+          "title": "3.7 Quando la colpa non emerge (o emerge male)",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-3-la-colpa-come-esperienza-affettiva-strutturante#37-quando-la-colpa-non-emerge-o-emerge-male"
+        },
+        {
+          "anchor": "38-la-colpa-come-ponte-non-come-fondamento",
+          "title": "3.8 La colpa come ponte, non come fondamento",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-3-la-colpa-come-esperienza-affettiva-strutturante#38-la-colpa-come-ponte-non-come-fondamento"
+        },
+        {
+          "anchor": "39-apertura-al-capitolo-successivo",
+          "title": "3.9 Apertura al capitolo successivo",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-3-la-colpa-come-esperienza-affettiva-strutturante#39-apertura-al-capitolo-successivo"
+        }
+      ],
+      "cited_author_ids": [
+        "maurice-merleau-ponty",
+        "melanie-klein"
+      ],
+      "cited_book_ids": [
+        "klein-envy-and-gratitude",
+        "winnicott-capacity-for-concern"
+      ]
+    },
+    {
+      "id": "asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita",
+      "asse_id": "asse-2-affettivo-morale",
+      "asse_number": 2,
+      "number": 4,
+      "title": "Riparazione e responsabilità",
+      "slug": "capitolo-4-riparazione-e-responsabilita",
+      "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita",
+      "summary": null,
+      "prev_slug": "capitolo-3-la-colpa-come-esperienza-affettiva-strutturante",
+      "next_slug": "capitolo-5-confronto-psicoanalitico-strutturale",
+      "sections": [
+        {
+          "anchor": "41-dalla-colpa-alla-possibilità-di-rispondere",
+          "title": "4.1 Dalla colpa alla possibilità di rispondere",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita#41-dalla-colpa-alla-possibilità-di-rispondere"
+        },
+        {
+          "anchor": "42-che-cosa-si-intende-per-riparazione",
+          "title": "4.2 Che cosa si intende per riparazione",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita#42-che-cosa-si-intende-per-riparazione"
+        },
+        {
+          "anchor": "43-riparazione-e-sopravvivenza-dellaltro",
+          "title": "4.3 Riparazione e sopravvivenza dell’altro",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita#43-riparazione-e-sopravvivenza-dellaltro"
+        },
+        {
+          "anchor": "44-riparazione--cancellazione-del-danno",
+          "title": "4.4 Riparazione ≠ cancellazione del danno",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita#44-riparazione--cancellazione-del-danno"
+        },
+        {
+          "anchor": "45-la-riparazione-come-evento-trasformativo",
+          "title": "4.5 La riparazione come evento trasformativo",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita#45-la-riparazione-come-evento-trasformativo"
+        },
+        {
+          "anchor": "46-responsabilità-una-definizione-genetica",
+          "title": "4.6 Responsabilità: una definizione genetica",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita#46-responsabilità-una-definizione-genetica"
+        },
+        {
+          "anchor": "47-responsabilità-prima-della-norma",
+          "title": "4.7 Responsabilità prima della norma",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita#47-responsabilità-prima-della-norma"
+        },
+        {
+          "anchor": "48-quando-la-riparazione-fallisce",
+          "title": "4.8 Quando la riparazione fallisce",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita#48-quando-la-riparazione-fallisce"
+        },
+        {
+          "anchor": "49-riparazione-e-temporalità",
+          "title": "4.9 Riparazione e temporalità",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita#49-riparazione-e-temporalità"
+        },
+        {
+          "anchor": "410-funzione-del-capitolo-nel-percorso-dellasse-2",
+          "title": "4.10 Funzione del Capitolo nel percorso dell’Asse 2",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-4-riparazione-e-responsabilita#410-funzione-del-capitolo-nel-percorso-dellasse-2"
+        }
+      ],
+      "cited_author_ids": [
+        "emmanuel-levinas",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": [
+        "winnicott-capacity-for-concern",
+        "winnicott-use-of-an-object"
+      ]
+    },
+    {
+      "id": "asse-2-affettivo-morale/capitolo-5-confronto-psicoanalitico-strutturale",
+      "asse_id": "asse-2-affettivo-morale",
+      "asse_number": 2,
+      "number": 5,
+      "title": "Confronto psicoanalitico strutturale",
+      "slug": "capitolo-5-confronto-psicoanalitico-strutturale",
+      "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-5-confronto-psicoanalitico-strutturale",
+      "summary": null,
+      "prev_slug": "capitolo-4-riparazione-e-responsabilita",
+      "next_slug": "capitolo-6-temporalita-dello-sviluppo-morale",
+      "sections": [
+        {
+          "anchor": "51-perché-un-confronto-strutturale",
+          "title": "5.1 Perché un confronto strutturale",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-5-confronto-psicoanalitico-strutturale#51-perché-un-confronto-strutturale"
+        },
+        {
+          "anchor": "52-freud-la-moralità-come-interiorizzazione-della-proibizione",
+          "title": "5.2 Freud: la moralità come interiorizzazione della proibizione",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-5-confronto-psicoanalitico-strutturale#52-freud-la-moralità-come-interiorizzazione-della-proibizione"
+        },
+        {
+          "anchor": "53-klein-la-moralità-come-gestione-della-distruttività-primaria",
+          "title": "5.3 Klein: la moralità come gestione della distruttività primaria",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-5-confronto-psicoanalitico-strutturale#53-klein-la-moralità-come-gestione-della-distruttività-primaria"
+        },
+        {
+          "anchor": "54-winnicott-la-moralità-come-maturazione-relazionale",
+          "title": "5.4 Winnicott: la moralità come maturazione relazionale",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-5-confronto-psicoanalitico-strutturale#54-winnicott-la-moralità-come-maturazione-relazionale"
+        },
+        {
+          "anchor": "55-tre-modelli-tre-verità-incompatibili",
+          "title": "5.5 Tre modelli, tre verità incompatibili",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-5-confronto-psicoanalitico-strutturale#55-tre-modelli-tre-verità-incompatibili"
+        },
+        {
+          "anchor": "56-posizionamento-dellasse-2-rispetto-ai-modelli",
+          "title": "5.6 Posizionamento dell’Asse 2 rispetto ai modelli",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-5-confronto-psicoanalitico-strutturale#56-posizionamento-dellasse-2-rispetto-ai-modelli"
+        },
+        {
+          "anchor": "57-preparazione-al-passaggio-successivo",
+          "title": "5.7 Preparazione al passaggio successivo",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-5-confronto-psicoanalitico-strutturale#57-preparazione-al-passaggio-successivo"
+        }
+      ],
+      "cited_author_ids": [
+        "melanie-klein",
+        "sigmund-freud"
+      ],
+      "cited_book_ids": [
+        "klein-envy-and-gratitude"
+      ]
+    },
+    {
+      "id": "asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale",
+      "asse_id": "asse-2-affettivo-morale",
+      "asse_number": 2,
+      "number": 6,
+      "title": "Temporalità dello sviluppo morale",
+      "slug": "capitolo-6-temporalita-dello-sviluppo-morale",
+      "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale",
+      "summary": null,
+      "prev_slug": "capitolo-5-confronto-psicoanalitico-strutturale",
+      "next_slug": "capitolo-7-dove-l-asse-affettivo-morale-puo-fallire",
+      "sections": [
+        {
+          "anchor": "61-perché-la-temporalità-è-decisiva-per-lasse-2",
+          "title": "6.1 Perché la temporalità è decisiva per l’Asse 2",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale#61-perché-la-temporalità-è-decisiva-per-lasse-2"
+        },
+        {
+          "anchor": "62-temporalità-strutturale--età-cronologica",
+          "title": "6.2 Temporalità strutturale ≠ età cronologica",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale#62-temporalità-strutturale--età-cronologica"
+        },
+        {
+          "anchor": "63-il-prima-prerequisiti-affettivi-senza-colpa",
+          "title": "6.3 Il “prima”: prerequisiti affettivi senza colpa",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale#63-il-prima-prerequisiti-affettivi-senza-colpa"
+        },
+        {
+          "anchor": "64-la-soglia-emergere-della-colpa-tollerabile",
+          "title": "6.4 La soglia: emergere della colpa tollerabile",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale#64-la-soglia-emergere-della-colpa-tollerabile"
+        },
+        {
+          "anchor": "65-la-fase-decisiva-colpa-integrativa-e-riparazione-possibile",
+          "title": "6.5 La fase decisiva: colpa integrativa e riparazione possibile",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale#65-la-fase-decisiva-colpa-integrativa-e-riparazione-possibile"
+        },
+        {
+          "anchor": "66-consolidamento-dalla-responsabilità-affettiva-alla-stabilità-interna",
+          "title": "6.6 Consolidamento: dalla responsabilità affettiva alla stabilità interna",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale#66-consolidamento-dalla-responsabilità-affettiva-alla-stabilità-interna"
+        },
+        {
+          "anchor": "67-temporalità-fragile-regressioni-e-blocchi",
+          "title": "6.7 Temporalità fragile: regressioni e blocchi",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale#67-temporalità-fragile-regressioni-e-blocchi"
+        },
+        {
+          "anchor": "68-il-rischio-dellanticipazione-morale",
+          "title": "6.8 Il rischio dell’anticipazione morale",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale#68-il-rischio-dellanticipazione-morale"
+        },
+        {
+          "anchor": "69-temporalità-dellasse-2-e-rapporto-con-gli-altri-assi",
+          "title": "6.9 Temporalità dell’Asse 2 e rapporto con gli altri assi",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale#69-temporalità-dellasse-2-e-rapporto-con-gli-altri-assi"
+        },
+        {
+          "anchor": "610-funzione-del-capitolo-nel-percorso-dellasse-2",
+          "title": "6.10 Funzione del Capitolo nel percorso dell’Asse 2",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-6-temporalita-dello-sviluppo-morale#610-funzione-del-capitolo-nel-percorso-dellasse-2"
+        }
+      ],
+      "cited_author_ids": [
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": [
+        "winnicott-capacity-for-concern",
+        "winnicott-use-of-an-object"
+      ]
+    },
+    {
+      "id": "asse-2-affettivo-morale/capitolo-7-dove-l-asse-affettivo-morale-puo-fallire",
+      "asse_id": "asse-2-affettivo-morale",
+      "asse_number": 2,
+      "number": 7,
+      "title": "Dove l’Asse affettivo–morale può fallire",
+      "slug": "capitolo-7-dove-l-asse-affettivo-morale-puo-fallire",
+      "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-7-dove-l-asse-affettivo-morale-puo-fallire",
+      "summary": null,
+      "prev_slug": "capitolo-6-temporalita-dello-sviluppo-morale",
+      "next_slug": "capitolo-8-raccordo-con-l-asse-normativo-educativo",
+      "sections": [
+        {
+          "anchor": "71-perché-è-necessario-pensare-il-fallimento",
+          "title": "7.1 Perché è necessario pensare il fallimento",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-7-dove-l-asse-affettivo-morale-puo-fallire#71-perché-è-necessario-pensare-il-fallimento"
+        },
+        {
+          "anchor": "72-prima-deriva-lassenza-di-colpa",
+          "title": "7.2 Prima deriva: l’assenza di colpa",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-7-dove-l-asse-affettivo-morale-puo-fallire#72-prima-deriva-lassenza-di-colpa"
+        },
+        {
+          "anchor": "73-seconda-deriva-la-colpa-persecutoria",
+          "title": "7.3 Seconda deriva: la colpa persecutoria",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-7-dove-l-asse-affettivo-morale-puo-fallire#73-seconda-deriva-la-colpa-persecutoria"
+        },
+        {
+          "anchor": "74-terza-deriva-la-colpa-adattiva",
+          "title": "7.4 Terza deriva: la colpa adattiva",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-7-dove-l-asse-affettivo-morale-puo-fallire#74-terza-deriva-la-colpa-adattiva"
+        },
+        {
+          "anchor": "75-quarta-deriva-la-riparazione-impossibile",
+          "title": "7.5 Quarta deriva: la riparazione impossibile",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-7-dove-l-asse-affettivo-morale-puo-fallire#75-quarta-deriva-la-riparazione-impossibile"
+        },
+        {
+          "anchor": "76-quinta-deriva-lanticipazione-morale",
+          "title": "7.6 Quinta deriva: l’anticipazione morale",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-7-dove-l-asse-affettivo-morale-puo-fallire#76-quinta-deriva-lanticipazione-morale"
+        },
+        {
+          "anchor": "77-falsi-esiti-della-moralità",
+          "title": "7.7 Falsi esiti della moralità",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-7-dove-l-asse-affettivo-morale-puo-fallire#77-falsi-esiti-della-moralità"
+        },
+        {
+          "anchor": "78-perché-queste-derive-non-sono-semplici-errori",
+          "title": "7.8 Perché queste derive non sono semplici errori",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-7-dove-l-asse-affettivo-morale-puo-fallire#78-perché-queste-derive-non-sono-semplici-errori"
+        },
+        {
+          "anchor": "79-funzione-del-capitolo-nel-percorso-dellasse-2",
+          "title": "7.9 Funzione del Capitolo nel percorso dell’Asse 2",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-7-dove-l-asse-affettivo-morale-puo-fallire#79-funzione-del-capitolo-nel-percorso-dellasse-2"
+        }
+      ],
+      "cited_author_ids": [],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-2-affettivo-morale/capitolo-8-raccordo-con-l-asse-normativo-educativo",
+      "asse_id": "asse-2-affettivo-morale",
+      "asse_number": 2,
+      "number": 8,
+      "title": "Raccordo con l’Asse normativo–educativo",
+      "slug": "capitolo-8-raccordo-con-l-asse-normativo-educativo",
+      "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-8-raccordo-con-l-asse-normativo-educativo",
+      "summary": null,
+      "prev_slug": "capitolo-7-dove-l-asse-affettivo-morale-puo-fallire",
+      "next_slug": null,
+      "sections": [
+        {
+          "anchor": "81-il-punto-di-arresto-dellasse-affettivomorale",
+          "title": "8.1 Il punto di arresto dell’Asse affettivo–morale",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-8-raccordo-con-l-asse-normativo-educativo#81-il-punto-di-arresto-dellasse-affettivomorale"
+        },
+        {
+          "anchor": "82-perché-la-responsabilità-affettiva-non-fonda-il-giudizio",
+          "title": "8.2 Perché la responsabilità affettiva non fonda il giudizio",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-8-raccordo-con-l-asse-normativo-educativo#82-perché-la-responsabilità-affettiva-non-fonda-il-giudizio"
+        },
+        {
+          "anchor": "83-il-rischio-della-chiusura-affettiva",
+          "title": "8.3 Il rischio della chiusura affettiva",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-8-raccordo-con-l-asse-normativo-educativo#83-il-rischio-della-chiusura-affettiva"
+        },
+        {
+          "anchor": "84-perché-è-necessario-un-asse-normativoeducativo",
+          "title": "8.4 Perché è necessario un Asse normativo–educativo",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-8-raccordo-con-l-asse-normativo-educativo#84-perché-è-necessario-un-asse-normativoeducativo"
+        },
+        {
+          "anchor": "85-continuità-e-discontinuità-tra-asse-2-e-asse-3",
+          "title": "8.5 Continuità e discontinuità tra Asse 2 e Asse 3",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-8-raccordo-con-l-asse-normativo-educativo#85-continuità-e-discontinuità-tra-asse-2-e-asse-3"
+        },
+        {
+          "anchor": "86-il-ruolo-educativo-del-conflitto-normativo",
+          "title": "8.6 Il ruolo educativo del conflitto normativo",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-8-raccordo-con-l-asse-normativo-educativo#86-il-ruolo-educativo-del-conflitto-normativo"
+        },
+        {
+          "anchor": "87-perché-lasse-2-deve-restare-incompiuto",
+          "title": "8.7 Perché l’Asse 2 deve restare “incompiuto”",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-8-raccordo-con-l-asse-normativo-educativo#87-perché-lasse-2-deve-restare-incompiuto"
+        },
+        {
+          "anchor": "88-funzione-del-raccordo-per-lintero-progetto",
+          "title": "8.8 Funzione del raccordo per l’intero progetto",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-8-raccordo-con-l-asse-normativo-educativo#88-funzione-del-raccordo-per-lintero-progetto"
+        },
+        {
+          "anchor": "89-apertura-allasse-normativoeducativo",
+          "title": "8.9 Apertura all’Asse normativo–educativo",
+          "url": "/assi-strutturali/asse-2-affettivo-morale/capitolo-8-raccordo-con-l-asse-normativo-educativo#89-apertura-allasse-normativoeducativo"
+        }
+      ],
+      "cited_author_ids": [],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-3-normativo-educativo/capitolo-1-norma-normativita-giudizio-distinzione-concettuale",
+      "asse_id": "asse-3-normativo-educativo",
+      "asse_number": 3,
+      "number": 1,
+      "title": "Norma, normatività, giudizio: distinzione concettuale",
+      "slug": "capitolo-1-norma-normativita-giudizio-distinzione-concettuale",
+      "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-1-norma-normativita-giudizio-distinzione-concettuale",
+      "summary": null,
+      "prev_slug": null,
+      "next_slug": "capitolo-2-dalla-colpa-asse-2-al-giudizio",
+      "sections": [
+        {
+          "anchor": "11-norma-e-normatività-una-distinzione-necessaria",
+          "title": "1.1 Norma e normatività: una distinzione necessaria",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-1-norma-normativita-giudizio-distinzione-concettuale#11-norma-e-normatività-una-distinzione-necessaria"
+        },
+        {
+          "anchor": "12-la-norma-come-orientamento-il-modello-tommasiano",
+          "title": "1.2 La norma come orientamento: il modello tommasiano",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-1-norma-normativita-giudizio-distinzione-concettuale#12-la-norma-come-orientamento-il-modello-tommasiano"
+        },
+        {
+          "anchor": "13-il-giudizio-come-atto-non-delegabile",
+          "title": "1.3 Il giudizio come atto non delegabile",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-1-norma-normativita-giudizio-distinzione-concettuale#13-il-giudizio-come-atto-non-delegabile"
+        },
+        {
+          "anchor": "14-la-tentazione-della-norma-autosufficiente-il-modello-kantiano",
+          "title": "1.4 La tentazione della norma autosufficiente: il modello kantiano",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-1-norma-normativita-giudizio-distinzione-concettuale#14-la-tentazione-della-norma-autosufficiente-il-modello-kantiano"
+        },
+        {
+          "anchor": "15-due-modelli-a-confronto",
+          "title": "1.5 Due modelli a confronto",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-1-norma-normativita-giudizio-distinzione-concettuale#15-due-modelli-a-confronto"
+        },
+        {
+          "anchor": "16-funzione-del-capitolo",
+          "title": "1.6 Funzione del capitolo",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-1-norma-normativita-giudizio-distinzione-concettuale#16-funzione-del-capitolo"
+        }
+      ],
+      "cited_author_ids": [],
+      "cited_book_ids": [
+        "tommaso-summa-theologiae"
+      ]
+    },
+    {
+      "id": "asse-3-normativo-educativo/capitolo-2-dalla-colpa-asse-2-al-giudizio",
+      "asse_id": "asse-3-normativo-educativo",
+      "asse_number": 3,
+      "number": 2,
+      "title": "Dalla colpa (Asse 2) al giudizio",
+      "slug": "capitolo-2-dalla-colpa-asse-2-al-giudizio",
+      "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-2-dalla-colpa-asse-2-al-giudizio",
+      "summary": null,
+      "prev_slug": "capitolo-1-norma-normativita-giudizio-distinzione-concettuale",
+      "next_slug": "capitolo-3-verita-educativa-orientamento-senza-arbitrarieta",
+      "sections": [
+        {
+          "anchor": "21-la-colpa-come-vincolo-interno",
+          "title": "2.1 La colpa come vincolo interno",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-2-dalla-colpa-asse-2-al-giudizio#21-la-colpa-come-vincolo-interno"
+        },
+        {
+          "anchor": "22-limite-interno-e-assenza-di-giudizio",
+          "title": "2.2 Limite interno e assenza di giudizio",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-2-dalla-colpa-asse-2-al-giudizio#22-limite-interno-e-assenza-di-giudizio"
+        },
+        {
+          "anchor": "23-il-rischio-della-riduzione-psicogenetica",
+          "title": "2.3 Il rischio della riduzione psicogenetica",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-2-dalla-colpa-asse-2-al-giudizio#23-il-rischio-della-riduzione-psicogenetica"
+        },
+        {
+          "anchor": "24-il-giudizio-come-presa-di-posizione",
+          "title": "2.4 Il giudizio come presa di posizione",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-2-dalla-colpa-asse-2-al-giudizio#24-il-giudizio-come-presa-di-posizione"
+        },
+        {
+          "anchor": "25-dal-vincolo-interno-alla-responsabilità",
+          "title": "2.5 Dal vincolo interno alla responsabilità",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-2-dalla-colpa-asse-2-al-giudizio#25-dal-vincolo-interno-alla-responsabilità"
+        },
+        {
+          "anchor": "26-funzione-del-capitolo",
+          "title": "2.6 Funzione del capitolo",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-2-dalla-colpa-asse-2-al-giudizio#26-funzione-del-capitolo"
+        }
+      ],
+      "cited_author_ids": [
+        "jean-piaget",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": [
+        "merleau-ponty-fenomenologia-della-percezione",
+        "piaget-giudizio-morale-nel-bambino"
+      ]
+    },
+    {
+      "id": "asse-3-normativo-educativo/capitolo-3-verita-educativa-orientamento-senza-arbitrarieta",
+      "asse_id": "asse-3-normativo-educativo",
+      "asse_number": 3,
+      "number": 3,
+      "title": "Verità educativa: orientamento senza arbitrarietà",
+      "slug": "capitolo-3-verita-educativa-orientamento-senza-arbitrarieta",
+      "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-3-verita-educativa-orientamento-senza-arbitrarieta",
+      "summary": null,
+      "prev_slug": "capitolo-2-dalla-colpa-asse-2-al-giudizio",
+      "next_slug": "capitolo-4-educare-senza-manipolare-autorita-e-responsabilita",
+      "sections": [
+        {
+          "anchor": "31-la-verità-non-si-trasmette-si-riconosce",
+          "title": "3.1 La verità non si trasmette, si riconosce",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-3-verita-educativa-orientamento-senza-arbitrarieta#31-la-verità-non-si-trasmette-si-riconosce"
+        },
+        {
+          "anchor": "32-il-giudizio-come-atto-del-soggetto",
+          "title": "3.2 Il giudizio come atto del soggetto",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-3-verita-educativa-orientamento-senza-arbitrarieta#32-il-giudizio-come-atto-del-soggetto"
+        },
+        {
+          "anchor": "33-il-luogo-del-giudizio-il-soggetto-incarnato",
+          "title": "3.3 Il luogo del giudizio: il soggetto incarnato",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-3-verita-educativa-orientamento-senza-arbitrarieta#33-il-luogo-del-giudizio-il-soggetto-incarnato"
+        },
+        {
+          "anchor": "34-verità-situazione-e-non-relativismo",
+          "title": "3.4 Verità, situazione e non-relativismo",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-3-verita-educativa-orientamento-senza-arbitrarieta#34-verità-situazione-e-non-relativismo"
+        },
+        {
+          "anchor": "35-orizzonti-di-senso-e-valutazione",
+          "title": "3.5 Orizzonti di senso e valutazione",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-3-verita-educativa-orientamento-senza-arbitrarieta#35-orizzonti-di-senso-e-valutazione"
+        },
+        {
+          "anchor": "36-educare-senza-arbitrarietà",
+          "title": "3.6 Educare senza arbitrarietà",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-3-verita-educativa-orientamento-senza-arbitrarieta#36-educare-senza-arbitrarietà"
+        }
+      ],
+      "cited_author_ids": [
+        "agostino-d-ippona",
+        "charles-taylor",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": [
+        "agostino-de-magistro",
+        "merleau-ponty-fenomenologia-della-percezione",
+        "taylor-fonti-del-se"
+      ]
+    },
+    {
+      "id": "asse-3-normativo-educativo/capitolo-4-educare-senza-manipolare-autorita-e-responsabilita",
+      "asse_id": "asse-3-normativo-educativo",
+      "asse_number": 3,
+      "number": 4,
+      "title": "Educare senza manipolare: autorità e responsabilità",
+      "slug": "capitolo-4-educare-senza-manipolare-autorita-e-responsabilita",
+      "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-4-educare-senza-manipolare-autorita-e-responsabilita",
+      "summary": null,
+      "prev_slug": "capitolo-3-verita-educativa-orientamento-senza-arbitrarieta",
+      "next_slug": "capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione",
+      "sections": [
+        {
+          "anchor": "41-autorità-potere-violenza-una-distinzione-necessaria",
+          "title": "4.1 Autorità, potere, violenza: una distinzione necessaria",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-4-educare-senza-manipolare-autorita-e-responsabilita#41-autorità-potere-violenza-una-distinzione-necessaria"
+        },
+        {
+          "anchor": "42-lasimmetria-educativa-come-struttura-non-come-abuso",
+          "title": "4.2 L’asimmetria educativa come struttura, non come abuso",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-4-educare-senza-manipolare-autorita-e-responsabilita#42-lasimmetria-educativa-come-struttura-non-come-abuso"
+        },
+        {
+          "anchor": "43-autorità-come-condizione-del-giudizio",
+          "title": "4.3 Autorità come condizione del giudizio",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-4-educare-senza-manipolare-autorita-e-responsabilita#43-autorità-come-condizione-del-giudizio"
+        },
+        {
+          "anchor": "44-dallautorità-alla-responsabilità-limputazione-a-sé",
+          "title": "4.4 Dall’autorità alla responsabilità: l’imputazione a sé",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-4-educare-senza-manipolare-autorita-e-responsabilita#44-dallautorità-alla-responsabilità-limputazione-a-sé"
+        },
+        {
+          "anchor": "45-responsabilità-e-non-conformità",
+          "title": "4.5 Responsabilità e non-conformità",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-4-educare-senza-manipolare-autorita-e-responsabilita#45-responsabilità-e-non-conformità"
+        },
+        {
+          "anchor": "46-il-contro-campo-critico-autorità-e-disciplinamento",
+          "title": "4.6 Il contro-campo critico: autorità e disciplinamento",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-4-educare-senza-manipolare-autorita-e-responsabilita#46-il-contro-campo-critico-autorità-e-disciplinamento"
+        },
+        {
+          "anchor": "47-funzione-del-capitolo",
+          "title": "4.7 Funzione del capitolo",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-4-educare-senza-manipolare-autorita-e-responsabilita#47-funzione-del-capitolo"
+        }
+      ],
+      "cited_author_ids": [
+        "hannah-arendt",
+        "michel-foucault"
+      ],
+      "cited_book_ids": [
+        "arendt-sulla-violenza",
+        "foucault-sorvegliare-e-punire",
+        "ricoeur-se-come-un-altro"
+      ]
+    },
+    {
+      "id": "asse-3-normativo-educativo/capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione",
+      "asse_id": "asse-3-normativo-educativo",
+      "asse_number": 3,
+      "number": 5,
+      "title": "I fallimenti della normatività: relativismo, moralismo e prestazione",
+      "slug": "capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione",
+      "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione",
+      "summary": null,
+      "prev_slug": "capitolo-4-educare-senza-manipolare-autorita-e-responsabilita",
+      "next_slug": "capitolo-6-il-limite-del-giudizio-quando-la-norma-non-e-sovrana",
+      "sections": [
+        {
+          "anchor": "51-il-collasso-del-linguaggio-normativo",
+          "title": "5.1 Il collasso del linguaggio normativo",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione#51-il-collasso-del-linguaggio-normativo"
+        },
+        {
+          "anchor": "52-relativismo-e-moralismo-come-esiti-simmetrici",
+          "title": "5.2 Relativismo e moralismo come esiti simmetrici",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione#52-relativismo-e-moralismo-come-esiti-simmetrici"
+        },
+        {
+          "anchor": "53-dalla-perdita-di-senso-alla-prestazione",
+          "title": "5.3 Dalla perdita di senso alla prestazione",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione#53-dalla-perdita-di-senso-alla-prestazione"
+        },
+        {
+          "anchor": "54-prestazione-e-svuotamento-del-giudizio",
+          "title": "5.4 Prestazione e svuotamento del giudizio",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione#54-prestazione-e-svuotamento-del-giudizio"
+        },
+        {
+          "anchor": "55-la-riduzione-cognitiva-del-giudizio",
+          "title": "5.5 La riduzione cognitiva del giudizio",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione#55-la-riduzione-cognitiva-del-giudizio"
+        },
+        {
+          "anchor": "56-giudizio-come-prestazione-valutabile",
+          "title": "5.6 Giudizio come prestazione valutabile",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione#56-giudizio-come-prestazione-valutabile"
+        },
+        {
+          "anchor": "57-funzione-del-capitolo",
+          "title": "5.7 Funzione del capitolo",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione#57-funzione-del-capitolo"
+        }
+      ],
+      "cited_author_ids": [
+        "alasdair-macintyre",
+        "bernard-stiegler"
+      ],
+      "cited_book_ids": [
+        "macintyre-dopo-la-virtu",
+        "stiegler-prendersi-cura"
+      ]
+    },
+    {
+      "id": "asse-3-normativo-educativo/capitolo-6-il-limite-del-giudizio-quando-la-norma-non-e-sovrana",
+      "asse_id": "asse-3-normativo-educativo",
+      "asse_number": 3,
+      "number": 6,
+      "title": "Il limite del giudizio: quando la norma non è sovrana",
+      "slug": "capitolo-6-il-limite-del-giudizio-quando-la-norma-non-e-sovrana",
+      "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-6-il-limite-del-giudizio-quando-la-norma-non-e-sovrana",
+      "summary": null,
+      "prev_slug": "capitolo-5-i-fallimenti-della-normativita-relativismo-moralismo-e-prestazione",
+      "next_slug": null,
+      "sections": [
+        {
+          "anchor": "61-il-reale-come-eccedenza-del-senso",
+          "title": "6.1 Il reale come eccedenza del senso",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-6-il-limite-del-giudizio-quando-la-norma-non-e-sovrana#61-il-reale-come-eccedenza-del-senso"
+        },
+        {
+          "anchor": "62-il-giudizio-come-atto-esposto",
+          "title": "6.2 Il giudizio come atto esposto",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-6-il-limite-del-giudizio-quando-la-norma-non-e-sovrana#62-il-giudizio-come-atto-esposto"
+        },
+        {
+          "anchor": "63-il-fallimento-del-giudizio-come-possibilità-strutturale",
+          "title": "6.3 Il fallimento del giudizio come possibilità strutturale",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-6-il-limite-del-giudizio-quando-la-norma-non-e-sovrana#63-il-fallimento-del-giudizio-come-possibilità-strutturale"
+        },
+        {
+          "anchor": "64-normatività-e-non-sovranità",
+          "title": "6.4 Normatività e non-sovranità",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-6-il-limite-del-giudizio-quando-la-norma-non-e-sovrana#64-normatività-e-non-sovranità"
+        },
+        {
+          "anchor": "65-educare-al-limite",
+          "title": "6.5 Educare al limite",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-6-il-limite-del-giudizio-quando-la-norma-non-e-sovrana#65-educare-al-limite"
+        },
+        {
+          "anchor": "66-funzione-di-raccordo-con-lasse-4",
+          "title": "6.6 Funzione di raccordo con l’Asse 4",
+          "url": "/assi-strutturali/asse-3-normativo-educativo/capitolo-6-il-limite-del-giudizio-quando-la-norma-non-e-sovrana#66-funzione-di-raccordo-con-lasse-4"
+        }
+      ],
+      "cited_author_ids": [
+        "hannah-arendt",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": [
+        "arendt-responsabilita-e-giudizio"
+      ]
+    },
+    {
+      "id": "asse-4-separazione-e-limite/capitolo-1-lo-statuto-del-limite-reale",
+      "asse_id": "asse-4-separazione-e-limite",
+      "asse_number": 4,
+      "number": 1,
+      "title": "Lo statuto del limite reale",
+      "slug": "capitolo-1-lo-statuto-del-limite-reale",
+      "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-1-lo-statuto-del-limite-reale",
+      "summary": null,
+      "prev_slug": null,
+      "next_slug": "capitolo-2-l-eccedenza",
+      "sections": [
+        {
+          "anchor": "1-limite-reale--norma",
+          "title": "1. Limite reale ≠ norma",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-1-lo-statuto-del-limite-reale#1-limite-reale--norma"
+        },
+        {
+          "anchor": "2-limite-reale--frustrazione-regolata",
+          "title": "2. Limite reale ≠ frustrazione regolata",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-1-lo-statuto-del-limite-reale#2-limite-reale--frustrazione-regolata"
+        },
+        {
+          "anchor": "3-il-reale-non-dato-empirico-non-trauma-non-destino",
+          "title": "3. Il “reale”: non dato empirico, non trauma, non destino",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-1-lo-statuto-del-limite-reale#3-il-reale-non-dato-empirico-non-trauma-non-destino"
+        },
+        {
+          "anchor": "4-perché-parlare-di-incontro",
+          "title": "4. Perché parlare di “incontro”",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-1-lo-statuto-del-limite-reale#4-perché-parlare-di-incontro"
+        },
+        {
+          "anchor": "5-funzione-strutturale-dellasse-nel-modello-complessivo",
+          "title": "5. Funzione strutturale dell’asse nel modello complessivo",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-1-lo-statuto-del-limite-reale#5-funzione-strutturale-dellasse-nel-modello-complessivo"
+        }
+      ],
+      "cited_author_ids": [
+        "sigmund-freud"
+      ],
+      "cited_book_ids": [
+        "bion-learning-from-experience",
+        "freud-lutto-e-melanconia"
+      ]
+    },
+    {
+      "id": "asse-4-separazione-e-limite/capitolo-2-l-eccedenza",
+      "asse_id": "asse-4-separazione-e-limite",
+      "asse_number": 4,
+      "number": 2,
+      "title": "L’eccedenza",
+      "slug": "capitolo-2-l-eccedenza",
+      "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-2-l-eccedenza",
+      "summary": null,
+      "prev_slug": "capitolo-1-lo-statuto-del-limite-reale",
+      "next_slug": "capitolo-3-la-perdita",
+      "sections": [
+        {
+          "anchor": "1-che-cosa-intendiamo-per-eccedenza",
+          "title": "1. Che cosa intendiamo per eccedenza",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-2-l-eccedenza#1-che-cosa-intendiamo-per-eccedenza"
+        },
+        {
+          "anchor": "2-leccedenza-non-nega-il-soggetto-lo-decentra",
+          "title": "2. L’eccedenza non nega il soggetto, lo decentra",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-2-l-eccedenza#2-leccedenza-non-nega-il-soggetto-lo-decentra"
+        },
+        {
+          "anchor": "3-il-corpo-come-primo-luogo-delleccedenza",
+          "title": "3. Il corpo come primo luogo dell’eccedenza",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-2-l-eccedenza#3-il-corpo-come-primo-luogo-delleccedenza"
+        },
+        {
+          "anchor": "4-eccedenza-e-posizionalità-distanza-da-sé",
+          "title": "4. Eccedenza e posizionalità: distanza da sé",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-2-l-eccedenza#4-eccedenza-e-posizionalità-distanza-da-sé"
+        },
+        {
+          "anchor": "5-che-cosa-accade-se-leccedenza-non-viene-tollerata",
+          "title": "5. Che cosa accade se l’eccedenza non viene tollerata",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-2-l-eccedenza#5-che-cosa-accade-se-leccedenza-non-viene-tollerata"
+        },
+        {
+          "anchor": "6-differenza-strutturale-tra-eccedenza-e-perdita",
+          "title": "6. Differenza strutturale tra eccedenza e perdita",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-2-l-eccedenza#6-differenza-strutturale-tra-eccedenza-e-perdita"
+        },
+        {
+          "anchor": "7-funzione-delleccedenza-nellasse-del-limite-reale",
+          "title": "7. Funzione dell’eccedenza nell’asse del limite reale",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-2-l-eccedenza#7-funzione-delleccedenza-nellasse-del-limite-reale"
+        }
+      ],
+      "cited_author_ids": [
+        "helmuth-plessner",
+        "martin-heidegger",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": [
+        "gadamer-verita-e-metodo",
+        "heidegger-essere-e-tempo"
+      ]
+    },
+    {
+      "id": "asse-4-separazione-e-limite/capitolo-3-la-perdita",
+      "asse_id": "asse-4-separazione-e-limite",
+      "asse_number": 4,
+      "number": 3,
+      "title": "La perdita",
+      "slug": "capitolo-3-la-perdita",
+      "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-3-la-perdita",
+      "summary": null,
+      "prev_slug": "capitolo-2-l-eccedenza",
+      "next_slug": "capitolo-4-la-separazione",
+      "sections": [
+        {
+          "anchor": "1-che-cosè-una-perdita-in-senso-strutturale",
+          "title": "1. Che cos’è una perdita (in senso strutturale)",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-3-la-perdita#1-che-cosè-una-perdita-in-senso-strutturale"
+        },
+        {
+          "anchor": "2-perdita--frustrazione--eccedenza",
+          "title": "2. Perdita ≠ frustrazione ≠ eccedenza",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-3-la-perdita#2-perdita--frustrazione--eccedenza"
+        },
+        {
+          "anchor": "3-la-perdita-non-è-patologica-in-sé",
+          "title": "3. La perdita non è patologica in sé",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-3-la-perdita#3-la-perdita-non-è-patologica-in-sé"
+        },
+        {
+          "anchor": "4-perdita-e-tempo-lirreversibilità",
+          "title": "4. Perdita e tempo: l’irreversibilità",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-3-la-perdita#4-perdita-e-tempo-lirreversibilità"
+        },
+        {
+          "anchor": "5-la-perdita-come-esperienza-psichica",
+          "title": "5. La perdita come esperienza psichica",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-3-la-perdita#5-la-perdita-come-esperienza-psichica"
+        },
+        {
+          "anchor": "6-perdita-e-simbolizzazione-un-equilibrio-delicato",
+          "title": "6. Perdita e simbolizzazione: un equilibrio delicato",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-3-la-perdita#6-perdita-e-simbolizzazione-un-equilibrio-delicato"
+        },
+        {
+          "anchor": "7-funzione-strutturale-della-perdita-nellasse-del-limite-reale",
+          "title": "7. Funzione strutturale della perdita nell’asse del limite reale",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-3-la-perdita#7-funzione-strutturale-della-perdita-nellasse-del-limite-reale"
+        }
+      ],
+      "cited_author_ids": [
+        "franco-basaglia"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-4-separazione-e-limite/capitolo-4-la-separazione",
+      "asse_id": "asse-4-separazione-e-limite",
+      "asse_number": 4,
+      "number": 4,
+      "title": "La separazione",
+      "slug": "capitolo-4-la-separazione",
+      "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-4-la-separazione",
+      "summary": null,
+      "prev_slug": "capitolo-3-la-perdita",
+      "next_slug": "capitolo-5-il-rischio-educativo",
+      "sections": [
+        {
+          "anchor": "1-contro-una-lettura-riduttiva-della-separazione",
+          "title": "1. Contro una lettura riduttiva della separazione",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-4-la-separazione#1-contro-una-lettura-riduttiva-della-separazione"
+        },
+        {
+          "anchor": "2-separazione-e-onnipotenza",
+          "title": "2. Separazione e onnipotenza",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-4-la-separazione#2-separazione-e-onnipotenza"
+        },
+        {
+          "anchor": "3-separazione-e-identità",
+          "title": "3. Separazione e identità",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-4-la-separazione#3-separazione-e-identità"
+        },
+        {
+          "anchor": "4-separazione-e-simbolico-tra-rottura-e-possibilità",
+          "title": "4. Separazione e simbolico: tra rottura e possibilità",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-4-la-separazione#4-separazione-e-simbolico-tra-rottura-e-possibilità"
+        },
+        {
+          "anchor": "5-separazione-e-relazione",
+          "title": "5. Separazione e relazione",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-4-la-separazione#5-separazione-e-relazione"
+        },
+        {
+          "anchor": "6-rischi-evolutivi-ritiro-e-grandiosità",
+          "title": "6. Rischi evolutivi: ritiro e grandiosità",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-4-la-separazione#6-rischi-evolutivi-ritiro-e-grandiosità"
+        },
+        {
+          "anchor": "7-funzione-della-separazione-nellasse-del-limite-reale",
+          "title": "7. Funzione della separazione nell’asse del limite reale",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-4-la-separazione#7-funzione-della-separazione-nellasse-del-limite-reale"
+        }
+      ],
+      "cited_author_ids": [
+        "sigmund-freud"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-4-separazione-e-limite/capitolo-5-il-rischio-educativo",
+      "asse_id": "asse-4-separazione-e-limite",
+      "asse_number": 4,
+      "number": 5,
+      "title": "Il rischio educativo",
+      "slug": "capitolo-5-il-rischio-educativo",
+      "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-5-il-rischio-educativo",
+      "summary": null,
+      "prev_slug": "capitolo-4-la-separazione",
+      "next_slug": "capitolo-6-temporalita-del-limite",
+      "sections": [
+        {
+          "anchor": "1-il-punto-cieco-delladulto",
+          "title": "1. Il punto cieco dell’adulto",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-5-il-rischio-educativo#1-il-punto-cieco-delladulto"
+        },
+        {
+          "anchor": "2-liper-regolazione-quando-il-mondo-deve-tornare",
+          "title": "2. L’iper-regolazione: quando il mondo deve tornare",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-5-il-rischio-educativo#2-liper-regolazione-quando-il-mondo-deve-tornare"
+        },
+        {
+          "anchor": "3-lo-spiegazionismo-trasformare-il-reale-in-discorso",
+          "title": "3. Lo spiegazionismo: trasformare il reale in discorso",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-5-il-rischio-educativo#3-lo-spiegazionismo-trasformare-il-reale-in-discorso"
+        },
+        {
+          "anchor": "4-la-riparazione-forzata-non-lasciare-che-qualcosa-resti",
+          "title": "4. La riparazione forzata: non lasciare che qualcosa resti",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-5-il-rischio-educativo#4-la-riparazione-forzata-non-lasciare-che-qualcosa-resti"
+        },
+        {
+          "anchor": "5-la-pedagogia-della-prestazione",
+          "title": "5. La pedagogia della prestazione",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-5-il-rischio-educativo#5-la-pedagogia-della-prestazione"
+        },
+        {
+          "anchor": "6-la-protezione-dal-limite",
+          "title": "6. La protezione dal limite",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-5-il-rischio-educativo#6-la-protezione-dal-limite"
+        },
+        {
+          "anchor": "7-perché-questi-rischi-sono-strutturali",
+          "title": "7. Perché questi rischi sono strutturali",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-5-il-rischio-educativo#7-perché-questi-rischi-sono-strutturali"
+        },
+        {
+          "anchor": "8-funzione-di-questo-capitolo-nellasse-del-limite-reale",
+          "title": "8. Funzione di questo capitolo nell’asse del limite reale",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-5-il-rischio-educativo#8-funzione-di-questo-capitolo-nellasse-del-limite-reale"
+        }
+      ],
+      "cited_author_ids": [],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-4-separazione-e-limite/capitolo-6-temporalita-del-limite",
+      "asse_id": "asse-4-separazione-e-limite",
+      "asse_number": 4,
+      "number": 6,
+      "title": "Temporalità del limite",
+      "slug": "capitolo-6-temporalita-del-limite",
+      "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-6-temporalita-del-limite",
+      "summary": null,
+      "prev_slug": "capitolo-5-il-rischio-educativo",
+      "next_slug": "capitolo-7-statuto-simbolico-della-perdita",
+      "sections": [
+        {
+          "anchor": "1-il-tempo-vissuto-come-condizione-dellincontro-con-il-limite",
+          "title": "1. Il tempo vissuto come condizione dell’incontro con il limite",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-6-temporalita-del-limite#1-il-tempo-vissuto-come-condizione-dellincontro-con-il-limite"
+        },
+        {
+          "anchor": "2-forme-temporali-del-limite-una-chiarificazione-necessaria",
+          "title": "2. Forme temporali del limite: una chiarificazione necessaria",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-6-temporalita-del-limite#2-forme-temporali-del-limite-una-chiarificazione-necessaria"
+        },
+        {
+          "anchor": "3-prime-forme-il-limite-come-interruzione-corporea",
+          "title": "3. Prime forme: il limite come interruzione corporea",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-6-temporalita-del-limite#3-prime-forme-il-limite-come-interruzione-corporea"
+        },
+        {
+          "anchor": "4-lemergere-della-perdita-quando-il-tempo-non-restituisce",
+          "title": "4. L’emergere della perdita: quando il tempo non restituisce",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-6-temporalita-del-limite#4-lemergere-della-perdita-quando-il-tempo-non-restituisce"
+        },
+        {
+          "anchor": "5-stabilizzazione-della-separazione-nel-tempo",
+          "title": "5. Stabilizzazione della separazione nel tempo",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-6-temporalita-del-limite#5-stabilizzazione-della-separazione-nel-tempo"
+        },
+        {
+          "anchor": "6-riattivazioni-del-limite-lungo-lo-sviluppo",
+          "title": "6. Riattivazioni del limite lungo lo sviluppo",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-6-temporalita-del-limite#6-riattivazioni-del-limite-lungo-lo-sviluppo"
+        },
+        {
+          "anchor": "7-rischio-di-letture-temporali-scorrette",
+          "title": "7. Rischio di letture temporali scorrette",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-6-temporalita-del-limite#7-rischio-di-letture-temporali-scorrette"
+        },
+        {
+          "anchor": "8-funzione-della-temporalità-del-limite-nellasse-4",
+          "title": "8. Funzione della temporalità del limite nell’asse 4",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-6-temporalita-del-limite#8-funzione-della-temporalità-del-limite-nellasse-4"
+        }
+      ],
+      "cited_author_ids": [
+        "george-herbert-mead",
+        "jerome-bruner",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-4-separazione-e-limite/capitolo-7-statuto-simbolico-della-perdita",
+      "asse_id": "asse-4-separazione-e-limite",
+      "asse_number": 4,
+      "number": 7,
+      "title": "Statuto simbolico della perdita",
+      "slug": "capitolo-7-statuto-simbolico-della-perdita",
+      "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-7-statuto-simbolico-della-perdita",
+      "summary": null,
+      "prev_slug": "capitolo-6-temporalita-del-limite",
+      "next_slug": "capitolo-8-raccordo-con-l-asse-del-desiderio",
+      "sections": [
+        {
+          "anchor": "1-perché-la-perdita-pone-un-problema-specifico-al-simbolico",
+          "title": "1. Perché la perdita pone un problema specifico al simbolico",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-7-statuto-simbolico-della-perdita#1-perché-la-perdita-pone-un-problema-specifico-al-simbolico"
+        },
+        {
+          "anchor": "2-che-cosa-significa-tenere-la-perdita",
+          "title": "2. Che cosa significa \"tenere\" la perdita",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-7-statuto-simbolico-della-perdita#2-che-cosa-significa-tenere-la-perdita"
+        },
+        {
+          "anchor": "3-perdita-non-simbolizzata-il-rischio-del-muto",
+          "title": "3. Perdita non simbolizzata: il rischio del muto",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-7-statuto-simbolico-della-perdita#3-perdita-non-simbolizzata-il-rischio-del-muto"
+        },
+        {
+          "anchor": "4-perdita-simbolizzata-troppo-in-fretta-il-rischio-della-neutralizzazione",
+          "title": "4. Perdita simbolizzata troppo in fretta: il rischio della neutralizzazione",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-7-statuto-simbolico-della-perdita#4-perdita-simbolizzata-troppo-in-fretta-il-rischio-della-neutralizzazione"
+        },
+        {
+          "anchor": "5-simbolizzare-non-è-spiegare",
+          "title": "5. Simbolizzare non è spiegare",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-7-statuto-simbolico-della-perdita#5-simbolizzare-non-è-spiegare"
+        },
+        {
+          "anchor": "6-il-resto-della-perdita",
+          "title": "6. Il “resto” della perdita",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-7-statuto-simbolico-della-perdita#6-il-resto-della-perdita"
+        },
+        {
+          "anchor": "7-tempo-e-simbolizzazione-della-perdita",
+          "title": "7. Tempo e simbolizzazione della perdita",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-7-statuto-simbolico-della-perdita#7-tempo-e-simbolizzazione-della-perdita"
+        },
+        {
+          "anchor": "8-funzione-dello-statuto-simbolico-della-perdita-nellasse-4",
+          "title": "8. Funzione dello statuto simbolico della perdita nell’asse 4",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-7-statuto-simbolico-della-perdita#8-funzione-dello-statuto-simbolico-della-perdita-nellasse-4"
+        }
+      ],
+      "cited_author_ids": [
+        "hans-georg-gadamer",
+        "paul-ricoeur"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-4-separazione-e-limite/capitolo-8-raccordo-con-l-asse-del-desiderio",
+      "asse_id": "asse-4-separazione-e-limite",
+      "asse_number": 4,
+      "number": 8,
+      "title": "Raccordo con l’asse del desiderio",
+      "slug": "capitolo-8-raccordo-con-l-asse-del-desiderio",
+      "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-8-raccordo-con-l-asse-del-desiderio",
+      "summary": null,
+      "prev_slug": "capitolo-7-statuto-simbolico-della-perdita",
+      "next_slug": null,
+      "sections": [
+        {
+          "anchor": "1-il-limite-come-condizione-del-desiderio",
+          "title": "1. Il limite come condizione del desiderio",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-8-raccordo-con-l-asse-del-desiderio#1-il-limite-come-condizione-del-desiderio"
+        },
+        {
+          "anchor": "2-perché-il-desiderio-non-nasce-dalla-perdita-come-compensazione",
+          "title": "2. Perché il desiderio non nasce dalla perdita come compensazione",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-8-raccordo-con-l-asse-del-desiderio#2-perché-il-desiderio-non-nasce-dalla-perdita-come-compensazione"
+        },
+        {
+          "anchor": "3-dal-possibile-illimitato-al-possibile-abitabile",
+          "title": "3. Dal possibile illimitato al possibile abitabile",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-8-raccordo-con-l-asse-del-desiderio#3-dal-possibile-illimitato-al-possibile-abitabile"
+        },
+        {
+          "anchor": "4-desiderio-e-rinuncia",
+          "title": "4. Desiderio e rinuncia",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-8-raccordo-con-l-asse-del-desiderio#4-desiderio-e-rinuncia"
+        },
+        {
+          "anchor": "5-desiderio-e-responsabilità",
+          "title": "5. Desiderio e responsabilità",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-8-raccordo-con-l-asse-del-desiderio#5-desiderio-e-responsabilità"
+        },
+        {
+          "anchor": "6-rischi-di-un-desiderio-senza-limite",
+          "title": "6. Rischi di un desiderio senza limite",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-8-raccordo-con-l-asse-del-desiderio#6-rischi-di-un-desiderio-senza-limite"
+        },
+        {
+          "anchor": "7-funzione-del-raccordo-nel-modello-complessivo",
+          "title": "7. Funzione del raccordo nel modello complessivo",
+          "url": "/assi-strutturali/asse-4-separazione-e-limite/capitolo-8-raccordo-con-l-asse-del-desiderio#7-funzione-del-raccordo-nel-modello-complessivo"
+        }
+      ],
+      "cited_author_ids": [
+        "charles-taylor",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-5-desiderio/capitolo-1-statuto-filosofico-del-desiderio",
+      "asse_id": "asse-5-desiderio",
+      "asse_number": 5,
+      "number": 1,
+      "title": "Statuto filosofico del desiderio",
+      "slug": "capitolo-1-statuto-filosofico-del-desiderio",
+      "url": "/assi-strutturali/asse-5-desiderio/capitolo-1-statuto-filosofico-del-desiderio",
+      "summary": null,
+      "prev_slug": null,
+      "next_slug": "capitolo-2-genealogia-filosofica-del-desiderio",
+      "sections": [
+        {
+          "anchor": "1-perché-un-asse-sul-desiderio",
+          "title": "1. Perché un asse sul desiderio",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-1-statuto-filosofico-del-desiderio#1-perché-un-asse-sul-desiderio"
+        },
+        {
+          "anchor": "2-il-desiderio-non-è-un-contenuto-ma-una-struttura",
+          "title": "2. Il desiderio non è un contenuto, ma una struttura",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-1-statuto-filosofico-del-desiderio#2-il-desiderio-non-è-un-contenuto-ma-una-struttura"
+        },
+        {
+          "anchor": "3-desiderio-mancanza-e-incompiutezza",
+          "title": "3. Desiderio, mancanza e incompiutezza",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-1-statuto-filosofico-del-desiderio#3-desiderio-mancanza-e-incompiutezza"
+        },
+        {
+          "anchor": "4-desiderio-bisogno-e-motivazione-una-distinzione-necessaria",
+          "title": "4. Desiderio, bisogno e motivazione: una distinzione necessaria",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-1-statuto-filosofico-del-desiderio#4-desiderio-bisogno-e-motivazione-una-distinzione-necessaria"
+        },
+        {
+          "anchor": "5-il-desiderio-come-orientamento-valutativo",
+          "title": "5. Il desiderio come orientamento valutativo",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-1-statuto-filosofico-del-desiderio#5-il-desiderio-come-orientamento-valutativo"
+        },
+        {
+          "anchor": "6-il-desiderio-non-è-opposto-al-limite",
+          "title": "6. Il desiderio non è opposto al limite",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-1-statuto-filosofico-del-desiderio#6-il-desiderio-non-è-opposto-al-limite"
+        },
+        {
+          "anchor": "7-formula-di-sintesi",
+          "title": "7. Formula di sintesi",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-1-statuto-filosofico-del-desiderio#7-formula-di-sintesi"
+        },
+        {
+          "anchor": "nota-metodologica-e-di-controllo-lessicale",
+          "title": "Nota metodologica e di controllo lessicale",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-1-statuto-filosofico-del-desiderio#nota-metodologica-e-di-controllo-lessicale"
+        }
+      ],
+      "cited_author_ids": [
+        "agostino-d-ippona",
+        "charles-taylor",
+        "hans-jonas",
+        "maurice-merleau-ponty",
+        "platone"
+      ],
+      "cited_book_ids": [
+        "agostino-confessiones",
+        "merleau-ponty-fenomenologia-della-percezione",
+        "platone-repubblica",
+        "platone-simposio",
+        "taylor-fonti-del-se"
+      ]
+    },
+    {
+      "id": "asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio",
+      "asse_id": "asse-5-desiderio",
+      "asse_number": 5,
+      "number": 2,
+      "title": "Genealogia filosofica del desiderio",
+      "slug": "capitolo-2-genealogia-filosofica-del-desiderio",
+      "url": "/assi-strutturali/asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio",
+      "summary": null,
+      "prev_slug": "capitolo-1-statuto-filosofico-del-desiderio",
+      "next_slug": "capitolo-3-fenomenologia-del-desiderio-incarnato",
+      "sections": [
+        {
+          "anchor": "dalla-mancanza-al-bene",
+          "title": "Dalla mancanza al bene",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio#dalla-mancanza-al-bene"
+        },
+        {
+          "anchor": "1-perché-una-genealogia-filosofica",
+          "title": "1. Perché una genealogia filosofica",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio#1-perché-una-genealogia-filosofica"
+        },
+        {
+          "anchor": "2-platone-il-desiderio-come-mancanza-che-educa",
+          "title": "2. Platone: il desiderio come mancanza che educa",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio#2-platone-il-desiderio-come-mancanza-che-educa"
+        },
+        {
+          "anchor": "3-agostino-dippona-lordine-del-desiderio",
+          "title": "3. Agostino d'Ippona: l’ordine del desiderio",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio#3-agostino-dippona-lordine-del-desiderio"
+        },
+        {
+          "anchor": "4-tommaso-daquino-il-desiderio-come-appetito-del-bene",
+          "title": "4. Tommaso d'Aquino: il desiderio come appetito del bene",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio#4-tommaso-daquino-il-desiderio-come-appetito-del-bene"
+        },
+        {
+          "anchor": "5-spinoza-il-conatus-come-fondamento-ontologico-del-desiderio",
+          "title": "5. Spinoza: il conatus come fondamento ontologico del desiderio",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio#5-spinoza-il-conatus-come-fondamento-ontologico-del-desiderio"
+        },
+        {
+          "anchor": "6-hegel-il-desiderio-come-struttura-del-riconoscimento",
+          "title": "6. Hegel: il desiderio come struttura del riconoscimento",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio#6-hegel-il-desiderio-come-struttura-del-riconoscimento"
+        },
+        {
+          "anchor": "7-linea-di-continuità-e-tensione",
+          "title": "7. Linea di continuità e tensione",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio#7-linea-di-continuità-e-tensione"
+        },
+        {
+          "anchor": "8-linea-di-continuità-e-tensione",
+          "title": "8. Linea di continuità e tensione",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio#8-linea-di-continuità-e-tensione"
+        },
+        {
+          "anchor": "9-funzione-della-genealogia-nel-modello",
+          "title": "9. Funzione della genealogia nel modello",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio#9-funzione-della-genealogia-nel-modello"
+        },
+        {
+          "anchor": "nota-metodologica-e-di-controllo-lessicale",
+          "title": "Nota metodologica e di controllo lessicale",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-2-genealogia-filosofica-del-desiderio#nota-metodologica-e-di-controllo-lessicale"
+        }
+      ],
+      "cited_author_ids": [
+        "alasdair-macintyre",
+        "axel-honneth",
+        "baruch-spinoza",
+        "georg-wilhelm-friedrich-hegel"
+      ],
+      "cited_book_ids": [
+        "agostino-confessiones",
+        "hegel-fenomenologia-dello-spirito",
+        "honneth-lotta-per-il-riconoscimento",
+        "macintyre-dopo-la-virtu",
+        "platone-simposio",
+        "spinoza-etica"
+      ]
+    },
+    {
+      "id": "asse-5-desiderio/capitolo-3-fenomenologia-del-desiderio-incarnato",
+      "asse_id": "asse-5-desiderio",
+      "asse_number": 5,
+      "number": 3,
+      "title": "Fenomenologia del desiderio incarnato",
+      "slug": "capitolo-3-fenomenologia-del-desiderio-incarnato",
+      "url": "/assi-strutturali/asse-5-desiderio/capitolo-3-fenomenologia-del-desiderio-incarnato",
+      "summary": null,
+      "prev_slug": "capitolo-2-genealogia-filosofica-del-desiderio",
+      "next_slug": "capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio",
+      "sections": [
+        {
+          "anchor": "il-desiderio-come-qualità-del-campo-di-esperienza",
+          "title": "Il desiderio come qualità del campo di esperienza",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-3-fenomenologia-del-desiderio-incarnato#il-desiderio-come-qualità-del-campo-di-esperienza"
+        },
+        {
+          "anchor": "1-perché-una-fenomenologia-del-desiderio",
+          "title": "1. Perché una fenomenologia del desiderio",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-3-fenomenologia-del-desiderio-incarnato#1-perché-una-fenomenologia-del-desiderio"
+        },
+        {
+          "anchor": "2-edmund-husserl-desiderio-e-intenzionalità-affettiva",
+          "title": "2. Edmund Husserl: desiderio e intenzionalità affettiva",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-3-fenomenologia-del-desiderio-incarnato#2-edmund-husserl-desiderio-e-intenzionalità-affettiva"
+        },
+        {
+          "anchor": "3-maurice-merleau-ponty-desiderare-possibilità-di-mondo",
+          "title": "3. Maurice Merleau-Ponty: desiderare possibilità di mondo",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-3-fenomenologia-del-desiderio-incarnato#3-maurice-merleau-ponty-desiderare-possibilità-di-mondo"
+        },
+        {
+          "anchor": "4-il-desiderio-come-tonalità-del-campo",
+          "title": "4. Il desiderio come tonalità del campo",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-3-fenomenologia-del-desiderio-incarnato#4-il-desiderio-come-tonalità-del-campo"
+        },
+        {
+          "anchor": "5-desiderio-e-temporalità-vissuta",
+          "title": "5. Desiderio e temporalità vissuta",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-3-fenomenologia-del-desiderio-incarnato#5-desiderio-e-temporalità-vissuta"
+        },
+        {
+          "anchor": "6-desiderio-relazione-e-co-regolazione",
+          "title": "6. Desiderio, relazione e co-regolazione",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-3-fenomenologia-del-desiderio-incarnato#6-desiderio-relazione-e-co-regolazione"
+        },
+        {
+          "anchor": "7-funzione-del-capitolo-nel-percorso-dellasse",
+          "title": "7. Funzione del capitolo nel percorso dell’asse",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-3-fenomenologia-del-desiderio-incarnato#7-funzione-del-capitolo-nel-percorso-dellasse"
+        },
+        {
+          "anchor": "nota-metodologica-e-di-controllo-lessicale",
+          "title": "Nota metodologica e di controllo lessicale",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-3-fenomenologia-del-desiderio-incarnato#nota-metodologica-e-di-controllo-lessicale"
+        }
+      ],
+      "cited_author_ids": [
+        "edmund-husserl",
+        "martin-heidegger",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio",
+      "asse_id": "asse-5-desiderio",
+      "asse_number": 5,
+      "number": 4,
+      "title": "Dal campo desiderabile alla soggettivazione del desiderio",
+      "slug": "capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio",
+      "url": "/assi-strutturali/asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio",
+      "summary": null,
+      "prev_slug": "capitolo-3-fenomenologia-del-desiderio-incarnato",
+      "next_slug": "capitolo-5-desiderio-norma-e-giudizio",
+      "sections": [
+        {
+          "anchor": "come-il-desiderio-diventa-mio-senza-diventare-oggetto",
+          "title": "Come il desiderio diventa “mio” senza diventare oggetto",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio#come-il-desiderio-diventa-mio-senza-diventare-oggetto"
+        },
+        {
+          "anchor": "1-il-problema-della-soggettivazione",
+          "title": "1. Il problema della soggettivazione",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio#1-il-problema-della-soggettivazione"
+        },
+        {
+          "anchor": "2-soggettivazione--interiorizzazione",
+          "title": "2. Soggettivazione ≠ interiorizzazione",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio#2-soggettivazione--interiorizzazione"
+        },
+        {
+          "anchor": "3-dal-campo-alla-direzione",
+          "title": "3. Dal campo alla direzione",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio#3-dal-campo-alla-direzione"
+        },
+        {
+          "anchor": "4-riconoscimento-e-linguaggio",
+          "title": "4. Riconoscimento e linguaggio",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio#4-riconoscimento-e-linguaggio"
+        },
+        {
+          "anchor": "5-desiderio-limite-e-rinuncia",
+          "title": "5. Desiderio, limite e rinuncia",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio#5-desiderio-limite-e-rinuncia"
+        },
+        {
+          "anchor": "6-dal-desiderio-vissuto-al-desiderio-assumibile",
+          "title": "6. Dal desiderio vissuto al desiderio assumibile",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio#6-dal-desiderio-vissuto-al-desiderio-assumibile"
+        },
+        {
+          "anchor": "7-errori-strutturali-da-evitare",
+          "title": "7. Errori strutturali da evitare",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio#7-errori-strutturali-da-evitare"
+        },
+        {
+          "anchor": "8-funzione-del-capitolo-nel-percorso-dellasse",
+          "title": "8. Funzione del capitolo nel percorso dell’asse",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio#8-funzione-del-capitolo-nel-percorso-dellasse"
+        },
+        {
+          "anchor": "nota-metodologica-e-di-controllo-lessicale",
+          "title": "Nota metodologica e di controllo lessicale",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio#nota-metodologica-e-di-controllo-lessicale"
+        }
+      ],
+      "cited_author_ids": [
+        "agostino-d-ippona",
+        "charles-taylor",
+        "edmund-husserl",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio",
+      "asse_id": "asse-5-desiderio",
+      "asse_number": 5,
+      "number": 5,
+      "title": "Desiderio, norma e giudizio",
+      "slug": "capitolo-5-desiderio-norma-e-giudizio",
+      "url": "/assi-strutturali/asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio",
+      "summary": null,
+      "prev_slug": "capitolo-4-dal-campo-desiderabile-alla-soggettivazione-del-desiderio",
+      "next_slug": "capitolo-6-patologie-strutturali-del-desiderio",
+      "sections": [
+        {
+          "anchor": "lorientamento-del-desiderio-come-condizione-del-giudicare",
+          "title": "L’orientamento del desiderio come condizione del giudicare",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio#lorientamento-del-desiderio-come-condizione-del-giudicare"
+        },
+        {
+          "anchor": "1-il-nodo-teorico",
+          "title": "1. Il nodo teorico",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio#1-il-nodo-teorico"
+        },
+        {
+          "anchor": "2-senza-desiderio-la-norma-è-pura-imposizione",
+          "title": "2. Senza desiderio, la norma è pura imposizione",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio#2-senza-desiderio-la-norma-è-pura-imposizione"
+        },
+        {
+          "anchor": "3-senza-norma-il-desiderio-si-disperde",
+          "title": "3. Senza norma, il desiderio si disperde",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio#3-senza-norma-il-desiderio-si-disperde"
+        },
+        {
+          "anchor": "4-il-desiderio-come-condizione-del-giudizio",
+          "title": "4. Il desiderio come condizione del giudizio",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio#4-il-desiderio-come-condizione-del-giudizio"
+        },
+        {
+          "anchor": "5-normatività-implicita-del-desiderio",
+          "title": "5. Normatività implicita del desiderio",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio#5-normatività-implicita-del-desiderio"
+        },
+        {
+          "anchor": "6-desiderio-colpa-e-giudizio",
+          "title": "6. Desiderio, colpa e giudizio",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio#6-desiderio-colpa-e-giudizio"
+        },
+        {
+          "anchor": "7-educare-non-è-scegliere-al-posto-del-desiderio",
+          "title": "7. Educare non è scegliere al posto del desiderio",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio#7-educare-non-è-scegliere-al-posto-del-desiderio"
+        },
+        {
+          "anchor": "8-funzione-del-capitolo-nel-percorso-dellasse",
+          "title": "8. Funzione del capitolo nel percorso dell’asse",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio#8-funzione-del-capitolo-nel-percorso-dellasse"
+        },
+        {
+          "anchor": "nota-metodologica-e-di-controllo-lessicale",
+          "title": "Nota metodologica e di controllo lessicale",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-5-desiderio-norma-e-giudizio#nota-metodologica-e-di-controllo-lessicale"
+        }
+      ],
+      "cited_author_ids": [],
+      "cited_book_ids": [
+        "aristotele-etica-nicomachea"
+      ]
+    },
+    {
+      "id": "asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio",
+      "asse_id": "asse-5-desiderio",
+      "asse_number": 5,
+      "number": 6,
+      "title": "Patologie strutturali del desiderio",
+      "slug": "capitolo-6-patologie-strutturali-del-desiderio",
+      "url": "/assi-strutturali/asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio",
+      "summary": null,
+      "prev_slug": "capitolo-5-desiderio-norma-e-giudizio",
+      "next_slug": "capitolo-7-raccordo-con-l-asse-6",
+      "sections": [
+        {
+          "anchor": "quando-lorientamento-si-deforma",
+          "title": "Quando l’orientamento si deforma",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio#quando-lorientamento-si-deforma"
+        },
+        {
+          "anchor": "1-chiarimento-preliminare-che-cosa-intendiamo-per-patologia",
+          "title": "1. Chiarimento preliminare: che cosa intendiamo per “patologia”",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio#1-chiarimento-preliminare-che-cosa-intendiamo-per-patologia"
+        },
+        {
+          "anchor": "2-desiderio-assente-o-ritratto",
+          "title": "2. Desiderio assente o ritratto",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio#2-desiderio-assente-o-ritratto"
+        },
+        {
+          "anchor": "3-desiderio-sostituito-dalla-motivazione",
+          "title": "3. Desiderio sostituito dalla motivazione",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio#3-desiderio-sostituito-dalla-motivazione"
+        },
+        {
+          "anchor": "4-desiderio-disperso",
+          "title": "4. Desiderio disperso",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio#4-desiderio-disperso"
+        },
+        {
+          "anchor": "5-desiderio-fissato",
+          "title": "5. Desiderio fissato",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio#5-desiderio-fissato"
+        },
+        {
+          "anchor": "6-desiderio-sacrificato-alla-norma",
+          "title": "6. Desiderio sacrificato alla norma",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio#6-desiderio-sacrificato-alla-norma"
+        },
+        {
+          "anchor": "7-patologie-strutturali-e-assi-precedenti",
+          "title": "7. Patologie strutturali e assi precedenti",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio#7-patologie-strutturali-e-assi-precedenti"
+        },
+        {
+          "anchor": "8-funzione-del-capitolo-nel-percorso-dellasse",
+          "title": "8. Funzione del capitolo nel percorso dell’asse",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio#8-funzione-del-capitolo-nel-percorso-dellasse"
+        },
+        {
+          "anchor": "nota-metodologica-e-di-controllo-lessicale",
+          "title": "Nota metodologica e di controllo lessicale",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-6-patologie-strutturali-del-desiderio#nota-metodologica-e-di-controllo-lessicale"
+        }
+      ],
+      "cited_author_ids": [],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-5-desiderio/capitolo-7-raccordo-con-l-asse-6",
+      "asse_id": "asse-5-desiderio",
+      "asse_number": 5,
+      "number": 7,
+      "title": "Raccordo con l’Asse 6",
+      "slug": "capitolo-7-raccordo-con-l-asse-6",
+      "url": "/assi-strutturali/asse-5-desiderio/capitolo-7-raccordo-con-l-asse-6",
+      "summary": null,
+      "prev_slug": "capitolo-6-patologie-strutturali-del-desiderio",
+      "next_slug": null,
+      "sections": [
+        {
+          "anchor": "chiusura-dellasse-5",
+          "title": "Chiusura dell’Asse 5",
+          "url": "/assi-strutturali/asse-5-desiderio/capitolo-7-raccordo-con-l-asse-6#chiusura-dellasse-5"
+        }
+      ],
+      "cited_author_ids": [
+        "charles-taylor"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-6-storico-culturale/capitolo-1-il-mondo-storico-culturale-come-mediazione-non-come-sfondo",
+      "asse_id": "asse-6-storico-culturale",
+      "asse_number": 6,
+      "number": 1,
+      "title": "Il mondo storico-culturale come mediazione, non come sfondo",
+      "slug": "capitolo-1-il-mondo-storico-culturale-come-mediazione-non-come-sfondo",
+      "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-1-il-mondo-storico-culturale-come-mediazione-non-come-sfondo",
+      "summary": null,
+      "prev_slug": null,
+      "next_slug": "capitolo-2-costituzione-storica-del-soggetto-senza-relativismo",
+      "sections": [
+        {
+          "anchor": "1-il-mondo-non-come-contesto-ma-come-campo-di-esperienza",
+          "title": "1. Il mondo non come “contesto”, ma come campo di esperienza",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-1-il-mondo-storico-culturale-come-mediazione-non-come-sfondo#1-il-mondo-non-come-contesto-ma-come-campo-di-esperienza"
+        },
+        {
+          "anchor": "2-lebenswelt-e-storicità-dellesperienza",
+          "title": "2. Lebenswelt e storicità dell’esperienza",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-1-il-mondo-storico-culturale-come-mediazione-non-come-sfondo#2-lebenswelt-e-storicità-dellesperienza"
+        },
+        {
+          "anchor": "3-tradizione-precomprensione-e-non-neutralità-educativa",
+          "title": "3. Tradizione, precomprensione e non-neutralità educativa",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-1-il-mondo-storico-culturale-come-mediazione-non-come-sfondo#3-tradizione-precomprensione-e-non-neutralità-educativa"
+        },
+        {
+          "anchor": "4-mediazione-senza-determinismo",
+          "title": "4. Mediazione senza determinismo",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-1-il-mondo-storico-culturale-come-mediazione-non-come-sfondo#4-mediazione-senza-determinismo"
+        },
+        {
+          "anchor": "5-funzione-del-capitolo-nelleconomia-dellasse",
+          "title": "5. Funzione del capitolo nell’economia dell’asse",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-1-il-mondo-storico-culturale-come-mediazione-non-come-sfondo#5-funzione-del-capitolo-nelleconomia-dellasse"
+        }
+      ],
+      "cited_author_ids": [
+        "charles-taylor",
+        "edmund-husserl",
+        "hannah-arendt",
+        "hans-georg-gadamer",
+        "maurice-merleau-ponty"
+      ],
+      "cited_book_ids": [
+        "merleau-ponty-fenomenologia-della-percezione",
+        "schutz-sinnhafte-aufbau",
+        "taylor-fonti-del-se"
+      ]
+    },
+    {
+      "id": "asse-6-storico-culturale/capitolo-2-costituzione-storica-del-soggetto-senza-relativismo",
+      "asse_id": "asse-6-storico-culturale",
+      "asse_number": 6,
+      "number": 2,
+      "title": "Costituzione storica del soggetto, senza relativismo",
+      "slug": "capitolo-2-costituzione-storica-del-soggetto-senza-relativismo",
+      "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-2-costituzione-storica-del-soggetto-senza-relativismo",
+      "summary": null,
+      "prev_slug": "capitolo-1-il-mondo-storico-culturale-come-mediazione-non-come-sfondo",
+      "next_slug": "capitolo-3-mediazione-simbolica-e-sviluppo",
+      "sections": [
+        {
+          "anchor": "1-la-storicità-come-dimensione-costitutiva-non-come-aggiunta",
+          "title": "1. La storicità come dimensione costitutiva, non come aggiunta",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-2-costituzione-storica-del-soggetto-senza-relativismo#1-la-storicità-come-dimensione-costitutiva-non-come-aggiunta"
+        },
+        {
+          "anchor": "2-dilthey-il-soggetto-come-essere-storico-non-naturalistico",
+          "title": "2. Dilthey: il soggetto come essere storico, non naturalistico",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-2-costituzione-storica-del-soggetto-senza-relativismo#2-dilthey-il-soggetto-come-essere-storico-non-naturalistico"
+        },
+        {
+          "anchor": "3-tradizione-e-precomprensione-gadamer-oltre-il-relativismo",
+          "title": "3. Tradizione e precomprensione: Gadamer oltre il relativismo",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-2-costituzione-storica-del-soggetto-senza-relativismo#3-tradizione-e-precomprensione-gadamer-oltre-il-relativismo"
+        },
+        {
+          "anchor": "4-perché-la-storicità-non-dissolve-il-giudizio",
+          "title": "4. Perché la storicità non dissolve il giudizio",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-2-costituzione-storica-del-soggetto-senza-relativismo#4-perché-la-storicità-non-dissolve-il-giudizio"
+        },
+        {
+          "anchor": "5-storicità-conflitto-e-possibilità-di-trasformazione",
+          "title": "5. Storicità, conflitto e possibilità di trasformazione",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-2-costituzione-storica-del-soggetto-senza-relativismo#5-storicità-conflitto-e-possibilità-di-trasformazione"
+        },
+        {
+          "anchor": "6-funzione-del-capitolo-nelleconomia-dellasse",
+          "title": "6. Funzione del capitolo nell’economia dell’asse",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-2-costituzione-storica-del-soggetto-senza-relativismo#6-funzione-del-capitolo-nelleconomia-dellasse"
+        }
+      ],
+      "cited_author_ids": [
+        "axel-honneth",
+        "hannah-arendt",
+        "hans-georg-gadamer",
+        "wilhelm-dilthey"
+      ],
+      "cited_book_ids": [
+        "dilthey-introduzione-scienze-spirito",
+        "gadamer-verita-e-metodo",
+        "honneth-lotta-per-il-riconoscimento",
+        "ricoeur-se-come-un-altro"
+      ]
+    },
+    {
+      "id": "asse-6-storico-culturale/capitolo-3-mediazione-simbolica-e-sviluppo",
+      "asse_id": "asse-6-storico-culturale",
+      "asse_number": 6,
+      "number": 3,
+      "title": "Mediazione simbolica e sviluppo",
+      "slug": "capitolo-3-mediazione-simbolica-e-sviluppo",
+      "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-3-mediazione-simbolica-e-sviluppo",
+      "summary": null,
+      "prev_slug": "capitolo-2-costituzione-storica-del-soggetto-senza-relativismo",
+      "next_slug": "capitolo-4-istituzioni-come-dispositivi-di-esperienza",
+      "sections": [
+        {
+          "anchor": "1-mediazione-simbolica-una-struttura-antropologica",
+          "title": "1. Mediazione simbolica: una struttura antropologica",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-3-mediazione-simbolica-e-sviluppo#1-mediazione-simbolica-una-struttura-antropologica"
+        },
+        {
+          "anchor": "2-vygotskij-la-cultura-come-condizione-delle-funzioni-psichiche-superiori",
+          "title": "2. Vygotskij: la cultura come condizione delle funzioni psichiche superiori",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-3-mediazione-simbolica-e-sviluppo#2-vygotskij-la-cultura-come-condizione-delle-funzioni-psichiche-superiori"
+        },
+        {
+          "anchor": "3-linguaggio-segno-e-trasformazione-dellesperienza",
+          "title": "3. Linguaggio, segno e trasformazione dell’esperienza",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-3-mediazione-simbolica-e-sviluppo#3-linguaggio-segno-e-trasformazione-dellesperienza"
+        },
+        {
+          "anchor": "4-mediazione-simbolica-e-narrazione-bruner",
+          "title": "4. Mediazione simbolica e narrazione: Bruner",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-3-mediazione-simbolica-e-sviluppo#4-mediazione-simbolica-e-narrazione-bruner"
+        },
+        {
+          "anchor": "5-mediazione-simbolica-e-corporeità-un-nodo-critico",
+          "title": "5. Mediazione simbolica e corporeità: un nodo critico",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-3-mediazione-simbolica-e-sviluppo#5-mediazione-simbolica-e-corporeità-un-nodo-critico"
+        },
+        {
+          "anchor": "6-funzione-del-capitolo-nelleconomia-dellasse",
+          "title": "6. Funzione del capitolo nell’economia dell’asse",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-3-mediazione-simbolica-e-sviluppo#6-funzione-del-capitolo-nelleconomia-dellasse"
+        }
+      ],
+      "cited_author_ids": [
+        "jerome-bruner",
+        "lev-vygotskij",
+        "maurice-merleau-ponty",
+        "wilhelm-von-humboldt"
+      ],
+      "cited_book_ids": [
+        "bruner-acts-of-meaning",
+        "merleau-ponty-la-prosa-del-mondo",
+        "ricoeur-tempo-e-racconto",
+        "vygotskij-pensiero-e-linguaggio"
+      ]
+    },
+    {
+      "id": "asse-6-storico-culturale/capitolo-4-istituzioni-come-dispositivi-di-esperienza",
+      "asse_id": "asse-6-storico-culturale",
+      "asse_number": 6,
+      "number": 4,
+      "title": "Istituzioni come dispositivi di esperienza",
+      "slug": "capitolo-4-istituzioni-come-dispositivi-di-esperienza",
+      "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-4-istituzioni-come-dispositivi-di-esperienza",
+      "summary": null,
+      "prev_slug": "capitolo-3-mediazione-simbolica-e-sviluppo",
+      "next_slug": "capitolo-5-tecnica-performance-e-temporalita-contemporanea",
+      "sections": [
+        {
+          "anchor": "1-che-cosa-si-intende-per-istituzione-in-questo-modello",
+          "title": "1. Che cosa si intende per “istituzione” in questo modello",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-4-istituzioni-come-dispositivi-di-esperienza#1-che-cosa-si-intende-per-istituzione-in-questo-modello"
+        },
+        {
+          "anchor": "2-listituzione-come-mediazione-impersonale-dellaltro",
+          "title": "2. L’istituzione come mediazione impersonale dell’Altro",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-4-istituzioni-come-dispositivi-di-esperienza#2-listituzione-come-mediazione-impersonale-dellaltro"
+        },
+        {
+          "anchor": "3-hannah-arendt-educare-come-assumere-il-mondo",
+          "title": "3. Hannah Arendt: educare come assumere il mondo",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-4-istituzioni-come-dispositivi-di-esperienza#3-hannah-arendt-educare-come-assumere-il-mondo"
+        },
+        {
+          "anchor": "4-dispositivi-istituzionali-e-temporalità-dellesperienza",
+          "title": "4. Dispositivi istituzionali e temporalità dell’esperienza",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-4-istituzioni-come-dispositivi-di-esperienza#4-dispositivi-istituzionali-e-temporalità-dellesperienza"
+        },
+        {
+          "anchor": "5-critica-delle-istituzioni-senza-abolizione-il-contributo-di-illich",
+          "title": "5. Critica delle istituzioni senza abolizione: il contributo di Illich",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-4-istituzioni-come-dispositivi-di-esperienza#5-critica-delle-istituzioni-senza-abolizione-il-contributo-di-illich"
+        },
+        {
+          "anchor": "6-istituzioni-limite-e-responsabilità",
+          "title": "6. Istituzioni, limite e responsabilità",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-4-istituzioni-come-dispositivi-di-esperienza#6-istituzioni-limite-e-responsabilità"
+        },
+        {
+          "anchor": "7-funzione-del-capitolo-nelleconomia-dellasse",
+          "title": "7. Funzione del capitolo nell’economia dell’asse",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-4-istituzioni-come-dispositivi-di-esperienza#7-funzione-del-capitolo-nelleconomia-dellasse"
+        }
+      ],
+      "cited_author_ids": [
+        "arnold-gehlen",
+        "charles-taylor",
+        "hannah-arendt",
+        "hartmut-rosa",
+        "maurice-merleau-ponty",
+        "michel-foucault"
+      ],
+      "cited_book_ids": [
+        "foucault-sorvegliare-e-punire",
+        "illich-deschooling-society",
+        "merleau-ponty-institution-et-passivite"
+      ]
+    },
+    {
+      "id": "asse-6-storico-culturale/capitolo-5-tecnica-performance-e-temporalita-contemporanea",
+      "asse_id": "asse-6-storico-culturale",
+      "asse_number": 6,
+      "number": 5,
+      "title": "Tecnica, performance e temporalità contemporanea",
+      "slug": "capitolo-5-tecnica-performance-e-temporalita-contemporanea",
+      "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-5-tecnica-performance-e-temporalita-contemporanea",
+      "summary": null,
+      "prev_slug": "capitolo-4-istituzioni-come-dispositivi-di-esperienza",
+      "next_slug": "capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo",
+      "sections": [
+        {
+          "anchor": "1-la-tecnica-come-mediazione-del-tempo",
+          "title": "1. La tecnica come mediazione del tempo",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-5-tecnica-performance-e-temporalita-contemporanea#1-la-tecnica-come-mediazione-del-tempo"
+        },
+        {
+          "anchor": "2-bernard-stiegler-tecnica-e-formazione-del-desiderio",
+          "title": "2. Bernard Stiegler: tecnica e formazione del desiderio",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-5-tecnica-performance-e-temporalita-contemporanea#2-bernard-stiegler-tecnica-e-formazione-del-desiderio"
+        },
+        {
+          "anchor": "3-performance-quando-il-valore-diventa-indicatore",
+          "title": "3. Performance: quando il valore diventa indicatore",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-5-tecnica-performance-e-temporalita-contemporanea#3-performance-quando-il-valore-diventa-indicatore"
+        },
+        {
+          "anchor": "4-temporalità-accelerata-e-riduzione-dellattesa",
+          "title": "4. Temporalità accelerata e riduzione dell’attesa",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-5-tecnica-performance-e-temporalita-contemporanea#4-temporalità-accelerata-e-riduzione-dellattesa"
+        },
+        {
+          "anchor": "5-risonanza-e-dissonanza-una-nota-critica",
+          "title": "5. Risonanza e dissonanza: una nota critica",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-5-tecnica-performance-e-temporalita-contemporanea#5-risonanza-e-dissonanza-una-nota-critica"
+        },
+        {
+          "anchor": "6-tecnica-istituzioni-e-responsabilità-adulta",
+          "title": "6. Tecnica, istituzioni e responsabilità adulta",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-5-tecnica-performance-e-temporalita-contemporanea#6-tecnica-istituzioni-e-responsabilità-adulta"
+        },
+        {
+          "anchor": "7-funzione-del-capitolo-nelleconomia-dellasse",
+          "title": "7. Funzione del capitolo nell’economia dell’asse",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-5-tecnica-performance-e-temporalita-contemporanea#7-funzione-del-capitolo-nelleconomia-dellasse"
+        }
+      ],
+      "cited_author_ids": [
+        "bernard-stiegler",
+        "byung-chul-han",
+        "hartmut-rosa",
+        "michel-foucault"
+      ],
+      "cited_book_ids": [
+        "han-societa-della-stanchezza",
+        "rosa-accelerazione-e-alienazione"
+      ]
+    },
+    {
+      "id": "asse-6-storico-culturale/capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo",
+      "asse_id": "asse-6-storico-culturale",
+      "asse_number": 6,
+      "number": 6,
+      "title": "Rischi strutturali e deformazioni dello sviluppo",
+      "slug": "capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo",
+      "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo",
+      "summary": null,
+      "prev_slug": "capitolo-5-tecnica-performance-e-temporalita-contemporanea",
+      "next_slug": "capitolo-7-raccordo-con-l-intero-modello-e-funzione-dell-asse-6",
+      "sections": [
+        {
+          "anchor": "1-che-cosa-significa-deformazione-nello-sviluppo",
+          "title": "1. Che cosa significa “deformazione” nello sviluppo",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo#1-che-cosa-significa-deformazione-nello-sviluppo"
+        },
+        {
+          "anchor": "2-prestazionalizzazione-del-valore",
+          "title": "2. Prestazionalizzazione del valore",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo#2-prestazionalizzazione-del-valore"
+        },
+        {
+          "anchor": "3-saturazione-del-desiderio-e-perdita-dellapertura",
+          "title": "3. Saturazione del desiderio e perdita dell’apertura",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo#3-saturazione-del-desiderio-e-perdita-dellapertura"
+        },
+        {
+          "anchor": "4-neutralizzazione-simbolica-del-limite-reale",
+          "title": "4. Neutralizzazione simbolica del limite reale",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo#4-neutralizzazione-simbolica-del-limite-reale"
+        },
+        {
+          "anchor": "5-riduzione-della-responsabilità-a-conformità",
+          "title": "5. Riduzione della responsabilità a conformità",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo#5-riduzione-della-responsabilità-a-conformità"
+        },
+        {
+          "anchor": "6-deformazioni-del-riconoscimento",
+          "title": "6. Deformazioni del riconoscimento",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo#6-deformazioni-del-riconoscimento"
+        },
+        {
+          "anchor": "7-perché-questi-rischi-non-sono-patologie-individuali",
+          "title": "7. Perché questi rischi non sono patologie individuali",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo#7-perché-questi-rischi-non-sono-patologie-individuali"
+        },
+        {
+          "anchor": "8-funzione-del-capitolo-nelleconomia-dellasse",
+          "title": "8. Funzione del capitolo nell’economia dell’asse",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo#8-funzione-del-capitolo-nelleconomia-dellasse"
+        }
+      ],
+      "cited_author_ids": [
+        "hans-jonas"
+      ],
+      "cited_book_ids": []
+    },
+    {
+      "id": "asse-6-storico-culturale/capitolo-7-raccordo-con-l-intero-modello-e-funzione-dell-asse-6",
+      "asse_id": "asse-6-storico-culturale",
+      "asse_number": 6,
+      "number": 7,
+      "title": "Raccordo con l’intero modello e funzione dell’Asse 6",
+      "slug": "capitolo-7-raccordo-con-l-intero-modello-e-funzione-dell-asse-6",
+      "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-7-raccordo-con-l-intero-modello-e-funzione-dell-asse-6",
+      "summary": null,
+      "prev_slug": "capitolo-6-rischi-strutturali-e-deformazioni-dello-sviluppo",
+      "next_slug": null,
+      "sections": [
+        {
+          "anchor": "1-lasse-6-come-asse-di-traduzione-non-di-origine",
+          "title": "1. L’Asse 6 come asse di traduzione, non di origine",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-7-raccordo-con-l-intero-modello-e-funzione-dell-asse-6#1-lasse-6-come-asse-di-traduzione-non-di-origine"
+        },
+        {
+          "anchor": "2-circolazione-degli-assi-nel-mondo-storico",
+          "title": "2. Circolazione degli assi nel mondo storico",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-7-raccordo-con-l-intero-modello-e-funzione-dell-asse-6#2-circolazione-degli-assi-nel-mondo-storico"
+        },
+        {
+          "anchor": "3-perché-lasse-6-non-è-sociologia-dello-sviluppo",
+          "title": "3. Perché l’Asse 6 non è sociologia dello sviluppo",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-7-raccordo-con-l-intero-modello-e-funzione-dell-asse-6#3-perché-lasse-6-non-è-sociologia-dello-sviluppo"
+        },
+        {
+          "anchor": "4-la-funzione-critica-dellasse-6",
+          "title": "4. La funzione critica dell’Asse 6",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-7-raccordo-con-l-intero-modello-e-funzione-dell-asse-6#4-la-funzione-critica-dellasse-6"
+        },
+        {
+          "anchor": "5-funzione-strategica-dellasse-6-nel-progetto-complessivo",
+          "title": "5. Funzione strategica dell’Asse 6 nel progetto complessivo",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-7-raccordo-con-l-intero-modello-e-funzione-dell-asse-6#5-funzione-strategica-dellasse-6-nel-progetto-complessivo"
+        },
+        {
+          "anchor": "6-chiusura-dellasse-6-e-apertura-del-lavoro-successivo",
+          "title": "6. Chiusura dell’Asse 6 e apertura del lavoro successivo",
+          "url": "/assi-strutturali/asse-6-storico-culturale/capitolo-7-raccordo-con-l-intero-modello-e-funzione-dell-asse-6#6-chiusura-dellasse-6-e-apertura-del-lavoro-successivo"
+        }
+      ],
+      "cited_author_ids": [],
+      "cited_book_ids": []
+    }
+  ]
+}

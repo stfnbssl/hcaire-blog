@@ -5,6 +5,7 @@ import { spawnCoworker } from './coworker.js';
 import { processBartlebyTrace } from './bartlebyWorker.js';
 import { PipelineCommandHandler } from './pipeline/PipelineCommandHandler.js';
 import { LettureCommandHandler } from './pipeline/LettureCommandHandler.js';
+import { AssiCommandHandler } from './pipeline/AssiCommandHandler.js';
 
 const WorkflowLogSchema = new mongoose.Schema(
   {
@@ -145,6 +146,10 @@ async function main(): Promise<void> {
   // Pipeline Letture (canali hcaire:letture:*) — parallela alla precedente.
   const lettureHandler = new LettureCommandHandler(pipelineRedisFactory);
   await lettureHandler.start();
+
+  // Rebuild Assi Strutturali (canali hcaire:assi:*) — operazione singola, non a step.
+  const assiHandler = new AssiCommandHandler(pipelineRedisFactory);
+  await assiHandler.start();
 }
 
 main().catch((err) => {

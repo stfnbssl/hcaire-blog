@@ -9,12 +9,16 @@ import {
   splitByH2,
   getContentBase,
 } from '../services/staticContentReader';
+import AssiChapter from '../models/AssiChapter';
+import Author from '../models/Author';
+import Book from '../models/Book';
+
+const SVILUPPO_BAMBINO_PROJECT_ID = 'sviluppo-bambino';
 
 const MODELLO_PATH = "progetti/sviluppo bambino/metodo/riflessioni/01 Modello assi strutturali di sviluppo del bambino (0-13 anni) .md";
 const FINALITA_PATH = "progetti/sviluppo bambino/finalità/01 - Natura e finalità del progetto \u201cSviluppo del bambino\u201d.md";
 const NORMALIZED_BASE = "progetti/sviluppo bambino/assi strutturali/normalized";
 const ASSI_JSON_BASE = "progetti/sviluppo bambino/assi strutturali/json";
-const CATALOGO_BASE = "progetti/sviluppo bambino/catalogo";
 const RIFLESSIONI_BASE = "progetti/sviluppo bambino/metodo/riflessioni";
 const INTERLOCUZIONI_BASE = "progetti/sviluppo bambino/interlocuzioni disciplinari";
 
@@ -332,93 +336,117 @@ export function getNotaMetodologica(req: Request, res: Response) {
 }
 
 // GET /api/sviluppo-bambino/assi
-export function getAssiIndex(req: Request, res: Response) {
+//
+// Fonte (Fase A 2026-05-11): collection MongoDB `assi_chapters` (source-of-truth).
+// I .md in normalized/ restano backup git ma non sono più letti per servire le API.
+export async function getAssiIndex(_req: Request, res: Response) {
   try {
-    const folders = listSubdirectories(NORMALIZED_BASE);
-    const assi = folders
-      .filter((f) => ASSE_FOLDER_TO_SLUG[f])
-      .map((folderName) => {
-        const slug = ASSE_FOLDER_TO_SLUG[folderName];
-        const chapters = readChaptersInDir(path.join(NORMALIZED_BASE, folderName));
-        return {
-          slug,
-          folderName,
-          title: folderName,
-          chapterCount: chapters.length,
-          chapters: chapters.map((c) => ({
-            slug: c.frontmatter.slug,
-            title: c.frontmatter.title,
-            chapter: c.frontmatter.chapter,
-            order: c.frontmatter.order,
-          })),
-        };
-      });
+    const chapters = await AssiChapter
+      .find({}, { axis_slug: 1, axis_folder: 1, axis_number: 1, slug: 1, title: 1, chapter_number: 1, order: 1 })
+      .sort({ axis_number: 1, order: 1 })
+      .lean();
+
+    // Raggruppo per asse, preservando l'ordine canonico ASSE_FOLDER_TO_SLUG.
+    const byAxis = new Map<string, typeof chapters>();
+    for (const c of chapters) {
+      const arr = byAxis.get(c.axis_slug) ?? [];
+      arr.push(c);
+      byAxis.set(c.axis_slug, arr);
+    }
+
+    const assi = Object.values(ASSE_FOLDER_TO_SLUG).map((slug) => {
+      const folderName = ASSE_SLUG_TO_FOLDER[slug];
+      const arr = byAxis.get(slug) ?? [];
+      return {
+        slug,
+        folderName,
+        title: folderName,
+        chapterCount: arr.length,
+        chapters: arr.map((c) => ({
+          slug: c.slug,
+          title: c.title,
+          chapter: c.chapter_number,
+          order: c.order,
+        })),
+      };
+    });
     res.json({ assi });
-  } catch {
+  } catch (err) {
+    console.error('[getAssiIndex] error:', err);
     res.status(500).json({ error: 'Errore lettura assi' });
   }
 }
 
 // GET /api/sviluppo-bambino/assi/:asseSlug
-export function getAsseChapters(req: Request, res: Response) {
+export async function getAsseChapters(req: Request, res: Response) {
   try {
     const { asseSlug } = req.params;
     const folderName = ASSE_SLUG_TO_FOLDER[asseSlug];
     if (!folderName) return res.status(404).json({ error: 'Asse non trovato' });
-    const chapters = readChaptersInDir(path.join(NORMALIZED_BASE, folderName));
+
+    const chapters = await AssiChapter
+      .find(
+        { axis_slug: asseSlug },
+        { slug: 1, title: 1, chapter_number: 1, order: 1, axis_folder: 1, axis_number: 1, prev_slug: 1, next_slug: 1 },
+      )
+      .sort({ order: 1 })
+      .lean();
+
     res.json({
       asseSlug,
       title: folderName,
       chapters: chapters.map((c) => ({
-        slug: c.frontmatter.slug,
-        title: c.frontmatter.title,
-        chapter: c.frontmatter.chapter,
-        order: c.frontmatter.order,
-        asse: c.frontmatter.asse,
-        asse_number: c.frontmatter.asse_number,
-        prev: c.frontmatter.prev,
-        next: c.frontmatter.next,
+        slug: c.slug,
+        title: c.title,
+        chapter: c.chapter_number,
+        order: c.order,
+        asse: c.axis_folder,
+        asse_number: c.axis_number,
+        prev: c.prev_slug,
+        next: c.next_slug,
       })),
     });
-  } catch {
+  } catch (err) {
+    console.error('[getAsseChapters] error:', err);
     res.status(500).json({ error: 'Errore lettura capitoli asse' });
   }
 }
 
 // GET /api/sviluppo-bambino/assi/:asseSlug/:chapterSlug
 //
-// Serve il capitolo nella forma JSON ibrida (`body` markdown a token,
-// `references` strutturate, `footnotes` liftate). Fonte: server/content/.../json/
-// generato dallo script `npm run assi:convert -- --write`.
-export function getChapter(req: Request, res: Response) {
+// Ritorna il capitolo nella forma `ChapterDocument` (frontmatter + body + refs + footnotes)
+// — stesso shape del JSON storico, per compatibilità con il frontend pubblico.
+// Fonte: collection MongoDB `assi_chapters`.
+export async function getChapter(req: Request, res: Response) {
   try {
     const { asseSlug, chapterSlug } = req.params;
-    const folderName = ASSE_SLUG_TO_FOLDER[asseSlug];
-    if (!folderName) return res.status(404).json({ error: 'Asse non trovato' });
+    if (!ASSE_SLUG_TO_FOLDER[asseSlug]) return res.status(404).json({ error: 'Asse non trovato' });
 
-    const dir = path.join(getContentBase(), ASSI_JSON_BASE, folderName);
-    if (!fs.existsSync(dir)) {
-      return res.status(404).json({
-        error: 'Capitoli JSON non disponibili per questo asse. Lancia `npm run assi:convert -- --write`.',
-      });
-    }
+    const c = await AssiChapter.findOne({ axis_slug: asseSlug, slug: chapterSlug }).lean();
+    if (!c) return res.status(404).json({ error: 'Capitolo non trovato' });
 
-    // I file JSON non sono nominati per slug (mantengono il nome del .md sorgente),
-    // quindi devo leggerli per trovare quello con frontmatter.slug giusto.
-    const files = fs.readdirSync(dir).filter((f) => f.toLowerCase().endsWith('.json'));
-    for (const f of files) {
-      const raw = fs.readFileSync(path.join(dir, f), 'utf8');
-      try {
-        const doc = JSON.parse(raw);
-        if (doc?.frontmatter?.slug === chapterSlug) {
-          return res.json(doc);
-        }
-      } catch {
-        // file non valido, lo salto
-      }
-    }
-    return res.status(404).json({ error: 'Capitolo non trovato' });
-  } catch {
+    res.json({
+      frontmatter: {
+        title: c.title,
+        asse: c.axis_folder,
+        asse_number: c.axis_number,
+        asse_slug: c.axis_slug,
+        chapter: c.chapter_number,
+        order: c.order,
+        slug: c.slug,
+        prev: c.prev_slug,
+        next: c.next_slug,
+      },
+      body: c.body,
+      references: c.references,
+      footnotes: c.footnotes,
+      _meta: {
+        generatedAt: (c._last_edited ?? c._last_imported ?? c.updatedAt)?.toISOString?.() ?? new Date().toISOString(),
+        sourceFile: c.source_filename ?? null,
+      },
+    });
+  } catch (err) {
+    console.error('[getChapter] error:', err);
     res.status(500).json({ error: 'Errore lettura capitolo' });
   }
 }
@@ -426,82 +454,50 @@ export function getChapter(req: Request, res: Response) {
 // GET /api/sviluppo-bambino/assi/citazioni
 //
 // Indice di citazione: per ogni id autore/libro, lista dei capitoli in cui
-// appare in almeno una `Reference`. Aggregato leggendo tutti i JSON sotto
-// assi strutturali/json/.
-export function getCitations(_req: Request, res: Response) {
+// appare in almeno una `Reference`. Aggregato da MongoDB `assi_chapters`.
+export async function getCitations(_req: Request, res: Response) {
   try {
-    const root = path.join(getContentBase(), ASSI_JSON_BASE);
-    if (!fs.existsSync(root)) {
-      return res.status(404).json({
-        error: 'JSON capitoli non trovati. Lancia `npm run assi:convert -- --write`.',
-      });
-    }
+    const chapters = await AssiChapter
+      .find({}, { axis_slug: 1, axis_folder: 1, axis_number: 1, slug: 1, title: 1, chapter_number: 1, references: 1 })
+      .lean();
 
-    const authorsMap: Record<string, Array<{
+    interface ChapterRef {
       asseSlug: string;
       asseTitle: string;
       asseNumber: number;
       chapterSlug: string;
       chapterTitle: string;
       chapterNumber: number;
-    }>> = {};
-    const booksMap: typeof authorsMap = {};
+    }
+    const authorsMap: Record<string, ChapterRef[]> = {};
+    const booksMap: Record<string, ChapterRef[]> = {};
 
-    let totalChapters = 0;
-    const asseDirs = fs.readdirSync(root, { withFileTypes: true })
-      .filter((d) => d.isDirectory())
-      .map((d) => d.name);
-
-    for (const asseDir of asseDirs) {
-      const asseFull = path.join(root, asseDir);
-      const files = fs.readdirSync(asseFull).filter((f) => f.toLowerCase().endsWith('.json'));
-      for (const f of files) {
-        let doc: {
-          frontmatter: {
-            asse_slug: string;
-            asse: string;
-            asse_number: number;
-            slug: string;
-            title: string;
-            chapter: number;
-          };
-          references: Array<{ authorIds: string[]; bookIds: string[] }>;
-        };
-        try {
-          doc = JSON.parse(fs.readFileSync(path.join(asseFull, f), 'utf8'));
-        } catch {
-          continue;
+    for (const c of chapters) {
+      const ref: ChapterRef = {
+        asseSlug: c.axis_slug,
+        asseTitle: c.axis_folder,
+        asseNumber: c.axis_number,
+        chapterSlug: c.slug,
+        chapterTitle: c.title,
+        chapterNumber: c.chapter_number,
+      };
+      const seenAuthors = new Set<string>();
+      const seenBooks = new Set<string>();
+      for (const r of c.references ?? []) {
+        for (const aid of r.authorIds ?? []) {
+          if (seenAuthors.has(aid)) continue;
+          seenAuthors.add(aid);
+          (authorsMap[aid] ??= []).push(ref);
         }
-        totalChapters++;
-        const ref = {
-          asseSlug: doc.frontmatter.asse_slug,
-          asseTitle: doc.frontmatter.asse,
-          asseNumber: doc.frontmatter.asse_number,
-          chapterSlug: doc.frontmatter.slug,
-          chapterTitle: doc.frontmatter.title,
-          chapterNumber: doc.frontmatter.chapter,
-        };
-        // Insieme dei ref già aggiunti per questo capitolo (un capitolo conta
-        // una sola volta per ogni autore/libro, anche se citato più volte).
-        const seenAuthors = new Set<string>();
-        const seenBooks = new Set<string>();
-        for (const r of doc.references ?? []) {
-          for (const aid of r.authorIds ?? []) {
-            if (seenAuthors.has(aid)) continue;
-            seenAuthors.add(aid);
-            (authorsMap[aid] ??= []).push(ref);
-          }
-          for (const bid of r.bookIds ?? []) {
-            if (seenBooks.has(bid)) continue;
-            seenBooks.add(bid);
-            (booksMap[bid] ??= []).push(ref);
-          }
+        for (const bid of r.bookIds ?? []) {
+          if (seenBooks.has(bid)) continue;
+          seenBooks.add(bid);
+          (booksMap[bid] ??= []).push(ref);
         }
       }
     }
 
-    // Ordino le liste per (asseNumber, chapterNumber)
-    const sortFn = (a: typeof authorsMap[string][0], b: typeof authorsMap[string][0]) => {
+    const sortFn = (a: ChapterRef, b: ChapterRef) => {
       if (a.asseNumber !== b.asseNumber) return a.asseNumber - b.asseNumber;
       return a.chapterNumber - b.chapterNumber;
     };
@@ -511,44 +507,71 @@ export function getCitations(_req: Request, res: Response) {
     res.json({
       authors: authorsMap,
       books: booksMap,
-      _meta: {
-        generatedAt: new Date().toISOString(),
-        totalChapters,
-      },
+      _meta: { generatedAt: new Date().toISOString(), totalChapters: chapters.length },
     });
-  } catch {
+  } catch (err) {
+    console.error('[getCitations] error:', err);
     res.status(500).json({ error: 'Errore lettura indice citazioni' });
   }
 }
 
 // GET /api/sviluppo-bambino/catalogo/authors
-export function getCatalogoAuthors(_req: Request, res: Response) {
+// Legge da Mongo (collection `authors`), filtra per scope progetto e
+// restituisce nella shape legacy compatibile con il client (campi `image`,
+// `rilevanza`, `birthYear`, ecc.). Sostituisce la vecchia lettura del file
+// statico authors.json (Fase 4 catalogo Mongo, 2026-05-12).
+export async function getCatalogoAuthors(_req: Request, res: Response) {
   try {
-    const file = path.join(getContentBase(), CATALOGO_BASE, 'authors.json');
-    if (!fs.existsSync(file)) {
-      return res.status(404).json({
-        error: 'Catalogo autori mancante. Lancia `npm run catalogo:build`.',
-      });
-    }
-    const raw = fs.readFileSync(file, 'utf8');
-    res.type('application/json').send(raw);
-  } catch {
+    const docs = await Author
+      .find({ 'projects.projectId': SVILUPPO_BAMBINO_PROJECT_ID })
+      .sort({ nome: 1 })
+      .lean();
+    const authors = docs.map((a) => {
+      const scope = a.projects.find((p) => p.projectId === SVILUPPO_BAMBINO_PROJECT_ID);
+      return {
+        id: a.id,
+        nome: a.nome,
+        image: a.image_url ?? '',
+        rilevanza: scope?.rilevanza ?? '',
+        ...(a.birth_year != null ? { birthYear: a.birth_year } : {}),
+        ...(a.death_year != null ? { deathYear: a.death_year } : {}),
+      };
+    });
+    res.json({
+      _meta: { generatedAt: new Date().toISOString(), source: 'mongo' },
+      authors,
+    });
+  } catch (err) {
+    console.error('[getCatalogoAuthors] error:', err);
     res.status(500).json({ error: 'Errore lettura catalogo autori' });
   }
 }
 
 // GET /api/sviluppo-bambino/catalogo/books
-export function getCatalogoBooks(_req: Request, res: Response) {
+export async function getCatalogoBooks(_req: Request, res: Response) {
   try {
-    const file = path.join(getContentBase(), CATALOGO_BASE, 'books.json');
-    if (!fs.existsSync(file)) {
-      return res.status(404).json({
-        error: 'Catalogo libri mancante. Lancia `npm run catalogo:build`.',
-      });
-    }
-    const raw = fs.readFileSync(file, 'utf8');
-    res.type('application/json').send(raw);
-  } catch {
+    const docs = await Book
+      .find({ 'projects.projectId': SVILUPPO_BAMBINO_PROJECT_ID })
+      .sort({ titolo: 1 })
+      .lean();
+    const books = docs.map((b) => {
+      const scope = b.projects.find((p) => p.projectId === SVILUPPO_BAMBINO_PROJECT_ID);
+      return {
+        id: b.id,
+        titolo: b.titolo,
+        cover: b.cover_url ?? '',
+        rilevanza: scope?.rilevanza ?? '',
+        ...(Array.isArray(b.autoreIds) && b.autoreIds.length > 0 ? { authorIds: b.autoreIds } : {}),
+        ...(b.anno != null ? { anno: b.anno } : {}),
+        ...(b.titolo_originale ? { titoloOriginale: b.titolo_originale } : {}),
+      };
+    });
+    res.json({
+      _meta: { generatedAt: new Date().toISOString(), source: 'mongo' },
+      books,
+    });
+  } catch (err) {
+    console.error('[getCatalogoBooks] error:', err);
     res.status(500).json({ error: 'Errore lettura catalogo libri' });
   }
 }

@@ -1,0 +1,157 @@
+{
+  "axis_id": "asse_6",
+  "axis_name": "Asse storico–culturale",
+  "version": "v1.0",
+  "status": "bozza",
+  "source_document": {
+    "title": "Asse 6 - Storico - culturale (7 capitoli Markdown)",
+    "format": "markdown",
+    "language": "it"
+  },
+  "structural_function": "Mostrare come le strutture costitutive dello sviluppo (soggettività incarnata, istanza morale, giudizio normativo, limite reale, desiderio orientato) si incarnino concretamente in mondi storicamente configurati di pratiche, istituzioni, linguaggi e dispositivi tecnici: non aggiungere una nuova struttura dello sviluppo ma descrivere la traduzione storica dell'intero modello, impedendo che esso resti astratto senza dissolversi in determinismo culturale.",
+  "core_processes": [
+    {
+      "name": "Mediazione simbolica dell'esperienza",
+      "description": "Processo attraverso cui il soggetto non incontra il mondo direttamente ma sempre attraverso segni, linguaggi, pratiche e strumenti culturalmente stabilizzati che riconfigurano il campo dell'esperienza, rendendo possibili forme di attenzione, memoria, anticipazione e regolazione che non esisterebbero senza di essi."
+    },
+    {
+      "name": "Istituzionalizzazione dell'esperienza",
+      "description": "Processo per cui le mediazioni simboliche si condensano in forme stabili, organizzate e impersonali — istituzioni — che strutturano in modo duraturo il tempo, il valore, il riconoscimento e le aspettative entro cui il bambino si sviluppa."
+    },
+    {
+      "name": "Deformazione strutturale attraverso il mondo storico",
+      "description": "Processo per cui configurazioni storiche dell'esperienza (prestazione, accelerazione tecnica, saturazione del desiderio, separazione tra norma e giudizio) producono effetti sistematici che non nascono nel bambino ma nell'incontro tra soggetto in sviluppo e forme storiche del mondo."
+    }
+  ],
+  "bridge_concepts": [
+    {
+      "concept": "Mondo storico-culturale come mediazione strutturale",
+      "definition": "Il mondo in cui il bambino cresce non è sfondo neutro né insieme di fattori contestuali, ma mediazione strutturale dell'esperienza: organizza il campo percettivo, simbolico e normativo del soggetto prima che egli possa prenderne distanza.",
+      "linked_nodes": ["campo di esperienza strutturato", "istituzione come dispositivo", "costituzione storica del soggetto"]
+    },
+    {
+      "concept": "Istituzione come dispositivo di esperienza",
+      "definition": "Non edificio né apparato normativo ma configurazione relativamente stabile di pratiche, ruoli, linguaggi, aspettative e criteri di valutazione attraverso cui il mondo storico entra nella vita quotidiana del soggetto come ambiente di senso già operativo.",
+      "linked_nodes": ["mediazione impersonale", "scuola e famiglia", "Altro impersonale"]
+    },
+    {
+      "concept": "Costituzione storica senza relativismo",
+      "definition": "Il soggetto è storicamente situato senza essere determinato dalla storia: la storicità è la forma concreta in cui le strutture dello sviluppo prendono corpo, non la causa che le produce — le strutture rimangono invarianti attraverso la variazione storica dei loro modi di incarnazione.",
+      "linked_nodes": ["tradizione", "universale incarnato", "distinzione da determinismo culturale"]
+    },
+    {
+      "concept": "Tecnica come organizzazione storica dell'esperienza",
+      "definition": "La tecnica non è insieme neutro di strumenti ma forma storica che incide sulla temporalità, sulla formazione del desiderio e sul riconoscimento del valore; nella contemporaneità produce accelerazione, compressione dell'attesa e prestazionalizzazione del tempo.",
+      "linked_nodes": ["temporalità contemporanea", "saturazione del desiderio", "deformazione strutturale"]
+    },
+    {
+      "concept": "Deformazione strutturale dello sviluppo",
+      "definition": "Configurazione storica sbilanciata in cui una dimensione dello sviluppo prende il sopravvento sulle altre: non deficit individuale né disturbo clinico, ma effetto sistematico dell'incontro tra soggetto in sviluppo e forme storiche del mondo contemporaneo.",
+      "linked_nodes": ["prestazionalizzazione", "saturazione del desiderio", "rischi strutturali"]
+    }
+  ],
+  "structural_nodes": [
+    {
+      "node": "Campo di esperienza storicamente strutturato",
+      "short_definition": "Il bambino nasce in un campo già organizzato in cui alcune cose appaiono rilevanti e altre irrilevanti, alcune possibilità sono pensabili e altre impensabili, prima di qualsiasi riflessione esplicita."
+    },
+    {
+      "node": "Mediazione simbolica",
+      "short_definition": "La struttura antropologica per cui il soggetto umano non incontra il mondo direttamente ma sempre attraverso segni, gesti, linguaggi e strumenti che trasformano l'esperienza stessa."
+    },
+    {
+      "node": "Funzioni psichiche superiori come prodotto della cultura",
+      "short_definition": "Le funzioni psichiche superiori non precedono la mediazione culturale ma nascono attraverso di essa (Vygotskij rielaborato): la cultura non influenza lo sviluppo dall'esterno ma entra nella costituzione delle sue strutture."
+    },
+    {
+      "node": "Altro impersonale",
+      "short_definition": "Le istituzioni come forma impersonale dell'Altro: non più il volto del caregiver (Asse 2) né la norma del giudice (Asse 3) ma l'insieme diffuso delle attese, dei criteri e delle pratiche che organizzano silenziosamente il campo dell'esperienza."
+    },
+    {
+      "node": "Prestazionalizzazione del valore",
+      "short_definition": "La deformazione per cui ciò che vale tende a coincidere con ciò che è misurabile, il giudizio viene sostituito dalla valutazione e il soggetto non è chiamato a interrogarsi su che cosa ha senso ma su come sta andando."
+    },
+    {
+      "node": "Accelerazione tecnica",
+      "short_definition": "La forma storica contemporanea di organizzazione del tempo: compressione dell'attesa, anticipazione dei risultati, riduzione degli intervalli non produttivi — trasforma ciò che conta come tempo valido per il soggetto."
+    },
+    {
+      "node": "Funzione di traduzione (Asse 6)",
+      "short_definition": "L'Asse 6 non introduce nuove strutture dello sviluppo ma mostra come le strutture già costituite si incarnino storicamente; impedisce al modello di restare astratto senza dissolverlo in sociologia."
+    },
+    {
+      "node": "Perdita di esperienza (Stiegler)",
+      "short_definition": "La condizione in cui i dispositivi tecnici contemporanei catturano l'attenzione, frammentano il tempo e sottraggono al soggetto la capacità di formare esperienza propria, producendo proletarizzazione dell'esperienza soggettiva."
+    }
+  ],
+  "internal_articulations": [
+    {
+      "section": "Capitolo 1 – Il mondo storico-culturale come mediazione, non come sfondo",
+      "function": "Fonda la distinzione tra contesto come sfondo neutro e mondo storico-culturale come mediazione strutturale; mostra che famiglia, scuola, tecnologie e pratiche organizzano il campo percettivo e simbolico prima di qualsiasi riflessione."
+    },
+    {
+      "section": "Capitolo 2 – Costituzione storica del soggetto, senza relativismo",
+      "function": "Argomenta che la storicità è dimensione costitutiva della soggettività senza essere deterministica; introduce Dilthey come riferimento per la distinzione tra scienze naturali e scienze umane; mostra come le strutture dello sviluppo si incarnino sempre storicamente senza essere prodotte dalla storia."
+    },
+    {
+      "section": "Capitolo 3 – Mediazione simbolica e sviluppo",
+      "function": "Descrive la mediazione simbolica come struttura antropologica; introduce Vygotskij (le funzioni psichiche superiori nascono attraverso la mediazione culturale, non prima); distingue la prospettiva dall'interpretazione riduzionistica dell'influenza culturale."
+    },
+    {
+      "section": "Capitolo 4 – Istituzioni come dispositivi di esperienza",
+      "function": "Mostra come la mediazione simbolica si condensi in istituzioni come dispositivi stabili di esperienza; introduce il concetto di Altro impersonale (Merleau-Ponty, Gehlen); descrive come scuola, famiglia e dispositivi di valutazione organizzino il campo di senso del bambino."
+    },
+    {
+      "section": "Capitolo 5 – Tecnica, performance e temporalità contemporanea",
+      "function": "Analizza la tecnica contemporanea come forma storica di organizzazione dell'esperienza; introduce Stiegler sulla proletarizzazione dell'esperienza e Rosa sull'accelerazione; mostra come la temporalità tecnica trasformi il modo in cui il valore e il futuro sono vissuti."
+    },
+    {
+      "section": "Capitolo 6 – Rischi strutturali e deformazioni dello sviluppo",
+      "function": "Descrive le configurazioni storiche che deformano sistematicamente lo sviluppo: prestazionalizzazione del valore, saturazione del desiderio, neutralizzazione del limite, colonizzazione del tempo da parte della performance; non diagnostica clinica ma lettura strutturale dei rischi."
+    },
+    {
+      "section": "Capitolo 7 – Raccordo con l'intero modello e funzione dell'Asse 6",
+      "function": "Chiude il modello mostrando come ogni asse si incarni storicamente: l'Asse 6 traduce senza sostituire, verifica senza fondare; impedisce al modello di restare astratto e al mondo storico di diventare principio assoluto."
+    }
+  ],
+  "reduction_risks": [
+    {
+      "type": "Determinismo culturale",
+      "description": "Ridurre il soggetto a prodotto delle condizioni storiche, sociali o culturali, perdendo la dimensione di strutture costitutive che si incarnano nel mondo storico senza essere da esso generate; l'Asse 6 descrive la traduzione storica delle strutture, non la loro produzione."
+    },
+    {
+      "type": "Contestualismo descrittivo",
+      "description": "Trattare l'Asse 6 come una raccolta di fattori contestuali che 'influenzano' lo sviluppo, perdendo la dimensione di mediazione strutturale; la cultura non influenza dall'esterno ma entra nella costituzione stessa del campo dell'esperienza."
+    },
+    {
+      "type": "Diagnosi culturale autonoma",
+      "description": "Utilizzare le categorie dell'Asse 6 (prestazione, accelerazione, saturazione) come diagnosi culturale indipendente dal modello degli assi; i rischi strutturali sono leggibili solo in relazione alle strutture costitutive degli assi 1-5."
+    },
+    {
+      "type": "Sociologizzazione",
+      "description": "Trasformare l'Asse 6 in una teoria sociologica dello sviluppo, perdendo la distinzione tra strutture invarianti (assi 1-5) e forme storiche della loro incarnazione; il mondo storico non è il principio del modello ma il luogo della sua verifica."
+    }
+  ],
+  "structural_questions": [
+    "In che senso il mondo storico-culturale è mediazione strutturale dell'esperienza e non sfondo neutro o insieme di fattori contestuali, e che cosa cambia nella comprensione dello sviluppo da questa distinzione?",
+    "Come si articola il rapporto tra strutture costitutive invarianti (assi 1-5) e forme storiche della loro incarnazione, senza che la storicità collassi in determinismo né le strutture si astraggano dalla storia?",
+    "In quale modo le istituzioni organizzano silenziosamente il campo di senso del bambino prima di qualsiasi intervento educativo esplicito, e che cosa implica questo per la comprensione dell'educazione?",
+    "Come distinguere una deformazione strutturale prodotta da configurazioni storiche del mondo contemporaneo da una difficoltà individuale di sviluppo, e perché questa distinzione è decisiva per il modello?"
+  ],
+  "methodological_constraints": [
+    "Non trattare l'Asse 6 come autonomo rispetto agli assi 1-5: la sua funzione è di traduzione e verifica, non di fondazione; i rischi strutturali che descrive sono leggibili solo in relazione alle strutture degli assi precedenti.",
+    "Non ridurre la mediazione simbolica a apprendimento culturale o a acquisizione di competenze: essa è struttura antropologica che riconfigura il campo dell'esperienza, non contenuto trasmissibile.",
+    "Non utilizzare le categorie dell'Asse 6 (prestazione, saturazione, accelerazione) come diagnosi cliniche di individui: descrivono configurazioni strutturali del mondo storico che producono effetti sistemici, non patologie soggettive.",
+    "Non concludere che la costituzione storica del soggetto implichi relativismo: le strutture costitutive dello sviluppo si incarnano sempre storicamente senza essere ridotte alle loro forme storiche particolari."
+  ],
+  "compilation_notes": {
+    "confidence_level": "media",
+    "needs_human_review": true,
+    "notes": "I capitoli 1, 2, 3, 4, 5, 6, 7 sono stati letti parzialmente (prime 3000 parole per capitolo). La struttura dell'asse è chiara e il raccordo con il modello complessivo (cap. 7) è particolarmente esplicito. I riferimenti teorici principali (Vygotskij, Merleau-Ponty, Gehlen, Stiegler, Rosa, Dilthey) sono identificati. I capitoli 5, 6, 7 andrebbero riletti integralmente per approfondire la diagnosi delle deformazioni strutturali.",
+    "open_issues": [
+      "La distinzione tra mediazione simbolica (cap. 3, Vygotskij) e statuto simbolico della perdita (Asse 4, cap. 7) andrebbe esplicitata per evitare confusioni terminologiche.",
+      "Il rapporto tra 'Altro impersonale' delle istituzioni (Asse 6, cap. 4) e 'istanza morale interiorizzata' (Asse 2) andrebbe chiarito: l'istituzione può svolgere funzioni analoghe all'istanza affettiva senza coincidere con essa.",
+      "La funzione del cap. 7 come raccordo con l'intero modello va verificata integralmente per assicurare che la scheda ne rispecchi la complessità."
+    ]
+  }
+}
