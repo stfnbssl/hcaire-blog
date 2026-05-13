@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import LaboratorioNav from '../../components/LaboratorioNav';
 import T from '../../components/T';
 import { useT } from '../../context/SiteContentContext';
+import { useIsAdmin } from '../../hooks/useIsAdmin';
 
 interface SezioneLab {
   slug: string;
@@ -13,6 +14,9 @@ interface SezioneLab {
   borderAccent: string;
   subtitleColor: string;
   ctaHover: string;
+  adminOnly?: boolean;
+  /** Override del path di destinazione del CTA; di default è `/hcaire/${slug}`. */
+  to?: string;
 }
 
 const SEZIONI: SezioneLab[] = [
@@ -20,7 +24,7 @@ const SEZIONI: SezioneLab[] = [
     slug: 'manifesto',
     label: 'Manifesto',
     tagline: 'Esplicitare i quadri della ricerca, governare il contesto dell\'AI',
-    body: 'Lo studio scientifico dello sviluppo umano interagisce sempre con quadri antropologici, filosofici e normativi che orientano la lettura dei dati empirici. Il manifesto teorico di HCAIRE chiede di esplicitare questi quadri come condizione del rigore della ricerca, non come aggiunta esterna ad essa. È a partire da qui che si pone il problema specifico dell\'AI nelle scienze umane.\n\nPer usare l\'AI nelle scienze umane bisogna governare la memoria di contesto: scopo, lessico, riferimenti, vincoli. È il fondamento del laboratorio HCAIRE — la qualità di ciò che il modello restituisce dipende dalla qualità del contesto che gli viene affidato.',
+    body: 'HCAIRE è un laboratorio per la sperimentazione dell\'applicazione dell\'intelligenza artificiale alle scienze umane. Opera all\'intersezione tra fenomenologia, psicologia dello sviluppo, semiotica, neuroscienze affettive, clinica e pedagogia.\n\nLo studio scientifico dello sviluppo umano interagisce sempre con quadri antropologici, filosofici e normativi che orientano la lettura dei dati empirici. Il manifesto teorico di HCAIRE chiede di esplicitare questi quadri come condizione del rigore della ricerca, non come aggiunta esterna ad essa. È a partire da qui che si pone il problema specifico dell\'AI nelle scienze umane: per usarla bene bisogna governare la memoria di contesto — scopo, lessico, riferimenti, vincoli. La qualità di ciò che il modello restituisce dipende dalla qualità del contesto che gli viene affidato.',
     cta: 'Leggi i manifesti →',
     headerBg: 'bg-amber-900',
     borderAccent: 'border-l-amber-400',
@@ -30,9 +34,10 @@ const SEZIONI: SezioneLab[] = [
   {
     slug: 'metodo',
     label: 'Il metodo',
-    tagline: 'Tre livelli di lavoro per pensare l\'intelligenza artificiale',
-    body: 'Il metodo HCAIRE articola il lavoro su tre livelli compresenti: la fondazione concettuale (le categorie con cui pensare l\'IA in rapporto alle scienze umane), la traduzione interdisciplinare (i protocolli che permettono a discipline diverse di intendersi senza dissolversi) e lo sviluppo di strumenti operativi coerenti con la fondazione.',
+    tagline: 'Traduzione interdisciplinare, operatori di lettura, famiglie di output',
+    body: 'Il metodo trasversale di HCAIRE costruisce un linguaggio comune fra discipline (psicologia, fenomenologia, neuroscienze, semiotica, clinica, pedagogia) senza ridurre il sapere di ciascuna. Si articola in traduzione interdisciplinare (concetti di secondo livello — i *nodi trasversali* — che descrivono la struttura comune a partire da linguaggi differenti), operatori di lettura (lenti teoriche che rendono visibili dimensioni del campo relazionale, non scale di valutazione), e famiglie di output istanziate in strumenti contestualizzati nella Fase 2.\n\nI sistemi LLM non sono qui un ausilio: sono componenti attive dello sviluppo del progetto, che navigano il corpus come memoria di contesto strutturata.',
     cta: 'Approfondisci il metodo →',
+    to: '/metodo',
     headerBg: 'bg-indigo-950',
     borderAccent: 'border-l-indigo-400',
     subtitleColor: 'text-indigo-300',
@@ -41,9 +46,10 @@ const SEZIONI: SezioneLab[] = [
   {
     slug: 'progetti',
     label: 'Progetti',
-    tagline: 'Le aree di ricerca attive del laboratorio',
-    body: 'I progetti di HCAIRE applicano l\'impianto concettuale e metodologico a domini specifici, conducendo dalla fondazione teorica alla costruzione di strumenti professionali. Il primo progetto è Sviluppo Bambino, un modello strutturale per leggere lo sviluppo umano 0–12 anni.',
+    tagline: 'Anthropos, Sviluppo Bambino e gli altri domini applicativi',
+    body: 'L\'architettura teorica di HCAIRE si articola su tre piani: un piano ontologico-strutturale (gli *assi strutturali* — le dimensioni permanenti della struttura soggettiva), un piano temporale-evolutivo (**Anthropos**, la configurazione evolutiva dell\'umano lungo l\'intero arco della vita), un piano operativo-contestuale (i *domini applicativi* — a partire da **Sviluppo Bambino**, finestra 0–12 anni).\n\nCiascun dominio lavora sulla stessa struttura teorica applicata a una configurazione storica particolare. Domini ulteriori previsti: adolescenza, genitorialità, educazione, clinica, aging, AI & Human Development.',
     cta: 'Vedi i progetti →',
+    to: '/progetti',
     headerBg: 'bg-teal-900',
     borderAccent: 'border-l-teal-400',
     subtitleColor: 'text-teal-300',
@@ -81,11 +87,14 @@ const SEZIONI: SezioneLab[] = [
     borderAccent: 'border-l-cyan-400',
     subtitleColor: 'text-cyan-300',
     ctaHover: 'hover:text-cyan-700',
+    adminOnly: true,
   },
 ];
 
 export default function HcaireLanding() {
   const t = useT();
+  const isAdmin = useIsAdmin();
+  const visibleSezioni = SEZIONI.filter((s) => !s.adminOnly || isAdmin);
 
   return (
     <div>
@@ -105,8 +114,8 @@ export default function HcaireLanding() {
         </div>
       </div>
 
-      {/* Le 6 sezioni — stile assi-strutturali */}
-      {SEZIONI.map((s, idx) => (
+      {/* Sezioni — stile assi-strutturali */}
+      {visibleSezioni.map((s, idx) => (
         <div key={s.slug} id={`sezione-${s.slug}`}>
           {/* Header colorato */}
           <div className={`${s.headerBg} text-white`}>
@@ -131,7 +140,7 @@ export default function HcaireLanding() {
                   className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mb-8 prose prose-sm sm:prose-base max-w-none"
                 />
                 <Link
-                  to={`/hcaire/${s.slug}`}
+                  to={s.to ?? `/hcaire/${s.slug}`}
                   className={`text-sm font-medium text-gray-700 ${s.ctaHover} transition-colors`}
                 >
                   {t(`laboratorio.sezioni.${s.slug}.cta`, s.cta)}

@@ -39,7 +39,8 @@ export default function Navigation() {
             <nav className="flex items-center gap-5 text-sm text-neutral-600">
               <NavLink to="/hcaire"           active={location.pathname.startsWith('/hcaire')}>Laboratorio</NavLink>
               <NavLink to="/assi-strutturali" active={location.pathname.startsWith('/assi-strutturali')}>Assi Strutturali</NavLink>
-              <NavLink to="/progetti"         active={location.pathname.startsWith('/progetti') || location.pathname.startsWith('/sviluppo-bambino')}>Progetti</NavLink>
+              <NavLink to="/metodo"           active={location.pathname.startsWith('/metodo')}>Metodo</NavLink>
+              <NavLink to="/progetti"         active={location.pathname.startsWith('/progetti') || location.pathname.startsWith('/sviluppo-bambino') || location.pathname.startsWith('/anthropos')}>Progetti</NavLink>
               {items.map((item) => (
                 <NavLink key={item._id} to={navPath(item)} active={location.pathname === navPath(item)}>
                   {item.titolo}
@@ -86,6 +87,7 @@ export default function Navigation() {
           <div className="md:hidden pb-4 space-y-1 border-t border-neutral-200 pt-2">
             <MobileNavLink to="/hcaire"           onClick={() => setOpen(false)}>Laboratorio</MobileNavLink>
             <MobileNavLink to="/assi-strutturali" onClick={() => setOpen(false)}>Assi Strutturali</MobileNavLink>
+            <MobileNavLink to="/metodo"           onClick={() => setOpen(false)}>Metodo</MobileNavLink>
             <MobileNavLink to="/progetti"         onClick={() => setOpen(false)}>Progetti</MobileNavLink>
             {items.map((item) => (
               <MobileNavLink key={item._id} to={navPath(item)} onClick={() => setOpen(false)}>

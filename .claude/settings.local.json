@@ -91,7 +91,9 @@
       "PowerShell(Get-CimInstance *)",
       "PowerShell(Stop-Process *)",
       "PowerShell(Get-Item *)",
-      "PowerShell(Get-NetTCPConnection *)"
+      "PowerShell(Get-NetTCPConnection *)",
+      "Bash(xargs grep -l \"navigation\")",
+      "PowerShell($PWD; Get-ChildItem \"C:\\\\My\\\\projects\\\\hcaire-blog\\\\server\\\\content\\\\progetti\\\\sviluppo bambino\\\\metodo\\\\\" | Select-Object Name, Mode)"
     ]
   }
 }

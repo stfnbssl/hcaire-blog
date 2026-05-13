@@ -40,15 +40,19 @@ export const hcaireApi = {
   getSubsection: (section: string, slug: string) => get<HcaireSection>(`/hcaire/${section}/${slug}`),
 };
 
+// Metodo (sezione top-level)
+export const metodoApi = {
+  getMetodo: () => get<MetodoLandingResponse>('/metodo'),
+  getMetodoIntroduzione: () => get<MetodoPageResponse>('/metodo/introduzione'),
+  getMetodoRicercaScientifica: () => get<MetodoPageResponse>('/metodo/ricerca-scientifica'),
+  getMetodoRapportoConIA: () => get<MetodoPageResponse>('/metodo/rapporto-con-ia'),
+  getMetodoFasiIndex: () => get<FasiIndex>('/metodo/fasi'),
+  getMetodoFase: (faseSlug: string) => get<FaseDetail>(`/metodo/fasi/${faseSlug}`),
+};
+
 // Sviluppo bambino
 export const sviluppoBambinoApi = {
   getFinalita: () => get<FinalitaResponse>('/sviluppo-bambino/finalita'),
-  getMetodo: () => get<MetodoLandingResponse>('/sviluppo-bambino/metodo'),
-  getMetodoIntroduzione: () => get<MetodoPageResponse>('/sviluppo-bambino/metodo/introduzione'),
-  getMetodoRicercaScientifica: () => get<MetodoPageResponse>('/sviluppo-bambino/metodo/ricerca-scientifica'),
-  getMetodoRapportoConIA: () => get<MetodoPageResponse>('/sviluppo-bambino/metodo/rapporto-con-ia'),
-  getMetodoFasiIndex: () => get<FasiIndex>('/sviluppo-bambino/metodo/fasi'),
-  getMetodoFase: (faseSlug: string) => get<FaseDetail>(`/sviluppo-bambino/metodo/fasi/${faseSlug}`),
   getModello: () => get<ModelloIndex>('/sviluppo-bambino/modello'),
   getModelloAsse: (asseSlug: string) => get<AsseOverview>(`/sviluppo-bambino/modello/${asseSlug}`),
   getConcetti: () => get<ConcettiResponse>('/sviluppo-bambino/concetti'),

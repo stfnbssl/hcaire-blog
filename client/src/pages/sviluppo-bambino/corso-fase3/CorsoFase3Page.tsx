@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import SviluppoBambinoNav from '../../../components/SviluppoBambinoNav';
+import MetodoNav from '../../../components/MetodoNav';
 import Sidebar from '../../../components/corso-fase3/Sidebar';
 import SlideRenderer from '../../../components/corso-fase3/SlideRenderer';
 import { MODULES, MODULES_BY_ID } from '../../../data/corso-fase3/modules';
 import '../../../styles/corso.css';
 
-const BASE_PATH = '/sviluppo-bambino/strumenti-operativi-contestualizzati';
+const BASE_PATH = '/metodo/didattica/strumenti-operativi-contestualizzati';
 
 function buildPath(moduleId: string, slideIndex: number): string {
   return `${BASE_PATH}/${moduleId}/${slideIndex + 1}`;
@@ -127,7 +127,7 @@ export default function CorsoFase3Page() {
 
   return (
     <div>
-      <SviluppoBambinoNav />
+      <MetodoNav />
       <div ref={rootRef} className="corso-root" style={rootStyle}>
         <div className="corso-topbar">
           <div className="corso-topbar__left">

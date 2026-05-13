@@ -38,7 +38,7 @@ const OBIETTIVI: Obiettivo[] = [
       'La finalità non è unificare le discipline. È permettere un confronto concettualmente fondato, in cui i concetti possano circolare da un linguaggio all\'altro mantenendo il proprio statuto e i propri limiti. Un pediatra e un educatore che parlano dello stesso bambino devono poter capirsi senza che uno dei due debba rinunciare alla propria prospettiva professionale.',
       'Questo obiettivo è perseguito attraverso la metodologia di traduzione interdisciplinare: una pipeline strutturata che garantisce la coerenza concettuale nel passaggio tra livelli disciplinari diversi.',
     ],
-    link: { to: '/sviluppo-bambino/metodo', label: 'Il metodo →' },
+    link: { to: '/metodo', label: 'Il metodo →' },
     headerBg: 'bg-teal-900',
     borderAccent: 'border-l-teal-400',
     badgeBg: 'bg-teal-700',

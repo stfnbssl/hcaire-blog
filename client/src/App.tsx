@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import { ClerkProvider, useUser } from '@clerk/clerk-react';
 import { SubscriptionProvider } from './context/SubscriptionContext';
@@ -34,10 +34,11 @@ import AsseChaptersPage          from './pages/assi-strutturali/AsseChapters';
 import ChapterPage               from './pages/assi-strutturali/Chapter';
 
 import SviluppoBambinoPage                from './pages/sviluppo-bambino/SviluppoBambinoPage';
-import SviluppoBambinoMetodoLanding       from './pages/sviluppo-bambino/SviluppoBambinoMetodoLanding';
-import SviluppoBambinoMetodoPage          from './pages/sviluppo-bambino/SviluppoBambinoMetodoPage';
-import SviluppoBambinoMetodoFasiIndex     from './pages/sviluppo-bambino/SviluppoBambinoMetodoFasiIndex';
-import SviluppoBambinoMetodoFasePage      from './pages/sviluppo-bambino/SviluppoBambinoMetodoFasePage';
+import MetodoLanding                      from './pages/metodo/MetodoLanding';
+import MetodoPage                         from './pages/metodo/MetodoPage';
+import MetodoFasiIndex                    from './pages/metodo/MetodoFasiIndex';
+import MetodoFasePage                     from './pages/metodo/MetodoFasePage';
+import AnthroposLanding                   from './pages/anthropos/AnthroposLanding';
 import AssiStrutturaliLanding                  from './pages/assi-strutturali/AssiStrutturaliLanding';
 import SviluppoBambinoFinalitaLanding         from './pages/sviluppo-bambino/SviluppoBambinoFinalitaLanding';
 import SviluppoBambinoInterlocuzioniLanding    from './pages/sviluppo-bambino/SviluppoBambinoInterlocuzioniLanding';
@@ -55,7 +56,7 @@ import SviluppoBambinoPipelineNuovaRicerca from './pages/sviluppo-bambino/Svilup
 const CorsoFase2Page = lazy(() => import('./pages/sviluppo-bambino/corso-fase2/CorsoFase2Page'));
 const CorsoFase1Page = lazy(() => import('./pages/sviluppo-bambino/corso-fase1/CorsoFase1Page'));
 const CorsoFase3Page = lazy(() => import('./pages/sviluppo-bambino/corso-fase3/CorsoFase3Page'));
-const PresentazioneCorsi = lazy(() => import('./pages/sviluppo-bambino/PresentazioneCorsi'));
+const DidatticaLanding = lazy(() => import('./pages/metodo/DidatticaLanding'));
 
 const KnowledgeBase    = lazy(() => import('./pages/bartleby/KnowledgeBase'));
 const AdminSiteConfig  = lazy(() => import('./pages/AdminSiteConfig'));
@@ -129,6 +130,17 @@ function AdminRoute({ children }: { children: React.ReactNode }) {
   );
 }
 
+function RedirectMetodoFase() {
+  const { faseSlug } = useParams();
+  return <Navigate to={`/metodo/fasi/${faseSlug}`} replace />;
+}
+
+function RedirectDidatticaFase({ fase }: { fase: string }) {
+  const { '*': rest = '' } = useParams();
+  const tail = rest ? `/${rest}` : '';
+  return <Navigate to={`/metodo/didattica/${fase}${tail}`} replace />;
+}
+
 function AppLayout() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -141,6 +153,26 @@ function AppLayout() {
           <Route path="/pricing"         element={<Pricing />} />
           <Route path="/account"         element={<Account />} />
           <Route path="/progetti"        element={<Progetti />} />
+          {/* Metodo — sezione top-level */}
+          <Route path="/metodo"                                                 element={<MetodoLanding />} />
+          <Route path="/metodo/introduzione"                                    element={<MetodoPage />} />
+          <Route path="/metodo/fasi"                                            element={<MetodoFasiIndex />} />
+          <Route path="/metodo/fasi/:faseSlug"                                  element={<MetodoFasePage />} />
+          <Route path="/metodo/ricerca-scientifica"                             element={<MetodoPage />} />
+          <Route path="/metodo/rapporto-con-ia"                                 element={<MetodoPage />} />
+          {/* Didattica — presentazioni del metodo */}
+          <Route path="/metodo/didattica"                                                          element={<AdminSuspense><DidatticaLanding /></AdminSuspense>} />
+          <Route path="/metodo/didattica/fondazione-ontologica"                                    element={<AdminSuspense><CorsoFase1Page /></AdminSuspense>} />
+          <Route path="/metodo/didattica/fondazione-ontologica/:moduleId"                          element={<AdminSuspense><CorsoFase1Page /></AdminSuspense>} />
+          <Route path="/metodo/didattica/fondazione-ontologica/:moduleId/:slideId"                 element={<AdminSuspense><CorsoFase1Page /></AdminSuspense>} />
+          <Route path="/metodo/didattica/traduzione-interdisciplinare"                             element={<AdminSuspense><CorsoFase2Page /></AdminSuspense>} />
+          <Route path="/metodo/didattica/traduzione-interdisciplinare/:moduleId"                   element={<AdminSuspense><CorsoFase2Page /></AdminSuspense>} />
+          <Route path="/metodo/didattica/traduzione-interdisciplinare/:moduleId/:slideId"          element={<AdminSuspense><CorsoFase2Page /></AdminSuspense>} />
+          <Route path="/metodo/didattica/strumenti-operativi-contestualizzati"                     element={<AdminSuspense><CorsoFase3Page /></AdminSuspense>} />
+          <Route path="/metodo/didattica/strumenti-operativi-contestualizzati/:moduleId"           element={<AdminSuspense><CorsoFase3Page /></AdminSuspense>} />
+          <Route path="/metodo/didattica/strumenti-operativi-contestualizzati/:moduleId/:slideId"  element={<AdminSuspense><CorsoFase3Page /></AdminSuspense>} />
+          {/* Anthropos — progetto sotto Progetti */}
+          <Route path="/anthropos"                                              element={<AnthroposLanding />} />
           <Route path="/bartleby"                                              element={<BartlebyLanding />} />
           <Route path="/bartleby/console"                                      element={<BartlebyHome />} />
           <Route path="/bartleby/knowledge-base"                            element={<AdminSuspense><KnowledgeBase /></AdminSuspense>} />
@@ -154,6 +186,9 @@ function AppLayout() {
           <Route path="/hcaire/protocolli/:slug"                   element={<HcaireProtocolPage />} />
           {/* Redirect del vecchio slug "ia-centrata-sull-umano" al nuovo Manifesto */}
           <Route path="/hcaire/ia-centrata-sull-umano"             element={<Navigate to="/hcaire/manifesto" replace />} />
+          {/* Le sottosezioni /hcaire/progetti e /hcaire/metodo sono state rimosse: redirect alle sezioni principali */}
+          <Route path="/hcaire/progetti"                           element={<Navigate to="/progetti" replace />} />
+          <Route path="/hcaire/metodo"                             element={<Navigate to="/metodo" replace />} />
           <Route path="/hcaire/:section"                           element={<HcairePage />} />
           {/* Sviluppo bambino */}
           {/* Letture critiche (sezione pubblica) */}
@@ -162,12 +197,13 @@ function AppLayout() {
           <Route path="/letture/:slug"    element={<AdminSuspense><LetturaDetail /></AdminSuspense>} />
           <Route path="/sviluppo-bambino"                                        element={<SviluppoBambinoLanding />} />
           <Route path="/sviluppo-bambino/finalita"                              element={<SviluppoBambinoFinalitaLanding />} />
-          <Route path="/sviluppo-bambino/metodo"                                element={<SviluppoBambinoMetodoLanding />} />
-          <Route path="/sviluppo-bambino/metodo/introduzione"                   element={<SviluppoBambinoMetodoPage />} />
-          <Route path="/sviluppo-bambino/metodo/fasi"                          element={<SviluppoBambinoMetodoFasiIndex />} />
-          <Route path="/sviluppo-bambino/metodo/fasi/:faseSlug"                element={<SviluppoBambinoMetodoFasePage />} />
-          <Route path="/sviluppo-bambino/metodo/ricerca-scientifica"            element={<SviluppoBambinoMetodoPage />} />
-          <Route path="/sviluppo-bambino/metodo/rapporto-con-ia"               element={<SviluppoBambinoMetodoPage />} />
+          {/* Redirect dei vecchi path /sviluppo-bambino/metodo* alla nuova sezione top-level /metodo* */}
+          <Route path="/sviluppo-bambino/metodo"                                element={<Navigate to="/metodo" replace />} />
+          <Route path="/sviluppo-bambino/metodo/introduzione"                   element={<Navigate to="/metodo/introduzione" replace />} />
+          <Route path="/sviluppo-bambino/metodo/fasi"                           element={<Navigate to="/metodo/fasi" replace />} />
+          <Route path="/sviluppo-bambino/metodo/fasi/:faseSlug"                 element={<RedirectMetodoFase />} />
+          <Route path="/sviluppo-bambino/metodo/ricerca-scientifica"            element={<Navigate to="/metodo/ricerca-scientifica" replace />} />
+          <Route path="/sviluppo-bambino/metodo/rapporto-con-ia"                element={<Navigate to="/metodo/rapporto-con-ia" replace />} />
           <Route path="/sviluppo-bambino/concetti"                              element={<SviluppoBambinoPage />} />
           <Route path="/sviluppo-bambino/nota-metodologica"                     element={<SviluppoBambinoPage />} />
           <Route path="/sviluppo-bambino/riflessioni"                           element={<SviluppoBambinoPage />} />
@@ -184,20 +220,11 @@ function AppLayout() {
           <Route path="/sviluppo-bambino/produzioni/pipeline/temi/:temaId/stress-test"         element={<SviluppoBambinoPipelineStressTest />} />
           <Route path="/sviluppo-bambino/modello"                               element={<SviluppoBambinoModello />} />
           <Route path="/sviluppo-bambino/modello/:asseSlug"                     element={<SviluppoBambinoAsseOverview />} />
-          {/* Presentazione dei corsi (F1, F2, F3) */}
-          <Route path="/sviluppo-bambino/presentazione"                                                 element={<AdminSuspense><PresentazioneCorsi /></AdminSuspense>} />
-          {/* Corso F2 — Traduzione interdisciplinare */}
-          <Route path="/sviluppo-bambino/traduzione-interdisciplinare"                                  element={<AdminSuspense><CorsoFase2Page /></AdminSuspense>} />
-          <Route path="/sviluppo-bambino/traduzione-interdisciplinare/:moduleId"                        element={<AdminSuspense><CorsoFase2Page /></AdminSuspense>} />
-          <Route path="/sviluppo-bambino/traduzione-interdisciplinare/:moduleId/:slideId"               element={<AdminSuspense><CorsoFase2Page /></AdminSuspense>} />
-          {/* Corso F1 — Fondazione ontologica */}
-          <Route path="/sviluppo-bambino/fondazione-ontologica"                                         element={<AdminSuspense><CorsoFase1Page /></AdminSuspense>} />
-          <Route path="/sviluppo-bambino/fondazione-ontologica/:moduleId"                               element={<AdminSuspense><CorsoFase1Page /></AdminSuspense>} />
-          <Route path="/sviluppo-bambino/fondazione-ontologica/:moduleId/:slideId"                      element={<AdminSuspense><CorsoFase1Page /></AdminSuspense>} />
-          {/* Corso F3 — Strumenti operativi contestualizzati */}
-          <Route path="/sviluppo-bambino/strumenti-operativi-contestualizzati"                          element={<AdminSuspense><CorsoFase3Page /></AdminSuspense>} />
-          <Route path="/sviluppo-bambino/strumenti-operativi-contestualizzati/:moduleId"                element={<AdminSuspense><CorsoFase3Page /></AdminSuspense>} />
-          <Route path="/sviluppo-bambino/strumenti-operativi-contestualizzati/:moduleId/:slideId"       element={<AdminSuspense><CorsoFase3Page /></AdminSuspense>} />
+          {/* Redirect dei vecchi path /sviluppo-bambino/{presentazione,fasi*} alla nuova sezione /metodo/didattica/* */}
+          <Route path="/sviluppo-bambino/presentazione"                                                 element={<Navigate to="/metodo/didattica" replace />} />
+          <Route path="/sviluppo-bambino/fondazione-ontologica/*"                                       element={<RedirectDidatticaFase fase="fondazione-ontologica" />} />
+          <Route path="/sviluppo-bambino/traduzione-interdisciplinare/*"                                element={<RedirectDidatticaFase fase="traduzione-interdisciplinare" />} />
+          <Route path="/sviluppo-bambino/strumenti-operativi-contestualizzati/*"                        element={<RedirectDidatticaFase fase="strumenti-operativi-contestualizzati" />} />
           {/* Assi Strutturali — sezione top-level */}
           <Route path="/assi-strutturali"                                       element={<AssiStrutturaliLanding />} />
           <Route path="/assi-strutturali/capitoli"                              element={<AssiStrutturaliCapitoli />} />

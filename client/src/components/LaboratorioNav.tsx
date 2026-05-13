@@ -1,18 +1,19 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useT } from '../context/SiteContentContext';
+import { useIsAdmin } from '../hooks/useIsAdmin';
 
 const NAV_LINKS = [
-  { to: '/hcaire/manifesto',              key: 'laboratorio.nav.manifesto',            fallback: 'Manifesto' },
-  { to: '/hcaire/metodo',                 key: 'laboratorio.nav.metodo',               fallback: 'Metodo' },
-  { to: '/hcaire/progetti',               key: 'laboratorio.nav.progetti',             fallback: 'Progetti' },
-  { to: '/hcaire/ambiente-editoriale',    key: 'laboratorio.nav.ambiente-editoriale',  fallback: 'Ambiente editoriale' },
-  { to: '/hcaire/agentic-shift',          key: 'laboratorio.nav.agentic-shift',        fallback: 'Agentic Shift' },
-  { to: '/hcaire/protocolli',             key: 'laboratorio.nav.protocolli',           fallback: 'Protocolli' },
+  { to: '/hcaire/manifesto',              key: 'laboratorio.nav.manifesto',            fallback: 'Manifesto',            adminOnly: false },
+  { to: '/hcaire/ambiente-editoriale',    key: 'laboratorio.nav.ambiente-editoriale',  fallback: 'Ambiente editoriale',  adminOnly: false },
+  { to: '/hcaire/agentic-shift',          key: 'laboratorio.nav.agentic-shift',        fallback: 'Agentic Shift',        adminOnly: false },
+  { to: '/hcaire/protocolli',             key: 'laboratorio.nav.protocolli',           fallback: 'Protocolli',           adminOnly: true  },
 ];
 
 export default function LaboratorioNav() {
   const location = useLocation();
   const t = useT();
+  const isAdmin = useIsAdmin();
+  const visibleLinks = NAV_LINKS.filter((l) => !l.adminOnly || isAdmin);
 
   return (
     <div className="sticky top-16 z-40 bg-white border-b border-gray-200 shadow-sm">
@@ -29,7 +30,7 @@ export default function LaboratorioNav() {
             {t('laboratorio.nav.back', '← Laboratorio')}
           </Link>
           <span className="self-center text-gray-200 mx-1">|</span>
-          {NAV_LINKS.map((link) => (
+          {visibleLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}

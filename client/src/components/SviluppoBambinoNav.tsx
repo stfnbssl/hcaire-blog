@@ -9,18 +9,8 @@ interface NavLink {
 
 const NAV_LINKS: NavLink[] = [
   { to: '/sviluppo-bambino/finalita',        label: 'Finalità' },
-  { to: '/sviluppo-bambino/metodo',          label: 'Metodo' },
   { to: '/sviluppo-bambino/interlocuzioni',  label: 'Interlocuzioni' },
   { to: '/sviluppo-bambino/produzioni',      label: 'Produzioni' },
-  {
-    to: '/sviluppo-bambino/presentazione',
-    label: 'Presentazione',
-    activeOn: [
-      '/sviluppo-bambino/fondazione-ontologica',
-      '/sviluppo-bambino/traduzione-interdisciplinare',
-      '/sviluppo-bambino/strumenti-operativi-contestualizzati',
-    ],
-  },
 ];
 
 export default function SviluppoBambinoNav() {
