@@ -10,9 +10,24 @@
 // La validazione blocca il PATCH se il body ha {{ref:rX}} non in references
 // o se references puntano a footnoteId non in footnotes.
 
-import GithubSlugger from 'github-slugger';
 import AssiChapter, { IAssiChapter, IReference, IFootnote } from '../models/AssiChapter';
 import { exportChapterToMd } from '../scripts/exportAssiChapterToMd';
+
+// github-slugger v2 è ESM-only. Con `module: "commonjs"` TypeScript
+// trasforma sia `import` statici sia `import()` dinamici in `require()`,
+// che esplode con ERR_REQUIRE_ESM all'avvio. Il wrapper `new Function`
+// preserva l'`import()` nativo nel JS compilato.
+const importGithubSlugger = new Function(
+  'return import("github-slugger")',
+) as () => Promise<typeof import('github-slugger')>;
+
+let sluggerCtorPromise: Promise<typeof import('github-slugger').default> | null = null;
+function loadGithubSlugger(): Promise<typeof import('github-slugger').default> {
+  if (!sluggerCtorPromise) {
+    sluggerCtorPromise = importGithubSlugger().then((m) => m.default);
+  }
+  return sluggerCtorPromise;
+}
 
 export interface UpdateChapterInput {
   body?: string;
@@ -74,7 +89,8 @@ export function validateReferences(
   return issues;
 }
 
-function extractSections(body: string): { anchor: string; title: string; order: number }[] {
+async function extractSections(body: string): Promise<{ anchor: string; title: string; order: number }[]> {
+  const GithubSlugger = await loadGithubSlugger();
   const slugger = new GithubSlugger();
   const sections: { anchor: string; title: string; order: number }[] = [];
   const re = /^##\s+(.+?)\s*$/gm;
@@ -130,7 +146,7 @@ export async function updateChapterContent(
   existing.references = finalRefs;
   existing.footnotes = finalFootnotes;
   if (input.is_published !== undefined) existing.is_published = input.is_published;
-  existing.sections = extractSections(finalBody);
+  existing.sections = await extractSections(finalBody);
   existing._last_edited = new Date();
   existing._last_edited_by = editedBy;
   existing._revision_count = (existing._revision_count ?? 0) + 1;
